@@ -6,16 +6,16 @@
   "doi": "10.1002/adfm.75260",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "Hipertermia magnética descreve a capacidade das nanopartículas magnéticas (MNPs) de gerar energia térmica e dissipá-la no meio circundante quando expostas a um campo magnético alternante (AMF). Neste trabalho, esse efeito magnetotérmico é explorado para acionar e autorreparar nanocompósitos vitriméricos para aplicações em robótica.",
+    "conceito_tecnica": "Hipertermia magnética descreve a capacidade das nanopartículas magnéticas (MNPs) de gerar energia térmica e dissipá-la no meio circundante quando expostas a um campo magnético alternante (AMF). Neste estudo, o efeito magnetotérmico é utilizado para acionar e auto-curar nanocompósitos vitriméricos, em vez de tratar câncer.",
     "etapas_processo": [
-      "Síntese hidrotérmica assistida por aditivo das nanopartículas de ferrita dopada com cobalto (CoxFe3-xO4) com controle de tamanho",
-      "Funcionalização superficial das NPs com sorbitol acetoacetilado (Sx̅AcAc)",
-      "Incorporação das MNPs na matriz vitrimérica de uretano vinilógico (Sx̅AcAc + Jeffamine T403)",
-      "Aplicação de campo magnético alternante (AMF) para induzir aquecimento magnetotérmico",
-      "Ativação de memória de forma, autocura e reciclagem via aquecimento interno gerado pelas MNPs"
+      "Síntese das nanopartículas de ferrita dopada com cobalto por método hidrotérmico assistido por aditivo",
+      "Incorporação das MNPs na matriz vitrímero de sorbitol acetoacetilado e Jeffamine T403",
+      "Aplicação de campo magnético alternante (AMF) externo ao nanocompósito",
+      "Geração de calor interno pelas MNPs via relaxação de Néel, relaxação Browniana e perdas por histerese",
+      "Ativação da resposta termoadaptativa (memória de forma, auto-cura) pelo calor gerado"
     ],
-    "internalizacao_nps": "As MNPs são incorporadas fisicamente na matriz polimérica vitrimérica durante a síntese do compósito, sem formar ligações covalentes fortes com a rede (o aditivo Sx̅AcAc sofre alteração estrutural na etapa hidrotérmica e não reage com as aminas da matriz), sendo dispersas de forma heterogênea ao longo do material.",
-    "aplicacao_campo": "O AMF é aplicado externamente por meio de um equipamento de aquecimento magnético (placa de aquecimento magnético) operando a frequência de aproximadamente 142,70 kHz e amplitude de campo de até 36 mT.",
+    "internalizacao_nps": "As MNPs são incorporadas diretamente na matriz polimérica vitrímero durante a síntese do compósito, sem internalização celular, pois a aplicação não é biomédica/oncológica",
+    "aplicacao_campo": "O AMF é aplicado externamente às amostras compósitas sobre uma placa de aquecimento magnético, com amplitude H0 = 36 mT e frequência f = 142,70 kHz.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": 112.0,
     "vias_morte_celular": []
@@ -27,8 +27,8 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "Nas partículas incorporadas na matriz polimérica de alta viscosidade, a relaxação de Néel é o mecanismo dominante, pois o movimento browniano é suprimido pelo alto grau de viscosidade do meio, enquanto perdas por histerese coexistem especialmente para partículas maiores.",
-    "descricao_mecanismo": "A relaxação de Néel ocorre pelo alinhamento dos momentos magnéticos das NPs com o campo aplicado sem rotação física da partícula, com tempo de relaxação que aumenta exponencialmente com o produto Keff·V. A relaxação browniana, dependente do tamanho hidrodinâmico e da viscosidade, é suprimida quando as partículas são imobilizadas na matriz polimérica de alta viscosidade. Adicionalmente, perdas por histerese contribuem para o aquecimento nas partículas de regime ferrimagnético, sendo proporcionais à área do loop de histerese, e coexistem com os processos de Néel na região de transição superparamagnética-ferrimagnética."
+    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante nas partículas imobilizadas na matriz polimérica de alta viscosidade, onde a rotação Browniana é suprimida.",
+    "descricao_mecanismo": "No regime superparamagnético, os momentos magnéticos das partículas se realinham com o campo externo sem rotação física da partícula (relaxação de Néel), enquanto partículas maiores em suspensão rotacionam fisicamente (relaxação Browniana). Quando as MNPs são incorporadas na matriz polimérica de alta viscosidade, a relaxação Browniana é completamente suprimida e a relaxação de Néel torna-se dominante por padrão. Adicionalmente, no regime ferrimagnético (partículas maiores), as perdas por histerese contribuem significativamente para a dissipação de calor, com o poder dissipado proporcional à área do loop de histerese."
   },
   "q3": {
     "material": "ferrita dopada com cobalto",
@@ -39,30 +39,30 @@
     "faixa_tamanho_max_nm": 21.7,
     "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia magnetocristalina cúbica com contribuição de anisotropia de superfície; Keff na ordem de 104 a 105 J·m−3",
+    "anisotropia": "anisotropia magnetocristalina cúbica com contribuição de anisotropia de superfície; constante de anisotropia efetiva Keff na ordem de 10^4 a 10^5 J/m³",
     "revestimento": "sorbitol acetoacetilado (Sx̅AcAc) adsorvido na superfície",
     "material_autorregulavel": false,
     "SAR_W_g": 56.0,
     "ILP_nHm2_kg": 0.45,
     "magnetizacao_saturacao_emu_g": 64.8,
-    "relacao_estrutura_propriedade": "O aumento da dopagem com cobalto eleva a constante de anisotropia efetiva (Keff), incrementando a eficiência de aquecimento; a redução do tamanho das partículas com o aumento do aditivo Sx̅AcAc altera a morfologia de cúbica para esférica e desloca o mecanismo de relaxação dominante de browniano para Néel, sendo o tamanho de ~8 nm identificado como ótimo para máxima eficiência de aquecimento."
+    "relacao_estrutura_propriedade": "O tamanho das partículas controla o mecanismo de relaxação dominante: partículas menores (~8 nm, P8) exibem maior susceptibilidade estática e eficiência de aquecimento máxima devido à coexistência de relaxação de Néel e perdas por histerese na transição superparamagnético-ferrimagnético. A dopagem com cobalto aumenta a constante de anisotropia efetiva, deslocando o limite superparamagnético para diâmetros menores (~6 nm) comparado à magnetita pura (~13 nm), permitindo maior eficiência de aquecimento em tamanhos menores."
   },
   "q4": {
     "amplitude_kA_m": 28.6,
     "frequencia_kHz": 142.7,
-    "produto_Hf": 4079220000.0,
+    "produto_Hf": 4081220000.0,
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 5.0,
     "forma_onda": null,
-    "dosimetria_termica": "câmera de imagem térmica (thermal imaging camera) para monitoramento da temperatura superficial dos compósitos",
-    "distribuicao_espacial_calor": "O calor é gerado internamente pelas MNPs distribuídas na matriz; observa-se acúmulo de calor no interior do material devido à baixa capacidade de transferência de calor para o meio externo (ar), com temperatura máxima de 112°C em amostras mais espessas (3 mm)",
+    "dosimetria_termica": "câmera de imagem térmica (termografia infravermelha) para registro da temperatura superficial das amostras",
+    "distribuicao_espacial_calor": "A distribuição de temperatura é heterogênea, dependendo da espessura da amostra e do gradiente do campo magnético; amostras mais espessas acumulam mais calor internamente devido à menor transferência térmica para o meio (ar)",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vitro",
     "linhagem_celular": "A431 (carcinoma epidermóide)",
     "modelo_animal": null,
-    "tipo_cancer": "carcinoma epidermóide",
+    "tipo_cancer": "carcinoma epidermóide (apenas para teste de viabilidade/toxicidade do Co²⁺, não como modelo de tratamento)",
     "concentracao_mg_mL": 2.0,
     "agregacao_discutida": true,
     "viscosidade_discutida": true,
@@ -79,36 +79,36 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Os valores de SAR e ILP são moderados (máx. 56 W/g e 0,45 nHm²/kg) devido ao uso de baixa concentração de partículas, baixa frequência e amplitude de campo moderada",
-      "A distribuição heterogênea das MNPs na matriz vitrimérica (observada por SEM) pode gerar variações locais na densidade de partículas e no desempenho de aquecimento",
-      "A frequência mínima utilizável (~150 kHz) é limitada pelo equipamento (placa de aquecimento magnético), impedindo otimização da frequência para partículas maiores",
-      "A amplitude máxima de campo é restrita pelo equipamento, impossibilitando investigação de efeitos em amplitudes mais altas",
-      "O modelo de Rosensweig para teoria de resposta linear é limitado a sistemas com alta anisotropia e campos abaixo da coercividade",
-      "A lixiviação de cobalto aumenta com temperatura e força iônica, podendo ser uma preocupação em aplicações biológicas em condições mais severas"
+      "O modelo de relaxação de Rosensweig é limitado a condições de campo zero e interações fracas entre partículas, sendo restrito a H/HK ≤ 0.4",
+      "Os valores de SAR e ILP das suspensões são relativamente baixos, atribuídos à baixa concentração de partículas, baixa frequência e amplitude moderada impostas pelas restrições do equipamento",
+      "A frequência mínima utilizável (~150 kHz) é limitada pelo motor da placa de aquecimento magnético, impedindo a otimização para partículas maiores",
+      "Não foi possível excluir flutuações de densidade de partículas ao longo do material compósito",
+      "A relaxação Browniana é completamente suprimida na matriz polimérica, limitando a contribuição deste mecanismo ao aquecimento",
+      "Amostras P22 foram produzidas sem aditivos e não puderam ser completamente caracterizadas (dados n.a.)",
+      "A amostra P3 contém impurezas antiferromagnéticas de akaganeita que não puderam ser removidas"
     ],
     "problemas_SAR_ILP": true,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Investigar o efeito de frequências mais baixas no desempenho de aquecimento de partículas maiores",
-      "Explorar amplitudes de campo magnético mais elevadas para avaliar a dependência do SAR/ILP",
-      "Avaliar aplicações em ambientes sólido-líquido com estudos de biocompatibilidade mais abrangentes",
-      "Investigar o uso dos compósitos em montagens de robôs preensores (gripper) completos",
-      "Estudar a influência da distribuição espacial das MNPs na eficiência de aquecimento do compósito"
+      "Investigar o efeito de frequências mais baixas para otimizar o aquecimento de partículas com diâmetros maiores",
+      "Explorar amplitudes de campo mais altas para avaliar a dependência linear do ΔT e penetração completa da amostra",
+      "Avaliar aplicações em ambientes sólido-líquido com testes de biocompatibilidade mais abrangentes",
+      "Investigar a montagem de sistemas robóticos/atuadores completos (garra) com os nanocompósitos desenvolvidos",
+      "Estudar o efeito de diferentes concentrações de partículas no desempenho de aquecimento dos compósitos"
     ],
     "gaps_identificados": [
-      "Ausência de investigação do efeito da distribuição de tamanho bimodal das partículas nos modelos de relaxação dentro da matriz polimérica",
-      "Falta de caracterização detalhada da contribuição relativa das perdas por histerese versus relaxação de Néel no compósito sólido",
-      "Não foi testado o efeito de frequências abaixo de 150 kHz para otimização do aquecimento de partículas maiores",
-      "A influência da heterogeneidade espacial das MNPs na matriz sobre a uniformidade do aquecimento não foi quantificada",
-      "Aplicações biomédicas em contato direto com fluidos fisiológicos requerem estudos adicionais de lixiviação e citotoxicidade"
+      "A relação entre o parâmetro de rede e o teor de cobalto não seguiu a tendência esperada da literatura, possivelmente devido à limitada variação de composição nos tamanhos estudados",
+      "A distribuição heterogênea das MNPs na matriz não pôde ser completamente controlada",
+      "O efeito de amplitude de campo mais alta e sua relação com a penetração no material não pôde ser examinado com o equipamento disponível",
+      "Ausência de demonstração de resposta hipertérmica para partículas maiores (P14, P12) nos compósitos em condições otimizadas de frequência"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo modela quantitativamente os mecanismos de relaxação de Néel e Browniana em função do tamanho de partícula, viscosidade e constante de anisotropia, determinando o diâmetro crítico de transição (~11,4 nm) e demonstrando a supressão da relaxação browniana em meios de alta viscosidade com dominância do mecanismo de Néel.",
-    "integracao_engenharia": "Demonstra o desenvolvimento de nanocompósitos vitriméricos magneticamente responsivos com propriedades de memória de forma, autocura e reciclabilidade acionadas por AMF, atingindo temperaturas de até 112°C, três vezes mais rapidamente do que o aquecimento externo convencional, com aplicação potencial em robótica mole.",
-    "integracao_biologia": "Avalia a citotoxicidade do cobalto lixiviado em células A431 e demonstra que a concentração de Co(II) liberada pelos compósitos é 18 a 100 vezes inferior ao limite de viabilidade celular, além de confirmar retenção de cobalto superior a 98% em ambientes fisiológicos simulados.",
-    "integracao_materiais": "Desenvolve uma síntese hidrotérmica assistida por aditivo com sorbitol acetoacetilado de função dupla (controle de tamanho das NPs e monômero da vitrimera), produzindo ferritas dopadas com cobalto (Co0.42–0.49Fe2.51–2.58O4) com tamanho ajustável de 3,3 a 21,7 nm e forma controlada de cúbica a esférica.",
-    "mensagem_principal": "O trabalho apresenta um nanocompósito vitrimérico inovador baseado em ferrita dopada com cobalto incorporada em matriz de uretano vinilógico derivada de sorbitol, no qual o aquecimento magnetotérmico induzido por AMF aciona simultaneamente memória de forma, autocura e reciclagem do material, com o tamanho ótimo de ~8 nm das NPs maximizando a eficiência de aquecimento via relaxação de Néel e perdas por histerese, oferecendo uma plataforma multifuncional e reciclável para sistemas de atuação em robótica avançada."
+    "integracao_fisica": "O artigo quantifica as contribuições relativas dos mecanismos de relaxação de Néel, Browniana e perdas por histerese em função do tamanho de partícula e viscosidade do meio, calculando tempos de relaxação efetivos e ponto de transição entre mecanismos (~11,4 nm para ferrita dopada com cobalto).",
+    "integracao_engenharia": "O estudo demonstra a fabricação de um nanocompósito magnético vitrímero reciclável e reprocessável capaz de ser atuado e auto-curado remotamente por AMF, com temperaturas atingindo 112°C, três vezes mais rápido do que o aquecimento externo convencional, viabilizando aplicações em robótica mole.",
+    "integracao_biologia": "Testes de retenção de cobalto e viabilidade celular em células A431 confirmaram a segurança do material em ambientes fisiológicos, com lixiviação de Co²⁺ 18 a 100 vezes abaixo do limiar de toxicidade celular.",
+    "integracao_materiais": "A síntese hidrotérmica assistida por sorbitol acetoacetilado permite ajuste preciso do tamanho das nanopartículas de ferrita dopada com cobalto (3,3 a 21,7 nm) com o mesmo aditivo funcionando como monômero para a síntese do vitrímero, integrando síntese de nanomateriais e processamento de polímeros em uma abordagem unificada.",
+    "mensagem_principal": "Este trabalho apresenta um nanocompósito vitrímero magnético baseado em ferrita dopada com cobalto e matriz de sorbitol que pode ser simultaneamente atuado em memória de forma e auto-curado por aquecimento magnetotérmico remoto via AMF, alcançando temperaturas de até 112°C com resposta três vezes mais rápida que aquecimento externo, oferecendo uma plataforma reciclável e multifuncional para sistemas robóticos avançados operados por estímulos térmicos internos."
   },
   "custom_id": "40__Magnetothermal-Triggered_Response_and_Self-Healing_of_Recycl"
 }

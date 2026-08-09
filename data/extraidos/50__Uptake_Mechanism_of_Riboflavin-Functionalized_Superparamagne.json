@@ -6,23 +6,22 @@
   "doi": "10.1021/acsabm.5c00649",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética é uma abordagem promissora, eficiente e segura para o tratamento do câncer, na qual nanopartículas magnéticas expostas a um campo magnético alternante geram calor localizado. Esse calor eleva a temperatura para cerca de 40–46 °C, podendo induzir desnaturação proteica, disfunção celular, estresse oxidativo ou morte celular.",
+    "conceito_tecnica": "Hipertermia magnética é uma abordagem de tratamento do câncer na qual nanopartículas magnéticas expostas a um campo magnético alternante geram calor localizado, elevando a temperatura para cerca de 40–46 °C. Essa temperatura elevada pode induzir desnaturação proteica, disfunção celular, estresse oxidativo ou morte celular.",
     "etapas_processo": [
       "Síntese e funcionalização das SPIONs com riboflavina (Rf-SPIONs)",
-      "Dispersão das nanopartículas em diferentes concentrações (1,5–5,0 mg/mL)",
-      "Exposição das amostras a campo magnético alternante (H = 14 kA/m, 343 kHz)",
-      "Monitoramento da variação de temperatura durante a aplicação do AMF por 300 s",
-      "Cálculo da taxa de absorção específica (SAR) a partir da curva temperatura vs. tempo"
+      "Internalização das Rf-SPIONs pelas células cancerosas via endocitose mediada por RFVT3 e via clatrina",
+      "Exposição das células/nanopartículas a campo magnético alternante (AMF) a 14 kA/m e 343 kHz",
+      "Geração de calor localizado pelas nanopartículas internalizadas",
+      "Elevação da temperatura até ~43 °C ou mais, induzindo morte celular"
     ],
-    "internalizacao_nps": "As Rf-SPIONs são internalizadas pelas células cancerosas via via mediada pelo transportador de riboflavina (RFVT3) e por endocitose mediada por clatrina, conforme demonstrado pelo uso de inibidores específicos (azul de metileno, clorpromazina e dinasore).",
-    "aplicacao_campo": "O campo magnético alternante (AMF) foi aplicado externamente utilizando um dispositivo de nanoaquecimento magnético (D5 Series, Nanoscale Biomagnetics) com H = 14 kA/m a 343 kHz por 300 s.",
+    "internalizacao_nps": "As Rf-SPIONs são internalizadas pelas células cancerosas de mama principalmente via endocitose mediada por clatrina, facilitada pelos transportadores de riboflavina (RFVT3) expressos na superfície celular.",
+    "aplicacao_campo": "O campo magnético alternante (AMF) é aplicado externamente a 14 kA/m e 343 kHz por 300 s utilizando um dispositivo de nanoaquecimento magnético (D5 Series, nanoscale Biomagnetics).",
     "janela_termica_min_C": 40.0,
     "janela_termica_max_C": 46.0,
     "vias_morte_celular": [
       "desnaturação proteica",
       "disfunção celular",
-      "estresse oxidativo",
-      "morte celular"
+      "estresse oxidativo"
     ]
   },
   "q2": {
@@ -32,12 +31,12 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O comportamento coletivo das nanopartículas, favorecido pela formação de aglomerados multicore de Rf-SPIONs, é apontado como responsável pelos maiores valores de SAR observados.",
-    "descricao_mecanismo": "As Rf-SPIONs apresentam comportamento superparamagnético com quase nenhuma histerese a 300 K. O SAR depende de fatores como tamanho, cristalinidade, forma, agregação e estabilidade das nanopartículas magnéticas. No caso das Rf-SPIONs, como a diferença no tamanho do núcleo em relação às C-SPIONs é insignificante, o maior SAR é atribuído ao maior grau de aglomeração das partículas, evidenciado pelo maior diâmetro hidrodinâmico, o que intensifica o comportamento coletivo."
+    "mecanismo_dominante": "O comportamento coletivo (interações coletivas) dos agregados multicore de Rf-SPIONs é apontado como responsável pelos maiores valores de SAR em comparação às C-SPIONs.",
+    "descricao_mecanismo": "As Rf-SPIONs apresentam maior diâmetro hidrodinâmico devido à formação de clusters multicore, resultado da superfície mais hidrofóbica conferida pelo ligante CARf. Esse comportamento coletivo mais pronunciado nos agregados de Rf-SPIONs resulta em maior dissipação de calor sob AMF. O SAR depende de fatores como tamanho, cristalinidade, forma, agregação e estabilidade das nanopartículas magnéticas."
   },
   "q3": {
-    "material": "maghemite (óxido de ferro fase maghemita, estrutura espinélio inverso)",
-    "composicao_quimica": "Fe2O3 (maghemita) / Fe3O4 (magnetita)",
+    "material": "maghemita (iron oxide)",
+    "composicao_quimica": "Fe2O3 (maghemita, fase espinélio inverso)",
     "dopagem": null,
     "tamanho_nm": 10.0,
     "faixa_tamanho_min_nm": 9.0,
@@ -45,12 +44,12 @@
     "forma": "esférica",
     "arquitetura_multicore": true,
     "anisotropia": null,
-    "revestimento": "riboflavina-citrato (éster CARf) para Rf-SPIONs; citrato para C-SPIONs",
+    "revestimento": "riboflavina-citrato (CARf) para Rf-SPIONs; citrato para C-SPIONs",
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 70.0,
-    "relacao_estrutura_propriedade": "A formação de aglomerados multicore nas Rf-SPIONs, favorecida pela superfície mais hidrofóbica do ligante CARf, intensifica o comportamento coletivo das partículas e resulta em maiores valores de SAR em comparação às C-SPIONs de tamanho de núcleo similar."
+    "relacao_estrutura_propriedade": "A formação de clusters multicore nas Rf-SPIONs, promovida pela superfície mais hidrofóbica do ligante CARf, resulta em maior diâmetro hidrodinâmico e comportamento coletivo mais pronunciado, levando a maiores valores de SAR em comparação às C-SPIONs de núcleo similar."
   },
   "q4": {
     "amplitude_kA_m": 14.0,
@@ -59,16 +58,16 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 5.0,
     "forma_onda": null,
-    "dosimetria_termica": "Condições quase-adiabáticas; registro contínuo da temperatura durante aplicação do AMF; SAR calculado a partir do coeficiente angular inicial da curva T vs. t",
+    "dosimetria_termica": "Medição da variação de temperatura ao longo do tempo sob condições quase-adiabáticas; SAR calculado como SAR = C * (1/mFe) * (ΔT/Δt)",
     "distribuicao_espacial_calor": null,
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vitro",
-    "linhagem_celular": "MDA-MB-231 (TNBC), MCF-7, MCF-10A",
+    "linhagem_celular": "MDA-MB-231, MCF-7, MCF-10A",
     "modelo_animal": null,
-    "tipo_cancer": "mama (câncer de mama triplo-negativo)",
-    "concentracao_mg_mL": 5.0,
+    "tipo_cancer": "mama (triplo-negativo e luminal)",
+    "concentracao_mg_mL": null,
     "agregacao_discutida": true,
     "viscosidade_discutida": false,
     "imobilizacao_celular": false,
@@ -84,30 +83,30 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "O estudo avaliou apenas biocompatibilidade de curto prazo (24 h); experimentos de longo prazo são necessários para confirmar a biocompatibilidade das SPIONs",
-      "O modelo de cultura celular 2D não mimetiza adequadamente o microambiente tumoral; um modelo 3D seria mais representativo",
-      "A estrutura tridimensional experimental dos transportadores RFVT1, RFVT2 e RFVT3 não foi resolvida, sendo utilizada estrutura predita pelo AlphaFold para o docking molecular",
-      "A validação funcional dos RFVTs no contexto específico do TNBC era inexistente antes deste estudo"
+      "O estudo se limita a modelos de cultura celular 2D, não mimetizando adequadamente o microambiente tumoral",
+      "A biocompatibilidade de longo prazo das SPIONs não foi avaliada",
+      "A estrutura 3D experimental dos transportadores RFVT1, RFVT2 e RFVT3 humanos ainda não foi resolvida, sendo utilizadas estruturas preditas pelo AlphaFold para docking molecular",
+      "Validação funcional do sistema RFVT especificamente no contexto de TNBC era ausente antes deste estudo"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Realizar experimentos de biocompatibilidade de longo prazo com as SPIONs",
-      "Utilizar modelos de cultura celular 3D para melhor mimetizar o microambiente tumoral e elucidar o mecanismo de captação com maior precisão",
-      "Desenvolver Rf-SPIONs modificadas para diagnóstico e tratamento eficaz do câncer de mama"
+      "Utilizar modelos de cultura celular 3D mais complexos para melhor mimetizar o microambiente do câncer",
+      "Avaliar a biocompatibilidade de longo prazo das SPIONs",
+      "Desenvolver Rf-SPIONs modificadas para diagnóstico e tratamento efetivo do câncer de mama"
     ],
     "gaps_identificados": [
-      "Ausência de demonstração prévia da expressão e função dos RFVTs em linhagens celulares de câncer de mama (especialmente TNBC)",
-      "Mecanismos de captação celular de Rf-SPIONs em TNBC eram desconhecidos antes deste estudo",
-      "Falta de estudos in vivo para validar o potencial terapêutico e diagnóstico das Rf-SPIONs"
+      "Ausência de validação funcional da expressão de RFVT em linhagens celulares de câncer de mama triplo-negativo",
+      "Falta de estudos in vivo para confirmar eficácia e segurança das Rf-SPIONs",
+      "Necessidade de modelos mais complexos (3D, microambiente tumoral) para elucidação mais precisa do mecanismo de internalização"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo caracteriza as propriedades magnéticas das Rf-SPIONs (superparamagnetismo, Ms, Hc) e sua resposta de hipertermia magnética sob AMF, correlacionando a formação de aglomerados multicore com o aumento do SAR.",
-    "integracao_engenharia": "O trabalho demonstra a síntese e funcionalização de SPIONs com éster riboflavina-citrato, otimizando a estabilidade coloidal e o desempenho de hipertermia magnética para aplicações biomédicas.",
-    "integracao_biologia": "O estudo fornece a primeira demonstração funcional de que células TNBC (MDA-MB-231) expressam RFVTs em níveis suficientes para mediar a captação direcionada de Rf-SPIONs via RFVT3 e endocitose mediada por clatrina.",
-    "integracao_materiais": "A funcionalização da superfície das SPIONs com riboflavina-citrato melhora a interação celular seletiva com células cancerosas de mama em comparação a células normais, relacionando a química de superfície ao comportamento biológico das nanopartículas.",
-    "mensagem_principal": "Este estudo demonstra pela primeira vez que células de câncer de mama triplo-negativo (MDA-MB-231) expressam transportadores de riboflavina (RFVT) funcionais que medeiam a captação seletiva de Rf-SPIONs via RFVT3 e endocitose mediada por clatrina, identificando as Rf-SPIONs como uma plataforma promissora para entrega direcionada e hipertermia magnética no tratamento do TNBC."
+    "integracao_fisica": "O artigo demonstra que o comportamento coletivo de clusters multicore de Rf-SPIONs potencializa a dissipação de calor sob AMF, evidenciando como interações físicas entre nanopartículas afetam o desempenho de hipertermia magnética.",
+    "integracao_engenharia": "A funcionalização superficial das SPIONs com o conjugado riboflavina-citrato (CARf) foi otimizada para conferir estabilidade coloidal, maior uptake celular seletivo e melhor resposta de hipertermia magnética em células cancerosas.",
+    "integracao_biologia": "O estudo fornece a primeira demonstração funcional da expressão de RFVT (especialmente RFVT3) em linhagens celulares de câncer de mama triplo-negativo e elucida o mecanismo de internalização das Rf-SPIONs via endocitose mediada por clatrina.",
+    "integracao_materiais": "A síntese de SPIONs de maghemita com revestimento de riboflavina-citrato resultou em nanopartículas com alta estabilidade coloidal, comportamento superparamagnético e formação de clusters multicore que amplificam o SAR para aplicações de hipertermia.",
+    "mensagem_principal": "Este trabalho demonstra pela primeira vez que células de câncer de mama triplo-negativo (MDA-MB-231) expressam transportadores funcionais de riboflavina (RFVT3) que medeiam a internalização seletiva de Rf-SPIONs via endocitose dependente de clatrina, estabelecendo uma plataforma promissora para diagnóstico e hipertermia magnética direcionada ao TNBC."
   },
   "custom_id": "50__Uptake_Mechanism_of_Riboflavin-Functionalized_Superparamagne"
 }

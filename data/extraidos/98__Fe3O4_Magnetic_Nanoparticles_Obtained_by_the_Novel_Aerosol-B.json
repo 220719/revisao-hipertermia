@@ -6,21 +6,21 @@
   "doi": "10.3390/ma16196483",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética consiste na exposição de células contendo nanopartículas de óxido de ferro a um campo magnético alternante, que converte energia em calor. A temperatura pode ser aumentada até 45°C para hipertermia ou até 60°C e acima para termoablação.",
+    "conceito_tecnica": "A hipertermia magnética utiliza nanopartículas de óxido de ferro internalizadas em células cancerosas que, expostas a um campo magnético alternante, convertem energia em calor. Esse aumento de temperatura pode atingir 45 °C para hipertermia ou 60 °C e acima para termoablação.",
     "etapas_processo": [
-      "Síntese das nanopartículas de Fe3O4 por técnica aerossol-based (variante de co-precipitação)",
-      "Revestimento das NPs com TEA-oleato para estabilização em dispersão aquosa",
-      "Separação por centrifugação em frações '-top' e '-bottom'",
-      "Exposição das células ao campo magnético alternante de alta frequência",
-      "Medição da eficiência de aquecimento via parâmetros SLP e ILP"
+      "Síntese das nanopartículas de Fe3O4 por técnica aerosol-based (co-precipitação avançada)",
+      "Revestimento com TEA-oleato para estabilização em dispersão aquosa",
+      "Separação por centrifugação em frações top e bottom",
+      "Exposição das células cancerosas contendo NPs ao campo magnético alternante",
+      "Conversão de energia magnética em calor pelas NPs"
     ],
-    "internalizacao_nps": "As nanopartículas penetraram o interior das células após 3h de contato, sendo acumuladas preferencialmente ao redor da membrana nuclear; o mecanismo inclui macropinocitose e internalização mediada por clatrina dependente do tamanho dos agregados.",
-    "aplicacao_campo": "As dispersões de NPs foram expostas a campos magnéticos alternantes usando um sistema magneTherm, com amplitudes de H = 5 kA/m e H = 15 kA/m e frequências de 109, 177, 266 e 532 kHz.",
+    "internalizacao_nps": "As NPs penetram o interior das células por internalização vesicular, sendo acumuladas preferencialmente ao redor da membrana do núcleo celular, conforme demonstrado por imagens holotomográficas em células U118 e CHO-K1.",
+    "aplicacao_campo": "As dispersões de NPs são expostas a campos magnéticos alternantes de diferentes frequências (109, 177, 266 e 532 kHz) e amplitudes (H = 5 kA/m e H = 15 kA/m) usando o sistema magneTherm.",
     "janela_termica_min_C": 45.0,
     "janela_termica_max_C": 60.0,
     "vias_morte_celular": [
       "necrose",
-      "hipoxia"
+      "toxicidade"
     ]
   },
   "q2": {
@@ -30,8 +30,8 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "A dissipação de energia das NPs em campo magnético alternante é influenciada pelo mecanismo de relaxação e pelas interações magnéticas entre NPs nos aglomerados, que causam comportamento ferrimagnético coletivo.",
-    "descricao_mecanismo": "As NPs superparamagnéticas dissipam energia quando expostas a campos magnéticos alternantes de alta frequência. A presença de aglomerados causa interações de troca entre as NPs superparamagnéticas, aumentando o tempo de flutuação do momento magnético e resultando em comportamento ferrimagnético coletivo. O revestimento com TEA-oleato e o tamanho menor das NPs reduziram significativamente os valores de SLP e ILP em comparação com NPs co-precipitadas convencionais."
+    "mecanismo_dominante": "A dissipação de energia em campos magnéticos de alta frequência é influenciada pelo mecanismo de relaxação das NPs e pelas interações magnéticas entre partículas nos aglomerados.",
+    "descricao_mecanismo": "As NPs superparamagnéticas dissipam energia quando expostas a campos magnéticos alternantes, processo avaliado pelos parâmetros SLP e ILP. A presença de aglomerados maiores na fração 2AeroNPs-bottom resulta em maior momento magnético e maior SLP em comparação à fração 2AeroNPs-top. O artigo menciona que medições em glicerol podem alterar o mecanismo de relaxação das NPs em campos magnéticos de alta frequência, sugerindo que a viscosidade do meio influencia o mecanismo dominante."
   },
   "q3": {
     "material": "Fe3O4 (magnetita)",
@@ -48,7 +48,7 @@
     "SAR_W_g": null,
     "ILP_nHm2_kg": 0.1,
     "magnetizacao_saturacao_emu_g": 66.8,
-    "relacao_estrutura_propriedade": "NPs menores (~5-6 nm) apresentaram menor magnetização de saturação e menores valores de SLP/ILP em comparação com NPs maiores; o revestimento com TEA-oleato reduziu significativamente o momento magnético das amostras. A presença de aglomerados maiores na fração '-bottom' resultou em maior momento magnético e maior SLP comparado à fração '-top'."
+    "relacao_estrutura_propriedade": "O tamanho ultrapequeno das NPs (5-6 nm) e a formação de aglomerados influenciam diretamente a magnetização de saturação e o desempenho em hipertermia; NPs menores apresentam menor Ms e menor SLP, enquanto aglomerados maiores (fração bottom) resultam em maior momento magnético e maior eficiência de aquecimento. O revestimento com TEA-oleato causa redução significativa do momento magnético das NPs."
   },
   "q4": {
     "amplitude_kA_m": 15.0,
@@ -57,18 +57,18 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": null,
     "forma_onda": null,
-    "dosimetria_termica": "Método de inclinação corrigida (corrected slope method) aplicado às curvas T(t) sob condições não adiabáticas",
+    "dosimetria_termica": "Método de slope corrigido (corrected slope method) aplicado às curvas T(t) obtidas em condições não-adiabáticas com registro a cada 0,5 s",
     "distribuicao_espacial_calor": null,
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vitro",
-    "linhagem_celular": "U118 (glioblastoma) e CHO-K1 (ovário de hamster chinês)",
+    "linhagem_celular": "U118 (glioblastoma) e CHO-K1 (ovário de hamster chinês - células normais)",
     "modelo_animal": null,
     "tipo_cancer": "glioblastoma",
     "concentracao_mg_mL": 0.02,
     "agregacao_discutida": true,
-    "viscosidade_discutida": false,
+    "viscosidade_discutida": true,
     "imobilizacao_celular": false,
     "perfusao_discutida": true,
     "protein_corona": false,
@@ -82,32 +82,33 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Baixos valores de SLP e ILP das AeroNPs comparados às NPs co-precipitadas convencionais, limitando a eficiência de aquecimento",
-      "Formação de aglomerados durante a síntese que não foram completamente desagregados pelo ácido cítrico",
-      "O revestimento com TEA-oleato causou redução significativa do momento magnético das NPs",
-      "Estudos mais extensos sobre o mecanismo de toxicidade e interação entre células e NPs são necessários",
-      "Não foi possível obter NPs completamente secas para espectroscopia Mössbauer das amostras revestidas com TEA-oleato"
+      "Valores de SLP e ILP relativamente baixos em comparação com NPs de magnetita co-precipitadas por métodos convencionais",
+      "Formação inevitável de aglomerados de NPs durante a síntese, dificultando a obtenção de NPs completamente dispersas",
+      "O ácido cítrico aplicado na última etapa não foi suficiente para desfazer completamente os aglomerados",
+      "O TEA-oleato estabiliza os aglomerados em vez das NPs individuais",
+      "Estudos mais aprofundados sobre o mecanismo de interação tóxica entre NPs e células normais e cancerosas ainda precisam ser realizados"
     ],
     "problemas_SAR_ILP": true,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Realizar estudos mais aprofundados sobre o efeito tóxico das NPs em células normais e cancerígenas",
-      "Investigar o mecanismo de interação entre as células e as NPs",
-      "Confirmar a estabilidade de agregação das dispersões realizando medições ao longo do tempo",
-      "Otimizar os parâmetros de síntese para melhorar a eficiência de aquecimento das AeroNPs"
+      "Realizar estudos mais extensos sobre o efeito tóxico das NPs em células normais e cancerosas",
+      "Investigar o mecanismo de interações entre as células e as NPs",
+      "Confirmar a estabilidade de agregação por medições ao longo do tempo",
+      "Otimizar as condições de síntese para reduzir ainda mais a formação de aglomerados"
     ],
     "gaps_identificados": [
-      "Mecanismo exato de dissipação de energia em campo magnético alternante para as AeroNPs não foi completamente elucidado",
-      "Impacto do revestimento TEA-oleato nas propriedades de relaxação magnética não foi completamente caracterizado",
-      "Ausência de estudos in vivo para validar aplicações teranósticas das NPs sintetizadas"
+      "Mecanismo exato de dissipação de energia em campos de alta frequência não completamente elucidado",
+      "Impacto do revestimento TEA-oleato sobre as propriedades magnéticas não completamente compreendido",
+      "Ausência de estudos in vivo para validar aplicações teranósticas",
+      "Falta de dados sobre o produto H×f em relação aos limites de segurança biológica"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo contribui para a física ao caracterizar as propriedades magnéticas (magnetização de saturação, histerese, espectroscopia Mössbauer) e a eficiência de aquecimento (SLP e ILP) de NPs ultrapequ enas em diferentes condições de campo magnético alternante.",
-    "integracao_engenharia": "O artigo apresenta uma nova técnica de síntese baseada em aerossol (usando nebulizadores concêntricos e gás argônio) que permite produção contínua, monodispersão controlada e manutenção de atmosfera protetora, representando avanço em engenharia de processos para produção de NPs.",
-    "integracao_biologia": "O artigo avalia a viabilidade celular (ensaio MTS), a internalização e localização intracelular das NPs por holotomografia em linhagens de células cancerígenas (U118) e normais (CHO-K1), demonstrando maior toxicidade seletiva para células cancerígenas.",
-    "integracao_materiais": "O artigo caracteriza estruturalmente as NPs de Fe3O4 por TEM, DRX com refinamento Rietveld, DLS e espectroscopia Mössbauer, correlacionando tamanho, distribuição de tamanhos, revestimento com TEA-oleato e formação de aglomerados com propriedades magnéticas e de relaxação em MRI.",
-    "mensagem_principal": "A novel técnica de síntese baseada em aerossol permite produzir NPs de Fe3O4 ultrapequenas (~5-6 nm) com distribuição de tamanho estreita e potencial teranóstico, combinando aplicações em hipertermia magnética e como agentes de contraste em MRI. Embora os valores de SLP e ILP sejam inferiores aos de NPs co-precipitadas convencionais, as NPs demonstraram maior toxicidade seletiva para células cancerígenas (U118) em relação às células normais (CHO-K1)."
+    "integracao_fisica": "O artigo contribui para a física ao caracterizar as propriedades magnéticas (magnetização de saturação, espectroscopia Mössbauer, SLP e ILP) de NPs ultrapequeñas superparamagnéticas obtidas por técnica aerosol inovadora, evidenciando o papel das interações coletivas entre partículas nos aglomerados.",
+    "integracao_engenharia": "O artigo apresenta uma nova técnica aerosol-based de síntese de NPs de Fe3O4 que permite produção contínua, controle de tamanho por variação de parâmetros do processo e manutenção de atmosfera protetora de gás inerte, sendo uma alternativa barata e eficiente às técnicas convencionais.",
+    "integracao_biologia": "O estudo demonstra que as NPs de Fe3O4 revestidas com TEA-oleato apresentam maior toxicidade para células cancerosas (U118 glioblastoma) do que para células normais (CHO-K1), sendo internalizadas por ambos os tipos celulares com acúmulo preferencial ao redor do núcleo celular.",
+    "integracao_materiais": "O trabalho demonstra que o revestimento com TEA-oleato estabiliza dispersões aquosas de NPs por meses sem sedimentação, e que a separação por centrifugação em frações top e bottom permite controlar a distribuição de tamanho e as propriedades magnéticas dos aglomerados.",
+    "mensagem_principal": "A técnica aerosol-based inovadora permite a síntese de NPs de Fe3O4 ultrapequeñas (~5-6 nm) com distribuição de tamanho estreita e potencial teranóstico, combinando aplicação como agente de contraste em MRI e em hipertermia magnética anticâncer, com maior toxicidade seletiva para células cancerosas do que para células normais."
   },
   "custom_id": "98__Fe3O4_Magnetic_Nanoparticles_Obtained_by_the_Novel_Aerosol-B"
 }

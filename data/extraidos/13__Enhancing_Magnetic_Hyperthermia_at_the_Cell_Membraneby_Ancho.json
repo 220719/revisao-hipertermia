@@ -6,17 +6,17 @@
   "doi": "10.1002/adhm.202503501",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A terapia de hipertermia magnética (MHT) é baseada no calor liberado por nanopartículas magnéticas (MNPs) em resposta a campos magnéticos alternados (AMFs), desencadeando a morte celular de forma precisa e local. O calor é produzido apenas onde as MNPs estão presentes e somente quando os AMFs são ativados.",
+    "conceito_tecnica": "A hipertermia magnética (MHT) é baseada no calor liberado por nanopartículas magnéticas (MNPs) em resposta a campos magnéticos alternados (AMFs), desencadeando morte celular de forma precisa e localizada, somente onde as MNPs estão presentes e quando os AMFs são ativados.",
     "etapas_processo": [
-      "Síntese de IONPs por método poliol assistido por micro-ondas",
-      "Revestimento das MNPs com DMSA",
+      "Síntese de IONPs pelo método poliol assistido por micro-ondas",
+      "Revestimento das MNPs com DMSA para estabilidade coloidal",
       "Funcionalização das DMSA-MNPs com o anticorpo monoclonal 92R",
       "Incubação das células MOLT-4 (CCR9+) com DMSA-MNPs@92R por 2 h (500 µgFe/mL)",
-      "Aplicação de AMF (528-530 kHz, 20 mT) por 1 h",
-      "Avaliação da morte celular 24 h após o tratamento por citometria de fluxo com Anexina V-PI"
+      "Aplicação do AMF (530 kHz, 20 mT) por 1 h",
+      "Avaliação da morte celular por citometria de fluxo Annexin V-PI 24 h após o tratamento"
     ],
-    "internalizacao_nps": "As MNPs DMSA revestidas não são internalizadas pelas células MOLT-4; elas permanecem ligadas à membrana celular. A funcionalização com o anticorpo 92R, que se liga ao receptor CCR9 de baixa internalização, mantém as MNPs ancoradas na membrana e previne a internalização, a agregação intracelular e a degradação lisossomal.",
-    "aplicacao_campo": "O AMF é aplicado a uma frequência de 528-530 kHz e intensidade de 20 mT por 1 hora usando um equipamento MagnetTherm (NanoTherics) com uma bobina eletromagnética.",
+    "internalizacao_nps": "As MNPs DMSA-revestidas não são internalizadas pelas células MOLT-4 (linha linfoide); elas permanecem ligadas à membrana celular, comportamento típico de linhagens de linfócitos. A funcionalização com o anticorpo 92R visa manter as MNPs ancoradas à membrana via interação 92R-CCR9, prevenindo internalização, agregação intracelular e degradação lisossomal.",
+    "aplicacao_campo": "O AMF foi aplicado a 530 kHz e 20 mT por 1 hora usando um equipamento MagnetTherm (NanoTherics) equipado com bobina eletromagnética e controle de temperatura por fibra óptica.",
     "janela_termica_min_C": 39.0,
     "janela_termica_max_C": 45.0,
     "vias_morte_celular": [
@@ -32,25 +32,25 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": true,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante, responsável por aproximadamente 80% do calor liberado por estas MNPs de 12 nm, o que representa uma vantagem pois não é bloqueado pela imobilização das partículas nas células.",
-    "descricao_mecanismo": "A relaxação de Néel resulta da inversão dos momentos magnéticos entre as duas direções do eixo de magnetização, enquanto a relaxação Browniana é devida à rotação física das MNPs. A relaxação Browniana é normalmente bloqueada em meios biológicos devido à maior viscosidade, interações com proteínas e imobilização intracelular, o que reduz dramaticamente a eficiência de aquecimento. Para estas MNPs, 80% do calor é gerado por relaxação de Néel, avaliado medindo o SAR em concentrações crescentes de glicerol para bloquear progressivamente a relaxação Browniana."
+    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante de dissipação de calor para as MNPs de 12 nm estudadas, respondendo por 80% do calor liberado.",
+    "descricao_mecanismo": "A relaxação de Néel resulta da inversão dos momentos magnéticos entre as duas direções do eixo de magnetização, enquanto a relaxação Browniana decorre da rotação física das MNPs. A relaxação Browniana é significativamente suprimida em meios biológicos devido à maior viscosidade e à imobilização das MNPs por interações com proteínas ou por internalização celular, reduzindo a anisotropia efetiva (Keff). Para as MNPs de 12 nm estudadas, 80% do calor liberado é atribuído à relaxação de Néel, o que confere vantagem terapêutica pois este mecanismo não é bloqueado pela imobilização celular."
   },
   "q3": {
-    "material": "magnetita/maguemita (IONPs)",
-    "composicao_quimica": "Fe3O4/γ-Fe2O3 (estrutura espinélio inversa)",
+    "material": "magnetita/maghemita (IONPs)",
+    "composicao_quimica": "Fe3O4/γ-Fe2O3 (estrutura espinélio inverso)",
     "dopagem": null,
     "tamanho_nm": 12.0,
     "faixa_tamanho_min_nm": null,
     "faixa_tamanho_max_nm": null,
-    "forma": "quase-esférica",
+    "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia efetiva (Keff) modificada pelo ambiente biológico",
-    "revestimento": "DMSA (ácido dimercaptossuccínico), posteriormente funcionalizado com anticorpo monoclonal 92R",
+    "anisotropia": "anisotropia efetiva (Keff) influenciada pelo ambiente biológico e interações dipolo-dipolo",
+    "revestimento": "DMSA (ácido dimercaptosuccínico), com posterior funcionalização com anticorpo monoclonal 92R (IgG2a de camundongo)",
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 84.5,
-    "relacao_estrutura_propriedade": "As MNPs de 12 nm quase-esféricas apresentam comportamento superparamagnético (MR e HC ≈ 0) e magnetização de saturação de 84,5 emu/gFe. O revestimento com DMSA proporciona estabilidade coloidal (-35 mV) e mantém 100% do SAR em água e 75% em DMEM+FBS, enquanto a funcionalização com anticorpo reduz ligeiramente o SAR (>75% mantido) devido ao maior escudo do núcleo e aumento do PDI."
+    "relacao_estrutura_propriedade": "As MNPs de 12 nm quasiesiféricas apresentam comportamento superparamagnético (MR e HC ≈ 0) e liberam calor predominantemente via relaxação de Néel (80%), tornando-as adequadas para MHT em ambientes biológicos onde a relaxação Browniana é suprimida. O revestimento com DMSA confere estabilidade coloidal em água e em DMEM+FBS, retendo 75-100% do SAR original."
   },
   "q4": {
     "amplitude_kA_m": null,
@@ -59,15 +59,15 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 60.0,
     "forma_onda": null,
-    "dosimetria_termica": "Fibra óptica para medição de temperatura durante os experimentos; SAR calculado pela inclinação linear da curva temperatura-tempo entre 10 e 40 s iniciais usando a equação SAR = Cv/mFe × ΔT/Δt",
-    "distribuicao_espacial_calor": "O calor é gerado localmente onde as MNPs estão presentes; foi proposto um efeito de ponto quente (hot-spot) local na membrana celular, confirmado por expressão aumentada de Hspa1b (HSP70 mRNA) desproporcional ao aumento macroscópico de temperatura",
+    "dosimetria_termica": "Medição da temperatura por fibra óptica; aumento de temperatura (ΔT/Δt) nos primeiros 10-40 s usado para calcular o SAR pela fórmula SAR = Cv/mFe × ΔT/Δt",
+    "distribuicao_espacial_calor": "O calor é gerado localmente onde as MNPs estão presentes; efeito de hot-spot local na membrana celular foi proposto, com temperatura superficial das MNPs podendo atingir 51°C enquanto a temperatura macroscópica permanece inalterada",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vitro",
-    "linhagem_celular": "MOLT-4 (CCR9+) e MOLT-4 CCR9 KO (CCR9-); também HEK293T-CCR9",
+    "linhagem_celular": "MOLT-4 (CCR9+) e MOLT-4 CCR9 KO (CCR9-); também HEK293T e HEK293T-CCR9",
     "modelo_animal": null,
-    "tipo_cancer": "leucemia de células T (linfoblasto T)",
+    "tipo_cancer": "leucemia de células T (linfoblástica)",
     "concentracao_mg_mL": 0.5,
     "agregacao_discutida": true,
     "viscosidade_discutida": true,
@@ -85,34 +85,33 @@
   "q6": {
     "limitacoes_reportadas": [
       "Ausência de análises em tempo real da ligação das nanopartículas à membrana celular",
-      "Heterogeneidade da população de MNPs, onde nem todas as partículas estão corretamente funcionalizadas com o anticorpo 92R",
-      "Estudo limitado ao contexto in vitro, sem validação in vivo",
-      "A funcionalização probabilística e não guiada resulta em diferentes populações de MNPs com diferentes orientações do anticorpo",
-      "Redução do SAR após funcionalização com anticorpo (>25% de redução)"
+      "A funcionalização é probabilística e não guiada, resultando em população heterogênea de MNPs com diferentes graus de funcionalização",
+      "Nem todas as MNPs estão corretamente funcionalizadas, com algumas tendo ambos os domínios variáveis bloqueados ou sem anticorpo",
+      "Estudo restrito a experimentos in vitro, sem validação in vivo",
+      "A ligação não específica de MNPs à membrana celular ocorre em paralelo à ligação específica via 92R-CCR9"
     ],
     "problemas_SAR_ILP": true,
-    "falta_padronizacao": true,
+    "falta_padronizacao": false,
     "recomendacoes_futuras": [
       "Otimizar a funcionalização e purificação das MNPs para obter uma população homogênea de 100% de partículas corretamente funcionalizadas",
-      "Explorar a funcionalização de MNPs com outros anticorpos específicos para receptores de baixa internalização em diferentes tumores",
-      "Desenvolver terapia antitumoral MHT combinada com imunoterapia baseada em 92R in vivo",
-      "Escalar a estratégia DMSA-MNPs@92R-CCR9 para outros tumores CCR9+",
-      "Usar termômetros moleculares para confirmar o efeito de ponto quente local nas MNPs"
+      "Explorar a funcionalização de MNPs com outros anticorpos específicos para receptores com baixa taxa de internalização em diferentes tumores",
+      "Desenvolver terapia MHT combinada com imunoterapia baseada em 92R in vivo",
+      "Aplicar a estratégia DMSA-MNPs@92R-CCR9 a outros tumores CCR9+ como melanoma, tumores vaginais e outros tumores não hematopoéticos",
+      "Usar termômetros moleculares para confirmar o efeito de hot-spot local na membrana celular"
     ],
     "gaps_identificados": [
-      "Falta de medição de temperatura em escala local/celular durante os experimentos in vitro",
-      "Ausência de dados de biodistribuição e estudos in vivo",
-      "Necessidade de purificação das MNPs funcionalizadas para separar subpopulações com diferentes graus de funcionalização",
-      "Mecanismos moleculares precisos da morte celular induzida pelo efeito hot-spot local ainda não completamente elucidados",
-      "Falta de avaliação do produto H×f em relação aos limites de segurança clínica"
+      "Falta de medição direta da temperatura em escala subcellular/local durante MHT in vitro",
+      "Ausência de estudos in vivo para validar a eficácia terapêutica e biodistribuição",
+      "Mecanismos exatos de morte celular mediados pelo efeito de hot-spot local ainda não completamente elucidados",
+      "Contribuição relativa da imunoterapia mediada por 92R versus MHT na morte celular não foi quantificada separadamente in vivo"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo demonstra que 80% do calor gerado pelas MNPs de 12 nm ocorre por relaxação de Néel, e que a interação específica anticorpo-receptor modula a organização espacial das nanopartículas na membrana celular, promovendo arranjos em cadeia em vez de agregados aleatórios, o que preserva a anisotropia efetiva e a eficiência de dissipação de energia.",
-    "integracao_engenharia": "O estudo desenvolve um processo de funcionalização de MNPs com DMSA e anticorpo monoclonal 92R via ativação EDC/NHS, otimizando parâmetros de síntese por método poliol assistido por micro-ondas para produção reprodutível, escalável e de alta qualidade de MNPs superparamagnéticas para aplicações biomédicas.",
-    "integracao_biologia": "O artigo demonstra que a ligação específica de DMSA-MNPs@92R ao receptor CCR9 de baixa internalização na superfície de células MOLT-4 resulta em morte celular superior a 70% após MHT, mediada por um efeito de ponto quente local subcélular evidenciado pela superexpressão de Hspa1b (HSP70), sem aumento proporcional na temperatura macroscópica.",
-    "integracao_materiais": "O revestimento com DMSA confere estabilidade coloidal (-35 mV, PDI=0.16) e mantém o SAR em meios biológicos por pelo menos 15 dias; a funcionalização subsequente com anticorpo preserva >75% da capacidade de geração de calor e reduz a citotoxicidade inerente dos grupos reativos do DMSA.",
-    "mensagem_principal": "A estratégia de ancorar MNPs funcionalizadas com o anticorpo 92R ao receptor CCR9 de baixa internalização na membrana celular de tumores CCR9+ representa uma abordagem inovadora para melhorar a eficiência da hipertermia magnética in vitro, resultando em 25% mais morte celular em comparação com MNPs não específicas, apesar de atingir uma temperatura macroscópica ~4°C menor, demonstrando que o controle espacial das interações MNP-célula e o efeito de calor local (hot-spot) subcélular são determinantes críticos para a eficácia terapêutica da MHT."
+    "integracao_fisica": "O estudo demonstra que 80% do calor gerado pelas MNPs de 12 nm ocorre via relaxação de Néel, e que a organização espacial das MNPs na membrana celular (disposição em cadeia vs. agregados aleatórios) influencia diretamente a eficiência de dissipação de energia.",
+    "integracao_engenharia": "O método de síntese por poliol assistido por micro-ondas produziu MNPs quasiesiféricas monodispersas de 12 nm com alto rendimento, reprodutibilidade e escalabilidade, e o protocolo de funcionalização com EDC/NHS permitiu a conjugação controlada do anticorpo 92R às DMSA-MNPs preservando mais de 75% do SAR.",
+    "integracao_biologia": "A estratégia de ancoragem de MNPs ao receptor CCR9 de baixa internalização em células MOLT-4 demonstrou que a interação específica MNP-célula mediada por anticorpo aumenta em 25% a morte celular por MHT em relação ao controle isotípico, com envolvimento de apoptose precoce e tardia e efeito de hot-spot local evidenciado pela expressão de Hspa1b (HSP70).",
+    "integracao_materiais": "O revestimento com DMSA conferiu estabilidade coloidal às MNPs em meio biológico por até 15 dias, retendo 75% do SAR em DMEM+FBS, e a funcionalização com anticorpo IgG2a via ativação de grupos carboxila do DMSA aumentou a biocompatibilidade ao bloquear grupos reativos de sulfidrila e carboxila.",
+    "mensagem_principal": "A funcionalização de MNPs de magnetita/maghemita com o anticorpo 92R para ancoragem específica ao receptor CCR9 de baixa internalização mantém as MNPs em estado menos agregado e à distância ótima da membrana celular, potencializando a MHT in vitro com aumento de 25% na morte de células tumorais CCR9+ (MOLT-4) por efeito de hot-spot local, sem necessidade de elevação macroscópica da temperatura."
   },
   "custom_id": "13__Enhancing_Magnetic_Hyperthermia_at_the_Cell_Membraneby_Ancho"
 }

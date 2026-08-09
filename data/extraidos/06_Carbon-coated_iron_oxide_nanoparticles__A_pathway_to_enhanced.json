@@ -6,17 +6,18 @@
   "doi": "10.1016/j.jmmm.2026.174094",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética é uma abordagem terapêutica na qual nanopartículas geram calor localizado sob um campo magnético alternante (AMF), permitindo o tratamento seletivo de tumores. A eficiência de aquecimento é governada pelo SAR, que depende de propriedades magnéticas intrínsecas como magnetização de saturação, anisotropia magnética, tamanho de partícula e estrutura superficial.",
+    "conceito_tecnica": "A hipertermia magnética é uma abordagem terapêutica na qual nanopartículas geram calor localizado sob um campo magnético alternante (AMF), possibilitando o tratamento seletivo de tumores. A eficiência de aquecimento é governada pelo SAR, que depende de propriedades magnéticas intrínsecas como magnetização de saturação, anisotropia magnética, tamanho de partícula e estrutura superficial.",
     "etapas_processo": [
-      "Síntese das nanopartículas de óxido de ferro (IONPs) por método solvotérmico",
-      "Revestimento com carbono via pirólise de frutose adsorvida na superfície das nanopartículas",
-      "Dispersão coloidal aquosa das nanopartículas",
-      "Exposição das nanopartículas ao campo magnético alternante (AMF) em frequência de radiofrequência",
-      "Geração de calor localizado por relaxação magnética (Néel e Browniana)",
-      "Monitoramento da temperatura com sensor de fibra óptica"
+      "Síntese das nanopartículas de óxido de ferro (IONPs) por método hidrotérmico",
+      "Revestimento com carbono utilizando frutose como precursor e PVP como estabilizante",
+      "Pirólise em forno tubular sob fluxo de argônio a 370°C por 2,5 h para converter frutose em camada de carbono amorfo",
+      "Dispersão das nanopartículas em suspensão coloidal aquosa",
+      "Exposição ao campo magnético alternante (AMF) a 260 kHz e amplitudes de 16 a 52 kA/m",
+      "Monitoramento da evolução de temperatura com sensor de fibra óptica",
+      "Cálculo do SAR a partir da inclinação inicial da curva temperatura vs. tempo"
     ],
-    "internalizacao_nps": "O artigo não descreve internalização celular das nanopartículas; as medições de hipertermia foram realizadas em suspensões coloidais aquosas.",
-    "aplicacao_campo": "O AMF é gerado por um circuito ressonante RLC (Hüttinger 2.5/300) equipado com uma bobina de seis voltas resfriada a água, com frequência de 260 kHz e amplitudes variando de 16 a 52 kA/m.",
+    "internalizacao_nps": null,
+    "aplicacao_campo": "O AMF é gerado por um circuito ressonante RLC (Hüttinger 2,5/300) com bobina de seis voltas resfriada a água de 2,5 cm de diâmetro, operando a 260 kHz com amplitudes variando de 16 a 52 kA/m.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": 50.0,
     "vias_morte_celular": []
@@ -28,25 +29,25 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": true,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O mecanismo dominante é a relaxação de Néel, com a contribuição determinada pelo menor tempo de relaxação, sendo que o revestimento de carbono modifica a distribuição dos tempos de relaxação de Néel aumentando a fração de partículas que dissipam energia dentro do período do AMF.",
-    "descricao_mecanismo": "Sob excitação de radiofrequência, a geração de calor surge de processos de relaxação magnética, primariamente mecanismos de Néel e Browniano, com a contribuição dominante determinada pelo menor tempo de relaxação. A relaxação Browniana depende explicitamente da viscosidade (η) do meio e do volume hidrodinâmico (VH), sendo τB ∝ ηVH. O revestimento de carbono modifica a distribuição dos tempos de relaxação de Néel, aumentando a fração de partículas que dissipam energia eficientemente dentro do período do AMF, além de interações dipolares coletivas em agregados compactos que também contribuem para a dinâmica de relaxação e eficiência de aquecimento."
+    "mecanismo_dominante": "O mecanismo dominante é a relaxação de Néel, cuja distribuição de tempos de relaxação é otimizada pelo revestimento de carbono, aumentando a fração de partículas que dissipam energia dentro do período do AMF.",
+    "descricao_mecanismo": "Sob excitação de radiofrequência, a geração de calor surge de processos de relaxação magnética, principalmente pelos mecanismos de Néel e Brownian, com a contribuição dominante determinada pelo menor tempo de relaxação. A relaxação Browniana depende explicitamente da viscosidade do meio e do volume hidrodinâmico. O revestimento de carbono modifica a distribuição de tempos de relaxação de Néel, aumentando a fração de partículas que contribuem para a dissipação de energia por ciclo, resultando em um aumento de aproximadamente 2× no SAR do sistema revestido em relação ao não revestido."
   },
   "q3": {
-    "material": "Fe3O4/γ-Fe2O3 revestido com carbono amorfo",
-    "composicao_quimica": "Fe3O4 (magnetita) e γ-Fe2O3 (maghemita) em mistura bifásica com revestimento de carbono amorfo (IONPs@C)",
+    "material": "Fe3O4/γ-Fe2O3 com revestimento de carbono amorfo",
+    "composicao_quimica": "Mistura de magnetita (Fe3O4) e maghemita (γ-Fe2O3) em estrutura espinélio cúbica, com camada de carbono amorfo",
     "dopagem": null,
     "tamanho_nm": 31.0,
-    "faixa_tamanho_min_nm": 5.0,
-    "faixa_tamanho_max_nm": 40.0,
+    "faixa_tamanho_min_nm": 15.0,
+    "faixa_tamanho_max_nm": 31.0,
     "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia efetiva modificada pelo revestimento de carbono, com aumento da barreira de energia anisotrópica efetiva (KeffV) devido ao revestimento e às interações dipolares",
-    "revestimento": "carbono amorfo (derivado de frutose por pirólise a 370°C)",
+    "anisotropia": "anisotropia efetiva de superfície e magneto-cristalina, modificada pelo revestimento de carbono que altera a configuração de spins superficiais e as interações de troca na fronteira do óxido",
+    "revestimento": "carbono amorfo (derivado de frutose por pirólise)",
     "material_autorregulavel": false,
     "SAR_W_g": 502.0,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 128.0,
-    "relacao_estrutura_propriedade": "O revestimento de carbono amorfo preserva a cristalinidade do núcleo espinélio, reduz a desordem de spin superficial e limita a oxidação da magnetita para maghemita, resultando em maior magnetização de saturação (128 vs 121 emu/gFe) e SAR mais que duplicado (502 vs 232 W/gFe). O crescimento do tamanho médio de 15 nm para 31 nm e a formação de agregados compactos promovem interações dipolares coletivas que amplificam a dissipação de energia magnética."
+    "relacao_estrutura_propriedade": "O revestimento de carbono amorfo preserva a cristalinidade do núcleo espinélio e estabiliza o balanço Fe2+/Fe3+, reduzindo a oxidação para maghemita e diminuindo a desordem de spins superficiais, o que resulta em aumento da magnetização de saturação (de 121 para 128 emu/gFe) e mais que dobra o SAR (de 232 para 502 W/gFe). O crescimento de tamanho e a formação de agregados compactos promovem interações dipolares mais fortes, aumentando a anisotropia efetiva e a coercividade."
   },
   "q4": {
     "amplitude_kA_m": 52.0,
@@ -55,8 +56,8 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": null,
     "forma_onda": null,
-    "dosimetria_termica": "Método calorimétrico: inclinação inicial da curva temperatura vs. tempo (dT/dt), com sensor de fibra óptica posicionado no centro da amostra, conectado a condicionador de sinal Neoptix (precisão ±0,1°C), usando SAR = ρC/[x] × (∂T/∂t)",
-    "distribuicao_espacial_calor": "Medições realizadas em 1 mL de suspensão aquosa em Dewar de vidro transparente; temperatura monitorada no centro da amostra por sensor de fibra óptica",
+    "dosimetria_termica": "Cálculo do SAR a partir da inclinação inicial da curva temperatura vs. tempo usando sensor de fibra óptica com precisão de ±0,1°C posicionado no centro da amostra em Dewar de vidro",
+    "distribuicao_espacial_calor": "Medições realizadas em 1 mL de suspensão aquosa em Dewar de vidro transparente, com sensor de temperatura posicionado no centro da amostra; temperatura máxima mantida abaixo de 50°C",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -64,7 +65,7 @@
     "linhagem_celular": null,
     "modelo_animal": null,
     "tipo_cancer": null,
-    "concentracao_mg_mL": 16.8,
+    "concentracao_mg_mL": 4.9,
     "agregacao_discutida": true,
     "viscosidade_discutida": true,
     "imobilizacao_celular": false,
@@ -80,37 +81,36 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "O revestimento de carbono não é uniforme em todas as partículas; partículas menores na amostra M2 não apresentaram camada de carbono detectável",
-      "A espessura do revestimento de carbono apresenta variação significativa (±5 nm)",
-      "O conjunto estatístico de partículas medidas por TEM para M1 é pequeno (15 partículas), aumentando a incerteza estatística",
-      "As medições de hipertermia foram realizadas apenas em suspensões coloidais aquosas, não em condições biologicamente relevantes (alta viscosidade, ambiente intracelular)",
-      "Não foram realizados estudos de biocompatibilidade ou avaliação de toxicidade",
-      "Não foram realizados experimentos in vivo de aquecimento"
+      "O revestimento de carbono não é uniforme, apresentando descontinuidades, rachaduras ou lacunas na superfície",
+      "O revestimento de carbono foi observado apenas nas partículas maiores da amostra M2, não em todas as partículas",
+      "A temperatura máxima foi mantida abaixo de 50°C para minimizar evaporação do solvente e desestabilização dos coloides, limitando a avaliação em temperaturas hipertérmicas mais elevadas",
+      "O conjunto menor de medições TEM para M1 (15 partículas) aumenta a incerteza estatística",
+      "Ausência de avaliações de biocompatibilidade e desempenho in vivo",
+      "Os departures do comportamento linear-response nos maiores campos aplicados limitam a validade estrita do modelo LRT"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Otimizar o processo de revestimento para obter maior uniformidade da camada de carbono",
+      "Otimizar o processo de revestimento para alcançar maior uniformidade da camada de carbono",
       "Explorar funcionalização com ligantes de direcionamento para melhorar resultados terapêuticos personalizados",
       "Realizar estudos aprofundados de biocompatibilidade",
-      "Avaliar desempenho em aplicações de diagnóstico e gerenciamento térmico",
-      "Investigar desempenho de aquecimento in vivo",
-      "Explorar aplicação como agentes de contraste para MRI e como ferrofluidos para transferência de calor"
+      "Realizar avaliações estendidas em aplicações diagnósticas e de gerenciamento térmico",
+      "Investigar desempenho de aquecimento in vivo"
     ],
     "gaps_identificados": [
-      "Ausência de avaliação de toxicidade e biocompatibilidade das nanopartículas revestidas com carbono",
-      "Ausência de estudos em condições biologicamente relevantes (meio viscoso, ambiente intracelular)",
-      "Ausência de experimentos in vivo para avaliar biodistribuição e eficácia terapêutica",
-      "Mecanismos microscópicos responsáveis pelo aumento da magnetização e SAR não completamente elucidados",
-      "Efeito do revestimento de carbono nas interações dipolar em condições de alta concentração ou tecido biológico não investigado"
+      "Ausência de estudos de citotoxicidade e biocompatibilidade das nanopartículas revestidas com carbono",
+      "Falta de avaliação do desempenho de hipertermia em condições biologicamente relevantes (meio viscoso, ambiente intracelular)",
+      "Necessidade de investigar a distribuição de tamanho do revestimento de carbono para otimizar uniformidade",
+      "Ausência de estudos de biodistribuição e eficácia terapêutica in vivo",
+      "Mecanismos magnéticos específicos da interface carbono-óxido não podem ser completamente estabelecidos apenas por espectroscopia vibracional"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo contribui para a física ao correlacionar teorias de relaxação magnética (Néel e Browniana), teoria de resposta linear (LRT) e interações dipolares coletivas com o comportamento experimental de SAR(H), demonstrando que o revestimento de carbono desloca a distribuição de tempos de relaxação de Néel para melhor correspondência com o período do AMF.",
-    "integracao_engenharia": "O artigo contribui para a engenharia ao demonstrar uma rota de síntese eco-friendly escalável (pirólise de frutose sob argônio) que mais que duplica o SAR das nanopartículas (de 232 para 502 W/gFe), fornecendo diretrizes para otimização de nanomateriais magnéticos para aplicações de hipertermia.",
-    "integracao_biologia": "O artigo abre caminho para aplicações biológicas ao discutir estabilidade coloidal, citotoxicidade potencial, e o papel do revestimento de carbono na prevenção de agregação e oxidação, embora estudos de biocompatibilidade e experimentos in vivo sejam indicados como trabalhos futuros necessários.",
-    "integracao_materiais": "O artigo contribui para a ciência dos materiais ao revelar como o revestimento de carbono amorfo modifica a estrutura cristalina espinélio, a distribuição de fases Fe3O4/γ-Fe2O3, a anisotropia efetiva e as propriedades magnéticas intrínsecas das nanopartículas núcleo-casca, demonstrando que a engenharia interfacial é determinante para o desempenho funcional.",
-    "mensagem_principal": "O revestimento de carbono amorfo em nanopartículas de óxido de ferro via síntese eco-friendly com frutose mais que duplica a taxa de absorção específica (SAR de 232 para 502 W/gFe) e aumenta a magnetização de saturação (de 121 para 128 emu/gFe), demonstrando que a engenharia interfacial carbono-óxido é uma estratégia eficaz para otimizar nanomateriais magnéticos para hipertermia no tratamento do câncer."
+    "integracao_fisica": "O artigo aplica teoria de resposta linear (LRT), relaxação de Néel e Brownian, e análise de SAXS para correlacionar a organização estrutural em suspensão coloidal com a distribuição de tempos de relaxação e a dissipação de energia magnética sob AMF.",
+    "integracao_engenharia": "O trabalho desenvolve um protocolo de síntese eco-friendly usando frutose como precursor de carbono e pirólise controlada, demonstrando que o design de interface núcleo-casca pode mais que dobrar o SAR sob condições de campo clinicamente relevantes.",
+    "integracao_biologia": "O artigo discute as implicações do revestimento de carbono para aplicações em hipertermia magnética para terapia do câncer, destacando a necessidade futura de avaliações de biocompatibilidade e estudos in vivo, além de mencionar potencial para drug delivery direcionado.",
+    "integracao_materiais": "A caracterização multitécnica (TEM, XRD, SAXS, FTIR, Raman, UV-Vis, VSM) revela como o revestimento de carbono amorfo preserva a cristalinidade do espinélio, estabiliza o balanço Fe2+/Fe3+, reduz desordem de spins superficiais e promove interações dipolares coletivas que potencializam as propriedades magnéticas.",
+    "mensagem_principal": "A síntese eco-friendly de nanopartículas de óxido de ferro revestidas com carbono amorfo (IONPs@C) produz materiais com SAR mais que dobrado (de 232 para 502 W/gFe) em relação às partículas não revestidas, demonstrando que o design interfacial núcleo-casca através do revestimento de carbono pode simultaneamente preservar a integridade cristalina, estabilizar a fase magnetita, reduzir a desordem de spins superficiais e promover interações dipolares coletivas favoráveis para aplicações em hipertermia magnética no tratamento do câncer."
   },
   "custom_id": "06_Carbon-coated_iron_oxide_nanoparticles__A_pathway_to_enhanced"
 }

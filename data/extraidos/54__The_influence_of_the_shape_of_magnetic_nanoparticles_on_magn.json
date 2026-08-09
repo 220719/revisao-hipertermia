@@ -6,20 +6,24 @@
   "doi": "10.1016/j.jallcom.2025.184692",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética é uma abordagem de tratamento de câncer na qual nanopartículas magnéticas são injetadas localmente no tumor e expostas a um campo magnético alternado (AC), convertendo energia eletromagnética em calor. O calor gerado eleva a temperatura local para a faixa de 42–46°C, induzindo efetivamente a morte das células tumorais.",
+    "conceito_tecnica": "A hipertermia magnética utiliza nanopartículas superparamagnéticas como agentes de aquecimento que, quando expostas a um campo magnético alternado em radiofrequência, convertem energia eletromagnética em calor. O calor gerado eleva a temperatura local para 42–46°C, induzindo efetivamente a morte de células tumorais.",
     "etapas_processo": [
-      "Síntese das nanopartículas magnéticas de Fe3O4 via rota solvotermal",
-      "Revestimento das partículas com TMAOH para transferência para fase aquosa",
-      "Injeção local das nanopartículas no sítio tumoral",
-      "Exposição ao campo magnético alternado em frequência de 100–300 kHz",
-      "Geração de calor por relaxação de Néel e Browniana",
-      "Elevação da temperatura local para 42–46°C induzindo morte celular"
+      "Síntese das nanopartículas magnéticas via rota solvotermal",
+      "Revestimento e transferência de fase das NPs para meio aquoso",
+      "Injeção local das NPs no sítio tumoral",
+      "Exposição ao campo magnético alternado (AC) em radiofrequência (100–300 kHz)",
+      "Conversão de energia eletromagnética em calor pelas NPs",
+      "Elevação da temperatura local para a faixa hipertérmica (42–46°C)",
+      "Indução de morte celular tumoral"
     ],
-    "internalizacao_nps": "As nanopartículas são internalizadas pelas células de glioblastoma (G55TL) por endocitose, com eficiência dependente da forma: nanoesferas apresentam maior internalização, seguidas de nanohexágonos e nanocuboides, sendo que a geometria esférica requer menor energia de dobramento de membrana durante a endocitose.",
-    "aplicacao_campo": "O campo magnético alternado é aplicado por uma bobina geradora de campo AC capaz de produzir campos de até 27,8 kA/m em frequências de até 313 kHz, com o sistema DM100 Series de hipertermia magnética.",
+    "internalizacao_nps": "As NPs são internalizadas por células de glioblastoma (G55TL) via endocitose, com eficiência dependente da forma: nanoesferas são internalizadas mais eficientemente, seguidas por nanohexágonos e nanocuboides, sendo a geometria esférica a que requer menor energia de dobramento da membrana durante a endocitose.",
+    "aplicacao_campo": "O campo magnético alternado é aplicado por uma bobina geradora de campo AC capaz de produzir campos de até 27,8 kA/m em frequências de até 313 kHz, com a amostra posicionada dentro da bobina e a temperatura monitorada por sensor de fibra óptica.",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 46.0,
-    "vias_morte_celular": []
+    "vias_morte_celular": [
+      "apoptose",
+      "necrose"
+    ]
   },
   "q2": {
     "relaxacao_neel": true,
@@ -28,8 +32,8 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": "senoidal",
-    "mecanismo_dominante": "O mecanismo dominante é a relaxação de Néel–Brown (relaxação mediada por Néel e Browniana) para as nanoesferas superparamagnéticas, enquanto nanocuboides ferromagnéticos dependem de perdas por histerese.",
-    "descricao_mecanismo": "Para nanoesferas superparamagnéticas, a ausência de coercividade permite relaxação eficiente de Néel e Browniana, resultando em grande dissipação de energia sob campo magnético AC. O ILP das nanoesferas diminui com o aumento da frequência, consistente com mecanismo dominado por relaxação, onde contribuições Brownianas diminuem em frequências mais altas e a relaxação de Néel torna-se o caminho dominante. Para nanocuboides ferromagnéticos, a grande coercividade impede a reversão completa da magnetização em campos de até 30 mT, suprimindo as perdas por histerese e resultando em aquecimento mínimo."
+    "mecanismo_dominante": "O mecanismo dominante é a relaxação de Néel–Brown (relaxação mediada por Néel e Browniana), com perdas por histerese relevantes para nanocuboides ferromagnéticos.",
+    "descricao_mecanismo": "Para nanoesferas superparamagnéticas, a ausência de coercividade permite relaxação eficiente de Néel e Browniana, resultando em grande dissipação de energia sob campo AC. O ILP das nanoesferas diminui com o aumento da frequência, indicando que as contribuições Brownianas diminuem em frequências mais altas enquanto a relaxação de Néel torna-se o caminho dominante. Para nanocuboides ferromagnéticos, a grande coercividade impede a reversão completa da magnetização em campos baixos, suprimindo as perdas por histerese e resultando em aquecimento mínimo abaixo de 30 mT."
   },
   "q3": {
     "material": "Fe3O4 (magnetita)",
@@ -37,31 +41,31 @@
     "dopagem": null,
     "tamanho_nm": 12.6,
     "faixa_tamanho_min_nm": 9.0,
-    "faixa_tamanho_max_nm": 25.0,
-    "forma": "esférica, hexagonal e cuboidal (nanocuboides)",
+    "faixa_tamanho_max_nm": 24.0,
+    "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia de forma (shape anisotropy), sendo maior para nanohexágonos e nanocuboides em comparação com nanoesferas",
+    "anisotropia": "anisotropia de forma (shape anisotropy), com variação entre nanoesferas isotrópicas, nanohexágonos e nanocuboides anisotrópicos",
     "revestimento": "TMAOH (hidróxido de tetrametilamônio pentahidratado)",
     "material_autorregulavel": false,
     "SAR_W_g": 1068.74,
     "ILP_nHm2_kg": 5.99,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "A forma isótropa das nanoesferas reduz a anisotropia magnética e potencializa a relaxação de Néel, permitindo rápida dissipação de energia sob campo AC e alta eficiência de aquecimento. Em contraste, nanocuboides com maior anisotropia de forma e comportamento ferromagnético apresentam grande coercividade, impedindo a reversão completa da magnetização em campos baixos e resultando em aquecimento limitado e menor internalização celular."
+    "relacao_estrutura_propriedade": "A forma das nanopartículas determina a anisotropia magnética efetiva: nanoesferas com geometria isotrópica apresentam menor anisotropia e melhor relaxação de Néel, resultando no maior SAR; nanohexágonos e nanocuboides com maior anisotropia de forma apresentam dinâmica de relaxação mais lenta e menor eficiência de aquecimento, enquanto nanocuboides ferromagnéticos com grande coercividade requerem campos mais elevados para gerar calor mensurável."
   },
   "q4": {
     "amplitude_kA_m": 23.87,
     "frequencia_kHz": 313.0,
-    "produto_Hf": 7474310000.0,
+    "produto_Hf": 7500000000.0,
     "dentro_limite_seguranca": false,
     "tempo_tratamento_min": null,
     "forma_onda": "senoidal",
-    "dosimetria_termica": "Método Box–Lucas para cálculo do SAR a partir das curvas de temperatura em função do tempo, monitoradas por sensor de temperatura de fibra óptica imerso na solução",
-    "distribuicao_espacial_calor": "Calorimetria com isolamento a vácuo para análise de suspensões coloidais de partículas magnéticas; temperatura monitorada por sensor de fibra óptica posicionado ajustavelmente no suporte da amostra",
+    "dosimetria_termica": "Método Box–Lucas para cálculo do SAR a partir das curvas de temperatura em função do tempo, com sensor de temperatura de fibra óptica imerso na solução",
+    "distribuicao_espacial_calor": "Aquecimento localizado na suspensão coloidal contida no tubo posicionado dentro da bobina de campo AC; nanoesferas atingiram acima de 50°C em 20 s, nanohexágonos atingiram ~45°C após 200 s, e nanocuboides atingiram ligeiramente acima de 35°C à frequência máxima",
     "padronizacao_reportada": true
   },
   "q5": {
     "tipo_estudo": "in vitro",
-    "linhagem_celular": "G55TL (linhagem humana de glioblastoma)",
+    "linhagem_celular": "G55TL (glioblastoma humano)",
     "modelo_animal": null,
     "tipo_cancer": "glioblastoma",
     "concentracao_mg_mL": 5.0,
@@ -80,33 +84,34 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Os parâmetros de campo aplicados (10–30 mT, 98–313 kHz) excedem o limiar clínico de tolerância convencional (critério de Brezovich: ~5×10⁸ A·m⁻¹·s⁻¹), sendo condições laboratoriais não clinicamente aplicáveis diretamente",
-      "Os efeitos de tamanho e forma não puderam ser completamente separados devido ao acoplamento entre os parâmetros de síntese (nanocuboides resultaram em ~24 nm vs ~12 nm para as outras formas)",
-      "O estudo é limitado ao aquecimento mediado por relaxação na faixa de kHz, não explorando outros mecanismos como FMR",
+      "Os efeitos do tamanho e da forma não podem ser completamente separados devido ao acoplamento dos parâmetros de síntese",
+      "Os produtos H×f aplicados excedem o limiar clínico de tolerância convencional (critério de Brezovich de ~5×10⁸ A·m⁻¹·s⁻¹)",
+      "O estudo foca apenas no mecanismo de aquecimento por relaxação em frequências kHz, sem explorar outros mecanismos como FMR",
       "Nanocuboides apresentaram distribuição de tamanho mais ampla e menor reprodutibilidade em comparação com nanoesferas e nanohexágonos",
-      "Não foi avaliada a toxicidade celular das nanopartículas"
+      "Não foram investigados os mecanismos celulares específicos de endocitose responsáveis pelas diferenças de internalização entre as formas"
     ],
     "problemas_SAR_ILP": true,
-    "falta_padronizacao": true,
+    "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Estudos futuros focando no controle independente de tamanho e forma para esclarecer contribuições individuais de cada parâmetro",
-      "Investigações mecanísticas mais profundas sobre como a geometria das partículas governa rotas específicas de internalização celular por células cancerosas",
-      "Para tradução clínica, estratégias como aumento da concentração local de partículas, ajuste da anisotropia magnética, ou uso de configurações de campo pulsado ou espacialmente localizado para operar dentro de limites seguros",
-      "Normalização pelo conteúdo de ferro para medidas mais intrínsecas de eficiência de aquecimento"
+      "Realizar estudos futuros com controle independente de tamanho e forma para clarificar suas contribuições individuais",
+      "Investigar mecanismos endocíticos específicos que governam a internalização celular de partículas com diferentes geometrias",
+      "Desenvolver estratégias para atingir SAR similar dentro de limites operacionais seguros para tradução clínica, como aumento da concentração local ou otimização da anisotropia magnética",
+      "Explorar configurações de campo pulsado ou espacialmente localizado para limitar a exposição sistêmica",
+      "Investigar o aquecimento mediado por ressonância ferromagnética (FMR) como mecanismo alternativo"
     ],
     "gaps_identificados": [
-      "Poucos estudos comparam diretamente propriedades magnéticas e captação celular de nanopartículas com composição química idêntica mas formas diferentes",
-      "Quase nenhuma pesquisa sobre o papel da forma no direcionamento, ligação e captação de nanopartículas por células cancerosas",
-      "Análises comparativas envolvendo nanocuboides (cuboides retangulares com comprimentos de aresta desiguais) são limitadas na literatura, especialmente no contexto de hipertermia magnética e internalização por células cancerosas",
-      "Mecanismos específicos de endocitose dependentes da forma para nanopartículas magnéticas permanecem pouco investigados"
+      "Falta de estudos comparativos diretos de propriedades magnéticas e internalização celular de NPs magnéticas com composição idêntica mas diferentes formas",
+      "Escassez de pesquisas sobre nanocuboides especificamente no contexto de hipertermia magnética e internalização por células cancerígenas",
+      "Papel da forma no direcionamento, ligação e captação de nanopartículas por células cancerígenas pouco investigado",
+      "Mecanismos pelos quais a geometria das NPs governa rotas específicas de captação celular em células cancerígenas não elucidados"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo demonstra fisicamente como a anisotropia de forma determina o mecanismo de aquecimento dominante (relaxação de Néel-Brown vs. perdas por histerese) e a dependência do ILP com a frequência para diferentes morfologias de nanopartículas magnéticas.",
-    "integracao_engenharia": "O trabalho desenvolve e otimiza uma rota solvotermal escalável usando aldeídos como agentes direcionadores de forma para produzir nanopartículas de Fe3O4 com morfologias controladas (nanoesferas, nanohexágonos, nanocuboides) e avalia seu desempenho em sistema de hipertermia magnética DM100.",
-    "integracao_biologia": "O estudo avalia quantitativamente a internalização celular dependente da forma de nanopartículas de Fe3O4 em linhagem de glioblastoma humano (G55TL), demonstrando que nanoesferas são internalizadas mais eficientemente devido à menor energia de dobramento de membrana durante endocitose.",
-    "integracao_materiais": "O artigo demonstra como a morfologia das nanopartículas de Fe3O4 (sintetizadas com composição idêntica) influencia diretamente suas propriedades estruturais, cristalográficas e magnéticas, incluindo comportamento superparamagnético vs. ferromagnético, magnetização de saturação e temperatura de bloqueio.",
-    "mensagem_principal": "A forma das nanopartículas de Fe3O4 é um parâmetro de design crítico que afeta simultaneamente o estado magnético, a eficiência de aquecimento em hipertermia magnética e a internalização celular em glioblastoma; nanoesferas (SAR de 1068,74 W/g e ILP de 5,99 nHm²/kg a 313 kHz e 30 mT) superam nanohexágonos e nanocuboides em ambos os critérios, tornando-as candidatas particularmente promissoras para aplicações translacionais de hipertermia magnética."
+    "integracao_fisica": "O artigo demonstra que a forma das nanopartículas determina o mecanismo de dissipação de energia magnética, com nanoesferas exibindo ILP dependente de frequência consistente com relaxação de Néel–Brown, enquanto formas anisotrópicas apresentam ILP mais estável devido à maior anisotropia de forma.",
+    "integracao_engenharia": "O estudo desenvolveu uma rota solvotermal otimizada usando aldeídos como agentes direcionadores de forma para produzir Fe3O4 em escala de gramas com morfologias controláveis, e utilizou o sistema DM100 com calorimetria isolada a vácuo para caracterização precisa do desempenho de aquecimento.",
+    "integracao_biologia": "Experimentos de internalização celular em linhagem de glioblastoma humano (G55TL) demonstraram dependência clara da forma na captação das NPs, com nanoesferas sendo internalizadas mais eficientemente via endocitose por requererem menor energia de dobramento da membrana.",
+    "integracao_materiais": "O artigo caracterizou sistematicamente a relação entre morfologia (nanoesferas, nanohexágonos, nanocuboides), estrutura cristalina, composição de fase e propriedades magnéticas resultantes, mostrando que a forma anisotrófica aumenta a anisotropia efetiva e altera o comportamento magnético de superparamagnético para ferromagnético.",
+    "mensagem_principal": "A forma das nanopartículas de Fe3O4 é um parâmetro de design crítico que afeta simultaneamente o estado magnético, a eficiência de aquecimento em hipertermia magnética e a internalização celular; nanoesferas demonstraram desempenho superior em todos esses aspectos, sendo as candidatas mais promissoras para aplicações translacionais de hipertermia magnética no tratamento de glioblastoma."
   },
   "custom_id": "54__The_influence_of_the_shape_of_magnetic_nanoparticles_on_magn"
 }

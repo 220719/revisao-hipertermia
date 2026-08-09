@@ -6,16 +6,16 @@
   "doi": "10.3390/ijms25010493",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética é uma técnica alternativa que visa destruir tumores através do calor gerado por nanopartículas magnéticas sob a ação de um campo magnético alternado. O tratamento por hipertermia magnética enfraquece as células tumorais, necessitando de um segundo tratamento para destruí-las completamente.",
+    "conceito_tecnica": "A hipertermia magnética é uma técnica alternativa que visa destruir tumores por meio de calor gerado por nanopartículas magnéticas sob a ação de um campo magnético alternado. No entanto, o tratamento por hipertermia magnética apenas enfraquece as células tumorais, necessitando de um segundo tratamento para destruí-las completamente.",
     "etapas_processo": [
-      "Síntese de nanopartículas de magnetita por co-precipitação",
-      "Revestimento das NPs magnéticas com matriz polimérica (PLDLA-co-TMC e PEO-PPO-PEO) pelo método de deslocamento de solvente (SDM)",
-      "Dispersão das nanopartículas híbridas em meio líquido (ferrofluido)",
-      "Aplicação de campo magnético alternado (AMF) para induzir aquecimento",
-      "Monitoramento da temperatura com termômetro de fibra óptica"
+      "Síntese de nanopartículas magnéticas de magnetita por co-precipitação",
+      "Encapsulamento das NPs magnéticas com matriz polimérica (PLDLA-co-TMC e PEO-PPO-PEO) pelo método de deslocamento de solvente (SDM)",
+      "Dispersão das nanopartículas híbridas no meio de interesse",
+      "Aplicação de campo magnético alternado (AC) para indução de calor",
+      "Avaliação da capacidade de aquecimento e biocompatibilidade"
     ],
-    "internalizacao_nps": "As nanopartículas podem ser internalizadas por endocitose nas células, possivelmente aumentada pelo movimento das nanopartículas revestidas induzido pelo campo magnético aplicado, favorecendo o contato com a membrana plasmática.",
-    "aplicacao_campo": "O campo magnético alternado (AMF) é aplicado por uma bobina de indução de RF (Nova Star 5 kW, três voltas) com frequência de 216 kHz e amplitude de 105 Oe, com as amostras posicionadas no centro da bobina.",
+    "internalizacao_nps": "O campo magnético aplicado favorece o movimento das nanopartículas revestidas, promovendo contato com a membrana plasmática das células e consequente aumento da taxa de endocitose",
+    "aplicacao_campo": "O campo magnético alternado é aplicado por meio de uma bobina de indução de três voltas (Nova Star 5 kW RF), com frequência de 216 kHz e amplitude de 105 Oe, posicionando os tubos de ensaio no centro da bobina.",
     "janela_termica_min_C": 41.0,
     "janela_termica_max_C": null,
     "vias_morte_celular": [
@@ -30,8 +30,8 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "Em meios de baixa viscosidade (como água), ambos os mecanismos de relaxação de Néel e Browniano contribuem para o aquecimento, enquanto em meios de alta viscosidade (como cera de silicone) o mecanismo de Browniano é bloqueado e apenas a relaxação de Néel opera.",
-    "descricao_mecanismo": "Sob um campo magnético alternado, uma nanopartícula magnética rotaciona para alinhar seu momento dipolar magnético à direção do campo; o atrito da partícula com o solvente gera calor pela relaxação Browniana, enquanto a relaxação de Néel ocorre independentemente da rotação física da partícula. O tempo de relaxação efetivo é dado pelo inverso da soma dos inversos dos tempos de relaxação de Néel e Browniano. Em meios altamente viscosos, o componente Browniano é diminuído ou virtualmente bloqueado, e apenas a relaxação de Néel ocorre, resultando em menor geração de calor."
+    "mecanismo_dominante": "Em meios de alta viscosidade, o componente Browniano é diminuído ou virtualmente bloqueado e apenas a relaxação de Néel ocorre, sendo o mecanismo dominante nessas condições.",
+    "descricao_mecanismo": "Sob um campo magnético AC, a NP rotaciona para alinhar seu momento dipolar magnético com a direção do campo; o atrito da partícula com o solvente produz calor por relaxação Browniana. A relaxação de Néel, independente da rotação física da partícula, compete com a relaxação Browniana, ambas contribuindo para o aquecimento total. O tempo de relaxação Browniana aumenta com o raio hidrodinâmico da nanopartícula e com a viscosidade do solvente, de modo que em meios muito viscosos τeff tende a τN e apenas a relaxação de Néel opera."
   },
   "q3": {
     "material": "Fe3O4 (magnetita)",
@@ -40,15 +40,15 @@
     "tamanho_nm": 3.2,
     "faixa_tamanho_min_nm": 3.2,
     "faixa_tamanho_max_nm": 9.6,
-    "forma": "esférica",
+    "forma": "esférica/cuboidal",
     "arquitetura_multicore": false,
     "anisotropia": null,
-    "revestimento": "PLDLA-co-TMC e PEO-PPO-PEO (poloxamer 188, Kolliphor P188)",
+    "revestimento": "PLDLA-co-TMC e PEO-PPO-PEO (poloxamer 188)",
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "Nanopartículas menores (3,2 nm) foram obtidas sob condições otimizadas de síntese (baixa temperatura e alta velocidade de agitação), e o revestimento polimérico aumentou o diâmetro hidrodinâmico para ~193 nm, influenciando a relaxação Browniana e, portanto, a eficiência de aquecimento em diferentes meios viscosos."
+    "relacao_estrutura_propriedade": "O tamanho das nanopartículas é fortemente influenciado pela temperatura de síntese e pelo tempo de adição do hidróxido de amônio; partículas menores favorecem diâmetros hidrodinâmicos abaixo de 200 nm no compósito final, evitando sequestro esplênico. O revestimento polimérico aumenta o diâmetro hidrodinâmico e a viscosidade efetiva, o que reduz a contribuição da relaxação Browniana para o aquecimento."
   },
   "q4": {
     "amplitude_kA_m": 8.35,
@@ -57,8 +57,8 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 30.0,
     "forma_onda": null,
-    "dosimetria_termica": "Termômetro de fibra óptica com medições a cada 5 minutos ao longo de 60 minutos",
-    "distribuicao_espacial_calor": "A taxa de aumento de temperatura foi fortemente dependente da concentração; meios com maior viscosidade apresentaram menor geração de calor devido ao bloqueio da relaxação Browniana",
+    "dosimetria_termica": "Termômetro de fibra óptica, medições a cada 5 min ao longo de 60 min",
+    "distribuicao_espacial_calor": "A taxa de aumento de temperatura foi fortemente dependente da concentração; meios com viscosidade intermediária (meio de cultura celular) apresentaram aquecimento intermediário entre água e cera de silicone",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -82,32 +82,31 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "A hipertermia magnética apenas enfraquece as células tumorais, necessitando de um segundo tratamento para destruí-las completamente",
-      "A capacidade de geração de calor é significativamente reduzida em meios altamente viscosos (como tecidos biológicos) devido ao bloqueio da relaxação Browniana",
-      "Citotoxicidade observada nas concentrações de 2,5 e 5 mg/mL quando submetidas ao campo magnético alternado",
-      "Após 48 h, observou-se redução da viabilidade celular possivelmente devido à sedimentação das partículas maiores",
-      "O ensaio de hemólise foi realizado apenas por 6 h sem campo e 30 min com campo, sendo necessários experimentos futuros para avaliar morfologia e função dos eritrócitos"
+      "A hipertermia magnética apenas enfraquece as células tumorais, requerendo um segundo tratamento para destruição completa",
+      "A sedimentação de partículas em concentrações mais elevadas (2,5 mg/mL) após 48 h pode levar à morte celular não relacionada ao tratamento",
+      "A capacidade de geração de calor das nanopartículas é significativamente reduzida em meios de alta viscosidade (como silicone) devido ao bloqueio da relaxação Browniana",
+      "Experimentos futuros são necessários para demonstrar a interação das nanopartículas com eritrócitos em relação a possíveis alterações morfológicas e funcionais dessas células"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Experimentos futuros para demonstrar a interação das nanopartículas com eritrócitos em relação a possíveis alterações na morfologia e função dessas células",
-      "Estudos de liberação de fármaco a partir do sistema nanocompósito híbrido",
-      "Investigação do sistema para aplicações combinadas de hipertermia e liberação de fármaco in situ"
+      "Realizar experimentos futuros para demonstrar a interação das nanopartículas com eritrócitos em relação a possíveis alterações na morfologia e função dessas células",
+      "Realizar estudos de liberação de fármaco a partir do sistema nanocompósito híbrido",
+      "Investigar o sistema in vivo para avaliar biodistribuição e eficácia terapêutica"
     ],
     "gaps_identificados": [
-      "Nenhum estudo de hemólise sob campo magnético alternado havia sido conduzido anteriormente com este tipo de sistema",
-      "Ausência de dados de SAR/ILP para quantificação da eficiência de aquecimento",
-      "Ausência de estudos in vivo para validar os resultados in vitro",
-      "Falta de avaliação de biodistribuição e toxicidade sistêmica"
+      "Nenhum estudo prévio havia realizado teste de hemólise sob ação de campo magnético alternado",
+      "Ausência de dados de SAR/ILP reportados quantitativamente",
+      "Falta de avaliação in vivo da eficácia do tratamento por hipertermia com o sistema híbrido desenvolvido",
+      "Não foram avaliados os efeitos das nanopartículas sobre a morfologia e função dos eritrócitos"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo demonstra como os mecanismos de relaxação de Néel e Browniano competem e contribuem para o aquecimento magnético em função da viscosidade do meio, validando experimentalmente equações de relaxação efetiva.",
-    "integracao_engenharia": "O uso de planejamento fatorial 2³ para otimizar as condições de síntese das nanopartículas de magnetita demonstra a aplicação de ferramentas de engenharia de processos para controle de tamanho de partícula.",
-    "integracao_biologia": "Os ensaios de citotoxicidade em células HUVEC e de hemocompatibilidade em eritrócitos, com e sem campo magnético alternado, fornecem dados biológicos essenciais para a segurança do sistema antes de aplicações clínicas.",
-    "integracao_materiais": "O desenvolvimento de nanopartículas híbridas com núcleo de magnetita e casca de polímeros biocompatíveis (PLDLA-co-TMC e PEO-PPO-PEO) demonstra a síntese e caracterização de um nanomaterial multifuncional para aplicações biomédicas.",
-    "mensagem_principal": "As nanopartículas híbridas mag1@poly desenvolvidas neste trabalho, compostas por núcleo de magnetita revestido com PLDLA-co-TMC e PEO-PPO-PEO, são capazes de aumentar a temperatura em mais de 5°C em menos de 5 minutos e demonstraram biocompatibilidade e hemocompatibilidade em concentrações de até 1 mg/mL sob campo magnético alternado, sendo promissoras para tratamento de câncer por hipertermia e liberação de fármacos in situ."
+    "integracao_fisica": "O artigo demonstra experimentalmente a competição entre os mecanismos de relaxação de Néel e Browniana em meios de diferentes viscosidades, quantificando o impacto da viscosidade na eficiência de aquecimento das nanopartículas magnéticas.",
+    "integracao_engenharia": "O trabalho empregou um planejamento fatorial 2³ para otimizar as condições de síntese das nanopartículas de magnetita, obtendo o menor tamanho médio de partícula (3,2 nm) e garantindo diâmetros hidrodinâmicos adequados para aplicação biomédica.",
+    "integracao_biologia": "Foram realizados ensaios de citotoxicidade (MTT em células HUVEC) e hemocompatibilidade (hemólise em eritrócitos de ovino) com e sem campo magnético alternado, demonstrando a biocompatibilidade do sistema em concentrações de até 1,0 mg/mL.",
+    "integracao_materiais": "Nanopartículas de magnetita foram revestidas com uma matriz polimérica biocompatível e biorreabsorvível (PLDLA-co-TMC e PEO-PPO-PEO) pelo método de deslocamento de solvente, conferindo ao sistema capacidade de liberação de fármaco e proteção contra aglomeração.",
+    "mensagem_principal": "As nanopartículas híbridas mag1@poly, compostas por núcleos de magnetita revestidos com PLDLA-co-TMC e PEO-PPO-PEO, demonstraram capacidade de elevar a temperatura em mais de 5 °C em menos de 5 min a concentrações a partir de 0,5 mg/mL, sem apresentar citotoxicidade ou hemólise significativa, evidenciando seu potencial como sistema multifuncional para tratamento de câncer por hipertermia e liberação local de fármacos."
   },
   "custom_id": "94__Heating_Capacity_and_Biocompatibility_of_Hybrid_Nanoparticle"
 }

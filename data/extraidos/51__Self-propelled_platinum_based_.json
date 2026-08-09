@@ -6,18 +6,18 @@
   "doi": "10.1038/s41598-026-41746-2",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "O artigo não trata de hipertermia magnética como técnica principal; aborda nanomotores Janus autocatalíticos (Pt/Fe3O4) para entrega de fármacos e theranostics. A hipertermia é mencionada apenas como condição experimental de 43 °C para avaliar liberação de DOX e atividade peroxidase-like.",
+    "conceito_tecnica": "O artigo não trata de hipertermia magnética como técnica principal; o sistema utiliza nanomotores Janus de Pt/Fe3O4 para entrega quimioterápica de DOX com propulsão catalítica por H2O2. A temperatura de 43°C é mencionada apenas como condição simulada de hipertermia para avaliar liberação de droga e atividade peroxidase.",
     "etapas_processo": [
-      "Síntese de nanopartículas de magnetita (Fe3O4) por coprecipitação",
-      "Funcionalização com APTES para obter AMNP",
+      "Síntese de nanopartículas de magnetita por co-precipitação",
+      "Modificação superficial com APTES para funcionalização com aminas",
       "Síntese do copolímero PHEMA-g-PCL com conjugação de ácido fólico e acrilação",
-      "Ancoragem do polímero Ac/FA-PHEMA-g-PCL nas AMNP por reação de Michael",
+      "Ancoragem do Ac/FA-PHEMA-g-PCL nas nanopartículas via reação de Michael",
       "Preparação dos nanomotores Janus por emulsão de Pickering com parafina",
-      "Redução de sal de Pt em um hemisfério das nanopartículas",
+      "Redução de sal de platina em metade da superfície para deposição de Pt(0)",
       "Carregamento de DOX nos nanomotores Janus"
     ],
-    "internalizacao_nps": "Os nanomotores são internalizados por endocitose mediada por receptor de folato: o ligante ácido fólico se liga ao receptor de folato superexpresso em células tumorais (C6), promovendo invaginação da membrana plasmática e internalização dos nanomotores.",
-    "aplicacao_campo": "O campo magnético externo é mencionado apenas para separação magnética das nanopartículas durante a síntese e para guiamento magnético das NPs in vivo; não é aplicado como campo magnético alternado para hipertermia.",
+    "internalizacao_nps": "Os nanomotores são internalizados por endocitose mediada por receptor de folato: o ligante ácido fólico se liga ao receptor de folato superexpresso em células cancerosas (C6), provocando invaginação da membrana plasmática e endocitose.",
+    "aplicacao_campo": "Um campo magnético externo é utilizado para separação magnética e potencial guia dos nanomotores, dado o núcleo de Fe3O4 superparamagnético; não é descrita aplicação de campo alternado para geração de calor.",
     "janela_termica_min_C": 43.0,
     "janela_termica_max_C": 43.0,
     "vias_morte_celular": [
@@ -31,25 +31,25 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O mecanismo principal não é de aquecimento magnético, mas sim propulsão catalítica por decomposição de H2O2 em O2 e H2O pela platina presente na superfície dos nanomotores Janus, gerando bolhas de oxigênio que impulsionam o movimento.",
-    "descricao_mecanismo": "Os nanomotores Janus Pt/Fe3O4 utilizam a platina como catalisador para decompor H2O2 em água e oxigênio (reação redox). As bolhas de oxigênio geradas escapam da superfície do motor, fornecendo a força de propulsão necessária para o movimento autônomo (bubble propulsion). Este mecanismo é dependente da concentração de H2O2 e do pH do meio, sendo mais eficiente em condições ácidas típicas do microambiente tumoral."
+    "mecanismo_dominante": "O mecanismo principal de propulsão é a decomposição catalítica de H2O2 pela platina, gerando bolhas de O2 que impulsionam os nanomotores (propulsão por bolhas).",
+    "descricao_mecanismo": "A platina na superfície dos nanomotores catalisa a decomposição de H2O2 em H2O e O2 por reação de redução-oxidação. As bolhas de oxigênio geradas escapam da superfície do motor, fornecendo o impulso necessário para o movimento direcional. A atividade peroxidase-like dos nanomotores de Pt/Fe3O4 também permite a oxidação de substratos como TMB na presença de H2O2."
   },
   "q3": {
-    "material": "Fe3O4 (magnetita) com nanopartículas de platina (Janus Pt/Fe3O4)",
-    "composicao_quimica": "Fe3O4 (núcleo) + Pt (hemisfério) + Ac/FA-PHEMA-g-PCL (revestimento polimérico)",
+    "material": "Magnetita (Fe3O4) com platina (Pt)",
+    "composicao_quimica": "Fe3O4 (núcleo) / Pt (semissuperfície) / Ac/FA-PHEMA-g-PCL (revestimento polimérico)",
     "dopagem": null,
     "tamanho_nm": 60.0,
     "faixa_tamanho_min_nm": null,
     "faixa_tamanho_max_nm": null,
     "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "Anisotropia química superficial (Janus): um hemisfério recoberto com Pt e o outro com o copolímero Ac/FA-PHEMA-g-PCL",
-    "revestimento": "Ac/FA-PHEMA-g-PCL (copolímero de PHEMA-g-PCL conjugado com ácido fólico e acrilado)",
+    "anisotropia": "Anisotropia química de superfície: morfologia Janus com Pt depositado assimetricamente em metade da superfície e polímero na outra metade",
+    "revestimento": "PHEMA-g-PCL funcionalizado com ácido fólico (Ac/FA-PHEMA-g-PCL)",
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "A arquitetura Janus com Pt em um hemisfério e Fe3O4/polímero no outro confere propulsão catalítica autônoma (via decomposição de H2O2 pelo Pt), capacidade de imageamento por MRI (via Fe3O4 superparamagnético) e entrega direcionada de DOX pelo ligante de ácido fólico, combinando funções terapêuticas e diagnósticas em uma única nanopartícula."
+    "relacao_estrutura_propriedade": "A arquitetura Janus com Pt em metade da superfície e Fe3O4 no núcleo confere propulsão catalítica por H2O2 e capacidade de contraste MRI T2, respectivamente; o revestimento anfifílico PHEMA-g-PCL com ácido fólico proporciona estabilidade coloidal, biocompatibilidade e direcionamento ativo a células com receptor de folato superexpresso."
   },
   "q4": {
     "amplitude_kA_m": null,
@@ -66,53 +66,54 @@
     "tipo_estudo": "in vitro",
     "linhagem_celular": "C6 (glioma de rato) e OLN-93 (células gliais normais de rato)",
     "modelo_animal": null,
-    "tipo_cancer": "glioma",
+    "tipo_cancer": "glioblastoma",
     "concentracao_mg_mL": 0.1,
-    "agregacao_discutida": false,
-    "viscosidade_discutida": false,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
     "imobilizacao_celular": false,
     "perfusao_discutida": false,
     "protein_corona": true,
     "biodistribuicao": false,
     "toxicidade_avaliada": true,
     "localizacao_intracelular": true,
-    "apoptose": true,
+    "apoptose": false,
     "necrose": false,
     "ferroptose": false,
     "imunomodulacao": false
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Constantes cinéticas de Michaelis-Menten (Km e Vmax) não foram determinadas para a atividade peroxidase-like",
-      "Citotoxicidade associada à exposição ao H2O2 não foi avaliada",
-      "Estudos em animais com dados de acumulação tumoral, biodistribuição e clearance não foram realizados",
-      "Perfil da corona de proteínas (ex.: SDS-PAGE ou LC-MS) não foi caracterizado",
+      "Constantes cinéticas de Michaelis-Menten (Km, Vmax) não foram quantificadas",
+      "Citotoxicidade e dano oxidativo associados à exposição a H2O2 não foram avaliados",
+      "Ausência de estudos em animais",
+      "Dados de acumulação tumoral, biodistribuição e clearance não foram investigados",
+      "Perfil de corona proteica (via SDS-PAGE ou LC-MS) não foi realizado",
       "Controles não-Pt e não-Janus não foram sintetizados para comparação direta",
-      "Concentrações de H2O2 usadas nos ensaios de motilidade (até 1-2%) são substancialmente maiores que os níveis fisiológicos/tumorais (<0,2 mM), limitando a extrapolação in vivo",
-      "Armazenamento por congelamento por duas semanas ou mais resultou em alterações reológicas e formação de agregados maiores"
+      "Concentrações de H2O2 usadas nos ensaios de motilidade (até 1-2%) são muito superiores aos níveis fisiológicos/tumorais (< 0,2 mM)"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Realizar estudos em animais para avaliar acumulação tumoral, biodistribuição e clearance",
-      "Quantificar parâmetros cinéticos (Km, Vmax) da atividade peroxidase-like",
-      "Avaliar citotoxicidade associada à exposição ao H2O2 nos níveis utilizados",
-      "Realizar perfil detalhado da corona de proteínas por SDS-PAGE ou LC-MS",
-      "Sintetizar controles não-Janus e não-Pt para validação comparativa das propriedades únicas da arquitetura Janus"
+      "Realizar estudos em animais para avaliação de acumulação tumoral, biodistribuição e clearance",
+      "Quantificar parâmetros cinéticos de Michaelis-Menten (Km, Vmax)",
+      "Avaliar citotoxicidade e dano oxidativo associados à exposição a H2O2",
+      "Realizar perfil de corona proteica por SDS-PAGE ou LC-MS",
+      "Sintetizar controles não-Pt e não-Janus para comparação direta de desempenho"
     ],
     "gaps_identificados": [
-      "Ausência de validação in vivo da eficácia terapêutica e perfil de segurança",
-      "Falta de avaliação do comportamento dos nanomotores em concentrações fisiológicas de H2O2 (<0,2 mM)",
-      "Necessidade de caracterização completa da corona de proteínas sob condições biológicas relevantes",
-      "Ausência de dados de biodistribuição e farmacocinética"
+      "Ausência de dados in vivo de biodistribuição e eficácia terapêutica",
+      "Falta de avaliação da corona proteica em condições séricas completas",
+      "Concentrações de H2O2 utilizadas nos testes de motilidade não são fisiologicamente relevantes",
+      "Mecanismos de morte celular (apoptose, necrose) não foram caracterizados detalhadamente",
+      "Não foram investigados os efeitos de longo prazo da toxicidade das nanopartículas"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo contribui demonstrando propulsão catalítica autônoma baseada em decomposição química de H2O2 por Pt, quantificando velocidade, MSD e coeficiente de difusão em função da concentração de combustível e pH.",
-    "integracao_engenharia": "O trabalho demonstra a fabricação de nanomotores Janus multifuncionais por emulsão de Pickering, integrando síntese química de copolímeros biocompatíveis, funcionalização assimétrica de superfície e carregamento de fármaco em uma plataforma theranostic.",
-    "integracao_biologia": "O estudo avalia a internalização celular seletiva mediada por receptor de folato em células de glioma (C6) versus células normais (OLN-93), a citotoxicidade diferencial do DOX encapsulado, e a biocompatibilidade hematológica dos nanomotores.",
-    "integracao_materiais": "O artigo descreve a síntese e caracterização de um sistema híbrido inorgânico-orgânico (Fe3O4/Pt com copolímero PHEMA-g-PCL-FA) com propriedades de superparamagnetismo, atividade peroxidase-like sinérgica e liberação de fármaco responsiva a pH e temperatura.",
-    "mensagem_principal": "O estudo apresenta nanomotores Janus Pt/Fe3O4 funcionalizados com ácido fólico e o copolímero PHEMA-g-PCL como plataforma theranostic inovadora para diagnóstico (MRI T2) e tratamento de câncer (entrega controlada de DOX), com propulsão autônoma catalisada por H2O2 endógeno do microambiente tumoral e atividade peroxidase-like intrínseca que potencializa a eficácia terapêutica."
+    "integracao_fisica": "Demonstração da propulsão catalítica por bolhas de O2 via decomposição de H2O2 pela Pt, com cálculo de MSD, coeficiente de difusão e velocidade dos nanomotores em diferentes condições de pH e concentração de combustível.",
+    "integracao_engenharia": "Desenvolvimento de nanomotores Janus multifuncionais por emulsão de Pickering, integrando propulsão química, carreamento de fármaco quimioterápico, direcionamento ativo por ácido fólico e capacidade diagnóstica por MRI em uma única plataforma.",
+    "integracao_biologia": "Avaliação da internalização celular seletiva em células de glioma C6 (receptor de folato positivo) versus células normais OLN-93, com testes de citotoxicidade, hemólise e captação de ferro por ICP-OES e coloração de Azul da Prússia.",
+    "integracao_materiais": "Síntese e caracterização de copolímero anfifílico PHEMA-g-PCL funcionalizado com ácido fólico, conjugado a nanopartículas de Fe3O4 revestidas com Pt assimétrico, resultando em nanomotores Janus com estabilidade coloidal e atividade peroxidase-like sinérgica.",
+    "mensagem_principal": "Este trabalho apresenta nanomotores Janus teranósticos de Pt/Fe3O4 revestidos com copolímero Ac/FA-PHEMA-g-PCL como plataformas promissoras para diagnóstico por MRI e tratamento de câncer, combinando propulsão autônoma por H2O2, entrega direcionada de DOX via receptor de folato, atividade peroxidase-like e liberação de fármaco responsiva a pH e temperatura em células de glioma."
   },
   "custom_id": "51__Self-propelled_platinum_based_"
 }

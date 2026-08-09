@@ -6,16 +6,16 @@
   "doi": "10.1063/5.0319921",
   "tipo_estudo": "in silico",
   "q1": {
-    "conceito_tecnica": "Hipertermia magnética é uma técnica médica baseada na geração de calor terapêutico por sistemas de nanopartículas magnéticas na presença de um campo eletromagnético de alta frequência. A temperatura desenvolvida no tecido tumoral e a eficiência de aquecimento dependem fortemente dos parâmetros do campo magnético e das propriedades intrínsecas das NPs.",
+    "conceito_tecnica": "Hipertermia magnética é uma técnica médica baseada na geração de calor terapêutico por um sistema de nanopartículas magnéticas na presença de um campo eletromagnético de alta frequência. A temperatura desenvolvida no tecido tumoral e a eficiência geral do aquecimento dependem fortemente dos parâmetros do campo magnético e das propriedades intrínsecas das NPs.",
     "etapas_processo": [
-      "Injeção de nanopartículas magnéticas (volume fraction Φ) no tecido tumoral",
+      "Injeção de nanopartículas magnéticas (ferrofluido) no tecido tumoral",
       "Aplicação de campo magnético alternante de alta frequência",
-      "Relaxação magnética das NPs (Néel e/ou Browniana) com dissipação de energia como calor",
-      "Transferência de calor para o tecido tumoral via equação bioheat de Pennes",
-      "Avaliação do dano térmico pelo modelo de Arrhenius"
+      "Relaxação magnética das NPs (Néel e/ou Browniana) gerando calor",
+      "Dissipação de calor no tecido tumoral via equação de biocalor (Pennes)",
+      "Dano térmico do tecido tumoral descrito pela equação de Arrhenius"
     ],
-    "internalizacao_nps": null,
-    "aplicacao_campo": "O campo magnético alternante é aplicado com parâmetros de frequência f (kHz) e amplitude H (kA/m) para induzir relaxação magnética e geração de calor nas NPs.",
+    "internalizacao_nps": "As NPs são injetadas diretamente no tecido tumoral como ferrofluido, com fração volumétrica Φ definida pelo usuário no modelo",
+    "aplicacao_campo": "O campo magnético alternante é aplicado externamente com parâmetros de frequência f (kHz) e amplitude H (kA/m) sobre a configuração geométrica de tecido tumoral rodeado por tecido saudável",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -27,8 +27,8 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante no aquecimento de clusters elipsoidais de NPs, confirmado pela independência da temperatura e do dano térmico em relação à viscosidade do fluido carreador.",
-    "descricao_mecanismo": "Na relaxação de Néel, o momento magnético da partícula supera a barreira de anisotropia efetiva por flutuações térmicas, sendo esse processo fortemente modificado por interações dipolo-dipolo entre partículas vizinhas. No modelo de Dormann, as interações dipolares aumentam a barreira de energia efetiva (clusters prolatos), enquanto no modelo de Mørup as interações reduzem essa barreira (clusters oblatos). A relaxação Browniana, que envolve a rotação física da partícula no fluido, é inibida dentro dos clusters e tem influência mínima no aquecimento no regime investigado."
+    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante no aquecimento de clusters elipsoidais de NPs, confirmado pela independência do SAR em relação à viscosidade do fluido carreador.",
+    "descricao_mecanismo": "Na relaxação de Néel, o momento magnético da partícula supera uma barreira de anisotropia efetiva modificada pelas interações dipolo-dipolo entre partículas vizinhas. No modelo de Dormann, as interações dipolares aumentam a barreira efetiva de energia, enquanto no modelo de Mørup as interações dipolares reduzem essa barreira. A relaxação Browniana, embora incluída no modelo via tempo de relaxação efetivo combinado, é suprimida nos clusters elipsoidais, confirmando o domínio de Néel no intervalo de parâmetros investigado."
   },
   "q3": {
     "material": "magnetita",
@@ -39,13 +39,13 @@
     "faixa_tamanho_max_nm": 20.0,
     "forma": null,
     "arquitetura_multicore": true,
-    "anisotropia": "anisotropia cristalina (constante K em J/m³), modificada por interações dipolo-dipolo em clusters elipsoidais (anisotropia de forma)",
+    "anisotropia": "anisotropia cristalina (constante K em J/m³), modificada por interações dipolo-dipolo em clusters elipsoidais (prolato/oblato)",
     "revestimento": null,
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "O tamanho da partícula (dp), a constante de anisotropia cristalina (K) e o espaçamento interpartícula (α) determinam conjuntamente a barreira de energia efetiva e o tempo de relaxação de Néel, controlando diretamente o SAR. O diâmetro ótimo de ~17-19 nm maximiza a dissipação de energia via relaxação de Néel eficiente."
+    "relacao_estrutura_propriedade": "O tamanho da partícula (dp ≈ 17–19 nm) e a constante de anisotropia cristalina K determinam a barreira de energia efetiva e o regime de relaxação de Néel, sendo que a distância interpartícula α modula as interações dipolo-dipolo que alteram essa barreira e, consequentemente, os valores de SAR."
   },
   "q4": {
     "amplitude_kA_m": null,
@@ -54,8 +54,8 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": null,
     "forma_onda": null,
-    "dosimetria_termica": "Simulação numérica via COMSOL Multiphysics com equação bioheat de Pennes e modelo de dano térmico de Arrhenius",
-    "distribuicao_espacial_calor": "A distribuição espacial da temperatura segue os perfis de SAR: o aquecimento pelo modelo de Dormann (Q1) produz temperaturas locais mais altas e concentradas no centro do tumor, enquanto o modelo de Mørup (Q2) gera perfis térmicos mais suaves e menos intensos.",
+    "dosimetria_termica": "Simulação numérica via COMSOL Multiphysics resolvendo a equação de biocalor de Pennes em configuração 3D esférica concêntrica (tumor + tecido saudável), com dano térmico avaliado pela integral de Arrhenius",
+    "distribuicao_espacial_calor": "Distribuição espacial radial da temperatura calculada em configuração de dois tecidos concêntricos (raios R1 e R2); aquecimento Q1 (Dormann) produz temperaturas locais mais altas e concentradas, enquanto Q2 (Mørup) produz perfis mais suaves e menos intensos",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -79,29 +79,29 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "O modelo considera geometria simplificada de dois tecidos concêntricos (tumoral e saudável), sem considerar heterogeneidades anatômicas reais",
-      "No modelo de Mørup, a redução da barreira de energia limita o aquecimento térmico, levando a aquecimento insuficiente para destruição do tecido",
-      "Clusters muito compactos (pequenas distâncias interpartícula) reduzem a eficiência da hipertermia devido ao forte acoplamento dipolar"
+      "O modelo considera apenas clusters elipsoidais (prolato/oblato) como geometria de agregação, sem considerar outras morfologias de aglomeração",
+      "Os parâmetros do campo magnético (frequência e amplitude) não são especificados numericamente no texto, limitando a comparação direta com limites de segurança clínica",
+      "O modelo de Mørup em regime de grandes distâncias entre partículas resulta em aquecimento insuficiente para destruição tecidual",
+      "Ausência de validação experimental dos resultados computacionais"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Controlar o arranjo das partículas, a distância interpartícula e a anisotropia magnética para modulação sintonizável da eficiência de aquecimento",
-      "Otimizar agentes baseados em nanopartículas para hipertermia magnética com base nas diretrizes fornecidas pelos modelos de Dormann e Mørup"
+      "Otimizar o tamanho das partículas (dp ≈ 17–19 nm), a distância interpartícula e a anisotropia para maximizar a eficiência da hipertermia magnética",
+      "Controlar o arranjo das partículas e a distância interpartícula para modulação sintonizável das barreiras de energia e eficiência de aquecimento"
     ],
     "gaps_identificados": [
-      "Ausência de validação experimental dos resultados teóricos e computacionais",
-      "Parâmetros específicos do campo magnético aplicado (frequência e amplitude) não são explicitamente reportados nos resultados",
-      "Efeitos de distribuição de tamanho de partículas (polidispersividade) não foram considerados",
-      "Não foram considerados efeitos de internalização celular das NPs nem sua localização intracelular"
+      "Necessidade de validação experimental dos modelos teóricos de Dormann e Mørup para clusters elipsoidais",
+      "Falta de dados quantitativos sobre parâmetros do campo magnético aplicado (H e f) utilizados nas simulações",
+      "Influência de outros tipos de clustering (cadeias 1D) não foi completamente explorada nos resultados de temperatura"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo modela rigorosamente os mecanismos de relaxação magnética de Néel-Brown com correções de interações dipolo-dipolo em clusters elipsoidais, utilizando os modelos de Dormann e Mørup para descrever como a barreira de energia efetiva é modificada pela geometria do cluster.",
-    "integracao_engenharia": "Simulações numéricas com COMSOL Multiphysics resolvem a equação bioheat de Pennes em configuração 3D de tecidos concêntricos, fornecendo mapas espaciotemporais de temperatura e dano térmico em função dos parâmetros das NPs.",
-    "integracao_biologia": "O modelo de dano térmico de Arrhenius é empregado para quantificar a fração de tecido tumoral destruído em função do perfil de temperatura gerado, conectando as propriedades físicas das NPs ao resultado terapêutico no tecido.",
-    "integracao_materiais": "O artigo demonstra que propriedades estruturais das NPs—tamanho (dp ≈ 17-19 nm), constante de anisotropia cristalina (K) e espaçamento interpartícula (α)—determinam coletivamente a eficiência de aquecimento, fornecendo diretrizes para o design de agentes de hipertermia.",
-    "mensagem_principal": "O clustering de nanopartículas magnéticas e as interações dipolo-dipolo modificam significativamente as barreiras de energia efetivas e, consequentemente, o SAR e a distribuição de temperatura no tecido tumoral. Controlar o tamanho das partículas (~17-19 nm), a distância interpartícula e a anisotropia magnética permite otimizar a eficiência da hipertermia magnética, sendo a relaxação de Néel o mecanismo dominante em clusters elipsoidais."
+    "integracao_fisica": "O artigo modela rigorosamente a dinâmica de relaxação magnética (Néel e Browniana) em clusters elipsoidais de NPs usando os modelos de Dormann e Mørup para quantificar como as interações dipolo-dipolo modificam as barreiras de energia e o SAR.",
+    "integracao_engenharia": "Simulações numéricas via COMSOL Multiphysics da equação de biocalor de Pennes em geometria 3D fornecem distribuições espaço-temporais de temperatura e dano térmico tecidual úteis para o design de protocolos de tratamento.",
+    "integracao_biologia": "O modelo inclui parâmetros biológicos realistas como perfusão sanguínea, calor metabólico e dano térmico via equação de Arrhenius para tecido hepático tumoral e saudável.",
+    "integracao_materiais": "A análise sistemática do efeito do tamanho de partícula (dp), constante de anisotropia cristalina (K) e distância interpartícula (α) fornece diretrizes para a síntese e otimização de nanopartículas de magnetita para hipertermia.",
+    "mensagem_principal": "O clustering de nanopartículas magnéticas e as interações dipolo-dipolo entre elas modificam significativamente as barreiras de energia de relaxação de Néel e, consequentemente, o SAR e a distribuição de temperatura no tecido tumoral; o diâmetro ótimo de ~17–19 nm e distâncias interpartícula moderadas maximizam a eficiência de aquecimento, sendo a relaxação de Néel o mecanismo dominante independentemente da viscosidade do fluido carreador."
   },
   "custom_id": "36__Magnetic_nanoparticles_clustering_effects_on_the"
 }

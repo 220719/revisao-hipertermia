@@ -8,14 +8,14 @@
   "q1": {
     "conceito_tecnica": "A hipertermia magnética utiliza nanopartículas magnéticas para converter energia eletromagnética em calor para tratamento de doenças. O desempenho terapêutico depende da interação entre tamanho, forma e propriedades magnéticas das NPs.",
     "etapas_processo": [
-      "Síntese de NPs de óxido de ferro por decomposição térmica",
+      "Síntese de NPs de óxido de ferro cúbicas e esféricas por decomposição térmica",
       "Troca de ligante (ácido oleico por dopamina) para conferir hidrofilicidade",
-      "Dispersão das NPs em meio aquoso",
-      "Exposição das NPs a campo magnético alternado (AMF)",
+      "Dispersão das NPs em água deionizada com hidróxido de tetrametilamônio",
+      "Exposição das NPs a campo magnético alternado em diferentes frequências e amplitudes",
       "Medição da variação de temperatura e cálculo do SAR"
     ],
     "internalizacao_nps": null,
-    "aplicacao_campo": "As NPs são expostas a um campo magnético uniforme com frequência e intensidade selecionáveis na faixa de 147–767 kHz e 4–30 kA/m utilizando o equipamento nb nanoScale Biomagnetics D5.",
+    "aplicacao_campo": "As NPs são expostas a um campo magnético uniforme com frequência e intensidade selecionáveis na faixa de 147–767 kHz e 4–30 kA/m usando o equipamento nb nanoScale Biomagnetics D5.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -23,12 +23,12 @@
   "q2": {
     "relaxacao_neel": true,
     "relaxacao_browniana": true,
-    "perdas_histerese": true,
+    "perdas_histerese": false,
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "A relaxação de Néel modulada por interações dipolares e formação de estruturas em cadeia é o mecanismo dominante de dissipação de energia nas NPs cúbicas.",
-    "descricao_mecanismo": "NPs cúbicas tendem a formar estruturas em cadeia que aumentam a anisotropia de forma efetiva, prolongando o tempo de relaxação de Néel e aumentando a eficiência de aquecimento. NPs esféricas tendem a formar aglomerados isotrópicos que diminuem a anisotropia efetiva e reduzem o SAR. A relaxação Browniana não foi considerada fator determinante devido ao tamanho similar das NPs e consequente raio hidrodinâmico semelhante."
+    "mecanismo_dominante": "A relaxação de Néel modulada por interações dipolares entre NPs e formação de estruturas em cadeia é o mecanismo dominante de aquecimento.",
+    "descricao_mecanismo": "O aquecimento ocorre principalmente por relaxação de Néel, cujo tempo de relaxação é determinado pela anisotropia magnética efetiva e pelo volume das NPs. As NPs cúbicas formam estruturas em cadeia via interações face a face, aumentando a anisotropia de forma coletiva e prolongando o tempo de relaxação de Néel, o que eleva a eficiência de aquecimento. A relaxação Browniana não foi considerada fator diferenciador relevante entre as morfologias, dado o tamanho de núcleo similar e, consequentemente, volume hidrodinâmico similar entre as amostras."
   },
   "q3": {
     "material": "óxido de ferro (maghemita)",
@@ -39,22 +39,22 @@
     "faixa_tamanho_max_nm": 17.9,
     "forma": "esférica e cubo",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia de superfície, anisotropia magnetocristalina e anisotropia de forma (coletiva, via formação de cadeias)",
+    "anisotropia": "anisotropia de superfície e anisotropia de forma coletiva (estruturas em cadeia)",
     "revestimento": "dopamina",
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 62.34,
-    "relacao_estrutura_propriedade": "NPs cúbicas possuem maior razão SA:V que as esféricas de mesmo volume magnético, resultando em menor magnetização de saturação, porém maior propensão à formação de estruturas em cadeia que aumentam a anisotropia de forma coletiva e o SAR. O volume magnético determina a força de acoplamento dipolar e, consequentemente, a eficiência de aquecimento."
+    "relacao_estrutura_propriedade": "NPs cúbicas possuem maior razão SA:V e menor magnetização de saturação em relação às esféricas de volume equivalente, devido à maior frustração magnética superficial. Apesar de propriedades magnéticas intrínsecas inferiores, as NPs cúbicas formam estruturas em cadeia anisotrópicas que aumentam a anisotropia efetiva coletiva e a eficiência de aquecimento."
   },
   "q4": {
-    "amplitude_kA_m": 30.0,
-    "frequencia_kHz": 767.0,
-    "produto_Hf": 23010000000.0,
+    "amplitude_kA_m": null,
+    "frequencia_kHz": null,
+    "produto_Hf": null,
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": null,
     "forma_onda": null,
-    "dosimetria_termica": "Sensor de temperatura de fibra óptica (Rugged Monitoring) posicionado centralmente no fundo da solução; ajuste de curva Box-Lucas para determinar o gradiente de temperatura entre 23,5°C e 26°C; SAR calculado pela inclinação a 24°C",
+    "dosimetria_termica": "Sensor de temperatura de fibra óptica posicionado centralmente no fundo da solução; ajuste da curva Box-Lucas para determinar o gradiente de temperatura e cálculo do SAR entre 23,5 °C e 26 °C",
     "distribuicao_espacial_calor": null,
     "padronizacao_reportada": false
   },
@@ -79,33 +79,33 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Estudos existentes comparam NPs de formas diferentes sem considerar diferenças no volume magnético, tornando as comparações injustas",
-      "A maioria dos estudos reporta desempenho de aquecimento sob um único conjunto de condições de campo, limitando a generalização",
-      "O uso do ILP como métrica comparativa é inadequado, pois apresenta dependência com a frequência e a intensidade do campo",
-      "A distribuição de volume das SNPs-H é ligeiramente distorcida por uma pequena população de NPs com volume muito maior (~8000 nm3)",
-      "O terceiro eixo das NPs cúbicas não é diretamente observável em imagens TEM, sendo assumido igual ao diâmetro mínimo de Feret"
+      "Comparações anteriores na literatura entre NPs cúbicas e esféricas são inadequadas por não contabilizarem diferenças de volume magnético",
+      "O uso do ILP como métrica comparativa é problemático, pois seus valores variam com a frequência e a intensidade do campo, não sendo verdadeiramente independente das condições de medição",
+      "A maioria dos estudos reporta desempenho de aquecimento sob apenas um conjunto de parâmetros de campo, limitando a generalização dos resultados",
+      "A população de NPs SNPs-H contém ~3% de NPs com volume muito maior (~8000 nm³), distorcendo a distribuição de volumes",
+      "O terceiro eixo dimensional das NPs cúbicas não é diretamente observável em imagens TEM e foi assumido igual ao diâmetro mínimo de Feret"
     ],
     "problemas_SAR_ILP": true,
     "falta_padronizacao": true,
     "recomendacoes_futuras": [
-      "NPs de diferentes formas devem ser comparadas com volumes similares (não tamanhos similares), usando modelos geométricos adequados como o cubosphere para NPs cúbicas",
-      "A eficiência de aquecimento deve ser avaliada em ampla faixa de intensidades e frequências de campo",
-      "A concentração de NPs deve ser mantida consistente e em níveis clinicamente relevantes ao comparar diferentes morfologias",
-      "Desenvolver abordagem multi-paramétrica para otimização de NPs para hipertermia magnética considerando volume magnético, parâmetros de campo e concentração"
+      "Comparar NPs de diferentes morfologias usando volumes similares (não tamanhos similares), calculados com modelos apropriados como o cubosphere para nanocubos",
+      "Avaliar a eficiência de aquecimento em ampla faixa de intensidades e frequências de campo magnético",
+      "Manter concentrações consistentes e clinicamente relevantes ao comparar diferentes morfologias de NPs",
+      "Adotar abordagem multiparamétrica considerando volume magnético, parâmetros do campo e concentração de NPs"
     ],
     "gaps_identificados": [
-      "Falta de compreensão fundamental da relação entre formato da NP e eficiência de aquecimento considerando volume magnético",
-      "Ausência de consenso sobre concentração ideal para avaliação comparativa de NPs de diferentes formas",
-      "Efeito das condições de campo nas interações interparticulares permanece pouco compreendido",
-      "Correlação nuançada entre volume magnético e interação interparticular específica para cada morfologia não havia sido estabelecida anteriormente"
+      "Falta de compreensão fundamental da relação entre forma das NPs e eficiência de aquecimento considerando volume magnético equivalente",
+      "Ausência de padronização na comparação de desempenho de aquecimento entre diferentes laboratórios e dispositivos",
+      "Efeitos dos parâmetros de campo sobre as interações interparticulares em função do volume magnético ainda pouco compreendidos",
+      "Ausência de validação biológica (in vitro/in vivo) dos resultados obtidos em suspensão aquosa"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo demonstra que as interações dipolares coletivas e a formação de estruturas em cadeia modulam a relaxação de Néel e determinam a eficiência de dissipação de energia, sendo dependentes dos parâmetros do campo magnético aplicado.",
-    "integracao_engenharia": "O trabalho fornece um framework multi-paramétrico para design, avaliação e otimização de NPs para terapias baseadas em calor, destacando que parâmetros instrumentais (frequência e intensidade de campo) e concentração devem ser sistematicamente considerados.",
-    "integracao_biologia": "O artigo ressalta a necessidade de realizar medições magnéticas após funcionalização de superfície para refletir o comportamento real em ambiente biológico, e aponta para aplicações em terapias não invasivas de doenças cancerosas.",
-    "integracao_materiais": "O estudo estabelece que o volume magnético (não o tamanho) é o parâmetro estrutural determinante da eficiência de aquecimento, e que a morfologia (cúbica vs. esférica) influencia as propriedades coletivas via anisotropia de forma emergente em superestruturas.",
-    "mensagem_principal": "NPs cúbicas não são universalmente superiores às esféricas para hipertermia magnética; seu desempenho relativo depende do volume magnético, dos parâmetros instrumentais e da concentração. O trabalho propõe um framework multi-paramétrico essencial para o design racional de NPs para aplicações clínicas."
+    "integracao_fisica": "O artigo demonstra que as interações dipolares coletivas e a formação de estruturas em cadeia modulam a anisotropia magnética efetiva e dominam a eficiência de aquecimento, superando o papel das propriedades magnéticas intrínsecas individuais.",
+    "integracao_engenharia": "O trabalho fornece um framework multiparamétrico para o design e otimização de NPs para hipertermia magnética, considerando volume magnético, parâmetros do campo e concentração como variáveis de projeto interdependentes.",
+    "integracao_biologia": "O estudo destaca que as condições biológicas de alta concentração de NPs induzem interações interparticulares que alteram significativamente o desempenho de aquecimento, sendo essencial considerar concentrações clinicamente relevantes na avaliação terapêutica.",
+    "integracao_materiais": "A síntese por decomposição térmica com controle de surfactante (ácido oleico vs. oleato de sódio) permite ajuste fino da morfologia e do volume magnético das NPs, e a funcionalização com dopamina viabiliza compatibilidade biológica sem comprometer as propriedades magnéticas.",
+    "mensagem_principal": "NPs cúbicas não são universalmente superiores às esféricas para hipertermia magnética; seu desempenho relativo depende criticamente do volume magnético, dos parâmetros do campo aplicado e da concentração das NPs, exigindo uma abordagem multiparamétrica para design e comparação de NPs para aplicações terapêuticas."
   },
   "custom_id": "60__Are_cubic_nanoparticles_really_better_than_spherical_nanopar"
 }

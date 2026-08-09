@@ -6,15 +6,15 @@
   "doi": "10.1021/acsanm.3c01643",
   "tipo_estudo": "in silico",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética de nanopartículas (MNH) é a capacidade de nanopartículas magnéticas de gerar aquecimento local quando remotamente aquecidas via campos magnéticos alternantes (AMF), transferindo calor para o ambiente circundante. Tal aquecimento é significativo apenas na escala nanométrica, sendo localizado a poucos nanômetros da superfície das nanopartículas.",
+    "conceito_tecnica": "A hipertermia magnética de nanopartículas (MNH) é a capacidade de nanopartículas magnéticas de gerar aquecimento local quando remotamente aquecidas via campos magnéticos alternantes (AMF). Tal calor é transferido das NPs para o ambiente local, sendo efetivo apenas na escala nanométrica.",
     "etapas_processo": [
-      "Aplicação de campo magnético alternante (AMF) às nanopartículas magnéticas de óxido de ferro",
-      "Transferência de energia ao NPs por relaxação de Néel ou Browniana",
-      "Aquecimento das NPs e aumento local da população de estados vibracionais dos átomos de Fe",
-      "Transferência de calor por ressonância para as moléculas da vizinhança via ligações covalentes ou rede de pontes de hidrogênio do solvente"
+      "Aplicação de campo magnético alternante (AMF) às nanopartículas de óxido de ferro",
+      "Transferência de energia para as NPs por relaxação de Néel ou Browniana",
+      "Aquecimento local das NPs e aumento da população dos estados vibracionais dos átomos de Fe",
+      "Transferência de calor por ressonância para as moléculas vizinhas via ligações covalentes e rede de ligações de hidrogênio do solvente"
     ],
     "internalizacao_nps": null,
-    "aplicacao_campo": "O AMF é aplicado remotamente às nanopartículas, transferindo energia por relaxação de Néel ou Browniana, gerando aquecimento local.",
+    "aplicacao_campo": "O AMF é aplicado remotamente às nanopartículas, transferindo energia a elas por relaxação de Néel ou Browniana.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -27,34 +27,34 @@
     "nanoscale_heating": true,
     "forma_onda_campo": null,
     "mecanismo_dominante": "O mecanismo dominante de transferência de calor das NPs para o ambiente é a ressonância vibracional, operando na escala nanométrica.",
-    "descricao_mecanismo": "Os átomos de Fe magnéticos das NPs, os átomos da espécie quimissorvida (APTES) e as moléculas de água oscilam em frequências comuns na região de 100–350 cm⁻¹, permitindo transferência eficiente de energia térmica por ressonância. Quando o AMF é aplicado, as NPs aquecem e aumentam localmente a população dos estados vibracionais dos átomos de Fe; em seguida, ocorre um fluxo líquido de energia por ressonância dos estados mais populados das NPs para os estados menos populados do entorno. A transferência ocorre tanto por ligações covalentes com a espécie ancorada quanto pela rede de pontes de hidrogênio do solvente, com efeito limitado a poucos nanômetros da superfície."
+    "descricao_mecanismo": "Os átomos de Fe magnéticos das NPs, os átomos do grupo de ancoragem orgânico e as moléculas de água oscilam em frequências comuns na região de 100–350 cm⁻¹. Quando o AMF aquece as NPs, aumenta-se localmente a população dos estados vibracionais dos átomos de Fe; um fluxo líquido de energia ocorre por ressonância dos estados mais populados das NPs para os estados menos populados das espécies vizinhas. Esse mecanismo não difusivo (não-Fourier) é efetivo apenas em escala nanométrica, e ocorre tanto por ligações covalentes quanto pela rede de ligações de hidrogênio do solvente."
   },
   "q3": {
     "material": "maghemita (γ-Fe2O3)",
-    "composicao_quimica": "Fe2.66O4 (experimental); γ-Fe2O3 (maghemita)",
+    "composicao_quimica": "Fe2.66O4 (maghemita, γ-Fe2O3)",
     "dopagem": null,
-    "tamanho_nm": 11.0,
+    "tamanho_nm": null,
     "faixa_tamanho_min_nm": null,
     "faixa_tamanho_max_nm": 40.0,
     "forma": "esférica",
-    "arquitetura_multicore": false,
+    "arquitetura_multicore": null,
     "anisotropia": null,
     "revestimento": "APTES (aminopropil-trietoxissilano)",
     "material_autorregulavel": false,
     "SAR_W_g": 393.0,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "A maghemita apresenta vacâncias de Fe em sítios octaédricos com distribuição desordenada, resultando em ferrimagnetismo com spins opostos nos sítios tetraédricos e octaédricos; o revestimento com APTES reduz o SAR de 393 para 242 W/g, indicando que a funcionalização superficial afeta a capacidade de geração de calor."
+    "relacao_estrutura_propriedade": "A maghemita apresenta sítios vacantes de Fe com distribuição desordenada, o que influencia suas propriedades magnéticas ferrimagnéticas; o revestimento com APTES reduz a capacidade de aquecimento (SAR de 393 para 242 W/g) ao modificar a interface da nanopartícula."
   },
   "q4": {
-    "amplitude_kA_m": 23.87,
+    "amplitude_kA_m": null,
     "frequencia_kHz": 710.0,
-    "produto_Hf": 16950000000.0,
+    "produto_Hf": null,
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": null,
     "forma_onda": null,
-    "dosimetria_termica": "SAR (specific absorption rate) medido em W/g utilizando equipamento D500 series (Nanoscale Biomaterial)",
-    "distribuicao_espacial_calor": "O aquecimento é localizado em poucos nanômetros a partir da superfície das NPs, decaindo mais rapidamente do que o previsto pela lei de Fourier difusiva.",
+    "dosimetria_termica": "SAR (taxa de absorção específica, W/g) medido com o sistema D500 series (Nanoscale Biomaterial) a 710 kHz e 300 Gauss",
+    "distribuicao_espacial_calor": "O aquecimento é localizado em poucos nanômetros a partir da superfície das NPs, decaindo mais rapidamente do que previsto pela lei de Fourier difusiva.",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -78,29 +78,29 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "O tamanho limitado do modelo computacional, imposto pela necessidade de descrição quântico-mecânica da estrutura eletrônica, impede a estimativa direta do perfil de decaimento dos efeitos de MNH.",
-      "O modelo não permite determinar a extensão característica dentro da qual o fluxo de energia permanece apreciável.",
-      "Não é possível determinar qual dos dois canais de transferência de energia (ligações covalentes ou rede de pontes de hidrogênio) é predominante."
+      "O tamanho limitado do modelo computacional, imposto pela necessidade de descrição quântico-mecânica da estrutura eletrônica, não permite estimar o perfil de decaimento dos efeitos de MNH",
+      "O modelo não permite uma estimativa direta por primeiros princípios da extensão espacial do fluxo de energia",
+      "A questão de qual dos dois canais de transferência de energia (ligação covalente vs. rede de ligações de hidrogênio) é predominante permanece em aberto"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Investigar o mecanismo de transferência de energia com diferentes materiais de revestimento das NPs magnéticas.",
-      "Obter evidências experimentais convincentes para determinar a contribuição relativa dos dois canais de fluxo de energia (covalente vs. rede de pontes de hidrogênio).",
-      "Explorar o controle direcional do fluxo de calor das NPs para moléculas ancoradas (antibióticos, terapêuticos, enzimas) para ativação ou liberação em aplicações médicas e industriais."
+      "Investigar experimentalmente a contribuição relativa dos dois canais de fluxo de energia (covalente e via rede de H-bonds)",
+      "Estender o estudo para diferentes materiais de revestimento das nanopartículas magnéticas",
+      "Explorar o controle direcional do fluxo de calor das NPs para moléculas ancoradas (antibióticos, terapêuticos, enzimas) para sua ativação ou liberação"
     ],
     "gaps_identificados": [
-      "O mecanismo microscópico de transferência de calor das NPs para o ambiente ainda é debatido na literatura.",
-      "A confiabilidade do mecanismo de transferência de calor de Fourier na escala nanométrica é questionável, mas alternativas ainda carecem de validação experimental.",
-      "A importância relativa dos dois canais de transferência de energia (via backbone covalente e via rede de pontes de hidrogênio) permanece indeterminada."
+      "O mecanismo microscópico de transferência de calor das NPs para o ambiente ainda era debatido antes deste trabalho",
+      "A aplicabilidade do mecanismo de Fourier em escala nanométrica é questionável e não havia consenso sobre o mecanismo alternativo",
+      "Não há evidências experimentais conclusivas que determinem qual canal de transferência de energia (covalente ou H-bond) predomina"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo revela que a transferência de calor em escala nanométrica ocorre por um mecanismo de ressonância vibracional (não-Fourier), com sobreposição espectral na região de 100–350 cm⁻¹, desafiando a aplicabilidade da lei de Fourier clássica nessa escala.",
-    "integracao_engenharia": "O artigo fornece base atomística para o design de NPs funcionalizadas com grupos de ancoragem, mostrando como o revestimento (APTES) afeta o SAR e abrindo caminho para controle direcional do fluxo de calor em aplicações biomédicas e industriais.",
-    "integracao_biologia": "Os resultados explicam como enzimas covalentemente ligadas às NPs podem ser ativadas localmente via AMF, enquanto enzimas não ligadas no mesmo meio reacional também funcionam adequadamente, suportando a natureza local do aquecimento magnético.",
-    "integracao_materiais": "A análise WAXTS por espalhamento total de raios-X identificou a maghemita com vacâncias desordenadas como fase predominante, fornecendo parâmetros estruturais precisos para a construção do modelo atomístico e correlacionando composição e defeitos com propriedades magnéticas.",
-    "mensagem_principal": "Este estudo propõe, pela primeira vez em nível atomístico, que a transferência de energia de NPs magnéticas de óxido de ferro para o ambiente sob AMF ocorre por um mecanismo de ressonância vibracional não-Fourier, através de dois canais paralelos: ligações covalentes com a espécie ancorada e rede de pontes de hidrogênio do solvente. Esse resultado abre perspectivas para o controle direcional do fluxo de calor em aplicações de hipertermia magnética e biocatálise."
+    "integracao_fisica": "O artigo propõe um mecanismo de transferência de calor por ressonância vibracional não-Fourier em escala nanométrica, baseado em teoria de resposta linear e dinâmica molecular de primeiros princípios.",
+    "integracao_engenharia": "Os resultados fornecem base para a engenharia de nanopartículas magnéticas com controle direcional do fluxo de calor, visando a ativação ou liberação de moléculas funcionais ancoradas.",
+    "integracao_biologia": "O mecanismo proposto explica como enzimas covalentemente ligadas às NPs podem ser ativadas localmente por AMF sem afetar enzimas não ligadas no mesmo meio reacional.",
+    "integracao_materiais": "A caracterização estrutural por WAXTS com síncrotron e a modelagem atomística de slab de maghemita funcionalizada com APTES conectam propriedades estruturais (vacâncias, estequiometria, revestimento) ao comportamento térmico das NPs.",
+    "mensagem_principal": "Este trabalho revela, pela primeira vez em nível atomístico, que a transferência de calor de nanopartículas de óxido de ferro magnéticas para o ambiente ocorre por um mecanismo de ressonância vibracional não-Fourier, operando tanto por ligações covalentes com a molécula de ancoragem quanto pela rede de ligações de hidrogênio do solvente, abrindo caminho para o controle direcionado do fluxo de energia em aplicações biomédicas e catalíticas."
   },
   "custom_id": "97__Energy_Transfer_from_Magnetic_Iron_Oxide_Nanoparticles-Impli"
 }

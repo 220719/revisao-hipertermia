@@ -6,16 +6,17 @@
   "doi": "10.3390/pharmaceutics16111474",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MH) consiste na aplicação de um campo magnético alternante (AC) de alta frequência a tecidos carregados com nanopartículas magnéticas, induzindo geração de calor localizado para tratamento de câncer. As nanopartículas de óxido de ferro são usadas como agentes intratumorais sob um aplicador de campo magnético AC, atingindo uma faixa de temperatura entre 40 e 43°C.",
+    "conceito_tecnica": "A hipertermia magnética (MH) consiste na aplicação de um campo magnético alternante (AC) de alta frequência a tecido carregado com nanopartículas magnéticas, resultando em geração de calor localizado para tratamento de câncer. As IONPs são usadas como agentes intratumorais sob um aplicador de campo magnético AC, atingindo uma faixa de temperatura entre 40 e 43°C.",
     "etapas_processo": [
       "Síntese das nanopartículas de óxido de ferro por coprecipitação",
       "Revestimento das NPs com látex de borracha natural (NRL)",
       "Dispersão das NPs em água",
-      "Exposição ao campo magnético alternante externo",
-      "Medição calorimetrica da variação de temperatura para determinação do SLP"
+      "Exposição a campo magnético alternante externo usando sistema de MH",
+      "Monitoramento da temperatura em tempo real por termômetro de fibra óptica",
+      "Cálculo do SLP (potência de perda específica) a partir das medidas calorimétricas"
     ],
-    "internalizacao_nps": "Não descrita explicitamente para MH; para MMUS é mencionada a endocitose de NPs em células vivas como aplicação da técnica referenciada",
-    "aplicacao_campo": "Um campo magnético alternante com amplitude de 100 Oe e frequência de 137 kHz é aplicado por meio de um solenóide capaz de gerar campo homogêneo em volume de 6,8 cm³, garantindo que toda a amostra esteja imersa em região de campo uniforme.",
+    "internalizacao_nps": null,
+    "aplicacao_campo": "As NPs dispersas em água são expostas a um campo magnético alternante externo gerado por uma bobina solenóide, com amplitude de 100 Oe e frequência de 137 kHz, em um volume homogêneo de 6,8 cm³.",
     "janela_termica_min_C": 40.0,
     "janela_termica_max_C": 43.0,
     "vias_morte_celular": []
@@ -26,9 +27,9 @@
     "perdas_histerese": true,
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
-    "forma_onda_campo": "null",
-    "mecanismo_dominante": "O artigo indica que em baixos campos (100 Oe) predominam as forças viscosas (relaxação Browniana), mas que em geral apenas a relaxação de Néel contribui para a dissipação de calor quando a viscosidade e a intensidade do campo reduzem a eficácia do mecanismo Browniano.",
-    "descricao_mecanismo": "A eficiência de aquecimento (SLP) está relacionada às perdas térmicas das NPs quando submetidas ao campo AC, determinada pela área do loop de histerese das NPs. Segundo Usov et al. referenciado no artigo, existem dois modos distintos de aquecimento: o modo viscoso, onde predomina a relaxação Browniana, e o modo magnético, onde predomina a relaxação de Néel. Em baixos campos (100 Oe), as forças viscosas predominam, mas a relaxação Browniana é influenciada pela viscosidade do meio e pela intensidade do campo, podendo resultar em cenário onde apenas a relaxação de Néel contribui para a dissipação de calor."
+    "forma_onda_campo": "senoidal",
+    "mecanismo_dominante": "O artigo indica que a forças viscosas predominam apenas em campos fracos (100 Oe), e que apenas a relaxação de Néel contribui para a dissipação de calor nas condições experimentais utilizadas.",
+    "descricao_mecanismo": "A eficiência de aquecimento (SLP) está diretamente relacionada às perdas térmicas das NPs quando submetidas a um campo AC, determinada pela área do loop de histerese das NPs. Tanto os mecanismos de relaxação de Néel quanto o Browniano podem gerar energia térmica a partir de energia magnética. A relaxação Browniana é influenciada pela viscosidade do meio e pela intensidade do campo, podendo resultar em um cenário onde apenas a relaxação de Néel contribui para o mecanismo de dissipação de calor, especialmente quando as NPs estão confinadas em uma matriz viscosa como o látex."
   },
   "q3": {
     "material": "Fe3O4 (magnetita/maghemita)",
@@ -39,28 +40,28 @@
     "faixa_tamanho_max_nm": 20.0,
     "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia efetiva mencionada como parâmetro que influencia o SLP",
+    "anisotropia": "anisotropia efetiva",
     "revestimento": "látex de borracha natural (NRL) de Hevea brasiliensis",
     "material_autorregulavel": false,
     "SAR_W_g": 43.0,
     "ILP_nHm2_kg": null,
-    "magnetizacao_saturacao_emu_g": 88.0,
-    "relacao_estrutura_propriedade": "O aumento do tamanho das NPs com maior quantidade de NRL resulta em maior magnetização de saturação (corrigida pela massa do revestimento), pois partículas maiores apresentam menor razão superfície-volume, reduzindo o efeito de flutuações térmicas e desordem magnética superficial. O revestimento com NRL reduz as interações interpartículas, diminuindo a desordem dos spins superficiais e aumentando a magnetização."
+    "magnetizacao_saturacao_emu_g": 83.5,
+    "relacao_estrutura_propriedade": "O aumento do tamanho das NPs com maior quantidade de NRL resulta em maior magnetização de saturação (corrigida pela massa de Fe3O4), pois a redução da razão superfície/volume diminui o efeito de flutuações térmicas e a desordem magnética superficial. O revestimento com NRL também reduz as interações interpartículas, diminuindo a desordem dos spins de superfície e potencialmente aumentando a magnetização."
   },
   "q4": {
     "amplitude_kA_m": 7.96,
     "frequencia_kHz": 137.0,
     "produto_Hf": 1090520000.0,
-    "dentro_limite_seguranca": null,
+    "dentro_limite_seguranca": true,
     "tempo_tratamento_min": null,
     "forma_onda": null,
-    "dosimetria_termica": "Medição calorimetrica com termômetro de fibra óptica inserido diretamente na solução de nanopartículas, com ajuste dos resultados pela equação de Box-Lucas para estimativa do SLP pela equação SLP = (1/mnp) * Csusp * (ΔT/Δt)",
-    "distribuicao_espacial_calor": "Campo homogêneo gerado em volume de 6,8 cm³ pelo solenóide, garantindo que toda a amostra esteja imersa em região de campo uniforme",
+    "dosimetria_termica": "Medidas calorimétricas com termômetro de fibra óptica inserido diretamente na solução de nanopartículas, com precisão de ±0,1°C; SLP estimado pela equação de calorimetria e ajuste à equação Box-Lucas",
+    "distribuicao_espacial_calor": "Campo homogêneo em um volume de 6,8 cm³ gerado por bobina solenóide de 14 mm de diâmetro e 87 mm de altura",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vitro",
-    "linhagem_celular": "B16-F10 (melanoma de camundongo)",
+    "linhagem_celular": "B16-F10 (melanoma murino)",
     "modelo_animal": null,
     "tipo_cancer": "melanoma",
     "concentracao_mg_mL": 0.1,
@@ -79,29 +80,28 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "NPs coated com NRL apresentaram valores de SLPOW menores comparados às NPs não revestidas, pois o confinamento físico dentro da matriz de látex dificulta a ativação térmica do sistema em campo AC baixo",
-      "O estudo foi limitado a concentrações baixas de NPs para avaliação inicial de desempenho, sem testar concentrações mais altas",
-      "O revestimento de NRL não pôde ser observado nas imagens de TEM devido à baixa densidade eletrônica das moléculas orgânicas",
-      "A eficiência de aquecimento foi reduzida pelo aumento da agregação das partículas em concentrações mais altas"
+      "NPs coated com NRL apresentaram menor SLP/SLPOW em comparação com MNPs não revestidas, pois o confinamento na matriz viscosa de látex dificulta a ativação térmica em campo AC de baixa amplitude",
+      "O mecanismo de relaxação Browniana é inibido pelo confinamento das NPs na matriz de látex, resultando em desempenho reduzido para hipertermia magnética",
+      "Apenas concentrações baixas de NPs foram testadas nos estudos de citotoxicidade; concentrações mais altas podem ser necessárias para aplicações específicas"
     ],
-    "problemas_SAR_ILP": false,
+    "problemas_SAR_ILP": true,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Testar concentrações mais altas de NPs dependendo dos requisitos específicos de aplicação",
-      "Explorar os mecanismos por trás do desempenho aprimorado das NPs revestidas com NRL no MMUS"
+      "Testar concentrações mais elevadas de NPs dependendo dos requisitos específicos de aplicação",
+      "Investigar os mecanismos por trás do desempenho aprimorado das NPs revestidas com NRL em MMUS"
     ],
     "gaps_identificados": [
-      "Desempenho das NPs revestidas com NRL em MH e PAI não havia sido explorado anteriormente",
-      "Os mecanismos por trás do desempenho aprimorado das NPs revestidas com NRL no MMUS não eram completamente compreendidos",
-      "Ausência de estudos in vivo para validar os resultados obtidos in vitro"
+      "O desempenho das NPs revestidas com NRL em hipertermia magnética e imageamento fotoacústico não havia sido explorado anteriormente",
+      "Os mecanismos por trás do desempenho aprimorado das NPs revestidas com NRL em MMUS não eram totalmente compreendidos",
+      "O efeito do confinamento das NPs na matriz de látex sobre os mecanismos de relaxação magnética precisa de maior investigação"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo contribui para a física ao caracterizar as propriedades magnéticas das NPs (magnetização de saturação, coercividade, comportamento superparamagnético) e os mecanismos de relaxação de Néel e Browniana responsáveis pela geração de calor sob campo magnético alternante.",
-    "integracao_engenharia": "O estudo contribui para a engenharia ao desenvolver e avaliar sistemas experimentais de MMUS, PAI e hipertermia magnética, incluindo um sistema de indução magnética homemade e configurações de imageamento ultrassônico e fotoacústico para phantoms de tecido.",
-    "integracao_biologia": "O estudo contribui para a biologia ao avaliar a citotoxicidade das NPs revestidas com NRL em células de melanoma (B16-F10), demonstrando viabilidade celular acima de 80% em todas as concentrações testadas e identificando efeito de hormese em baixas concentrações.",
-    "integracao_materiais": "O estudo contribui para a ciência dos materiais ao sintetizar e caracterizar NPs de Fe3O4 revestidas com látex de borracha natural, demonstrando que o revestimento com NRL melhora a estabilidade coloidal (potencial zeta mais negativo), aumenta a magnetização de saturação (corrigida pela massa do revestimento) e melhora o desempenho em aplicações de imageamento.",
-    "mensagem_principal": "NPs de Fe3O4 revestidas com látex de borracha natural (NRL) apresentam propriedades físico-químicas favoráveis — maior estabilidade coloidal, maior magnetização de saturação e maior absorção óptica no NIR — que as tornam candidatas promissoras como agentes de contraste para MMUS e PAI e como mediadores de calor para hipertermia magnética, demonstrando seu potencial teranóstico mesmo com valores de SLP ligeiramente reduzidos em comparação às NPs não revestidas."
+    "integracao_fisica": "O artigo contribui para a física ao elucidar os mecanismos de relaxação magnética (Néel e Browniana) em NPs confinadas em matriz polimérica viscosa e ao quantificar as propriedades magnéticas e de geração de calor das NPs revestidas com NRL sob campo AC.",
+    "integracao_engenharia": "O artigo contribui para a engenharia biomédica ao desenvolver e avaliar um sistema de teranóstico multimodal que integra MMUS, PAI e hipertermia magnética usando NPs revestidas com látex como agente único de contraste e terapia.",
+    "integracao_biologia": "O artigo contribui para a biologia ao demonstrar a baixa toxicidade das NPs revestidas com NRL em células de melanoma murino (B16-F10) e ao discutir o fenômeno de hormese observado em baixas concentrações de NPs.",
+    "integracao_materiais": "O artigo contribui para a ciência dos materiais ao demonstrar que o revestimento com látex de borracha natural melhora a estabilidade coloidal, a magnetização de saturação (corrigida por TGA) e as propriedades ópticas das NPs de óxido de ferro, aumentando seu potencial teranóstico.",
+    "mensagem_principal": "NPs de Fe3O4 revestidas com látex de borracha natural (NRL) apresentam propriedades físico-químicas aprimoradas, incluindo maior estabilidade coloidal e magnetização, resultando em melhor desempenho como agentes de contraste em MMUS e PAI, além de demonstrarem capacidade de geração de calor em hipertermia magnética, consolidando-as como plataforma teranóstica promissora para aplicações biomédicas."
   },
   "custom_id": "72__Improving_the_Theranostic_Potential_of_Magnetic_Nanoparticle"
 }

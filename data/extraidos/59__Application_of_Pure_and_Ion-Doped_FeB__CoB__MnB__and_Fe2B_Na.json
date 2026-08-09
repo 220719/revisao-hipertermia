@@ -6,15 +6,16 @@
   "doi": "10.3390/ma18122765",
   "tipo_estudo": "in silico",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MH) é uma técnica para aquecimento de formações malignas através do uso de materiais magnéticos, baseada no princípio de que nanopartículas magnéticas, ao interagir com um campo eletromagnético alternante, geram calor. O aquecimento localizado de tumores malignos na faixa de 41°C a 46°C leva à sua desintegração completa enquanto preserva células saudáveis.",
+    "conceito_tecnica": "A hipertermia magnética (MH) é uma técnica de aquecimento de formações malignas por meio de materiais magnéticos, baseada no princípio de que nanopartículas magnéticas, ao interagir com um campo eletromagnético alternante, geram calor. O aquecimento localizado de tumores malignos na faixa de 41°C a 46°C leva à sua completa desintegração, preservando as células saudáveis.",
     "etapas_processo": [
-      "Direcionamento das NPs magnéticas aos tecidos cancerosos usando agentes de ligação e direcionamento (funcionalização química)",
-      "Aplicação de campo eletromagnético alternante externo que passa pelo corpo sem obstrução",
-      "Geração de calor pelas NPs apenas nos tecidos associados às MNPs",
-      "Na SCMH: ao atingir a temperatura de Curie (TC), as NPs transitam para estado paramagnético e o aquecimento cessa naturalmente"
+      "Direcionamento das NPs magnéticas aos tecidos cancerosos por meio de agentes de ligação e direcionamento (funcionalização química)",
+      "Aplicação de campo eletromagnético alternante externo",
+      "Geração de calor pelas NPs ao interagir com o campo alternante",
+      "Aquecimento localizado do tumor na faixa terapêutica de 41-46°C",
+      "Transição paramagnética automática das NPs ao atingir TC (SCMH), interrompendo o aquecimento"
     ],
-    "internalizacao_nps": "O artigo menciona que as NPs podem ser direcionadas aos tecidos cancerosos usando agentes de ligação e direcionamento (funcionalização química), mas não detalha o mecanismo de internalização celular",
-    "aplicacao_campo": "Campos eletromagnéticos alternantes com frequência f e amplitude hmax passam pelo corpo sem obstrução e geram calor apenas nos tecidos associados às MNPs, devendo satisfazer o critério de segurança biológica hmax × f < 6,2 × 10^7 Oe/s.",
+    "internalizacao_nps": "As NPs são direcionadas aos tecidos cancerosos por meio de agentes especiais de ligação e direcionamento (funcionalização química), e transportadas ao local do tumor através do sistema circulatório.",
+    "aplicacao_campo": "O campo eletromagnético alternante externo é aplicado com frequência f e amplitude máxima hmax, passando pelo corpo sem obstrução e gerando calor apenas nos tecidos associados às NPs.",
     "janela_termica_min_C": 41.0,
     "janela_termica_max_C": 46.0,
     "vias_morte_celular": [
@@ -27,26 +28,26 @@
     "perdas_histerese": true,
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
-    "forma_onda_campo": "null",
-    "mecanismo_dominante": "O mecanismo dominante é a perda por histerese, onde as NPs liberam calor durante cada ciclo do campo alternante igual à área delimitada pelo laço de histerese.",
-    "descricao_mecanismo": "Quando as MNPs são expostas a um campo magnético alternante, elas liberam calor durante um único ciclo igual à área delimitada pelo seu laço de histerese. A susceptibilidade magnética transversa (χ⊥) é calculada via formalismo de Kubo, expressando a potência absorvida em termos da parte imaginária da susceptibilidade magnética. Na SCMH, ao atingir a temperatura de Curie, as partículas transitam para o estado paramagnético, cessando as perdas por histerese e o aquecimento de forma autorregulatória."
+    "forma_onda_campo": "senoidal",
+    "mecanismo_dominante": "As perdas por histerese são o mecanismo dominante, onde as NPs liberam calor durante cada ciclo do campo alternante equivalente à área delimitada pelo laço de histerese.",
+    "descricao_mecanismo": "Quando as NPs são expostas a um campo magnético alternante, elas liberam calor durante um único ciclo igual à área delimitada pelo seu laço de histerese. O SAR é calculado microscopicamente por meio do formalismo de Kubo, que descreve a resposta do sistema a uma perturbação dependente do tempo, através da parte imaginária da susceptibilidade magnética χ''(ω). A eficiência térmica é expressa através das interações de troca magnética e da anisotropia cristalina magnética das excitações elementares de spin e seu amortecimento."
   },
   "q3": {
-    "material": "boretos metálicos (MnB, FeB, CoB, Fe2B, Co2B e compostos dopados)",
+    "material": "boreto de manganês, boreto de ferro, boreto de cobalto e diboreto de ferro dopados",
     "composicao_quimica": "Mn1-xXxB (X = Fe, Co) e (Fe1-xCox)2B",
     "dopagem": "Co, Fe",
     "tamanho_nm": null,
-    "faixa_tamanho_min_nm": 18.9,
+    "faixa_tamanho_min_nm": 22.0,
     "faixa_tamanho_max_nm": 35.0,
     "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia magnetocristalina uniaxial (eixo fácil c para XB) e planar (plano fácil (001) para X2B em certa faixa de temperatura); constante de anisotropia de íon único",
-    "revestimento": "sílica",
+    "anisotropia": "anisotropia magnetocristalina uniaxial (eixo fácil c) para XB; anisotropia planar (plano fácil (001)) para X2B em temperatura ambiente; dependência de sinal e magnitude com concentração de Co em (Fe1-xCox)2B",
+    "revestimento": "SiO2, dextran, ligantes ou ácidos graxos (mencionados como opções para biocompatibilidade, não como revestimento das NPs estudadas)",
     "material_autorregulavel": true,
     "SAR_W_g": 7.1,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "À medida que o tamanho da NP diminui, a razão superfície/volume aumenta, reduzindo TC, Ms e modificando Hc devido à menor interação de troca na camada superficial (Js = 0,85 Jb) e menor anisotropia superficial (Ks = 0,1 Kb). A dopagem com Co aumenta a anisotropia magnetocristalina e a coercividade, enquanto a dopagem com Fe as reduz, permitindo ajuste fino das propriedades magnéticas."
+    "relacao_estrutura_propriedade": "A diminuição do tamanho das NPs aumenta a razão superfície/volume, reduzindo TC, MS e HC (para tamanhos abaixo do pico de domínio único), devido ao enfraquecimento das interações de troca na superfície em relação ao núcleo. A dopagem com Co em MnB aumenta HC e reduz MS, enquanto a dopagem com Fe reduz HC, em razão das diferenças de anisotropia e momento magnético dos íons dopantes."
   },
   "q4": {
     "amplitude_kA_m": null,
@@ -54,8 +55,8 @@
     "produto_Hf": null,
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": null,
-    "forma_onda": "null",
-    "dosimetria_termica": "Cálculo do SAR via modelo microscópico baseado no formalismo de Kubo, usando funções de Green retardadas e o método de Tserkovnikov",
+    "forma_onda": "senoidal",
+    "dosimetria_termica": "Cálculo do SAR via modelo microscópico baseado no formalismo de Kubo, com SAR = P*f*rho, onde P é a potência média absorvida calculada através da susceptibilidade magnética transversal",
     "distribuicao_espacial_calor": null,
     "padronizacao_reportada": false
   },
@@ -80,31 +81,31 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "O modelo assume NPs esféricas, monodispersas e sem interação entre si, o que pode não refletir condições experimentais reais",
-      "Interações dipolo-dipolo não são discutidas nem consideradas no modelo",
-      "A polidispersidade (variação de tamanho) das NPs não foi abordada, pois depende principalmente do método de síntese",
-      "Para NPs, a verificação experimental é difícil devido à dependência das características magnéticas de muitos fatores (método de crescimento, tamanho, forma, campo externo, revestimento)",
-      "O artigo não investiga questões de toxicidade diretamente, apenas referencia estudos externos sobre biocompatibilidade",
-      "Partículas muito próximas ao estado superparamagnético (abaixo de 18,9 nm) são inadequadas pois a distribuição de tamanhos durante a síntese reduz a eficiência da amostra"
+      "Polydispersidade das NPs não é abordada no modelo atual, pois depende principalmente do método de síntese",
+      "Interações dipolo-dipolo entre partículas não são discutidas ou consideradas no modelo",
+      "Para NPs, a verificação experimental é difícil devido à dependência das propriedades magnéticas de muitos fatores (método de crescimento, tamanho, forma, campo externo, revestimento)",
+      "Partículas com tamanho próximo ao estado superparamagnético são consideradas inadequadas pois, durante a síntese, há distribuição de tamanhos que reduz a eficiência da amostra",
+      "O artigo não investiga questões de toxicidade"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Validação experimental dos valores calculados de SAR para as composições identificadas como candidatas à SCMH",
-      "Investigação experimental das propriedades magnéticas das NPs de MnB e Co2B dopadas nas composições e tamanhos identificados"
+      "Estudos experimentais in vitro e in vivo com as composições identificadas como candidatas para SCMH",
+      "Investigação da toxicidade e biocompatibilidade das NPs de boretos identificadas"
     ],
     "gaps_identificados": [
-      "Ausência de dados experimentais repetíveis para NPs das composições estudadas, dificultando a verificação quantitativa do modelo",
-      "Efeitos de polidispersidade e interações dipolo-dipolo não foram incorporados ao modelo microscópico",
-      "Questões de toxicidade e biocompatibilidade in vivo/in vitro não foram investigadas diretamente neste trabalho teórico"
+      "Ausência de dados experimentais reprodutíveis para NPs de boretos para validação direta dos resultados teóricos",
+      "Efeitos de polydispersidade e interações dipolo-dipolo não são considerados no modelo microscópico",
+      "Questões de toxicidade das NPs de boretos estudadas não foram investigadas neste trabalho",
+      "O modelo não considera a heterogeneidade de tamanho das NPs reais produzidas experimentalmente"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo desenvolve um modelo microscópico baseado no Hamiltoniano de Heisenberg, formalismo de Kubo e funções de Green (método de Tserkovnikov) para calcular quantitativamente TC, Ms, Hc e SAR de NPs de boretos metálicos, correlacionando parâmetros microscópicos de troca e anisotropia com eficiência de aquecimento.",
-    "integracao_engenharia": "O estudo identifica composições e tamanhos específicos de NPs (e.g., Co2B com d=31,8 nm, SAR=7,1 W/g; MnB com d=26,3 nm) que satisfazem simultaneamente os critérios de biocompatibilidade para SCMH, fornecendo parâmetros de operação (f=360 kHz, hmax=170 Oe) dentro do limite de segurança biológica.",
-    "integracao_biologia": "O trabalho demonstra que NPs de MnB e Co2B puras e dopadas com composições específicas atendem aos requisitos de biocompatibilidade para SCMH (TC ≈ 312-315 K, tamanho < 35 nm, campo biosseguro), viabilizando aplicações in vivo e in vitro no tratamento de câncer sem superaquecimento de tecidos saudáveis.",
-    "integracao_materiais": "O estudo revela que boretos de metais de transição (MnB, CoB, FeB, Fe2B) são materiais magneticamente moles com alta estabilidade química, biocompatíveis e com propriedades magnéticas ajustáveis via dopagem iônica e controle de tamanho, constituindo alternativas promissoras ao Fe3O4 e Fe2O3 para hipertermia magnética.",
-    "mensagem_principal": "Utilizando um modelo microscópico com funções de Green, este trabalho identifica NPs de Mn1-xCoxB e (Fe1-xCox)2B com composições e tamanhos específicos (e.g., Co2B com d=31,8 nm e SAR=7,1 W/g) como candidatos viáveis para hipertermia magnética autocontrolada, pois satisfazem simultaneamente os critérios de temperatura de Curie biocompatível (≈315 K), tamanho adequado para transporte in vivo (<35 nm) e eficiência de aquecimento dentro dos limites de segurança biológica."
+    "integracao_fisica": "O artigo aplica modelo microscópico quântico baseado no formalismo de Kubo e funções de Green (método de Tserkovnikov) para calcular o SAR a partir de propriedades de excitações elementares de spin, interações de troca e anisotropia magnetocristalina.",
+    "integracao_engenharia": "O artigo fornece parâmetros quantitativos (tamanho, composição, SAR, MS, HC, TC) para seleção de NPs de boretos candidatas à SCMH, respeitando o limite de segurança biológica hmax*f < 6,2×10^7 Oe/s.",
+    "integracao_biologia": "O trabalho identifica NPs que atendem aos requisitos de biocompatibilidade para aplicações in vivo e in vitro, incluindo TC na faixa terapêutica (312-315 K), tamanho menor que 35 nm para transporte pelo sistema circulatório e potencial de não toxicidade.",
+    "integracao_materiais": "O artigo investiga sistematicamente NPs puras e dopadas de MnB, FeB, CoB e Fe2B, demonstrando como dopagem com Co e Fe e efeitos de tamanho/superfície permitem sintonizar TC, MS, HC e SAR para aplicações em hipertermia magnética autocontrolada.",
+    "mensagem_principal": "NPs de MnB e (Fe1-xCox)2B com composições e tamanhos específicos — como Mn0.5Co0.5B (32,2 nm), MnB (26,3 nm), (Fe0.1Co0.9)2B (26,3 nm) e Co2B (31,8 nm) — satisfazem simultaneamente os critérios de temperatura de Curie biocompatível (~315 K), tamanho adequado para transporte in vivo (<35 nm) e eficiência térmica (SAR), constituindo candidatos promissores para hipertermia magnética autocontrolada no tratamento do câncer."
   },
   "custom_id": "59__Application_of_Pure_and_Ion-Doped_FeB__CoB__MnB__and_Fe2B_Na"
 }

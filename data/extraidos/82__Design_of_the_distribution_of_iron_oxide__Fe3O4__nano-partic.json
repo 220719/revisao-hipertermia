@@ -6,16 +6,15 @@
   "doi": "10.1016/j.phrs.2024.107333",
   "tipo_estudo": "in silico",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MHT) é induzida por nanopartículas magnéticas (MNPs) pré-introduzidas no tumor que, sob exposição a um campo magnético alternante (AMF) externo, geram calor elevando a temperatura interna do tumor em mais de 3–10°C, inibindo o crescimento tumoral ou destruindo o tecido neoplásico.",
+    "conceito_tecnica": "A hipertermia magnética (MHT) é induzida por nanopartículas magnéticas (MNPs) pré-introduzidas no tumor que, sob um campo magnético alternante (AMF) externo, geram calor elevando a temperatura interna do tumor em mais de 3–10°C, inibindo o crescimento tumoral ou destruindo o tecido neoplásico.",
     "etapas_processo": [
-      "Introdução das MNPs de Fe3O4 no tumor (distribuição intratumoral multipontual)",
-      "Aplicação de campo magnético alternante (AMF) externo via bobinas de Helmholtz",
-      "Geração de calor pelas MNPs por relaxação de Neel e Browniana",
-      "Transferência de calor para o tecido tumoral descrita pela equação de biocalor de Pennes",
-      "Monitoramento e ajuste da distribuição de temperatura para garantir eficácia terapêutica e segurança dos tecidos adjacentes"
+      "Introdução prévia das MNPs no tumor (injeção intratumoral)",
+      "Aplicação de campo magnético alternante (AMF) externo por bobinas de Helmholtz",
+      "Geração de calor pelas MNPs via relaxação de Néel e Browniana",
+      "Transferência de calor para o tecido tumoral e avaliação da distribuição de temperatura via equação de biotransferência de Pennes"
     ],
-    "internalizacao_nps": "As MNPs são introduzidas diretamente no tumor por injeção intratumoral, com distribuição em múltiplos pontos representados como esferas de raio menor que 3 mm, simulando estado uniforme de baixa taxa de infiltração",
-    "aplicacao_campo": "O AMF é aplicado externamente por bobinas de Helmholtz que geram campo magnético uniforme com corrente alternada de 20 A a 100 kHz, resultando em intensidade de campo de aproximadamente 12.000 A/m na região tumoral.",
+    "internalizacao_nps": "As MNPs são introduzidas no tumor por injeção intratumoral, com distribuição em múltiplos sítios para cobertura uniforme do tumor",
+    "aplicacao_campo": "O AMF é aplicado externamente por meio de bobinas de Helmholtz que geram campo magnético uniforme na região do tumor, com frequência de 100 kHz e intensidade de campo de aproximadamente 12.000 A/m.",
     "janela_termica_min_C": 41.0,
     "janela_termica_max_C": 46.0,
     "vias_morte_celular": []
@@ -27,12 +26,12 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": "senoidal",
-    "mecanismo_dominante": "A geração de calor nas MNPs ocorre predominantemente pela combinação de relaxação de Neel e rotação Browniana sob campo magnético alternante, descrita pela equação de Rosensweig.",
-    "descricao_mecanismo": "A exposição das MNPs e seus momentos magnéticos a um campo variante no tempo leva à geração de calor por rotação Browniana e relaxação de Neel, cujos tempos característicos são descritos respectivamente por τB = 3ηVH/kT e τN = τ0·exp(KV/kT). A potência de perda térmica é avaliada pela expressão de Rosensweig: P = μ0·f·H0²·π·χ'', onde χ'' é a parte imaginária da susceptibilidade magnética dependente do tempo efetivo de relaxação τeff = (τN·τB)/(τN + τB)."
+    "mecanismo_dominante": "A geração de calor pelas MNPs é descrita pela equação de Rosensweig, com contribuição combinada da relaxação de Néel e Browniana como mecanismos dominantes.",
+    "descricao_mecanismo": "A exposição das MNPs e seus momentos magnéticos a um campo magnético variável no tempo leva à geração de calor por rotação Browniana e relaxação de Néel. O tempo de relaxação efetivo é calculado como a média harmônica dos tempos de relaxação de Néel e Browniana. A potência térmica dissipada é proporcional à frequência do campo, ao quadrado da intensidade do campo e à parte imaginária da susceptibilidade magnética."
   },
   "q3": {
     "material": "Fe3O4",
-    "composicao_quimica": "Fe3O4 (magnetita)",
+    "composicao_quimica": "Fe3O4",
     "dopagem": null,
     "tamanho_nm": 19.0,
     "faixa_tamanho_min_nm": null,
@@ -45,7 +44,7 @@
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "O raio das MNPs (9,5×10⁻⁹ m) e o volume hidrodinâmico determinam os tempos de relaxação de Neel e Browniana, que por sua vez definem a potência de calor gerada sob o AMF aplicado conforme a teoria de Rosensweig."
+    "relacao_estrutura_propriedade": "O raio das MNPs (9,5 nm) e o volume hidrodinâmico das partículas determinam os tempos de relaxação de Néel e Browniana, influenciando diretamente a potência térmica gerada sob o campo magnético alternante."
   },
   "q4": {
     "amplitude_kA_m": 12.0,
@@ -54,8 +53,8 @@
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": 30.0,
     "forma_onda": "senoidal",
-    "dosimetria_termica": "Simulação numérica por elementos finitos no COMSOL Multiphysics usando a equação de biocalor de Pennes acoplada ao modelo de geração de calor de Rosensweig",
-    "distribuicao_espacial_calor": "Distribuição não uniforme com temperatura mais elevada no centro de cada ponto de distribuição de MNPs e nas regiões de sobreposição entre pontos adjacentes, decrescendo em direção às bordas do tumor e tecidos normais circundantes",
+    "dosimetria_termica": "Simulação numérica via equação de biotransferência de calor de Pennes implementada no COMSOL Multiphysics, com monitoramento da distribuição de temperatura em modelo 3D realista",
+    "distribuicao_espacial_calor": "Distribuição não uniforme dentro do tumor; temperatura mais elevada no centro dos sítios de distribuição de MNPs e nas regiões de sobreposição entre sítios adjacentes, com gradiente decrescente em direção à periferia tumoral e tecidos normais adjacentes",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -79,37 +78,36 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "O sistema completo construído ainda não foi submetido a testes clínicos",
-      "O modelo foi desenvolvido com dados de imagem de apenas um paciente",
-      "Modelos de tumores subcutâneos em camundongos não reproduzem fielmente o processo de MHT em humanos",
-      "Parâmetros dielétricos da bile no ducto biliar em 100 kHz não estão disponíveis na literatura",
-      "Transferência de calor convectiva nos grandes vasos profundos não foi incluída no cálculo do modelo",
-      "Dados ausentes sobre propriedades dielétricas de diferentes tumores em diferentes frequências",
-      "Distribuição controlável de MNPs em tumores profundos permanece um desafio técnico"
+      "O modelo foi baseado em dados de imagem de apenas um paciente, limitando a generalização",
+      "O modelo de tumor subcutâneo em camundongos não reproduz fielmente o processo de MHT em humanos com tumores profundos",
+      "Ausência de dados de propriedades dielétricas e termofísicas da bile no ducto biliar a 100 kHz in vivo",
+      "O sistema de simulação construído ainda não foi testado clinicamente",
+      "A transferência de calor por convecção dos grandes vasos (sistema venoso portal e hepático) não foi incluída no modelo",
+      "A distribuição controlável de MNPs em tumores profundos ainda representa um desafio técnico não resolvido"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Iniciar estudos pré-clínicos com modelos animais antes da aplicação clínica",
-      "Obter dados dielétricos e termodinâmicos ausentes para bile e diferentes tipos tumorais em diferentes frequências",
-      "Avaliar o impacto da transferência de calor convectiva em grandes vasos profundos nos resultados da MHT para CCA",
-      "Desenvolver estratégias para distribuição controlável de MNPs em tumores profundos",
-      "Expandir o sistema de simulação para outros pacientes utilizando seus dados de TC e RM individuais"
+      "Iniciar estudos pré-clínicos com modelos animais para validar o sistema de simulação proposto",
+      "Obter dados experimentais de parâmetros dielétricos do ducto biliar e diferentes tumores em diferentes frequências",
+      "Avaliar o impacto da transferência de calor convectivo em vasos profundos nos resultados da MHT para CCA",
+      "Desenvolver estratégias para controle da distribuição de MNPs em tumores profundos",
+      "Expandir o sistema de simulação para outros tipos de tumores profundos além do CCA"
     ],
     "gaps_identificados": [
-      "Ausência de parâmetros dielétricos da bile in vivo a 100 kHz na literatura existente",
-      "Falta de modelos realistas tridimensionais de tumores profundos em simulações de MHT",
-      "Escassez de estudos de MHT especificamente para colangiocarcinoma",
-      "Lacuna entre modelos de simulação matemática e validação clínica da MHT",
-      "Estratégias individualizadas de distribuição de MNPs específicas para tumor raramente consideradas na prática clínica"
+      "Ausência de estudos de MHT específicos para colangiocarcinoma na literatura",
+      "Falta de estratégias para distribuição tumor-específica de MNPs na prática clínica",
+      "Modelos numéricos atuais limitados a geometrias esféricas e simulações 2D, inadequados para tumores profundos irregulares",
+      "Negligência do ajuste de parâmetros do campo magnético e avaliação individualizada de segurança térmica nos estudos existentes",
+      "Ausência de dados de propriedades termofísicas e dielétricas da bile in vivo a 100 kHz"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo aplica as equações de Maxwell para modelagem do campo eletromagnético das bobinas de Helmholtz e a teoria de Rosensweig para calcular a geração de calor nas MNPs sob AMF.",
-    "integracao_engenharia": "Utilizou-se análise de elementos finitos no COMSOL Multiphysics para simulação acoplada dos campos magnético, térmico e de transferência de calor em modelos 3D realistas de anatomia humana reconstruídos a partir de imagens clínicas.",
-    "integracao_biologia": "O modelo incorpora parâmetros biológicos reais como perfusão sanguínea, metabolismo tecidual e propriedades termodinâmicas de diferentes tecidos e órgãos adjacentes ao tumor, avaliando segurança térmica para estruturas vitais.",
-    "integracao_materiais": "Fe3O4 aprovado pela FDA foi utilizado como agente de aquecimento, com suas propriedades magnéticas (magnetização de domínio, anisotropia efetiva, volume hidrodinâmico) parametrizadas no modelo para calcular a geração de calor.",
-    "mensagem_principal": "Este estudo demonstra a viabilidade de um sistema integrado de simulação pré-operatória personalizada para MHT de colangiocarcinoma, combinando reconstrução 3D de imagens clínicas reais com cálculo numérico de distribuição de MNPs e transferência de calor, permitindo planejar estratégias individualizadas de administração do fármaco magnético que garantam eficácia terapêutica e segurança dos órgãos adjacentes em tumores profundos."
+    "integracao_fisica": "O estudo aplica as equações de Maxwell para modelagem do campo eletromagnético das bobinas de Helmholtz e a teoria de Rosensweig para cálculo da potência térmica gerada pelas MNPs sob AMF.",
+    "integracao_engenharia": "Utilizou-se simulação de elementos finitos no COMSOL Multiphysics para modelagem acoplada dos campos eletromagnético e térmico em geometria 3D realista derivada de imagens clínicas de CT e MRCP.",
+    "integracao_biologia": "O modelo incorpora a equação de biotransferência de calor de Pennes com parâmetros de perfusão sanguínea, calor metabólico e propriedades termofísicas dos tecidos biológicos para avaliar a segurança térmica dos órgãos adjacentes ao tumor.",
+    "integracao_materiais": "As nanopartículas de Fe3O4, aprovadas pela FDA, foram modeladas com seus parâmetros magnéticos e termofísicos reais, permitindo simular o efeito da fração volumétrica e da distribuição espacial das MNPs na geração de calor intratumoral.",
+    "mensagem_principal": "O estudo demonstra a viabilidade de um sistema de simulação pré-operatória personalizado que integra reconstrução 3D de imagens clínicas com cálculo numérico da distribuição de MNPs e transferência de calor em CCA, mostrando que estratégias de distribuição multiregional de MNPs com sobreposição controlada elevam a temperatura tumoral de forma eficaz e segura para os tecidos normais adjacentes."
   },
   "custom_id": "82__Design_of_the_distribution_of_iron_oxide__Fe3O4__nano-partic"
 }

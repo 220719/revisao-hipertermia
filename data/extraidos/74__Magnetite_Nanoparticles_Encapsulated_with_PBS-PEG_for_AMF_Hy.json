@@ -6,17 +6,16 @@
   "doi": "10.3390/ma18020258",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética é uma técnica de tratamento do câncer na qual nanopartículas magnéticas são direcionadas ao tecido de interesse, onde geram calor por meio de um campo magnético alternante. O tecido corporal é exposto a altas temperaturas (até 45°C), danificando proteínas e estruturas celulares internas, encolhendo os tumores.",
+    "conceito_tecnica": "A hipertermia magnética é uma técnica em que nanopartículas magnéticas são direcionadas ao tecido de interesse, onde geram calor por meio de um campo magnético alternante. O tecido tumoral é exposto a altas temperaturas (até 45°C), danificando proteínas e estruturas celulares internas, encolhendo os tumores.",
     "etapas_processo": [
-      "Síntese das nanopartículas de magnetita por coprecipitação",
-      "Encapsulamento das nanopartículas em copolímero PBS-PEG pelo método de emulsão/evaporação",
+      "Síntese das nanopartículas de magnetita por co-precipitação",
+      "Síntese e modificação do copolímero PBS-PEG com TDI",
+      "Encapsulamento das nanopartículas de magnetita no copolímero PBS-PEG pelo método de emulsão/evaporação",
       "Caracterização físico-química das nanopartículas encapsuladas",
-      "Inserção das amostras na bobina do indutor de campo magnético alternante",
-      "Aplicação do campo magnético alternante com variação de corrente e tempo",
-      "Monitoramento da variação de temperatura gerada"
+      "Aplicação de campo magnético alternante (AMF) às amostras para geração de calor"
     ],
-    "internalizacao_nps": "O artigo não descreve explicitamente a internalização celular das NPs; menciona apenas que partículas com tamanho em torno de 200 nm entram passivamente nos vasos sanguíneos tumorais pelo efeito EPR (permeabilidade e retenção aumentadas).",
-    "aplicacao_campo": "O campo magnético alternante é aplicado por meio de um indutor (Ambrell EASYHEAT L1) com bobina, variando corrente (450–750 A) e tempo (300–900 s), magnetizando e desmagnetizando as nanopartículas em direção aleatória, elevando rapidamente a temperatura.",
+    "internalizacao_nps": "O artigo não descreve explicitamente a internalização celular das NPs; menciona apenas que partículas com tamanho em torno de 200 nm entram passivamente nos vasos sanguíneos tumorais pelo efeito EPR (permeabilidade e retenção).",
+    "aplicacao_campo": "O campo magnético alternante foi aplicado utilizando um equipamento Ambrell EASYHEAT L1, inserindo as amostras na bobina do indutor com variação de corrente (450–750 A) e tempo (300–900 s).",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 45.0,
     "vias_morte_celular": []
@@ -28,8 +27,8 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O campo magnético alternante magnetiza e desmagnetiza as nanopartículas em direção aleatória, gerando calor rapidamente.",
-    "descricao_mecanismo": "O artigo descreve que campos magnéticos alternantes (AMFs) magnetizam e desmagnetizam as nanopartículas de óxido de ferro em direção aleatória, aumentando rapidamente a temperatura do meio. O calor gerado é normalizado pela massa de partículas magnéticas e expresso como SAR (taxa de absorção específica). Não são discutidos mecanismos específicos de relaxação de Néel, Browniana ou perdas por histerese."
+    "mecanismo_dominante": "O artigo menciona que campos magnéticos alternantes magnetizam e desmagnetizam as nanopartículas em direção aleatória, aumentando rapidamente a temperatura, sem detalhar o mecanismo físico dominante.",
+    "descricao_mecanismo": "O artigo descreve apenas que os campos magnéticos alternantes (AMFs) magnetizam e desmagnetizam as nanopartículas de óxido de ferro em direção aleatória, gerando calor rapidamente. Não há descrição física detalhada dos mecanismos de relaxação de Néel, Browniana ou perdas por histerese."
   },
   "q3": {
     "material": "Fe3O4 (magnetita)",
@@ -46,7 +45,7 @@
     "SAR_W_g": 10372.0,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "O tamanho cristalino de 18 nm é indicativo de comportamento superparamagnético. O encapsulamento com PBS-PEG aumentou o potencial zeta (de ~2–7 mV para ~−51 a −57 mV), reduzindo a tendência de aglomeração e aumentando a estabilidade coloidal, enquanto o PEG confere hidrofilicidade e prolonga o tempo de circulação no sangue."
+    "relacao_estrutura_propriedade": "O tamanho cristalino de 18 nm das nanopartículas de magnetita é indicativo de comportamento superparamagnético. O revestimento com PBS-PEG aumentou o potencial zeta (de ~2,5 mV para ~-54 mV), melhorando a estabilidade coloidal e reduzindo a tendência de agregação."
   },
   "q4": {
     "amplitude_kA_m": null,
@@ -55,7 +54,7 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 15.0,
     "forma_onda": null,
-    "dosimetria_termica": "Termômetro com registro da variação de temperatura (ΔT) ao longo do tempo; SAR calculado pela equação SAR = [Cnp + (ρH2O × CH2O/ρnp)] × ΔT/Δt",
+    "dosimetria_termica": "Medição da variação de temperatura (ΔT) das amostras expostas ao AMF com delineamento fatorial variando corrente (450–750 A) e tempo (300–900 s), com cálculo do SAR pela equação de taxa de liberação de calor normalizada pela massa de partículas.",
     "distribuicao_espacial_calor": null,
     "padronizacao_reportada": false
   },
@@ -81,32 +80,30 @@
   "q6": {
     "limitacoes_reportadas": [
       "Ausência de estudos in vivo para avaliação da eficácia terapêutica e segurança em modelos animais",
-      "Não foram realizados estudos celulares para avaliar os efeitos das nanopartículas sobre células cancerígenas e o sistema imunológico",
-      "A variação de temperatura obtida nos testes foi relativamente pequena (máximo ΔT = 4°C), sendo necessários aprimoramentos na formulação",
-      "A magnetita nua apresentou forte tendência à aglomeração devido ao baixo potencial zeta"
+      "Não foram realizados testes em células cancerígenas para confirmar a morte celular",
+      "A variação de temperatura obtida nos testes (máximo ΔT = 4°C) pode ser insuficiente para atingir a faixa terapêutica sem partir de uma temperatura basal adequada",
+      "O tamanho médio por DLS (80,9 nm) indicou agregação significativa das nanopartículas livres de magnetita"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Realizar estudos in vivo em modelos animais para avaliar eficácia terapêutica e segurança antes de ensaios em humanos",
-      "Investigar os modos de ação dos nanocompósitos sobre células cancerígenas e o sistema imunológico",
-      "Aprimorar a formulação para obter resultados ainda melhores",
-      "Realizar estudos adicionais e análises complementares para validar o método de terapia"
+      "Realização de estudos in vivo para avaliar a eficácia terapêutica e segurança dos nanocompósitos em modelos animais antes de ensaios clínicos em humanos",
+      "Investigação dos modos de ação dos nanocompósitos sobre células cancerígenas e o sistema imunológico",
+      "Melhoria e validação do método de terapia do câncer desenvolvido"
     ],
     "gaps_identificados": [
-      "Ausência de avaliação de citotoxicidade in vitro em linhagens celulares tumorais",
-      "Falta de caracterização magnética detalhada (magnetização de saturação, coercividade)",
-      "Parâmetros do campo magnético alternante (frequência, amplitude) não foram reportados",
-      "Mecanismos de geração de calor em nível nanoscópico não foram discutidos",
-      "Não foram avaliados efeitos biológicos reais (morte celular, apoptose, necrose)"
+      "Ausência de avaliação de citotoxicidade e morte celular in vitro",
+      "Falta de determinação dos parâmetros de campo magnético (frequência, amplitude) e verificação dos limites de segurança biológica",
+      "Ausência de estudos de biodistribuição e comportamento in vivo das nanopartículas",
+      "Falta de caracterização magnética detalhada (magnetização de saturação, mecanismos de aquecimento)"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo demonstrou que nanopartículas de magnetita encapsuladas em PBS-PEG geram calor suficiente sob campo magnético alternante, com SAR de 10.372 W/kg, evidenciando o potencial físico dessas partículas para hipertermia.",
-    "integracao_engenharia": "O trabalho desenvolveu um protocolo de síntese e encapsulamento de nanopartículas magnéticas em copolímero PBS-PEG pelo método de emulsão/evaporação, otimizando parâmetros como corrente e tempo de exposição ao campo por planejamento fatorial.",
-    "integracao_biologia": "O encapsulamento com PBS-PEG conferiu às nanopartículas propriedades de biocompatibilidade, aumento do tempo de circulação sanguínea por biomasking do PEG, e tamanho (70% entre 100–200 nm) compatível com acúmulo tumoral pelo efeito EPR, preparando o sistema para futuras avaliações biológicas.",
-    "integracao_materiais": "A síntese do copolímero PBS-PEG via modificação com TDI foi confirmada por FTIR, e o encapsulamento da magnetita foi validado por TGA, DSC, DLS, SEM e EDS, demonstrando que o revestimento polimérico aumentou o potencial zeta e a estabilidade coloidal das nanopartículas.",
-    "mensagem_principal": "Nanopartículas de magnetita encapsuladas no copolímero PBS-PEG foram sintetizadas com sucesso, apresentando tamanho adequado para administração intravenosa e acúmulo tumoral, estabilidade coloidal melhorada e SAR de 10.372 W/kg, demonstrando elevado potencial para aplicação em hipertermia magnética no tratamento do câncer, com necessidade de estudos in vivo futuros para validação terapêutica."
+    "integracao_fisica": "O estudo demonstrou que nanopartículas de magnetita encapsuladas em PBS-PEG apresentam SAR de 10.372 W/kg sob campo magnético alternante, indicando alto potencial de geração de calor para hipertermia.",
+    "integracao_engenharia": "O processo de encapsulamento pelo método de emulsão/evaporação com o copolímero PBS-PEG resultou em nanopartículas com tamanho médio de 197,1 nm e 70% das partículas na faixa de 100–200 nm, adequadas para administração intravenosa.",
+    "integracao_biologia": "O revestimento com PBS-PEG melhorou a estabilidade coloidal (potencial zeta de ~-54 mV), aumenta o tempo de circulação no sangue pelo efeito de bimascaramento do PEG, e permite acumulação passiva em tumores via efeito EPR.",
+    "integracao_materiais": "A síntese e caracterização do copolímero PBS-PEG com ligações uretano confirmadas por FTIR demonstrou que a combinação de PBS biocompatível com PEG hidrofílico é eficaz para encapsular nanopartículas magnéticas, com eficiência de encapsulamento de 36,59%.",
+    "mensagem_principal": "Este trabalho sintetizou e caracterizou nanopartículas de magnetita encapsuladas no copolímero PBS-PEG, demonstrando que o sistema desenvolvido apresenta propriedades físico-químicas adequadas para aplicação em hipertermia magnética no tratamento do câncer, com SAR de 10.372 W/kg e tamanho compatível com administração intravenosa e acumulação tumoral via EPR, sendo necessários estudos in vivo para validação terapêutica."
   },
   "custom_id": "74__Magnetite_Nanoparticles_Encapsulated_with_PBS-PEG_for_AMF_Hy"
 }

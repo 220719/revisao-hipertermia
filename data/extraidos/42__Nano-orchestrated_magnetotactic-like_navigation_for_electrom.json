@@ -6,19 +6,18 @@
   "doi": "10.1186/s12951-025-03488-7",
   "tipo_estudo": "in vivo",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética é empregada como hipertermia eletromagnética remota, utilizando nanopartículas de óxido de ferro responsivas a campos eletromagnéticos encapsuladas em matriz de glicol quitosana revestidas sobre Chlorella para gerar calor localizado no tumor. O sistema integra hipertermia fototérmica (PTT), oxigenação fotossintética e ferroptose para eradicação tumoral abrangente.",
+    "conceito_tecnica": "A hipertermia magnética é aplicada neste estudo como hipertermia eletromagnética, onde nanopartículas de óxido de ferro (IO) responsivas a campos eletromagnéticos geram calor localizado sob irradiação NIR (808 nm), promovendo efeito fototérmico para ablação tumoral. O sistema CHL-GCS-IO NPs combina hipertermia fototérmica, oxigenação fotossintética e ferroptose para erradicação tumoral abrangente.",
     "etapas_processo": [
-      "Síntese das GCS-IO NPs por co-precipitação modificada com revestimento de glicol quitosana",
-      "Conjugação das GCS-IO NPs à superfície da Chlorella (CHL) formando CHL-GCS-IO NPs",
-      "Administração intravenosa das CHL-GCS-IO NPs no modelo tumoral",
-      "Aplicação de campo magnético externo por 10 min para guiar as NPs ao tumor",
-      "Irradiação com laser de 660 nm por 10 min para ativação fotossintética (PST) e geração de ROS",
-      "Irradiação com laser de 808 nm por 5 min para terapia fototérmica (PTT) e hipertermia",
-      "Indução de ferroptose pelas NPs de óxido de ferro internalizadas nas células tumorais",
-      "Modulação do microambiente tumoral com ativação imune e repolarização de macrófagos"
+      "Síntese de GCS-IO NPs por co-precipitação modificada de FeCl2 e FeCl3 em matriz de glicol quitosana (GCS)",
+      "Conjugação das GCS-IO NPs à superfície de Chlorella (CHL) por incubação a 25°C por 30 min",
+      "Administração intravenosa (i.v.) das CHL-GCS-IO NPs em modelo animal de câncer de bexiga (MB49)",
+      "Aplicação de campo magnético externo (ímã permanente por 10 min) para direcionamento tumoral",
+      "Irradiação com laser de 660 nm (10 min, 0,1 W/cm²) para fotossíntese e geração de oxigênio/ROS",
+      "Irradiação com laser NIR de 808 nm (5 min, 2,45 W/cm²) para terapia fototérmica (PTT)",
+      "Indução de morte celular por hipertermia, ferroptose e espécies reativas de oxigênio"
     ],
-    "internalizacao_nps": "As GCS-IO NPs são internalizadas nas células tumorais MB49 por endocitose mediada pelo revestimento de glicol quitosana catiônico, confirmada por coloração de azul da Prússia mostrando acúmulo significativo de ferro intracelular",
-    "aplicacao_campo": "O campo magnético alternado é aplicado por um eletroímã de bobina linear (diâmetro ~2,2 cm, 50-60 Hz, alimentado por transformador de 110-240 V) ou por ímã permanente posicionado no sítio tumoral por 10 min para guiar as CHL-GCS-IO NPs ao tumor.",
+    "internalizacao_nps": "As GCS-IO NPs são conjugadas à superfície das células de Chlorella por interação eletrostática entre a superfície aniônica da CHL (-20 mV) e as GCS-IO NPs catiônicas (+20 mV); após administração i.v. e direcionamento magnético, as CHL-GCS-IO NPs acumulam-se no tumor, onde as IO NPs promovem acúmulo intracelular de ferro em células MB49, evidenciado por coloração Prussian blue",
+    "aplicacao_campo": "O campo magnético é aplicado externamente por meio de um ímã permanente posicionado sobre o sítio tumoral por 10 minutos após injeção i.v., promovendo actução magnetotáctica e acúmulo direcionado das CHL-GCS-IO NPs no tumor.",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 50.8,
     "vias_morte_celular": [
@@ -33,9 +32,9 @@
     "perdas_histerese": null,
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
-    "forma_onda_campo": "null",
-    "mecanismo_dominante": "O mecanismo principal de geração de calor é a conversão fototérmica das GCS-IO NPs sob irradiação NIR de 808 nm, complementado pela responsividade eletromagnética das nanopartículas de óxido de ferro.",
-    "descricao_mecanismo": "As GCS-IO NPs exibem propriedades fototérmicas intrínsecas do óxido de ferro que, sob irradiação NIR de 808 nm (2,45 W/cm²), convertem a luz absorvida em calor de forma eficiente, elevando a temperatura local acima de 50 °C em 10 min. O revestimento de glicol quitosana melhora a estabilidade coloidal e a dispersão das NPs, potencializando a eficiência de conversão fototérmica. Adicionalmente, as NPs de óxido de ferro apresentam resposta eletromagnética detectável sob irradiação luminosa, sugerindo propriedades condutoras que facilitam a geração e transmissão de sinais eletromagnéticos."
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O mecanismo dominante de geração de calor é a conversão fototérmica, onde as IO NPs absorvem irradiação NIR de 808 nm e a convertem em calor localizado, elevando a temperatura acima de 50°C.",
+    "descricao_mecanismo": "As GCS-IO NPs exibem propriedades fototérmicas intrínsecas que, combinadas com a estabilidade coloidal proporcionada pelo revestimento de GCS, permitem uma conversão eficiente da luz NIR em calor. Sob irradiação de 808 nm a 2,45 W/cm², as CHL-GCS-IO NPs atingiram temperaturas superiores a 50°C em 10 minutos in vitro e 50,8°C em 5 minutos in vivo. Adicionalmente, um campo eletromagnético de corrente alternada (60 Hz) foi utilizado para actução magnética, embora o mecanismo de aquecimento magnético por AC não seja o foco principal do estudo."
   },
   "q3": {
     "material": "Fe3O4 (magnetita/maghemita)",
@@ -47,22 +46,22 @@
     "forma": "esférica",
     "arquitetura_multicore": false,
     "anisotropia": null,
-    "revestimento": "glicol quitosana (GCS) e superfície de Chlorella (microalga)",
+    "revestimento": "glicol quitosana (GCS)",
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "O revestimento de GCS ao redor do núcleo de Fe3O4 confere estabilidade coloidal, carga superficial positiva (~+20 mV) e biocompatibilidade, enquanto preserva o comportamento superparamagnético com remanência e coercitividade próximas de zero, essenciais para guiamento magnético sem magnetização residual. A conjugação com Chlorella aumenta a dispersão das NPs e melhora o contraste T2 em MRI."
+    "relacao_estrutura_propriedade": "O revestimento de GCS estabiliza as IO NPs em dispersão aquosa, conferindo carga superficial positiva (~+20 mV) e comportamento superparamagnético com remanência e coercividade próximas de zero, enquanto a conjugação com CHL preserva as propriedades fotossintéticas e magnéticas para aplicações teranósticas multimodais."
   },
   "q4": {
     "amplitude_kA_m": null,
-    "frequencia_kHz": 5e-05,
+    "frequencia_kHz": 0.05,
     "produto_Hf": null,
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 10.0,
-    "forma_onda": "null",
-    "dosimetria_termica": "Imageamento térmico por câmera infravermelha (MET-FLTG300+2) com intervalos de 2 min; medição de temperatura por irradiação NIR de 808 nm (2,45 W/cm²)",
-    "distribuicao_espacial_calor": "Aquecimento localizado no sítio tumoral, com CHL-GCS-IO NPs atingindo ~50,8 °C após 5 min de irradiação NIR in vivo, enquanto controles permanecem em ~32 °C",
+    "forma_onda": null,
+    "dosimetria_termica": "Imageamento térmico por câmera infravermelha (A-BF, MET-FLTG300+2) a intervalos de 2 minutos; cálculo da eficiência de conversão fototérmica pela razão entre o aumento de energia interna do fluido e a radiação incidente total",
+    "distribuicao_espacial_calor": "Aquecimento localizado no sítio tumoral, com contraste térmico evidente entre o grupo CHL-GCS-IO NPs (~50,8°C) e os grupos controle e CHL (~32°C), confirmando efeito fototérmico concentrado na região do tumor",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -71,7 +70,7 @@
     "modelo_animal": "camundongo",
     "tipo_cancer": "bexiga",
     "concentracao_mg_mL": 0.125,
-    "agregacao_discutida": true,
+    "agregacao_discutida": false,
     "viscosidade_discutida": false,
     "imobilizacao_celular": false,
     "perfusao_discutida": false,
@@ -86,33 +85,30 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "A Chlorella como microrganismo exógeno pode elicitar resposta imune após injeção intravenosa, levando à sua eliminação antes do acúmulo no tumor",
-      "A etapa de PTT com laser de 808 nm pode causar morte da Chlorella, embora sobreviventes sejam eliminados pelo sistema imune",
-      "O estudo utilizou modelo tumoral subcutâneo em camundongos, podendo não refletir completamente o microambiente de tumores vesicais humanos",
-      "A janela terapêutica da Chlorella pode ser limitada pela sua vida útil após conjugação com GCS-IO NPs"
+      "CHL como microrganismo exógeno pode elicitar resposta imune após injeção i.v., levando à sua eliminação antes de acumular nos tecidos tumorais",
+      "A etapa de PTT com 808 nm pode causar morte das microalgas, limitando a produção contínua de oxigênio na fase final do tratamento",
+      "O sistema magnético utilizado (transformador AC de 50-60 Hz com bobina de ~2,2 cm) é um protótipo simples sem caracterização detalhada dos parâmetros do campo"
     ],
     "problemas_SAR_ILP": false,
-    "falta_padronizacao": false,
+    "falta_padronizacao": true,
     "recomendacoes_futuras": [
-      "Investigar aplicações clínicas translacionais do sistema magnetotático-like CHL-GCS-IO NPs em modelos tumorais mais complexos",
-      "Explorar a integração do sistema com outras modalidades terapêuticas para maximizar a ativação imune",
-      "Desenvolver estratégias para prolongar a retenção e funcionalidade da Chlorella in vivo após administração sistêmica",
-      "Avaliar o potencial do sistema para prevenção de recorrência tumoral a longo prazo através de memória imune antitumoral"
+      "Investigar estratégias para prolongar a retenção e funcionalidade da CHL in vivo após injeção sistêmica",
+      "Avaliar a aplicação do sistema em outros modelos de tumores sólidos além do câncer de bexiga",
+      "Explorar a combinação com imunoterapias convencionais (checkpoint inhibitors) para potencializar a memória imunológica antitumoral"
     ],
     "gaps_identificados": [
-      "Aplicação da Chlorella em oxigenação biológica de tumores vesicais para terapia oncológica permanece subexplorada",
-      "Mecanismos detalhados de relaxação magnética (Néel e Browniana) não foram caracterizados",
-      "Parâmetros de SAR/ILP não foram medidos ou reportados para as NPs desenvolvidas",
-      "Falta de avaliação do efeito da corona proteica sobre as propriedades das NPs in vivo",
-      "Estudos de eficácia em modelos ortotópicos de câncer de bexiga não foram realizados"
+      "Ausência de caracterização detalhada dos parâmetros do campo eletromagnético (amplitude, frequência precisa em kHz, produto H×f)",
+      "Falta de avaliação dos mecanismos físicos de aquecimento magnético (relaxação de Néel/Browniana) separadamente do efeito fototérmico",
+      "Não foram reportados valores de SAR ou ILP para as nanopartículas",
+      "Ausência de estudos de longo prazo sobre imunidade antitumoral duradoura e prevenção de recorrência"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo demonstra a responsividade eletromagnética das CHL-GCS-IO NPs, combinando propriedades fototérmicas e superparamagnéticas do óxido de ferro para guiamento magnético e geração de calor localizado sob irradiação NIR.",
-    "integracao_engenharia": "O sistema CHL-GCS-IO NPs foi engenheirado como uma plataforma teranóstica multimodal que integra guiamento magnético, PTT, PST e ferroptose, com potencial para navegação magnetotática-like em microambientes tumorais de difícil acesso.",
-    "integracao_biologia": "O sistema reprograma o microambiente tumoral hipóxico por oxigenação fotossintética contínua da Chlorella, ativando respostas imunes antitumorais via polarização de macrófagos M1, engajamento de células T CD8+, células NK, DCs e downregulação de PD-L1.",
-    "integracao_materiais": "As GCS-IO NPs combinam a biocompatibilidade e estabilidade do glicol quitosana com as propriedades magnéticas e fototérmicas do Fe3O4, e a conjugação com Chlorella cria um material biohíbrido com fotossíntese funcional preservada e propriedades de contraste MRI.",
-    "mensagem_principal": "O sistema nano-orquestrado magnetotático-like CHL-GCS-IO NPs representa uma estratégia teranóstica multimodal inovadora que supera a hipóxia tumoral e a imunossupressão no câncer de bexiga, integrando oxigenação fotossintética, hipertermia fototérmica e ferroptose para inibição tumoral significativa e ativação robusta da imunidade antitumoral in vivo."
+    "integracao_fisica": "O estudo demonstra a integração de responsividade eletromagnética e conversão fototérmica em NPs de Fe3O4, com actução magnética por campo externo e aquecimento localizado por irradiação NIR para terapia tumoral.",
+    "integracao_engenharia": "O sistema CHL-GCS-IO NPs representa uma plataforma teranóstica biohíbrida que combina direcionamento magnético tipo magnetotáctica, imageamento por MRI (contraste T2) e terapia multimodal (PTT, PST, ferroptose) em uma única nanopartícula funcionalizada.",
+    "integracao_biologia": "O sistema modula o microambiente tumoral ao aliviar hipoxia via oxigenação fotossintética contínua da Chlorella, promover polarização de macrófagos M2→M1, downregulation de PD-L1, ativação de células T CD8+, NK e dendríticas, induzindo imunidade antitumoral robusta.",
+    "integracao_materiais": "A conjugação de NPs de Fe3O4 encapsuladas em GCS à superfície de microalgas Chlorella preserva as propriedades fotossintéticas, magnéticas e fototérmicas, criando um nanomaterial biohíbrido com comportamento superparamagnético e alta eficiência de conversão fototérmica (>50°C sob 808 nm).",
+    "mensagem_principal": "O sistema CHL-GCS-IO NPs tipo magnetotáctico nano-orquestrado integra oxigenação fotossintética, hipertermia eletromagnética/fototérmica e ferroptose para superar a hipoxia tumoral e a imunossupressão no microambiente do câncer de bexiga, demonstrando significativa inibição do crescimento tumoral e ativação imunológica duradoura in vivo."
   },
   "custom_id": "42__Nano-orchestrated_magnetotactic-like_navigation_for_electrom"
 }

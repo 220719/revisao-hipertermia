@@ -6,17 +6,16 @@
   "doi": "10.3390/ijms26062706",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "Hipertermia magnética (MH) usa nanopartículas magnéticas (MNPs) expostas a um campo magnético alternante para gerar calor localizado em regiões tumorais, explorando a maior sensibilidade ao calor das células tumorais para aumentar a eficácia terapêutica.",
+    "conceito_tecnica": "A hipertermia magnética (MH) utiliza nanopartículas magnéticas expostas a um campo magnético alternante para gerar calor localizado em regiões tumorais, explorando a maior sensibilidade ao calor das células tumorais para complementar tratamentos tradicionais de câncer.",
     "etapas_processo": [
-      "Síntese e funcionalização das MNPs com PEG",
-      "Incubação das células tumorais com as MNPs",
-      "Internalização/uptake das MNPs pelas células MCF-7",
-      "Exposição ao campo magnético alternante (220 Oe e 279 kHz) por 1 hora",
-      "Geração de calor localizado nas células tumorais",
-      "Aplicação opcional de radiação gama (60Co) como terapia combinada"
+      "Síntese e funcionalização das NPs magnéticas de ferrita de níquel com PEG",
+      "Incubação das células tumorais com as MNPs para internalização",
+      "Exposição das células ao campo magnético alternante (220 Oe, 279 kHz) por 1 hora",
+      "Indução da hipertermia magnética com geração de calor localizado",
+      "Irradiação gamma opcional como terapia combinada"
     ],
-    "internalizacao_nps": "As MNPs são internalizadas pelas células MCF-7 por uptake celular, visualizado via coloração Prussian blue como pontos azuis próximos ao núcleo e citoplasma; a maior captação em células tumorais pode ser devida à superexpressão do receptor de transferrina (TfR) em células de câncer de mama.",
-    "aplicacao_campo": "O campo magnético alternante é gerado por um indutor EasyHeat 0224 acoplado a uma bobina de cobre de três voltas, operando a 220 Oe e 279 kHz.",
+    "internalizacao_nps": "As MNPs de PEG-NiF são internalizadas pelas células MCF-7 (captadas próximas ao núcleo e citoplasma), possivelmente devido à maior demanda de ferro das células malignas e à superexpressão do receptor de transferrina (TfR) em células de câncer de mama.",
+    "aplicacao_campo": "O campo magnético alternante foi aplicado a 220 Oe e 279 kHz usando um indutor de campo magnético variável EasyHeat 0224 acoplado a uma bobina de cobre de três voltas.",
     "janela_termica_min_C": 40.0,
     "janela_termica_max_C": 45.0,
     "vias_morte_celular": [
@@ -31,8 +30,8 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": true,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "A predominância de perdas por histerese é indicada pela coercividade significativa observada a 220 Oe e pela pequena diferença (3%) na eficiência de aquecimento em água e DMEM, sugerindo baixa contribuição da relaxação Browniana.",
-    "descricao_mecanismo": "Os principais mecanismos de geração de calor por indução magnética são a perda por histerese, proporcional à área do loop de histerese e à frequência, e a perda por susceptibilidade (relaxação). A relaxação de Néel envolve a inversão do momento magnético da partícula ao se alinhar com o campo externo, enquanto a relaxação Browniana resulta do atrito entre a partícula e o meio durante sua rotação. A pequena diferença de 3% no aquecimento em água e DMEM sugere baixa contribuição da relaxação Browniana, com predominância das perdas por histerese."
+    "mecanismo_dominante": "A predominância do aquecimento por histerese é indicada pela coercividade significativa observada a 220 Oe e pela pequena diferença (3%) na eficiência de aquecimento em água e DMEM.",
+    "descricao_mecanismo": "Os principais mecanismos de geração de calor são a perda por histerese, proporcional à área do loop de histerese e à frequência, e a perda por susceptibilidade (relaxação). A relaxação de Néel envolve a inversão do momento magnético da partícula ao se alinhar com o campo externo, enquanto a relaxação Browniana envolve o aquecimento por fricção entre a partícula e o meio durante sua rotação. A pequena diferença de 3% no aquecimento em água versus DMEM sugere baixa contribuição da relaxação Browniana, com predominância do aquecimento por histerese."
   },
   "q3": {
     "material": "ferrita de níquel",
@@ -49,22 +48,22 @@
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 49.2,
-    "relacao_estrutura_propriedade": "As MNPs de NiFe2O4 (~25 nm) apresentam comportamento superparamagnético à temperatura ambiente com coercividade e magnetização remanente próximas de zero, e exibem coercividade significativa a campos baixos (220 Oe), indicando contribuição de perdas por histerese ao aquecimento; a funcionalização com PEG confere estabilidade coloidal eletrostérica e stealth, reduzindo agregação e prolongando o tempo de circulação."
+    "relacao_estrutura_propriedade": "As MNPs de NiFe2O4 com ~25 nm apresentam comportamento superparamagnético à temperatura ambiente com coercividade e magnetização remanente próximas de zero, enquanto a funcionalização com PEG confere estabilidade coloidal eletrostérica e estérica, reduzindo a agregação e aumentando o tempo de circulação."
   },
   "q4": {
-    "amplitude_kA_m": 17.51,
+    "amplitude_kA_m": 17.507,
     "frequencia_kHz": 279.0,
-    "produto_Hf": 4885290000.0,
+    "produto_Hf": 4890453000.0,
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 60.0,
     "forma_onda": null,
-    "dosimetria_termica": "Curvas de aquecimento por indução magnética medidas com termômetro em diferentes concentrações de MNPs em água e DMEM",
-    "distribuicao_espacial_calor": "Geração de calor localizada nas regiões tumorais devido ao acúmulo de MNPs nas células tumorais; células normais MRC-5 não internalizaram as MNPs e, portanto, não apresentariam geração de calor significativa sob campo magnético",
+    "dosimetria_termica": "Curvas de aquecimento por indução magnética medidas com termômetro em soluções coloidais de MNPs em água e DMEM",
+    "distribuicao_espacial_calor": "Geração de calor localizada nas regiões tumorais devido ao acúmulo de NPs; células normais MRC-5 não internalizaram as MNPs, portanto não foram aquecidas significativamente",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vitro",
-    "linhagem_celular": "MCF-7 (câncer de mama) e MRC-5 (fibroblasto pulmonar normal)",
+    "linhagem_celular": "MCF-7 (câncer de mama) e MRC-5 (fibroblasto normal)",
     "modelo_animal": null,
     "tipo_cancer": "mama",
     "concentracao_mg_mL": 0.35,
@@ -83,29 +82,29 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Heterogeneidade na distribuição das MNPs e dificuldade em concentrá-las exclusivamente na área tumoral pode comprometer a uniformidade do aquecimento",
-      "Aumento do risco de efeitos adversos em tecidos saudáveis devido à distribuição não-seletiva das MNPs",
-      "Redução progressiva do potencial zeta e aumento do tamanho hidrodinâmico ao longo do tempo associados à perda do revestimento de PEG",
-      "Estudo limitado a modelo in vitro, sem avaliação in vivo"
+      "Heterogeneidade na distribuição das MNPs e dificuldade em concentrá-las exclusivamente na área tumoral",
+      "Perda progressiva do revestimento PEG ao longo do tempo, levando ao aumento do tamanho hidrodinâmico e redução do potencial zeta",
+      "Estudo limitado a modelo in vitro, sem avaliação in vivo de biodistribuição e eficácia terapêutica"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Desenvolver agentes de radiosensibilização térmica baseados em MNPs PEGyladas de NiFe2O4 para aplicações clínicas em câncer de mama",
-      "Avaliar a eficácia e segurança em modelos in vivo"
+      "Desenvolvimento de PEG-NiF MNPs como agentes de termorradiosensibilização para células de câncer de mama",
+      "Estudos adicionais para avaliar biodistribuição e captação específica in vivo"
     ],
     "gaps_identificados": [
-      "Ausência de estudos in vivo para validar os resultados de radiosensibilização observados in vitro",
-      "Primeiro estudo a avaliar MNPs de NiFe2O4 PEGyladas como agentes de radiosensibilização térmica para células de câncer de mama, indicando lacuna prévia na literatura",
-      "Necessidade de melhorar a uniformidade de distribuição das MNPs no tumor para otimizar a eficácia terapêutica"
+      "Ausência de estudos in vivo para validar os resultados de termorradiosensibilização observados in vitro",
+      "Falta de avaliação da biodistribuição e do efeito EPR para as PEG-NiF MNPs",
+      "Necessidade de avaliação da estabilidade a longo prazo do revestimento PEG em condições fisiológicas",
+      "Mecanismos moleculares específicos da morte celular induzida pela combinação de hipertermia magnética e radiação não foram completamente elucidados"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo caracteriza os mecanismos físicos de geração de calor (perdas por histerese e relaxação de Néel/Browniana) em MNPs superparamagnéticas de NiFe2O4 sob campo magnético alternante, evidenciando a predominância das perdas por histerese a baixos campos.",
-    "integracao_engenharia": "Demonstra a síntese e funcionalização hidrotérmica de MNPs de NiFe2O4 com PEG para obter coloides quimicamente estáveis e stealth com capacidade de aquecimento por indução magnética compatível com aplicação em hipertermia.",
-    "integracao_biologia": "Avalia a biocompatibilidade, seletividade tumoral, internalização celular e efeitos citotóxicos das MNPs em células de câncer de mama MCF-7 e fibroblastos normais MRC-5, elucidando mecanismos de morte celular por apoptose e necrose.",
-    "integracao_materiais": "Caracteriza estruturalmente as MNPs de NiFe2O4 PEGyladas por DRX, TEM, Mössbauer, FTIR e TGA, relacionando tamanho, cristalinidade, revestimento e comportamento magnético superparamagnético às propriedades de aquecimento e estabilidade coloidal.",
-    "mensagem_principal": "MNPs superparamagnéticas de NiFe2O4 funcionalizadas com PEG são biocompatíveis, seletivas para células de câncer de mama e atuam como agentes de radiosensibilização térmica, aumentando em até sete vezes a eficácia da radioterapia com 60Co quando combinadas com hipertermia magnética em células MCF-7."
+    "integracao_fisica": "Demonstra que as perdas por histerese predominam sobre a relaxação Browniana no mecanismo de aquecimento das NPs de NiFe2O4 a 220 Oe, evidenciado pela coercividade significativa nesse campo e pela pequena diferença de aquecimento entre água e DMEM.",
+    "integracao_engenharia": "Otimização do processo hidrotérmico de síntese e funcionalização com PEG resultou em MNPs superparamagnéticas monocristalinas com tamanho hidrodinâmico abaixo de 150 nm, estabilidade coloidal por pelo menos três meses e capacidade de aquecimento compatível com hipertermia magnética.",
+    "integracao_biologia": "As PEG-NiF MNPs apresentaram seletividade para células de câncer de mama MCF-7 em relação a fibroblastos normais MRC-5, possivelmente mediada pela superexpressão do receptor de transferrina nas células malignas, e induziram morte celular por apoptose e/ou necrose de forma dependente da temperatura.",
+    "integracao_materiais": "A ferrita de níquel (NiFe2O4) demonstrou ser uma alternativa quimicamente mais estável à magnetita, mantendo propriedades de aquecimento por indução magnética adequadas, e a funcionalização com PEG conferiu biocompatibilidade e estabilidade coloidal ao sistema.",
+    "mensagem_principal": "PEG-NiF MNPs superparamagnéticas são agentes de termorradiosensibilização eficazes para células de câncer de mama MCF-7, aumentando a eficácia terapêutica da radiação em até cinco vezes como agente radiosensibilizante e em até sete vezes quando combinadas com hipertermia magnética, mantendo biocompatibilidade com células normais."
   },
   "custom_id": "69__Radiosensitization_Induced_by_Magnetic_Hyperthermia_of_PEGyl"
 }

@@ -6,17 +6,16 @@
   "doi": "10.1002/cphc.202400023",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MH) é uma terapia promissora contra o câncer na qual nanopartículas de óxido de ferro (IONPs) atuam como mediadores de calor para tratamento de tumores sólidos sob aplicação de campo magnético alternante (AMF). O efeito magnetotérmico das IONPs pode ainda ser explorado como estímulo externo para liberação controlada de fármacos.",
+    "conceito_tecnica": "A hipertermia magnética (MH) é uma terapia promissora contra o câncer na qual nanopartículas de óxido de ferro (IONPs) atuam como mediadores de calor sob um campo magnético alternante (AMF) aplicado externamente. O efeito magnetotérmico das IONPs é explorado para o tratamento de tumores sólidos.",
     "etapas_processo": [
-      "Síntese das IONPs via rota poliol com morfologia multicore (nanoflowers)",
-      "Oxidação e lavagem das NPs para obtenção de maghemita estável",
-      "Dispersão coloidal das NPs em meio aquoso",
-      "Aplicação do campo magnético alternante (AMF) sobre a suspensão de NPs",
-      "Dissipação de energia como calor pelas NPs via abertura de ciclos de histerese dinâmicos",
-      "Avaliação da eficiência de aquecimento por magnetometria AC (medida do SAR)"
+      "Síntese de IONPs/IONFs por rota poliol",
+      "Oxidação e estabilização coloidal das nanopartículas em meio aquoso",
+      "Aplicação de campo magnético alternante (AMF) às nanopartículas",
+      "Oscilação dos momentos magnéticos das NPs seguindo o campo aplicado com defasagem de fase",
+      "Abertura de laço de histerese dinâmico resultando em dissipação de energia como calor"
     ],
     "internalizacao_nps": null,
-    "aplicacao_campo": "O AMF é aplicado por meio de um circuito ressonante comercial (Advance AC Hyster, NanoTech Solutions), com amplitudes de 4 a 24 kAm⁻¹ e frequências de 146 a 344 kHz, induzindo oscilação dos momentos magnéticos das NPs.",
+    "aplicacao_campo": "Um campo magnético alternante (AMF) é aplicado via circuito ressonante comercial, induzindo a oscilação dos momentos magnéticos das NPs para seguir o campo aplicado, porém com uma defasagem de fase que se manifesta como abertura de laço de histerese dinâmico.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -27,35 +26,35 @@
     "perdas_histerese": true,
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
-    "forma_onda_campo": "senoidal",
-    "mecanismo_dominante": "A dissipação de energia ocorre predominantemente pela abertura de ciclos de histerese dinâmica dos momentos magnéticos das IONPs sob AMF, descrita pela Teoria de Resposta Linear (LRT) em baixos campos e pelo modelo de Stoner-Wohlfarth (SW) em amplitudes maiores.",
-    "descricao_mecanismo": "Quando o AMF é aplicado, os momentos magnéticos das IONPs oscilam para acompanhar o campo aplicado, porém com um defasamento de fase. Esse defasamento se manifesta como a abertura de um ciclo de histerese dinâmica no gráfico de magnetização instantânea Mt versus campo Ht, e a energia dissipada como calor corresponde à área A do ciclo de histerese por ciclo do AMF. O SAR é calculado como SAR = πf·A/c, onde f é a frequência, A a área do ciclo e c a concentração mássica de óxido de ferro."
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A dissipação de energia ocorre predominantemente pela abertura de laços de histerese dinâmicos dos momentos magnéticos das IONPs sob AMF, descrita pela Linear Response Theory (LRT) em baixos campos e pelo modelo de Stoner-Wohlfarth em amplitudes maiores.",
+    "descricao_mecanismo": "Quando um AMF é aplicado às IONPs, seus momentos magnéticos oscilam para acompanhar o campo, porém com uma defasagem de fase. Essa defasagem se manifesta como a abertura de um laço de histerese dinâmico ao plotar a magnetização instantânea Mt versus o campo aplicado Ht. A energia dissipada como calor por ciclo corresponde à área A do laço de histerese dinâmico, e o SAR é definido como a potência de perda de calor normalizada pela massa das NPs segundo SAR = πf·c·A."
   },
   "q3": {
-    "material": "Iron oxide nanoflowers (IONFs) - maghemita/magnetita",
-    "composicao_quimica": "γ-Fe2O3 (maghemita) / Fe3O4 (magnetita) - fase intermediária entre as duas",
+    "material": "Nanoflores de óxido de ferro (IONFs) / Fe3O4 oxidado a γ-Fe2O3",
+    "composicao_quimica": "γ-Fe2O3 (maghemita) com zonas ricas em Fe3O4 (magnetita)",
     "dopagem": null,
     "tamanho_nm": 22.2,
     "faixa_tamanho_min_nm": 11.0,
     "faixa_tamanho_max_nm": 30.0,
     "forma": "flor",
     "arquitetura_multicore": true,
-    "anisotropia": "Anisotropia efetiva com contribuições de volume (magnetocristalina) e de superfície, com Keff variando de 1.80 a 9.80 × 10⁴ J/m³ dependendo do tamanho",
+    "anisotropia": "Anisotropia efetiva com contribuições de volume (KV) e superfície (KS); Keff aumenta para diâmetros menores devido à maior contribuição de anisotropia de superfície",
     "revestimento": null,
     "material_autorregulavel": false,
     "SAR_W_g": 751.0,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "IONFs com morfologia multicore e maior diâmetro externo apresentam maior número de núcleos constituintes (<Ncore>), maior acoplamento de troca entre os núcleos e maior energia de anisotropia efetiva, resultando em maiores valores de SAR para amplitudes de campo acima de 16 kAm⁻¹; já em amplitudes menores, existe um diâmetro ótimo (~22 nm) para o qual o SAR é maximizado, deslocando-se para tamanhos maiores com o aumento da amplitude do campo."
+    "relacao_estrutura_propriedade": "IONFs com morfologia multicore apresentam defeitos cristalinos (desclinações) na interface entre os núcleos, resultantes do processo de agregação orientada, que afetam a magnetização de saturação e a anisotropia efetiva; o SAR varia com o diâmetro externo e o número de núcleos constituintes de forma dependente das condições do AMF aplicado, com aumento quase quadrático do SAR com o diâmetro para amplitudes acima de 20 kAm⁻¹ e máximo pronunciado em ~22 nm para amplitudes abaixo de 16 kAm⁻¹."
   },
   "q4": {
     "amplitude_kA_m": 24.0,
-    "frequencia_kHz": 280.0,
-    "produto_Hf": 6720000000.0,
+    "frequencia_kHz": 344.0,
+    "produto_Hf": null,
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": null,
-    "forma_onda": "senoidal",
-    "dosimetria_termica": "Magnetometria AC por bobina pick-up (integração direta da área do ciclo de histerese dinâmica); validação por calorimetria clássica para amostras selecionadas",
+    "forma_onda": null,
+    "dosimetria_termica": "AC magnetometria por tecnologia de bobina pick-up (Advance AC Hyster, NanoTech Solutions); o SAR é determinado pela integração direta da área do laço de histerese dinâmico A = ∮Mt dHt, com verificação por calorimetria clássica em condições selecionadas",
     "distribuicao_espacial_calor": null,
     "padronizacao_reportada": false
   },
@@ -80,32 +79,32 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "A avaliação do aquecimento e sua dependência com parâmetros estruturais é geralmente realizada sob condições limitadas de amplitude e frequência do AMF na literatura, restringindo a compreensão da relação entre campo e eficiência de aquecimento",
-      "A etapa de oxidação das IONPs é incompleta e dependente do tamanho, resultando em fase intermediária entre magnetita e maghemita",
-      "A reprodutibilidade e o rendimento da rota poliol para produção de IONFs performáticos como mediadores de calor apresentam limitações",
-      "O experimento de controle de interações dipolares nas medidas ZFC/FC (medição em múltiplas concentrações) não foi realizado por limitação de acesso ao equipamento VSM",
-      "A confirmação das hipóteses sobre picos adicionais nas curvas derivadas ZFC/FC requer experimentos adicionais (espectroscopia Mössbauer, análise EELS, susceptibilidade AC vs. T)"
+      "A avaliação do poder de aquecimento e sua dependência com parâmetros estruturais é geralmente realizada sob condições limitadas de amplitude e frequência do AMF na literatura, restringindo a compreensão da influência combinada das condições de campo e das propriedades intrínsecas das NPs",
+      "Limites em termos de reprodutibilidade e rendimento da rota poliol para produção de IONFs de alto desempenho como mediadores de calor para MH",
+      "O passo de oxidação das IONPs por Fe(NO3)3 em ebulição é incompleto para as amostras maiores, deixando zonas ricas em magnetita dentro das NPs",
+      "O experimento de controle de verificação da influência das interações dipolares nas curvas ZFC/FC em diferentes concentrações não foi realizado devido ao acesso limitado ao magnetômetro VSM",
+      "Os estudos de estrutura-propriedade foram realizados apenas em suspensões coloidais, sem avaliação em ambiente biológico ou celular"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": true,
     "recomendacoes_futuras": [
-      "Escalonamento e otimização da produção de IONPs pela rota poliol para aplicações biomédicas",
-      "Investigação mais aprofundada dos mecanismos de nucleação e crescimento das IONFs por técnicas complementares (Mössbauer, EELS, susceptibilidade AC vs. T)",
-      "Síntese direcionada de IONPs com diâmetros específicos para otimizar o SAR conforme as condições de AMF planejadas para a aplicação teranóstica"
+      "Escalonamento e produção otimizada de IONPs mais eficientes para aplicações biomédicas com base na compreensão dos fatores interdependentes demonstrados",
+      "Síntese de soluções coloidais estáveis de IONPs com diâmetros direcionados a valores de SAR adaptados à abordagem teranóstica pretendida",
+      "Confirmação das hipóteses sobre transição de Verwey e contribuições das interações intra-partícula através de técnicas adicionais como espectroscopia Mössbauer, análise EELS e susceptibilidade AC vs. T"
     ],
     "gaps_identificados": [
-      "Ausência de estudos biológicos (in vitro/in vivo) para avaliar toxicidade, internalização celular e eficácia terapêutica das IONFs sintetizadas",
-      "Falta de revestimento superficial biocompatível (ex.: PEG) para aplicação biomédica das NPs produzidas",
-      "Ausência de avaliação do produto H×f em relação aos limites de segurança biológica para AMF",
-      "A relação linear entre SAR e <Ncore> relatada por Bertuit et al. não foi reproduzida em todas as condições de campo, indicando dependência complexa ainda não completamente elucidada"
+      "Falta de estudos sistemáticos do SAR sob ampla faixa de condições de AMF (amplitude e frequência) para IONFs multicore na literatura anterior",
+      "Ausência de avaliação do impacto do número de núcleos e da morfologia multicore no desempenho de aquecimento sob diferentes condições de campo",
+      "Ausência de estudos biológicos (in vitro/in vivo) para validação das IONFs sintetizadas em contexto de hipertermia para câncer",
+      "Compreensão incompleta do mecanismo de formação de nanoflores e da origem exata dos defeitos cristalinos entre núcleos"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo demonstra experimentalmente a transição entre os regimes de Teoria de Resposta Linear (LRT) e modelo de Stoner-Wohlfarth (SW) para IONFs em função da amplitude do AMF, validando predições teóricas e simulações de Monte Carlo sobre o tamanho ótimo para máxima dissipação de energia.",
-    "integracao_engenharia": "A sistematização de 24 condições de AMF (amplitude e frequência) para uma biblioteca de 7 lotes de IONPs fornece um guia prático para seleção do tamanho de NPs adaptado às condições de campo disponíveis em equipamentos clínicos ou pré-clínicos de hipertermia magnética.",
-    "integracao_biologia": "O artigo contextualiza as IONFs sintetizadas como candidatas para medicina nanométrica (hipertermia magnética, MRI e liberação controlada de fármacos), embora não realize experimentos biológicos, destacando a necessidade de dispersibilidade em água e biocompatibilidade.",
-    "integracao_materiais": "A correlação entre parâmetros estruturais (diâmetro externo, tamanho dos núcleos, número de núcleos, defeitos cristalinos, morfologia mono/multicore) e propriedades magnéticas (Ms, Keff, TB, SAR) estabelece relações estrutura-propriedade quantitativas para IONFs produzidas pela rota poliol.",
-    "mensagem_principal": "O SAR de IONFs varia de forma complexa e interdependente com o diâmetro, a morfologia multicore e as condições do AMF: para amplitudes acima de 16 kAm⁻¹ o SAR aumenta continuamente (quase quadraticamente) com o diâmetro, enquanto para amplitudes menores existe um diâmetro ótimo (~22 nm) para o qual o SAR é máximo, deslocando-se para tamanhos maiores com o aumento da amplitude, em acordo qualitativo com as teorias LRT e Stoner-Wohlfarth e com simulações de Monte Carlo previamente reportadas."
+    "integracao_fisica": "O trabalho demonstra experimentalmente a validade das previsões teóricas da Linear Response Theory (LRT) e do modelo de Stoner-Wohlfarth para descrever a dependência do SAR com o tamanho e as condições do AMF em IONFs, incluindo a existência de um tamanho ótimo que varia com a amplitude do campo aplicado.",
+    "integracao_engenharia": "A rota poliol com modificações controladas (adição de H2O, variação da razão DEG/NMDEA, taxa de resfriamento) permite a síntese sistemática de uma biblioteca de IONPs/IONFs com diâmetros de 11 a 30 nm e morfologias controláveis, possibilitando o ajuste fino do SAR para aplicações teranósticas.",
+    "integracao_biologia": "As IONFs sintetizadas apresentam SAR da ordem de 1 kWg⁻¹, valores comparáveis aos magnetossomos naturais de bactérias (~40 nm), porém obtidas por síntese química com maior rendimento, sendo relevantes como mediadores de calor para hipertermia magnética no tratamento de tumores sólidos.",
+    "integracao_materiais": "A caracterização multiscala por HR-TEM, XRPD, VSM e magnetometria AC revelou que a morfologia multicore das nanoflores resulta de agregação orientada dos núcleos com difusão atômica (sinterização), criando defeitos cristalinos (desclinações) que influenciam a magnetização de saturação, a anisotropia efetiva e o desempenho de aquecimento.",
+    "mensagem_principal": "Este trabalho demonstra que a eficiência de aquecimento das nanoflores de óxido de ferro (IONFs) varia de forma complexa e interdependente com o diâmetro externo, número de núcleos constituintes e condições do AMF aplicado: para amplitudes acima de 20 kAm⁻¹ o SAR aumenta continuamente com o diâmetro, enquanto para amplitudes abaixo de 16 kAm⁻¹ existe um diâmetro ótimo pronunciado em ~22 nm, em acordo qualitativo com as teorias LRT e Stoner-Wohlfarth e com simulações numéricas previamente reportadas."
   },
   "custom_id": "80__Structure-Function_Relationship_of_Iron_Oxide_Nanoflowers_Op"
 }

@@ -6,33 +6,32 @@
   "doi": "10.1021/acsomega.5c02791",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética por nanopartículas consiste no aquecimento de células cancerosas acima de 42,5 °C por meio de nanopartículas magnéticas que geram calor sob irradiação de campo magnético alternante (AMF), levando à morte celular. Esse método permite o aquecimento seletivo do tecido tumoral a partir de fora do corpo do paciente.",
+    "conceito_tecnica": "A hipertermia magnética induzida por nanopartículas magnéticas consiste em gerar calor sob irradiação de campo magnético alternante (AMF), promovendo aquecimento local do tecido tumoral acima de 42,5 °C e levando à morte das células cancerosas.",
     "etapas_processo": [
-      "Síntese de nanopartículas de magnetita (MNPs) por coprecipitação",
-      "Modificação da superfície das MNPs com polímeros contendo catecol (PMD)",
-      "Carregamento do fármaco anticâncer bortezomibe (BTZ) nas MNPs@PMD via ligação catecol-ácido borônico",
-      "Administração das MNPs modificadas às células tumorais in vitro",
-      "Irradiação com AMF por 30 minutos para geração de calor e liberação do fármaco",
-      "Manutenção da temperatura a 43 °C pelo controle do gerador de AMF",
-      "Avaliação da viabilidade celular após o tratamento"
+      "Síntese das nanopartículas de magnetita (MNPs) por coprecipitação",
+      "Modificação superficial das MNPs com polímeros contendo catecol (PMD)",
+      "Carregamento do fármaco bortezomibe nas MNPs@PMD via ligação catecol-ácido borônico",
+      "Administração das MNPs às células tumorais CT26 em cultura",
+      "Irradiação com AMF (350 kHz, 8 kW) por 30 min mantendo temperatura a 43 °C",
+      "Avaliação da viabilidade celular 24 h após a irradiação"
     ],
-    "internalizacao_nps": "Não descrita explicitamente para as células tumorais CT26; para macrófagos RAW264, a internalização foi avaliada por quantificação do ferro intracelular após incubação com MNPs por 24 horas.",
-    "aplicacao_campo": "O AMF é aplicado externamente ao paciente/amostra a uma frequência de 350 kHz, com amplitude controlada para manter a temperatura do meio a 43 °C durante 30 minutos.",
+    "internalizacao_nps": "As MNPs são adicionadas diretamente ao meio de cultura celular e incubadas com as células CT26; a internalização intracelular não é detalhada, sendo o experimento conduzido com MNPs no meio extracelular durante a irradiação com AMF.",
+    "aplicacao_campo": "O AMF é aplicado externamente ao vial ou prato de cultura celular a uma frequência de 350 kHz com potência máxima de 8 kW, e a saída do gerador é ajustada para manter a temperatura a 43 °C.",
     "janela_termica_min_C": 42.5,
     "janela_termica_max_C": 43.0,
     "vias_morte_celular": [
-      "morte celular não especificada"
+      "morte celular por hipertermia (não especificada como apoptose ou necrose)"
     ]
   },
   "q2": {
     "relaxacao_neel": true,
     "relaxacao_browniana": true,
-    "perdas_histerese": null,
+    "perdas_histerese": false,
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O artigo cita tanto relaxação de Néel quanto Browniana como mecanismos de geração de calor em nanopartículas de óxido de ferro superparamagnéticas sob AMF, sem designar um como dominante.",
-    "descricao_mecanismo": "Nanopartículas de óxido de ferro superparamagnéticas geram calor sob AMF por meio dos mecanismos de relaxação de Néel e Browniana. A relaxação de Néel envolve a rotação do momento magnético interno da nanopartícula, enquanto a relaxação Browniana envolve a rotação física da partícula no meio. As MNPs sintetizadas apresentaram comportamento superparamagnético com coercividade próxima de zero e magnetização de saturação de 63 emu/g."
+    "mecanismo_dominante": "O artigo cita tanto relaxação de Néel quanto relaxação Browniana como mecanismos de geração de calor das MNPs superparamagnéticas sob AMF, sem indicar um mecanismo dominante.",
+    "descricao_mecanismo": "Nanopartículas de óxido de ferro superparamagnéticas, incluindo as MNPs de magnetita, geram calor sob AMF por meio dos mecanismos de relaxação de Néel e Browniana. O comportamento superparamagnético foi confirmado pela curva de magnetização reversível com coercividade próxima de zero. Não há descrição física detalhada dos mecanismos individuais no texto principal."
   },
   "q3": {
     "material": "Fe3O4 (magnetita)",
@@ -41,15 +40,15 @@
     "tamanho_nm": 12.1,
     "faixa_tamanho_min_nm": null,
     "faixa_tamanho_max_nm": null,
-    "forma": "poliedral irregular / quase-esférica",
+    "forma": "poliedro irregular ou quasi-esférica",
     "arquitetura_multicore": true,
     "anisotropia": null,
-    "revestimento": "poli(MPC-co-DMA) (PMD) — copolímero de 2-metacriloiloxietil fosforilcolina e dopamina metacrilamida",
+    "revestimento": "Poli(MPC-co-DMA) (PMD) — copolímero zwitteriônico contendo fosforilcolina e dopamina metacrilamida",
     "material_autorregulavel": false,
     "SAR_W_g": 220.0,
     "ILP_nHm2_kg": 6.88,
     "magnetizacao_saturacao_emu_g": 63.0,
-    "relacao_estrutura_propriedade": "Maior peso molecular dos polímeros PMD resultou em maior quantidade de polímero modificado na superfície das MNPs; o conteúdo de unidades DMA acima de 4,8 mol% foi essencial para estabilidade coloidal por ligação multidentada, enquanto teores entre 4,8 e 9,0 mol% minimizaram a captação por macrófagos."
+    "relacao_estrutura_propriedade": "Maior peso molecular do PMD resultou em maior quantidade de polímero modificado nas MNPs; conteúdo de unidades DMA acima de 4,8 mol% proporcionou estabilidade de dispersão superior em PBS por pelo menos 14 dias devido à capacidade multidenada de ancoragem das unidades catecol."
   },
   "q4": {
     "amplitude_kA_m": 9.5,
@@ -58,15 +57,15 @@
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": 30.0,
     "forma_onda": null,
-    "dosimetria_termica": "Termômetro de fibra óptica inserido na amostra; ajuste do gerador de AMF para manter 43 °C; curva ΔT-t ajustada pelo modelo Box-Lucas para cálculo do SAR",
-    "distribuicao_espacial_calor": "Não descrita espacialmente; temperatura monitorada no sobrenadante do meio de cultura celular",
+    "dosimetria_termica": "Termômetro de fibra óptica inserido no vial/prato de cultura; ajuste da saída do gerador AMF para manter temperatura a 43 °C; curva ΔT-t ajustada pelo modelo Box-Lucas para cálculo do SAR",
+    "distribuicao_espacial_calor": "Não descrita explicitamente; a temperatura do sobrenadante do meio de cultura foi monitorada e mantida a 43 °C durante 30 min por controle da potência do gerador AMF.",
     "padronizacao_reportada": true
   },
   "q5": {
     "tipo_estudo": "in vitro",
-    "linhagem_celular": "CT26 (carcinoma colorretal murino) e RAW264 (macrófago murino)",
+    "linhagem_celular": "CT26 (carcinoma colorretal murino) e RAW264 (macrófagos murinos)",
     "modelo_animal": null,
-    "tipo_cancer": "cólon",
+    "tipo_cancer": "cólon (colorretal)",
     "concentracao_mg_mL": 0.5,
     "agregacao_discutida": true,
     "viscosidade_discutida": false,
@@ -83,29 +82,30 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "A estabilidade coloidal de longo prazo foi monitorada apenas visualmente, sem medições detalhadas de DLS e potencial zeta em função do tempo",
+      "A estabilidade de dispersão de longo prazo foi monitorada apenas visualmente, sem medidas detalhadas de DLS e potencial zeta em função do tempo",
       "Ausência de experimentos in vivo para avaliação de biocompatibilidade, farmacocinética e eficiência de entrega tumoral",
-      "O tamanho hidrodinâmico de 134 nm das MNPs@PMD10 sugere agregados de MNPs revestidos com PMD, o que pode afetar propriedades magnéticas e biológicas"
+      "O tamanho hidrodinâmico de 134 nm das MNPs@PMD10 sugere agregados de MNPs revestidos por PMD, o que pode afetar as propriedades magnéticas e a distribuição in vivo"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Realizar medições detalhadas de DLS e potencial zeta dependentes do tempo para avaliação mais rigorosa da estabilidade coloidal",
-      "Conduzir experimentos in vivo para avaliar biocompatibilidade de longo prazo, farmacocinética e eficiência de entrega tumoral",
-      "Conjugar ligantes de direcionamento ativo (anticorpos ou peptídeos específicos para câncer) aos grupos catecol da superfície para melhorar a entrega ao tumor"
+      "Realizar análises detalhadas de estabilidade coloidal com DLS e medidas de potencial zeta em função do tempo",
+      "Conduzir experimentos in vivo para avaliar biocompatibilidade de longo prazo, farmacocinética e eficiência de acúmulo tumoral",
+      "Conjugar ligantes de direcionamento ativo (anticorpos ou peptídeos específicos para câncer) aos grupos catecol para melhorar a entrega ativa ao tumor"
     ],
     "gaps_identificados": [
-      "Efeito da estrutura dos polímeros contendo catecol sobre a eficiência de modificação e propriedades de nanopartículas não havia sido sistematicamente estudado antes",
-      "Validação in vivo do sistema MNPs@PMD para hipertermia magnética ainda não realizada",
-      "Mecanismo preciso de morte celular (apoptose, necrose etc.) não foi investigado"
+      "Falta de avaliação in vivo do efeito EPR e da circulação sistêmica das MNPs@PMD",
+      "Mecanismo de morte celular (apoptose vs. necrose) não foi investigado",
+      "Efeito da agregação das MNPs nas propriedades magnéticas e de aquecimento em ambiente intracelular não foi explorado",
+      "Impacto da corona de proteínas sobre as propriedades de stealth das MNPs@PMD não foi avaliado"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo demonstra que as MNPs sintetizadas possuem comportamento superparamagnético com SAR de 220 W/g e ILP de 6,88 nHm²/kg, operando dentro do limite de segurança biológica (fH = 3,3 × 10⁹ A/m·s).",
-    "integracao_engenharia": "O estudo desenvolve um protocolo de modificação polimérica de superfície que mantém as propriedades de geração de calor das MNPs enquanto melhora estabilidade coloidal, propriedades stealth e capacidade de carregamento de fármacos.",
-    "integracao_biologia": "A modificação com PMD reduziu significativamente a captação das MNPs por macrófagos RAW264 in vitro, e a hipertermia magnética combinada com bortezomibe reduziu a viabilidade de células CT26 de câncer colorretal.",
-    "integracao_materiais": "O design molecular dos copolímeros PMD (variação de peso molecular e conteúdo de unidades DMA) foi sistematicamente correlacionado com a quantidade de modificação, estabilidade coloidal e propriedades stealth das MNPs, fornecendo diretrizes para síntese de materiais.",
-    "mensagem_principal": "O estudo demonstra que polímeros PMD de maior peso molecular e com teor de unidades DMA entre 4,8 e 9,0 mol% são ótimos para modificação de MNPs, conferindo estabilidade coloidal, propriedades stealth contra macrófagos, liberação de bortezomibe induzida por AMF e eficácia antitumoral in vitro, oferecendo diretrizes moleculares para o desenvolvimento de nanopartículas magnéticas para hipertermia cancerígena."
+    "integracao_fisica": "O artigo demonstra que MNPs de magnetita com SAR de 220 W/g e ILP de 6,88 nHm²/kg são eficazes como nanoaquecedores sob AMF dentro dos limites de segurança biológica (fH = 3,3 × 10⁹ A/m·s).",
+    "integracao_engenharia": "O estudo estabelece diretrizes moleculares para o design de polímeros PMD com pesos moleculares e conteúdos de unidades DMA otimizados para modificação eficiente de MNPs, garantindo estabilidade coloidal e propriedades de stealth.",
+    "integracao_biologia": "A modificação das MNPs com PMD reduziu significativamente a captação por macrófagos RAW264 in vitro, e a hipertermia magnética combinada com bortezomibe aumentou a morte de células de câncer colorretal CT26.",
+    "integracao_materiais": "Copolímeros de poli(MPC-co-DMA) foram projetados como alternativa ao PEG, combinando ancoragem multidenada via catecol ao ferro oxidado com propriedades anti-fouling das unidades de fosforilcolina zwitteriônica, além de permitir carregamento de fármacos com ácido borônico.",
+    "mensagem_principal": "Este estudo demonstra que o peso molecular dos polímeros PMD é o principal determinante da quantidade de modificação nas MNPs, enquanto o conteúdo de unidades DMA entre 4,8 e 9,0 mol% é essencial para estabilidade coloidal e propriedades de stealth; MNPs@PMD10 carregadas com bortezomibe exibiram liberação de fármaco ativada por AMF e maior atividade anticâncer in vitro em células CT26, fornecendo uma plataforma promissora para hipertermia magnética combinada com quimioterapia."
   },
   "custom_id": "63__Molecular_Design_of_Catechol-Containing_Phospholipid_Polymer"
 }

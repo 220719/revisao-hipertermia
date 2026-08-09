@@ -6,17 +6,17 @@
   "doi": "10.1021/acsanm.5c02139",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MH) é uma técnica terapêutica que utiliza a capacidade de aquecimento de nanopartículas magnéticas sob um campo magnético alternado (AC). Durante o processo, as NPs absorvem energia do campo magnético AC aplicado externamente e a convertem em calor.",
+    "conceito_tecnica": "A hipertermia magnética (MH) é uma técnica terapêutica que utiliza a capacidade de aquecimento de nanopartículas magnéticas sob um campo magnético alternado (AC). Durante esse processo, as NPs absorvem energia do campo magnético AC aplicado externamente e a convertem em calor.",
     "etapas_processo": [
-      "Síntese de nanopartículas de ferrita dopada com composição CoxGa0.15Fe2.85-xO4 por decomposição térmica",
-      "Caracterização estrutural e magnética das NPs",
+      "Síntese de nanopartículas de ferrita dopadas com cobalto e gálio via decomposição térmica",
+      "Caracterização estrutural e magnética das NPs (XRD, XANES, TEM, ICP-AES, VSM, SQUID)",
       "Aplicação de campo magnético alternado às NPs",
       "Absorção de energia do campo AC pelas NPs",
-      "Conversão da energia em calor pelas NPs",
-      "Medição da taxa de absorção específica (SAR) a partir da área dos ciclos de histerese AC"
+      "Conversão da energia absorvida em calor",
+      "Medição da taxa de absorção específica (SAR) a partir da área das curvas de histerese dinâmica"
     ],
     "internalizacao_nps": null,
-    "aplicacao_campo": "O campo magnético alternado é aplicado externamente às nanopartículas por meio de um magnetômetro AC (ACM) operando a 310 kHz com amplitudes de campo variáveis.",
+    "aplicacao_campo": "O campo magnético alternado (AC) é aplicado externamente às nanopartículas por meio de um magnetômetro AC (ACM) operando a 310 kHz com amplitudes de campo variáveis.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -28,8 +28,8 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante, pois as nanopartículas estão na forma de pó seco (não dispersas em fluido) e o tempo de relaxação efetivo se aproxima do tempo de Néel (τeff ≈ τN).",
-    "descricao_mecanismo": "A relaxação de Néel (τN) envolve a reversão do vetor de magnetização dentro das NPs, enquanto a relaxação Browniana (τB) envolve a rotação física das partículas. Em NPs que podem rotacionar livremente no meio, ambos os mecanismos modulam o tempo de relaxação efetivo (τeff), enquanto em partículas não rotacionáveis τeff é praticamente igual ao tempo de Néel. O τN depende da amplitude do campo externamente aplicado, diminuindo com o aumento da amplitude do campo, o que influencia diretamente a eficiência de geração de calor."
+    "mecanismo_dominante": "Nas amostras em pó (partículas não dispersas em fluido), o tempo de relaxação efetivo é praticamente igual ao tempo de Néel (τeff ≈ τN), sendo a relaxação de Néel o mecanismo dominante.",
+    "descricao_mecanismo": "A relaxação de Néel (τN) envolve a reversão do vetor de magnetização dentro das NPs, enquanto a relaxação Browniana (τB) envolve a rotação física das partículas. Em NPs que podem rotacionar livremente no meio, ambos os mecanismos modulam o tempo de relaxação efetivo (τeff); em partículas não rotacionáveis, τeff ≈ τN. O τN depende da amplitude do campo aplicado externamente, diminuindo com o aumento da amplitude do campo, o que influencia diretamente a eficiência de geração de calor."
   },
   "q3": {
     "material": "ferrita de cobalto-gálio dopada (espinélio)",
@@ -40,13 +40,13 @@
     "faixa_tamanho_max_nm": 14.0,
     "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia magnetocristalina cúbica, aumentada pela incorporação de Co2+ em sítios octaédricos",
-    "revestimento": "ácido oleico (OA)",
+    "anisotropia": "anisotropia magnetocristalina (cúbica, com tendência à uniaxial com aumento de cobalto)",
+    "revestimento": "ácido oleico (oleic acid, OA)",
     "material_autorregulavel": false,
     "SAR_W_g": 498.0,
     "ILP_nHm2_kg": null,
-    "magnetizacao_saturacao_emu_g": 71.4,
-    "relacao_estrutura_propriedade": "A incorporação de Co2+ em sítios octaédricos aumenta a anisotropia magnetocristalina e a magnetização de saturação devido ao forte acoplamento spin-órbita do Co2+, enquanto a incorporação de Ga3+ em sítios tetraédricos reduz o momento do subsítio oposto, aumentando a magnetização líquida e suavizando o caráter magnético das NPs."
+    "magnetizacao_saturacao_emu_g": 77.2,
+    "relacao_estrutura_propriedade": "O aumento do conteúdo de Co2+ nos sítios octaédricos incrementa a anisotropia magnetocristalina e a magnetização de saturação, pois o Co2+ possui forte acoplamento spin-órbita em sítios Oh; a incorporação de Ga3+ nos sítios tetraédricos reduz o momento do subretículo tetraédrico, aumentando o momento líquido e modificando o comportamento magnético para mais suave."
   },
   "q4": {
     "amplitude_kA_m": 43.8,
@@ -55,7 +55,7 @@
     "dentro_limite_seguranca": false,
     "tempo_tratamento_min": null,
     "forma_onda": null,
-    "dosimetria_termica": "SAR obtido a partir da área dos ciclos de histerese AC (magnetometria AC) com sensor de temperatura por fibra óptica acoplado",
+    "dosimetria_termica": "SAR obtido a partir da área das curvas de histerese dinâmica M(H) medidas por magnetômetro AC (ACM) com sensor de temperatura de fibra óptica acoplado (Neoptix)",
     "distribuicao_espacial_calor": null,
     "padronizacao_reportada": false
   },
@@ -80,31 +80,31 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "O sistema não pode ser considerado monodisperso, com dispersão de tamanho relativa de aproximadamente 20%",
-      "Potencial toxicidade dos cátions Co2+, embora possa ser mitigada ajustando a razão Co/Fe e/ou aplicando revestimentos superficiais adequados",
-      "A menor cristalinidade nas amostras contendo Ga pode estar ligada à maior estabilidade térmica do Ga(acac)3 comparado ao Fe(acac)3, levando à decomposição incompleta durante a síntese",
-      "O produto H·f de 13,6 × 10^9 A m^-1 Hz supera o limite de segurança de 5 × 10^9 A m^-1 Hz para aplicações em campo inteiro",
-      "As NPs foram avaliadas apenas em pó seco, sem dispersão em fluido biológico ou meio celular"
+      "A distribuição de tamanho das NPs (~20% de dispersão relativa) indica que o sistema não pode ser considerado monodisperso",
+      "A toxicidade potencial dos cátions Co2+ é reconhecida, embora possa ser mitigada pelo ajuste da razão Co/Fe e/ou revestimentos superficiais",
+      "A menor cristalinidade nas amostras contendo Ga pode estar relacionada à maior estabilidade térmica do Ga(acac)3 em comparação ao Fe(acac)3, podendo introduzir defeitos estruturais que reduzem o desempenho magnético",
+      "A composição dopante ideal para hipertermia magnética depende fortemente da amplitude do campo AC aplicado, o que complica a definição de uma estratégia de dopagem universal",
+      "Estudos biológicos in vitro e in vivo não foram realizados neste trabalho"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Investigar o comportamento dinâmico dos sistemas codopados sob campos AC de alta frequência em condições mais próximas das clínicas",
-      "Explorar estratégias de codopagem com múltiplos dopantes para ajustar finamente o comportamento magnético",
-      "Investigar a distribuição dos cátions Ga3+ entre sítios Td e Oh com maior detalhe estrutural"
+      "Investigar sistemas codopados combinando múltiplos dopantes para explorar efeitos sinérgicos ainda pouco explorados sob campos AC de alta frequência",
+      "Estudar o comportamento dinâmico das NPs em diferentes condições de campo (amplitude e frequência) para otimizar a estratégia de dopagem para aplicações clínicas específicas",
+      "Avaliar toxicidade e biocompatibilidade das NPs codopadas em modelos celulares e animais"
     ],
     "gaps_identificados": [
-      "Sistemas codopados que combinam estrategicamente múltiplos dopantes permanecem inexplorados, particularmente em termos de comportamento dinâmico sob campos AC de alta frequência",
-      "A explicação completa para a magnetização relativamente alta da amostra de ferrita pura de cobalto e o valor inesperadamente baixo da amostra dopada apenas com Ga requer investigação adicional",
-      "Ausência de avaliação biológica (citotoxicidade, internalização celular, eficácia in vivo)"
+      "Sistemas codopados que combinam estrategicamente múltiplos dopantes permanecem pouco explorados, particularmente em termos de comportamento dinâmico sob campos AC de alta frequência",
+      "A explicação completa para a magnetização inesperadamente baixa da amostra dopada apenas com Ga e a magnetização relativamente alta da ferrita pura de cobalto requer investigação adicional",
+      "Ausência de estudos biológicos (in vitro/in vivo) para validar a eficácia terapêutica das NPs sintetizadas"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo demonstra que a resposta magnética dinâmica das nanoestruturas é fortemente influenciada pela interação entre composição de dopagem, anisotropia e amplitude do campo magnético aplicado, com o tempo de relaxação efetivo diminuindo com o aumento da amplitude do campo.",
-    "integracao_engenharia": "O trabalho apresenta uma abordagem de engenharia em nanoescala para o design de materiais geradores de calor eficientes para uso em hipertermia magnética de alta frequência, demonstrando que a composição ótima de dopagem depende da amplitude do campo AC aplicado.",
-    "integracao_biologia": "O artigo discute a biocompatibilidade dos sistemas dopados, destacando que compostos de Ga3+ já são aprovados pelo FDA para aplicações de imagem médica, e que a toxicidade do Co2+ pode ser mitigada pelo ajuste da razão Co/Fe e revestimentos superficiais.",
-    "integracao_materiais": "A síntese por decomposição térmica permite produção de nanocristais monodispersos com alta cristalinidade e controle estequiométrico preciso, com incorporação seletiva de Ga3+ em sítios tetraédricos e Co2+ em sítios octaédricos comprovada por XRD, XANES e ICP-AES.",
-    "mensagem_principal": "A codopagem nanométrica com Co2+ e Ga3+ em ferritas espinélio (CoxGa0.15Fe2.85-xO4) permite ajustar finamente as propriedades magnéticas e a eficiência de geração de calor sob campos magnéticos alternados, sendo que a composição ótima para hipertermia magnética depende criticamente da amplitude do campo AC aplicado, pois o tempo de relaxação efetivo varia com a amplitude do campo."
+    "integracao_fisica": "O estudo demonstra que o tempo de relaxação efetivo (τeff) das NPs — e consequentemente o SAR — é fortemente dependente tanto da composição de dopagem (anisotropia) quanto da amplitude do campo magnético AC aplicado, revelando uma relação não linear entre propriedades físicas e eficiência de aquecimento.",
+    "integracao_engenharia": "A síntese por decomposição térmica de compostos organometálicos permite controle preciso da estequiometria e do tamanho das NPs, possibilitando a engenharia nanoscalar de ferritas dopadas com desempenho otimizado para hipertermia magnética de alta frequência.",
+    "integracao_biologia": "O trabalho reconhece a relevância das NPs codopadas para aplicações teranósticas em nanomedicina, destacando que tanto alta eficiência de aquecimento quanto comportamento magnético controlado são cruciais para tratamento de câncer por hipertermia magnética, embora estudos biológicos não tenham sido conduzidos.",
+    "integracao_materiais": "A incorporação seletiva de Ga3+ em sítios tetraédricos e Co2+ em sítios octaédricos da estrutura espinélio permite ajuste fino simultâneo da anisotropia magnetocristalina e da magnetização de saturação, demonstrando a eficácia de estratégias de codopagem nanoscalar para otimizar propriedades magnéticas.",
+    "mensagem_principal": "A codopagem nanoscalar com Co2+ e Ga3+ em ferritas espinélio (CoxGa0.15Fe2.85-xO4) permite ajuste fino simultâneo da anisotropia magnetocristalina e da magnetização de saturação, com a composição dopante ótima para hipertermia magnética dependendo criticamente da amplitude do campo AC aplicado, destacando a importância de considerar as condições experimentais na otimização de agentes de aquecimento para aplicações teranósticas."
   },
   "custom_id": "64__Nanoscale_Engineering_of_Cobalt-Gallium_Co-Doped_Ferrites_A_"
 }

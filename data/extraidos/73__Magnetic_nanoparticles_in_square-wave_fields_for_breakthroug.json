@@ -6,15 +6,15 @@
   "doi": "10.1038/s41598-024-61580-8",
   "tipo_estudo": "in silico",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MH) utiliza nanopartículas magnéticas driven por campos de alta frequência para converter energia magnética em calor local, permitindo tratamentos antitumorais. O calor é produzido pela reversão cíclica da magnetização sob ação de campo magnético periódico de alta frequência.",
+    "conceito_tecnica": "A hipertermia magnética (MH) utiliza nanopartículas magnéticas conduzidas por campos de alta frequência para produzir uma quantidade controlável de energia magnética capaz de aquecer localmente o ambiente, resultando em terapias antitumorais. As nanopartículas atuam como fontes pontuais de calor no tecido-alvo.",
     "etapas_processo": [
-      "Aplicação de campo magnético alternado de alta frequência (100-300 kHz) às nanopartículas",
-      "Reversão cíclica da magnetização das nanopartículas por relaxação de Néel",
-      "Dissipação de energia magnética como calor para o ambiente local (tecido)",
-      "Aquecimento controlado do tecido tumoral até a janela terapêutica"
+      "Aplicação de campo magnético alternante de alta frequência (tipicamente 100-300 kHz) às nanopartículas magnéticas",
+      "Reversão cíclica da magnetização das nanopartículas sob ação do campo periódico",
+      "Dissipação de energia magnética como calor para o ambiente circundante via histerese magnética",
+      "Aquecimento localizado do tecido tumoral à temperatura terapêutica"
     ],
-    "internalizacao_nps": "O artigo menciona nanopartículas imobilizadas em tecido ou órgão, onde a relaxação de Brown desaparece, indicando aplicação intratumoral, mas não detalha o mecanismo de internalização celular.",
-    "aplicacao_campo": "O campo magnético alternado é aplicado externamente às nanopartículas com frequências tipicamente na faixa de 100-300 kHz para hipertermia magnética, com amplitude de 100 Oe (≈7,96 kA/m).",
+    "internalizacao_nps": "O artigo menciona nanopartículas imobilizadas em tecido ou órgão, com referência a aplicações clínicas e pré-clínicas, mas não descreve detalhadamente o mecanismo de internalização celular.",
+    "aplicacao_campo": "Um campo magnético alternante de alta frequência (100-300 kHz para MH) é aplicado externamente às nanopartículas dispersas no tecido, com forma de onda tipicamente senoidal, embora o artigo proponha o uso de onda quadrada como alternativa superior.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -26,11 +26,11 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": "quadrada",
-    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante para nanopartículas imobilizadas em tecido, onde a relaxação de Brown está ausente ou é dominada pela relaxação de Néel mesmo em ambiente fluido.",
-    "descricao_mecanismo": "Na relaxação de Néel, o momento magnético da nanopartícula inverte sua direção atravessando a barreira de energia anisotrópica por processos ativados termicamente, descrita por equações de taxa (rate equations) derivadas da equação de Fokker-Planck. Sob campo de onda quadrada, a inversão instantânea do campo produz primeiro uma rotação rápida do vetor de magnetização (efeito 'rápido', da ordem de picossegundos a nanossegundos) seguida de uma redistribuição lenta das populações nos dois poços de energia (efeito 'lento', governado pelo tempo de relaxação efetivo τ). Essa separação entre efeitos rápidos e lentos resulta em loops de histerese com área significativamente maior do que os produzidos por campos senoidais de mesma amplitude e frequência."
+    "mecanismo_dominante": "Para nanopartículas imobilizadas, a relaxação de Néel domina o processo de dissipação de energia, com a reversão da magnetização ocorrendo por cruzamento de barreira de energia ativada termicamente.",
+    "descricao_mecanismo": "O mecanismo baseia-se na relaxação de Néel, em que os momentos magnéticos das nanopartículas de domínio único revertam entre dois poços de energia (sistema de duplo poço) por efeito do campo magnético e da temperatura. Quando um campo de onda quadrada é aplicado, ocorre uma separação entre um efeito 'rápido' (rotação quase instantânea do vetor de magnetização a cada inversão do campo) e um efeito 'lento' (relaxação exponencial das populações dos poços de energia com constante de tempo τ). Essa separação resulta em laços de histerese de maior área comparados aos produzidos por campos senoidais de mesma amplitude e frequência, aumentando a potência dissipada como calor."
   },
   "q3": {
-    "material": "Fe3O4 (magnetita)",
+    "material": "Fe3O4",
     "composicao_quimica": "Fe3O4",
     "dopagem": null,
     "tamanho_nm": 13.0,
@@ -38,23 +38,23 @@
     "faixa_tamanho_max_nm": 16.0,
     "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia efetiva uniaxial com eixos fáceis aleatórios em três dimensões (Keff = 3×10^5 erg/cm³)",
+    "anisotropia": "anisotropia efetiva uniaxial com eixos fáceis aleatórios em três dimensões",
     "revestimento": null,
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "O diâmetro da nanopartícula determina a altura da barreira de energia anisotrópica e, consequentemente, o tempo de relaxação de Néel; nanopartículas com D = 13-14 nm apresentam o máximo de potência magnética liberada e o maior valor do terceiro harmônico sob campo de onda quadrada. Partículas abaixo de 10 nm não podem ser adequadamente descritas pelo modelo de equações de taxa, pois a condição de barreira de energia significativamente maior que kBT não é satisfeita."
+    "relacao_estrutura_propriedade": "O tamanho das nanopartículas determina a altura da barreira de energia e a constante de relaxação de Néel, controlando se a magnetização atinge o equilíbrio durante cada meio período do campo; diâmetros de 13-14 nm produzem a maior potência magnética e o maior terceiro harmônico sob campo de onda quadrada."
   },
   "q4": {
     "amplitude_kA_m": 7.96,
     "frequencia_kHz": 100.0,
-    "produto_Hf": 796000000.0,
+    "produto_Hf": null,
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": null,
     "forma_onda": "quadrada",
     "dosimetria_termica": null,
-    "distribuicao_espacial_calor": "O artigo modela as nanopartículas como fontes pontuais de calor (point-like heat sources) dispersas homogeneamente no tecido hospedeiro diamagnético, sem formação de cadeias ou agregados, com concentração típica de 0,001 a 0,01.",
+    "distribuicao_espacial_calor": null,
     "padronizacao_reportada": false
   },
   "q5": {
@@ -63,7 +63,7 @@
     "modelo_animal": null,
     "tipo_cancer": null,
     "concentracao_mg_mL": null,
-    "agregacao_discutida": true,
+    "agregacao_discutida": false,
     "viscosidade_discutida": false,
     "imobilizacao_celular": true,
     "perfusao_discutida": false,
@@ -78,33 +78,30 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "O modelo descreve um campo de onda quadrada ideal (tinv → 0), enquanto campos reais têm tempo de inversão finito da ordem de microssegundos",
-      "O modelo é válido apenas para nanopartículas imobilizadas (relaxação de Brown ausente), não descrevendo adequadamente partículas em suspensão livre quando Brown é relevante",
-      "A validade das equações de taxa restringe-se a diâmetros D ≥ 10 nm a temperatura ambiente, excluindo nanopartículas menores",
-      "As propriedades magnéticas intrínsecas (Ms e Keff) são assumidas independentes do diâmetro, o que é uma simplificação para partículas muito pequenas",
-      "As nanopartículas são assumidas não-interagentes, o que pode não ser válido em concentrações mais elevadas"
+      "O modelo descreve a resposta magnética sob campo de onda quadrada ideal (tempo de inversão tendendo a zero), enquanto realizações práticas possuem tempo de inversão finito da ordem de microssegundos",
+      "A validade do modelo de equações de taxa requer diâmetros de partícula D ≥ 10 nm à temperatura ambiente, pois tempos menores que ~10 ns não podem ser investigados por este método",
+      "O modelo assume partículas não interagentes, homogeneamente dispersas e com propriedades intrínsecas independentes do diâmetro, simplificações que podem não se aplicar em todos os cenários biológicos",
+      "A dependência da temperatura das propriedades magnéticas intrínsecas das nanopartículas foi negligenciada como primeira aproximação"
     ],
     "problemas_SAR_ILP": false,
-    "falta_padronizacao": true,
+    "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Reduzir o tempo de inversão do campo (tinv) para ~100 ns por meio de melhorias tecnológicas em eletrônica de controle e circuitos auxiliares",
-      "Usar os resultados do modelo ideal como ponto de partida para entender o comportamento de campos de onda quadrada realistas com tinv finito",
-      "Selecionar nanopartículas com diâmetros de 13-14 nm para obter máximo desempenho tanto em hipertermia quanto em MPI sob campos de onda quadrada",
-      "Satisfazer a condição tinv ≤ 0,1τ para preservar a separação entre efeitos rápidos e lentos e validar o uso do modelo"
+      "Desenvolver melhorias tecnológicas em eletrônica de controle e circuitos auxiliares para reduzir o tempo de inversão do campo para ~100 ns, suficiente para incluir partículas de 13-14 nm na faixa de validade do modelo",
+      "Usar os resultados do modelo de onda quadrada ideal como ponto de partida para compreender o comportamento de campos de onda quadrada mais realistas com tempo de inversão finito",
+      "Explorar a relação linear entre potência magnética PW e frequência para partículas pequenas como ferramenta de controle de temperatura em aplicações de hipertermia"
     ],
     "gaps_identificados": [
-      "Ausência de validação experimental direta dos resultados teóricos do modelo de onda quadrada ideal para hipertermia e MPI",
-      "Falta de estudo do efeito da dependência da temperatura nas propriedades magnéticas intrínsecas (Ms e Keff) das nanopartículas",
-      "Necessidade de investigar o comportamento de nanopartículas em suspensão (com relaxação de Brown) sob campos de onda quadrada",
-      "Necessidade de estudos in vitro e in vivo para confirmar o ganho terapêutico previsto pelo modelo teórico"
+      "Falta de campos de onda quadrada práticos com tempo de inversão suficientemente curto (< 100 ns) para bioaplicações",
+      "Ausência de estudos experimentais in vitro ou in vivo com campos de onda quadrada ideal no presente trabalho",
+      "Necessidade de investigar o comportamento de nanopartículas com propriedades magnéticas intrínsecas dependentes da temperatura sob campo de onda quadrada"
     ]
   },
   "q7": {
-    "integracao_fisica": "O trabalho desenvolve um modelo analítico baseado em equações de taxa para descrever a dinâmica de magnetização de nanopartículas de domínio único sob campo de onda quadrada, demonstrando matematicamente a separação entre efeitos de rotação rápida e relaxação lenta de Néel.",
-    "integracao_engenharia": "O estudo fundamenta o desenvolvimento de sistemas de geração de campo magnético com forma de onda não senoidal (onda quadrada) para aplicações biomédicas, estabelecendo requisitos técnicos para o tempo de inversão do campo (tinv ≤ 100 ns) acessíveis com melhorias tecnológicas incrementais.",
-    "integracao_biologia": "O artigo referencia estudos in vitro que demonstram maior morte celular tumoral com campos trapezoidais/quase-quadrados em comparação a campos senoidais, e discute a biocompatibilidade do aquecimento por correntes de Foucault em tecido biológico sob campos de onda quadrada.",
-    "integracao_materiais": "O trabalho identifica que nanopartículas de magnetita (Fe3O4) com diâmetros de 13-14 nm, formato esférico, anisotropia efetiva uniaxial e eixos fáceis aleatórios representam a configuração ótima para maximizar tanto a potência magnética liberada quanto a sensibilidade em MPI sob campos de onda quadrada.",
-    "mensagem_principal": "Substituir o campo senoidal convencional por um campo de onda quadrada de mesma amplitude e frequência produz melhoria significativa e qualitativa no desempenho de nanopartículas de magnetita, aumentando substancialmente tanto a potência magnética liberada como calor (hipertermia) quanto a magnitude do terceiro harmônico da magnetização (MPI/MPS), graças à geração de loops de histerese com área maior decorrente da inversão instantânea do campo."
+    "integracao_fisica": "O artigo desenvolve um modelo analítico baseado em equações de taxa para descrever a dinâmica de magnetização de nanopartículas sob campo de onda quadrada, separando contribuições 'rápidas' (rotação) e 'lentas' (relaxação de Néel) e fornecendo expressões fechadas para os coeficientes de Fourier da magnetização.",
+    "integracao_engenharia": "O trabalho demonstra quantitativamente que a substituição de campos senoidais por campos de onda quadrada melhora significativamente a potência dissipada em hipertermia e a sensibilidade em MPI/MPS, orientando o desenvolvimento tecnológico de geradores de campo magnético com formas de onda não convencionais.",
+    "integracao_biologia": "O modelo confirma que nanopartículas imobilizadas em tecido biológico operam predominantemente pelo mecanismo de relaxação de Néel, e que concentrações típicas de tratamento (0,001–0,01) permitem assumir partículas não interagentes, conectando parâmetros físicos a condições clínicas reais.",
+    "integracao_materiais": "O artigo identifica que nanopartículas de magnetita com diâmetros de 13-14 nm apresentam desempenho ótimo sob campo de onda quadrada, fornecendo critérios de design para síntese de nanopartículas de domínio único com anisotropia efetiva uniaxial para maximizar a área do laço de histerese.",
+    "mensagem_principal": "Aplicar campos magnéticos de onda quadrada a nanopartículas de magnetita de domínio único, em vez de campos senoidais convencionais de mesma amplitude e frequência, produz melhoras qualitativas e quantitativas tanto na potência liberada como calor em hipertermia magnética quanto na magnitude do terceiro harmônico essencial para imageamento por partículas magnéticas, graças à separação entre efeitos rápidos de rotação e lentos de relaxação que maximizam a área do laço de histerese."
   },
   "custom_id": "73__Magnetic_nanoparticles_in_square-wave_fields_for_breakthroug"
 }

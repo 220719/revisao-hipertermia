@@ -6,15 +6,16 @@
   "doi": "10.1039/d5na00605h",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética baseia-se na conversão de energia de campo magnético alternante em calor localizado, sendo uma opção de tratamento minimamente invasiva para tumores sólidos. Nanopartículas magnéticas incorporadas em scaffolds de poliuretano são expostas a campos magnéticos alternantes para gerar aquecimento localizado.",
+    "conceito_tecnica": "A hipertermia magnética baseia-se na conversão de energia de campo magnético alternante em calor localizado, emergindo como uma opção de tratamento minimamente invasiva para tumores sólidos. Nanopartículas magnéticas incorporadas em scaffolds de PU são expostas a campos magnéticos alternantes para gerar aquecimento localizado no sítio tumoral.",
     "etapas_processo": [
-      "Síntese de SPIONs por co-precipitação com modificação superficial opcional (citrato, PEG, OA ou Al(OH)3)",
-      "Incorporação das SPIONs em scaffolds de poliuretano por método de salt-leaching/phase-inversion",
-      "Exposição dos scaffolds magnéticos a campo magnético alternante (AMF) para geração de calor",
-      "Monitoramento da temperatura em tempo real com sonda de fibra óptica"
+      "Síntese de SPIONs via co-precipitação com modificação de superfície opcional (citrato, PEG, OA ou Al(OH)3)",
+      "Incorporação das SPIONs em scaffolds de poliuretano pelo método de salt-leaching/phase-inversion",
+      "Posicionamento do scaffold magnético na bobina de indução do sistema MagneTherm",
+      "Aplicação de campo magnético alternante (H = 25 mT, f = 253 kHz)",
+      "Monitoramento em tempo real da temperatura por sonda de fibra óptica"
     ],
-    "internalizacao_nps": "As NPs são incorporadas fisicamente na matriz de poliuretano durante a fabricação do scaffold, não sendo descrida internalização celular das NPs livres neste estudo",
-    "aplicacao_campo": "Os scaffolds magnéticos são posicionados no centro de uma bobina de indução resfriada a água do sistema MagneTherm, sob campo magnético alternante de H = 25 mT (≈20 kA m−1) a f = 253 kHz.",
+    "internalizacao_nps": "As nanopartículas são incorporadas diretamente na matriz do scaffold de poliuretano durante a fabricação, não sendo descrita internalização celular ativa das NPs livres neste estudo.",
+    "aplicacao_campo": "O campo magnético alternante é aplicado por uma bobina de indução resfriada a água do sistema MagneTherm, com os scaffolds centrados na bobina para garantir exposição ótima ao campo de RF.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -26,8 +27,8 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O mecanismo dominante é o acoplamento magnético interparticular promovido pela arquitetura multicore das SPIONs@Al(OH)3, que intensifica as perdas magnéticas e reduz a desordem de spin superficial.",
-    "descricao_mecanismo": "A arquitetura multicore das SPIONs@Al(OH)3 promove maior acoplamento magnético interparticular e reduz a desordem de spin superficial, resultando em maior eficiência de aquecimento. As interações dipolares entre os núcleos de magnetita organizados dentro de uma única partícula contribuem para o aumento do desempenho magnético. A presença de coatings como PEG e OA reduz o acoplamento interparticular e a anisotropia efetiva, diminuindo as perdas magnéticas e, consequentemente, o SAR."
+    "mecanismo_dominante": "O acoplamento magnético interparticular promovido pela arquitetura multicore das SPIONs@Al(OH)3 é apontado como o principal responsável pela maior eficiência de aquecimento magnético.",
+    "descricao_mecanismo": "A arquitetura multicore das SPIONs@Al(OH)3 promove acoplamento magnético interparticular mais intenso e reduz a desordem de spin superficial, potencializando os mecanismos de perda magnética. As interações dipolares entre partículas e a anisotropia induzida pela superfície influenciam a coercividade e a resposta magnética do sistema. Revestimentos como PEG e OA reduzem o acoplamento interparticular e a anisotropia efetiva, resultando em menor coercividade e comportamento mais próximo ao superparamagnético."
   },
   "q3": {
     "material": "Fe3O4 (magnetita)",
@@ -39,12 +40,12 @@
     "forma": "esférica",
     "arquitetura_multicore": true,
     "anisotropia": "anisotropia de superfície e acoplamento dipolar interparticular",
-    "revestimento": "citrato, PEG, ácido oleico (OA) e hidróxido de alumínio (Al(OH)3)",
+    "revestimento": "citrato, PEG, ácido oleico ou Al(OH)3",
     "material_autorregulavel": false,
     "SAR_W_g": 18.21,
     "ILP_nHm2_kg": 0.18,
     "magnetizacao_saturacao_emu_g": 73.21,
-    "relacao_estrutura_propriedade": "A arquitetura multicore das SPIONs@Al(OH)3 favorece o acoplamento magnético interparticular e reduz a desordem de spin superficial, resultando em maior magnetização de saturação (73,21 emu g−1) e maior eficiência de aquecimento por hipertermia. Coatings orgânicos como PEG e OA aumentam o espaçamento interparticular, reduzindo o acoplamento dipolar e a coercividade, enquanto a casca inorgânica espessa de Al(OH)3 diminui a fração de massa magnética aparente no scaffold."
+    "relacao_estrutura_propriedade": "A arquitetura multicore das SPIONs@Al(OH)3, com vários nanocristais de magnetita agrupados numa única partícula (~200 nm), promove maior acoplamento magnético interparticular e reduz a desordem de spin superficial, resultando na maior magnetização de saturação (73,21 emu/g) e no melhor desempenho em hipertermia magnética (SAR = 18,21 W/g) entre todas as formulações testadas."
   },
   "q4": {
     "amplitude_kA_m": 20.0,
@@ -53,8 +54,8 @@
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": 5.0,
     "forma_onda": null,
-    "dosimetria_termica": "Sonda de fibra óptica não invasiva para monitoramento em tempo real; SAR calculado a partir da inclinação inicial de aquecimento (DT/Dt) usando calores específicos da magnetita e do poliuretano e fração mássica de Fe3O4",
-    "distribuicao_espacial_calor": "Os scaffolds foram centrados dentro da bobina para garantir exposição ótima ao campo magnético de RF; diferenças na difusão de calor entre amostras foram reconhecidas como fator que influencia o DT final",
+    "dosimetria_termica": "Sonda de fibra óptica não invasiva para monitoramento em tempo real; SAR calculado a partir da inclinação inicial de aquecimento (DT/Dt) considerando calores específicos da magnetita e do poliuretano e fração mássica de Fe3O4",
+    "distribuicao_espacial_calor": "O artigo menciona que diferenças na difusão de calor e no arranjo das NPs na matriz de poliuretano podem levar a diferentes aumentos de temperatura, mas não descreve a distribuição espacial detalhada do calor.",
     "padronizacao_reportada": true
   },
   "q5": {
@@ -78,33 +79,30 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "O SAR é calculado a partir da inclinação inicial de aquecimento, não refletindo as perdas por difusão de calor ao longo do tempo",
-      "Diferentes quantidades de material magnético nos scaffolds dificultam a comparação direta do desempenho de aquecimento entre amostras",
-      "O scaffold MS3 (SPIONs@PEG) apresentou liberação visível de NPs após 3 meses em água, indicando instabilidade a longo prazo",
-      "A fração de óxido de ferro nas SPIONs@Al(OH)3 é apenas 15%, reduzindo a magnetização aparente do scaffold em comparação com NPs com coatings orgânicos",
-      "O estudo de citocompatibilidade foi limitado a 24 horas e a fibroblastos murinos, sem avaliação em linhagens tumorais"
+      "O método de cálculo do SAR a partir da inclinação inicial de aquecimento não reflete as perdas por difusão de calor ao longo do tempo",
+      "Diferentes quantidades de material magnético entre as amostras dificultam a comparação direta dos valores de DT",
+      "A amostra MS3 (SPIONs@PEG) apresentou liberação visível de NPs após 3 meses de imersão em água, indicando instabilidade a longo prazo",
+      "A baixa proporção de óxido de ferro nas SPIONs@Al(OH)3 (apenas 15%) limita a magnetização total do scaffold"
     ],
     "problemas_SAR_ILP": true,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Investigar o desempenho dos scaffolds MS5 em modelos in vivo para avaliar eficácia terapêutica antitumoral",
-      "Avaliar a citocompatibilidade e eficácia em linhagens celulares tumorais",
-      "Ampliar os estudos de estabilidade a longo prazo dos scaffolds magnéticos em condições fisiológicas",
-      "Explorar a combinação dos scaffolds magnéticos com liberação controlada de fármacos para terapia combinada"
+      "Caracterização adicional do scaffold MS5 como protótipo implantável dado que não houve liberação detectável de ferro após 3 meses",
+      "Avaliação do desempenho em modelos biológicos mais complexos para aplicações oncológicas"
     ],
     "gaps_identificados": [
-      "Ausência de avaliação da eficácia terapêutica antitumoral (não foram usadas linhagens de câncer nos experimentos)",
-      "Falta de estudos in vivo para validar o desempenho de hipertermia e biocompatibilidade sistêmica",
-      "Mecanismos de relaxação magnética (Néel e Browniana) não foram discutidos explicitamente",
-      "Não foi avaliado o efeito da imobilização das NPs na matriz polimérica sobre os mecanismos de aquecimento em comparação com NPs em suspensão"
+      "Ausência de avaliação da eficácia terapêutica antitumoral in vitro ou in vivo com linhagens de células cancerígenas",
+      "Falta de avaliação do efeito da temperatura atingida (DT ~43°C) sobre células tumorais",
+      "Ausência de dados sobre a janela terapêutica de temperatura (42–46°C) no contexto do estudo",
+      "Não foram investigados os mecanismos físicos detalhados de relaxação (Néel/Browniana) responsáveis pelo aquecimento"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo quantifica o desempenho de hipertermia magnética por meio de SAR e ILP sob condições de campo próximas ao limiar de segurança biomédica, correlacionando arquitetura de partícula e acoplamento magnético com eficiência de aquecimento.",
-    "integracao_engenharia": "Demonstra a fabricação de scaffolds de poliuretano porosos e magnéticos por salt-leaching/phase-inversion com distribuição homogênea de NPs e mesoporosidade adequada para aplicações implantáveis.",
-    "integracao_biologia": "Avalia a citocompatibilidade dos scaffolds magnéticos (MS5) em fibroblastos murinos NIH/3T3 seguindo diretrizes ISO 10993-5:2009, confirmando viabilidade celular superior a 80% sob contato direto e indireto.",
-    "integracao_materiais": "Realiza uma comparação sistemática de quatro modificações de superfície (citrato, PEG, OA e Al(OH)3) em SPIONs de Fe3O4, identificando como a química superficial e a arquitetura multicore modulam estabilidade coloidal, magnetização e eficiência de hipertermia nos scaffolds.",
-    "mensagem_principal": "Scaffolds de poliuretano incorporando SPIONs@Al(OH)3 de arquitetura multicore demonstraram desempenho superior em hipertermia magnética (DT ≈ 43 °C, ILP = 0,18 nH m2 kg−1) com citocompatibilidade adequada, destacando que a engenharia de superfície das NPs é determinante para otimizar plataformas implantáveis para tratamento oncológico localizado."
+    "integracao_fisica": "O estudo demonstra que a arquitetura multicore e o acoplamento magnético interparticular modulam os mecanismos de perda magnética e determinam a eficiência de aquecimento (SAR e ILP) dos scaffolds sob campo magnético alternante.",
+    "integracao_engenharia": "O método de salt-leaching/phase-inversion foi adaptado para incorporar SPIONs funcionalizadas em scaffolds de PU, resultando em plataformas implantáveis mesoporosas com distribuição homogênea de nanopartículas e desempenho superior em hipertermia magnética.",
+    "integracao_biologia": "A avaliação de citocompatibilidade em fibroblastos NIH/3T3 seguindo as diretrizes ISO 10993-5:2009 confirmou que os scaffolds MS5 (SPIONs@Al(OH)3/PU) são biocompatíveis, com viabilidade celular superior a 80% tanto em contato direto quanto indireto.",
+    "integracao_materiais": "A comparação sistemática de quatro revestimentos de superfície (citrato, PEG, ácido oleico e Al(OH)3) revelou que a química de superfície governa de forma decisiva a estabilidade coloidal, a dispersão das NPs no scaffold, as propriedades magnéticas e a eficiência de hipertermia, identificando SPIONs@Al(OH)3 como a formulação mais promissora.",
+    "mensagem_principal": "Scaffolds de poliuretano incorporando SPIONs funcionalizadas com Al(OH)3 (arquitetura multicore@shell) apresentaram desempenho superior em hipertermia magnética (DT ~43°C, SAR = 18,21 W/g, ILP = 0,18 nH m² kg⁻¹), estabilidade a longo prazo e citocompatibilidade, destacando-se como plataformas implantáveis multifuncionais promissoras para tratamento oncológico localizado."
   },
   "custom_id": "53__Surface-modified_iron_oxide_nanoprobes_in_biomedical_scaffol"
 }

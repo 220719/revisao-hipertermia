@@ -6,17 +6,17 @@
   "doi": "10.1002/admt.70960",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "Na hipertermia magnética, um aquecimento localizado e controlado é induzido ao submeter nanopartículas magnéticas a um campo magnético alternante (AMF), visando desencadear a apoptose de células tumorais. O calor gerado pelas NPs depende de propriedades magnéticas intrínsecas e extrínsecas das partículas.",
+    "conceito_tecnica": "Na hipertermia magnética, o aquecimento localizado e controlado é induzido ao submeter nanopartículas magnéticas (MNPs) a um campo magnético alternante (AMF), visando desencadear a apoptose de células tumorais. O calor é produzido por dois mecanismos: perda por histerese e perda por relaxação (relaxações de Néel e Browniana).",
     "etapas_processo": [
-      "Síntese das NPs por moagem mecânica de alta energia (wet ball milling) a partir de pó de ferro",
-      "Caracterização das propriedades físicas, magnéticas e morfológicas das NPs",
-      "Redispersão das NPs em meio líquido na concentração desejada",
-      "Aplicação do campo magnético alternante (AMF) contínuo ou pulsado",
-      "Monitoramento da temperatura com sonda de fibra óptica",
-      "Avaliação da internalização celular, biocompatibilidade e morte celular induzida por hipertermia"
+      "Síntese das MNPs por ball milling mecanoquímico em meio úmido a partir de pó de Fe e água deionizada",
+      "Secagem das nanopartículas em forno a vácuo para obtenção do pó final",
+      "Redispersão do pó em meio líquido (água DI, PBS, FBS ou meio de células cancerígenas)",
+      "Inserção da suspensão no sistema MagneTherm para aplicação do AMF",
+      "Monitoramento da temperatura por sonda de fibra óptica",
+      "Cálculo de SAR e ILP a partir dos dados de temperatura-tempo"
     ],
-    "internalizacao_nps": "As NPs foram internalizadas por células SKOV3 de câncer de ovário após incubação de 24 h com 100 e 500 µg/mL, confirmada por imagens de microscopia mostrando extensiva internalização e captação celular eficaz.",
-    "aplicacao_campo": "O AMF foi aplicado usando o sistema MagneTherm (nanoTherics Ltd) equipado com bobinas resfriadas a água, tanto em modo contínuo quanto pulsado, com amplitude de 30 mT e frequência de 101,5 kHz nas condições principais.",
+    "internalizacao_nps": "As MNPs foram internalizadas por células SKOV3 de câncer ovariano após 24 h de incubação com 100 e 500 µg/mL, confirmada por imagens de microscopia mostrando internalização extensiva e captação celular eficaz.",
+    "aplicacao_campo": "O AMF é aplicado usando o sistema MagneTherm equipado com bobinas resfriadas a água, com amplitude de até 30 mT e frequências entre 101,5 e 951,8 kHz, tanto em modo contínuo quanto pulsado.",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 46.0,
     "vias_morte_celular": [
@@ -30,8 +30,8 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": true,
     "forma_onda_campo": "pulsada",
-    "mecanismo_dominante": "As perdas por histerese são o mecanismo dominante de geração de calor nas NPs produzidas por ball milling, devido ao seu comportamento ferromagnético e tamanho multidomínio.",
-    "descricao_mecanismo": "As NPs produzidas por ball milling apresentam larguras de histerese (2Hc) de 66 a 98 Oe, indicando comportamento ferromagnético e regime multidomínio, no qual as perdas por histerese dominam a geração de calor. Isso foi confirmado por experimentos em gel de agar, que bloqueiam a relaxação Browniana, demonstrando que o calor é gerado predominantemente por coercividade e relaxação de Néel. Em contraste, para NPs superparamagnéticas menores, a geração de calor seria governada pelas relaxações de Néel e Browniana."
+    "mecanismo_dominante": "As perdas por histerese são o mecanismo dominante de geração de calor nas MNPs produzidas por ball milling, devido ao seu comportamento ferromagnético e tamanho multidomínio.",
+    "descricao_mecanismo": "As MNPs sintetizadas apresentam largura de histerese (2Hc) de aproximadamente 60–98 Oe, indicando comportamento ferromagnético e regime multidomínio, em que as perdas por histerese governam predominantemente a geração de calor. Isso foi confirmado pelo uso de gel de agar para bloquear a relaxação Browniana, demonstrando que as MNPs ainda geravam calor significativo por meio de coercividade e relaxação de Néel. Em contraste com MNPs superparamagnéticas, onde as perdas por relaxação aumentam com a frequência, nas MNPs ferromagnéticas maiores a amplitude do campo tem impacto mais significativo na geração de calor do que a frequência."
   },
   "q3": {
     "material": "Fe3O4 (magnetita)",
@@ -42,13 +42,13 @@
     "faixa_tamanho_max_nm": null,
     "forma": null,
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia magnetocristalina (ferromagnética, regime multidomínio)",
+    "anisotropia": "anisotropia magnetocristalina; morfologia irregular resultante de colisões mecânicas",
     "revestimento": null,
     "material_autorregulavel": false,
     "SAR_W_g": 95.57,
     "ILP_nHm2_kg": 1.64,
     "magnetizacao_saturacao_emu_g": 114.0,
-    "relacao_estrutura_propriedade": "O aumento do tempo de moagem promove a transição de fase do Fe para a magnetita e reduz o tamanho das partículas, alargando os loops de histerese magnética (de 66 Oe para 98 Oe de largura de histerese) e aumentando a eficiência de geração de calor sob AMF. A ausência de revestimento superficial e a remanência não nula favorecem a formação de agregados, resultando em morfologia irregular."
+    "relacao_estrutura_propriedade": "O aumento do tempo de moagem promove a transição de fase do Fe para magnetita e reduz o tamanho das partículas, ampliando a largura do loop de histerese magnética e melhorando a eficiência de aquecimento das MNPs. A ausência de revestimento superficial e a morfologia irregular resultam em agregação das partículas, enquanto o aumento da coercividade com o tempo de moagem indica comportamento ferromagnético dominante."
   },
   "q4": {
     "amplitude_kA_m": 23.87,
@@ -57,8 +57,8 @@
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": 10.0,
     "forma_onda": "pulsada",
-    "dosimetria_termica": "método calorimétrico com sonda de fibra óptica; SAR calculado pela inclinação inicial da curva temperatura-tempo (0 a 60 s)",
-    "distribuicao_espacial_calor": "não descrita explicitamente; medições realizadas em volume de 1 mL em vial de hiperthermia",
+    "dosimetria_termica": "método calorimétrico com sonda de fibra óptica; SAR calculado pela inclinação inicial da curva de temperatura (0–60 s)",
+    "distribuicao_espacial_calor": "não descrita espacialmente; temperatura monitorada por ponto único com sonda de fibra óptica no interior da suspensão",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -82,33 +82,33 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "As NPs não possuem revestimento superficial, resultando em agregação e precipitação da maioria das partículas nas primeiras 5 h de teste de estabilidade coloidal",
-      "Morfologia irregular e tamanho hidrodinâmico relativamente grande (~270 nm) devido ao processo mecânico de moagem",
-      "Presença de impurezas (Cr e Ni) provenientes do jar e das esferas de aço inoxidável",
-      "Comportamento ferromagnético e multidomínio, diferente do superparamagnetismo ideal para aplicações biomédicas",
-      "Estudo limitado a ensaios in vitro, sem validação in vivo"
+      "Ausência de revestimento superficial nas MNPs resulta em agregação e precipitação, com a maioria das MNPs precipitando dentro de 5 h",
+      "Presença de impurezas (Cr e Ni) provenientes do jarro e das esferas de aço inoxidável durante a moagem",
+      "MNPs com tamanho hidrodinâmico médio de ~270 nm são relativamente grandes para aplicações in vivo",
+      "Estudos apenas in vitro, sem validação in vivo",
+      "Comportamento ferromagnético (multidomínio) em vez de superparamagnético pode limitar aplicações biomédicas"
     ],
     "problemas_SAR_ILP": true,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Refinar as condições de síntese mecanoquímica para otimizar distribuição de tamanho, composição de fase e anisotropia magnética",
-      "Desenvolver estratégias de funcionalização superficial para melhorar a estabilidade coloidal em fluidos fisiológicos",
-      "Prolongar o tempo de circulação in vivo e habilitar o direcionamento específico a tumores",
-      "Integrar os avanços com estudos sistemáticos in vivo para viabilizar tratamentos clínicos de hipertermia"
+      "Refinar as condições de síntese mecanoquímica para otimizar distribuição de tamanho de partícula, composição de fase e anisotropia magnética",
+      "Desenvolver estratégias de funcionalização superficial para melhorar estabilidade coloidal em fluidos fisiológicos",
+      "Aumentar o tempo de circulação in vivo e habilitar direcionamento específico ao tumor",
+      "Integrar avanços com estudos sistemáticos in vivo para viabilizar tratamentos clínicos de hipertermia"
     ],
     "gaps_identificados": [
-      "Ausência de estudos in vivo para validar o desempenho e a segurança das NPs produzidas por ball milling",
-      "Necessidade de estratégias de revestimento para melhorar a estabilidade coloidal em meios fisiológicos",
-      "Falta de controle fino sobre distribuição granulométrica e composição de fase no processo de ball milling",
-      "Impurezas metálicas (Cr, Ni) introduzidas pelo equipamento de moagem precisam ser abordadas para aplicações clínicas"
+      "Ausência de estudos in vivo para validar eficácia e segurança terapêutica",
+      "Falta de revestimento superficial limita estabilidade coloidal e funcionalização para direcionamento tumoral",
+      "Impurezas metálicas (Cr, Ni) introduzidas pelo processo de moagem não foram avaliadas quanto à toxicidade",
+      "Efeitos da proteína corona e interações com fluidos biológicos complexos não foram investigados"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo investiga os mecanismos de geração de calor (perdas por histerese, relaxações de Néel e Browniana) em NPs ferromagnéticas multidomínio, correlacionando largura de histerese e dinâmica de relaxação com o desempenho de aquecimento sob diferentes amplitudes e frequências de AMF.",
-    "integracao_engenharia": "O trabalho demonstra uma rota de síntese mecanoquímica escalável, de baixo custo e reprodutível para produção em larga escala de NPs de óxido de ferro, além de investigar o controle de temperatura via AMF pulsado com variação de ciclo ativo/inativo.",
-    "integracao_biologia": "O estudo avalia a captação celular, biocompatibilidade (até 500 µg/mL) e a eficácia terapêutica das NPs em células SKOV3 de câncer de ovário, confirmando morte celular induzida por hipertermia via ensaio Live/Dead.",
-    "integracao_materiais": "A investigação sistemática das propriedades magnetocristalinas, morfologia, tamanho e comportamento magnético em função do tempo de moagem revela a relação entre estrutura e propriedades, mostrando como a transição de fase Fe→Fe3O4 e o alargamento da histerese melhoram o desempenho de aquecimento.",
-    "mensagem_principal": "NPs de óxido de ferro sintetizadas por moagem úmida de alta energia por 55 h apresentam alto desempenho de hipertermia magnética (SAR ~95 W/g, ΔT ~50°C) dentro dos limites clínicos de segurança, com captação celular eficaz e baixa citotoxicidade em células SKOV3, e permitem controle preciso da temperatura via AMF pulsado, demonstrando o potencial dessa rota de síntese simples e escalável para futuras aplicações no tratamento de câncer."
+    "integracao_fisica": "O artigo investiga os mecanismos de geração de calor (histerese, relaxação de Néel e Browniana) em MNPs ferromagnéticas multidomínio, demonstrando que a amplitude do campo tem maior impacto que a frequência na geração de calor para esse regime magnético.",
+    "integracao_engenharia": "O trabalho apresenta a síntese escalonável e de baixo custo de MNPs por ball milling planetário de alta energia, com controle dos parâmetros de moagem para otimizar desempenho de hipertermia, além de demonstrar regulação térmica por AMF pulsado.",
+    "integracao_biologia": "Estudos celulares com células SKOV3 de câncer ovariano confirmaram captação intracelular eficaz das MNPs, biocompatibilidade em concentrações de até 500 µg/mL e morte celular por apoptose induzida pela hipertermia magnética.",
+    "integracao_materiais": "A caracterização detalhada (XRD, TEM, SEM, EDX, DLS, PPMS) revela como o tempo de moagem controla a transição de fase Fe→Fe3O4, morfologia irregular, tamanho hidrodinâmico e propriedades magnéticas das MNPs, estabelecendo relações estrutura-propriedade-desempenho.",
+    "mensagem_principal": "MNPs de magnetita sintetizadas por ball milling mecanoquímico úmido por 55 h apresentam alto desempenho de hipertermia magnética (SAR ~95,57 W/g, ΔT ~50°C) sob AMF clinicamente seguro (30 mT, 101,5 kHz), com controle térmico programável via AMF pulsado e biocompatibilidade confirmada em células SKOV3 de câncer ovariano, destacando-se como rota de síntese escalável e de baixo custo para agentes terapêuticos de hipertermia."
   },
   "custom_id": "23__Wet_Ball_Milling_Synthesis_of_Iron_Oxide_Nanoparticles_for_H"
 }

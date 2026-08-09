@@ -6,22 +6,20 @@
   "doi": "10.1016/j.colsurfa.2025.138619",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética consiste na exposição de nanopartículas magnéticas a um campo magnético alternante, que converte energia eletromagnética em calor via processos de relaxação de Néel e Browniana. O calor gerado promove hipertermia localizada capaz de danificar seletivamente células tumorais em temperaturas de aproximadamente 41–46 °C.",
+    "conceito_tecnica": "A hipertermia magnética consiste na exposição de nanopartículas magnéticas a um campo magnético alternante, convertendo energia eletromagnética em calor via processos de relaxação de Néel e Browniana. O calor gerado permite hipertermia localizada capaz de danificar seletivamente células tumorais em temperaturas de aproximadamente 41–46 °C.",
     "etapas_processo": [
-      "Síntese de núcleos de Fe3O4 por coprecipitação (método de Massart)",
-      "Revestimento dos núcleos magnéticos com polímero PBCA por polimerização em emulsão ou fase orgânica única",
-      "Purificação das nanopartículas por decantação magnética ou centrifugação",
-      "Dispersão das nanopartículas em meio aquoso para aplicação",
-      "Exposição das nanopartículas a campo magnético alternante para geração de calor"
+      "Síntese das nanopartículas de Fe3O4 pelo método de coprecipitação (Massart)",
+      "Encapsulamento do núcleo de Fe3O4 em shell de poli(butilcianoacrilato) via polimerização em emulsão ou fase orgânica única",
+      "Purificação e caracterização físico-química das nanopartículas",
+      "Dispersão das NPs em meio aquoso na concentração desejada",
+      "Exposição das NPs a campo magnético alternante (17 kA/m, 167 kHz) ou irradiação laser NIR (850 nm)",
+      "Monitoramento do aumento de temperatura por câmera termográfica ou sensor térmico"
     ],
-    "internalizacao_nps": "O artigo não descreve explicitamente a internalização celular das NPs; menciona apenas o efeito EPR para direcionamento passivo ao tumor.",
-    "aplicacao_campo": "O campo magnético alternante (AMF) é aplicado por um dispositivo de hipertermia magnética a uma frequência de 167 kHz e amplitude de 17 kA/m sobre uma dispersão de 10 mg/mL de nanocompósitos Fe3O4/PBCA.",
+    "internalizacao_nps": "O artigo não descreve internalização celular das NPs; o foco é na geração de calor extracelular e na biocompatibilidade avaliada por ensaios de hemocompatibilidade e citotoxicidade.",
+    "aplicacao_campo": "O campo magnético alternante é aplicado por um dispositivo de hipertermia magnética (NanoMag Laboratory, Universidade de Granada) com frequência de 167 kHz e amplitude de 17 kA/m durante 2 min e 30 s.",
     "janela_termica_min_C": 41.0,
     "janela_termica_max_C": 46.0,
-    "vias_morte_celular": [
-      "apoptose",
-      "necrose"
-    ]
+    "vias_morte_celular": []
   },
   "q2": {
     "relaxacao_neel": true,
@@ -30,25 +28,25 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "A geração de calor ocorre predominantemente por relaxação de Néel e Browniana das nanopartículas superparamagnéticas sob campo magnético alternante.",
-    "descricao_mecanismo": "As nanopartículas magnéticas convertem energia eletromagnética em calor via processos de relaxação de Néel e Browniana quando expostas a um campo magnético alternante. O caráter superparamagnético das NPs foi confirmado pelo ciclo de histerese com coercividade e remanência negligenciáveis. Adicionalmente, interações dipolares entre as partículas levam à formação de cadeias/filamentos sob campo magnético, comportamento coletivo que pode melhorar a eficiência de aquecimento na hipertermia magnética."
+    "mecanismo_dominante": "A geração de calor nas NPs superparamagnéticas ocorre predominantemente pelos processos de relaxação de Néel e Browniana sob campo magnético alternante.",
+    "descricao_mecanismo": "Quando expostas a um campo magnético alternante, as nanopartículas magnéticas convertem energia eletromagnética em calor via processos de relaxação de Néel e Browniana. As NPs exibem comportamento superparamagnético, com coercividade e remanência negligenciáveis, sem exibir histerese mensurável em condições de campo estático. Sob influência do campo magnético, as NPs também se auto-organizam em cadeias filamentosas por interações dipolares, o que pode melhorar a eficiência de aquecimento em hipertermia magnética."
   },
   "q3": {
-    "material": "Fe3O4 (magnetita) com revestimento de poli(butilcianoacrilato) (PBCA)",
-    "composicao_quimica": "Fe3O4 / poli(butilcianoacrilato) - estrutura núcleo/casca",
+    "material": "Fe3O4 (magnetita) com shell de poli(butilcianoacrilato) (PBCA)",
+    "composicao_quimica": "Fe3O4 / poli(butilcianoacrilato) (estrutura núcleo/shell)",
     "dopagem": null,
     "tamanho_nm": 18.3,
     "faixa_tamanho_min_nm": null,
     "faixa_tamanho_max_nm": null,
     "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia efetiva induzida por formação de cadeias/filamentos sob campo magnético",
+    "anisotropia": "anisotropia efetiva induzida pela formação de cadeias/filamentos sob campo magnético (comportamento coletivo)",
     "revestimento": "poli(butilcianoacrilato) (PBCA); ácido oleico usado como agente de funcionalização intermediário na formulação F6",
     "material_autorregulavel": false,
     "SAR_W_g": 66.5,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "O revestimento de PBCA sobre o núcleo de Fe3O4 confere estabilidade coloidal e carga superficial negativa, enquanto preserva as propriedades superparamagnéticas do núcleo magnético. A funcionalização com ácido oleico na formulação F6 melhora a compatibilidade com a fase orgânica, resultando em maior eficiência de revestimento e uniformidade de tamanho."
+    "relacao_estrutura_propriedade": "O revestimento de PBCA sobre o núcleo de Fe3O4 confere estabilidade coloidal, carga superficial negativa e biocompatibilidade, enquanto o núcleo magnético garante comportamento superparamagnético com magnetização de saturação de ~70 kA/m e capacidade de geração de calor sob campo magnético alternante e irradiação NIR."
   },
   "q4": {
     "amplitude_kA_m": 17.0,
@@ -57,8 +55,8 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 2.5,
     "forma_onda": null,
-    "dosimetria_termica": "Cálculo do SAR a partir da inclinação da seção inicial da curva de aquecimento, considerando a massa das NPs; monitoramento de temperatura por câmera térmica de alta resolução (Flir 60) nos experimentos de fototermia",
-    "distribuicao_espacial_calor": "Aquecimento localizado na dispersão de NPs exposta ao campo; na fototermia, aquecimento localizado na alíquota posicionada sob o laser de 850 nm",
+    "dosimetria_termica": "Cálculo do SAR a partir da inclinação da seção inicial da curva de aquecimento, considerando a massa das NPs; monitoramento de temperatura por câmera termográfica de alta resolução (Flir 60) para fototermia",
+    "distribuicao_espacial_calor": "Aquecimento localizado na dispersão de NPs, com aumento de temperatura (ΔT) de ~10 °C para hipertermia magnética e ~12 °C para fototermia a 55% de potência laser",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -71,46 +69,46 @@
     "viscosidade_discutida": false,
     "imobilizacao_celular": false,
     "perfusao_discutida": false,
-    "protein_corona": false,
+    "protein_corona": true,
     "biodistribuicao": false,
     "toxicidade_avaliada": true,
     "localizacao_intracelular": false,
-    "apoptose": null,
-    "necrose": null,
+    "apoptose": false,
+    "necrose": false,
     "ferroptose": false,
     "imunomodulacao": false
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Instabilidade coloidal a 37 °C, com rápido aumento de tamanho nas primeiras 24 h, inviabilizando uso direto em condições fisiológicas",
+      "Instabilidade coloidal sob condições fisiológicas (37 °C), com rápido aumento de tamanho por agregação em 24 h",
       "Ausência de estudos in vivo para validação da eficácia terapêutica",
-      "SAR da fototermia inferior ao da hipertermia magnética e ao reportado na literatura",
-      "Necessidade de estratégias adicionais de funcionalização (ex.: PEGylação) para melhorar estabilidade a longo prazo",
-      "Ausência de avaliação de biodistribuição, farmacocinética e direcionamento tumoral"
+      "Valores de SAR para fototermia inferiores aos reportados na literatura",
+      "Necessidade de estratégias adicionais de funcionalização (ex: PEGylação) para melhorar estabilidade de longo prazo",
+      "Falta de avaliação de biodistribuição, farmacocinética e capacidade de direcionamento tumoral"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Realizar estudos in vivo para validar a eficácia terapêutica na hipertermia magnética e fototermia",
-      "Implementar estratégias de PEGylação ou funcionalização alternativa para melhorar a estabilidade a longo prazo em circulação sistêmica",
-      "Otimizar o tamanho das partículas e propriedades de superfície para melhorar a interação com tecidos-alvo e minimizar efeitos fora do alvo",
-      "Integrar funcionalidades diagnósticas para estabelecer as NPs como plataformas teranósticas versáteis",
-      "Avaliar biodistribuição, farmacocinética e capacidade de direcionamento tumoral"
+      "Realizar PEGylação ou funcionalização alternativa para melhorar estabilidade sistêmica e em circulação",
+      "Conduzir estudos in vivo para validar eficácia terapêutica da hipertermia magnética e fototermia",
+      "Avaliar biodistribuição, farmacocinética e capacidade de direcionamento tumoral",
+      "Otimizar tamanho de partícula e propriedades de superfície para minimizar efeitos off-target",
+      "Integrar funções diagnósticas para estabelecer plataformas teranósticas versáteis"
     ],
     "gaps_identificados": [
-      "Falta de validação terapêutica in vivo das NPs de Fe3O4/PBCA",
-      "Ausência de avaliação da proteína corona e seu impacto no desempenho in vivo",
-      "Mecanismos específicos de morte celular induzidos pela hipertermia não foram investigados",
-      "Ausência de padronização do protocolo de medição de SAR/ILP para comparação entre estudos",
-      "Potencial terapêutico da combinação sinérgica magneto-fototérmica não foi validado em modelos celulares ou animais"
+      "Falta de estudos in vivo das NPs desenvolvidas",
+      "Ausência de avaliação de biodistribuição e farmacocinética",
+      "Instabilidade das NPs em condições fisiológicas de temperatura (37 °C)",
+      "Propriedades de aquecimento fototérmico inferiores às de sistemas reportados na literatura",
+      "Não foram investigados mecanismos de morte celular induzidos pelo tratamento hipertérmico"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo caracterizou as propriedades superparamagnéticas das NPs por ciclo de histerese (SQUID) e quantificou a eficiência de aquecimento magnético pelo SAR sob campo alternante de 167 kHz e 17 kA/m.",
-    "integracao_engenharia": "Foram otimizados dois métodos de fabricação (polimerização em emulsão e fase orgânica única) para produzir nanopartículas núcleo/casca Fe3O4/PBCA com distribuição de tamanho uniforme, alta estabilidade coloidal e elevado rendimento de produção (≈74%).",
-    "integracao_biologia": "A biocompatibilidade das NPs foi avaliada por ensaios de hemólise, ativação do complemento, ativação plaquetária, tempo de recalcificação plasmática e citotoxicidade em linhagens CCD-18 e T-84, confirmando segurança aparente para uso biomédico.",
-    "integracao_materiais": "A estrutura núcleo/casca Fe3O4/PBCA foi confirmada por TEM, FTIR e análise eletrocinética, demonstrando que o revestimento polimérico preserva as propriedades magnéticas do núcleo e confere estabilidade coloidal e capacidade fototérmica ao nanocompósito.",
-    "mensagem_principal": "Este trabalho desenvolveu e caracterizou de forma abrangente nanopartículas híbridas Fe3O4/PBCA com estrutura núcleo/casca, demonstrando que a abordagem de fase orgânica única produz partículas com superior estabilidade coloidal, propriedades superparamagnéticas e eficiente geração de calor tanto por hipertermia magnética quanto por fototermia NIR, posicionando-as como candidatas promissoras para terapia oncológica de precisão por ativação dual."
+    "integracao_fisica": "O estudo caracterizou o comportamento superparamagnético das NPs híbridas e quantificou a eficiência de geração de calor (SAR = 66,5 W/g) sob campo magnético alternante (17 kA/m, 167 kHz), além de investigar a formação de cadeias por interações dipolares.",
+    "integracao_engenharia": "Dois métodos de formulação (polimerização em emulsão e fase orgânica única) foram sistematicamente otimizados, resultando em NPs com distribuição de tamanho uniforme, alto rendimento de produção (~74%) e estabilidade coloidal adequada para aplicações biomédicas.",
+    "integracao_biologia": "A biocompatibilidade das NPs foi confirmada por ensaios de hemocompatibilidade (hemólise <3%, sem ativação significativa do complemento ou plaquetas) e citotoxicidade mínima em linhagens celulares CCD-18 e T-84 em concentrações de 0,1–100 μg/mL.",
+    "integracao_materiais": "A estrutura núcleo/shell de Fe3O4/PBCA foi caracterizada por TEM, FTIR e análise eletrocinética, demonstrando encapsulamento eficiente do núcleo magnético pelo shell polimérico, com interação física entre grupos Fe-O e a matriz polimérica.",
+    "mensagem_principal": "Este trabalho desenvolveu e caracterizou NPs híbridas de Fe3O4/PBCA (núcleo/shell) com capacidade dual de geração de calor por hipertermia magnética e fototermia NIR, biocompatibilidade confirmada e produção reprodutível pelo método de fase orgânica única, posicionando-as como candidatas promissoras para terapia de câncer com ativação por fontes externas de sinal."
   },
   "custom_id": "38__Engineering_magnetite-poly_butylcyanoacrylate__nanoparticles"
 }

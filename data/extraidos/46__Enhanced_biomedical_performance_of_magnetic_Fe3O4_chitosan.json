@@ -6,15 +6,17 @@
   "doi": "10.1016/j.jciso.2025.100142",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética utiliza nanopartículas magnéticas para gerar calor sob um campo magnético alternante, promovendo a destruição térmica seletiva de células tumorais a temperaturas acima de 41°C.",
+    "conceito_tecnica": "A hipertermia magnética utiliza nanopartículas magnéticas para gerar calor sob um campo magnético alternante, levando à destruição térmica seletiva de células tumorais em temperaturas acima de 41°C.",
     "etapas_processo": [
-      "Síntese das nanopartículas de Fe3O4@quitosana por co-precipitação (in-situ ou ex-situ)",
+      "Síntese das nanopartículas de Fe3O4@CS por co-precipitação (in-situ ou ex-situ)",
       "Preparação da suspensão coloidal por moagem em esferas e sonicação",
-      "Exposição da suspensão ao campo magnético alternante por meio de aquecedor de indução",
+      "Dispersão das nanopartículas em água MilliQ",
+      "Inserção da suspensão em tubo de Pyrex dentro da bobina de cobre resfriada a água",
+      "Aplicação do campo magnético alternante por 420 s",
       "Monitoramento da temperatura com termômetro infravermelho digital"
     ],
-    "internalizacao_nps": "Não descrita explicitamente para hipertermia; para citotoxicidade, a internalização é facilitada pela interação eletrostática entre os grupos amino positivos da quitosana e a membrana celular negativamente carregada das células cancerígenas",
-    "aplicacao_campo": "O campo magnético alternante foi aplicado por um aquecedor de indução DW-UHF-10 kW com amplitude de 9,27 kA/m e frequência fixa de 198 kHz, com a suspensão inserida em tubo de Pyrex dentro de uma bobina de cobre resfriada a água.",
+    "internalizacao_nps": "Não mencionada explicitamente; o artigo descreve interação eletrostática entre os grupos amino catiônicos da quitosana e a membrana celular negativa das células cancerígenas, facilitando a captação celular.",
+    "aplicacao_campo": "O campo magnético alternante foi aplicado usando um aquecedor de indução DW-UHF-10 kW com coeficiente de acoplamento de 9,27 kA/m a uma frequência fixa de 198 kHz por 420 segundos.",
     "janela_termica_min_C": 40.0,
     "janela_termica_max_C": 45.0,
     "vias_morte_celular": [
@@ -28,25 +30,25 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": true,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "A geração de calor é atribuída às perdas de potência magnética dependentes das propriedades magnéticas e morfológicas das nanopartículas de Fe3O4 sob o campo alternante.",
-    "descricao_mecanismo": "O artigo indica que a eficácia de aquecimento é altamente dependente da morfologia e das propriedades magnéticas das nanopartículas de Fe3O4, pois esses fatores influenciam diretamente a perda de potência gerada sob o campo aplicado. Os valores de SAR correlacionam-se diretamente com os valores de magnetização de saturação (Ms) medidos por VSM. O comportamento superparamagnético das nanopartículas, com coercividade próxima de zero, é destacado como relevante para as aplicações biomédicas."
+    "mecanismo_dominante": "A eficiência de aquecimento é governada pelas perdas de potência geradas sob o campo aplicado, correlacionadas diretamente com a magnetização de saturação (Ms) das nanopartículas.",
+    "descricao_mecanismo": "O artigo indica que a eficácia de aquecimento depende altamente da morfologia e das propriedades magnéticas das nanopartículas de Fe3O4, pois esses fatores influenciam diretamente a perda de potência gerada sob o campo aplicado. Os valores de SAR correlacionam-se diretamente com os valores de magnetização de saturação medidos por VSM, sendo que maior Ms resulta em maior SAR. O revestimento com quitosana reduz a Ms devido à contribuição diamagnética do polímero e ao aumento da desordem de spins superficiais, diminuindo a geração de calor."
   },
   "q3": {
     "material": "Fe3O4 revestido com quitosana",
-    "composicao_quimica": "Fe3O4@CS (magnetita/quitosana)",
+    "composicao_quimica": "Fe3O4@CS (magnetita revestida com quitosana)",
     "dopagem": null,
     "tamanho_nm": null,
     "faixa_tamanho_min_nm": 10.0,
     "faixa_tamanho_max_nm": 40.0,
     "forma": "poligonal (hexagonal e cúbica predominantes)",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia de superfície aumentada em partículas menores; possível anisotropia magnética adicional introduzida pela quitosana",
+    "anisotropia": "anisotropia de superfície; anisotropia magnética adicional introduzida pela quitosana",
     "revestimento": "quitosana",
     "material_autorregulavel": false,
     "SAR_W_g": 88.27,
     "ILP_nHm2_kg": null,
-    "magnetizacao_saturacao_emu_g": 39.19,
-    "relacao_estrutura_propriedade": "O método in-situ produz nanopartículas menores (10–20 nm) com maior desordem de spin superficial e menor Ms, resultando em menor SAR; o método ex-situ produz partículas maiores (20–40 nm) com maior Ms e maior SAR, sendo mais adequado para hipertermia. O aumento do conteúdo de quitosana reduz a Ms e o SAR em ambos os métodos devido à contribuição diamagnética do polímero."
+    "magnetizacao_saturacao_emu_g": 28.0,
+    "relacao_estrutura_propriedade": "O método in-situ produz nanopartículas menores (10–20 nm) com maior desordem de spin superficial e menor Ms, resultando em menor SAR; o método ex-situ preserva partículas maiores (20–40 nm) com maior Ms e maior SAR, sendo mais adequado para hipertermia. O aumento do teor de quitosana reduz a Ms e o SAR em ambos os métodos devido à contribuição diamagnética da camada polimérica mais espessa."
   },
   "q4": {
     "amplitude_kA_m": 9.27,
@@ -55,14 +57,14 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 7.0,
     "forma_onda": null,
-    "dosimetria_termica": "Monitoramento por termômetro infravermelho digital; SAR calculado a partir do ajuste linear do perfil de temperatura vs. tempo usando a equação SAR = (CW·mW + CM·mM)/CM × ΔT/Δt",
-    "distribuicao_espacial_calor": null,
+    "dosimetria_termica": "Termômetro infravermelho digital; SAR calculado pelo ajuste linear do perfil de temperatura vs. tempo usando a equação SAR = (CwMw + CMmM)/CM × ΔT/Δt",
+    "distribuicao_espacial_calor": "Não descrita espacialmente; a suspensão foi mantida em tubo de Pyrex inserido na bobina de cobre resfriada a água do aquecedor de indução",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vitro",
-    "linhagem_celular": "EAC (Ehrlich Ascites Carcinoma)",
-    "modelo_animal": "camundongo",
+    "linhagem_celular": "EAC (Ehrlich ascites carcinoma)",
+    "modelo_animal": null,
     "tipo_cancer": "carcinoma ascítico de Ehrlich",
     "concentracao_mg_mL": null,
     "agregacao_discutida": true,
@@ -80,10 +82,10 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Estudos in vivo não foram realizados para avaliar biocompatibilidade e eficácia terapêutica",
-      "O aumento do conteúdo de quitosana reduziu negativamente a capacidade de aquecimento e a magnetização de saturação",
-      "As amostras ex-situ apresentaram estruturas mais agregadas de Fe3O4 dispersas na rede de quitosana",
-      "O termômetro infravermelho pode não capturar gradientes de temperatura internos à suspensão"
+      "Estudos realizados apenas in vitro, sem avaliação in vivo da biocompatibilidade e eficácia terapêutica",
+      "O aumento do teor de quitosana reduz tanto a magnetização de saturação quanto o SAR, limitando o desempenho hipertérmico",
+      "As amostras ex-situ apresentam maior agregação das nanopartículas na matriz de quitosana em comparação às in-situ",
+      "Ausência de avaliação do limite de segurança biológica para o produto H×f aplicado"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
@@ -92,18 +94,18 @@
       "Otimizar a composição e morfologia dos compósitos para hipertermia direcionada e controlada em ambientes biologicamente relevantes"
     ],
     "gaps_identificados": [
-      "Ausência de avaliação dos mecanismos físicos específicos de geração de calor (relaxação de Néel vs. Browniana vs. histerese)",
-      "Falta de estudos in vivo de biodistribuição e biocompatibilidade",
-      "Não foi avaliado o efeito da proteína corona sobre as propriedades das nanopartículas",
-      "Não foram realizados estudos de hipertermia combinada com liberação de fármacos"
+      "Ausência de estudos in vivo para validar os resultados in vitro obtidos",
+      "Falta de avaliação em ambientes biologicamente relevantes (com proteínas, perfusão, etc.)",
+      "Mecanismos físicos de aquecimento (Néel, Browniano, histerese) não foram investigados individualmente",
+      "Não foi avaliado o ILP para comparação padronizada entre diferentes sistemas"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo correlaciona as propriedades magnéticas (Ms, SAR) com o método de síntese e o tamanho das nanopartículas, demonstrando o impacto dos efeitos de nanoscala na geração de calor sob campo magnético alternante.",
-    "integracao_engenharia": "O estudo compara dois métodos de co-precipitação (in-situ e ex-situ) para síntese de nanocompósitos Fe3O4@quitosana, estabelecendo parâmetros de processo que permitem ajustar propriedades para aplicações específicas de hipertermia ou entrega de fármacos.",
-    "integracao_biologia": "A avaliação da citotoxicidade in vitro em células EAC demonstrou que o método de síntese influencia significativamente a eficácia antitumoral, com a amostra In-Fe3O4@CS1 reduzindo 40% da viabilidade celular a 10 μg/mL, e descrevendo mecanismos de morte celular via apoptose mediada por quitosana.",
-    "integracao_materiais": "O revestimento com quitosana melhora a estabilidade coloidal e a biocompatibilidade das nanopartículas de Fe3O4, mas reduz a magnetização de saturação e o SAR de forma dependente do conteúdo de polímero e do método de síntese.",
-    "mensagem_principal": "O método de síntese (in-situ vs. ex-situ) e o conteúdo de quitosana são fatores determinantes nas propriedades estruturais, magnéticas e biológicas dos nanocompósitos Fe3O4@quitosana, com o método ex-situ sendo superior para hipertermia (SAR mais alto e temperaturas até 43,5°C) e o método in-situ sendo mais eficaz para aplicações quimioterápicas devido à maior citotoxicidade em baixas concentrações."
+    "integracao_fisica": "O estudo demonstra que as propriedades magnéticas (Ms e SAR) são diretamente influenciadas pelo tamanho das nanopartículas e pela desordem de spin superficial induzida pelo revestimento com quitosana, correlacionando parâmetros físicos com desempenho hipertérmico.",
+    "integracao_engenharia": "A comparação entre os métodos de síntese in-situ e ex-situ fornece diretrizes de engenharia para tailoring de nanocompósitos Fe3O4@CS com propriedades otimizadas para aplicações específicas de hipertermia ou entrega de fármacos.",
+    "integracao_biologia": "Os ensaios de viabilidade celular em células EAC revelaram que o método de síntese e o teor de quitosana influenciam significativamente a citotoxicidade, com a formulação In-Fe3O4@CS1 induzindo apoptose via perturbação mitocondrial, ativação de caspases e aumento de ROS.",
+    "integracao_materiais": "O estudo estabelece relações entre o método de síntese (in-situ vs. ex-situ), a estrutura cristalina, o tamanho de partícula e a interação quitosana-magnetita (evidenciada por FTIR, XRD e VSM) com as propriedades funcionais dos nanocompósitos.",
+    "mensagem_principal": "O método de síntese (in-situ vs. ex-situ) e o teor de quitosana determinam de forma crítica as propriedades estruturais, magnéticas e biológicas dos nanocompósitos Fe3O4@CS, sendo o método ex-situ superior para hipertermia (maior Ms e SAR, atingindo 43,5°C) e o in-situ mais eficaz para quimioterapia (maior citotoxicidade a baixas concentrações)."
   },
   "custom_id": "46__Enhanced_biomedical_performance_of_magnetic_Fe3O4_chitosan"
 }

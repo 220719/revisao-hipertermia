@@ -6,17 +6,16 @@
   "doi": "10.1063/5.0306597",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MH) utiliza nanopartículas magnéticas (MNPs) que, sob aplicação de campo magnético alternado de alta frequência (AMF), geram calor suficiente para promover elevação de temperatura local, permitindo tratar lesões, especialmente tumores. O método seletivo restringe o efeito de aquecimento apenas às MNPs localizadas na região livre de campo (FFR), protegendo tecidos saudáveis.",
+    "conceito_tecnica": "A hipertermia magnética (MH) utiliza nanopartículas magnéticas (MNPs) que, sob aplicação de campo magnético alternado de alta frequência (AMF), geram calor suficiente para elevar a temperatura local e tratar lesões, especialmente tumores. O método seletivo introduz um campo gradiente estático com uma região livre de campo (FFR), onde apenas as MNPs na FFR mantêm o máximo efeito de aquecimento, enquanto o aquecimento em outras regiões é suprimido.",
     "etapas_processo": [
-      "Administração de MNPs (Fe3O4 na forma de magnetofluido) nas regiões-alvo",
-      "Geração de campo gradiente estático seletivo (campo seletivo) com região livre de campo (FFR) pelo sistema de bobinas",
-      "Aplicação do campo magnético alternado de alta frequência (campo de condução/driving field) pelas bobinas de aquecimento",
-      "MNPs na FFR mantêm máximo efeito de hipertermia magnética, enquanto MNPs fora da FFR têm aquecimento suprimido",
-      "Monitoramento da temperatura por câmera infravermelha",
-      "Reposicionamento da FFR para diferentes alvos ajustando as correntes das bobinas"
+      "Administração de MNPs (Fe3O4 em magnetofluido) nas regiões-alvo",
+      "Geração do campo gradiente seletivo estático para criar a região livre de campo (FFR) na localização do tumor",
+      "Aplicação do campo magnético alternado de alta frequência (AMF/campo de condução) para excitar as MNPs na FFR",
+      "Monitoramento da distribuição de temperatura por câmera infravermelha",
+      "Reposicionamento da FFR para diferentes localizações-alvo via ajuste das correntes nas bobinas"
     ],
     "internalizacao_nps": null,
-    "aplicacao_campo": "O campo magnético alternado de alta frequência (até 100 kHz) é gerado por uma bobina de aquecimento em circuito ressonante LC, amplificado por um amplificador de potência, e aplicado simultaneamente ao campo gradiente seletivo estático.",
+    "aplicacao_campo": "O campo magnético alternado (AMF) de alta frequência (até 100 kHz) é aplicado por meio de uma bobina de aquecimento conectada a um circuito ressonante LC e amplificador de potência, excitando as MNPs na FFR para gerar calor localizado.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -27,9 +26,9 @@
     "perdas_histerese": null,
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
-    "forma_onda_campo": "senoidal",
-    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante mencionado, sendo enfraquecida pela presença do campo gradiente estático fora da FFR.",
-    "descricao_mecanismo": "No método de MH seletiva, o campo gradiente estático gera uma FFR onde a intensidade do campo é aproximadamente zero. MNPs fora da FFR estão sujeitas a um campo estático local que enfraquece os efeitos de relaxação, especialmente a relaxação de Néel, sendo esse enfraquecimento proporcional à distância da FFR. Apenas as MNPs na FFR mantêm relaxação plena e, portanto, adquirem a máxima energia de aquecimento sob excitação pelo campo alternado."
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O mecanismo dominante é o enfraquecimento da relaxação de Néel das MNPs fora da FFR pelo campo gradiente estático, restringindo o aquecimento apenas às partículas localizadas na região livre de campo.",
+    "descricao_mecanismo": "No método de MH seletiva, o campo gradiente estático gera uma FFR onde a intensidade do campo é aproximadamente zero. As MNPs na FFR não têm sua relaxação (especialmente a relaxação de Néel) afetada pelo campo estático, mantendo o máximo efeito de aquecimento sob o AMF. Para MNPs fora da FFR, o campo estático local enfraquece progressivamente os efeitos de relaxação em função da distância ao centro da FFR, suprimindo o aquecimento nessas regiões. Assim, apenas as MNPs na FFR adquirem energia de aquecimento máxima, possibilitando a terapia de hipertermia magnética direcionada."
   },
   "q3": {
     "material": "Fe3O4",
@@ -40,23 +39,23 @@
     "faixa_tamanho_max_nm": null,
     "forma": null,
     "arquitetura_multicore": null,
-    "anisotropia": "anisotropia magnética mencionada como fator relevante para desempenho de MH",
+    "anisotropia": "anisotropia magnética mencionada como fator relevante para desempenho em MH",
     "revestimento": null,
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "O desempenho de MH é fortemente influenciado por fatores como tamanho de partícula, anisotropia magnética, funcionalização de superfície e arranjo espacial dentro de matrizes biocompatíveis; arranjos personalizados e designs de nanocompósitos podem aumentar significativamente o SAR através de interações magnéticas controladas e mecanismos de relaxação."
+    "relacao_estrutura_propriedade": "O desempenho de MH é influenciado por fatores como tamanho de partícula, anisotropia magnética, funcionalização de superfície e montagem espacial dentro de matrizes biocompatíveis; arranjos personalizados de MNPs e designs de nanocompósitos podem aumentar significativamente o SAR por meio de interações magnéticas controladas e mecanismos de relaxação."
   },
   "q4": {
     "amplitude_kA_m": null,
     "frequencia_kHz": 100.0,
     "produto_Hf": null,
-    "dentro_limite_seguranca": true,
+    "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 1.67,
-    "forma_onda": "senoidal",
+    "forma_onda": null,
     "dosimetria_termica": "Câmera infravermelha de alta precisão (SMART SENSOR ST9450, sensibilidade térmica 0,07°C) com aquisição de imagens a cada 10 s",
-    "distribuicao_espacial_calor": "Distribuição espacial do calor mapeada em 2D por visão computacional e reconstruída em superfície 3D; aquecimento restrito à FFR com elevação máxima de 15,4°C, enquanto regiões não selecionadas apresentam elevação inferior a 2°C",
+    "distribuicao_espacial_calor": "A distribuição espacial do calor é confinada à FFR esferóidal; MNPs na FFR apresentam elevação máxima de temperatura (15,4°C), enquanto regiões não selecionadas apresentam elevação menor que 2°C; a distribuição 3D é reconstruída por visão computacional a partir de imagens infravermelhas",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -80,40 +79,38 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Ausência de método de feedback em tempo real para controle da localização da FFR devido à impossibilidade de medir a distribuição do campo magnético em tempo real no espaço de trabalho",
-      "O controle de posição da FFR permanece em malha aberta (open-loop)",
-      "Alta exigência de precisão de fabricação para o sistema híbrido-linear em comparação a sistemas lineares tradicionais",
-      "Consumo de energia cinco a dez vezes maior do que sistemas lineares tradicionais para gerar gradiente equivalente",
-      "Métodos iterativos de design e pré-mapeamento são fortemente dependentes de resultados de simulação",
-      "Desvios cumulativos de fabricação e montagem causam erros ampliados de posição e forma da FFR em regiões não lineares afastadas do centro",
-      "A amplitude do campo de condução (1 mT) é inferior aos valores tipicamente usados em sistemas clínicos, limitando a aplicabilidade clínica direta",
-      "O gradiente médio do protótipo atual (0,16 T/m) é limitado para validação do conceito"
+      "Ausência de método de medição e monitoramento em tempo real da distribuição do campo magnético no espaço de trabalho, impossibilitando controle em malha fechada da posição da FFR",
+      "Alta precisão de fabricação exigida para o sistema trifásico híbrido-linear em comparação com sistemas lineares tradicionais",
+      "Consumo de energia cinco a dez vezes maior que sistemas lineares tradicionais para gerar gradiente equivalente",
+      "Dependência excessiva dos resultados de simulação para os métodos iterativos de design e pré-mapeamento",
+      "Expansão da região de aquecimento para posições fora do centro devido a tolerâncias de fabricação e montagem acumuladas",
+      "Amplitude do campo de condução (1 mT) abaixo dos valores típicos de sistemas clínicos, sendo apenas uma demonstração de prova de conceito",
+      "Gradiente médio do protótipo atual (0,16 T/m) limitado, sendo necessário aumentar para aplicações clínicas reais"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Melhorar a eficiência de potência através da otimização da geometria das bobinas",
+      "Melhorar a eficiência de energia por meio da otimização da geometria das bobinas",
       "Integrar monitoramento de campo em tempo real para aumentar a precisão do aquecimento seletivo e a estabilidade operacional",
-      "Investigar algoritmos iterativos de solução do conjunto de equações de gradiente para aumentar a eficiência do campo seletivo com FFR regular e simétrica",
-      "Realizar estudos adicionais sobre a geometria de bobinas não lineares de eixo único para melhorar a isotropia da distribuição de gradiente no espaço de trabalho",
-      "Aumentar o gradiente médio para aproximadamente 0,6 T/m ou 1,2 T/m em versões futuras para aplicações clínicas in vivo",
-      "Melhorar a precisão de fabricação e a caracterização do campo magnético do sistema",
-      "Integrar módulos de campo seletivo localizado com sistemas de posicionamento mecânico para aplicações clínicas de grande volume"
+      "Investigar algoritmos iterativos de solução do conjunto de equações de gradiente para aumentar a eficiência do campo seletivo de FFR regular e simétrico",
+      "Realizar estudos adicionais sobre geometria de bobinas não lineares para melhorar a isotropia da distribuição de gradiente",
+      "Aumentar a força do gradiente (para ~0,6 T/m ou ~1,2 T/m) para confinar a região de aquecimento a diâmetros compatíveis com requisitos clínicos",
+      "Integrar módulos de campo seletivo localizado com sistemas de posicionamento mecânico para aplicações clínicas de grande escala",
+      "Melhorar a precisão de fabricação e a caracterização do campo magnético para iterações futuras do sistema"
     ],
     "gaps_identificados": [
-      "Ausência de solução inversa dos parâmetros de bobinas não lineares na literatura recente",
-      "Tecnologia de medição visualizada da distribuição total do campo magnético ainda não desenvolvida",
-      "Falta de método de controle em malha fechada para reposicionamento preciso da FFR",
-      "Necessidade de investigar configurações de bobinas adaptadas a diferentes restrições anatômicas (tórax, regiões anatomicamente achatadas)",
-      "Estratégias de escalonamento eletromagnético para sistemas clínicos de corpo inteiro ainda são ineficientes energeticamente e impraticáveis"
+      "Ausência de solução analítica para o problema inverso dos parâmetros de bobinas não lineares",
+      "Falta de tecnologia de medição visualizada da distribuição total do campo magnético no espaço de trabalho",
+      "Lacuna entre o protótipo atual de baixa amplitude de campo e os requisitos de sistemas clínicos de MH",
+      "Necessidade de validação em modelos biológicos (in vivo) para tradução clínica"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo desenvolve um modelo matemático híbrido linear-não linear para distribuição de gradiente de campo magnético, demonstrando teoricamente e por simulação que a isotropia aproximada do gradiente em três eixos é alcançável com o framework proposto.",
-    "integracao_engenharia": "O trabalho propõe e valida experimentalmente um sistema de bobinas de gradiente de triplo eixo com linearidade híbrida, incluindo metodologia iterativa de design baseada em simulação por elementos finitos (COMSOL) e estratégia de pré-mapeamento para controle preciso da FFR.",
-    "integracao_biologia": "O sistema é direcionado à terapia tumoral por hipertermia magnética seletiva, com potencial para entrega controlada de fármacos, embora o estudo atual não inclua experimentos biológicos celulares ou in vivo.",
-    "integracao_materiais": "Fe3O4 na forma de magnetofluido com fração mássica de 30% foi utilizado como agente de aquecimento, com caracterização de SAR e propriedades magnéticas fornecidas em material suplementar; o artigo referencia a importância do design de materiais de MNP para eficiência e segurança da MH.",
-    "mensagem_principal": "Este trabalho propõe e valida um novo sistema de campo gradiente seletivo de triplo eixo com linearidade híbrida para hipertermia magnética seletiva, capaz de gerar uma região livre de campo (FFR) de formato esferoidal com distribuição de gradiente aproximadamente isotrópica, reduzindo significativamente o aquecimento fora do alvo (elevação de temperatura inferior a 2°C em regiões não selecionadas) em comparação com sistemas lineares convencionais, e estabelecendo uma base escalável e adaptável para futuras traduções clínicas."
+    "integracao_fisica": "O artigo contribui com a modelagem matemática de campos gradientes híbridos linear-não-lineares, demonstrando teoricamente e experimentalmente que a isotropia aproximada da distribuição de gradiente em três eixos permite gerar uma FFR esferóidal simétrica para MH seletiva.",
+    "integracao_engenharia": "O trabalho apresenta um método iterativo de design baseado em simulação de elementos finitos (COMSOL) e um protocolo de pré-mapeamento adaptativo para otimizar a precisão de posicionamento da FFR dentro de um espaço de trabalho de 50 mm, reduzindo erros de posicionamento para menos de 20%.",
+    "integracao_biologia": "O artigo não aborda aspectos biológicos celulares ou in vivo diretamente, mas discute o potencial clínico do sistema para terapia tumor-específica e entrega controlada de fármacos com dano reduzido a tecidos saudáveis.",
+    "integracao_materiais": "O estudo utiliza Fe3O4 em forma de magnetofluido (fração mássica de 30%) como agente de aquecimento, confirmando experimentalmente a eficácia do sistema de campo híbrido para MH seletiva com elevação de temperatura de 15,4°C na FFR.",
+    "mensagem_principal": "Este trabalho propõe e valida um novo sistema de campo gradiente seletivo trifásico híbrido-linear para hipertermia magnética, capaz de gerar uma região livre de campo (FFR) de forma esferóidal com distribuição de gradiente aproximadamente isotrópica, superando as limitações de anisotropia dos sistemas lineares convencionais e reduzindo significativamente o aquecimento fora do alvo, com potencial para aumentar a precisão e segurança da terapia de hipertermia magnética direcionada."
   },
   "custom_id": "16__A_triple-axis_hybrid-linearity_selective_gradient_field_syst"
 }

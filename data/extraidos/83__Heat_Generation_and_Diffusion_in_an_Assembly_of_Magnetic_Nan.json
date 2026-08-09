@@ -6,15 +6,16 @@
   "doi": "10.3390/app14135757",
   "tipo_estudo": "in silico",
   "q1": {
-    "conceito_tecnica": "Hipertermia magnética é um processo pelo qual nanopartículas magnéticas, submetidas a um campo magnético dependente do tempo, convertem energia eletromagnética em calor para tratamento localizado de tumores cancerígenos.",
+    "conceito_tecnica": "A hipertermia magnética (MH) é um processo pelo qual nanopartículas magnéticas, submetidas a um campo magnético dependente do tempo (AMF), convertem energia eletromagnética em calor. Esse processo oferece vantagem sobre os métodos tradicionais de tratamento do câncer por irradiação, pois evita efeitos colaterais por meio de aquecimento direcionado e localizado.",
     "etapas_processo": [
-      "Nanopartículas magnéticas são introduzidas no meio (fluido ou matriz sólida)",
-      "Campo magnético alternado (AMF) é aplicado ao sistema",
-      "As NPs são excitadas pelo AMF e liberam calor dentro da amostra",
-      "O calor gerado difunde-se pela amostra e é transferido ao ambiente por condução, convecção ou radiação"
+      "Nanopartículas magnéticas são distribuídas na matriz sólida ou fluida (ferrofluido)",
+      "O campo magnético alternado (AMF) é ativado no instante t=0",
+      "As NPs são excitadas pelo AMF e liberam calor dentro da amostra, aquecendo a matriz/fluido",
+      "O calor gerado difunde-se pela amostra e o fluxo de calor atinge os limites da amostra ou sua interface com o ambiente",
+      "O calor é transferido para o ambiente por condução, convecção ou radiação"
     ],
     "internalizacao_nps": null,
-    "aplicacao_campo": "O campo magnético alternado (AMF) é ligado no instante t=0 e excita as nanopartículas magnéticas, induzindo geração de calor distribuída homogeneamente na amostra.",
+    "aplicacao_campo": "O AMF é aplicado externamente sobre o conjunto de nanoímãs embebidos em matriz sólida ou fluida, excitando sua magnetização em movimento oscilatório.",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 45.0,
     "vias_morte_celular": []
@@ -22,12 +23,12 @@
   "q2": {
     "relaxacao_neel": true,
     "relaxacao_browniana": true,
-    "perdas_histerese": false,
+    "perdas_histerese": true,
     "interacoes_coletivas": true,
-    "nanoscale_heating": null,
+    "nanoscale_heating": true,
     "forma_onda_campo": "senoidal",
-    "mecanismo_dominante": "A resposta dinâmica linear das nanopartículas ao campo magnético alternado, caracterizada pela susceptibilidade AC e pelo tempo de relaxação, é o mecanismo dominante de geração de calor utilizado no cálculo do SAR.",
-    "descricao_mecanismo": "O SAR é obtido a partir da resposta dinâmica linear da assembleia ao campo magnético alternado. O tempo de relaxação efetivo inclui a contribuição do movimento Browniano das NPs no fluido. A potência gerada depende da temperatura local através da susceptibilidade AC e do tempo de relaxação das nanopartículas."
+    "mecanismo_dominante": "A resposta magnética dinâmica linear das nanopartículas ao campo AC, caracterizada pelo tempo de relaxação efetivo (combinando Néel e Browniano), é o mecanismo dominante para geração de calor e cálculo do SAR.",
+    "descricao_mecanismo": "O SAR é obtido a partir da resposta dinâmica linear da assembleia ao campo magnético AC, por meio da susceptibilidade AC e do tempo de relaxação das nanopartículas. O tempo de relaxação relacionado ao movimento Browniano das NPs no fluido é utilizado para definir o tempo de relaxação efetivo. A potência dissipada depende da temperatura local em torno das NPs, que entra no cálculo através da susceptibilidade AC e do tempo de relaxação."
   },
   "q3": {
     "material": "Fe3O4 (magnetita)",
@@ -44,7 +45,7 @@
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "O diâmetro médio das nanopartículas e sua distribuição de tamanhos (lognormal) influenciam diretamente o SAR e, consequentemente, o perfil espaço-temporal de elevação de temperatura; assembleias com diâmetro médio maior geram mais calor."
+    "relacao_estrutura_propriedade": "O diâmetro médio e a distribuição de tamanhos (lognormal) das nanopartículas afetam diretamente o SAR e, consequentemente, a quantidade total de calor gerado e o perfil espaço-temporal da elevação de temperatura na assembleia."
   },
   "q4": {
     "amplitude_kA_m": 38.2,
@@ -53,9 +54,9 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": null,
     "forma_onda": "senoidal",
-    "dosimetria_termica": "Método calorimétrico baseado na inclinação temporal inicial da elevação de temperatura; SAR obtido via resposta dinâmica linear ao AMF",
-    "distribuicao_espacial_calor": "Perfil espaço-temporal da elevação de temperatura calculado numericamente para assembleia 2D de NPs distribuídas aleatoriamente na matriz, com condições de contorno fixas ou livres",
-    "padronizacao_reportada": false
+    "dosimetria_termica": "Método calorimétrico: estudo da elevação de temperatura após o início do aquecimento, variando as características do AMF e as propriedades da amostra; ajuste do coeficiente de Newton aos dados experimentais",
+    "distribuicao_espacial_calor": "Perfil espaço-temporal da elevação de temperatura calculado numericamente para a assembleia 2D, com condições de contorno fixas ou livres; o calor se difunde a partir das NPs distribuídas homogeneamente pela amostra",
+    "padronizacao_reportada": true
   },
   "q5": {
     "tipo_estudo": "in silico",
@@ -78,33 +79,35 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Estudo preliminar restrito a assembleia 2D de nanopartículas, sem extensão completa a três dimensões",
-      "Interações dipolares entre as nanopartículas não foram incluídas no modelo atual",
-      "Efeitos de convecção foram ignorados (partículas assumidas fixas na matriz)",
-      "Não é uma aplicação imediata em meios biológicos ou tratamento terapêutico de tumores",
-      "Comparação com perfil espacial experimental requer medições de temperatura local ainda não realizadas neste trabalho"
+      "Estudo preliminar considerando apenas assembleia bidimensional de NPs",
+      "Interações dipolares entre as NPs não foram incluídas no modelo atual",
+      "Efeitos de convecção foram ignorados (partículas fixas na matriz hospedeira)",
+      "O trabalho não é uma aplicação imediata de MH em meios biológicos ou tratamento terapêutico de tumores",
+      "Não foi realizado um estudo exaustivo variando todos os parâmetros físicos relevantes do problema",
+      "A comparação com experimentos para o perfil espacial requer medições de temperatura local dentro da assembleia, ainda não realizadas neste trabalho"
     ],
     "problemas_SAR_ILP": true,
     "falta_padronizacao": true,
     "recomendacoes_futuras": [
-      "Comparação do perfil espacial de temperatura com dados experimentais, requerendo medições de temperatura local na assembleia",
-      "Extensão do formalismo para meios biológicos e equação de biocalor em tecidos vivos",
-      "Inclusão das interações dipolares entre as nanopartículas no modelo de geração e transporte de calor",
-      "Variação sistemática de todos os parâmetros físicos relevantes (tamanho, forma, distribuição, concentração, amplitude e frequência do campo)"
+      "Estender o formalismo para sistemas tridimensionais",
+      "Incluir interações dipolares entre as nanopartículas no modelo",
+      "Realizar comparação com experimentos para o perfil espacial de temperatura, requerendo medições de temperatura local dentro da assembleia",
+      "Incluir efeitos de convecção no modelo",
+      "Aplicar o formalismo a meios biológicos e à equação do biocalor para tratamento de tumores"
     ],
     "gaps_identificados": [
       "Ausência de validação experimental do perfil espacial de temperatura dentro da assembleia",
-      "Falta de inclusão de interações dipolares no cálculo do SAR e transporte de calor",
-      "Debate em aberto sobre a independência de dispositivo nas medições da inclinação temporal inicial da elevação de temperatura",
-      "Necessidade de extensão do modelo para geometrias 3D e meios biológicos realistas"
+      "Falta de inclusão das interações dipolares entre NPs no cálculo do SAR e do transporte de calor",
+      "Debate em aberto sobre a independência de dispositivo nas medições da taxa de elevação inicial de temperatura",
+      "Necessidade de estender o modelo para meios biológicos e situações clínicas realistas"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo desenvolve uma equação de calor estendida baseada na abordagem de meio efetivo para descrever a geração e o transporte de calor em sistemas heterogêneos de nanopartículas magnéticas submetidas a campo magnético alternado.",
-    "integracao_engenharia": "O formalismo proposto fornece uma caixa de ferramentas computacional para calcular o SAR e o perfil espaço-temporal de temperatura em função dos parâmetros da assembleia e da excitação externa, relevante para o projeto de sistemas de hipertermia magnética.",
-    "integracao_biologia": "O modelo permite simular condições de contorno que mimetizam a situação de suspensão de nanopartículas magnéticas injetadas em um tumor, prevenindo o superaquecimento das regiões saudáveis circundantes.",
-    "integracao_materiais": "Os coeficientes efetivos de condutividade térmica e capacidade calorífica do ferrofluido são calculados em função da fração volumétrica e das propriedades das nanopartículas de magnetita e do fluido base, conectando propriedades do material ao desempenho térmico.",
-    "mensagem_principal": "O artigo propõe um formalismo geral baseado na abordagem de meio efetivo para estudar a geração e o transporte de calor em assembleias de nanopartículas magnéticas, resolvendo numericamente a equação de calor estendida e obtendo perfis espaço-temporais de temperatura e calor total absorvido para magnetita, constituindo uma base metodológica para futuras investigações em hipertermia magnética."
+    "integracao_fisica": "O artigo contribui com a derivação de uma equação de calor estendida para meios heterogêneos, baseada na abordagem de meio efetivo, incorporando o SAR obtido da resposta magnética dinâmica linear ao campo AC.",
+    "integracao_engenharia": "O trabalho propõe um formalismo e um conjunto de ferramentas numéricas para calcular o SAR e o perfil espaço-temporal da elevação de temperatura em assembleias de nanoímãs, permitindo variar parâmetros como concentração, organização espacial, distribuição de tamanhos e características da excitação externa.",
+    "integracao_biologia": "O estudo menciona a aplicabilidade do formalismo a situações biológicas, como suspensões de nanopartículas injetadas em tumores, com condições de contorno que previnem o superaquecimento da área circundante, embora não realize experimentos biológicos.",
+    "integracao_materiais": "O artigo caracteriza magnetita (Fe3O4) como material modelo, utilizando parâmetros experimentais reais (tamanho, constante de anisotropia, magnetização de saturação, condutividade térmica) para descrever as propriedades de transporte térmico efetivo do ferrofluido.",
+    "mensagem_principal": "Este trabalho apresenta um formalismo geral para estudar a geração e o transporte de calor em assembleias de nanopartículas magnéticas submetidas a campo magnético AC, baseado na abordagem de meio efetivo e resolução numérica da equação de calor estendida, fornecendo uma base metodológica para otimizar a hipertermia magnética."
   },
   "custom_id": "83__Heat_Generation_and_Diffusion_in_an_Assembly_of_Magnetic_Nan"
 }

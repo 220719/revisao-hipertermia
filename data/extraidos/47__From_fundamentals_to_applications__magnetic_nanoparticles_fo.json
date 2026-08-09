@@ -6,15 +6,17 @@
   "doi": "10.1039/d5tb01160d",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética é um processo pelo qual nanopartículas magnéticas expostas a um campo magnético alternante (AMF) geram calor localizado. Esse aumento de temperatura resulta da sinergia entre as nanopartículas magnéticas e o campo magnético, por meio de mecanismos de relaxação de Néel e Browniana.",
+    "conceito_tecnica": "Hipertermia magnética é um processo pelo qual nanopartículas magnéticas expostas a um campo magnético alternante (AMF) geram calor localizado. O aumento de temperatura resulta de mecanismos de relaxação de Néel ou Browniana para NPs menores que 128 nm.",
     "etapas_processo": [
-      "Síntese de nanopartículas de Fe3O4 por coprecipitação",
-      "Exposição das nanopartículas a campo magnético alternante (AMF) ou irradiação NIR",
-      "Geração de calor localizado pelas nanopartículas",
-      "Aumento de temperatura no tecido-alvo para faixa hipertérmica"
+      "Síntese de nanopartículas de Fe3O4 por co-precipitação",
+      "Caracterização estrutural e magnética das NPs",
+      "Incorporação das NPs em phantoms de agarose simulando tecido",
+      "Irradiação NIR (850, 970 e 1100 nm) das NPs nos phantoms",
+      "Monitoramento térmico por câmera infravermelha",
+      "Avaliação do desempenho como agente de contraste MRI"
     ],
     "internalizacao_nps": null,
-    "aplicacao_campo": "O AMF é aplicado externamente às nanopartículas magnéticas, induzindo geração de calor por relaxação; no estudo, a irradiação NIR (850, 970 e 1100 nm via LED e 980 nm laser) foi utilizada como fonte de ativação térmica em phantoms que mimetizam tecidos.",
+    "aplicacao_campo": "O AMF é aplicado externamente às nanopartículas magnéticas, induzindo geração de calor localizado por mecanismos de relaxação; no entanto, o foco principal deste estudo é a irradiação NIR como fonte de ativação térmica.",
     "janela_termica_min_C": 39.0,
     "janela_termica_max_C": 45.0,
     "vias_morte_celular": []
@@ -26,8 +28,8 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "Para nanopartículas menores que 128 nm predominam propriedades superparamagnéticas, com relaxação de Néel (realinhamento do momento magnético na estrutura cristalina) e relaxação Browniana (fricção pelo movimento das NPs alinhando-se ao AMF) como mecanismos de geração de calor.",
-    "descricao_mecanismo": "A relaxação de Néel gera calor por meio do rápido realinhamento do momento magnético dentro da estrutura cristalina da nanopartícula. A relaxação Browniana resulta da fricção gerada pelo movimento das nanopartículas ao se alinharem com o AMF. Para as nanopartículas estudadas, a ausência de comportamento superparamagnético observada no VSM foi atribuída à aglomeração por interações dipolo-dipolo, que pode suprimir esse comportamento."
+    "mecanismo_dominante": "Para NPs menores que 128 nm, propriedades superparamagnéticas dominam, levando à relaxação de Néel ou Browniana como mecanismos primários de geração de calor sob AMF.",
+    "descricao_mecanismo": "A relaxação de Néel gera calor por meio do rápido realinhamento do momento magnético dentro da estrutura cristalina da NP. A relaxação Browniana resulta do atrito gerado pelo movimento das NPs ao se alinharem com o AMF. No contexto deste estudo, o mecanismo predominante investigado é a conversão fototérmica via irradiação NIR, atribuída a transições eletrônicas d-d ou transferência de elétrons entre bandas de condução e valência do óxido de ferro."
   },
   "q3": {
     "material": "Fe3O4",
@@ -44,7 +46,7 @@
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 52.4,
-    "relacao_estrutura_propriedade": "O tamanho nanométrico (9,23 nm) e a natureza monocristalina das nanopartículas minimizam defeitos estruturais, potencialmente reduzindo a anisotropia magnética e favorecendo o comportamento superparamagnético; a aglomeração por interações dipolo-dipolo, entretanto, suprime esse comportamento e afeta a relaxividade em MRI a concentrações mais altas."
+    "relacao_estrutura_propriedade": "As NPs de Fe3O4 são predominantemente monocristalinas (tamanho TEM de 9,23 nm concordante com cristalinidade por XRD de 10,3 nm), o que minimiza defeitos estruturais e potencialmente reduz a anisotropia magnética, favorecendo o comportamento superparamagnético. Contudo, a aglomeração por interações dipolo-dipolo suprime o comportamento superparamagnético esperado para esse tamanho, resultando em remanência e coercividade observadas."
   },
   "q4": {
     "amplitude_kA_m": null,
@@ -53,8 +55,8 @@
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": 15.0,
     "forma_onda": null,
-    "dosimetria_termica": "Câmera infravermelha Optris PI 450, com imagens térmicas capturadas a cada 30 segundos durante 15 minutos de irradiação",
-    "distribuicao_espacial_calor": "O calor é gerado na região irradiada pelo NIR dentro do phantom de agarose, com profundidade de penetração variando conforme o comprimento de onda (1,4 cm a 850 nm, 2,1 cm a 970 nm, 1,3 cm a 1100 nm) e concentração de nanopartículas",
+    "dosimetria_termica": "Câmera infravermelha Optris PI 450 capturando imagens térmicas a cada 30 segundos durante 15 minutos de irradiação",
+    "distribuicao_espacial_calor": "A distribuição espacial do calor foi avaliada em phantoms de agarose 3D, com penetração máxima de 2,1 cm a 970 nm; a profundidade de penetração variou com o comprimento de onda e a concentração de NPs",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -79,34 +81,34 @@
   "q6": {
     "limitacoes_reportadas": [
       "Ausência de validação biológica in vitro ou in vivo",
-      "Tendência de agregação das nanopartículas em água pura a concentrações mais elevadas, reduzindo a relaxividade em MRI",
-      "Ausência de revestimento orgânico ou funcionalização superficial nas nanopartículas sintetizadas",
-      "Variabilidade no rendimento de síntese entre lotes (média 52,83% ± 9,20%)",
-      "Comportamento superparamagnético esperado não observado no VSM devido à aglomeração"
+      "Agregação das NPs em água ultrapura a concentrações mais elevadas, reduzindo a eficiência de relaxividade para MRI",
+      "Ausência de revestimento/funcionalização de superfície que previna clustering em altas concentrações",
+      "Comportamento superparamagnético esperado não observado devido à aglomeração por interações dipolo-dipolo",
+      "Variabilidade no rendimento de síntese entre lotes (média 52,83% ± 9,20%)"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Adicionar revestimento orgânico ou ligantes estabilizantes para prevenir agregação a concentrações elevadas",
-      "Realizar estudos in vivo para avaliar biodistribuição, clearance e biocompatibilidade a longo prazo",
-      "Funcionalizar a superfície das nanopartículas para incorporar agentes de direcionamento ativo a tumores",
-      "Otimizar parâmetros de aquisição de MRI para sequências ponderadas em T2 para maximizar eficiência de contraste dual-mode",
-      "Explorar integração com outras modalidades de imagem e agentes terapêuticos para plataforma teranóstica multimodal"
+      "Funcionalização da superfície com revestimentos orgânicos ou ligantes estabilizadores para prevenir clustering e melhorar biocompatibilidade",
+      "Realização de estudos in vivo para avaliar biodistribuição, clearance e biocompatibilidade a longo prazo",
+      "Otimização dos parâmetros de aquisição MRI para sequências ponderadas em T2 para maximizar eficiência de contraste dual-mode",
+      "Integração de ligantes de direcionamento para terapia fototérmica guiada por MRI",
+      "Exploração de concentrações levemente superiores ou inferiores para otimizar desempenho de imagem mantendo estabilidade e segurança"
     ],
     "gaps_identificados": [
-      "Falta de estudos em modelos biológicos in vitro e in vivo",
-      "Ausência de avaliação de toxicidade celular das nanopartículas",
-      "Comportamento fototérmico de Fe3O4 como único agente em ambiente que mimetiza tecido 3D ainda pouco explorado na literatura",
-      "Necessidade de avaliação de segurança, biodistribuição e clearance in vivo antes de tradução clínica",
-      "Efeito da corona proteica sobre propriedades fototérmicas e de MRI não completamente avaliado"
+      "Ausência de estudos biológicos celulares ou em modelos animais",
+      "Falta de avaliação de toxicidade e biocompatibilidade das NPs sintetizadas",
+      "Desempenho de contraste MRI per-molécula ligeiramente inferior ao Gadovist",
+      "Comportamento das NPs em concentrações clinicamente relevantes em meios fisiológicos complexos ainda não totalmente elucidado",
+      "Estudo da terapia fototérmica realizado apenas em phantoms, sem correlação com resposta celular ou tecidual real"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo avalia propriedades de relaxação magnética (T1 e T2), magnetização de saturação e mecanismos de relaxação de Néel e Browniana em nanopartículas de Fe3O4, além de medir eficiência de conversão fototérmica sob irradiação NIR em phantoms que simulam tecido.",
-    "integracao_engenharia": "O trabalho desenvolve uma plataforma de avaliação pré-clínica baseada em phantoms de agarose com dispersores ópticos, integrando sistemas de MRI clínico (1,5 T) e pré-clínico (11,7 T) com fontes de irradiação NIR seguras para avaliação translacional de nanomateriais.",
-    "integracao_biologia": "O estudo aborda o comportamento das nanopartículas em meio biologicamente relevante (soro fetal bovino), demonstrando redução da agregação e formação de corona proteica, e estabelece as bases para futuros estudos in vivo de terapia fototérmica guiada por MRI.",
-    "integracao_materiais": "Nanopartículas ultrasmall de Fe3O4 (9,23 nm) foram sintetizadas por coprecipitação modificada, caracterizadas por TEM, XRD, VSM e DLS, demonstrando estrutura monocristalina de fase única com alta magnetização de saturação (52,4 emu/g) e eficiência fototérmica de até 71,59% a 970 nm.",
-    "mensagem_principal": "Este estudo demonstra pela primeira vez a avaliação sistemática de nanopartículas de Fe3O4 como agentes fototérmicos exclusivos sob irradiação NIR em phantoms 3D que mimetizam tecidos, combinando capacidades de contraste dual T1-T2 em MRI clínico e pré-clínico, estabelecendo uma plataforma teranóstica multifuncional para futura terapia fototérmica de câncer guiada por MRI."
+    "integracao_fisica": "O artigo contribui para a física ao caracterizar mecanismos de relaxação magnética (Néel e Browniana), propriedades de histerese, magnetização de saturação e eficiência de conversão fototérmica das NPs de Fe3O4 em função do comprimento de onda NIR.",
+    "integracao_engenharia": "O estudo contribui para a engenharia ao desenvolver e validar phantoms de agarose 3D como plataforma de avaliação pré-clínica realista para terapia fototérmica e imageamento por MRI, integrando sistemas de MRI clínico (1,5 T) e pré-clínico (11,7 T).",
+    "integracao_biologia": "O artigo contribui para a biologia ao demonstrar que as NPs de Fe3O4 alcançam condições de hipertermia suave (39–45 °C) em phantoms simulando tecido, com discussão sobre efeitos biológicos esperados como aumento do fluxo sanguíneo e oxigenação celular.",
+    "integracao_materiais": "O trabalho contribui para a ciência dos materiais ao sintetizar NPs ultrapequeñas de Fe3O4 monocristalinas por co-precipitação modificada e caracterizar suas propriedades estruturais, magnéticas e ópticas, demonstrando sua funcionalidade dual como agente de contraste MRI e agente fototérmico NIR.",
+    "mensagem_principal": "Este estudo demonstra pela primeira vez a avaliação sistemática de NPs de Fe3O4 ultrapequeñas (9,23 nm) como agentes fototérmicos exclusivos sob irradiação NIR em ambiente 3D simulando tecido, alcançando eficiência de conversão fototérmica de 71,59% a 970 nm e penetração de 2,1 cm, além de capacidade de contraste dual T1-T2 em MRI, estabelecendo uma plataforma teranóstica promissora para futura tradução clínica em terapia fototérmica de câncer guiada por MRI."
   },
   "custom_id": "47__From_fundamentals_to_applications__magnetic_nanoparticles_fo"
 }

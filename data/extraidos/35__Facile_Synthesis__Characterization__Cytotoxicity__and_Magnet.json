@@ -6,15 +6,16 @@
   "doi": "10.1021/acsomega.5c08419",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética consiste em excitar nanopartículas magnéticas com um campo magnético alternado para gerar calor localizado em tumores malignos. As nanopartículas FA@Fe3O4 são propostas como mediadores de hipertermia direcionada para tumores malignos.",
+    "conceito_tecnica": "A hipertermia magnética consiste na excitação de nanopartículas magnéticas por um campo magnético alternante para gerar calor localizado, visando o tratamento de tumores malignos. As nanopartículas FA@Fe3O4 são projetadas para mediar hipertermia direcionada via receptor de folato.",
     "etapas_processo": [
-      "Síntese das nanopartículas de Fe3O4 por método solvotermal com controle de tamanho",
-      "Funcionalização superficial das NPs com ácido fólico (FA) para direcionamento ativo via receptores de folato",
-      "Formação do fluido magnético estável de FA@Fe3O4",
-      "Aplicação do campo magnético alternado para excitar as nanopartículas e gerar calor no tumor"
+      "Síntese solvotermal das NPs de Fe3O4 com tamanho controlável",
+      "Conjugação de ácido fólico (FA) à superfície das NPs via ligação amida",
+      "Formação do fluido magnético FA@Fe3O4 estável",
+      "Internalização celular mediada por receptor de folato (endocitose)",
+      "Aplicação de campo magnético alternante para geração de calor"
     ],
-    "internalizacao_nps": "As nanopartículas FA@Fe3O4 são internalizadas por células tumorais via endocitose mediada por receptor de folato (FR-mediated endocytosis), aproveitando a superexpressão de receptores de folato na superfície de células cancerígenas.",
-    "aplicacao_campo": "O campo magnético alternado (AMF) é aplicado para excitar as partículas magnéticas, gerando aquecimento seletivo nas regiões tumorais, conforme demonstrado originalmente por Gilchrist et al.",
+    "internalizacao_nps": "As NPs FA@Fe3O4 são internalizadas por endocitose mediada por receptor de folato (FR), que é superexpresso na superfície de células cancerígenas como ovário, mama e colo do útero.",
+    "aplicacao_campo": "O campo magnético alternante (AC) é aplicado para excitar as nanopartículas magnéticas, gerando calor localizado no tecido tumoral.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -26,12 +27,12 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O artigo não detalha o mecanismo físico dominante de geração de calor, mencionando apenas que as nanopartículas superparamagnéticas são excitadas por campo magnético alternado para produzir aquecimento magnetocalórico.",
-    "descricao_mecanismo": "O artigo menciona as propriedades magnetocalóricas das nanopartículas e sua aplicação em hipertermia magnética, mas não descreve explicitamente os mecanismos físicos de relaxação de Néel, Browniana ou perdas por histerese. As nanopartículas exibem comportamento superparamagnético com histerese próxima de zero, o que é consistente com mecanismos de relaxação, mas o artigo não aprofunda essa discussão."
+    "mecanismo_dominante": "O artigo menciona geração de calor por excitação de partículas magnéticas com campo magnético alternante, sem detalhar o mecanismo físico dominante.",
+    "descricao_mecanismo": "O artigo cita que Gilchrist et al. demonstraram que o aquecimento direcionado pode ser alcançado excitando partículas magnéticas com um campo magnético alternante, estabelecendo a base para a terapia magnetotérmica moderna. Não são descritos os mecanismos físicos específicos de relaxação de Néel, Browniana ou perdas por histerese."
   },
   "q3": {
     "material": "Fe3O4",
-    "composicao_quimica": "Fe3O4 (magnetita) funcionalizada com ácido fólico (FA@Fe3O4)",
+    "composicao_quimica": "Fe3O4 (óxido de ferro ferrimagnético) funcionalizado com ácido fólico (FA)",
     "dopagem": null,
     "tamanho_nm": 28.0,
     "faixa_tamanho_min_nm": 13.0,
@@ -39,12 +40,12 @@
     "forma": "esférica",
     "arquitetura_multicore": false,
     "anisotropia": null,
-    "revestimento": "ácido fólico (FA) ligado covalentemente via ligação amida na superfície das NPs",
+    "revestimento": "ácido fólico (FA) conjugado via ligação amida",
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 71.0,
-    "relacao_estrutura_propriedade": "A razão OAm/EG controla o tamanho das nanopartículas (de 230 nm a 13 nm), e partículas menores apresentam menor magnetização de saturação; o tamanho ótimo de 28 nm (razão 1:1) fornece o melhor desempenho magnético com Ms de 71,0 emu/g, sendo mais adequado para hipertermia. A modificação com FA reduz ligeiramente a Ms para 64-69 emu/g sem degradação significativa das propriedades magnéticas."
+    "relacao_estrutura_propriedade": "O tamanho das NPs é controlado pela razão OAm/EG: maior proporção de OAm resulta em partículas menores (de 230 nm a 13 nm) com menor magnetização de saturação (84,6 a 58,1 emu/g). As partículas de 28 nm (razão 1:1) apresentaram desempenho magnético ótimo para aquecimento, com Ms de 71,0 emu/g e comportamento superparamagnético."
   },
   "q4": {
     "amplitude_kA_m": null,
@@ -61,7 +62,7 @@
     "tipo_estudo": "in vitro",
     "linhagem_celular": "HeLa",
     "modelo_animal": null,
-    "tipo_cancer": "cervical",
+    "tipo_cancer": "cervical (HeLa, com superexpressão de receptor de folato)",
     "concentracao_mg_mL": 0.25,
     "agregacao_discutida": true,
     "viscosidade_discutida": false,
@@ -78,33 +79,34 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Ausência de avaliação da estabilidade de longo prazo sob condições fisiológicas",
-      "Falta de avaliação de biocompatibilidade in vivo",
-      "Reprodutibilidade de síntese em larga escala não foi investigada",
-      "O fluido de FA@Fe3O4 apresentou ligeira sedimentação após 48 h",
-      "Não foram realizados experimentos de hipertermia magnética efetiva (apenas caracterização das propriedades magnéticas)"
+      "Ausência de avaliação abrangente da estabilidade de longo prazo sob condições fisiológicas",
+      "Biocompatibilidade in vivo não avaliada",
+      "Reprodutibilidade da síntese em larga escala não demonstrada",
+      "Leve sedimentação observada após 48 h de armazenamento estático",
+      "Experimentos de hipertermia magnética real (com AMF) não foram realizados neste estudo"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
       "Avaliar a estabilidade de longo prazo sob condições fisiológicas",
       "Realizar estudos de biocompatibilidade in vivo",
-      "Investigar a reprodutibilidade de síntese em larga escala",
-      "Otimizar as nanopartículas para avançar em direção a aplicações clínicas de terapia de câncer de precisão"
+      "Demonstrar reprodutibilidade da síntese em larga escala",
+      "Avançar para aplicações práticas de hipertermia-quimioterapia combinada"
     ],
     "gaps_identificados": [
-      "Ausência de experimentos reais de hipertermia magnética (SAR/ILP não medidos)",
-      "Falta de dados de biodistribuição e comportamento in vivo",
-      "Papel do tamanho das nanopartículas na internalização celular não foi investigado experimentalmente neste estudo",
-      "Avaliação de citotoxicidade restrita a células HeLa sem comparação com células normais"
+      "Nenhum experimento de aquecimento magnético real foi conduzido para confirmar a eficácia da hipertermia",
+      "Parâmetros de SAR/ILP não foram medidos ou reportados",
+      "Parâmetros do campo magnético alternante (amplitude, frequência) não foram especificados",
+      "Mecanismos de morte celular induzidos pela hipertermia não foram investigados",
+      "Estudos in vivo de biodistribuição e eficácia terapêutica estão ausentes"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo caracteriza as propriedades magnéticas (magnetização de saturação, comportamento superparamagnético) das nanopartículas em função do tamanho e da funcionalização, fornecendo dados relevantes para otimização do desempenho em hipertermia.",
-    "integracao_engenharia": "O método solvotermal de um único passo com controle da razão OAm/EG permite a síntese reprodutível de nanopartículas de Fe3O4 com tamanho ajustável de 13 a 230 nm, seguida de conjugação eficiente com ácido fólico.",
-    "integracao_biologia": "A avaliação de citotoxicidade via ensaio MTT em células HeLa (com superexpressão de receptores de folato) demonstrou baixa toxicidade (viabilidade celular >80% a 0,25 mg/mL) e potencial de direcionamento ativo via endocitose mediada por receptor de folato.",
-    "integracao_materiais": "A funcionalização com ácido fólico via ligação amida mantém a integridade estrutural e as propriedades magnéticas das nanopartículas, melhorando a estabilidade coloidal e conferindo capacidade de direcionamento tumor-específico sem comprometer significativamente a Ms.",
-    "mensagem_principal": "O estudo demonstra a síntese bem-sucedida de nanopartículas FA@Fe3O4 com tamanho controlável, superparamagnetismo, baixa citotoxicidade e estabilidade coloidal aprimorada, posicionando-as como plataformas teranósticas promissoras para hipertermia magnética direcionada e quimioterapia combinada em oncologia de precisão."
+    "integracao_fisica": "O artigo caracteriza as propriedades magnéticas (magnetização de saturação, comportamento superparamagnético) das NPs em função do tamanho, fornecendo base para aplicação em terapia magnetotérmica.",
+    "integracao_engenharia": "Demonstra síntese solvotermal de etapa única com controle de tamanho das NPs pela razão OAm/EG, simplificando o processo de fabricação em relação a métodos convencionais de múltiplas etapas.",
+    "integracao_biologia": "Avalia a citotoxicidade das NPs FA@Fe3O4 em células HeLa via ensaio MTT, confirmando baixa citotoxicidade (viabilidade celular >80% a 0,25 mg/mL) e exploração da endocitose mediada por receptor de folato para direcionamento tumoral.",
+    "integracao_materiais": "Apresenta a conjugação do ácido fólico à superfície do Fe3O4 via ligação amida, melhorando a estabilidade coloidal e mantendo as propriedades magnéticas, com caracterização estrutural completa por TEM, SEM, XRD, XPS e FTIR.",
+    "mensagem_principal": "O estudo demonstra a síntese simples e eficiente de nanopartículas FA@Fe3O4 com tamanho controlável, propriedades superparamagnéticas preservadas após funcionalização com ácido fólico e baixa citotoxicidade in vitro, posicionando-as como plataformas teranósticas promissoras para hipertermia magnética direcionada em tumores com superexpressão de receptor de folato."
   },
   "custom_id": "35__Facile_Synthesis__Characterization__Cytotoxicity__and_Magnet"
 }

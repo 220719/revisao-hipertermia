@@ -6,17 +6,17 @@
   "doi": "10.1016/j.mtchem.2025.103006",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética é um método não invasivo para terapia tumoral que gera calor local no ambiente celular por meio de nanopartículas magnéticas sob campos magnéticos externos. O mecanismo terapêutico baseia-se na sensibilidade particular das células tumorais ao calor.",
+    "conceito_tecnica": "Hipertermia magnética é um método não invasivo de terapia tumoral que gera calor local no ambiente celular por meio de nanopartículas magnéticas sob campos magnéticos externos. O mecanismo terapêutico é baseado na sensibilidade particular das células tumorais ao calor.",
     "etapas_processo": [
-      "Preparação do material Ni–Mn–Cu-Ga por fusão a arco e recozimento",
-      "Moagem do material em pó por criomilling e ball-milling assistido por surfactante",
-      "Recozimento do pó para recuperar a ordem estrutural e magnética",
+      "Preparação das partículas de Ni–Mn–Cu-Ga por fusão a arco e recozimento",
+      "Moagem das partículas por criomoagem e moagem planetária de esferas assistida por surfactante",
+      "Recozimento das partículas moídas para recuperar a ordem estrutural e magnética",
       "Dispersão das partículas em isopropanol (IPA)",
       "Aplicação de campo magnético alternante de alta frequência",
-      "Medição da evolução temporal da temperatura da dispersão"
+      "Monitoramento da evolução de temperatura ao longo do tempo"
     ],
     "internalizacao_nps": null,
-    "aplicacao_campo": "O campo magnético alternante (AMF) é aplicado por um aplicador AC (DM100; nanoScale Biomagnetics) capaz de gerar campos de até 25 mT em frequências de até 429 kHz, em condição quase adiabática.",
+    "aplicacao_campo": "O campo magnético alternante (AMF) é aplicado por um aplicador AC (DM100; nanoScale Biomagnetics) capaz de gerar campos de até 25 mT em frequências de até 429 kHz, em condição quasi-adiabática.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": [
@@ -30,11 +30,11 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O mecanismo dominante é a transformação de fase magnetoestrutural (martensita–austenita) que, ao atingir a temperatura crítica (~39°C), faz as partículas perderem suas propriedades magnéticas e cessarem o aquecimento induzido por campo.",
-    "descricao_mecanismo": "As partículas Ni–Mn–Cu-Ga possuem uma transformação de fase magnetoestrutural reversível de primeira ordem entre uma fase martensítica magnética de baixa temperatura e uma fase austenítica não magnética de alta temperatura. Ao serem aquecidas pelo campo magnético alternante até a temperatura de transformação austenítica (TA ≈ 39°C), as partículas perdem suas propriedades magnéticas e, consequentemente, a capacidade de aquecimento induzido por campo, resultando em um efeito de auto-regulação. A agudeza desta transição de fase é identificada como fator crítico para a eficiência do efeito auto-regulador, com diferença de ~18°C entre transições muito agudas e muito suaves."
+    "mecanismo_dominante": "O mecanismo dominante de auto-regulação é a transformação de fase magnetoestrutural de primeira ordem (martensita–austenita) das partículas Ni–Mn–Cu-Ga, que ao atingir a temperatura de transformação (~39 °C) perdem suas propriedades magnéticas e cessam o aquecimento induzido por campo.",
+    "descricao_mecanismo": "As partículas de Ni–Mn–Cu-Ga sofrem uma transformação de fase magnetoestrutural reversível sem difusão entre uma fase de alta temperatura de alta simetria (austenita, não magnética) e uma fase de baixa temperatura de baixa simetria (martensita, magnética). Ao serem aquecidas pelo campo magnético alternante até a temperatura de transformação austenítica (~39 °C), as partículas perdem suas propriedades magnéticas e, consequentemente, a capacidade de aquecimento induzido por campo. Tanto a irradiação térmica quanto o mecanismo de auto-regulação foram identificados numericamente como os principais contribuintes para o limite de temperatura observado experimentalmente."
   },
   "q3": {
-    "material": "Liga Heusler de memória de forma magnética Ni–Mn–Cu-Ga",
+    "material": "Liga de Heusler magneto-shape-memory Ni–Mn–Cu-Ga",
     "composicao_quimica": "Ni49.7Mn18.7Cu6.4Ga25.2",
     "dopagem": "Cu (cobre)",
     "tamanho_nm": null,
@@ -42,23 +42,23 @@
     "faixa_tamanho_max_nm": null,
     "forma": null,
     "arquitetura_multicore": false,
-    "anisotropia": "Anisotropia magnética intrínseca; partículas podem exibir comportamento superparamagnético, monodomínio ou multidomínio dependendo do tamanho (ferromagnético para diâmetros >7 nm, monodomínio até ~40 nm)",
+    "anisotropia": "anisotropia magnética intrínseca associada à fase martensítica; partículas ferromagnéticas de domínio único para diâmetros entre ~7 nm e ~40 nm",
     "revestimento": null,
     "material_autorregulavel": true,
     "SAR_W_g": 8.0,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "A composição química determina a temperatura de transformação magnetoestrutural, enquanto a agudeza da transição de fase (influenciada por tamanho de partícula, defeitos superficiais e microestruturais) controla diretamente a eficiência do efeito auto-regulador. Partículas menores apresentam desvios do comportamento bulk devido à proximidade com escalas de comprimento magnético críticas, como largura de parede de domínio e comprimento de troca."
+    "relacao_estrutura_propriedade": "A nitidez da transformação de fase magnetoestrutural (martensita–austenita) é um fator crítico para a eficiência da auto-regulação; transições mais abruptas resultam em temperaturas de auto-regulação mais precisas e diferenças de até 18 °C em relação a transições suaves. O tamanho das partículas influencia o comportamento magnético, com partículas ferromagnéticas de domínio único esperadas entre ~7 nm e ~40 nm."
   },
   "q4": {
-    "amplitude_kA_m": 19.9,
+    "amplitude_kA_m": null,
     "frequencia_kHz": 429.0,
-    "produto_Hf": 8537100000.0,
+    "produto_Hf": null,
     "dentro_limite_seguranca": true,
-    "tempo_tratamento_min": 28.3,
+    "tempo_tratamento_min": null,
     "forma_onda": null,
-    "dosimetria_termica": "Sensor de fibra óptica medindo temperatura em tempo real da dispersão (IPA) de 1 mL contendo 20 mg de pó; SAR calculado pela inclinação inicial da curva temperatura-tempo",
-    "distribuicao_espacial_calor": "As partículas precipitaram no fundo do porta-amostra formando uma camada única, deteriorando a perda de potência medida; o sensor de temperatura está posicionado acima da amostra precipitada",
+    "dosimetria_termica": "Sensor de fibra óptica medindo a temperatura em tempo real do dispersante (IPA) em 1 mL de amostra contendo 20 mg de pó; SAR calculado pela inclinação inicial da curva temperatura-tempo (Equação 1)",
+    "distribuicao_espacial_calor": "As partículas precipitaram no fundo do porta-amostras formando uma única camada, resultando em distribuição não uniforme; a temperatura das partículas é mais alta do que a do dispersante medida pelo sensor",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -82,32 +82,33 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "As partículas precipitaram imediatamente após a dispersão em IPA, deteriorando o valor de SAR medido",
-      "O sensor óptico mede a temperatura do dispersante e não a temperatura real das partículas, que é mais elevada",
-      "Os mecanismos de transferência de calor considerados descrevem condições laboratoriais e não necessariamente replicam condições in vitro e in vivo",
-      "Estudo abrangente sobre a compatibilidade das partículas Ni–Mn–Cu-Ga com diferentes células e tecidos ainda é necessário",
-      "O valor de SAR calculado (8 W/g) é moderado pois as partículas estavam precipitadas e não dispersas"
+      "Precipitação imediata das partículas no fundo do porta-amostras, deteriorando o valor de SAR medido e a reprodutibilidade",
+      "O sensor de fibra óptica mede a temperatura do dispersante e não a temperatura real das partículas",
+      "Estudo de compatibilidade abrangente das partículas de Ni–Mn–Cu-Ga com diferentes células e tecidos ainda não realizado",
+      "Os mecanismos de transferência de calor considerados descrevem condições laboratoriais, que podem não ser os mesmos em aplicações in vitro e in vivo",
+      "A influência do tamanho das partículas, distribuição de tamanho, efeitos de superfície e defeitos microestruturais na transformação de fase e no mecanismo de auto-regulação ainda precisa ser esclarecida"
     ],
     "problemas_SAR_ILP": true,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Investigar a influência do tamanho de partícula, distribuição de tamanho, efeitos de superfície e defeitos microestruturais na transformação de fase e no mecanismo de auto-regulação",
-      "Realizar estudo abrangente sobre a compatibilidade das partículas Ni–Mn–Cu-Ga com diferentes células e tecidos",
-      "Explorar protocolos cíclicos liga/desliga para aplicações biomédicas",
-      "Simular condições biomédicas mais realistas utilizando parâmetros de sangue como dispersante"
+      "Investigar a influência do tamanho das partículas, distribuição de tamanho, efeitos de superfície e defeitos microestruturais na eficiência de aquecimento e na transformação de fase",
+      "Realizar estudo abrangente de compatibilidade das partículas de Ni–Mn–Cu-Ga com diferentes células e tecidos",
+      "Explorar o potencial das ligas de Heusler metamagnéticas como agentes de auto-regulação em condições biomedicamente relevantes",
+      "Investigar protocolos cíclicos on/off de campo magnético para otimizar o tratamento"
     ],
     "gaps_identificados": [
-      "Confiabilidade e rastreabilidade do efeito de auto-regulação medido em diferentes configurações de hipertermia magnética é limitada e em grande parte inexplorada",
-      "Influência do tamanho de partícula, distribuição de tamanho e defeitos na eficiência de aquecimento das partículas Heusler para auto-regulação ainda não está esclarecida",
-      "Biocompatibilidade das partículas Ni–Mn–Cu-Ga não foi avaliada neste trabalho"
+      "Ausência de testes de citotoxicidade e biocompatibilidade das partículas de Ni–Mn–Cu-Ga",
+      "Falta de validação do modelo em condições in vitro e in vivo reais",
+      "Desconhecimento do impacto de parâmetros como tamanho, defeitos e superfície das partículas na auto-regulação",
+      "Confiabilidade e rastreabilidade do efeito de auto-regulação em diferentes configurações de hipertermia magnética são pouco exploradas na literatura"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo desenvolve um modelo numérico baseado em balanço de energia e lei de Stefan-Boltzmann para descrever os mecanismos de dissipação de calor (irradiação e auto-regulação) em condição quase adiabática, identificando a contribuição única de cada mecanismo na curva experimental.",
-    "integracao_engenharia": "Demonstra como ajustar a composição da liga Heusler Ni–Mn–Cu-Ga por fusão a arco e ball-milling para sintonizar a temperatura de transformação magnetoestrutural próxima à temperatura corporal (~39°C), viabilizando agentes de hipertermia auto-reguláveis.",
-    "integracao_biologia": "Evidencia que a apoptose celular é o mecanismo terapêutico alvo e ressalta a necessidade de controlar a temperatura das partículas para evitar danos a tecidos saudáveis, além de apontar a ausência de estudos de biocompatibilidade como lacuna crítica.",
-    "integracao_materiais": "Introduz ligas Heusler de memória de forma magnética (Ni–Mn–Cu-Ga) como nova classe de agentes de hipertermia auto-reguláveis, explorando a transformação de fase magnetoestrutural reversível de primeira ordem e a tunabilidade da temperatura de transição por ajuste composicional.",
-    "mensagem_principal": "O artigo demonstra, pela primeira vez como prova de conceito, que partículas Heusler Ni–Mn–Cu-Ga com transformação magnetoestrutural aguda e reversível em ~39°C exibem efeito de hipertermia magnética auto-regulável, cessando o aquecimento ao atingir a temperatura de transformação austenítica. A agudeza da transição de fase e os mecanismos de irradiação são identificados como fatores críticos para o controle da temperatura de equilíbrio final."
+    "integracao_fisica": "O artigo desenvolve um modelo numérico baseado em balanço de energia e lei de Stefan-Boltzmann que descreve quantitativamente os mecanismos de dissipação de calor (irradiação e auto-regulação) em experimentos de hipertermia magnética quasi-adiabáticos.",
+    "integracao_engenharia": "O estudo demonstra que partículas de Heusler com transformação magnetoestrutural abrupta podem ser projetadas e fabricadas por fusão a arco e moagem para atuarem como agentes de hipertermia com temperatura de equilíbrio controlável, incluindo análise de parâmetros operacionais como pressão, potência e dispersante.",
+    "integracao_biologia": "O artigo aponta que a hipertermia magnética resulta em apoptose celular e discute a necessidade futura de estudos de compatibilidade das partículas de Ni–Mn–Cu-Ga com células e tecidos, além de simulações com parâmetros de sangue como dispersante para aproximação das condições fisiológicas.",
+    "integracao_materiais": "O trabalho demonstra que a composição química das ligas de Heusler Ni–Mn–Cu-Ga pode ser ajustada para sintonizar a temperatura de transformação magnetoestrutural próxima à temperatura corporal, e que a nitidez dessa transição de primeira ordem é o fator-chave para a eficácia da auto-regulação.",
+    "mensagem_principal": "Partículas de Heusler magneto-shape-memory Ni–Mn–Cu-Ga com transformação magnetoestrutural de primeira ordem abrupta e reversível próxima à temperatura corporal (~39 °C) constituem uma nova classe de agentes de hipertermia magnética auto-reguláveis, capazes de limitar a temperatura atingida sem desligar o campo externo, como demonstrado experimentalmente e validado por modelo numérico que separa as contribuições de irradiação e auto-regulação."
   },
   "custom_id": "48__Self-regulating_magnetic_hyperthermia_by_magnetostructural_p"
 }

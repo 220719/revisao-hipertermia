@@ -6,23 +6,23 @@
   "doi": "10.1002/smll.202514973",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MH) utiliza nanopartículas de óxido de ferro que convertem energia magnética em calor localizado sob exposição a um campo magnético alternante (AMF), permitindo efeitos térmicos precisos em regiões tumorais com mínimo dano a tecidos saudáveis adjacentes.",
+    "conceito_tecnica": "A hipertermia magnética (MH) é uma terapia na qual nanopartículas de óxido de ferro convertem energia magnética em calor localizado por meio de perdas de histerese magnética e efeitos de relaxação quando expostas a um campo magnético alternante (AMF). Essa abordagem confina os efeitos térmicos às regiões tumorais com precisão espacial superior, minimizando danos aos tecidos saudáveis adjacentes.",
     "etapas_processo": [
-      "Síntese e caracterização das nanopartículas FVIOs baseadas em Fe3O4",
       "Internalização das FVIOs pelas células tumorais via endocitose",
       "Exposição ao campo magnético alternante (AMF)",
       "Geração de calor localizado por perdas de histerese magnética e efeitos de relaxação",
-      "Indução de hipertermia intratumoral com temperatura de 42–45°C",
-      "Ativação de vias de morte celular (apoptose e ferroptose)"
+      "Elevação da temperatura intratumoral para 42–45°C",
+      "Indução de morte celular por apoptose e ferroptose"
     ],
-    "internalizacao_nps": "As FVIOs são internalizadas pelas células através de endocitose, conforme demonstrado por imagens de TEM mostrando distribuição intracelular das nanopartículas.",
-    "aplicacao_campo": "O AMF é aplicado externamente sobre a região tumoral, promovendo aquecimento localizado mediado pelas FVIOs internalizadas nas células tumorais.",
+    "internalizacao_nps": "As FVIOs são internalizadas pelas células por endocitose, conforme demonstrado por imagens de TEM mostrando distribuição intracelular das nanopartículas.",
+    "aplicacao_campo": "O AMF é aplicado externamente às células ou tumores contendo FVIOs, gerando hipertermia localizada monitorada por termografia infravermelha em tempo real.",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 45.0,
     "vias_morte_celular": [
       "apoptose",
       "ferroptose",
-      "necrose"
+      "necrose",
+      "imunomodulacao"
     ]
   },
   "q2": {
@@ -30,43 +30,43 @@
     "relaxacao_browniana": null,
     "perdas_histerese": true,
     "interacoes_coletivas": null,
-    "nanoscale_heating": true,
+    "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "As FVIOs geram calor predominantemente por perdas de histerese magnética e efeitos de relaxação quando expostas ao AMF.",
-    "descricao_mecanismo": "As nanopartículas de óxido de ferro FVIOs convertem energia magnética em calor localizado através de perdas de histerese magnética e efeitos de relaxação ao serem expostas a um campo magnético alternante. Esse aquecimento endógeno intratumoral eleva a temperatura local para 42–45°C em 10 minutos de tratamento. O calor gerado intracelularmente ativa vias de estresse oxidativo, elevando os níveis de ROS intracelulares e promovendo peroxidação lipídica, além de induzir morte celular por ferroptose e apoptose."
+    "mecanismo_dominante": "As perdas de histerese magnética e os efeitos de relaxação das nanopartículas de óxido de ferro sob AMF são os mecanismos responsáveis pela conversão de energia magnética em calor localizado.",
+    "descricao_mecanismo": "Quando expostas ao AMF, as nanopartículas de óxido de ferro (FVIOs) convertem energia magnética em calor localizado por meio de perdas de histerese magnética e efeitos de relaxação. Esse processo gera hipertermia intratumoral de forma dependente da concentração e da intensidade do campo aplicado. O calor gerado é confinado à região tumoral, demonstrando superioridade em precisão espacial em comparação com abordagens convencionais de hipertermia."
   },
   "q3": {
-    "material": "Ferrimagnetic vortex-domain iron oxide nanorings (FVIOs)",
+    "material": "Fe3O4 (nanoanéis de vórtice ferrimagnético)",
     "composicao_quimica": "Fe3O4",
     "dopagem": null,
     "tamanho_nm": 70.0,
     "faixa_tamanho_min_nm": 60.0,
     "faixa_tamanho_max_nm": 80.0,
-    "forma": "nanorings (nanoanéis)",
+    "forma": "anel (nanoring)",
     "arquitetura_multicore": false,
-    "anisotropia": "domínio de vórtice ferrimagnético",
+    "anisotropia": null,
     "revestimento": null,
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "A arquitetura de nanoanéis com domínio de vórtice ferrimagnético confere às FVIOs desempenho superior de geração de calor em comparação com nanopartículas de óxido de ferro superparamagnéticas convencionais, com perfil de aquecimento dependente de concentração e intensidade de campo."
+    "relacao_estrutura_propriedade": "As FVIOs, baseadas em Fe3O4 com estrutura de domínio de vórtice ferrimagnético e morfologia de anel, exibem desempenho superior de geração de calor em comparação com nanopartículas convencionais de óxido de ferro superparamagnético, demonstrando perfil de aquecimento dependente da concentração e da intensidade do campo magnético."
   },
   "q4": {
     "amplitude_kA_m": null,
     "frequencia_kHz": null,
     "produto_Hf": null,
-    "dentro_limite_seguranca": true,
+    "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 10.0,
     "forma_onda": null,
-    "dosimetria_termica": "Monitoramento remoto de temperatura por sistema de termografia infravermelha em tempo real",
-    "distribuicao_espacial_calor": "O AMF não alterou a temperatura corporal sistêmica, enquanto a hipertermia tumoral localizada atingiu 42–45°C dentro de 10 minutos de tratamento MH, indicando efeitos térmicos específicos para o tumor.",
+    "dosimetria_termica": "Monitoramento remoto por termografia infravermelha em tempo real",
+    "distribuicao_espacial_calor": "O calor é gerado localmente no tumor, atingindo 42–45°C dentro de 10 minutos de tratamento MH, sem alteração da temperatura corporal sistêmica conforme confirmado por termografia infravermelha em tempo real.",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vitro",
     "linhagem_celular": "Panc-1, MIA PaCa-2, hTERT-HPNE, PANC GR, MIA GR",
-    "modelo_animal": "camundongo (BALB/c nude e C57BL/6)",
+    "modelo_animal": "camundongo",
     "tipo_cancer": "pâncreas",
     "concentracao_mg_mL": null,
     "agregacao_discutida": false,
@@ -85,31 +85,29 @@
   "q6": {
     "limitacoes_reportadas": [
       "Os mecanismos upstream pelos quais a MH suprime a expressão de HSPB1 permanecem não esclarecidos",
-      "Os alvos moleculares diretos da MH na reversão da quimiorresistência em células GR de câncer pancreático ainda precisam ser identificados",
-      "A hipertermia magnética nanoscópica ainda não está amplamente aplicada clinicamente, exigindo avaliação rigorosa do perfil de segurança in vivo"
+      "Os alvos moleculares diretos da MH na reversão da quimiorresistência em células de câncer pancreático GR precisam ser identificados",
+      "A MH ainda não está amplamente aplicada clinicamente como modalidade de hipertermia nanomagnética"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Investigar os mecanismos pelos quais a MH suprime a expressão de HSPB1",
       "Avaliar a capacidade das FVIOs de conferir especificidade antigênica às células de câncer pancreático",
-      "Ampliar as funções efetoras de células T e neutralizar fatores imunossupressores no microambiente tumoral",
-      "Explorar os efeitos imunomodulatórios da MH no câncer pancreático",
-      "Investigar o potencial das FVIOs para imagem por ressonância magnética (MRI) no diagnóstico não invasivo"
+      "Amplificar as funções efetoras de células T mediadas por FVIOs",
+      "Neutralizar fatores imunossupressores no microambiente tumoral para avançar na imunoterapia do câncer pancreático",
+      "Investigar o potencial das FVIOs para diagnóstico por ressonância magnética (MRI) de tumores hepáticos pequenos"
     ],
     "gaps_identificados": [
-      "Ausência de identificação dos mecanismos upstream de supressão de HSPB1 pela MH",
-      "Alvos moleculares diretos da MH na reversão da quimiorresistência não identificados",
-      "Efeitos imunomodulatórios da MH no câncer pancreático ainda não avaliados sistematicamente",
-      "Aplicação clínica da hipertermia magnética nanoscópica ainda limitada"
+      "Mecanismo upstream pelo qual a MH suprime a expressão de HSPB1 permanece desconhecido",
+      "Alvos moleculares diretos da MH na reversão da quimiorresistência em células GR não foram identificados",
+      "Efeitos imunomodulatórios da MH no câncer pancreático não foram completamente avaliados neste estudo"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo demonstra que as FVIOs, graças à sua arquitetura de domínio de vórtice ferrimagnético, geram calor localizado eficiente por perdas de histerese e efeitos de relaxação sob AMF, superando nanopartículas superparamagnéticas convencionais.",
-    "integracao_engenharia": "O estudo valida as FVIOs como nanoplataforma eficaz para hipertermia magnética intratumoral com perfil de aquecimento dependente de concentração e intensidade de campo, permitindo controle preciso da dose térmica.",
-    "integracao_biologia": "O trabalho identifica o eixo mecanístico HSPB1-ACSL4-ferroptose como central para a sensibilização quimioterápica mediada por MH em células de câncer pancreático resistentes à gemcitabina, revelando que células GR apresentam suscetibilidade aumentada à ferroptose.",
-    "integracao_materiais": "As FVIOs à base de Fe3O4 com morfologia de nanoanéis e domínio de vórtice ferrimagnético demonstram biocompatibilidade favorável, estabilidade hidrodinâmica em diferentes temperaturas e capacidade de internalização celular, consolidando-se como material promissor para terapia oncológica.",
-    "mensagem_principal": "A hipertermia nanomagnética mediada por FVIOs sensibiliza multidimensionalmente o câncer pancreático à quimioterapia com gemcitabina, atuando sinergicamente em tumores WT e revertendo a resistência em tumores GR através da supressão de HSPB1, que inibe a degradação ubiquitina-dependente de ACSL4 e amplifica a ferroptose."
+    "integracao_fisica": "O artigo demonstra que as FVIOs geram calor localizado de forma dependente da concentração e da intensidade do campo magnético alternante por meio de perdas de histerese magnética, com monitoramento por termografia infravermelha.",
+    "integracao_engenharia": "As FVIOs foram utilizadas como nanoplatafórmula ideal para hipertermia magnética intratumoral, com perfil de aquecimento controlável e distribuição espacial precisa do calor restrita ao tumor.",
+    "integracao_biologia": "O estudo revelou que a MH suprime a expressão de HSPB1 em células GR, inibindo a degradação de ACSL4 mediada por ubiquitinação e amplificando a ferroptose como mecanismo de superação da quimiorresistência ao gemcitabine.",
+    "integracao_materiais": "As nanopartículas FVIOs de Fe3O4 com estrutura de domínio de vórtice ferrimagnético e morfologia de anel exibem propriedades magnéticas superiores e biocompatibilidade favorável, com estabilidade de tamanho hidrodinâmico e potencial zeta em diferentes temperaturas.",
+    "mensagem_principal": "A hipertermia nanomagnética mediada por FVIOs sensitiza multidimensionalmente o câncer pancreático ao gemcitabine, tanto sinergizando com o quimioterápico em tumores selvagens quanto superando a quimiorresistência em tumores resistentes ao gemcitabine por meio da supressão de HSPB1, que resulta em acúmulo de ACSL4 e amplificação da ferroptose."
   },
   "custom_id": "11__Nanomagnetic_Hyperthermia_Sensitizes_GemcitabineChemosensiti"
 }

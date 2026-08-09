@@ -6,17 +6,16 @@
   "doi": "10.1002/adfm.202414719",
   "tipo_estudo": "in vivo",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética utiliza nanopartículas de óxido de ferro magnético para gerar calor mediante exposição a um campo magnético alternante (AMF), elevando as temperaturas intratumorais a níveis terapêuticos acima de 44 °C para inibição e potencial erradicação do câncer.",
+    "conceito_tecnica": "A hipertermia magnética utiliza a capacidade de nanopartículas de óxido de ferro magnéticas, injetadas diretamente no tumor ou administradas sistemicamente, de gerar calor quando expostas a um campo magnético alternante (AMF). O objetivo é atingir temperaturas intratumorais terapêuticas, tipicamente acima de 44 °C, para inibir o crescimento do câncer e potencialmente erradicá-lo.",
     "etapas_processo": [
-      "Síntese de Co-IONPs com morfologia de bipirâmide cúbica via método de decomposição térmica semente-e-crescimento em duas etapas",
-      "Funcionalização superficial das nanopartículas com peptídeo LHRH conjugado a PEG-PCL via evaporação de solvente",
-      "Administração intravenosa das LHRH-Co-IONPs a uma dose de 4 mg kg−1 Fe em camundongos com xenoenxertos de câncer ovariano",
-      "Acumulação tumoral das nanopartículas por direcionamento ativo via receptor LHRH superexpresso",
-      "Exposição ao AMF (418 kHz, 28,6 kA m−1) por 30 min, 24 h após a administração",
-      "Elevação da temperatura intratumoral acima de 50 °C com alta taxa de aquecimento"
+      "Síntese das Co-IONPs com morfologia de bipirâmide cúbica pelo método de decomposição térmica seed-and-growth em duas etapas",
+      "Funcionalização da superfície das nanopartículas com peptídeo LHRH via conjugação com PEG-PCL",
+      "Administração intravenosa das LHRH-Co-IONPs no modelo animal com xenoenxerto de câncer de ovário",
+      "Aplicação do campo magnético alternante (AMF) 24 h após a injeção IV",
+      "Monitoramento da temperatura intratumoral por sonda de fibra óptica durante a sessão de hipertermia de 30 min"
     ],
-    "internalizacao_nps": "As nanopartículas LHRH-Co-IONPs são internalizadas por células de câncer ovariano via receptor LHRH superexpresso, com conjugação do peptídeo LHRH aumentando a internalização celular em 1,5 vez comparado às nanopartículas não direcionadas, conforme demonstrado por citometria de fluxo.",
-    "aplicacao_campo": "O AMF é aplicado por meio de uma bobina resfriada a água conectada a um sistema de hipertermia magnética (MSI Automation), operando nas frequências de 315–418 kHz e amplitudes de 26,8–28,7 kA m−1, com a amostra posicionada no centro da bobina.",
+    "internalizacao_nps": "As nanopartículas são internalizadas por células de câncer de ovário ES-2 via receptor de LHRH superexpresso, com a conjugação do peptídeo LHRH aumentando a internalização celular em 1,5 vez em relação às nanopartículas não-direcionadas, conforme demonstrado por citometria de fluxo.",
+    "aplicacao_campo": "O AMF é aplicado por meio de uma bobina resfriada a água conectada a um sistema de hipertermia magnética (MSI Automation), com parâmetros de 315-418 kHz e 26.8-28.7 kA m−1, por 30 minutos.",
     "janela_termica_min_C": 43.0,
     "janela_termica_max_C": 50.1,
     "vias_morte_celular": [
@@ -31,25 +30,25 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "As perdas por histerese são o mecanismo dominante de geração de calor nas Co-IONPs de bipirâmide cúbica, devido à sua alta anisotropia magnética e momento magnético elevado.",
-    "descricao_mecanismo": "As nanopartículas ferromagnéticas de bipirâmide cúbica exibem alta anisotropia magnética e forte momento magnético, de modo que a reversão da magnetização é primariamente determinada pela amplitude do campo, com dependência secundária da frequência, direcionando as perdas por histerese para um SAR aprimorado. O tempo de medição (τm = 1/2πf) é muito curto para alcançar reversão efetiva de magnetização contra a barreira de energia, tornando as perdas relaxacionais menos significativas em comparação às perdas por histerese. Adicionalmente, a coexistência das fases dura magnetita e macia maghemita em uma única nanoestrutura impacta positivamente a anisotropia magnética líquida via acoplamento de troca, melhorando significativamente a eficiência de aquecimento."
+    "mecanismo_dominante": "O mecanismo dominante de geração de calor nas Co-IONPs de bipirâmide cúbica são as perdas por histerese, determinadas primariamente pela amplitude do campo aplicado.",
+    "descricao_mecanismo": "As nanopartículas de bipirâmide cúbica são ferromagnéticas com alta anisotropia magnética, exibindo laços de histerese abertos com magnetização remanente e coercividade não-nulas. A reversão da magnetização é primariamente determinada pela amplitude do campo, com dependência secundária na frequência, direcionando as perdas por histerese para um SAR aumentado. O tempo de medição é muito curto para uma reversão efetiva de magnetização contra a barreira de energia, tornando as perdas por relaxação menos significativas do que as perdas por histerese, típico de nanopartículas com alta barreira de anisotropia."
   },
   "q3": {
     "material": "óxido de ferro dopado com cobalto (magnetita/maghemita)",
-    "composicao_quimica": "Co0.4nFe2.6nO4 (fase magnetita Fe3O4 com fase maghemita γ-Fe2O3 na superfície)",
-    "dopagem": "Cobalto (Co)",
+    "composicao_quimica": "Co0.4nFe2.6nO4 (fase magnetita Fe3O4 e fase maghemita γ-Fe2O3 coexistentes)",
+    "dopagem": "cobalto (Co)",
     "tamanho_nm": 17.5,
     "faixa_tamanho_min_nm": 14.7,
     "faixa_tamanho_max_nm": 20.3,
     "forma": "bipirâmide cúbica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia magnética efetiva (Keff = 5,1 × 10^5 J m−3) com contribuições de anisotropia de volume e superfície; nanopartículas em estado bloqueado à temperatura ambiente com energia de anisotropia dominando sobre energia térmica",
-    "revestimento": "PEG-PCL (poli(etilenoglicol)-b-poli(ε-caprolactona)) com peptídeo LHRH conjugado",
+    "anisotropia": "anisotropia magnética efetiva (Keff = 5.1 × 10^5 J m−3) com contribuição de anisotropia de superfície, dominada pela energia de anisotropia sobre a energia térmica (estado bloqueado à temperatura ambiente)",
+    "revestimento": "PEG-PCL (poli(etileno glicol)-bloco-poli(ε-caprolactona)) com peptídeo LHRH conjugado",
     "material_autorregulavel": false,
     "SAR_W_g": 14686.0,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 89.5,
-    "relacao_estrutura_propriedade": "A morfologia de bipirâmide cúbica, com facetas {111} e {100} e coexistência das fases magnetita (núcleo) e maghemita (shell de 3,1 nm), resulta em maior magnetização de saturação (89,5 emu g−1) e coercividade (393 Oe) em comparação com outras morfologias, aumentando a dissipação de energia sob AMF. A transição da morfologia octaédrica para bipirâmide cúbica aumenta significativamente a anisotropia magnética efetiva líquida, sendo o principal fator responsável pela eficiência de aquecimento 2,5 vezes superior."
+    "relacao_estrutura_propriedade": "A morfologia de bipirâmide cúbica, com facetas {111} e {100}, combinada com a coexistência das fases magnetita (núcleo duro) e maghemita (superfície macia) com acoplamento de troca, e a maior magnetização de saturação (89.5 emu g−1) e coercividade (393 Oe), resulta em maior anisotropia magnética efetiva e superior eficiência de dissipação de energia sob AMF, conferindo SAR de 14.686 W g−1 Fe."
   },
   "q4": {
     "amplitude_kA_m": 26.8,
@@ -58,56 +57,53 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 30.0,
     "forma_onda": null,
-    "dosimetria_termica": "Sonda de fibra óptica (Neoptix T1) conectada a termômetro óptico (NOMAD-Touch, Neoptix) para monitoramento em tempo real da temperatura intratumoral e da solução de nanopartículas; SAR calculado pelo método da inclinação inicial da curva temperatura versus tempo",
-    "distribuicao_espacial_calor": "A temperatura intratumoral foi monitorada por sonda de fibra óptica inserida no tumor; LHRH-Co-IONPs atingiram temperatura intratumoral média de 50,1 °C, enquanto nanopartículas não direcionadas elevaram a temperatura média a 46 °C, refletindo diferenças na acumulação tumoral.",
+    "dosimetria_termica": "Sonda de fibra óptica (Neoptix T1) conectada a termômetro óptico (NOMAD-Touch, Neoptix) para monitoramento em tempo real da temperatura intratumoral; método da inclinação inicial (initial slope method) para cálculo do SAR a partir da curva temperatura vs. tempo",
+    "distribuicao_espacial_calor": "A temperatura intratumoral foi monitorada por sonda de fibra óptica inserida no tumor; LHRH-Co-IONPs atingiram temperatura intratumoral média de 50,1 °C, enquanto nanopartículas não-direcionadas atingiram 46 °C, refletindo a distribuição dependente do acúmulo tumoral das nanopartículas",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vivo",
-    "linhagem_celular": "ES-2 (carcinoma de células claras ovarianas)",
-    "modelo_animal": "camundongo",
+    "linhagem_celular": "ES-2 (carcinoma de células claras de ovário)",
+    "modelo_animal": "camundongo (nude mice com xenoenxerto subcutâneo de ES-2)",
     "tipo_cancer": "ovário",
     "concentracao_mg_mL": 1.0,
-    "agregacao_discutida": false,
+    "agregacao_discutida": true,
     "viscosidade_discutida": true,
     "imobilizacao_celular": false,
     "perfusao_discutida": false,
     "protein_corona": false,
     "biodistribuicao": true,
     "toxicidade_avaliada": true,
-    "localizacao_intracelular": false,
-    "apoptose": null,
-    "necrose": null,
+    "localizacao_intracelular": true,
+    "apoptose": false,
+    "necrose": false,
     "ferroptose": false,
     "imunomodulacao": false
   },
   "q6": {
     "limitacoes_reportadas": [
-      "A hipertermia magnética administrada sistemicamente com nanopartículas de alta eficiência previamente reportadas falha em reduzir o tamanho tumoral ou deter o crescimento, resultando predominantemente em desaceleração da progressão tumoral",
-      "Risco potencial de lixiviação de cobalto e seus efeitos tóxicos durante a tradução clínica, apesar do cobalto compor apenas 5–6% da composição total das nanopartículas",
-      "Doses sistêmicas clinicamente seguras para nanopartículas baseadas em óxido de ferro permanecem indefinidas para hipertermia magnética",
-      "O revestimento PEG-PCL reduz inicialmente a taxa de aquecimento das nanopartículas em comparação às não revestidas"
+      "Risco potencial de lixiviação de cobalto e seus efeitos tóxicos durante a tradução clínica, apesar do cobalto compor apenas 5-6% da composição total das nanopartículas",
+      "A hipertermia magnética sistêmica com nanopartículas de óxido de ferro não foi avaliada em ensaios clínicos, e doses sistêmicas clinicamente seguras permanecem indefinidas",
+      "O revestimento de PEG-PCL inicialmente diminui a taxa de aquecimento das nanopartículas em comparação com nanopartículas não revestidas"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Avaliar as nanopartículas em modelos pré-clínicos adicionais, incluindo câncer ovariano metastático e tumores pancreáticos ortotópicos",
-      "Conduzir avaliações abrangentes de segurança, incluindo validação da natureza não tóxica das nanopartículas em múltiplos modelos animais, antes da tradução clínica",
-      "Explorar outras geometrias complexas de nanopartículas e composições inspiradas no sucesso da morfologia de bipirâmide cúbica"
+      "Realizar avaliações de segurança abrangentes, incluindo validação do perfil não-tóxico das nanopartículas em múltiplos modelos animais, como etapa crítica antes da tradução clínica",
+      "Avaliar as nanopartículas em modelos pré-clínicos adicionais, incluindo câncer de ovário metastático e tumores pancreáticos ortotópicos"
     ],
     "gaps_identificados": [
-      "Ausência de dados sobre mecanismos específicos de morte celular (apoptose vs. necrose) induzidos pela hipertermia mediada pelas Co-IONPs de bipirâmide cúbica in vivo",
-      "Doses sistêmicas clinicamente seguras para nanopartículas de óxido de ferro para hipertermia magnética não foram definidas em ensaios clínicos",
-      "A hipertermia magnética sistêmica com nanopartículas avançadas ainda não foi avaliada em ensaios clínicos",
-      "Avaliação limitada a modelo de xenoenxerto subcutâneo, sem dados em modelos ortotópicos ou metastáticos"
+      "A hipertermia magnética sistêmica com nanopartículas de óxido de ferro com eficiência de aquecimento aprimorada falha em reduzir o tamanho do tumor ou interromper o crescimento tumoral nos estudos atuais, apenas desacelerando a progressão",
+      "Nanopartículas convencionais requerem injeção intratumoral direta para atingir concentração suficiente e temperaturas terapêuticas, limitando o tratamento de tumores de difícil acesso",
+      "Doses elevadas de nanopartículas convencionais (superiores a 30 mg cm−3 de volume tumoral) são necessárias em ensaios clínicos para atingir temperaturas terapêuticas"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo demonstra que perdas por histerese dominam o mecanismo de aquecimento em nanopartículas ferromagnéticas de alta anisotropia, com SAR escalando não linearmente com a amplitude do campo (potência b = 3,26), superando as previsões da teoria de resposta linear.",
-    "integracao_engenharia": "O método de síntese de decomposição térmica semente-e-crescimento em duas etapas foi desenvolvido para produzir nanopartículas de bipirâmide cúbica com morfologia controlada, tamanho uniforme (17,5 ± 2,8 nm) e SAR excepcional de 14.686 W g−1 Fe, fornecendo uma plataforma reproduzível para nanomateriais magnéticos de alto desempenho.",
-    "integracao_biologia": "As LHRH-Co-IONPs demonstraram biocompatibilidade, acumulação tumoral eficiente (2,3 vezes maior que nanopartículas não direcionadas), clearance completo em 14 dias, e eficácia terapêutica superior ao deter completamente o crescimento tumoral ovariano após uma única sessão de 30 min de hipertermia magnética sistêmica.",
-    "integracao_materiais": "A coexistência das fases magnetita (núcleo) e maghemita (shell de 3,1 nm) nas nanopartículas de bipirâmide cúbica, juntamente com dopagem por cobalto e morfologia facetada com planos {111} e {100}, resulta em acoplamento de troca magnética que amplifica a anisotropia efetiva e a eficiência de aquecimento, estabelecendo relações estrutura-propriedade fundamentais para o design racional de nanomateriais magnéticos.",
-    "mensagem_principal": "O desenvolvimento de nanopartículas de óxido de ferro dopadas com cobalto com morfologia de bipirâmide cúbica, sintetizadas por método semente-e-crescimento em duas etapas, resultou em SAR excepcionalmente alto (14.686 W g−1 Fe) que, após administração intravenosa sistêmica a baixa dose (4 mg kg−1), alcançou temperaturas intratumorais superiores a 50 °C e deteve efetivamente o crescimento de tumores ovarianos após uma única sessão de hipertermia magnética de 30 min, superando todas as nanopartículas magnéticas previamente reportadas para este fim."
+    "integracao_fisica": "Demonstra que nanopartículas ferromagnéticas de alta anisotropia com morfologia de bipirâmide cúbica têm suas perdas de energia dominadas por histerese, com SAR fortemente dependente da amplitude do campo magnético aplicado (relação de lei de potência com expoente b=3,26), superando mecanismos de relaxação.",
+    "integracao_engenharia": "Desenvolveu um método de decomposição térmica seed-and-growth em duas etapas para síntese controlada e reprodutível de Co-IONPs com morfologia única de bipirâmide cúbica, com potencial para ser adaptado para produção de outros nanomateriais magnéticos de alto desempenho.",
+    "integracao_biologia": "Demonstrou que Co-IONPs direcionadas por LHRH, administradas sistemicamente a 4 mg kg−1, acumulam-se eficientemente em xenoenxertos de câncer de ovário, elevam a temperatura intratumoral acima de 50 °C e interrompem completamente o crescimento tumoral após uma única sessão de 30 min, com perfil de segurança comprovado in vitro e in vivo.",
+    "integracao_materiais": "A coexistência das fases magnetita (núcleo) e maghemita (superfície) via acoplamento de troca, combinada com dopagem por cobalto, morfologia de bipirâmide cúbica e facetas cristalográficas {111}/{100}, resulta em SAR excepcional de 14.686 W g−1 Fe, o mais alto reportado para este regime de AMF.",
+    "mensagem_principal": "Co-IONPs com morfologia inédita de bipirâmide cúbica, sintetizadas por método seed-and-growth, apresentam SAR de 14.686 W g−1 Fe — um dos mais altos reportados — e, quando funcionalizadas com LHRH e administradas por via intravenosa a 4 mg kg−1, são capazes de interromper o crescimento de tumores de câncer de ovário após uma única sessão de hipertermia magnética de 30 minutos, superando o estado da arte em hipertermia magnética sistêmica."
   },
   "custom_id": "56__Precision_Engineered_Cobalt_Doped_Iron_Oxide_Nanoparticles__"
 }

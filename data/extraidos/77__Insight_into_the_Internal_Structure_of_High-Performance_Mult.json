@@ -6,16 +6,16 @@
   "doi": "10.1021/acsmaterialsau.4c00021",
   "tipo_estudo": "clinico",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (termoterapia magnética) utiliza nanopartículas magnéticas que geram calor significativo quando expostas a campos magnéticos variantes no tempo em frequências e amplitudes adequadas. As NPs são injetadas no tumor e o calor gerado é usado para tratar o câncer.",
+    "conceito_tecnica": "A hipertermia magnética (termoterapia magnética) utiliza nanopartículas magnéticas que geram calor significativo quando expostas a campos magnéticos variáveis no tempo em frequências e amplitudes adequadas. As NPs são aplicadas no tumor e o calor gerado é usado para tratar o câncer.",
     "etapas_processo": [
-      "Síntese de nanopartículas magnéticas multicore de óxido de ferro revestidas com dextrana",
-      "Injeção intratumoral da suspensão de NPs no tecido canceroso",
-      "Aplicação de campo magnético alternante (AMF) com frequência e amplitude ajustadas",
-      "Geração de calor pelas NPs via dissipação de energia",
-      "Entrega de dose térmica ao tecido tumoral"
+      "Fabricação das nanopartículas multicore de óxido de ferro revestidas com dextrana",
+      "Injeção intratumoral da fluido magnético",
+      "Exposição ao campo magnético alternado (AMF) em frequência e amplitude ajustadas",
+      "Geração de calor pelas NPs no tecido tumoral",
+      "Entrega de dose térmica ao tumor"
     ],
-    "internalizacao_nps": "Injeção intratumoral direta da suspensão magnética no tecido do tumor pancreático, com dose de 0,5 mL contendo ca. 37,5 mgFe esperada para se dispersar em ca. 1,5 mL de tecido tumoral",
-    "aplicacao_campo": "O campo magnético alternante é aplicado com amplitude H0 ≅ 4 kA/m e frequência f ≅ 300 kHz, conforme empregado no estudo clínico de Barcelona.",
+    "internalizacao_nps": "Injeção intratumoral direta do fluido magnético no tumor pancreático",
+    "aplicacao_campo": "O campo magnético alternado é aplicado com amplitude H0 ≅ 4 kA/m e frequência f ≅ 300 kHz, conforme empregado no estudo clínico em Barcelona.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -27,12 +27,12 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "A capacidade de aquecimento magnético é determinada pela força das interações magnéticas dipolo-dipolo núcleo-núcleo internas, sendo que interações desmagnetizantes mais fracas estão associadas a maior eficiência de aquecimento.",
-    "descricao_mecanismo": "As NPs multicore possuem múltiplos núcleos de óxido de ferro separados por uma matriz não magnética de dextrana. As interações dipolo-dipolo entre os núcleos vizinhos geram um campo de interação interno (Hint) de natureza desmagnetizante, que atua dificultando o mecanismo de aquecimento magnético. Núcleos bem dispersos e separados (ca. 5 nm entre si) resultam em Hint mais fraco (ca. 4,8 kA/m), o que está associado a valores de ILP mais elevados e, portanto, maior capacidade de aquecimento."
+    "mecanismo_dominante": "As interações magnéticas dipolo-dipolo entre os núcleos de óxido de ferro (interações core-core) determinam a capacidade de aquecimento magnético das nanopartículas multicore.",
+    "descricao_mecanismo": "As interações core-core do tipo desmagnetizante atuam para dificultar o mecanismo de aquecimento magnético. Partículas com campo de interação mais fraco (Hint na faixa de 3,2 a 6,4 kA/m) exibem maiores valores de ILP. A separação uniforme e bem dispersa dos núcleos de óxido de ferro na matriz de dextrana resulta em interações desmagnetizantes relativamente fracas (Hint ≈ 4,8 kA/m), o que está associado ao excelente desempenho de aquecimento."
   },
   "q3": {
-    "material": "óxido de ferro (magnetita e/ou maghemita) em matriz de dextrana",
-    "composicao_quimica": "Fe3O4 e/ou γ-Fe2O3 em matriz de dextrana H-(C6H10O5)xOH (40 kDa)",
+    "material": "magnetita e/ou maghemita (óxido de ferro)",
+    "composicao_quimica": "Fe3O4 e/ou γ-Fe2O3",
     "dopagem": null,
     "tamanho_nm": 3.7,
     "faixa_tamanho_min_nm": null,
@@ -42,10 +42,10 @@
     "anisotropia": null,
     "revestimento": "dextrana (polissacarídeo de baixo peso molecular, 40 kDa)",
     "material_autorregulavel": false,
-    "SAR_W_g": 0.6,
-    "ILP_nHm2_kg": 5.0,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": 5.1,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "A dispersão uniforme e incomum dos núcleos de óxido de ferro (separação ca. 4-6 nm) na matriz de dextrana resulta em interação desmagnetizante núcleo-núcleo fraca (Hint ≈ 4,8 kA/m), o que é diretamente responsável pela elevada capacidade de aquecimento magnético (ILP ≈ 5,0-5,1 nHm2/kgFe) das NPs RCL."
+    "relacao_estrutura_propriedade": "A dispersão uniforme e incomum dos núcleos de óxido de ferro na matriz de dextrana, com distâncias core-core na faixa de 4-6 nm, resulta em interações desmagnetizantes fracas (Hint ≈ 4,8 kA/m), o que é identificado como o fator estrutural responsável pela elevada capacidade de aquecimento magnético das nanopartículas RCL."
   },
   "q4": {
     "amplitude_kA_m": 4.0,
@@ -54,16 +54,16 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": null,
     "forma_onda": null,
-    "dosimetria_termica": "SAR estimado como ca. 600 mW/g de tecido, assumindo 100% de retenção do material injetado; SLP medido como ca. 24 mW/mgFe",
-    "distribuicao_espacial_calor": "Dose de 0,5 mL de fluido magnético contendo ca. 37,5 mgFe esperada para se dispersar sobre ca. 1,5 mL de tecido tumoral",
-    "padronizacao_reportada": true
+    "dosimetria_termica": "A taxa de dissipação de energia nas partículas (SLP) é ca. 24 mW/mgFe; a dose térmica estimada (SAR) é ca. 600 mW/g de tecido, assumindo 100% de retenção do material injetado",
+    "distribuicao_espacial_calor": "O material injetado (0,5 mL contendo ca. 37,5 mgFe) é esperado dispersar-se por ca. 1,5 mL de tecido tumoral",
+    "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vitro",
     "linhagem_celular": null,
     "modelo_animal": null,
     "tipo_cancer": "pâncreas",
-    "concentracao_mg_mL": 197.0,
+    "concentracao_mg_mL": null,
     "agregacao_discutida": true,
     "viscosidade_discutida": false,
     "imobilizacao_celular": false,
@@ -79,31 +79,31 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Técnicas convencionais de TEM são limitadas a amostras secas em vácuo, cuja desidratação frequentemente altera o estado ou induz artefatos",
-      "A quantidade de dados coletados não foi suficiente para permitir análise quantitativa definitiva das distribuições de distâncias núcleo-núcleo",
-      "A alta prevalência de lamelas sobrepostas dificultou a estimativa confiável do número médio de núcleos por lamela ou nanorod",
-      "A resolução não foi suficiente para distinguir entre magnetita e maghemita nos padrões de difração de elétrons",
-      "Parâmetros macroscópicos de especificação do produto podem não refletir mudanças na microestrutura das NPs"
+      "A técnica de TEM convencional é limitada a amostras secas em vácuo, cuja desidratação frequentemente altera o estado ou induz artefatos",
+      "A quantidade de dados coletados não foi suficiente para permitir análise quantitativa definitiva das distribuições de distâncias core-core",
+      "A alta prevalência de lamelas sobrepostas dificultou a estimativa confiável do número médio de núcleos por lamela ou nanohaste",
+      "A resolução de difração de elétrons não foi suficiente para distinguir entre magnetita e maghemita",
+      "Os parâmetros macroscópicos de especificação do produto podem não ser significativamente afetados por mudanças na microestrutura, dificultando detecção de efeitos de envelhecimento"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Incentivar cientistas a realizarem análises estruturais detalhadas similares em outras nanopartículas magnéticas multicore",
-      "Utilizar TEM em fase líquida para descartar artefatos relacionados à preparação de amostras ao estudar nanomateriais em solução",
-      "Desenvolver nanomateriais sob medida com base na característica de design identificada: dispersão uniforme dos núcleos magnéticos"
+      "Encorajar cientistas a realizar análises estruturais detalhadas similares em outras nanopartículas magnéticas multicore",
+      "Utilizar TEM em fase líquida para descartar artefatos relacionados à preparação de amostras em nanomateriais destinados a uso em solução",
+      "Aprofundar a compreensão da morfologia estrutural de materiais multicore, incluindo estudos em ambiente líquido nativo, para garantir o desenvolvimento confiável e a translação clínica robusta"
     ],
     "gaps_identificados": [
-      "Ausência prévia de estudos de imageamento abrangentes sobre as propriedades estruturais, morfológicas e topológicas internas de NPs multicore de melhor desempenho para aquecimento magnético",
-      "Falta de conexão direta previamente estabelecida entre propriedades estruturais e funcionais das NPs multicore usadas em termoterapia magnética",
-      "Origem e natureza exatas dos 'nanorods' observados permanecem não totalmente elucidadas"
+      "Ausência de estudos de imagem abrangentes em NPs multicore de melhor desempenho para aquecimento magnético em relação às suas propriedades estruturais, morfológicas e topológicas internas",
+      "Falta de conexão direta entre propriedades estruturais e funcionais de NPs multicore usadas em termoterapia magnética",
+      "Necessidade de melhor compreensão da origem e natureza das nanohastes observadas nas NPs RCL"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo estabelece quantitativamente a relação entre o campo de interação dipolar núcleo-núcleo (Hint ≈ 4,8 kA/m, medido por análise de Henkel plot) e as distâncias de separação núcleo-núcleo observadas por TEM, validando um modelo de ponto-dipolo para prever separações de ca. 5 nm.",
-    "integracao_engenharia": "A identificação da dispersão uniforme dos núcleos como característica de design chave fornece um parâmetro estrutural concreto para o desenvolvimento futuro de nanomateriais sob medida para aplicações clínicas de termoterapia magnética.",
-    "integracao_biologia": "O estudo caracteriza NPs atualmente em uso em um ensaio clínico para tratamento de câncer pancreático localmente avançado no Hospital Vall d'Hebron de Barcelona, conectando propriedades nanoestruturais a aplicações terapêuticas reais.",
-    "integracao_materiais": "A combinação de TEM multimodalidade (convencional, HRTEM, cryo-TEM, HAADF-STEM e TEM em fase líquida) revelou que os núcleos de óxido de ferro de 3,7 nm estão incomumente bem dispersos na matriz de dextrana lamelar, com separações de 4-6 nm, e que a dextrana cristaliza no polimorfo hidratado de baixa temperatura.",
-    "mensagem_principal": "A elevada performance de aquecimento magnético das NPs multicore RCL (ILP ≈ 5,0-5,1 nHm2/kgFe) está diretamente relacionada à dispersão uniforme e incomum de seus núcleos de óxido de ferro (~3,7 nm) na matriz de dextrana, resultando em uma interação desmagnetizante núcleo-núcleo relativamente fraca (Hint ≈ 4,8 kA/m), o que constitui uma característica de design importante para o desenvolvimento futuro de nanomateriais para termoterapia clínica."
+    "integracao_fisica": "O artigo aplica análise de plot de Henkel e modelagem de dipolo pontual para quantificar o campo de interação core-core (Hint ≈ 4,8 kA/m) e correlacioná-lo com as distâncias de separação observadas por TEM em fase líquida.",
+    "integracao_engenharia": "O estudo fornece uma característica de design importante para o desenvolvimento futuro de nanomateriais sob medida para termoterapia, identificando que a dispersão uniforme dos núcleos na matriz de dextrana é o fator estrutural determinante do alto desempenho de aquecimento.",
+    "integracao_biologia": "As NPs RCL estão sendo usadas em um estudo clínico para tratamento de câncer pancreático localmente avançado, demonstrando a relevância translacional dos achados estruturais para aplicações biomédicas reais.",
+    "integracao_materiais": "A combinação de TEM multimodalidade (convencional, HRTEM, cryo-TEM, STEM, TEM em fase líquida e tomografia eletrônica) revelou que os núcleos de óxido de ferro de 3,7 nm estão incomumente bem dispersos em lamelas irregulares de dextrana (30-90 nm), com separações core-core de 4-6 nm.",
+    "mensagem_principal": "A principal contribuição do artigo é identificar o elo estrutura-função nas nanopartículas RCL: a dispersão excepcionalmente uniforme dos núcleos de óxido de ferro na matriz de dextrana (separações de 4-6 nm) resulta em interações desmagnetizantes fracas (Hint ≈ 4,8 kA/m), o que explica o alto ILP (5,1 nHm²/kgFe) e o excelente desempenho de aquecimento magnético dessas nanopartículas multicore usadas clinicamente."
   },
   "custom_id": "77__Insight_into_the_Internal_Structure_of_High-Performance_Mult"
 }

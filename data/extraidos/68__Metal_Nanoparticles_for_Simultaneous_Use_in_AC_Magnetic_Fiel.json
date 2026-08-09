@@ -6,16 +6,16 @@
   "doi": "10.1002/jbm.a.37817",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "MHT é um tipo de terapia térmica local para câncer que aumenta a temperatura (>40°C) na área do tumor utilizando nanopartículas magnéticas e campo magnético alternado (AC). As NPs atuam como agentes teranósticos por combinarem função terapêutica e diagnóstica.",
+    "conceito_tecnica": "MHT é um tipo de terapia térmica local para câncer que aumenta a temperatura (>40°C) na área do tumor utilizando nanopartículas magnéticas e campo magnético alternado (AC). As NPs atuam como agentes teranósticos, combinando capacidades terapêuticas e diagnósticas.",
     "etapas_processo": [
-      "Síntese das NPs magnéticas por decomposição térmica sob diferentes condições",
-      "Caracterização das NPs por TEM, XRD, XPS e VSM",
-      "Dispersão das NPs em solvente (tolueno) na concentração de 1 mg/mL",
-      "Aplicação do campo magnético alternado ao sistema de hiperthermia",
-      "Registro da temperatura por sensor de fibra óptica e cálculo do SAR"
+      "Síntese das NPs magnéticas por decomposição térmica",
+      "Dispersão das NPs no meio de interesse",
+      "Aplicação de campo magnético alternado (AMF)",
+      "Geração de calor pelas NPs sob o AMF",
+      "Aumento de temperatura na região tumoral acima de 40°C"
     ],
     "internalizacao_nps": null,
-    "aplicacao_campo": "O campo magnético alternado é aplicado por um sistema de hiperthermia magnética (MSI Automation) a 70% de potência e frequência de 200 kHz.",
+    "aplicacao_campo": "O campo magnético alternado é aplicado às NPs dispersas em meio líquido utilizando um sistema de hipertermia magnética (MSI Automation) a 70% de potência e frequência de 200 kHz.",
     "janela_termica_min_C": 40.0,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -27,13 +27,13 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O artigo descreve a geração de calor pelas NPs sob campo magnético alternado sem especificar o mecanismo dominante entre relaxação de Néel, Browniana ou histerese.",
-    "descricao_mecanismo": "O artigo menciona que as NPs magnéticas geram calor sob campo magnético alternado e que o valor SAR representa o acúmulo de calor causado pelo campo eletromagnético. Não são detalhados os mecanismos físicos específicos de dissipação de energia. A eficiência de aquecimento é avaliada por curvas tempo-temperatura e pelo cálculo do SAR."
+    "mecanismo_dominante": "O artigo não especifica o mecanismo dominante de geração de calor, limitando-se a quantificar o SAR como representação da acumulação de calor causada pelo campo eletromagnético.",
+    "descricao_mecanismo": "O artigo menciona que as NPs magnéticas geram calor sob campo magnético alternado, quantificado pelo valor de SAR (taxa de absorção específica). O SAR representa a acumulação de calor causada pelo campo eletromagnético nas NPs. Não são discutidos mecanismos físicos específicos como relaxação de Néel, Browniana ou perdas por histerese."
   },
   "q3": {
     "material": "óxido de ferro dopado com Zn e/ou Mn",
-    "composicao_quimica": "Fe3O4 (magnetita) e variantes dopadas com Zn e Mn (Fe-Zn-O, Fe-Mn-O, Fe-Zn-Mn-O)",
-    "dopagem": "Zinco (Zn) e Manganês (Mn)",
+    "composicao_quimica": "Fe3O4 (magnetita), FeO (wustita), Fe2O3, ZnxFe3-xO4, MnxFe3-xO4",
+    "dopagem": "Zn e Mn",
     "tamanho_nm": null,
     "faixa_tamanho_min_nm": 8.0,
     "faixa_tamanho_max_nm": 229.06,
@@ -45,7 +45,7 @@
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 71.0,
-    "relacao_estrutura_propriedade": "O tamanho, forma e composição das NPs influenciam diretamente suas propriedades magnéticas e de aquecimento; NPs maiores tendem a apresentar melhor desempenho em MHT, enquanto a dopagem com Mn melhora o contraste em MRI T1 e a dopagem com Zn melhora o contraste em MRI T2. A redução da quantidade de dopante metálico aumenta o tamanho médio das partículas e afeta a saturação magnética."
+    "relacao_estrutura_propriedade": "O tamanho e a composição das NPs afetam diretamente o desempenho em MHT e MRI: NPs maiores tendem a melhorar o desempenho em MHT, enquanto a dopagem com Mn melhora o contraste T1 em MRI e a dopagem com Zn melhora o contraste T2. A quantidade de dopante controla o tamanho das partículas — menor quantidade de dopante resulta em partículas maiores."
   },
   "q4": {
     "amplitude_kA_m": null,
@@ -54,7 +54,7 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 10.0,
     "forma_onda": null,
-    "dosimetria_termica": "Sensor de fibra óptica imerso na dispersão da amostra, com registro de gráfico tempo-temperatura e cálculo do SAR pela fórmula: SAR = (C_tolueno × m_amostra / m_Fe) × (dT/dt)",
+    "dosimetria_termica": "Sensor de fibra óptica inserido na dispersão da amostra para registro do gráfico temperatura-tempo; SAR calculado a partir da inclinação da curva de aquecimento usando calor específico do tolueno e massa de Fe determinada por ICP-MS",
     "distribuicao_espacial_calor": null,
     "padronizacao_reportada": false
   },
@@ -79,33 +79,31 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "NPs de óxido de ferro menores que 5 nm têm filtração renal muito rápida, o que pode não ser vantajoso para uso dual em MHT e MRI",
-      "O cálculo do SAR considerou apenas a quantidade de Fe, o que pode introduzir discrepâncias nos resultados de amostras dopadas",
-      "NPs produzidas com 1-OD não puderam ser coletadas por ímã ou centrifugação, limitando sua utilização",
-      "Algumas condições de síntese resultaram em produto insuficiente ou sem formação de NPs coletáveis",
-      "Investigações adicionais são necessárias para compreensão mais abrangente do comportamento das NPs sob campo magnético"
+      "NPs de óxido de ferro muito pequenas (≤5 nm) apresentam filtração renal rápida, o que pode não ser vantajoso para uso dual MHT+MRI",
+      "O SAR é calculado considerando apenas a quantidade de Fe, o que pode não refletir adequadamente a contribuição dos metais dopantes",
+      "NPs produzidas com 1-OD não puderam ser coletadas, limitando sua avaliação",
+      "Investigações adicionais são necessárias para compreender completamente o comportamento das NPs sob campo magnético",
+      "As condições de síntese ideais para NPs teranósticas simultâneas MRI+MHT ainda não estão claramente elucidadas na literatura"
     ],
     "problemas_SAR_ILP": true,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Realizar investigações mais abrangentes sobre o comportamento das NPs sob campo magnético",
-      "Estudar a aplicação das NPs candidatas (especialmente MNP-15) em estudos biológicos e pré-clínicos",
-      "Explorar o papel exato do éter benzílico na redução de íons metálicos e controle de tamanho",
-      "Desenvolver condições de síntese que otimizem simultaneamente MHT e MRI"
+      "Investigações adicionais sobre o comportamento das NPs sob campo magnético para compreensão mais abrangente",
+      "Desenvolvimento de NPs com síntese otimizada para uso dual simultâneo em MRI e MHT",
+      "Avaliação da MNP-15 como candidata ideal para estudos futuros em MHT e MRI combinados"
     ],
     "gaps_identificados": [
-      "Condições de síntese para obtenção de NPs teranósticas ideais para uso simultâneo em MRI e MHT não foram claramente elucidadas na literatura",
-      "Estudos sobre o uso de materiais de produção para ambas as finalidades (MHT e MRI) são limitados",
-      "Ausência de avaliação de toxicidade e estudos biológicos celulares no presente trabalho",
-      "Mecanismos físicos de dissipação de calor (Néel, Browniano, histerese) não foram investigados individualmente"
+      "Estudos sobre condições de síntese para NPs teranósticas ideais (MRI+MHT simultâneos) são limitados",
+      "Mecanismos detalhados de crescimento de NPs pelo método de decomposição térmica ainda não estão completamente elucidados",
+      "Impacto de cada componente e condição de reação no produto final ainda precisa ser melhor compreendido"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo quantifica a eficiência de aquecimento das NPs sob campo magnético alternado por meio do cálculo do SAR, relacionando parâmetros físicos do campo com a capacidade de geração de calor dos diferentes materiais.",
-    "integracao_engenharia": "O trabalho otimiza condições de síntese por decomposição térmica — incluindo solventes, surfactantes, temperatura e tempo de reação — para engenharia de NPs com propriedades dual-funcionais controláveis para MHT e MRI.",
-    "integracao_biologia": "O estudo avalia o potencial teranóstico das NPs para aplicação em diagnóstico por MRI e tratamento térmico de câncer, identificando candidatos com capacidade de atuar simultaneamente em imagem e terapia.",
-    "integracao_materiais": "A investigação sistemática da dopagem com Zn e Mn em óxido de ferro demonstra como a composição química, tamanho e forma das NPs determinam suas propriedades magnéticas, de aquecimento e de contraste em MRI.",
-    "mensagem_principal": "O estudo demonstra que NPs de óxido de ferro dopadas com metais, especialmente MNP-15 (Fe-Mn-O com baixa dopagem de Mn), são candidatas promissoras para uso teranóstico simultâneo em hiperthermia magnética e ressonância magnética, sendo a escolha adequada de solvente (éter benzílico), surfactante e precursor metálico determinante para o controle de tamanho, forma e propriedades magnéticas das NPs."
+    "integracao_fisica": "O estudo quantifica o SAR das NPs sob campo magnético alternado a 200 kHz, relacionando tamanho, composição e capacidade de geração de calor eletromagnético.",
+    "integracao_engenharia": "O trabalho otimiza 17 condições diferentes de síntese por decomposição térmica, explorando variáveis como solventes, surfactantes, temperatura e tempo de reação para controlar tamanho e forma das NPs visando aplicações teranósticas.",
+    "integracao_biologia": "O estudo avalia o potencial das NPs como agentes de contraste MRI (T1 e T2) em phantoms de agar e como agentes de hipertermia magnética para tratamento de câncer, identificando MNP-15 como candidata dual ideal.",
+    "integracao_materiais": "A dopagem com Zn e Mn em NPs de óxido de ferro é sistematicamente investigada por TEM, XRD, XPS e VSM, revelando como a composição química e a quantidade de dopante controlam tamanho, cristalinidade, estado de oxidação e propriedades magnéticas.",
+    "mensagem_principal": "Este estudo demonstra que NPs de óxido de ferro dopadas com metais (especialmente Mn) sintetizadas por decomposição térmica em éter benzílico podem ser otimizadas para uso teranóstico simultâneo em hipertermia magnética e ressonância magnética, sendo a MNP-15 (Fe-Mn, 0,1 mmol Mn) identificada como a candidata mais promissora para ambas as aplicações."
   },
   "custom_id": "68__Metal_Nanoparticles_for_Simultaneous_Use_in_AC_Magnetic_Fiel"
 }

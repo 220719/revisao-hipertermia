@@ -6,21 +6,22 @@
   "doi": "10.1002/adhm.202304044",
   "tipo_estudo": "in vivo",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MH) utiliza nanopartículas magnéticas como mediadoras para converter energia de campos magnéticos alternantes (AMF) em calor, sendo aplicada como terapia contra o câncer. As NPs acumulam-se no tumor e, sob exposição ao AMF, geram calor localizado para destruir células tumorais.",
+    "conceito_tecnica": "A hipertermia magnética (MH) utiliza nanopartículas magnéticas como mediadoras para conversão de energia de campo magnético alternante em calor, visando o tratamento do câncer. As NPs acumulam-se no tumor e, sob exposição ao AMF, geram calor local suficiente para induzir morte celular tumoral.",
     "etapas_processo": [
-      "Síntese e funcionalização das NPs magnéticas com revestimento PEGilado",
-      "Avaliação de citotoxicidade in vitro",
-      "Administração intravenosa das NPs em camundongos com tumor",
-      "Rastreamento in vivo das NPs por MRI e confirmação do acúmulo tumoral pelo efeito EPR após 24 h",
-      "Exposição única ao AMF (121,85 kHz, 17,5 kA m−1) por 30 min",
-      "Monitoramento do volume tumoral por MRI ao longo do tempo",
-      "Análise histológica ao final do experimento"
+      "Síntese e funcionalização das nanopartículas magnéticas (ZnFe-PEG)",
+      "Administração intravenosa das NPs",
+      "Acumulação tumoral passiva via efeito EPR (24 h)",
+      "Rastreamento in vivo por MRI (T2-weighted)",
+      "Exposição ao campo magnético alternante (AMF) por 30 min",
+      "Monitoramento da resposta terapêutica por MRI volumétrico"
     ],
-    "internalizacao_nps": "As NPs acumulam-se passivamente no tumor via efeito EPR (Enhanced Permeability and Retention), sendo captadas predominantemente na periferia tumoral vascularizada, difundindo-se para áreas pouco vascularizadas onde ficam retidas devido à ausência de drenagem eficiente.",
-    "aplicacao_campo": "O AMF é aplicado externamente com frequência de 121,85 kHz e amplitude de 17,5 kA m−1 (220 Gauss) por 30 minutos utilizando um equipamento DM5 Nanoscale Biomagnetic.",
+    "internalizacao_nps": "As NPs acumulam-se passivamente no tumor via efeito EPR (Enhanced Permeability and Retention), com acúmulo predominante na periferia tumoral vascularizada após 24 h da injeção intravenosa",
+    "aplicacao_campo": "O AMF é aplicado com frequência de 121,85 kHz e amplitude de 17,5 kA m−1 por 30 minutos utilizando o equipamento DM5 Nanoscale Biomagnetic",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
-    "vias_morte_celular": []
+    "vias_morte_celular": [
+      "necrose"
+    ]
   },
   "q2": {
     "relaxacao_neel": true,
@@ -29,25 +30,25 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "As perdas por relaxação (Browniana e de Néel) são os principais mecanismos de conversão magnético-térmica para NPs superparamagnéticas, enquanto perdas por histerese e correntes de Foucault são negligenciáveis nesse regime.",
-    "descricao_mecanismo": "O SAR das NPs magnéticas é descrito por três componentes: perdas por histerese (área do laço de histerese × frequência), perdas por relaxação (tempo efetivo de relaxação combinando Browniana τB e Néel τN) e perdas por correntes de Foucault. Para NPs superparamagnéticas, as perdas por histerese e correntes de Foucault são negligenciáveis. A relaxação Browniana depende da viscosidade do meio e do raio hidrodinâmico, enquanto a relaxação de Néel depende exponencialmente da constante de anisotropia e do volume da partícula."
+    "mecanismo_dominante": "As perdas por relaxação (Néel e Browniana) são os mecanismos predominantes para NPs superparamagnéticas, sendo as perdas por histerese e correntes de Foucault negligenciáveis nesse regime.",
+    "descricao_mecanismo": "O SAR das NPs magnéticas é descrito por três componentes principais: perdas por histerese, perdas por relaxação (relaxação Browniana τB e relaxação de Néel τN) e perdas por correntes de Foucault. Para NPs superparamagnéticas, as perdas por histerese e correntes de Foucault são negligenciáveis. O tempo de relaxação efetivo é dado pela combinação harmônica de τB e τN, sendo τB dependente da viscosidade do meio e do raio hidrodinâmico, e τN dependente da constante de anisotropia K e do volume da partícula."
   },
   "q3": {
-    "material": "ferrita de zinco e ferro (ZnFe) e ZnFe@Fe",
-    "composicao_quimica": "ZnFe (liga de Zn e Fe, estrutura tipo γ-Fe2O3 ou Fe3O4 dopada com Zn); ZnFe@Fe (estrutura de liga com predominância de Fe)",
+    "material": "ferrita de zinco-ferro (ZnFe) e ZnFe@Fe",
+    "composicao_quimica": "ZnxFe3-xO4 / γ-Fe2O3 ou Fe3O4 dopada com Zn; ligas ZnFe com shell de Fe",
     "dopagem": "Zinco (Zn)",
     "tamanho_nm": null,
     "faixa_tamanho_min_nm": 19.2,
     "faixa_tamanho_max_nm": 32.8,
     "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia de troca na interface das fases magnéticas (exchange-coupling) mencionada como conceito; constante de anisotropia K apontada como fator crítico no SAR",
+    "anisotropia": "anisotropia magnetocristalina (constante K mencionada como fator crítico no SAR); anisotropia de troca na interface das fases magnéticas em estruturas core-shell",
     "revestimento": "PEG",
     "material_autorregulavel": false,
     "SAR_W_g": 1730.5,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 92.5,
-    "relacao_estrutura_propriedade": "O tamanho, composição de Zn e estrutura cristalina das NPs determinam suas propriedades magnéticas (superparamagnetismo, paramagnetismo ou ferromagnetismo) e a eficiência de conversão magnético-térmica (SAR); a constante de anisotropia K é apontada como fator crítico que as teorias clássicas não conseguem prever completamente."
+    "relacao_estrutura_propriedade": "O tamanho, composição (teor de Zn) e estrutura cristalina das NPs influenciam fortemente as propriedades magnéticas (Ms, comportamento superparamagnético/ferromagnético) e a conversão magnético-térmica (SAR). A reorganização cristalina inesperada em NPs de liga resultou em estruturas e propriedades não previstas pelas teorias clássicas."
   },
   "q4": {
     "amplitude_kA_m": 17.5,
@@ -56,13 +57,13 @@
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": 30.0,
     "forma_onda": null,
-    "dosimetria_termica": "Estabilidade térmica avaliada por ciclos AMF on-off (4 ciclos) e cálculo do SAR a partir da resposta térmica",
-    "distribuicao_espacial_calor": "Não descrita explicitamente; o calor é gerado nas regiões de acúmulo das NPs no tumor (periferia tumoral vascularizada)",
+    "dosimetria_termica": "SAR calculado a partir da resposta térmica sob AMF (145,2 kHz e 580 Gauss) em ciclos on-off",
+    "distribuicao_espacial_calor": "Acúmulo predominante na periferia tumoral vascularizada, com anel mais escuro em zona mais profunda e ausência de NPs no núcleo necrótico avascular do tumor",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vivo",
-    "linhagem_celular": "4T1",
+    "linhagem_celular": "4T1 e HFF-1",
     "modelo_animal": "camundongo",
     "tipo_cancer": "mama",
     "concentracao_mg_mL": 10.0,
@@ -75,41 +76,41 @@
     "toxicidade_avaliada": true,
     "localizacao_intracelular": true,
     "apoptose": false,
-    "necrose": false,
+    "necrose": true,
     "ferroptose": false,
     "imunomodulacao": false
   },
   "q6": {
     "limitacoes_reportadas": [
-      "As NPs ZnFe@Fe-PEG apresentaram instabilidade coloidal em meio aquoso, inviabilizando sua aplicação in vivo",
-      "A constante de anisotropia K não foi avaliada experimentalmente, limitando a compreensão completa do SAR",
-      "As teorias clássicas de nucleação e crescimento (LaMer) não foram capazes de prever completamente o tamanho/forma final das NPs",
-      "A teoria quântica de esfera externa não explicou completamente os valores de r2 obtidos",
-      "O número reduzido de animais por grupo (n=4) e a utilização de um único modelo tumoral limitam a generalização dos resultados",
-      "Não foi determinado o número ótimo de exposições ao AMF para maximizar o efeito terapêutico"
+      "NPs ZnFe@Fe-PEG apresentaram instabilidade coloidal em meio aquoso, inviabilizando aplicação in vivo",
+      "Constante de anisotropia K não foi avaliada experimentalmente neste trabalho",
+      "Acúmulo tumoral limitado pelo efeito EPR, sem direcionamento ativo",
+      "Apenas um único ciclo de AMF foi testado; número ótimo de exposições não determinado",
+      "Tamanho amostral pequeno (n=4 por grupo experimental)",
+      "Teorias clássicas de nucleação/crescimento e de nanomagnetismo não explicaram completamente os resultados obtidos"
     ],
     "problemas_SAR_ILP": true,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Investigar a constante de anisotropia K das NPs para melhor compreensão do fenômeno de conversão magnético-térmica",
-      "Realizar estudos adicionais para determinar o número ótimo de exposições ao AMF aproveitando as NPs remanescentes no tumor",
-      "Aprofundar pesquisas em nanomagnetsmo para elucidar os mecanismos subjacentes aos resultados não previstos pelas teorias clássicas",
-      "Investigar doses mais elevadas de NPs se necessário e seguro para futuros estudos de MH",
-      "Explorar o potencial das NPs remanescentes para entrega prolongada de fármacos"
+      "Estudos adicionais para melhor compreensão do fenômeno do nanomagnetismo em escala nanométrica",
+      "Determinação do número ótimo de exposições ao AMF para tratamento",
+      "Avaliação de doses mais altas de NPs se necessário e seguro",
+      "Exploração das NPs remanentes no tumor para exposições múltiplas ao AMF ou entrega prolongada de fármacos",
+      "Aprofundamento na caracterização da constante de anisotropia K e seu papel no SAR"
     ],
     "gaps_identificados": [
-      "Incompreensão dos mecanismos de nanomagnetsmo que explicam comportamentos magnéticos inesperados em NPs de tamanho similar",
-      "Limitações das teorias clássicas de nucleação e crescimento para prever a estrutura final de NPs dopadas",
-      "Ausência de modelos teóricos completos para prever o SAR considerando a constante de anisotropia K",
-      "Controvérsia sobre a eficiência do efeito EPR como mecanismo de entrega terapêutica de NPs em tumores"
+      "Teorias clássicas de nucleação e crescimento (LaMer) não predizem adequadamente tamanho/forma final das NPs dopadas com Zn",
+      "Teorias clássicas de nanomagnetismo não explicam completamente o comportamento magnético e de relaxividade observados",
+      "Mecanismo de reorganização cristalina em ligas ZnFe@Fe não completamente elucidado",
+      "Ausência de estudos de protein corona que podem afetar o comportamento in vivo"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo desafia teorias clássicas de nanomagnetsmo ao demonstrar comportamentos magnéticos inesperados (paramagnético, superparamagnético e ferromagnético) em NPs de composições e tamanhos similares, evidenciando a necessidade de novos modelos físicos para explicar o fenômeno.",
-    "integracao_engenharia": "O trabalho demonstra, pela primeira vez, terapia de hipertermia magnética bem-sucedida com NPs administradas intravenosamente em dose única e única exposição ao AMF em frequência clinicamente adequada, utilizando o efeito EPR passivo para direcionamento tumoral.",
-    "integracao_biologia": "As NPs ZnFe1-PEG mostraram alta biocompatibilidade in vitro e in vivo, acúmulo tumoral passivo via EPR após 24 h, eliminação predominantemente hepatobiliar, e eficácia terapêutica com retardo significativo do crescimento tumoral em modelo murino de câncer de mama 4T1.",
-    "integracao_materiais": "A síntese por decomposição térmica de oleatos metálicos resultou em NPs de liga ZnFe com SAR uma ordem de grandeza superior às IONPs convencionais de tamanho similar, desafiando a teoria de resposta linear e demonstrando que a dopagem com Zn e a estrutura cristalina determinam criticamente as propriedades magnéticas e de conversão de calor.",
-    "mensagem_principal": "Este trabalho demonstra pela primeira vez a aplicação bem-sucedida de NPs magnéticas de liga ZnFe administradas intravenosamente para terapia de hipertermia magnética rastreada por MRI em tumores xenográficos passivamente direcionados, utilizando dose única baixa e única exposição a campo magnético alternante em frequência clinicamente adequada. Os resultados desafiam teorias clássicas de crescimento de nanopartículas e nanomagnetsmo, evidenciando a necessidade de novos modelos para explicar as propriedades observadas."
+    "integracao_fisica": "O artigo desafia teorias clássicas de nanomagnetismo ao demonstrar comportamentos magnéticos (superparamagnético, paramagnético, ferromagnético) inesperados em NPs de tamanhos e composições similares, apontando lacunas no entendimento físico do magnetismo em nanoescala.",
+    "integracao_engenharia": "Demonstra pela primeira vez a aplicação bem-sucedida de NPs administradas intravenosamente para terapia de hipertermia magnética rastreada por MRI em tumores passivamente direcionados, usando condições clínicas adequadas de AMF com dose única e baixa concentração.",
+    "integracao_biologia": "Avaliou a acumulação tumoral passiva via EPR, farmacocinética in vivo em múltiplos órgãos, biocompatibilidade, excreção hepatobiliar e resposta terapêutica em modelo murino ortotópico de câncer de mama 4T1.",
+    "integracao_materiais": "Sintetizou e caracterizou NPs de ZnFe single-core e ligas ZnFe@Fe por decomposição térmica, revelando que a reorganização cristalina inesperada gera estruturas de liga ao invés de core-shell, desafiando teorias clássicas de crescimento de nanopartículas.",
+    "mensagem_principal": "Este trabalho demonstra, pela primeira vez, a terapia bem-sucedida de hipertermia magnética rastreada por MRI utilizando NPs de ZnFe-PEG administradas intravenosamente em dose única e baixa, com acumulação tumoral via EPR e exposição única a AMF em frequência clinicamente aplicável, ao mesmo tempo em que desafia as teorias clássicas de nucleação, crescimento e nanomagnetismo."
   },
   "custom_id": "88__Smart_Design_of_ZnFe_and_ZnFe_Fe_Nanoparticles_for_MRI-Track"
 }

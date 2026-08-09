@@ -6,17 +6,17 @@
   "doi": "10.1039/d5ma00412h",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética envolve a exposição de tecido ou órgão injetado a temperatura elevada na faixa de 42–47 °C, gerada por nanopartículas magnéticas sob campo magnético alternante de alta frequência. O calor gerado danifica proteínas e componentes celulares das células cancerígenas, enquanto células saudáveis toleram o estresse ativando proteínas de choque térmico.",
+    "conceito_tecnica": "A hipertermia magnética envolve a exposição de tecidos ou órgãos injetados a temperaturas elevadas na faixa de 42–47°C, utilizando nanopartículas magnéticas que geram calor sob campo magnético alternante de alta frequência. O calor gerado danifica proteínas e componentes celulares das células cancerígenas, enquanto células saudáveis toleram o estresse ativando proteínas de choque térmico.",
     "etapas_processo": [
-      "Síntese das nanopartículas de ferrita Mn-Zn dopadas pelo método de co-precipitação",
+      "Síntese das nanopartículas de ferrita Mn–Zn por co-precipitação",
       "Caracterização física, magnética e biológica das nanopartículas",
-      "Dispersão das nanopartículas em água deionizada em diferentes concentrações",
-      "Exposição das nanopartículas a campo magnético alternante (AMF) com amplitude de 12,89 kA m⁻¹ e frequência de 336 kHz",
-      "Monitoramento do aumento de temperatura para estimativa dos valores de SAR",
-      "Avaliação da viabilidade celular de células cancerígenas A549 e normais HEK-293 sob condições de hipertermia simulada a 45 °C por 20 minutos"
+      "Dispersão das nanopartículas em meio aquoso em diferentes concentrações",
+      "Aplicação de campo magnético alternante (AMF) com amplitude de 12,89 kA/m e frequência de 336 kHz",
+      "Monitoramento do aumento de temperatura do meio para estimar SAR",
+      "Avaliação da viabilidade celular de células cancerígenas (A549) e normais (HEK-293) após tratamento hipertérmico"
     ],
-    "internalizacao_nps": "O artigo não descreve explicitamente o mecanismo de internalização das nanopartículas pelas células; os estudos de hipertermia foram realizados com incubação das células com o FMZ0.75 a diferentes concentrações sob temperatura de hipertermia simulada.",
-    "aplicacao_campo": "O campo magnético alternante foi aplicado por meio de uma unidade de aquecimento por indução de 8 espiras (EASYHEAT-8310, Ambrell UK) com amplitude de 12,89 kA m⁻¹ e frequência de 336 kHz por 15 minutos.",
+    "internalizacao_nps": "O artigo não descreve explicitamente a internalização das nanopartículas pelas células; os estudos de hipertermia foram realizados incubando as células com as nanopartículas sob condições de temperatura hipertérmica (45°C por 20 minutos), sem detalhar o mecanismo de internalização.",
+    "aplicacao_campo": "O AMF é aplicado por meio de uma unidade de aquecimento por indução de 8 espiras (EASYHEAT-8310, Ambrell UK) com amplitude de campo de 12,89 kA/m e frequência de 336 kHz por 15 minutos.",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 47.0,
     "vias_morte_celular": [
@@ -31,25 +31,25 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "Para nanopartículas de domínio único superparamagnéticas no tamanho de 13–16 nm, a geração de calor é governada principalmente pela relaxação de Néel, envolvendo a rotação dos superspins magnéticos.",
-    "descricao_mecanismo": "Sob AMF de alta frequência, as nanopartículas magnéticas geram calor por meio de perdas de histerese e relaxação (relaxação de Néel e Browniana). A relaxação de Néel envolve a rotação dos superspins internos das partículas, enquanto a relaxação Browniana envolve a rotação física das partículas no meio. Para partículas de domínio único superparamagnéticas, o processo de relaxação resulta em perdas de histerese dinâmica, dissipando energia durante cada ciclo do AMF, convertendo energia magnética em energia térmica."
+    "mecanismo_dominante": "A geração de calor nas nanopartículas FMZ de domínio único é governada predominantemente pela relaxação de Néel, devido ao comportamento superparamagnético e ao tamanho de partícula na faixa de 13–16 nm.",
+    "descricao_mecanismo": "Em nanopartículas magnéticas superparamagnéticas de domínio único sob AMF, o calor é gerado por perdas de relaxação de Néel (rotação dos superspins) e relaxação Browniana (rotação física das partículas), que resultam em perdas de histerese dinâmica similares à dissipação de energia durante o ciclo de AMF. A geração de calor depende das propriedades magnéticas das nanopartículas, especialmente da magnetização de saturação, do tamanho de partícula e da concentração, bem como dos parâmetros do campo aplicado. Interações dipolo-dipolo e aglomeração em concentrações mais elevadas podem reduzir a eficiência de aquecimento ao restringir os movimentos de relaxação individuais das partículas."
   },
   "q3": {
-    "material": "ferrita de Mn-Zn dopada (MnxZn1-xFe2O4)",
-    "composicao_quimica": "MnxZn1-xFe2O4 (x = 0, 0.25, 0.50, 0.75, 1.0)",
+    "material": "ferrita de Mn-Zn",
+    "composicao_quimica": "MnxZn1-xFe2O4 (x = 0, 0,25, 0,50, 0,75 e 1,0)",
     "dopagem": "Mn e Zn",
     "tamanho_nm": 14.8,
     "faixa_tamanho_min_nm": 13.6,
     "faixa_tamanho_max_nm": 15.7,
     "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia reduzida pela substituição de Zn no sítio tetraédrico, com anisotropia controlada pela distribuição catiônica de Mn e Zn nos sítios tetraédrico e octaédrico da estrutura espinélio inverso",
+    "anisotropia": "anisotropia controlada por distribuição catiônica nos sítios tetraédricos e octaédricos da estrutura espinélio inversa",
     "revestimento": null,
     "material_autorregulavel": false,
     "SAR_W_g": 173.24,
     "ILP_nHm2_kg": 3.1,
     "magnetizacao_saturacao_emu_g": 38.9,
-    "relacao_estrutura_propriedade": "O aumento do conteúdo de Mn expande o parâmetro de rede e aumenta o tamanho das partículas de 13,6 nm (FZ) a 15,7 nm (FM), com magnetização de saturação máxima de 38,90 emu g⁻¹ para FMZ0.75 (x=0,75), pois os íons Mn²⁺ contribuem para o momento magnético líquido via sítio B, enquanto os íons Zn²⁺ não magnéticos no sítio A reduzem o acoplamento antiferromagnético e favorecem o comportamento superparamagnético."
+    "relacao_estrutura_propriedade": "O conteúdo de Mn influencia linearmente o tamanho de partícula e o parâmetro de rede, com Mn2+ nos sítios octaédricos aumentando a magnetização de saturação até uma fração de 0,75, enquanto concentrações mais altas de Mn causam ocupação dos sítios tetraédricos, fortalecendo o acoplamento antiferromagnético e reduzindo a magnetização líquida. O tamanho ótimo de partícula identificado foi 14,7 nm e a fração de Mn ótima foi 0,7 para máximo SAR e magnetização."
   },
   "q4": {
     "amplitude_kA_m": 12.89,
@@ -58,8 +58,8 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 15.0,
     "forma_onda": null,
-    "dosimetria_termica": "Monitoramento da temperatura da solução ao longo do tempo; SAR calculado pela taxa inicial de aquecimento (método de inclinação linear) e pelo ajuste da curva completa com a equação Box-Lucas",
-    "distribuicao_espacial_calor": "Não descrita explicitamente; a temperatura foi medida na solução contendo as nanopartículas dispersas em água deionizada em diferentes concentrações (1, 3 e 5 mg mL⁻¹)",
+    "dosimetria_termica": "Monitoramento da temperatura do meio aquoso contendo as nanopartículas; SAR calculado pela inclinação inicial linear da curva de aquecimento e pela equação Box-Lucas (BL) sobre toda a curva",
+    "distribuicao_espacial_calor": "Não descrita explicitamente; o aquecimento foi avaliado macroscopicamente pela temperatura do meio de dispersão",
     "padronizacao_reportada": true
   },
   "q5": {
@@ -83,31 +83,34 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Os valores de ILP foram calculados assumindo partículas superparamagnéticas não interagentes (teoria de resposta linear), servindo como indicadores relativos e não como constantes intrínsecas do material",
-      "O método de inclinação linear para cálculo do SAR pode subestimar os valores em até 25% devido às suposições de condições adiabáticas e flutuações de temperatura insignificantes",
-      "Os estudos de hipertermia foram realizados em condições simuladas (banho a 45 °C) e não com aquecimento direto por AMF nas células",
-      "Ausência de revestimento funcional nas nanopartículas pode limitar sua estabilidade coloidal em meio biológico, especialmente para amostras com alto conteúdo de Mn"
+      "Os valores de SAR diminuem com o aumento da concentração devido a interações dipolo-dipolo e aglomeração das nanopartículas",
+      "O método de inclinação linear pode subestimar os valores de SAR em até 25% devido às suposições de condições adiabáticas",
+      "Os valores de ILP são indicadores relativos e não constantes intrínsecas do material, pois a teoria de resposta linear assume partículas superparamagnéticas não interagentes",
+      "Os estudos de hipertermia foram realizados simulando temperatura a 45°C sem utilizar AMF diretamente nas células, o que pode não refletir completamente a terapia real",
+      "A estabilidade coloidal diminui com o aumento do conteúdo de Mn, com o potencial zeta do FM (9,53 mV) indicando tendência à instabilidade"
     ],
     "problemas_SAR_ILP": true,
     "falta_padronizacao": true,
     "recomendacoes_futuras": [
-      "Explorar a aplicação das amostras FMZ para terapia adjuvante combinando hipertermia e entrega de fármacos usando polímeros termossensíveis",
-      "Otimizar a concentração e os parâmetros do AMF para regular a temperatura dentro da janela terapêutica sem ultrapassar os limites de hipertermia",
-      "Realizar estudos in vivo para validar a eficácia terapêutica e a biocompatibilidade das nanopartículas FMZ"
+      "Explorar as amostras FMZ como terapia adjuvante combinada com quimioterapia para entrega de fármacos usando polímeros termossensíveis",
+      "Otimizar a concentração de nanopartículas para equilibrar interações dipolo-dipolo e eficiência de aquecimento",
+      "Realizar estudos in vivo para validar a eficácia terapêutica e segurança das amostras FMZ",
+      "Investigar revestimentos superficiais para melhorar a estabilidade coloidal das amostras com maior conteúdo de Mn"
     ],
     "gaps_identificados": [
-      "Ausência de estudos in vivo para avaliação de biodistribuição, farmacocinética e eficácia terapêutica",
-      "Falta de avaliação do efeito da corona proteica sobre as propriedades magnéticas e de aquecimento das nanopartículas em meio biológico",
-      "Estudos de hipertermia realizados apenas com aquecimento simulado (banho térmico), sem demonstração do efeito de aquecimento induzido diretamente pelo AMF nas células",
-      "Ausência de revestimento superficial funcional que poderia melhorar a estabilidade coloidal e a direcionamento tumoral"
+      "Ausência de estudos in vivo para validar os resultados in vitro de hipertermia",
+      "Falta de revestimento superficial das nanopartículas para aplicações biológicas avançadas",
+      "Estudos de hipertermia celular foram simulados por banho térmico, não por AMF real aplicado às células com nanopartículas internalizadas",
+      "Não foram investigados mecanismos detalhados de morte celular (apoptose vs. necrose) nas células A549 tratadas",
+      "Limitada comparabilidade dos valores de SAR reportados na literatura devido ao uso de diferentes parâmetros de AMF"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo contribui para a física ao caracterizar o mecanismo de dissipação de energia magnética (relaxação de Néel e Browniana, perdas de histerese dinâmica) em nanopartículas de ferrita de domínio único superparamagnéticas e ao estabelecer relação quantitativa entre tamanho de partícula, magnetização de saturação e SAR por meio de uma função de pico matemática.",
-    "integracao_engenharia": "O trabalho contribui para a engenharia ao desenvolver e otimizar o processo de síntese por co-precipitação de ferritas Mn-Zn com composição controlada, identificando concentração ótima (3 mg mL⁻¹), tamanho de partícula ótimo (14,7 nm) e fração de Mn ótima (0,7) para maximizar a eficiência de aquecimento em aplicações de hipertermia magnética.",
-    "integracao_biologia": "O artigo contribui para a biologia ao demonstrar a citocompatibilidade das nanopartículas FMZ frente a células HEK-293 em concentrações de até 5 mg mL⁻¹ e ao evidenciar a morte seletiva de células cancerígenas A549 (redução de 35% na viabilidade) pela hipertermia, sem dano significativo às células normais, atribuída à ativação de vias de apoptose mediadas por TRAIL.",
-    "integracao_materiais": "O trabalho contribui para a ciência dos materiais ao elucidar como a co-dopagem com Mn e Zn em diferentes razões molares modifica o parâmetro de rede, a distribuição catiônica nos sítios tetraédrico e octaédrico, a morfologia esférica de domínio único, a magnetização de saturação e as propriedades de aquecimento das ferritas espinélio inverso.",
-    "mensagem_principal": "As nanopartículas de ferrita Mn-Zn (FMZ0.75, MnxZn1-xFe2O4 com x=0,75) sintetizadas por co-precipitação apresentam propriedades magnéticas otimizadas (MS = 38,90 emu g⁻¹, SAR = 173,24 W g⁻¹, ILP = 3,10 nH m² kg⁻¹), excelente citocompatibilidade e capacidade seletiva de induzir morte em células cancerígenas A549 por hipertermia, demonstrando forte potencial para aplicações em hipertermia magnética e terapia adjuvante ao quimioterápico."
+    "integracao_fisica": "O artigo contribui para a física ao elucidar os mecanismos de relaxação de Néel e Browniana e perdas de histerese dinâmica em nanopartículas de ferrita de domínio único, correlacionando tamanho de partícula, magnetização de saturação e SAR por meio de uma função de pico matemática.",
+    "integracao_engenharia": "O artigo contribui para a engenharia ao demonstrar a síntese otimizada de nanopartículas FMZ por co-precipitação, identificando parâmetros ótimos (tamanho de 14,7 nm e fração de Mn de 0,7) e condições de campo (12,89 kA/m, 336 kHz) para maximizar a eficiência de aquecimento em aplicações de hipertermia magnética.",
+    "integracao_biologia": "O artigo contribui para a biologia ao demonstrar a excelente citocompatibilidade das amostras FMZ contra células HEK-293 até 5 mg/mL e a eficácia seletiva da hipertermia em reduzir em 35% a viabilidade de células cancerígenas A549, enquanto células normais permanecem viáveis.",
+    "integracao_materiais": "O artigo contribui para a ciência dos materiais ao caracterizar detalhadamente como a codopagem de Mn e Zn modifica a estrutura espinélio inversa, o parâmetro de rede, a distribuição catiônica nos sítios A e B, e as propriedades magnéticas resultantes, estabelecendo relações quantitativas entre composição, estrutura e desempenho em hipertermia.",
+    "mensagem_principal": "Nanopartículas de ferrita Mn–Zn co-dopadas (MnxZn1-xFe2O4) sintetizadas por co-precipitação, especialmente a composição FMZ0.75, demonstram propriedades magnéticas otimizadas (MS = 38,90 emu/g, SAR = 173,24 W/g, ILP = 3,10 nH m² kg⁻¹) e excelente citocompatibilidade, tornando-as candidatos promissores para hipertermia magnética no tratamento do câncer, com tamanho ótimo de partícula de 14,7 nm e fração de Mn de 0,7 identificados como parâmetros-chave para desempenho máximo."
   },
   "custom_id": "76__Engineered_Mn-Zn-doped_ferrite_nanomaterials_-_exploring_mag"
 }

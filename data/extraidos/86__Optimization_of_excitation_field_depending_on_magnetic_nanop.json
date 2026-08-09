@@ -6,14 +6,15 @@
   "doi": "10.1063/5.0208914",
   "tipo_estudo": "in silico",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética utiliza a perda por histerese (P) de nanopartículas magnéticas sob excitação de corrente alternada para destruir células cancerígenas por meio de altas temperaturas. O campo alternado induz o aquecimento das NPs, que é usado para induzir hipertermia nas células tumorais.",
+    "conceito_tecnica": "A hipertermia magnética utiliza a perda por histerese de nanopartículas magnéticas sob excitação de corrente alternada para destruir células cancerígenas por meio de altas temperaturas. As NPs são excitadas por um campo alternado e o calor gerado é usado para induzir hipertermia nas células tumorais.",
     "etapas_processo": [
       "Aplicação de campo magnético alternado (AC) às nanopartículas magnéticas",
       "Geração de calor por perda por histerese das NPs",
-      "Destruição de células cancerígenas por elevação de temperatura"
+      "Elevação da temperatura nas células cancerígenas",
+      "Destruição das células tumorais por hipertermia"
     ],
-    "internalizacao_nps": "As NPs são usualmente ligadas (imobilizadas) às células cancerígenas nas aplicações de hipertermia",
-    "aplicacao_campo": "Um campo senoidal H(t) = Hac sin(2πft) é aplicado às NPs com amplitude Hac e frequência f otimizadas segundo os parâmetros das NPs e a restrição de segurança C = Hac·f.",
+    "internalizacao_nps": "As NPs são geralmente ligadas às células cancerígenas (imobilizadas) nas aplicações de hipertermia",
+    "aplicacao_campo": "Um campo senoidal H(t) = Hac sin(2πft) é aplicado às NPs, com amplitude Hac e frequência f otimizadas sob restrição de segurança C = Hacf.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -25,8 +26,8 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": "senoidal",
-    "mecanismo_dominante": "A perda por histerese dominada pela relaxação de Néel é o principal mecanismo de aquecimento para NPs imobilizadas, enquanto NPs suspensas em altos campos operam predominantemente também no regime de relaxação de Néel.",
-    "descricao_mecanismo": "Para NPs imobilizadas com eixos fáceis orientados aleatoriamente, o vetor momento magnético reverte sua polaridade superando a barreira de energia de anisotropia quando um campo AC elevado é aplicado, gerando perda por histerese caracterizada pelo parâmetro κ de relaxação de Néel. Para NPs suspensas em altos valores de hac, a redução do tempo de relaxação de Néel τN(h) com o aumento do campo é muito mais significativa do que a do tempo de relaxação Browniana τB(h), satisfazendo τN(h) ≪ τB(h), de modo que o comportamento é dominado pela relaxação de Néel. O alinhamento parcial dos eixos fáceis de magnetização ocorre nas NPs suspensas quando τN(h) < 1/(2πf) ≪ τB(h), aumentando a perda por histerese em relação às NPs imobilizadas."
+    "mecanismo_dominante": "A perda por histerese via relaxação de Néel é o mecanismo dominante, especialmente para NPs imobilizadas e para altos valores de campo aplicado.",
+    "descricao_mecanismo": "Para NPs imobilizadas com eixos fáceis orientados aleatoriamente, o vetor de momento magnético inverte sua polaridade ao superar a barreira de energia de anisotropia quando um grande campo AC é aplicado, gerando perda por histerese. Para NPs suspensas, tanto a relaxação de Néel quanto a Browniana contribuem, porém a relaxação de Néel domina em altos campos porque o tempo de relaxação de Néel diminui muito mais rapidamente com o campo do que o tempo de relaxação Browniana. O alinhamento parcial dos eixos fáceis de magnetização ocorre em NPs suspensas quando τN(h) < 1/(2πf) ≪ τB(h), aumentando a perda em relação às NPs imobilizadas."
   },
   "q3": {
     "material": "Fe3O4",
@@ -37,13 +38,13 @@
     "faixa_tamanho_max_nm": 40.0,
     "forma": null,
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia efetiva (energia de anisotropia efetiva K, com eixos fáceis orientados aleatoriamente para NPs imobilizadas)",
+    "anisotropia": "anisotropia efetiva uniaxial com eixos fáceis orientados aleatoriamente",
     "revestimento": null,
     "material_autorregulavel": false,
     "SAR_W_g": 400.0,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "O diâmetro do núcleo magnético dc determina a energia de anisotropia (σ = KVc/kBT) e influencia fortemente a perda por histerese e sua sensibilidade à distribuição de tamanhos; uma magnetização de saturação Ms elevada é essencial pois a perda PNR é aproximadamente proporcional a Ms."
+    "relacao_estrutura_propriedade": "Um grande diâmetro de núcleo magnético (dcm ≥ 30 nm) ou alta constante de anisotropia K resultam em curvas de perda mais largas e menos sensíveis à distribuição de tamanhos, reduzindo a degradação da perda por histerese. A magnetização de saturação Ms é essencialmente proporcional à perda por histerese máxima PNR,max."
   },
   "q4": {
     "amplitude_kA_m": 19.74,
@@ -77,28 +78,27 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "A precisão da expressão empírica para a área de histerese (gNR) se deteriora para valores menores de σ (ex: σ = 10,1 para dcm = 20 nm), causando desvios na análise",
-      "O fator RA de aumento de perda por alinhamento dos eixos fáceis apresenta erros crescentes para dc > 34 nm pois a condição hac,op > hac,th não é satisfeita nessa região",
-      "Os efeitos das interações dipolo-dipolo magnéticas entre NPs foram negligenciados, devendo ser considerados quando a densidade de NPs for aumentada",
-      "A expressão empírica para a área de histerese perde precisão para grandes valores de dc"
+      "A expressão empírica para a área de histerese (Eqs. 2-9) perde precisão para valores menores de σ (ex: dc = 20 nm, σ = 10,1)",
+      "A expressão para RA (aumento de perda por alinhamento de eixos fáceis) apresenta erros crescentes para dc > 34 nm quando a condição hac,op > hac,th não é satisfeita",
+      "Os efeitos das interações dipolo-dipolo magnéticas entre NPs foram negligenciados, o que pode ser relevante em altas densidades de NPs"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Abordar o problema do fator RA para dc > dcm em que hac,op > hac,th não é satisfeito",
-      "Considerar os efeitos das interações dipolo-dipolo magnéticas entre NPs em densidades elevadas para aplicações de hipertermia"
+      "Abordar o problema da expressão de RA para dc > 34 nm em trabalhos futuros",
+      "Considerar os efeitos das interações dipolo-dipolo quando a densidade de NPs for aumentada para aplicações de hipertermia"
     ],
     "gaps_identificados": [
-      "Poucos estudos reportados sobre expressões explícitas para os valores ótimos de Hac e f como funções de C e parâmetros das NPs sob restrição de segurança",
-      "A relação entre NPs suspensas e imobilizadas para dc > 34 nm carece de expressões analíticas precisas para o fator RA"
+      "Há pouca literatura sobre expressões explícitas para os valores ótimos de Hac e f como funções de C e parâmetros das NPs sob restrição de segurança",
+      "A precisão das expressões analíticas para NPs suspensas com dc > 34 nm ainda precisa ser melhorada"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo deriva expressões analíticas para os mecanismos de relaxação de Néel e Browniana e perda por histerese de NPs magnéticas, estabelecendo a dependência física da perda com os parâmetros do campo e das NPs.",
-    "integracao_engenharia": "O artigo fornece expressões explícitas para otimização dos parâmetros do campo excitador (amplitude e frequência) sob restrição de segurança, úteis para o projeto de sistemas de hipertermia de alto desempenho.",
-    "integracao_biologia": "O estudo identifica que NPs imobilizadas ligadas a células cancerígenas são o caso de interesse clínico predominante, e que a distribuição de tamanhos das NPs afeta significativamente a eficiência de aquecimento em amostras práticas.",
-    "integracao_materiais": "O artigo determina os parâmetros materiais ideais das NPs (grande Ms, dcm ≥ 30 nm, K que satisfaça σ > 30) para maximizar a perda por histerese e minimizar a degradação causada pela distribuição de tamanhos do núcleo magnético.",
-    "mensagem_principal": "O artigo demonstra analítica e numericamente que é possível otimizar a amplitude e frequência do campo magnético alternado — respeitando a restrição de segurança C = Hac·f — para maximizar a perda por histerese de NPs magnéticas com diferentes diâmetros (20–40 nm), e identifica que uma grande magnetização de saturação e diâmetros/constantes de anisotropia que satisfaçam σ > 30 são essenciais para aplicações eficientes de hipertermia magnética."
+    "integracao_fisica": "O artigo desenvolve expressões analíticas para os mecanismos de relaxação de Néel e Browniana, descrevendo fisicamente como a perda por histerese depende dos parâmetros das NPs e das condições de excitação.",
+    "integracao_engenharia": "Fornece um método sistemático para otimizar a amplitude e frequência do campo de excitação AC de forma a maximizar a potência dissipada pelas NPs sob restrição de segurança biológica (C = Hacf = constante).",
+    "integracao_biologia": "Considera o contexto biológico ao restringir o produto Hacf para evitar efeitos colaterais em aplicações biomédicas e ao focar em NPs imobilizadas ligadas a células cancerígenas.",
+    "integracao_materiais": "Determina quais parâmetros das NPs (alta Ms, dcm ≥ 30 nm ou K que satisfaça σ > 30) são mais adequados para aplicações de hipertermia, orientando o desenvolvimento de materiais magnéticos de alto desempenho.",
+    "mensagem_principal": "O artigo demonstra analítica e numericamente que é possível maximizar a perda por histerese de NPs magnéticas otimizando a amplitude e a frequência do campo de excitação em função dos parâmetros das NPs, respeitando a restrição de segurança biológica C = Hacf, e que NPs com alta Ms e dcm ≥ 30 nm são as mais adequadas para hipertermia magnética de alto desempenho."
   },
   "custom_id": "86__Optimization_of_excitation_field_depending_on_magnetic_nanop"
 }

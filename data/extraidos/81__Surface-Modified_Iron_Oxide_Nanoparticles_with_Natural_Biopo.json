@@ -6,18 +6,19 @@
   "doi": "10.3390/jcs8100425",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "Magnetic fluid hyperthermia (MFH) é uma terapia minimamente invasiva e localizada que utiliza o calor gerado por nanopartículas magnéticas sob um campo magnético alternado (AC) como abordagem complementar para o tratamento do câncer. As NPs são preparadas como suspensão coloidal estável em água, injetadas no tumor e, ao serem submetidas ao campo magnético, dissipam energia na forma de calor.",
+    "conceito_tecnica": "Magnetic fluid hyperthermia (MFH) é uma terapia localizada minimamente invasiva que utiliza o calor gerado por nanopartículas magnéticas sob um campo magnético alternado como abordagem complementar para o tratamento do câncer. As NPs são preparadas como suspensão coloidal estável em água e injetadas no local do tumor, onde dissipam energia magnética na forma de calor quando submetidas ao campo.",
     "etapas_processo": [
-      "Síntese das nanopartículas de óxido de ferro por coprecipitação",
+      "Síntese das NPs de óxido de ferro por coprecipitação",
       "Revestimento das NPs com agentes de cobertura (amido e goma arábica)",
-      "Preparação do ferrofluido com estabilização por ácido cítrico",
+      "Preparação do ferrofluido estabilizado com ácido cítrico",
       "Injeção do ferrofluido na localização específica do tumor",
-      "Aplicação do campo magnético alternado com frequência e amplitude fisiologicamente seguras",
-      "Dissipação de energia magnética como calor (relaxação de Néel ou Brown, ou perdas por histerese)",
-      "Aquecimento localizado da região tumoral na faixa de 42–46 °C"
+      "Aplicação de campo magnético alternado com frequência e amplitude fisiologicamente seguras",
+      "Dissipação de energia magnética gerando calor local",
+      "Aumento da temperatura da região tumoral para a faixa de 42–46 °C",
+      "Dano ou morte das células tumorais sem prejudicar os tecidos saudáveis circundantes"
     ],
-    "internalizacao_nps": "As NPs são injetadas diretamente na localização específica do tumor como suspensão coloidal estável em água (ferrofluido)",
-    "aplicacao_campo": "O campo magnético alternado é aplicado com amplitude de 14 kAm⁻¹ e frequência de 274 kHz por 300 segundos utilizando um dispositivo Easy Heat 0224 (Ambrell)",
+    "internalizacao_nps": "O artigo menciona que as NPs são injetadas no local específico do tumor como suspensão coloidal, mas não detalha o mecanismo de internalização celular.",
+    "aplicacao_campo": "O campo magnético alternado é aplicado com amplitude de 14 kAm−1 e frequência de 274 kHz por 300 segundos utilizando um dispositivo Easy Heat 0224 (Ambrell).",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 46.0,
     "vias_morte_celular": []
@@ -28,26 +29,26 @@
     "perdas_histerese": true,
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
-    "forma_onda_campo": null,
-    "mecanismo_dominante": "A dissipação de energia magnética associada à relaxação do momento magnético das NPs (Néel ou Brown) ou às perdas por histerese é o mecanismo principal responsável pelo aquecimento em MFH.",
-    "descricao_mecanismo": "Quando submetidas a um campo magnético alternado com frequência e amplitude fisiologicamente seguras, as NPs magnéticas dissipam energia associada à relaxação do momento magnético (relaxação de Néel ou Brown) ou às perdas por histerese. A teoria de resposta linear de Rosensweig modela a eficiência de aquecimento de NPs individuais, estáveis e não interagentes via relaxação de Néel e Brown, indicando a existência de um tamanho ótimo para MFH. Investigações recentes consideram perdas por histerese não lineares, mostrando uma evolução mais complexa do SLP em função do tamanho das partículas."
+    "forma_onda_campo": "null",
+    "mecanismo_dominante": "O artigo não identifica um mecanismo dominante único, mencionando que a dissipação de energia magnética está associada à relaxação do momento magnético das NPs (Néel ou Brown) ou às perdas por histerese.",
+    "descricao_mecanismo": "A dissipação de energia ocorre pela relaxação do momento magnético das nanopartículas magnéticas sob campo magnético alternado, podendo ocorrer por relaxação de Néel (rotação interna do momento magnético) ou de Brown (rotação física da partícula). Para partículas muito pequenas em campos fracos, o modelo de resposta linear de Rosensweig modela o aquecimento considerando ambas as relaxações, enquanto investigações mais recentes consideram perdas por histerese não-linear para uma descrição mais completa. Interações dipolares magnéticas entre partículas em altas concentrações podem reduzir a eficiência de aquecimento ao limitar os processos de relaxação."
   },
   "q3": {
     "material": "magnetita/maghemita (Fe3O4/γ-Fe2O3)",
-    "composicao_quimica": "Fe3−δO4 (magnetita oxidada, mistura de magnetita e maghemita)",
+    "composicao_quimica": "Fe3-δO4 (magnetita oxidada, mistura de Fe3O4 e γ-Fe2O3)",
     "dopagem": null,
     "tamanho_nm": 10.0,
     "faixa_tamanho_min_nm": 2.0,
     "faixa_tamanho_max_nm": 41.0,
-    "forma": "esférica ou cubo",
+    "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia magnética de superfície e anisotropia magnetocristalina (espinela)",
-    "revestimento": "amido (starch) e goma arábica (gum arabic), estabilizados com ácido cítrico",
+    "anisotropia": "anisotropia magnética com contribuição de anisotropia de superfície relevante para NPs de tamanho reduzido",
+    "revestimento": "amido (starch) e goma arábica (gum arabic), estabilizadas com ácido cítrico para formação do ferrofluido",
     "material_autorregulavel": false,
     "SAR_W_g": 72.0,
     "ILP_nHm2_kg": 2.6,
     "magnetizacao_saturacao_emu_g": 72.0,
-    "relacao_estrutura_propriedade": "NPs maiores (sintetizadas com NaOH) apresentam maior cristalinidade, maior magnetização de saturação e maior SLP em comparação às menores (sintetizadas com NH4OH). O revestimento com amido e goma reduz o tamanho das NPs e diminui a magnetização de saturação (devido à massa adicional da camada de cobertura), mas melhora a estabilidade coloidal do ferrofluido."
+    "relacao_estrutura_propriedade": "NPs maiores (sintetizadas com NaOH) apresentam maior cristalinidade e maior magnetização de saturação (~72 Am2/kg) em comparação com NPs menores (NH4OH, ~63 Am2/kg), resultando em SLP duas vezes maior. O revestimento com amido e goma arábica reduz o tamanho das NPs e a magnetização de saturação (devido à massa não magnética do revestimento), mas aumenta a estabilidade coloidal e protege contra oxidação."
   },
   "q4": {
     "amplitude_kA_m": 14.0,
@@ -56,15 +57,15 @@
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": 5.0,
     "forma_onda": null,
-    "dosimetria_termica": "Ajuste da evolução temporal da temperatura assumindo potência dissipada constante pelas NPs e perdas de energia proporcionais à diferença de temperatura entre a amostra e o exterior, com sonda de temperatura de fibra óptica",
-    "distribuicao_espacial_calor": "3 g de cada ferrofluido colocado em frasco de vidro submetido ao campo magnético alternado, com temperatura registrada por sonda de fibra óptica",
+    "dosimetria_termica": "Ajuste da evolução temporal da temperatura assumindo dissipação de potência constante com perdas proporcionais à diferença de temperatura entre a amostra e o exterior, utilizando sonda de temperatura de fibra óptica",
+    "distribuicao_espacial_calor": null,
     "padronizacao_reportada": true
   },
   "q5": {
     "tipo_estudo": "in vitro",
     "linhagem_celular": null,
     "modelo_animal": null,
-    "tipo_cancer": "glioblastoma multiforme (mencionado como contexto clínico)",
+    "tipo_cancer": "glioblastoma multiforme (mencionado em contexto clínico histórico)",
     "concentracao_mg_mL": null,
     "agregacao_discutida": true,
     "viscosidade_discutida": false,
@@ -81,30 +82,31 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "A utilização da MFH como terapia isolada é dificultada pela necessidade simultânea de biocompatibilidade das NPs, boa eficiência de aquecimento e dose fisiologicamente segura",
-      "Alta concentração de NPs necessária para os requisitos de aquecimento leva a interações dipolo-dipolo e agregação, reduzindo a eficiência de aquecimento",
-      "A toxicidade a longo prazo de nanopartículas magnéticas em altas doses ainda não foi sistematicamente avaliada",
-      "Dificuldades experimentais na síntese de NPs monodispersas em ampla faixa de tamanhos limitam a comparação com modelos teóricos",
-      "Fração significativa do ferro nos ferrofluidos não contribui para o sinal magnético (ferro dissolvido ou NPs muito pequenas)"
+      "O uso como terapia isolada é dificultado pela necessidade simultânea de biocompatibilidade, boa eficiência de aquecimento e dose fisiologicamente segura",
+      "A alta concentração de NPs necessária para os requisitos de aquecimento leva ao aumento de interações dipolo-dipolo e agregação, reduzindo a eficiência de aquecimento",
+      "A toxicidade de longo prazo de nanopartículas magnéticas em alta dose ainda não foi sistematicamente avaliada",
+      "A fração significativa de ferro nos ferrofluidos não está incorporada em NPs magnéticas (dissolução durante preparação com ácido cítrico), não contribuindo para a hipertermia",
+      "Dificuldades experimentais na síntese de NPs monodispersas em ampla faixa de tamanhos limitam a comparação com modelos teóricos"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Maximizar o aquecimento das partículas em menores concentrações de IONPs como requisito chave para o progresso da hipertermia magnética em aplicações clínicas mais amplas",
-      "Otimizar a eficiência de aquecimento das NPs magnéticas biocompatíveis para reduzir a alta concentração demandada pelo tratamento"
+      "Maximização do aquecimento das partículas em menores concentrações de IONP como requisito para o progresso da hipertermia magnética em aplicações clínicas mais amplas",
+      "Avaliação sistemática da toxicidade de longo prazo de nanopartículas magnéticas em altas doses"
     ],
     "gaps_identificados": [
-      "Necessidade de avaliação sistemática da toxicidade a longo prazo de nanopartículas magnéticas em altas doses",
-      "Dificuldade em sintetizar NPs monodispersas em ampla faixa de tamanhos para comparação adequada com modelos teóricos",
-      "Falta de estudos biológicos (in vitro/in vivo) com as NPs sintetizadas neste trabalho para avaliação de biocompatibilidade e eficácia terapêutica"
+      "Ausência de avaliação de biocompatibilidade e toxicidade in vitro ou in vivo das NPs sintetizadas",
+      "Falta de estudos sobre internalização celular das NPs e efeitos biológicos do tratamento hipertérmico",
+      "Necessidade de melhorar a eficiência de aquecimento das NPs biocompatíveis para permitir uso em menores concentrações",
+      "A região de validade do modelo de resposta linear de Rosensweig é restrita a NPs muito pequenas e campos fracos, não cobrindo todas as condições experimentais relevantes"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo investiga os mecanismos de dissipação de energia magnética (relaxação de Néel/Brown e perdas por histerese) e a influência do tamanho das NPs na eficiência de aquecimento, quantificada pelo SLP e ILP.",
-    "integracao_engenharia": "O trabalho desenvolve um método de coprecipitação de baixo custo e ambientalmente amigável para síntese de IONPs com diferentes agentes redutores e de cobertura, otimizando a preparação de ferrofluidos estáveis para aplicação em hipertermia magnética.",
-    "integracao_biologia": "O artigo aborda a biocompatibilidade das NPs revestidas com biopolímeros naturais (amido e goma arábica) e sua aplicação potencial no tratamento de tumores por hipertermia magnética de fluidos.",
-    "integracao_materiais": "O estudo demonstra como o agente redutor (NaOH vs NH4OH) e os agentes de cobertura (amido e goma arábica) influenciam as propriedades estruturais, morfológicas e magnéticas das NPs de óxido de ferro, bem como a estabilidade dos ferrofluidos.",
-    "mensagem_principal": "Nanopartículas superparamagnéticas de óxido de ferro (magnetita/maghemita) revestidas com amido e goma arábica, sintetizadas por coprecipitação com NaOH, apresentam maior eficiência de aquecimento (SLP de 72 Wg⁻¹, ILP de 2,60 nWg⁻¹) e melhor estabilidade coloidal em comparação às sintetizadas com NH4OH, sendo materiais promissores para hipertermia magnética de fluidos no tratamento de tumores."
+    "integracao_fisica": "O artigo contribui com a caracterização magnética detalhada por magnetometria SQUID e espectroscopia Mössbauer, determinando mecanismos de relaxação (Néel e Brown), perdas por histerese, temperatura de bloqueio e grau de oxidação das NPs em função do agente redutor e revestimento.",
+    "integracao_engenharia": "O trabalho demonstra que a escolha do agente redutor (NaOH vs NH4OH) e dos agentes de cobertura (amido e goma arábica) no método de coprecipitação permite controlar o tamanho, cristalinidade e eficiência de aquecimento das NPs, com o grupo NaOH apresentando SLP duas vezes maior.",
+    "integracao_biologia": "O artigo aborda a biocompatibilidade potencial das NPs revestidas com biopolímeros naturais (amido e goma arábica) e sua adequação para aplicações biomédicas, incluindo referências à aprovação regulatória de IONPs pela FDA e EU, sem contudo realizar ensaios biológicos diretos.",
+    "integracao_materiais": "O estudo demonstra que revestimentos duplos de amido e goma arábica controlam o crescimento das NPs durante a coprecipitação, reduzem a aglomeração, preservam as propriedades magnéticas e aumentam a estabilidade coloidal dos ferrofluidos estabilizados com ácido cítrico.",
+    "mensagem_principal": "Nanopartículas superparamagnéticas de magnetita/maghemita sintetizadas por coprecipitação com NaOH e revestidas com amido e goma arábica apresentam SLP de 72 Wg−1 e ILP de 2,60 nHm2/kg, valores competitivos com nanopartículas comerciais de tamanho comparável, demonstrando que a combinação de agente redutor mais forte (NaOH) com biopolímeros naturais como agentes de cobertura é uma estratégia promissora para obter ferrofluidos biocompatíveis com alta eficiência de aquecimento para hipertermia magnética."
   },
   "custom_id": "81__Surface-Modified_Iron_Oxide_Nanoparticles_with_Natural_Biopo"
 }

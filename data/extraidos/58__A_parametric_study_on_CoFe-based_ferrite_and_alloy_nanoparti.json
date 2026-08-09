@@ -6,16 +6,16 @@
   "doi": "10.1039/d5nr01089f",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MH) utiliza nanopartículas magnéticas para gerar calor quando submetidas a um campo magnético alternado (AMF), sendo aplicada no tratamento do câncer. As NPs de FeCo são destacadas pelo seu alto potencial para MH devido à elevada eficiência de aquecimento.",
+    "conceito_tecnica": "A hipertermia magnética (MH) utiliza nanopartículas magnéticas que geram calor quando submetidas a um campo magnético alternado (AMF), sendo aplicada no tratamento do câncer. Multicore NPs são destacadas como promissoras para MH devido à sua organização coletiva interna que aumenta a eficiência de aquecimento.",
     "etapas_processo": [
-      "Síntese das NPs de FeCo por rotas químicas coloidais (decomposição térmica, método poliol ou redução com H2)",
-      "Funcionalização superficial das NPs com DSPE-PEG para conferir dispersibilidade em água",
-      "Dispersão das NPs funcionalizadas em meio aquoso",
-      "Aplicação de campo magnético alternado (AMF) para avaliação da eficiência de aquecimento",
-      "Medição da taxa de elevação de temperatura e cálculo do SAR e ILP"
+      "Síntese das nanopartículas magnéticas (FeCo) por decomposição térmica, método poliol ou redução com H2",
+      "Funcionalização superficial com DSPE-PEG para dispersibilidade em água",
+      "Dispersão das NPs em meio aquoso",
+      "Aplicação de campo magnético alternado (AMF) à dispersão de NPs",
+      "Medição da eficiência de aquecimento via SAR e ILP"
     ],
     "internalizacao_nps": null,
-    "aplicacao_campo": "O campo magnético alternado é aplicado utilizando um analisador calorimétrico (G2 driver D5 series, nB nanoScale Biomagnetics) a uma frequência de 488 kHz e amplitude de 24,5 kA/m sobre dispersões das NPs.",
+    "aplicacao_campo": "O campo magnético alternado é aplicado à dispersão de NPs usando um analisador calorimétrico (G2 driver D5 series, nB nanoScale Biomagnetics) a uma frequência de 488 kHz e intensidade de campo de 308 Oe (24,5 kA m−1).",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -27,25 +27,25 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O principal mecanismo de aquecimento das NPs de FeCo é a geração de calor por perdas de histerese em partículas ferromagnéticas de domínio único sob campo magnético alternado.",
-    "descricao_mecanismo": "As NPs de FeCo sintetizadas apresentam tamanho (~30 nm) dentro do regime de domínio único para ligas FeCo, situado entre os diâmetros críticos para a transição superparamagnética-ferromagnética (~16 nm) e a formação de multidomínios (~51 nm). Nesse regime, as suposições da teoria de resposta linear não se aplicam, e o modelo de Stoner-Wohlfarth torna-se mais adequado, pois considera a reversão coerente da magnetização em partículas de domínio único. As perdas de energia por histerese sob campo magnético alternado são responsáveis pelo elevado SAR observado nessas partículas ferromagnéticas bloqueadas."
+    "mecanismo_dominante": "O mecanismo dominante de aquecimento nas NPs FeCo é o de perdas por histerese em partículas de domínio único bloqueadas, consistente com o comportamento do modelo de Stoner-Wohlfarth.",
+    "descricao_mecanismo": "As NPs FeCo sintetizadas encontram-se no regime de domínio único (entre os diâmetros críticos de ~16 nm para a transição superparamagnética-ferromagnética e ~51 nm para formação multidomínio). Nesse regime, as suposições da teoria de resposta linear não se aplicam, e o modelo de Stoner-Wohlfarth (SW) torna-se mais adequado, pois considera a reversão coerente da magnetização em partículas de domínio único. As perdas por histerese sob campos magnéticos alternados são responsáveis pela geração de calor, como também observado por Lacroix et al. em NPs FeCo de ~14 nm com comportamento ferromagnético."
   },
   "q3": {
-    "material": "FeCo alloy e CoFe2O4 (ferrita de cobalto)",
-    "composicao_quimica": "FexCoy (composição próxima de 50,2% Fe e 49,8% Co em peso); CoFe2O4",
+    "material": "FeCo alloy e CoFe2O4 ferrita",
+    "composicao_quimica": "FexCoy (composição próxima a 50,2% Fe / 49,8% Co em peso, confirmado por ICP-AES); CoFe2O4",
     "dopagem": null,
     "tamanho_nm": 30.3,
     "faixa_tamanho_min_nm": 5.1,
-    "faixa_tamanho_max_nm": 46.5,
-    "forma": "esférica (NPs menores); hexagonal (NPs de FeCo por poliol e H2)",
+    "faixa_tamanho_max_nm": 100.0,
+    "forma": "esférica ou hexagonal",
     "arquitetura_multicore": true,
-    "anisotropia": "anisotropia magnetocristalina elevada (CoFe2O4); comportamento ferromagnético macio (FeCo)",
-    "revestimento": "DSPE-PEG (1,2-distearoyl-sn-glycero-3-phosphoethanolamine-N-[amino(polyethylene glycol)-2000])",
+    "anisotropia": "anisotropia magnetocristalina (mencionada para CoFe2O4 com grande anisotropia magnetocristalina)",
+    "revestimento": "DSPE-PEG",
     "material_autorregulavel": false,
     "SAR_W_g": 1600.0,
     "ILP_nHm2_kg": 5.33,
     "magnetizacao_saturacao_emu_g": 145.0,
-    "relacao_estrutura_propriedade": "O tamanho das NPs de FeCo (~30 nm) as posiciona no regime de domínio único, favorecendo perdas de histerese eficientes e, consequentemente, elevado SAR. A composição próxima equiatômica de Fe e Co, combinada com o caráter ferromagnético macio e alta magnetização, são determinantes para a excepcional eficiência de aquecimento dessas partículas."
+    "relacao_estrutura_propriedade": "O tamanho das NPs FeCo (~30 nm) as posiciona no regime de domínio único, favorecendo perdas por histerese eficientes e alto SAR (>1600 W g−1). A composição próxima ao equiatômico FeCo, alta magnetização e caráter ferromagnético suave combinados resultam em ILP de 5,33 nH m2 kg−1, superior aos sistemas de óxido de ferro típicos."
   },
   "q4": {
     "amplitude_kA_m": 24.5,
@@ -54,7 +54,7 @@
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": null,
     "forma_onda": null,
-    "dosimetria_termica": "Método calorimétrico com sonda de fibra óptica GaAs inserida em vial contendo ~1 ml de dispersão de NPs em sistema pseudoadiabático (frasco Dewar a <0,1 Pa); SAR calculado a partir de ΔT/Δt",
+    "dosimetria_termica": "Método calorimétrico com sonda de fibra óptica GaAs inserida em vial com ~1 ml de dispersão de NPs, em sistema pseudoadiabático (frasco Dewar selado a <0,1 Pa)",
     "distribuicao_espacial_calor": null,
     "padronizacao_reportada": true
   },
@@ -79,33 +79,34 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "O tratamento térmico pós-síntese (salt-matrix annealing) causa aumento significativo do tamanho das partículas e agregação/sinterização",
-      "NPs de FeCo são quimicamente instáveis e propensas à oxidação, especialmente em tamanhos menores que 10 nm",
-      "O método poliol produziu apenas partículas maiores que 100 nm, não adequadas para aplicações in vivo",
-      "O estudo não inclui experimentação in vitro ou in vivo, limitando-se à avaliação do desempenho de aquecimento magnético",
-      "Medidas magnéticas dinâmicas não foram realizadas para confirmar diretamente o mecanismo de Stoner-Wohlfarth"
+      "O tratamento térmico pós-síntese (salt-matrix annealing) para conversão de CoFe2O4 em FeCo resulta em aumento dramático do tamanho das partículas e agregação/sinterização",
+      "O método poliol produziu apenas partículas maiores que 100 nm, não corroborando resultados da literatura para partículas pequenas de FeCo",
+      "As NPs produzidas pelo método poliol (>100 nm) não são ideais para aplicações in vivo",
+      "As NPs FeCo produzidas via H2 apresentam composição predominantemente amorfa, com tamanho de grão cristalino inferior a 2 nm, o que limita a magnetização em relação ao bulk",
+      "O trabalho não envolveu experimentação in vitro ou in vivo, limitando-se à avaliação do desempenho de aquecimento magnético",
+      "NPs de FeCo são quimicamente instáveis e suscetíveis à oxidação, especialmente em tamanhos menores que 10 nm"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Desenvolver funcionalização adicional com biomoléculas (peptídeos, anticorpos) para reconhecimento específico de células tumorais e aplicações em hipertermia e drug delivery",
-      "Investigar o desempenho das NPs de FeCo em estudos in vitro e in vivo para avaliação de citotoxicidade e eficácia terapêutica",
-      "Explorar estratégias para prevenir a sinterização e agregação durante o processo de annealing",
-      "Avaliar NPs multicore de CoFe2O4 para aplicações em MRI e hipertermia magnética"
+      "Realização de experimentos in vitro e in vivo para avaliar o potencial das NPs FeCo em aplicações de hipertermia magnética para tratamento de câncer",
+      "Funcionalização adicional das NPs FeCo@DSPE-PEG com biomoléculas (peptídeos, anticorpos) para reconhecimento específico de células tumorais e drug delivery",
+      "Investigação de estratégias para evitar a sinterização e agregação durante o processo de annealing",
+      "Exploração de métodos para produzir NPs FeCo pequenas (<30 nm) com alta magnetização e boa estabilidade química"
     ],
     "gaps_identificados": [
-      "Ausência de dados de aquecimento in vitro ou in vivo para as NPs sintetizadas",
-      "Falta de medidas magnéticas dinâmicas (AC susceptometry) para confirmação direta do mecanismo de aquecimento",
-      "Dificuldade em produzir NPs de FeCo pequenas (<20 nm) e estáveis quimicamente pelo método poliol",
-      "Limitação na transformação completa de fase (CoFe2O4 para FeCo) sem comprometer a monodispersidade e causar agregação"
+      "Ausência de avaliação biológica (citotoxicidade, biodistribuição, eficácia terapêutica in vitro/in vivo)",
+      "Falta de medições magnéticas dinâmicas para confirmar o mecanismo de aquecimento por histerese",
+      "Dificuldade em produzir NPs FeCo monodispersas de pequeno tamanho (<20 nm) com alta estabilidade química por rotas de síntese exploradas",
+      "O método poliol não permitiu reproduzir resultados da literatura para síntese de FeCo de 20-30 nm com alta magnetização"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo aplica o modelo de Stoner-Wohlfarth para explicar as perdas de histerese em NPs de FeCo de domínio único e correlaciona o regime magnético (determinado pelo tamanho das partículas) com a eficiência de aquecimento.",
-    "integracao_engenharia": "O trabalho demonstra a síntese sistemática e parametrizada de NPs de FeCo por diferentes rotas químicas (decomposição térmica, poliol, redução por H2) e a funcionalização com DSPE-PEG para obter dispersibilidade em água e potencial aplicação em hipertermia magnética.",
-    "integracao_biologia": "O artigo aponta o potencial das NPs de FeCo funcionalizadas para aplicações biomédicas como hipertermia magnética para tratamento de câncer, MRI e drug delivery, embora não realize experimentos biológicos diretos.",
-    "integracao_materiais": "O estudo investiga como parâmetros de síntese (tipo de precursor, surfactantes, temperatura e tempo de annealing) afetam composição, morfologia, tamanho e propriedades magnéticas das NPs, estabelecendo relações estrutura-propriedade para otimização dos materiais.",
-    "mensagem_principal": "NPs de FeCo sintetizadas por rota assistida por H2 com tamanho de ~30 nm, funcionalizadas com DSPE-PEG, apresentam excepcional eficiência de aquecimento magnético (SAR > 1600 W/g, ILP = 5,33 nH m2/kg), superando sistemas baseados em óxidos de ferro, posicionando-as como fortes candidatos para aplicações em hipertermia magnética para tratamento de câncer."
+    "integracao_fisica": "O artigo relaciona as propriedades magnéticas estáticas (Ms, coercividade, comportamento de histerese) com o regime de domínio único das NPs FeCo e o modelo de Stoner-Wohlfarth para explicar o mecanismo de aquecimento por perdas de histerese.",
+    "integracao_engenharia": "O estudo sistemático de parâmetros de síntese (precursores, surfactantes, temperatura, atmosfera redutora) fornece diretrizes de engenharia de processo para produzir NPs com composição, morfologia e propriedades magnéticas controladas voltadas para aplicações biomédicas.",
+    "integracao_biologia": "O artigo posiciona as NPs FeCo funcionalizadas com DSPE-PEG como candidatas para hipertermia magnética no tratamento de câncer, destacando a dispersibilidade em água e a possibilidade de conjugação com biomoléculas para targeting tumoral, embora sem experimentação biológica direta.",
+    "integracao_materiais": "O estudo investiga como diferentes rotas de síntese (decomposição térmica, salt-matrix annealing, poliol, redução com H2) afetam a composição de fases, morfologia, cristalinidade e magnetização das NPs, estabelecendo relações estrutura-propriedade para ferritas de cobalto e ligas FeCo.",
+    "mensagem_principal": "NPs de FeCo sintetizadas via redução com H2, com tamanho de ~30 nm e funcionalizadas com DSPE-PEG, apresentam desempenho de aquecimento magnético excepcional (SAR >1600 W g−1, ILP = 5,33 nH m2 kg−1), superior aos sistemas típicos de óxido de ferro, posicionando-as como candidatas de alto desempenho para hipertermia magnética no tratamento de câncer. O estudo paramétrico sistemático das rotas de síntese revela como precursores, aditivos e condições de annealing influenciam as propriedades das nanoestruturas resultantes."
   },
   "custom_id": "58__A_parametric_study_on_CoFe-based_ferrite_and_alloy_nanoparti"
 }

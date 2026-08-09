@@ -6,16 +6,16 @@
   "doi": "10.3762/bjnano.16.157",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética é um processo que se baseia na exposição de nanopartículas magnéticas a um campo magnético alternante, causando geração de calor localizado em tumores através dos mecanismos de relaxação Browniana e de Néel, minimizando danos aos tecidos saudáveis em comparação com quimioterapia e radioterapia convencionais.",
+    "conceito_tecnica": "A hipertermia magnética é um processo que expõe nanopartículas magnéticas a um campo magnético alternante, fazendo-as gerar calor localmente em tumores, minimizando danos aos tecidos saudáveis em comparação à quimioterapia e radioterapia convencionais.",
     "etapas_processo": [
-      "Síntese de nanopartículas magnéticas (core Zn0.4Fe2.6O4 e core-shell Zn0.4Fe2.6O4@MnFe2O4)",
-      "Dispersão das NPs em solvente (tolueno, 5 mg/mL)",
-      "Exposição ao campo magnético alternante (536,5 kHz/300 G ou 796 kHz/200 G)",
-      "Monitoramento do aumento de temperatura ao longo do tempo (60 s)",
-      "Cálculo do SAR pelo método calorimétrico"
+      "Síntese de nanopartículas magnéticas com propriedades otimizadas",
+      "Dispersão das nanopartículas em meio adequado",
+      "Exposição das nanopartículas a campo magnético alternante (AMF)",
+      "Geração de calor por mecanismos de relaxação de Néel e Browniana",
+      "Monitoramento do aumento de temperatura"
     ],
     "internalizacao_nps": null,
-    "aplicacao_campo": "O campo magnético alternante foi aplicado usando um instrumento DM 100 com aplicador DM (Nanoscale Biomagnetics™) nas frequências de 536,5 kHz/300 G ou 796 kHz/200 G.",
+    "aplicacao_campo": "O campo magnético alternante é aplicado usando um instrumento DM 100 com aplicador DM (Nanoscale Biomagnetics) a frequências de 536,5 kHz/300 G ou 796 kHz/200 G sobre 1 mL de solução de NPs (5 mg/mL) em tolueno.",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 46.0,
     "vias_morte_celular": [
@@ -29,34 +29,34 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O aquecimento resulta do equilíbrio entre relaxação de Néel e Browniana, modulado pela anisotropia do shell de MnFe2O4 e pelo tamanho das partículas.",
-    "descricao_mecanismo": "As nanopartículas superparamagnéticas geram calor através dos mecanismos de relaxação Browniana e de Néel quando expostas a um campo magnético alternante. O shell de MnFe2O4 fornece anisotropia dentro de uma faixa efetiva que permite relaxação eficiente de Néel e Browniana enquanto mantém o comportamento superparamagnético. O acoplamento de troca interfacial entre o core e o shell melhora a anisotropia magnética e consequentemente a relaxação de Néel, enquanto o maior tamanho global das NPs favorece o aumento da relaxação Browniana, que se torna mais proeminente em frequências mais altas."
+    "mecanismo_dominante": "O mecanismo dominante é uma combinação balanceada de relaxação de Néel e Browniana, modulada pela anisotropia da casca de MnFe2O4 e pelo tamanho das partículas.",
+    "descricao_mecanismo": "As nanopartículas geram calor por meio dos mecanismos de relaxação de Néel e Browniana quando expostas a um campo magnético alternante. A casca de MnFe2O4 fornece anisotropia moderada dentro de uma faixa efetiva, permitindo relaxação eficiente sem inibir os processos. O acoplamento de troca interfacial entre núcleo e casca melhora a anisotropia magnética e, consequentemente, a relaxação de Néel, enquanto o tamanho maior das partículas favorece a relaxação Browniana em frequências mais altas."
   },
   "q3": {
-    "material": "ferrita de zinco-ferro (core) e ferrita de manganês (shell)",
+    "material": "ferrita de zinco-ferro (núcleo) e ferrita de manganês (casca)",
     "composicao_quimica": "Zn0.4Fe2.6O4@MnFe2O4",
-    "dopagem": "Zn (core) e Mn (shell)",
+    "dopagem": "Zinco (Zn) no núcleo e Manganês (Mn) na casca",
     "tamanho_nm": 50.0,
     "faixa_tamanho_min_nm": 5.0,
     "faixa_tamanho_max_nm": 50.0,
-    "forma": "polihedral",
-    "arquitetura_multicore": true,
-    "anisotropia": "anisotropia moderada fornecida pelo shell de MnFe2O4 com acoplamento de troca interfacial",
-    "revestimento": "oleic acid",
+    "forma": "poliédrica",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia moderada proveniente da casca de MnFe2O4 com acoplamento de troca interfacial entre núcleo e casca",
+    "revestimento": "ácido oleico",
     "material_autorregulavel": false,
     "SAR_W_g": 110.38,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 28.12,
-    "relacao_estrutura_propriedade": "O aumento do tamanho das partículas leva a maiores valores de magnetização de saturação devido à redução do canting de spin superficial e melhor alinhamento dos momentos magnéticos. A arquitetura core-shell com Zn0.4Fe2.6O4 como core e MnFe2O4 como shell resulta em mais de quatro vezes o aumento da Ms e aumento de pelo menos dez vezes na eficiência de conversão de energia magnética em térmica, em comparação às NPs de componente único."
+    "relacao_estrutura_propriedade": "O tamanho das partículas controla a magnetização de saturação, com partículas maiores exibindo valores de Ms significativamente maiores devido à redução do canting de spin superficial e melhor alinhamento dos momentos magnéticos. A arquitetura núcleo-casca com Zn0.4Fe2.6O4 como núcleo e MnFe2O4 como casca resulta em aumento de mais de quatro vezes na Ms e melhora significativa nos valores de SAR em comparação às partículas de núcleo simples."
   },
   "q4": {
     "amplitude_kA_m": 23.87,
     "frequencia_kHz": 796.0,
-    "produto_Hf": 19003120000.0,
+    "produto_Hf": null,
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 1.0,
     "forma_onda": null,
-    "dosimetria_termica": "método calorimétrico com ajuste de curva ΔT = f(t) por função polinomial de segunda ordem",
+    "dosimetria_termica": "Método calorimétrico: curva ΔT = f(t) ajustada com função polinomial de segunda ordem, onde b1 corresponde a [dT/dt]t=0, utilizado para calcular o SAR",
     "distribuicao_espacial_calor": null,
     "padronizacao_reportada": false
   },
@@ -81,32 +81,32 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Os valores de SAR das NPs Zn0.4Fe2.6O4@MnFe2O4 são inferiores aos de NPs CoFe2O4@MnFe2O4, que apresentam maior coercividade e magnetização de saturação",
-      "A normalização por TGA dos valores de magnetização ainda precisa ser explorada",
-      "Modificação de superfície para aplicações biomédicas ainda não foi realizada",
-      "Os fatores que influenciam o SAR como cristalinidade, anisotropia e amplitude de campo ainda estão sob investigação"
+      "Os valores de SAR das NPs de Zn0.4Fe2.6O4@MnFe2O4 são menores do que os de CoFe2O4@MnFe2O4 devido à menor coercividade e magnetização de saturação das ferritas de Zn e Mn",
+      "A normalização TGA dos valores de SAR ainda não foi realizada",
+      "Modificação de superfície das nanopartículas para aplicações biomédicas ainda não foi explorada",
+      "Os experimentos de hipertermia foram realizados em tolueno e não em meio biológico"
     ],
-    "problemas_SAR_ILP": true,
+    "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Explorar modificação de superfície das NPs para melhorar biocompatibilidade e aplicação biomédica",
-      "Realizar normalização por TGA dos valores de magnetização",
-      "Investigar a influência de cristalinidade, anisotropia e amplitude de campo nos valores de SAR",
-      "Avaliar citotoxicidade das NPs Zn0.4Fe2.6O4@MnFe2O4"
+      "Explorar modificação de superfície das nanopartículas para melhorar biocompatibilidade",
+      "Realizar normalização TGA para valores de SAR mais precisos",
+      "Investigar fatores adicionais como cristalinidade, anisotropia e amplitude de campo que influenciam o desempenho de SAR",
+      "Testar as nanopartículas em meios biológicos relevantes"
     ],
     "gaps_identificados": [
-      "Ausência de estudos de citotoxicidade das NPs sintetizadas",
-      "Ausência de testes em modelos celulares ou animais para validar eficácia terapêutica",
-      "Falta de avaliação da estabilidade coloidal em meios fisiológicos",
-      "Mecanismos exatos de acoplamento de troca interfacial core-shell ainda precisam de maior investigação"
+      "Ausência de avaliação de toxicidade celular in vitro",
+      "Falta de estudos em modelos biológicos (células ou animais)",
+      "Ausência de testes em meio aquoso ou biológico para medidas de SAR",
+      "Relação entre cristalinidade, anisotropia e amplitude de campo com o desempenho de hipertermia ainda em investigação"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo demonstra que o equilíbrio entre relaxação de Néel e Browniana, modulado pela anisotropia do shell de MnFe2O4 e pelo tamanho das partículas, determina a eficiência de dissipação de energia sob campo magnético alternante.",
-    "integracao_engenharia": "O controle preciso do tamanho das NPs por ajuste da concentração de ácido oleico durante a síntese por decomposição térmica permite obter partículas com propriedades magnéticas otimizadas para hipertermia.",
-    "integracao_biologia": "As NPs core-shell de Zn0.4Fe2.6O4@MnFe2O4 apresentam vantagem de biocompatibilidade sobre sistemas com cobalto, com potencial para induzir apoptose em células cancerígenas na faixa terapêutica de 42–46 °C.",
-    "integracao_materiais": "A arquitetura core-shell inorgânica/inorgânica com Zn0.4Fe2.6O4 como core e MnFe2O4 como shell com morfologia poliedral resulta em aumento de pelo menos dez vezes na eficiência de conversão de energia magnética em térmica em relação às NPs de componente único.",
-    "mensagem_principal": "Este trabalho demonstra que NPs core-shell poliedrais de Zn0.4Fe2.6O4@MnFe2O4 com tamanho controlado atingem SAR de até 110 W/g e magnetização de saturação de 28,12 A·m²·kg⁻¹ para as NPs de 50 nm, representando uma melhoria significativa frente a sistemas de componente único, com a vantagem adicional de biocompatibilidade por evitar o uso de cobalto."
+    "integracao_fisica": "O artigo demonstra que o acoplamento de troca interfacial entre núcleo (Zn0.4Fe2.6O4) e casca (MnFe2O4) cria anisotropia efetiva que otimiza os mecanismos de relaxação de Néel e Browniana para máxima dissipação de energia.",
+    "integracao_engenharia": "O estudo demonstra controle preciso de tamanho (5–50 nm) e morfologia poliédrica das nanopartículas através da variação da concentração de ácido oleico durante a síntese por decomposição térmica, permitindo otimização sistemática das propriedades magnéticas.",
+    "integracao_biologia": "O artigo justifica o uso de ferritas de Mn e Zn em vez de Co como alternativa biocompatível para aplicações biomédicas, argumentando que Mn2+ é naturalmente presente no corpo humano e que essas ferritas apresentam menor citotoxicidade.",
+    "integracao_materiais": "O artigo demonstra que a arquitetura núcleo-casca inorgânico/inorgânico (Zn0.4Fe2.6O4@MnFe2O4) com morfologia poliédrica resulta em aumento de pelo menos dez vezes na eficiência de conversão de energia magnética em térmica em comparação às partículas de núcleo simples.",
+    "mensagem_principal": "Nanopartículas core-shell poliedrais de Zn0.4Fe2.6O4@MnFe2O4 com tamanho controlado (5–50 nm) foram sintetizadas com sucesso, demonstrando que o tamanho de 50 nm e a arquitetura núcleo-casca resultam em SAR de até 110 W/g e magnetização de saturação de 28,12 A·m²·kg⁻¹, representando uma alternativa biocompatível e de alto desempenho às nanopartículas à base de cobalto para hipertermia magnética no tratamento de câncer."
   },
   "custom_id": "71__Improving_magnetic_properties_of_Mn-_and_Zn-doped_core-shell"
 }

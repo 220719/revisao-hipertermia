@@ -6,20 +6,20 @@
   "doi": "10.1002/adhm.202503404",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética é mencionada como capacidade adicional das SPIONs, que podem gerar calor quando expostas a um campo magnético alternante, possibilitando terapia direcionada ao câncer. O foco principal do artigo é a terapia fototérmica guiada por imagem, e a hipertermia magnética é citada como modalidade complementar possível.",
+    "conceito_tecnica": "A hipertermia magnética é mencionada como uma aplicação secundária das SPIONs, que podem gerar calor quando expostas a um campo magnético alternante, sendo utilizada para terapia direcionada do câncer. O foco principal do artigo é a terapia fototérmica guiada por imagem (IG-PTT), que converte luz NIR em calor para destruir células tumorais.",
     "etapas_processo": [
-      "Síntese das nanopartículas (CDs-N3 e SPIONs-N3) e do polímero HA-EDA-C18-C5",
-      "Incorporação das nanopartículas na matriz de ácido hialurônico via reação de click azida-alcino",
-      "Formação dos nanogéis híbridos (H-NGs) com estrutura responsiva a pH e temperatura",
-      "Internalização dos H-NGs pelas células cancerosas via receptor CD44",
-      "Irradiação com laser NIR (810 nm) para conversão de luz em calor e ablação fototérmica"
+      "Síntese das nanopartículas híbridas (H-NGs) integrando CDs e SPIONs em matriz de ácido hialurônico via click chemistry",
+      "Incubação das células cancerígenas com H-NGs para internalização via receptor CD44",
+      "Irradiação com laser de diodo 810 nm para conversão fototérmica de luz NIR em calor",
+      "Monitoramento da temperatura por câmera infravermelha e do microambiente tumoral por MRI e fluorescência"
     ],
-    "internalizacao_nps": "Os H-NGs são internalizados pelas células cancerosas por meio de targeting ativo mediado pela shell de ácido hialurônico que reconhece receptores CD44 superexpressos na superfície de células de câncer de mama.",
-    "aplicacao_campo": "O campo magnético alternante é mencionado brevemente como capaz de induzir geração de calor pelas SPIONs para hipertermia magnética direcionada, mas o artigo foca na irradiação com laser NIR a 810 nm para a terapia fototérmica.",
+    "internalizacao_nps": "As H-NGs são internalizadas por células cancerígenas via targeting ativo mediado pela shell de ácido hialurônico que se liga ao receptor CD44, superexpresso na membrana de células de câncer de mama",
+    "aplicacao_campo": "O campo magnético alternante é mencionado como mecanismo pelo qual SPIONs podem gerar calor para hipertermia magnética, mas não é experimentalmente aplicado neste estudo.",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 45.0,
     "vias_morte_celular": [
-      "necrose"
+      "necrose",
+      "imunomodulacao"
     ]
   },
   "q2": {
@@ -29,12 +29,12 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O artigo menciona a capacidade das SPIONs de gerar calor sob campo magnético alternante como mecanismo de hipertermia magnética, mas não detalha o mecanismo físico dominante.",
-    "descricao_mecanismo": "O artigo afirma que SPIONs podem gerar calor quando expostas a um campo magnético alternante, possibilitando hipertermia magnética para terapia de câncer direcionada. No entanto, o mecanismo físico detalhado (relaxação de Néel, Browniana ou histerese) não é discutido no texto. O foco do trabalho é na conversão fototérmica de luz NIR em calor pelos carbon dots."
+    "mecanismo_dominante": "O artigo menciona hipertermia magnética como capacidade potencial das SPIONs quando expostas a campo magnético alternante, mas o mecanismo dominante explorado experimentalmente é a conversão fototérmica de luz NIR em calor pelos carbon dots (CDs).",
+    "descricao_mecanismo": "As SPIONs são citadas como capazes de gerar calor quando expostas a um campo magnético alternante, habilitando hipertermia magnética para terapia direcionada do câncer. No entanto, o artigo não descreve fisicamente os mecanismos de relaxação magnética. O foco experimental é na conversão fototérmica dos CDs, que absorvem luz NIR (810 nm) e a convertem em calor por combinação de espalhamento múltiplo e absorção NIR, com eficiência de conversão fototérmica de aproximadamente 34%."
   },
   "q3": {
-    "material": "SPIONs (óxido de ferro superparamagnético)",
-    "composicao_quimica": "Fe3O4 (inferido como SPIONs - superparamagnetic iron oxide nanoparticles)",
+    "material": "SPIONs (nanopartículas de óxido de ferro superparamagnéticas)",
+    "composicao_quimica": "Óxido de ferro superparamagnético (SPION)",
     "dopagem": null,
     "tamanho_nm": null,
     "faixa_tamanho_min_nm": null,
@@ -42,12 +42,12 @@
     "forma": null,
     "arquitetura_multicore": false,
     "anisotropia": null,
-    "revestimento": "ácido hialurônico (HA-EDA-C18-C5) via ligação covalente por click chemistry",
+    "revestimento": "Ácido hialurônico (HA-EDA-C18-C5) como shell polimérico do nanogel híbrido",
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "As SPIONs funcionam como agentes de crosslinking auxiliares na rede de ácido hialurônico e como agentes de contraste para MRI; a distância entre SPIONs e CDs dentro do nanogel modula o contraste de MRI e a fluorescência via interações metal-carbono dependentes de distância."
+    "relacao_estrutura_propriedade": "As SPIONs funcionam como agentes de crosslinking auxiliares no nanogel de ácido hialurônico e como agentes de contraste para MRI; sua distância em relação aos CDs, modulada pelo inchamento/contração pH-dependente da matriz polimérica, controla o quenching de fluorescência e as propriedades de relaxação magnética."
   },
   "q4": {
     "amplitude_kA_m": null,
@@ -81,29 +81,32 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "O uso de scanner MRI clínico de 1,5T limita a relação sinal-ruído e a resolução comparado a sistemas de ultra-alto campo (≥7T)",
-      "A análise por Z-stack de confocal perde sensibilidade acima de 60 μm de profundidade, dificultando a visualização de células mais internas nas esferoides de 200 μm de diâmetro",
-      "Temperaturas próximas de 60°C observadas sob máxima irradiação não são adequadas para aplicação in vivo sistêmica sem estratégias de direcionamento ou modulação"
+      "Uso de scanner MRI clínico de 1,5T em vez de sistema de ultra-alto campo (≥7T), limitando resolução e relação sinal-ruído",
+      "A análise Z-stack por microscopia confocal perde sensibilidade além de 60 μm de profundidade, dificultando visualização de células mais profundas nas mamoesferas de 200 μm de diâmetro",
+      "Temperaturas próximas a 60°C observadas sob condições máximas de irradiação não são adequadas para aplicação in vivo sistêmica direta sem estratégias de targeting ou modulação",
+      "Investigação molecular detalhada das vias de morte celular induzidas pelas H-NGs não foi realizada"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Investigação molecular detalhada das vias de morte celular (necroptose mediada por RIPK1/TNFα) induzidas pelos H-NGs",
-      "Avaliação do papel dos H-NGs no acionamento do sistema imune contra tumores de mama altamente invasivos",
-      "Exploração de estratégias de targeting ou modulação para aplicação in vivo sistêmica segura"
+      "Investigação detalhada em nível molecular das vias de morte celular (necroptose via RIPK1/TNFα) induzidas pelas H-NGs",
+      "Avaliar o papel das H-NGs no acionamento do sistema imunológico contra tumores de mama altamente invasivos",
+      "Desenvolver estratégias de targeting ou modulação para viabilizar aplicação in vivo sistêmica segura",
+      "Explorar o potencial de liberação controlada de fármacos hidrofóbicos facilitada pelo aumento de temperatura"
     ],
     "gaps_identificados": [
-      "Ausência de estudos in vivo para validação da eficácia e segurança dos H-NGs",
-      "Falta de investigação detalhada dos mecanismos moleculares de morte celular induzidos pela terapia fototérmica com H-NGs",
-      "Parâmetros específicos de hipertermia magnética (frequência, amplitude, SAR) não foram avaliados experimentalmente"
+      "Ausência de estudos in vivo para validar biodistribuição, farmacocinética e eficácia terapêutica das H-NGs",
+      "Mecanismos moleculares detalhados de morte celular induzida por hipertermia fototérmica não foram elucidados",
+      "A hipertermia magnética das SPIONs é mencionada como potencial mas não foi experimentalmente investigada neste estudo",
+      "Avaliação da resposta imunológica mediada pelas H-NGs não foi realizada"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo demonstra como interações físicas dependentes de distância entre carbon dots e SPIONs (transferência de energia e elétrons) modulam fluorescência e contraste de MRI em função de pH e temperatura.",
-    "integracao_engenharia": "O trabalho desenvolveu uma plataforma nanogel híbrida multifuncional sintetizada por click chemistry com comportamento de swelling/shrinking responsivo a estímulos, integrando funções terapêuticas e diagnósticas em uma única nanoestrutura.",
-    "integracao_biologia": "Os H-NGs demonstraram targeting ativo via receptor CD44, penetração em esferoides 3D multicellulares mimetizando a arquitetura estroma-parênquima do câncer de mama triplo-negativo, e ablação fototérmica seletiva de células cancerosas.",
-    "integracao_materiais": "A integração de ácido hialurônico, carbon dots e SPIONs em uma rede covalente híbrida resultou em um nanomaterial com propriedades ópticas, magnéticas e mecânicas sinérgicas e responsivas ao microambiente tumoral.",
-    "mensagem_principal": "Os autores desenvolveram nanogéis híbridos de ácido hialurônico (H-NGs) integrando carbon dots e SPIONs que permitem, simultaneamente, ablação fototérmica guiada por imagem de câncer de mama triplo-negativo e monitoramento em tempo real do pH e temperatura do microambiente tumoral através de variações de fluorescência e contraste de MRI dependentes do processo de swelling/shrinking da rede polimérica."
+    "integracao_fisica": "O artigo demonstra que interações distância-dependentes entre CDs e SPIONs modulam propriedades ópticas (fluorescência) e de relaxação magnética (MRI), permitindo sensoriamento do microambiente tumoral por variações conformacionais do nanogel.",
+    "integracao_engenharia": "Foi desenvolvida uma plataforma nanoteragnóstica multifuncional via click chemistry (Cu(I)-catalyzed azide-alkyne cycloaddition) que integra agentes de contraste MRI, nanoaquecedores fototérmicos e sensores de pH/temperatura em uma única nanopartícula de ~105 nm.",
+    "integracao_biologia": "As H-NGs demonstraram biocompatibilidade, targeting ativo via receptor CD44, penetração em mamoesferas 3D que mimetizam o microambiente tumoral in vivo, e ablação fototérmica seletiva de células de câncer de mama triplo-negativo.",
+    "integracao_materiais": "A integração de ácido hialurônico pH-sensível com CDs emissores no NIR e SPIONs superparamagnéticas criou um material híbrido responsivo a estímulos com comportamento de inchamento/contração que modula simultaneamente contraste MRI e fluorescência.",
+    "mensagem_principal": "Foi desenvolvida pela primeira vez uma nanoплатaforma teragnóstica híbrida biocompatível baseada em nanogel de ácido hialurônico contendo CDs e SPIONs, capaz de realizar ablação fototérmica guiada por imagem de câncer de mama triplo-negativo com monitoramento em tempo real do pH e temperatura do microambiente tumoral via fluorescência e MRI, por meio de modulação distância-dependente das interações CD-SPION pelo inchamento/contração pH e temperatura-responsivo da matriz polimérica."
   },
   "custom_id": "18__Smart_Theranostic_Nanogels_with_Swelling-Driven_Contrastfor_"
 }

@@ -6,18 +6,18 @@
   "doi": "10.1021/acsabm.5c01925",
   "tipo_estudo": "in vivo",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MHT) é uma modalidade terapêutica que utiliza nanopartículas magnéticas sob um campo magnético alternante (AMF) para gerar calor localizado no interior das células-alvo. Este calor elevado induz morte celular em células tumorais, sendo capaz de atingir tumores profundos sem limitações de penetração tecidual.",
+    "conceito_tecnica": "A hipertermia magnética (MHT) gera calor dentro das células-alvo pela aplicação de um campo magnético alternante (AMF) sobre nanopartículas magnéticas, elevando a temperatura intratumoral. É capaz de eliminar tumores profundos sem limitações de penetração tecidual, ao contrário da fototerapia.",
     "etapas_processo": [
-      "Síntese e funcionalização das NPs magnéticas de FeTaOx com revestimento de Au e conjugação com Angiopep-2",
-      "Administração intravenosa das NPs nos animais/células",
-      "Direcionamento das NPs ao tumor via LRP-mediado pelo Angiopep-2 (transcitose e endocitose)",
+      "Síntese das nanopartículas FeTaOx com revestimento de Au e conjugação de Angiopep-2",
+      "Administração intravenosa das NPs no organismo",
+      "Direcionamento das NPs ao tumor via Angiopep-2 mediado por receptor LRP (transcitose e endocitose)",
       "Internalização das NPs pelas células de glioma",
-      "Aplicação do campo magnético alternante (AMF) de alta frequência (700-1100 kHz)",
-      "Geração de calor localizado pelas NPs, elevando a temperatura intratumoral",
-      "Indução de apoptose e necrose das células tumorais"
+      "Aplicação de AMF de alta frequência (700-1100 kHz) sobre a região tumoral",
+      "Geração de calor localizado pelas NPs superparamagnéticas",
+      "Elevação da temperatura intratumoral levando à morte celular por apoptose e necrose"
     ],
-    "internalizacao_nps": "As NPs são internalizadas por endocitose mediada por receptor LRP (Low-density lipoprotein receptor-related protein), facilitada pelo Angiopep-2 conjugado na superfície das NPs, que se liga ao LRP expresso nas células endoteliais da barreira hematoencefálica e nas células de glioma, desencadeando endocitose, tráfico intracelular e exocitose no parênquima cerebral.",
-    "aplicacao_campo": "O AMF é aplicado por meio de uma bobina de aquecimento de alta frequência (700-1100 kHz, Power Cube 3.2 kW) posicionada ao redor da cabeça do animal ou da amostra, por períodos de 5 a 15 minutos.",
+    "internalizacao_nps": "As NPs são internalizadas por endocitose mediada pelo receptor LRP, expresso tanto nas células endoteliais da barreira hematoencefálica quanto nas células de glioma; após ligação do Angiopep-2 ao LRP, o complexo ANG-NP sofre endocitose, tráfego intracelular e exocitose para o parênquima cerebral.",
+    "aplicacao_campo": "O AMF é aplicado por meio de uma bobina de aquecimento de alta frequência (700-1100 kHz, Power Cube 3.2 kW) posicionada sobre a cabeça do animal por 15 minutos para estimular magneticamente as NPs.",
     "janela_termica_min_C": 41.0,
     "janela_termica_max_C": 47.0,
     "vias_morte_celular": [
@@ -29,15 +29,15 @@
     "relaxacao_neel": null,
     "relaxacao_browniana": null,
     "perdas_histerese": null,
-    "interacoes_coletivas": true,
+    "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O mecanismo dominante de geração de calor é o comportamento superparamagnético do núcleo de FeTaOx (Fe3O4), que sob AMF gera calor localizado no interior das células tumorais.",
-    "descricao_mecanismo": "As NPs de FeTaOx@Au-ANG exibem comportamento superparamagnético, confirmado por análises SQUID com temperaturas de bloqueio abaixo da temperatura ambiente. Sob estimulação por AMF de alta frequência, o núcleo magnético de Fe3O4 das NPs converte energia eletromagnética em calor, elevando a temperatura intratumoral de forma localizada. O revestimento de Au é não magnético e preserva a eficiência de aquecimento magnético, enquanto o ANG permite entrega direcionada através da barreira hematoencefálica."
+    "mecanismo_dominante": "O mecanismo dominante é o comportamento superparamagnético do núcleo de Fe (Fe3O4), que gera calor sob AMF.",
+    "descricao_mecanismo": "As NPs FeTaOx@Au-ANG exibem comportamento superparamagnético confirmado por curvas ZFC/FC e análise SQUID, com temperaturas de bloqueio abaixo da temperatura ambiente. Quando submetidas ao AMF, as NPs superparamagnéticas geram calor de forma localizada no sítio tumoral. O revestimento de Au não magnético preserva a eficiência de aquecimento magnético enquanto o núcleo de Fe mantém as propriedades superparamagnéticas essenciais para a MHT."
   },
   "q3": {
-    "material": "FeTaOx com revestimento de ouro (Au) e conjugação com Angiopep-2",
-    "composicao_quimica": "Fe3O4 / Ta2O5 / Au (núcleo-casca), com Fe (6,2% wt), Ta (32,2% wt), Au (34,1% wt), O (16,7% wt), C (9,6% wt), N (0,1% wt), S (0,1% wt)",
+    "material": "FeTaOx com revestimento de Au (core-shell)",
+    "composicao_quimica": "Fe3O4 + Ta2O5 (núcleo FeTaOx) com casca de Au, conjugado com Angiopep-2",
     "dopagem": "Tântalo (Ta)",
     "tamanho_nm": 13.7,
     "faixa_tamanho_min_nm": 10.0,
@@ -45,12 +45,12 @@
     "forma": "esférica",
     "arquitetura_multicore": false,
     "anisotropia": null,
-    "revestimento": "Ouro (Au) e Angiopep-2 (ANG); PVP utilizado durante a síntese como estabilizante; PEI utilizado na modificação com Au",
+    "revestimento": "Au (ouro) com conjugação de Angiopep-2 (ANG); PVP usado durante síntese",
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 6.95,
-    "relacao_estrutura_propriedade": "A redução da magnetização de saturação de 8,99 emu/g (FeTaOx) para 6,95 emu/g (FeTaOx@Au-ANG) é atribuída ao revestimento não magnético de Au e à modificação com ANG, que reduzem o conteúdo magnético total, mas não comprometem as propriedades superparamagnéticas essenciais para a MHT. A incorporação de Au melhora o contraste em CT, enquanto o Fe confere propriedades de contraste dual T1/T2 em MRI."
+    "relacao_estrutura_propriedade": "O revestimento de Au não magnético sobre o núcleo FeTaOx reduz levemente a magnetização de saturação (de 8,99 para 6,95 emu/g), mas preserva o comportamento superparamagnético essencial para MHT; a incorporação de Ta e Au melhora a biocompatibilidade e o contraste em CT, enquanto o Fe garante as propriedades de MRI (T1/T2) e geração de calor sob AMF."
   },
   "q4": {
     "amplitude_kA_m": null,
@@ -59,13 +59,13 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 15.0,
     "forma_onda": null,
-    "dosimetria_termica": "Câmera de infravermelho (IR camera) para monitoramento da temperatura em tempo real; registro de temperatura a cada 30 segundos durante experimentos in vitro",
-    "distribuicao_espacial_calor": "Aquecimento localizado no tumor; no tecido cerebral normal a temperatura subiu apenas de 33,3 para 34,4°C após 15 min de AMF, confirmando efeito hipertérmico localizado nas células de glioma sem elevação severa de temperatura no tecido cerebral saudável",
+    "dosimetria_termica": "Câmera IR (infravermelho) para monitoramento da temperatura em tempo real",
+    "distribuicao_espacial_calor": "Aquecimento localizado no tumor intracraniano; no tecido cerebral normal, a temperatura elevou apenas de 33,3 para 34,4 °C após 15 min, confirmando efeito hipertérmico localizado sem elevação severa da temperatura do tecido cerebral global.",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vivo",
-    "linhagem_celular": "C6 (glioma de rato, CCL107 ATCC) e L929 (fibroblastos murinos, CCL1 ATCC)",
+    "linhagem_celular": "C6 (glioma de rato)",
     "modelo_animal": "rato (Sprague-Dawley)",
     "tipo_cancer": "glioma",
     "concentracao_mg_mL": 2.5,
@@ -84,32 +84,30 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Agregação de nanopartículas devido a forças interparticulares (dipolo-dipolo, van der Waals, efeitos Brownianos e forças eletrostáticas) que resulta em taxas mais lentas de flutuação de magnetização",
-      "A quimioterapia convencional para glioblastoma apresenta baixa permeabilidade através da barreira hematoencefálica",
-      "A terapia fototérmica (PTT) é limitada pela penetração tecidual de apenas ~1 cm sob irradiação laser",
-      "O revestimento de Au reduz ligeiramente a magnetização de saturação das NPs",
-      "A conjugação com ANG diminui ligeiramente o sinal de MRI em comparação com NPs sem peptídeo"
+      "Agregação de partículas devido a forças interparticulares (dipolo-dipolo, van der Waals, efeitos Brownianos e forças eletrostáticas) que pode reduzir a taxa de flutuações de magnetização e comprometer a MHT",
+      "A terapia fototérmica (PTT) possui penetração tecidual limitada (~1 cm), motivando o uso de MHT para tumores profundos",
+      "A quimioterapia convencional apresenta baixa permeabilidade pela barreira hematoencefálica e baixa disponibilidade no sítio tumoral",
+      "O revestimento de Au reduz a magnetização de saturação das NPs em comparação com o núcleo FeTaOx puro"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Explorar aplicações das FeTaOx@Au-ANG NPs em outros tipos de câncer além do glioma",
-      "Investigar aplicações em biologia do câncer, biomateriais, engenharia biomédica, teste e desenvolvimento de fármacos, e teranostics"
+      "Explorar aplicações em outros tipos de câncer além do glioma, aproveitando a conjugação com ANG",
+      "Investigar aplicações em biologia do câncer, biomateriais, engenharia biomédica, teste e desenvolvimento de fármacos, e teranóstica"
     ],
     "gaps_identificados": [
       "Não foram reportados valores de SAR/ILP para quantificação da eficiência de aquecimento das NPs",
-      "Ausência de avaliação dos parâmetros detalhados do campo magnético (amplitude em kA/m) e do produto H×f em relação aos limites de segurança",
-      "Não foi investigado o efeito da corona proteica sobre as propriedades das NPs in vivo",
-      "O mecanismo físico de geração de calor (relaxação de Néel vs. Browniana vs. perdas de histerese) não foi detalhado",
-      "Estudos clínicos em humanos não foram realizados"
+      "Parâmetros detalhados do AMF (amplitude em kA/m) não foram fornecidos, dificultando comparação com limites de segurança estabelecidos",
+      "Mecanismos físicos específicos de dissipação de calor (relaxação de Néel vs. Browniana vs. histerese) não foram investigados ou discutidos",
+      "Estudos clínicos em humanos ainda não foram realizados"
     ]
   },
   "q7": {
-    "integracao_fisica": "O artigo demonstra que NPs superparamagnéticas de FeTaOx@Au geram calor localizado sob AMF de alta frequência (700-1100 kHz), com aquecimento proporcional à concentração de NPs e confinado à região tumoral.",
-    "integracao_engenharia": "O trabalho desenvolve uma plataforma nanoparticulada core-shell multifuncional (FeTaOx@Au-ANG) sintetizada por método hidrotérmico, integrando capacidades terapêuticas (hipertermia magnética) e diagnósticas (MRI dual T1/T2 e CT) em um único nanossistema.",
-    "integracao_biologia": "As NPs conjugadas com Angiopep-2 atravessam a barreira hematoencefálica via transcitose mediada por receptor LRP, são internalizadas preferencialmente por células de glioma C6, e induzem apoptose e necrose coagulativa tumoral, com redução do índice Ki67 e aumento da expressão de GFAP confirmados por imunohistoquímica.",
-    "integracao_materiais": "A incorporação de Ta e Au nas NPs de óxido de ferro não apenas melhora a biocompatibilidade, mas também confere alto contraste em CT e preserva as propriedades superparamagnéticas essenciais para MHT, demonstrando como a composição química e a arquitetura core-shell determinam as propriedades terapêuticas e diagnósticas do nanomaterial.",
-    "mensagem_principal": "As NPs de FeTaOx@Au-ANG desenvolvidas neste estudo constituem uma plataforma teranostic multifuncional capaz de cruzar a barreira hematoencefálica de forma direcionada, realizar imageamento dual MRI/CT e induzir hipertermia magnética localizada em gliomas, resultando em ~90% de redução na viabilidade celular in vitro, supressão significativa do crescimento tumoral in vivo e extensão da sobrevida dos animais em 18 dias em relação ao grupo sem tratamento com Angiopep-2."
+    "integracao_fisica": "O artigo demonstra que NPs superparamagnéticas de FeTaOx@Au geram calor localizado sob AMF de alta frequência (700-1100 kHz), com aquecimento proporcional à concentração das NPs e sem elevação significativa da temperatura do tecido cerebral normal.",
+    "integracao_engenharia": "O estudo desenvolveu uma plataforma nanoterápica multifuncional core-shell (FeTaOx@Au-ANG) sintetizada por método hidrotérmico, com modificação superficial sequencial (Au e ANG), demonstrando aplicabilidade em sistema de aquecimento por indução de alta frequência para tratamento de glioma.",
+    "integracao_biologia": "As NPs FeTaOx@Au-ANG demonstraram uptake celular seletivo em células C6 de glioma via receptor LRP/Angiopep-2, induzindo apoptose (~95% in vitro) e necrose coagulativa in vivo, redução do índice Ki67 e aumento da expressão de GFAP, com sobrevida estendida em 18 dias comparada ao controle.",
+    "integracao_materiais": "A incorporação de Ta e Au ao núcleo de Fe3O4 melhorou a biocompatibilidade e conferiu propriedades de contraste duplo (MRI T1/T2 e CT), enquanto o revestimento de Au preservou o comportamento superparamagnético essencial para MHT mesmo após conjugação com Angiopep-2.",
+    "mensagem_principal": "As NPs FeTaOx@Au-ANG desenvolvidas neste estudo constituem uma plataforma teranóstica multifuncional capaz de cruzar a barreira hematoencefálica via Angiopep-2, realizar imageamento dual MRI/CT e induzir hipertermia magnética localizada em glioma, resultando em supressão significativa do crescimento tumoral e extensão da sobrevida in vivo com mínimos efeitos adversos."
   },
   "custom_id": "19__Theranostic_Angiopep-2-Conjugated_FeTaOx_Au_Core_Shell"
 }

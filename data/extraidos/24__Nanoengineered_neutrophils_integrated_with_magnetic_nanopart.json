@@ -6,22 +6,21 @@
   "doi": "10.1002/inmd.70061",
   "tipo_estudo": "in vivo",
   "q1": {
-    "conceito_tecnica": "A terapia por hipertermia magnética (MHT) utiliza nanopartículas magnéticas para gerar calor localizado sob a exposição a campos magnéticos alternados (AMF), sendo reconhecida como uma abordagem promissora para ablação tumoral. No estudo, FPP carregado em neutrófilos (FPPN) combina MHT com a atividade antitumoral mediada por ROS dos neutrófilos para tratar tumores pancreáticos profundos.",
+    "conceito_tecnica": "MHT utiliza nanopartículas magnéticas para gerar calor localizado sob campos magnéticos alternantes (AMF), emergindo como uma abordagem inovadora para ablação tumoral. No estudo, FPP carregados em neutrófilos (FPPN) combinam MHT com atividade antitumoral mediada por ROS dos neutrófilos para tratamento do câncer pancreático.",
     "etapas_processo": [
       "Síntese de nanopartículas Fe3O4 pelo método hidrotérmico",
-      "Modificação sequencial com PEI (formando Fe3O4@PEI) e revestimento com PDA (formando Fe3O4@PEI@PDA, abreviado FPP)",
-      "Adsorção eletrostática de FPP (-7,9 mV) na superfície de neutrófilos carregados positivamente para formar FPPN",
-      "Injeção intravenosa de FPPN em camundongos portadores de tumor Pan02",
-      "Guia por MRI ponderada em T2 para monitorar acúmulo tumoral",
-      "Exposição da região tumoral ao AMF (768 Hz, 3 kW, 10 min) para induzir aquecimento magnetotérmico",
-      "Ablação de células tumorais pelo calor gerado e pela liberação de ROS pelos neutrófilos ativados termicamente"
+      "Modificação sequencial com PEI e PDA para formar FPP (Fe3O4@PEI@PDA)",
+      "Adsorção eletrostática de FPP na superfície dos neutrófilos para formar FPPN",
+      "Injeção intravenosa de FPPN no modelo tumoral",
+      "Guia por MRI ponderada em T2 para monitorar acumulação tumoral",
+      "Exposição ao AMF (768 Hz, 3 kW, 10 min) para ativação magnetotérmica",
+      "Ablação tumoral por calor e potencialização da atividade antitumoral dos neutrófilos via ROS"
     ],
-    "internalizacao_nps": "As nanopartículas FPP são adsorvidas eletrostaticamente na superfície dos neutrófilos (não internalizadas), e as células Pan02 demonstraram capacidade de internalização de nanopartículas FPP confirmada por experimentos de captação por fluorescência em 2 horas.",
-    "aplicacao_campo": "O AMF é aplicado na região tumoral por meio de um dispositivo de aquecimento por indução de alta frequência (modelo SPG-06AB-III) a uma frequência de 768 Hz e intensidade de 3 kW por 10 minutos.",
+    "internalizacao_nps": "As FPP são adsorvidas eletrostaticamente na superfície dos neutrófilos (carregados positivamente) por meio de interação com as FPP carregadas negativamente (-7,9 mV após revestimento com PDA); adicionalmente, Pan02 cells demonstraram capacidade de internalização de FPP dentro de 2 h conforme experimentos de captação por fluorescência.",
+    "aplicacao_campo": "O AMF é aplicado externamente sobre a região tumoral com frequência de 768 Hz e intensidade de 3 kW por 10 minutos, utilizando um dispositivo de aquecimento por indução de alta frequência.",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 45.0,
     "vias_morte_celular": [
-      "apoptose",
       "necrose",
       "imunomodulacao"
     ]
@@ -33,8 +32,8 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O mecanismo dominante é o efeito magnetotérmico das nanopartículas de Fe3O4 que convertem energia do campo magnético alternado em calor localizado no tumor.",
-    "descricao_mecanismo": "As nanopartículas FPP, sob exposição ao AMF, geram calor localizado por efeito magnetotérmico, elevando a temperatura do tumor para a faixa terapêutica de 42-45°C. Este aquecimento ablata diretamente as células tumorais e, adicionalmente, ativa os neutrófilos engenheirados a liberarem quantidades substanciais de ROS mitocondrial, amplificando o efeito antitumoral de forma sinérgica."
+    "mecanismo_dominante": "O mecanismo principal é a geração de calor magnetotérmico pelas nanopartículas Fe3O4 sob AMF, produzindo energia térmica suficiente para ablação tumoral direta e ativação dos neutrófilos para liberação de ROS.",
+    "descricao_mecanismo": "As nanopartículas FPP geram calor localizado quando expostas ao AMF, com a temperatura aumentando de forma dependente da concentração e da intensidade do campo. O calor produzido eleva a temperatura do tumor para a faixa terapêutica de 42-45°C, promovendo ablação direta das células tumorais. Adicionalmente, a ativação magnetotérmica dos neutrófilos induz proliferação mitocondrial e aumento da arquitetura das cristas, estimulando a produção de ROS mitocondriais que amplificam a destruição tumoral."
   },
   "q3": {
     "material": "Fe3O4 revestido com PEI e PDA",
@@ -46,12 +45,12 @@
     "forma": "esférica",
     "arquitetura_multicore": false,
     "anisotropia": null,
-    "revestimento": "PEI (polietilenoimina) e PDA (polidopamina)",
+    "revestimento": "PEI (polietilenimina) e PDA (polidopamina)",
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "O revestimento com PEI confere carga positiva (25,6 mV) e o subsequente revestimento com PDA reverte a carga para negativa (-7,9 mV), conferindo biocompatibilidade e estabilidade, além de permitir a adsorção eletrostática eficiente na superfície dos neutrófilos carregados positivamente. A espessura do revestimento de PDA foi de aproximadamente 46,6 nm, e o diâmetro hidrodinâmico do FPP final foi de ~341,9 nm."
+    "relacao_estrutura_propriedade": "O revestimento com PEI confere carga positiva às nanopartículas, enquanto a camada de PDA (~46,6 nm) reverte a carga para negativa (-7,9 mV), aumentando biocompatibilidade e estabilidade e permitindo adsorção eletrostática nos neutrófilos carregados positivamente. O diâmetro hidrodinâmico aumentou de ~295,3 nm (Fe3O4@PEI) para ~341,9 nm (FPP) após o revestimento com PDA."
   },
   "q4": {
     "amplitude_kA_m": null,
@@ -60,15 +59,15 @@
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 10.0,
     "forma_onda": null,
-    "dosimetria_termica": "Imagem termográfica infravermelha (câmera HIKVISION H-13 e DALI Technology) com registro de temperatura a cada 10 segundos",
-    "distribuicao_espacial_calor": "O calor foi distribuído na região tumoral, com temperatura monitorada por câmera infravermelha; o grupo FPPN+AMF atingiu 43,3°C no tumor em 10 minutos, enquanto FPP+AMF atingiu 42,4°C e PBS apenas 30,8°C",
+    "dosimetria_termica": "Monitoramento contínuo da temperatura com câmera infravermelha (HIKVISION H-13 e DALI Technology) a cada 10 segundos, com registro de imagens termográficas infravermelhas",
+    "distribuicao_espacial_calor": "A temperatura foi monitorada na região tumoral; FPPN atingiu 43,3°C no tumor in vivo, superando FPP (42,4°C) e PBS (30,8°C) sob 3 kW por 10 min, indicando aquecimento localizado e superior com FPPN devido à maior acumulação tumoral mediada pelos neutrófilos",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vivo",
     "linhagem_celular": "Pan02",
     "modelo_animal": "camundongo",
-    "tipo_cancer": "pancreático",
+    "tipo_cancer": "pancreas",
     "concentracao_mg_mL": 1.0,
     "agregacao_discutida": false,
     "viscosidade_discutida": false,
@@ -77,38 +76,38 @@
     "protein_corona": false,
     "biodistribuicao": true,
     "toxicidade_avaliada": true,
-    "localizacao_intracelular": false,
-    "apoptose": null,
-    "necrose": true,
+    "localizacao_intracelular": true,
+    "apoptose": false,
+    "necrose": false,
     "ferroptose": false,
     "imunomodulacao": true
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Dificuldade em alcançar e manter controle preciso de temperatura com MHT convencional",
-      "Risco de dano térmico fora do alvo (off-target), especialmente em tumores profundos como o câncer pancreático",
-      "O microambiente tumoral (TME) imunossupressor frequentemente neutraliza a morte celular imunogênica induzida pela hipertermia",
-      "A combinação de MHT com neutrófilos para tratar tumores profundos ainda não havia sido relatada anteriormente"
+      "Dificuldade de controle preciso da temperatura em tumores profundos com MHT convencional",
+      "Risco de dano térmico fora do alvo em tumores profundos como o câncer pancreático",
+      "O microambiente tumoral imunossupressor frequentemente contrabalança a morte celular imunogênica induzida pela hipertermia",
+      "A combinação de MHT com neutrófilos para tratamento de tumores profundos ainda não havia sido relatada anteriormente"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Desenvolver estratégias combinatórias inovadoras para amplificar os efeitos terapêuticos da MHT frente ao TME imunossupressor",
-      "Explorar a plataforma FPPN para tratamento de outros tumores profundos"
+      "Desenvolver estratégias combinatórias inovadoras para amplificar os efeitos terapêuticos superando a imunossupressão do TME",
+      "Explorar a plataforma FPPN para tratamento de outros tumores profundos além do câncer pancreático"
     ],
     "gaps_identificados": [
-      "Ausência de estudos combinando MHT com neutrófilos engenheirados para tumores profundos antes deste trabalho",
-      "Parâmetros de SAR/ILP não foram reportados ou calculados para as nanopartículas FPP",
-      "Mecanismos específicos de relaxação magnética das nanopartículas não foram discutidos",
-      "Não foram avaliados efeitos de proteína corona sobre a estabilidade do FPPN in vivo de forma aprofundada"
+      "Ausência de reporte de SAR/ILP para quantificação precisa da eficiência magnetotérmica das nanopartículas",
+      "Frequência do AMF reportada apenas em Hz (768 Hz), sem conversão para parâmetros padronizados de amplitude em kA/m",
+      "Mecanismos físicos de aquecimento magnético (relaxação de Néel, Browniana ou histerese) não discutidos",
+      "Não foram avaliados efeitos de longo prazo da plataforma FPPN in vivo além do período experimental de ~30 dias"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo demonstra que campos magnéticos alternados de baixa frequência (768 Hz) penetram profundamente em tecidos, permitindo aquecimento magnetotérmico localizado em tumores profundos como o pancreático, com vantagem sobre abordagens fototérmicas de menor penetração.",
-    "integracao_engenharia": "O estudo desenvolve uma plataforma de neutrófilos engenheirados (FPPN) por adsorção eletrostática de nanopartículas FPP sobre neutrófilos, combinando guia por MRI ponderada em T2 com terapia por hipertermia magnética para entrega precisa e ativação controlada do agente terapêutico.",
-    "integracao_biologia": "O estudo revela que o estímulo térmico (42°C) ativa neutrófilos a produzir quantidades substanciais de ROS mitocondrial, com aumento do número de mitocôndrias e rearranjo de cristas, amplificando sinergicamente a citotoxicidade antitumoral mediada pelo sistema imune inato.",
-    "integracao_materiais": "As nanopartículas Fe3O4@PEI@PDA (FPP) foram desenvolvidas com revestimentos sequenciais de PEI e PDA para conferir biocompatibilidade, estabilidade coloidal, responsividade magnética superior e capacidade de contraste em MRI T2, sendo funcionalizadas com sucesso em superfícies celulares de neutrófilos.",
-    "mensagem_principal": "O estudo demonstra que neutrófilos engenheirados com nanopartículas magnéticas Fe3O4@PEI@PDA (FPPN) integram guia por MRI T2, direcionamento tumoral ativo e hipertermia magnética com ativação de ROS mitocondrial de neutrófilos, resultando em eficácia antitumoral sinérgica superior contra tumores pancreáticos profundos em modelo murino, sem toxicidade sistêmica significativa."
+    "integracao_fisica": "Demonstrou que o efeito magnetotérmico de FPP é dependente da concentração e da intensidade do campo, com estabilidade magnética ao longo de 4 ciclos AMF ON/OFF, confirmando propriedades físicas robustas para aplicação em MHT.",
+    "integracao_engenharia": "Desenvolveu uma plataforma de nanoengenharia que integra nanopartículas magnetotérmicas (FPP) em neutrófilos vivos por adsorção eletrostática, criando um sistema de entrega ativo e tumor-direcionado para MHT guiada por MRI.",
+    "integracao_biologia": "Revelou que a ativação magnetotérmica dos neutrófilos a 42°C induz proliferação mitocondrial e aumento da arquitetura das cristas, amplificando a produção de ROS mitocondriais e potencializando a atividade antitumoral inata dos neutrófilos de forma sinérgica com a MHT.",
+    "integracao_materiais": "Caracterizou nanopartículas Fe3O4@PEI@PDA com morfologia esférica, estabilidade coloidal, reversão de carga superficial e resposta magnética rápida (separação em <1 min), demonstrando propriedades físico-químicas superiores para bioengenharia com células imunes.",
+    "mensagem_principal": "A plataforma FPPN, combinando nanopartículas magnetotérmicas Fe3O4@PEI@PDA com neutrófilos nanoengenheirados, supera limitações da MHT convencional ao aproveitar o tumor-homing natural dos neutrófilos para aumentar a acumulação tumoral de FPP, guiada por MRI ponderada em T2, resultando em ablação tumoral sinérgica através de MHT e ROS mediada por neutrófilos em modelo de câncer pancreático profundo."
   },
   "custom_id": "24__Nanoengineered_neutrophils_integrated_with_magnetic_nanopart"
 }

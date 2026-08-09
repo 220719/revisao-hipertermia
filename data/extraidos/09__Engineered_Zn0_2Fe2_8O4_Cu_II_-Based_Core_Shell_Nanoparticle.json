@@ -6,18 +6,17 @@
   "doi": "10.1021/acsanm.6c01226",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MH) é uma estratégia que utiliza nanopartículas magnéticas para gerar calor localizado sob campos magnéticos alternados (AMF), permitindo o aquecimento remoto e local de sistemas catalíticos ou tumorais. No contexto deste artigo, o núcleo de ferrita de zinco atua como fonte de calor interna sob AMF, potencializando reações catalíticas tipo Fenton na casca de cobre.",
+    "conceito_tecnica": "A hipertermia magnética (MH) é um processo no qual nanopartículas magnéticas geram calor sob a aplicação de campos magnéticos alternados (AMF), permitindo aquecimento localizado e remotamente controlado. No contexto deste artigo, a MH é utilizada para ativar cataliticamente a reação de Fenton-like, acelerando a degradação de compostos orgânicos.",
     "etapas_processo": [
       "Síntese das nanopartículas de ferrita de zinco (Zn0.2Fe2.8O4) por decomposição térmica de precursores orgânicos",
-      "Remoção do revestimento hidrofóbico de ácido oleico por lavagem com acetona quente",
-      "Precipitação de hidróxido de cobre sobre a superfície das nanopartículas em etanol",
-      "Conversão do hidróxido de cobre em óxido de cobre por aquecimento em trietilenoglicol a 210°C",
-      "Aplicação do campo magnético alternado (60 mT, 96 kHz) para geração de calor localizado",
-      "Adição de H2O2 para iniciar a reação Fenton-like com geração de radicais ·OH",
-      "Degradação do corante orgânico (azul de metileno) pelos radicais gerados"
+      "Revestimento das nanopartículas com hidróxido de cobre por precipitação, seguido de oxidação térmica para formação de CuO",
+      "Dispersão das nanopartículas core@shell no meio reacional (tampão acetato, pH 5)",
+      "Aplicação do campo magnético alternado (60 mT, 96 kHz) para geração de calor localizado via hipertermia magnética",
+      "Adição de H2O2 para iniciar a reação de Fenton-like catalisada pela camada de Cu(II)",
+      "Geração de radicais ·OH que degradam o corante orgânico (azul de metileno)"
     ],
-    "internalizacao_nps": "O artigo não descreve internalização celular das NPs; o estudo foca em aplicação catalítica ambiental com NPs dispersas em solução tampão acetato.",
-    "aplicacao_campo": "Um campo magnético alternado de 60 mT e 96 kHz é aplicado por meio de um sistema de indução AMF (FIVES CELES) equipado com bobina de cobre resfriada a água, com as NPs dispersas em solução sob agitação contínua.",
+    "internalizacao_nps": "O artigo não descreve internalização celular das NPs; o estudo foca em aplicações de remediação ambiental (degradação de corante) e não em sistemas biológicos celulares.",
+    "aplicacao_campo": "Um campo magnético alternado de 60 mT e 96 kHz é aplicado externamente por meio de um sistema de indução FIVES CELES AMF com bobina de cobre resfriada a água, sob agitação contínua para manter a suspensão homogênea.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -29,35 +28,35 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": true,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O mecanismo de relaxação de Néel é o dominante, sendo crítico para a resposta eficaz do nanoaquecedor independentemente da viscosidade do meio ou da aglomeração das nanopartículas.",
-    "descricao_mecanismo": "As nanopartículas de ferrita de zinco foram otimizadas para maximizar a hipertermia magnética por meio do ajuste da relaxação magnética pelo processo de Néel. Este mecanismo é crítico pois permite o aquecimento eficaz independentemente da viscosidade do meio ou da aglomeração das NPs. Sob AMF, cada nanopartícula atua como uma fonte de calor nanoscópica, gerando aquecimento localizado na superfície da casca catalítica, o que potencializa as reações de superfície além do que seria possível com aquecimento bulk convencional à mesma temperatura."
+    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante para o aquecimento das nanopartículas de ferrita de zinco, sendo crítica para a resposta eficiente do nanoacquecedor independentemente da viscosidade do meio ou da aglomeração das nanopartículas.",
+    "descricao_mecanismo": "As nanopartículas de Zn0.2Fe2.8O4 apresentam comportamento superparamagnético em temperatura ambiente, com baixa anisotropia magnética devido à substituição de Zn, o que favorece a relaxação de Néel como mecanismo dominante de dissipação de energia sob campo magnético alternado. Cada nanopartícula atua como uma fonte de calor nanoscópica, gerando aquecimento localizado na superfície catalítica da camada de Cu(II), potencialmente acelerando as reações superficiais de Fenton-like de forma mais eficiente do que o aquecimento convencional em bulk. O SAR determinado foi de aproximadamente 70 W/g sob campo de 60 mT e 96 kHz."
   },
   "q3": {
-    "material": "ferrita de zinco (núcleo) com casca de Cu(II)/CuO",
-    "composicao_quimica": "Zn0.2Fe2.8O4 (núcleo) e CuO/Cu(OH)2 (casca)",
-    "dopagem": "Zn (zinco) no núcleo de ferrita",
-    "tamanho_nm": 20.0,
-    "faixa_tamanho_min_nm": 19.0,
-    "faixa_tamanho_max_nm": 35.0,
+    "material": "Ferrita de zinco (núcleo) com revestimento de Cu(II) (CuO/Cu(OH)2)",
+    "composicao_quimica": "Zn0.2Fe2.8O4 (núcleo); CuO/Cu(OH)2 (casca)",
+    "dopagem": "Zinco (Zn2+) na estrutura espinélio da ferrita",
+    "tamanho_nm": 19.0,
+    "faixa_tamanho_min_nm": 16.0,
+    "faixa_tamanho_max_nm": 22.0,
     "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia reduzida pela substituição de Zn, resultando em comportamento superparamagnético",
+    "anisotropia": "Baixa anisotropia magnética devido à substituição de Zn2+ nos sítios tetraédricos da estrutura espinélio, favorecendo comportamento superparamagnético",
     "revestimento": "CuO/Cu(OH)2 (casca amorfa com espessura média de 2,8 ± 0,9 nm)",
     "material_autorregulavel": false,
     "SAR_W_g": 70.0,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 76.0,
-    "relacao_estrutura_propriedade": "A substituição de Zn2+ no sítio tetraédrico da espinela reforça o desequilíbrio entre as sub-redes A e B acopladas antiferromagneticamente, aumentando a magnetização de saturação (76 emu/g) apesar do tamanho nanométrico. A arquitetura core@shell permite a otimização independente das propriedades magnéticas do núcleo (para geração de calor) e da atividade catalítica da casca (para reações Fenton-like)."
+    "relacao_estrutura_propriedade": "A substituição de Zn2+ nos sítios tetraédricos da estrutura espinélio reduz a anisotropia magnética e aumenta a magnetização de saturação (76 emu/g), favorecendo o comportamento superparamagnético e a relaxação de Néel, que é o mecanismo responsável pelo aquecimento eficiente sob campo magnético alternado. A arquitetura core@shell permite a otimização independente das propriedades magnéticas do núcleo (para geração de calor) e da atividade catalítica da casca de Cu(II) (para reação de Fenton-like)."
   },
   "q4": {
-    "amplitude_kA_m": 47.7,
+    "amplitude_kA_m": null,
     "frequencia_kHz": 96.0,
-    "produto_Hf": 4579200000.0,
+    "produto_Hf": null,
     "dentro_limite_seguranca": null,
     "tempo_tratamento_min": 60.0,
     "forma_onda": null,
-    "dosimetria_termica": "Sensor de fibra óptica inserido na amostra para monitoramento em tempo real da temperatura; SAR calculado a partir da inclinação inicial da curva temperatura-tempo (primeiros 4 min após ligar o AMF)",
-    "distribuicao_espacial_calor": "Aquecimento localizado em nanoescala: cada nanopartícula atua como fonte de calor interna, gerando temperatura local na superfície da casca catalítica possivelmente superior à temperatura bulk medida",
+    "dosimetria_termica": "Taxa de aquecimento inicial (dT/dt) obtida pelo ajuste linear dos primeiros 4 minutos após acionamento do campo magnético alternado, monitorada por sensor de fibra óptica inserido na amostra",
+    "distribuicao_espacial_calor": "Aquecimento localizado em nanoescala, onde cada nanopartícula atua como fonte de calor interna sob campo magnético alternado, promovendo reações superficiais na casca catalítica de forma mais eficiente do que o aquecimento convencional em bulk",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -81,32 +80,31 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Lixiviação de cobre (Cu) durante a reação catalítica, comprometendo a estabilidade do catalisador e a eficiência de reutilização",
-      "Conversão incompleta de Cu(OH)2 em CuO durante a síntese, facilitando a perda de cobre",
-      "Diminuição gradual da atividade catalítica após três ciclos de reutilização",
-      "Contribuição homogênea da reação Fenton por íons metálicos lixiviados (Cu e Fe dissolvidos)",
-      "Necessidade de melhorias na escalabilidade da rota de síntese para reduzir custos de produção"
+      "Lixiviação de cobre (Cu) durante os ciclos catalíticos, reduzindo a estabilidade do catalisador e contribuindo para reação homogênea indesejada",
+      "Diminuição gradual da eficiência catalítica após três ciclos de reutilização",
+      "Transformação incompleta de Cu(OH)2 em CuO durante a síntese, facilitando a perda de cobre",
+      "Escalabilidade limitada da rota de síntese para atender à demanda de material e reduzir custos de produção"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Otimização do material para minimizar a lixiviação de metais e melhorar a eficiência de reutilização",
-      "Melhorias na escalabilidade da rota de síntese para atender à demanda de material e reduzir custos de produção",
-      "Exploração das aplicações biomédicas (terapias direcionadas) e de remediação ambiental do sistema core@shell desenvolvido"
+      "Otimização adicional do material para minimizar a lixiviação de metais e melhorar a eficiência de reutilização do catalisador",
+      "Melhorias na escalabilidade da rota de síntese para reduzir custos de produção",
+      "Investigação mais aprofundada da contribuição homogênea versus heterogênea na reação catalítica"
     ],
     "gaps_identificados": [
-      "Falta de discriminação entre contribuições homogêneas (íons lixiviados) e heterogêneas (superfície das NPs) na atividade catalítica por EPR",
-      "Ausência de estudos in vivo para validar a eficácia em ambientes biológicos tumorais",
-      "Mecanismo exato do aquecimento localizado em nanoescala e sua influência quantitativa nas reações de superfície ainda não completamente elucidado",
-      "Falta de medições diretas da temperatura local na superfície das nanopartículas durante a hipertermia magnética"
+      "Mecanismo exato de aquecimento localizado em nanoescala versus aquecimento bulk ainda necessita de investigação mais detalhada",
+      "Distinção entre contribuições homogêneas (íons lixiviados) e heterogêneas (superfície das NPs) na geração de radicais via EPR",
+      "Avaliação de aplicações biomédicas in vivo com o sistema core@shell desenvolvido",
+      "Falta de determinação do produto H×f e comparação com limites de segurança biológica"
     ]
   },
   "q7": {
-    "integracao_fisica": "Demonstra que o mecanismo de relaxação de Néel permite geração de calor eficaz independente da viscosidade do meio, e que o aquecimento localizado em nanoescala produz cinética de reação superior ao aquecimento bulk convencional à mesma temperatura medida.",
-    "integracao_engenharia": "Desenvolve uma plataforma de nanocatalisadores core@shell com ativação remota por campo magnético alternado, permitindo controle preciso da atividade catalítica e recuperação magnética dos catalisadores para reutilização em múltiplos ciclos.",
-    "integracao_biologia": "Aponta o potencial do sistema para aplicações biomédicas, incluindo terapia de tumores por geração de ROS (radicais ·OH) no microambiente tumoral com controle remoto via AMF, bem como para remediação ambiental de efluentes.",
-    "integracao_materiais": "Demonstra que a arquitetura core@shell Zn0.2Fe2.8O4@Cu(II) permite otimização independente das propriedades magnéticas do núcleo (alta magnetização de saturação, comportamento superparamagnético) e da atividade catalítica da casca (CuO/Cu(OH)2 com atividade Fenton-like termicamente ativada).",
-    "mensagem_principal": "Nanocatalisadores core@shell de Zn0.2Fe2.8O4@Cu(II) com atividade catalítica negligenciável em condições ambiente podem ser remotamente ativados por campo magnético alternado via hipertermia magnética, atingindo 99% de degradação de azul de metileno em 1 hora com eficiência cinética superior ao aquecimento convencional equivalente, demonstrando um efeito sinérgico entre aquecimento localizado em nanoescala e atividade catalítica Fenton-like da casca de cobre."
+    "integracao_fisica": "O artigo demonstra que o mecanismo de relaxação de Néel domina o aquecimento das nanopartículas superparamagnéticas de ferrita de zinco sob campo magnético alternado, gerando aquecimento localizado em nanoescala superior ao aquecimento convencional em bulk.",
+    "integracao_engenharia": "O trabalho apresenta uma plataforma de nanocatalisadores core@shell que integra propriedades magnéticas (núcleo de ferrita de zinco) e catalíticas (casca de Cu(II)) em uma única nanopartícula, permitindo controle remoto da atividade catalítica via campo magnético e recuperação magnética do catalisador para reutilização.",
+    "integracao_biologia": "O artigo discute o potencial das nanopartículas core@shell para aplicações biomédicas, incluindo terapia de câncer via geração de espécies reativas de oxigênio (·OH) no microambiente tumoral, embora os experimentos realizados sejam focados em remediação ambiental.",
+    "integracao_materiais": "A arquitetura core@shell Zn0.2Fe2.8O4@Cu(II) permite a otimização independente das propriedades do núcleo magnético (alta magnetização de saturação, comportamento superparamagnético) e da casca catalítica (atividade Fenton-like termicamente ativada), demonstrando que a estrutura determina as propriedades funcionais do sistema.",
+    "mensagem_principal": "Nanopartículas core@shell de Zn0.2Fe2.8O4@Cu(II) combinam geração de calor magnético e atividade catalítica Fenton-like, alcançando 99% de degradação de azul de metileno em 1 hora sob hipertermia magnética, com desempenho superior ao aquecimento convencional na mesma temperatura bulk, atribuído ao aquecimento localizado em nanoescala que acelera as reações superficiais da casca catalítica de Cu(II)."
   },
   "custom_id": "09__Engineered_Zn0_2Fe2_8O4_Cu_II_-Based_Core_Shell_Nanoparticle"
 }

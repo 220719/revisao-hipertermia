@@ -6,16 +6,18 @@
   "doi": "10.1039/d5na00603a",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética utiliza SPIONs expostos a um campo magnético alternante (AMF) para gerar calor por relaxação magnética, elevando a temperatura local do tumor a 43–46 °C para destruir células cancerígenas. Combinada com MRI, oferece uma abordagem teranóstica para diagnóstico e tratamento localizado de tumores.",
+    "conceito_tecnica": "A hipertermia magnética utiliza SPIONs expostas a um campo magnético alternante (AMF) para gerar calor localmente, elevando a temperatura do tumor a níveis terapêuticos de 43–46 °C. Essa abordagem combina diagnóstico por MRI e tratamento térmico em uma plataforma teranóstica.",
     "etapas_processo": [
-      "Síntese de SPIONs revestidos com sílica por flame spray pyrolysis (FSP)",
-      "Funcionalização da superfície com mPEG-silano para estabilização estérica",
-      "Dispersão das NPs em suspensão aquosa e administração intratumoral",
-      "Exposição ao campo magnético alternante (AMF) para geração de calor",
-      "Monitoramento da temperatura e avaliação da eficácia terapêutica"
+      "Síntese de SPIONs dopadas por flame spray pyrolysis (FSP) com revestimento de SiO2 in situ",
+      "Funcionalização da superfície com mPEG-silano para estabilização estérica em fluidos biológicos",
+      "Caracterização das propriedades físico-químicas e magnéticas das nanopartículas",
+      "Avaliação do desempenho de aquecimento em ambientes colônicos birrelevantes",
+      "Avaliação de citotoxicidade e captação celular em linhagens CRC in vitro",
+      "Aplicação do AMF para induzir hipertermia magnética in vitro (configurações upright e invertida) e in vivo (modelo xenoenxerto de camundongo)",
+      "Avaliação da eficácia terapêutica por medição do volume tumoral e análise histológica"
     ],
-    "internalizacao_nps": "A internalização celular foi baixa (<4 pg Fe por célula) devido ao revestimento denso de mPEG; o efeito terapêutico foi predominantemente atribuído ao aquecimento extracelular, com sedimentação das NPs sobre as células na configuração upright aumentando o contato com a superfície celular.",
-    "aplicacao_campo": "O AMF foi aplicado por uma bobina de 9 voltas com jaqueta de água a 37 °C, operando a frequência de 592,3 kHz e amplitude de 14 mT, por períodos de 10 a 60 minutos dependendo do experimento.",
+    "internalizacao_nps": "A captação celular das SPIONs mPEGyladas foi baixa (<4 pg Fe por célula), sendo ligeiramente maior na configuração upright devido à sedimentação gravitacional das partículas sobre a superfície celular; a densa camada de mPEG inibe ativamente a internalização.",
+    "aplicacao_campo": "O AMF é aplicado posicionando as amostras no centro de uma bobina de 9 espiras resfriada a água (diâmetro 44 mm), operando a 592,3 kHz e 14 mT, com monitoramento contínuo da temperatura por sonda de fibra óptica.",
     "janela_termica_min_C": 43.0,
     "janela_termica_max_C": 46.0,
     "vias_morte_celular": [
@@ -29,41 +31,41 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": true,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante, pois a geração de calor foi consistente em ambientes com diferentes viscosidades, indicando que a rotação do domínio magnético interno (e não a rotação física da partícula) é a principal fonte de calor.",
-    "descricao_mecanismo": "Nas SPIONs superparamagnéticas, a exposição ao AMF causa o alinhamento do domínio magnético (relaxação de Néel) ou da própria partícula (relaxação Browniana) com o campo magnético alternante, liberando calor. Como a geração de calor foi similar em ambientes de diferentes viscosidades (água, mucus colônico, ágar), a relaxação de Néel — independente da viscosidade — foi identificada como o mecanismo dominante. Todas as partículas dopadas, exceto a g-Fe2O3, apresentaram histerese próxima de zero, confirmando comportamento superparamagnético."
+    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante, pois o desempenho de aquecimento foi similar em ambientes de viscosidade variável, indicando independência da contribuição Browniana.",
+    "descricao_mecanismo": "Sob exposição ao AMF, o domínio magnético das SPIONs (relaxação de Néel) ou a partícula inteira (relaxação Browniana) se alinha com a direção do campo oscilante, liberando calor. A relaxação de Néel envolve a rotação do momento magnético dentro da partícula, sem necessidade de movimento físico da partícula, tornando-a independente da viscosidade do meio. Os resultados experimentais em ambientes de viscosidade variável (água, mucus colônico, FaSSCoF, ágar) mostraram valores de ΔT similares, confirmando a predominância da relaxação de Néel."
   },
   "q3": {
-    "material": "Ferrita de manganês-zinco dopada",
-    "composicao_quimica": "Mn0.6Zn0.4Fe2O4 com revestimento de SiO2 e funcionalização com mPEG",
+    "material": "ferrita de manganês-zinco dopada (Mn0.6Zn0.4Fe2O4)",
+    "composicao_quimica": "Mn0.6Zn0.4Fe2O4 com revestimento de SiO2 (~23% w/w) e funcionalização com mPEG-silano (5 kDa)",
     "dopagem": "Mn2+ e Zn2+",
     "tamanho_nm": 15.5,
-    "faixa_tamanho_min_nm": 10.0,
-    "faixa_tamanho_max_nm": 30.0,
-    "forma": null,
+    "faixa_tamanho_min_nm": 13.0,
+    "faixa_tamanho_max_nm": 16.2,
+    "forma": "esférica",
     "arquitetura_multicore": false,
     "anisotropia": null,
-    "revestimento": "sílica (SiO2) com funcionalização de mPEG (5 kDa)",
+    "revestimento": "SiO2 (in situ, hermético) + mPEG (5 kDa, via ligação Si-O covalente)",
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 94.8,
-    "relacao_estrutura_propriedade": "A dopagem com Mn2+ e Zn2+ nos sítios A (tetraédrico) e B (octaédrico) da estrutura espinélio cúbica enfraquece interações antiferromagnéticas e aumenta o momento magnético total, resultando em maior magnetização de saturação (94,8 emu/g) e melhor desempenho de aquecimento em comparação à g-Fe2O3 não dopada. A baixa coercividade do Mn0.6Zn0.4Fe2O4 em relação ao Zn0.4Fe2.6O4 também contribui para sua superior resposta térmica sob AMF."
+    "relacao_estrutura_propriedade": "A incorporação de Mn2+ e Zn2+ na estrutura espinélio cúbica da magnetita aumenta a magnetização de saturação (94,8 emu/g vs 70,4 emu/g do g-Fe2O3) e reduz a coercividade, melhorando tanto o desempenho de aquecimento em hipertermia magnética quanto o contraste T2 em MRI. O revestimento hermético de SiO2 melhora a biocompatibilidade, a dispersibilidade em água e facilita a funcionalização superficial, além de aumentar a magnetização de saturação em comparação com SPIONs não revestidas."
   },
   "q4": {
     "amplitude_kA_m": 11.14,
     "frequencia_kHz": 592.3,
-    "produto_Hf": 6598022000.0,
+    "produto_Hf": 6597622000.0,
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": 20.0,
     "forma_onda": null,
-    "dosimetria_termica": "Sonda de fibra óptica (OSENSA, Canadá) para medições in vitro; câmera térmica infravermelha (Fluke Ti480 Pro) para medições in vivo na superfície do tumor",
-    "distribuicao_espacial_calor": "In vitro, o aquecimento foi localizado próximo às nanopartículas sedimentadas sobre as células na configuração upright; in vivo, a temperatura superficial média no tumor foi de 47 °C, inferior aos 59 °C atingidos in vitro com a mesma dose, devido à dissipação biológica de calor e distribuição heterogênea das SPIONs",
+    "dosimetria_termica": "Sonda de fibra óptica (OSENSA, Canada) para medição contínua da temperatura in vitro; câmera infravermelha térmica (Fluke Ti480 Pro) para monitoramento da temperatura superficial tumoral in vivo",
+    "distribuicao_espacial_calor": "In vivo, a distribuição foi heterogênea dentro do tumor, com temperatura superficial média de 47 °C, inferior aos 59 °C atingidos in vitro com o mesmo volume e concentração, devido à dissipação biológica de calor e variabilidade no posicionamento do tumor em relação ao centro do campo.",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vitro",
     "linhagem_celular": "SW480 e Caco-2",
-    "modelo_animal": "camundongo",
+    "modelo_animal": "camundongo (C57Bl/6, modelo xenoenxerto MC38)",
     "tipo_cancer": "colorretal",
     "concentracao_mg_mL": 0.4,
     "agregacao_discutida": true,
@@ -81,34 +83,33 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Baixa internalização celular das SPIONs PEGyladas (<4 pg Fe por célula) limitou a avaliação do aquecimento intracelular",
-      "Configuração in vitro pode gerar falsos positivos na avaliação de hipertermia magnética devido à sedimentação de nanopartículas na configuração upright",
-      "Diferença significativa entre aquecimento in vitro (59 °C) e in vivo (47 °C superficial) ressalta limitações de extrapolação dos dados in vitro",
-      "Variabilidade no posicionamento dos tumores em relação ao centro da bobina pode afetar a eficiência de aquecimento in vivo",
-      "Falta de avaliação in vivo como agente de contraste MRI",
-      "Comparações diretas entre SPIONs são dificultadas por diferenças nas condições experimentais e ausência de medições em ambientes biorrelevantes na literatura"
+      "Baixa captação celular das SPIONs mPEGyladas (<4 pg Fe/célula), limitando os efeitos de aquecimento intracelular",
+      "O ambiente in vivo introduz fatores que atenuam a eficiência de aquecimento (dissipação biológica de calor, distribuição heterogênea de SPIONs no tumor, variabilidade no posicionamento do tumor em relação ao centro do campo)",
+      "Em um caso, a exposição ao AMF foi encerrada aos 14 minutos devido ao despertar prematuro do animal",
+      "A avaliação do desempenho in vivo como agente de contraste MRI não foi realizada, sendo sugerida para estudos futuros",
+      "Comparações diretas entre diferentes SPIONs dopadas são difíceis devido a diferenças nas condições experimentais reportadas na literatura"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": true,
     "recomendacoes_futuras": [
-      "Funcionalizar as SPIONs com ligantes de direcionamento ativo (anti-VEGF, anti-EGFR, anti-CEA) para aumentar a internalização celular e habilitar aquecimento intracelular",
-      "Utilizar a configuração de cultura celular invertida para avaliar eficiência de direcionamento ativo e aquecimento intracelular em estudos futuros",
-      "Avaliar o desempenho in vivo das mPEG-Mn0.6Zn0.4Fe2O4 como agente de contraste MRI",
-      "Investigar plataformas de entrega direcionada ao cólon para administração oral das SPIONs"
+      "Funcionalização das SPIONs com ligantes de direcionamento ativo (ex.: anti-VEGF, anti-EGFR, anti-CEA) para aumentar a captação celular e permitir hipertermia magnética intracelular",
+      "Uso da configuração de cultura celular invertida para avaliar eficiência de direcionamento ativo e aquecimento intracelular subsequente",
+      "Avaliação do desempenho in vivo das SPIONs como agente de contraste MRI",
+      "Estudos adicionais em modelos in vivo para avaliar biodistribuição e segurança sistêmica"
     ],
     "gaps_identificados": [
       "Administração oral de SPIONs para tratamento localizado de cânceres gastrointestinais permanece pouco explorada",
-      "Impacto da configuração de cultura celular (upright vs. invertida) na avaliação in vitro de hipertermia magnética não havia sido investigado anteriormente",
-      "Medições de desempenho de aquecimento em ambientes biorrelevantes são raramente reportadas na literatura, dificultando a translação clínica",
-      "Falta de estudos avaliando SPIONs dopados com Mn-Zn especificamente para CRC com abordagem teranóstica combinando MRI e hipertermia"
+      "O impacto da configuração de cultura celular (upright vs. invertida) na avaliação in vitro de hipertermia magnética não havia sido explorado anteriormente",
+      "Falta de medições de desempenho em ambientes biorrelevantes na literatura dificulta a tradução clínica",
+      "Efeitos de aquecimento extracellular vs. intracelular e sua relação com configuração experimental precisam de maior investigação sistemática"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo demonstrou que a relaxação de Néel é o mecanismo dominante de geração de calor nas SPIONs Mn0.6Zn0.4Fe2O4, independentemente da viscosidade do meio, confirmado pela consistência do aquecimento em ambientes com diferentes propriedades reológicas.",
-    "integracao_engenharia": "A síntese por flame spray pyrolysis (FSP) permitiu produção escalável e reprodutível de SPIONs com tamanho e composição controlados (~15 nm), com revestimento hermético de SiO2 in situ e taxa de produção de até 10 kg/h, adequada para manufatura industrial.",
-    "integracao_biologia": "Estudos in vitro com linhagens CRC (SW480 e Caco-2) em configurações upright e invertida revelaram que a sedimentação de nanopartículas sobre células amplifica significativamente a morte celular por hipertermia magnética, e estudos in vivo em modelo xenoenxerto murino demonstraram redução de 63% do volume tumoral após única exposição de 20 minutos ao AMF.",
-    "integracao_materiais": "A dopagem com Mn2+ e Zn2+ na estrutura espinélio das ferritas aumentou a magnetização de saturação para 94,8 emu/g e a relaxividade r2 para 430 mM⁻¹s⁻¹, enquanto a funcionalização com mPEG (5 kDa, densidade ~0,30 mPEG/nm²) proporcionou estabilidade coloidal superior em múltiplos fluidos biorrelevantes por 24 horas.",
-    "mensagem_principal": "Este estudo demonstra que nanopartículas mPEG-Mn0.6Zn0.4Fe2O4 produzidas por flame spray pyrolysis apresentam desempenho teranóstico robusto para câncer colorretal, combinando aquecimento magnético eficiente em ambientes colônicos biorrelevantes, forte contraste T2 em MRI e eficácia terapêutica in vivo com redução de 63% do volume tumoral após única sessão de hipertermia magnética. O trabalho também introduz pela primeira vez a avaliação do impacto da configuração de cultura celular (upright vs. invertida) na hipertermia magnética in vitro, destacando a importância da padronização experimental para translação clínica."
+    "integracao_fisica": "O artigo demonstra que a relaxação de Néel é o mecanismo dominante de geração de calor nas SPIONs testadas, evidenciado pela independência do desempenho de aquecimento em relação à viscosidade do meio em diferentes ambientes colônicos birrelevantes.",
+    "integracao_engenharia": "O uso de flame spray pyrolysis (FSP) com revestimento in situ de SiO2 permite produção altamente escalável (até 10 kg/h) e reprodutível de SPIONs com controle fino de tamanho e composição, adequada para fabricação industrial.",
+    "integracao_biologia": "O estudo demonstrou que a configuração experimental de cultura celular (upright vs. invertida) impacta significativamente os resultados de hipertermia magnética in vitro, com a configuração upright produzindo maior morte celular devido à sedimentação das nanopartículas sobre as células, destacando a importância de parâmetros experimentais sistemáticos na avaliação pré-clínica.",
+    "integracao_materiais": "A dopagem com Mn2+ e Zn2+ na estrutura espinélio e o revestimento hermético com SiO2 seguido de funcionalização com mPEG resultaram em nanopartículas com alta magnetização de saturação (94,8 emu/g), excelente estabilidade coloidal em fluidos biológicos complexos e biocompatibilidade superior às ferrites não revestidas.",
+    "mensagem_principal": "As nanopartículas mPEG-Mn0.6Zn0.4Fe2O4 produzidas por flame spray pyrolysis demonstraram excelente desempenho teranóstico combinado — aquecimento magnético consistente em ambientes colônicos birrelevantes, relaxividade T2 superior ao contraste comercial Resovist® e redução de 63% do volume tumoral in vivo após uma única exposição de 20 minutos ao AMF —, estabelecendo-as como plataforma promissora para hipertermia magnética guiada por imagem no tratamento do câncer colorretal. Adicionalmente, o estudo inova ao demonstrar pela primeira vez o impacto da configuração de cultura celular (upright vs. invertida) na avaliação in vitro de hipertermia magnética, ressaltando a necessidade de padronização dos parâmetros experimentais pré-clínicos."
   },
   "custom_id": "55__Flame-made_nanoparticles_for_magnetic_hyperthermia_and_MRI_i"
 }

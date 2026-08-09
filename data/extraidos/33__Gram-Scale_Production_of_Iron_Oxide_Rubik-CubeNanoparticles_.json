@@ -6,16 +6,16 @@
   "doi": "10.1002/adfm.202522732",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MHT) utiliza nanopartículas magnéticas expostas a um campo magnético alternante (AMF) para gerar calor e atingir temperaturas terapêuticas (~45°C). O calor gerado facilita a distribuição de fármacos quimioterápicos ou potencializa o efeito da radioterapia quando usado como adjuvante.",
+    "conceito_tecnica": "A hipertermia magnética (MHT) utiliza nanopartículas magnéticas expostas a um campo magnético alternante (AMF) para gerar calor, atingindo temperaturas terapêuticas (~45°C) para tratamento de tumores sólidos agressivos. O calor gerado pode facilitar a distribuição de fármacos quimioterápicos ou potencializar o efeito da radioterapia.",
     "etapas_processo": [
-      "Síntese das nanopartículas magnéticas por método solvotérmico em escala gram",
-      "Transferência das NPs de meio orgânico para solução aquosa por troca de ligante com GA-PEG",
-      "Caracterização das propriedades magnéticas e de aquecimento (SAR/ILP)",
-      "Aplicação do campo magnético alternante (AMF) às NPs dispersas",
-      "Monitoramento da geração de calor por câmera térmica infravermelha"
+      "Síntese das nanopartículas magnéticas (NPs) por método solvotermal em escala de gramas",
+      "Transferência das NPs de meio orgânico para solução aquosa via troca de ligante com GA-PEG",
+      "Avaliação do desempenho de aquecimento (SAR) por magnetômetro AC em diferentes frequências e amplitudes de campo",
+      "Exposição das NPs ao AMF para geração de calor terapêutico",
+      "Monitoramento da distribuição de calor por câmera térmica infravermelha"
     ],
-    "internalizacao_nps": "O artigo não descreve explicitamente a internalização celular das NPs, mas menciona que NRKs menores são mais indicadas para MHT intracelular devido à independência de viscosidade do meio.",
-    "aplicacao_campo": "O AMF é aplicado por meio de um sistema de aquecimento por indução magnética (MSI Automation bench-mount) com bobina, a frequências entre 110 e 380 kHz e amplitudes de campo de 12 a 24 kA/m.",
+    "internalizacao_nps": "O artigo não descreve explicitamente a internalização das NPs por células; menciona apenas que NRKs menores são mais adequadas para MHT intracelular, sugerindo potencial de internalização celular.",
+    "aplicacao_campo": "O AMF é aplicado por meio de uma bobina conectada a um sistema de aquecimento por indução magnética, com frequência de 380 kHz e amplitude de 16 kA/m nos experimentos de hMPI, ou entre 110–300 kHz e 12–24 kA/m nas medições de SAR.",
     "janela_termica_min_C": 45.0,
     "janela_termica_max_C": 45.0,
     "vias_morte_celular": []
@@ -27,25 +27,25 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": "senoidal",
-    "mecanismo_dominante": "Para NRK27, o mecanismo dominante é a relaxação de Néel, evidenciada pela independência do SAR em relação à viscosidade do meio (~5% de redução em glicerol 50%).",
-    "descricao_mecanismo": "As NRKs com até 27 nm exibem comportamento quasi-superparamagnético com aquecimento predominantemente por relaxação de Néel (rotação interna da magnetização), tornando sua eficiência de aquecimento independente da viscosidade do meio. Já as NRKs de 42 nm apresentam queda drástica do SAR em meio viscoso, indicando dependência significativa da relaxação Browniana (rotação física da partícula). O SAR é determinado pela área do loop de histerese AC multiplicada pela frequência, refletindo as perdas magnéticas totais durante a excitação por AMF."
+    "mecanismo_dominante": "Para NRK27, o mecanismo dominante é a relaxação de Néel, evidenciado pela independência do SAR em relação à viscosidade do meio, enquanto para NRK42 a relaxação Browniana tem papel mais relevante.",
+    "descricao_mecanismo": "A relaxação de Néel envolve a rotação interna do momento magnético dentro da nanopartícula sem movimento físico da partícula, sendo dominante para partículas menores ou imobilizadas em meio viscoso. A relaxação Browniana envolve a rotação física da partícula no fluido, sendo suprimida em meios viscosos. No caso das NRKs de 42 nm, a grande redução do SAR em glicerol 50% indica dependência da relaxação Browniana, possivelmente relacionada ao grande tamanho hidrodinâmico e tendência de formação de cadeias; as NRKs de 27 nm, por outro lado, apresentam queda inferior a 5% do SAR em meio viscoso, indicando predominância da relaxação de Néel."
   },
   "q3": {
-    "material": "maghemita (γ-Fe2O3) predominante, com possível presença de magnetita (Fe3O4)",
-    "composicao_quimica": "γ-Fe2O3 (fase espinélio inverso, grupo espacial Fd-3m)",
+    "material": "maghemita (γ-Fe2O3), possivelmente com presença de magnetita (Fe3O4)",
+    "composicao_quimica": "γ-Fe2O3 (grupo espacial Fd-3m, estrutura espinélio inverso cúbico)",
     "dopagem": null,
-    "tamanho_nm": 27.0,
+    "tamanho_nm": 22.0,
     "faixa_tamanho_min_nm": 19.0,
     "faixa_tamanho_max_nm": 45.0,
     "forma": "cubo",
     "arquitetura_multicore": true,
-    "anisotropia": "anisotropia de forma cúbica combinada com anisotropia de superfície e estrutura multicore dendrítica; eixo fácil de magnetização ao longo da direção {111}; constante de anisotropia efetiva K entre 9040 e 14000 J/m³",
+    "anisotropia": "anisotropia de forma cúbica combinada com anisotropia efetiva aumentada pela estrutura multicore dendrítica e efeitos de superfície; eixo fácil de magnetização orientado ao longo da direção {111}",
     "revestimento": "PEG",
     "material_autorregulavel": false,
     "SAR_W_g": 1000.0,
     "ILP_nHm2_kg": null,
-    "magnetizacao_saturacao_emu_g": 135.0,
-    "relacao_estrutura_propriedade": "A arquitetura única das NRKs, combinando morfologia cúbica externa com estrutura interna dendrítica multicore, resulta em alta magnetização de saturação, baixa coercividade e elevada anisotropia magnética efetiva, conferindo-lhes desempenho de aquecimento recorde em MHT. O comportamento quasi-superparamagnético mesmo em tamanhos acima de 19 nm diferencia as NRKs dos nanocubos convencionais, que transitam para comportamento ferromagnético nessa faixa de tamanho."
+    "magnetizacao_saturacao_emu_g": 95.8,
+    "relacao_estrutura_propriedade": "A morfologia única das NRKs, combinando formato cúbico externo com estrutura interna dendrítica multicore de domínio único, resulta em alta magnetização de saturação, baixa coercividade mesmo em tamanhos grandes (19–45 nm) e elevada anisotropia magnética efetiva (K = 9040–14000 J/m³), levando a perdas magnéticas de aquecimento recordes sob excitação de radiofrequência clinicamente relevante."
   },
   "q4": {
     "amplitude_kA_m": 24.0,
@@ -54,15 +54,15 @@
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": 0.5,
     "forma_onda": "senoidal",
-    "dosimetria_termica": "Área do loop de histerese AC medida por magnetômetro AC (AC-Hyster); SAR = A·f·m⁻¹; monitoramento por câmera térmica infravermelha nos experimentos de hMPI",
-    "distribuicao_espacial_calor": "Na aplicação de hipértermia guiada por MPI (hMPI), a aplicação de gradiente de campo magnético estático junto ao AMF permite localizar a geração de calor apenas na região livre de campo (FFR) central, demonstrando capacidade de focalização espacial do aquecimento.",
+    "dosimetria_termica": "Câmera térmica infravermelha para monitoramento da geração de calor; SAR determinado pela equação SAR = A·f·m⁻¹ a partir da área do loop de histerese AC",
+    "distribuicao_espacial_calor": "A aplicação de gradiente de campo magnético estático durante a MHT permite a localização espacial da geração de calor, com aquecimento apenas na região livre de campo (FFR) central, demonstrado em experimento de hMPI com suporte multiwell impresso em 3D.",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vitro",
     "linhagem_celular": null,
     "modelo_animal": null,
-    "tipo_cancer": "glioblastoma ou adenocarcinoma pancreático ou próstata ou cabeça e pescoço (mencionados como aplicações alvo)",
+    "tipo_cancer": "glioblastoma ou adenocarcinoma pancreático ou próstata ou cabeça e pescoço (mencionados como alvos clínicos)",
     "concentracao_mg_mL": 1.0,
     "agregacao_discutida": true,
     "viscosidade_discutida": true,
@@ -79,35 +79,34 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "NRK42 apresenta queda drástica do SAR e do sinal MPI em meios viscosos, limitando sua aplicação intracelular e indicando dependência de relaxação Browniana",
-      "NRK42 mostrou instabilidade coloidal ao longo do tempo, com redução de 50% do sinal MPI após uma semana e quase zero após duas semanas",
-      "A análise EELS foi limitada a poucos nanopartículas analisadas, não permitindo confirmar a fase magnética em toda a amostra",
-      "O tamanho hidrdinâmico das NRKs apresenta variações imprevisíveis devido à superfície irregular e estrutura dendrítica, dificultando previsibilidade da cobertura com ligantes",
-      "A comparação de valores SAR com MC-NPs da literatura é dificultada pelas diferentes condições de campo e frequência utilizadas em estudos anteriores",
-      "O alto custo do TPB restringe a escalabilidade da síntese de NRKs com esse agente direcionador"
+      "A análise EELS foi realizada em número limitado de nanopartículas, não permitindo conclusão definitiva sobre a presença de Fe2+ ou magnetita em toda a amostra",
+      "A determinação do tamanho cristalino por XRD subestima o tamanho real para NRKs maiores (NRK27 e NRK42) devido à estrutura multicore e presença de cristalitos menores na superfície",
+      "O sinal MPI do NRK42 apresentou queda significativa após uma semana, indicando instabilidade coloidal ao longo do tempo",
+      "O desempenho do NRK27 em glicerol 50% no MPS diminuiu pela metade após cinco dias",
+      "A comparação direta de SAR com MC-NPs da literatura é difícil devido às diferentes condições de frequência e amplitude utilizadas",
+      "O alto custo do TPB restringe a escalabilidade de certas rotas de síntese"
     ],
     "problemas_SAR_ILP": true,
     "falta_padronizacao": true,
     "recomendacoes_futuras": [
-      "Investigar as NRK27 como agentes in vivo para hipértermia guiada por MPI (hMPI) para tratamento e diagnóstico",
-      "Realizar estudos de tradução clínica aproveitando o método de produção em escala gram",
-      "Utilizar NRKs menores (≤27 nm) para aplicações de MHT intracelular devido à independência de viscosidade",
-      "Explorar o uso de NRKs maiores (42 nm) para explorar interações interparticulares e formação de cadeias em aplicações extracelulares"
+      "Investigação adicional do NRK27 como agente in vivo para hMPI terapêutico e diagnóstico",
+      "Estudos de tradução clínica aproveitando a produção em escala de gramas",
+      "Avaliação do comportamento das NRKs em ambientes intracelulares e microambiente tumoral viscoso in vivo",
+      "Comparações de MPI devem ser realizadas sob especificações idênticas de volume e massa de ferro"
     ],
     "gaps_identificados": [
-      "Ausência de estudos in vivo de biodistribuição, toxicidade e eficácia terapêutica das NRKs",
-      "Falta de avaliação de toxicidade celular e viabilidade celular com as NRKs",
-      "Mecanismo exato de formação da estrutura multicore dendrítica cúbica ainda não completamente elucidado",
-      "Ausência de estudos sobre interação das NRKs com o ambiente biológico (corona proteica, internalização celular)",
-      "Necessidade de padronização das condições de medição de MPS/MPI para comparações entre laboratórios"
+      "Ausência de estudos in vitro ou in vivo de eficácia terapêutica e toxicidade das NRKs",
+      "Mecanismo detalhado de formação das estruturas multicore dendríticas ainda não completamente elucidado",
+      "Falta de padronização nos parâmetros de medição de MPI entre diferentes grupos de pesquisa",
+      "Papel exato da presença de magnetita versus maghemita nas propriedades magnéticas das NRKs maiores não totalmente resolvido"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo demonstra que NRKs de até 27 nm exibem comportamento quasi-superparamagnético com relaxação de Néel dominante, enquanto NRKs de 42 nm dependem significativamente da relaxação Browniana, contribuindo para a compreensão dos mecanismos físicos de dissipação de energia em nanopartículas magnéticas de arquitetura complexa.",
-    "integracao_engenharia": "O trabalho apresenta um método solvotérmico escalonável para produção em escala gram (1-1,5 g por ciclo) de NRKs com morfologia controlada, habilitando a produção de material suficiente para estudos de tradução clínica e aplicação em sistemas de hipértermia guiada por MPI.",
-    "integracao_biologia": "As NRKs demonstram potencial para tratamento de tumores sólidos agressivos (glioblastoma, adenocarcinoma pancreático, câncer de próstata) como adjuvante à quimioterapia e radioterapia, com capacidade de localização espacial do aquecimento pelo gradiente de campo e aquecimento independente de viscosidade para aplicações intracelulares.",
-    "integracao_materiais": "A síntese de NRKs introduz uma nova classe de nanopartículas anisotrópicas de γ-Fe2O3 com arquitetura única (cubo externo + estrutura dendrítica multicore interna), obtida pelo uso combinado de cetona vinílica e aldeído aromático como agentes direcionadores de forma, resultando em valores recordes de SAR e sinal MPI superiores ao padrão VivoTrax.",
-    "mensagem_principal": "Este trabalho reporta a primeira síntese solvotérmica em escala gram de uma nova classe de nanopartículas magnéticas anisotrópicas denominadas 'Rubik's cube' (NRKs), que combinam morfologia cúbica com estrutura multicore dendrítica de γ-Fe2O3, exibindo valores recordes de SAR (>1000 W/gFe) e sinal MPI 6-8 vezes superior ao padrão VivoTrax, com aquecimento independente de viscosidade para NRK27 nm, posicionando-as como candidatas promissoras para tradução clínica em terapia e diagnóstico oncológico."
+    "integracao_fisica": "O estudo demonstra que a combinação de morfologia cúbica com estrutura multicore dendrítica gera anisotropia magnética efetiva aumentada (K = 9040–14000 J/m³) e comportamento quasi-superparamagnético em tamanhos de até 42 nm, resultando em perdas magnéticas recordes sob AMF clinicamente relevante.",
+    "integracao_engenharia": "O método solvotermal desenvolvido permite a produção em escala de gramas (1–1,5 g por ciclo) de NRKs com morfologia e tamanho controláveis (19–45 nm), viabilizando a translação clínica e o desenvolvimento de sistemas de hMPI com localização espacial de calor por gradiente de campo.",
+    "integracao_biologia": "As NRKs de 27 nm apresentam eficiência de aquecimento independente de viscosidade média, sugerindo predominância da relaxação de Néel favorável ao ambiente intracelular viscoso do microambiente tumoral, sendo indicadas para MHT intracelular em oncologia.",
+    "integracao_materiais": "A síntese combina agentes direcionadores de forma (cetona vinílica HEX e aldeído aromático BZD) para controlar simultaneamente a morfologia cúbica externa e a estrutura interna dendrítica multicore das NRKs de γ-Fe2O3, com revestimento de GA-PEG para estabilidade coloidal aquosa de longo prazo.",
+    "mensagem_principal": "Este trabalho apresenta a primeira síntese solvotermal em escala de gramas de uma nova classe de nanopartículas magnéticas anisotropas denominadas 'nanopartículas Rubik's cube' (NRKs), que combinam morfologia cúbica com estrutura multicore dendrítica, exibindo desempenho recorde de aquecimento magnético e sinal de MPI superiores ao padrão VivoTrax, posicionando-as como candidatas promissoras para translação clínica em terapia e diagnóstico oncológico."
   },
   "custom_id": "33__Gram-Scale_Production_of_Iron_Oxide_Rubik-CubeNanoparticles_"
 }

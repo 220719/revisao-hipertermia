@@ -6,16 +6,15 @@
   "doi": "10.1002/smsc.202500490",
   "tipo_estudo": "in silico",
   "q1": {
-    "conceito_tecnica": "A hipertermia magnética (MHT) utiliza nanopartículas magnéticas para gerar calor localizado que perturba seletivamente células malignas, constituindo um complemento promissor às terapias convencionais contra o câncer. O aquecimento é produzido pela resposta dinâmica das nanopartículas a campos magnéticos alternados aplicados externamente.",
+    "conceito_tecnica": "A hipertermia magnética (MHT) utiliza nanopartículas magnéticas para promover aquecimento local seletivo que perturba células malignas, sendo uma abordagem complementar às terapias convencionais de câncer. O desempenho de aquecimento é diretamente relacionado à coercividade das nanopartículas, que determina as perdas de energia por ciclo de campo magnético.",
     "etapas_processo": [
       "Administração de nanopartículas de óxido de ferro (IONPs) com biocompatibilidade adequada",
-      "Direcionamento das NPs ao tecido tumoral",
       "Aplicação de campo magnético alternado (AMF) externo",
-      "Dissipação de energia térmica pelas NPs via mecanismos de reversão de magnetização",
-      "Aquecimento seletivo das células malignas"
+      "Dissipação de energia via histerese magnética gerando calor local",
+      "Aquecimento seletivo de células malignas na região-alvo"
     ],
     "internalizacao_nps": null,
-    "aplicacao_campo": "Um campo magnético alternado externo é aplicado às nanopartículas, induzindo reversões dinâmicas da magnetização que resultam em dissipação de energia na forma de calor.",
+    "aplicacao_campo": "O campo magnético alternado é aplicado externamente para induzir reversão da magnetização nas nanopartículas, gerando dissipação de energia térmica proporcional à área do ciclo de histerese.",
     "janela_termica_min_C": null,
     "janela_termica_max_C": null,
     "vias_morte_celular": []
@@ -25,27 +24,27 @@
     "relaxacao_browniana": null,
     "perdas_histerese": true,
     "interacoes_coletivas": true,
-    "nanoscale_heating": true,
+    "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "O mecanismo dominante de geração de calor é a dissipação de energia por perdas de histerese magnética, governada pela coercividade das nanoflores e pela dinâmica de reversão do estado vórtice.",
-    "descricao_mecanismo": "A energia é dissipada durante a reversão da magnetização em ciclos de histerese magnética aplicados pelo campo alternado externo. Em nanoflores acima do limite monodomínio, a magnetização se organiza em um estado vórtice, cujas características de reversão (dominada pelo núcleo ou pelos domínios de fechamento de fluxo) determinam a coercividade e, consequentemente, o calor gerado. O desordenamento interno de spin, proveniente das fronteiras de grão com acoplamento de troca reduzido e eixos de anisotropia aleatórios, cria barreiras de energia que aumentam a coercividade e, portanto, a eficiência de aquecimento."
+    "mecanismo_dominante": "O mecanismo dominante de geração de calor nas nanoflores é a dissipação de energia por histerese magnética, governada pela coercividade e pelo estado de vórtice interno das nanopartículas.",
+    "descricao_mecanismo": "A reversão da magnetização nas nanoflores ocorre através de dois modos distintos dependentes do tamanho: reversão dominada pelo núcleo do vórtice (core-dominated) para partículas menores, onde o núcleo reverte instantaneamente ao longo do eixo z; e reversão dominada pelos domínios de fechamento de fluxo (flux-closure-dominated) para partículas maiores, onde o núcleo se orienta perpendicularmente ao campo aplicado durante amplo intervalo de campo. A coercividade, proxy para a geração de calor, é maximizada na transição entre esses dois modos, sendo determinada pelo equilíbrio entre anisotropia dos grãos e aprisionamento nas fronteiras de grão (grain-boundary pinning)."
   },
   "q3": {
-    "material": "maghemita (nanoflores de óxido de ferro)",
-    "composicao_quimica": "Fe2O3 (maghemita) / óxido de ferro",
+    "material": "Maghemita (nanoflores de óxido de ferro)",
+    "composicao_quimica": "γ-Fe2O3 (maghemita) / óxido de ferro",
     "dopagem": null,
     "tamanho_nm": 100.0,
     "faixa_tamanho_min_nm": 10.0,
     "faixa_tamanho_max_nm": 400.0,
     "forma": "flor",
     "arquitetura_multicore": true,
-    "anisotropia": "anisotropia magnetocristalina uniaxial por grão, com eixos orientados aleatoriamente entre grãos (anisotropia efetiva randômica)",
+    "anisotropia": "Anisotropia magnetocristalina uniaxial com eixos orientados aleatoriamente em cada grão; anisotropia efetiva coletiva proporcional a 1/sqrt(N) devido à média das orientações aleatórias",
     "revestimento": null,
     "material_autorregulavel": false,
     "SAR_W_g": null,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": null,
-    "relacao_estrutura_propriedade": "O tamanho do grão e o acoplamento de troca intergranular (fator k) determinam a textura de spin interna e a coercividade das nanoflores: grãos menores aumentam a densidade de fronteiras de grão e o pinning magnético, elevando a coercividade e o desempenho na hipertermia. O estado vórtice, estabilizado acima do limite monodomínio (~70 nm), apresenta um máximo secundário de coercividade em torno de 100–150 nm, que pode ser ajustado pelo tamanho do grão durante a síntese."
+    "relacao_estrutura_propriedade": "A morfologia multicore das nanoflores, com fronteiras de grão e eixos de anisotropia orientados aleatoriamente, cria uma paisagem energética rica em sítios de aprisionamento que estabiliza estados de vórtice em tamanhos menores e produz um pico secundário de coercividade (sweet spot) ausente em nanopartículas sem desordem. O tamanho do grão controla a densidade de fronteiras de grão e, portanto, o aprisionamento magnético e a coercividade resultante."
   },
   "q4": {
     "amplitude_kA_m": null,
@@ -55,7 +54,7 @@
     "tempo_tratamento_min": null,
     "forma_onda": null,
     "dosimetria_termica": null,
-    "distribuicao_espacial_calor": "O padrão de fechamento de fluxo do estado vórtice não gera campos de dispersão externos, o que implica liberação de calor mais uniforme e menor tendência à agregação magnética entre partículas.",
+    "distribuicao_espacial_calor": null,
     "padronizacao_reportada": false
   },
   "q5": {
@@ -79,30 +78,31 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Simulações realizadas a T = 0 K, sem flutuações térmicas, o que pode impor correções menores aos valores de coercividade obtidos",
-      "O modelo não inclui anisotropia de superfície, relevante apenas para nanopartículas de poucos nanômetros (muito abaixo do regime de vórtice estudado)",
-      "O parâmetro de acoplamento intergranular k é microscópico e não pode ser diretamente engenheirado experimentalmente",
-      "A reprodução da faixa completa de tamanhos com a precisão necessária está além das possibilidades experimentais atuais"
+      "Simulações realizadas a T = 0 K, sem flutuações térmicas, por limitações computacionais",
+      "O modelo não inclui anisotropia de superfície, relevante para nanopartículas de poucos nm",
+      "A reprodução de toda a faixa de tamanhos (10–400 nm) com a precisão necessária está além das possibilidades experimentais atuais",
+      "O parâmetro de acoplamento intergranular k é microscópico e não pode ser diretamente engenheirado experimentalmente"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Utilizar técnicas de sonda local não invasivas como Nitrogen-Vacancy SPM ou microscopia de raios-X magnéticos para observar experimentalmente os distintos mecanismos de reversão previstos",
-      "Explorar o controle do tamanho do grão durante a síntese como rota prática para ajustar a janela ótima de hipertermia",
-      "Investigar o efeito de interações dipolares entre partículas no máximo de coercividade do estado vórtice"
+      "Utilizar técnicas de sonda local não invasiva, como Nitrogen-Vacancy SPM ou microscopia de raios-X magnéticos, para observar experimentalmente os mecanismos distintos de reversão em nanopartículas individuais",
+      "Engenheirar o tamanho do grão durante a síntese das nanoflores para ajustar o sweet spot de hipertermia",
+      "Explorar o papel das interações dipolares sobre o pico de coercividade no regime de vórtice"
     ],
     "gaps_identificados": [
-      "A física da textura de spin e da resposta dinâmica de nanopartículas reais com desordem além do limite monodomínio permanecia pouco compreendida antes deste trabalho",
-      "A influência do desordenamento de spin intrapartícula na dinâmica de magnetização não estava elucidada",
-      "Faltava uma descrição teórica completa das texturas de spin em nanoflores de óxido de ferro além do modelo macrospin"
+      "Ausência de compreensão microscópica de como a textura de spin e sua dinâmica influenciam o desempenho de aquecimento magnético",
+      "Interpretação teórica incompleta das configurações de vórtice em morfologias complexas como nanoflores",
+      "Papel da desordem de spin na dinâmica da magnetização permanece pouco compreendido",
+      "Falta de técnicas experimentais capazes de resolver o sinal individual de nanopartículas magnéticas com resolução suficiente para detectar mecanismos de reversão distintos"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo fornece o primeiro mapeamento completo da coercividade em função do tamanho para nanoflores de óxido de ferro, revelando dois mecanismos distintos de reversão de vórtice e um máximo secundário de coercividade ausente em nanopartículas sem desordem.",
-    "integracao_engenharia": "Os resultados oferecem uma rota prática para o design racional de nanoaquecedores de alta eficiência, demonstrando que o ajuste do tamanho do grão durante a síntese permite controlar a janela de tamanho ótima para hipertermia magnética.",
-    "integracao_biologia": "O estudo conecta a microestrutura das nanoflores (textura de spin, fronteiras de grão) ao desempenho macroscópico de aquecimento relevante para aplicações biomédicas, validando as tendências simuladas com dados experimentais de SAR disponíveis na literatura.",
-    "integracao_materiais": "Simulações micromagnéticas em larga escala de nanoflores de maghemita (d = 10–400 nm) com tesselação de Voronoi e acoplamento de troca intergranular variável revelam como a morfologia multicore e o desordenamento de spin determinam as propriedades magnéticas macroscópicas.",
-    "mensagem_principal": "O desordenamento de spin intrapartícula nas nanoflores de óxido de ferro — expresso por eixos de anisotropia aleatórios e acoplamento de troca reduzido nas fronteiras de grão — é responsável por um máximo secundário de coercividade no regime de vórtice (em torno de 100–150 nm), ausente em nanopartículas sem desordem, e esse 'sweet spot' de hipertermia pode ser ajustado pelo controle do tamanho do grão durante a síntese."
+    "integracao_fisica": "O estudo fornece a primeira descrição completa das texturas de spin em nanoflores de óxido de ferro além do framework macrospin, revelando dois mecanismos distintos de reversão do estado de vórtice governados pelo tamanho da partícula e pela fração volumétrica do núcleo do vórtice.",
+    "integracao_engenharia": "Os resultados oferecem uma rota prática para o design racional de nanoaquecedores de alta eficiência, mostrando que o ajuste do tamanho do grão durante a síntese permite controlar o sweet spot de coercividade e, portanto, a janela ótima de tamanho para hipertermia magnética.",
+    "integracao_biologia": "O trabalho é exclusivamente computacional e não aborda aspectos biológicos diretamente, mas contextualiza a relevância das nanoflores para aplicações biomédicas pela sua biocompatibilidade e capacidade de minimizar agregação magnética indesejada via padrão de fechamento de fluxo.",
+    "integracao_materiais": "Demonstra como a microestrutura das nanoflores — morfologia multicore, fronteiras de grão com acoplamento de troca reduzido e eixos de anisotropia aleatórios — determina propriedades magnéticas macroscópicas como a coercividade, validando o uso da coercividade como proxy para a SAR experimental.",
+    "mensagem_principal": "Nanoflores de óxido de ferro apresentam um pico secundário de coercividade (sweet spot) no regime de vórtice, ausente em nanopartículas sem desordem, resultante da combinação de anisotropia aleatória dos grãos e aprisionamento nas fronteiras de grão. Ao ajustar o tamanho do grão durante a síntese, é possível deslocar esse sweet spot de tamanho, oferecendo uma rota experimental prática para o design de nanoaquecedores de próxima geração com eficiência otimizada para hipertermia magnética."
   },
   "custom_id": "29__Coercivity-Size_Map_of_Magnetic_Nanoflowers_Spin"
 }

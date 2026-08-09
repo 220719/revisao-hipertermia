@@ -6,16 +6,16 @@
   "doi": "10.1039/d5ra01897h",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "Magnetic hyperthermia is a heat-generating process that involves elevating the temperature of cancer cell media up to 46 °C using a colloidal suspension of magnetic nanoparticles exposed to an alternating magnetic field for a specific duration to destroy cancer cells.",
+    "conceito_tecnica": "Hipertermia magnética é um processo de geração de calor que envolve elevar a temperatura do meio de células cancerosas até 46°C usando uma suspensão coloidal de nanopartículas magnéticas expostas a um campo magnético alternante por uma duração específica para destruir células cancerosas. As nanopartículas magnéticas geram calor localizado no sítio alvo na presença do campo magnético alternante aplicado.",
     "etapas_processo": [
-      "Síntese de nanopartículas de ferrita de zinco dopadas com cobalto via co-precipitação química",
-      "Preparação de ferrofluido com concentração de 1 mg/mL em água deionizada (pH 7)",
-      "Posicionamento da amostra no centro de um solenóide",
-      "Aplicação de campo magnético alternante (337 kHz, 14,91 kA/m) por 15 minutos",
-      "Registro do aumento de temperatura com sensor termopar"
+      "Síntese de nanopartículas de ferrita de zinco dopadas com cobalto pelo método de co-precipitação química",
+      "Preparação de ferrofluido dispersando as nanopartículas em água deionizada (pH 7) a uma concentração de 1 mg mL-1",
+      "Posicionamento da amostra no centro de um solenóide com diâmetro e número de espiras específicos",
+      "Aplicação do campo magnético alternante com frequência de 337 kHz e amplitude de 14,91 kA m-1",
+      "Registro da resposta de aquecimento por 15 min usando sensor de termopar"
     ],
-    "internalizacao_nps": null,
-    "aplicacao_campo": "O campo magnético alternante é aplicado na região de radiofrequência, com frequência de 337 kHz e amplitude de 14,91 kA/m, usando um solenóide com diâmetro e número de espiras específicos.",
+    "internalizacao_nps": "O artigo menciona que as nanopartículas magnéticas na forma de ferrofluido são usadas para decorar o meio alvo (células cancerosas), permitindo que o calor gerado localizado no sítio alvo seja uniforme, mas não descreve o mecanismo de internalização celular específico.",
+    "aplicacao_campo": "O campo magnético alternante é aplicado na região de radiofrequência (337 kHz, amplitude de 14,91 kA m-1) usando um solenóide, permitindo controle fino do aquecimento por indução.",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 46.0,
     "vias_morte_celular": []
@@ -27,25 +27,25 @@
     "interacoes_coletivas": true,
     "nanoscale_heating": null,
     "forma_onda_campo": null,
-    "mecanismo_dominante": "A relaxação de Néel domina na geração de calor para nanopartículas superparamagnéticas com tamanho médio abaixo de 20 nm.",
-    "descricao_mecanismo": "Para nanopartículas superparamagnéticas, as perdas por relaxação dominam na geração de calor, sendo a relaxação de Néel e a relaxação Browniana os dois processos envolvidos. A relaxação de Néel predomina em nanopartículas com tamanho inferior a 20 nm e é fortemente influenciada pelo fator adimensional KTV/kBT, onde KT é a constante de anisotropia efetiva e V é o volume médio das nanopartículas. As perdas por histerese e correntes de Foucault são desprezíveis para nanopartículas superparamagnéticas devido à remanência e coercividade infinitesimais."
+    "mecanismo_dominante": "A relaxação de Néel domina a dinâmica de spin magnético para nanopartículas superparamagnéticas com tamanho médio abaixo de 20 nm em suspensão coloidal.",
+    "descricao_mecanismo": "Em suspensões coloidais de nanopartículas superparamagnéticas sob campo magnético alternante, dois processos de relaxação distintos contribuem para a perda de energia na forma de calor: relaxação de Néel e relaxação Browniana. A relaxação de Néel predomina em nanopartículas com tamanho inferior a 20 nm e é governada pela barreira de energia de anisotropia efetiva (KTV/kBT), onde KT é a constante de anisotropia efetiva e V é o volume médio das nanopartículas. O uso de nanopartículas superparamagnéticas permite ignorar as perdas por histerese e correntes de Foucault devido à remanência e coercividade infinitesimais dessas partículas."
   },
   "q3": {
     "material": "ferrita de zinco dopada com cobalto",
-    "composicao_quimica": "CoxZn1−xFe2O4 (x = 0,00; 0,10; 0,30; 0,50)",
-    "dopagem": "Cobalto (Co2+)",
+    "composicao_quimica": "CoxZn1-xFe2O4 (x = 0,00, 0,10, 0,30 e 0,50)",
+    "dopagem": "cobalto (Co2+)",
     "tamanho_nm": null,
     "faixa_tamanho_min_nm": 9.2,
     "faixa_tamanho_max_nm": 20.8,
     "forma": "esférica",
     "arquitetura_multicore": false,
-    "anisotropia": "anisotropia efetiva incluindo contribuições de volume, superfície, forma e interações dipolo-dipolo magnéticas",
+    "anisotropia": "anisotropia efetiva composta por contribuições de anisotropia de volume, anisotropia de superfície, anisotropia de forma e anisotropia causada por interações dipolo-dipolo magnéticas",
     "revestimento": null,
     "material_autorregulavel": false,
     "SAR_W_g": 70.92,
-    "ILP_nHm2_kg": 9.47,
+    "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 38.7,
-    "relacao_estrutura_propriedade": "A dopagem com íons Co2+ em sítios octaédricos aumenta a constante de anisotropia efetiva (KT), a coercividade, a magnetização de saturação e o momento magnético das nanopartículas, elevando a barreira de energia de anisotropia e melhorando a eficácia de aquecimento por indução. O tamanho médio das nanopartículas (9,2 a 20,8 nm) e a anisotropia efetiva controlam a dinâmica de relaxação de Néel e, consequentemente, os valores de SAR e ILP."
+    "relacao_estrutura_propriedade": "A dopagem de íons Co2+ ferromagnéticos na estrutura espinélio cúbica do ZnFe2O4 aumenta progressivamente a constante de anisotropia efetiva, a coercividade e a magnetização de saturação, melhorando a eficiência de aquecimento por indução. O tamanho das nanopartículas e a constante de anisotropia efetiva influenciam diretamente a temperatura de bloqueio e a dinâmica de relaxação de Néel, que governa o desempenho de auto-aquecimento para hipertermia."
   },
   "q4": {
     "amplitude_kA_m": 14.91,
@@ -54,8 +54,8 @@
     "dentro_limite_seguranca": true,
     "tempo_tratamento_min": 15.0,
     "forma_onda": null,
-    "dosimetria_termica": "Sensor termopar para registro do aumento de temperatura com o tempo; SAR calculado pela inclinação inicial da curva temperatura vs. tempo em condições não-adiabáticas",
-    "distribuicao_espacial_calor": null,
+    "dosimetria_termica": "Sensor de termopar para registrar o aumento de temperatura com o tempo; SAR calculado a partir da inclinação inicial da curva temperatura vs. tempo sob condições não-adiabáticas",
+    "distribuicao_espacial_calor": "A amostra foi posicionada no centro de um solenóide; ferrofluido preparado a concentração baixa (1 mg mL-1) para evitar aglomeração e otimizar a uniformidade do aquecimento localizado",
     "padronizacao_reportada": false
   },
   "q5": {
@@ -79,31 +79,30 @@
   },
   "q6": {
     "limitacoes_reportadas": [
-      "Agregação significativa das nanopartículas magnéticas devido a interações dipolo-dipolo e de van der Waals pode causar inconsistência na eficácia de aquecimento",
-      "Altos níveis de nanomateriais contendo metais de transição no corpo humano podem causar efeitos colaterais como dores de cabeça, vômitos, diarreia, estresse oxidativo e comprometimento do sistema imunológico",
-      "O revestimento superficial é necessário para evitar o vazamento prejudicial de íons de metais de transição, mas não foi implementado neste estudo",
-      "A amostra Co-50 (ZNF) atingiu apenas 41,4 °C em 900 s, abaixo da janela terapêutica ideal de 42-46 °C"
+      "Aglomeração significativa das nanopartículas magnéticas observada nas imagens TEM, atribuída às interações dipolo-dipolo magnéticas e interações de van der Waals, podendo resultar em inconsistência na efetividade do aquecimento",
+      "Altos níveis de nanomateriais dopados contendo metais de transição no corpo humano podem causar efeitos colaterais como dores de cabeça, vômitos, diarreia, estresse oxidativo, dor de estômago e comprometimento do sistema imunológico",
+      "A sensibilidade da detecção diélétrica de metribuzin é inerentemente menor do que a de métodos ópticos, requerendo concentrações mais altas de analito",
+      "As nanopartículas não possuem revestimento biocompatível relatado para aplicação biomédica direta"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Revestimento das nanopartículas com polímeros biocompatíveis para reduzir efeitos deletérios dos íons de metais de transição",
-      "Otimização da concentração de dopante de cobalto para atingir a janela terapêutica de 42-46 °C",
-      "Investigação de estudos in vitro e in vivo para avaliar a citotoxicidade e eficácia terapêutica"
+      "Revestimento das nanopartículas de ferrita com polímeros biocompatíveis para reduzir os efeitos deletérios dos íons de metais de transição em células humanas",
+      "Modificação de superfície e revestimento das nanopartículas magnéticas compostas de metais de transição para impedir o vazamento prejudicial e prevenir acumulação em locais indesejados"
     ],
     "gaps_identificados": [
-      "Ausência de estudos in vitro ou in vivo com células cancerosas",
-      "Falta de avaliação de toxicidade das nanopartículas",
-      "Ausência de revestimento biocompatível nas nanopartículas sintetizadas",
-      "Necessidade de estudos sobre biodistribuição e farmacocinética"
+      "Ausência de estudos celulares ou in vivo para validar a eficácia terapêutica das nanopartículas em hipertermia magnética",
+      "Falta de avaliação de toxicidade celular e biocompatibilidade das nanopartículas dopadas com cobalto",
+      "Temperatura máxima atingida pelo Co-50 (ZNF) foi de 41,4°C, abaixo da janela terapêutica ideal de 42-46°C, indicando necessidade de otimização adicional",
+      "Não foram realizados estudos de biodistribuição ou farmacocinética das nanopartículas"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo demonstra como o controle da barreira de energia de anisotropia magnética efetiva (DE = KTV) via dopagem com Co2+ modula a dinâmica de relaxação de Néel e, consequentemente, a taxa de absorção específica (SAR) das nanopartículas.",
-    "integracao_engenharia": "A síntese por co-precipitação química permitiu controle preciso da composição, tamanho e homogeneidade das nanopartículas, viabilizando a produção de ferrofluidos com desempenho de aquecimento por indução ajustável para aplicações de hipertermia.",
-    "integracao_biologia": "O artigo discute o potencial das nanopartículas para hipertermia magnética direcionada ao câncer, destacando a necessidade de revestimentos biocompatíveis para prevenir toxicidade por íons de metais de transição, embora não tenha realizado estudos biológicos.",
-    "integracao_materiais": "A dopagem progressiva com íons Co2+ (x = 0,00 a 0,50) em ZnFe2O4 permitiu o ajuste sistemático de propriedades estruturais, magnéticas, ópticas e dielétricas, estabelecendo correlações entre composição e desempenho funcional para hipertermia e sensoriamento.",
-    "mensagem_principal": "A incorporação de íons de cobalto ferromagnético em nanopartículas de ferrita de zinco via co-precipitação química permite o ajuste controlado da anisotropia magnética efetiva e da eficácia de aquecimento por indução, tornando-as candidatas promissoras para hipertermia magnética direcionada e sensoriamento do herbicida metribuzin."
+    "integracao_fisica": "O estudo demonstra como o controle da barreira de energia de anisotropia magnética efetiva (DE = KTV) via dopagem com Co2+ regula a dinâmica de relaxação de Néel e, consequentemente, a taxa de absorção específica (SAR) das nanopartículas para hipertermia.",
+    "integracao_engenharia": "O método de co-precipitação química foi utilizado para sintetizar sistematicamente quatro composições de nanoferrita com controle preciso de tamanho, forma e concentração de dopante, permitindo o ajuste do desempenho de aquecimento por indução segundo os requisitos da aplicação.",
+    "integracao_biologia": "O trabalho identifica a janela terapêutica de temperatura (42-46°C) necessária para destruir células cancerosas e demonstra que a dopagem com Co2+ melhora a eficácia de aquecimento das nanopartículas dentro dos limites de segurança biológica, embora sem realização de ensaios celulares.",
+    "integracao_materiais": "A dopagem de íons Co2+ ferromagnéticos na matriz de ZnFe2O4 modifica sistematicamente as propriedades microestruturais, ópticas, magnéticas e dielétricas das nanoferritas, estabelecendo correlações entre composição, estrutura cristalina e propriedades funcionais para aplicações em hipertermia e sensores.",
+    "mensagem_principal": "A dopagem controlada de íons Co2+ ferromagnéticos em nanopartículas de ZnFe2O4 permite ajustar a anisotropia magnética efetiva e, consequentemente, otimizar a eficiência de aquecimento por indução para hipertermia magnética, com a amostra Co-50 (ZNF) apresentando o melhor desempenho (SAR de 70,92 W g-1) e também superior capacidade de detecção do herbicida metribuzin por sensoriamento dielétrico."
   },
   "custom_id": "61__Cobalt_ion-incorporated_nanocrystalline_spinel_cubic_zinc_fe"
 }

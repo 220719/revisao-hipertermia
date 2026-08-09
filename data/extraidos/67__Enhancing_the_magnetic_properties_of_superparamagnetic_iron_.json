@@ -6,21 +6,21 @@
   "doi": "10.1039/d4ma01120a",
   "tipo_estudo": "in vitro",
   "q1": {
-    "conceito_tecnica": "Na hipertermia magnética, a temperatura do tumor é aumentada pela aplicação de um campo magnético alternante externo, que induz a liberação de calor a partir de nanopartículas magnéticas localizadas no sítio tumoral. O objetivo é elevar a temperatura do tumor para a faixa terapêutica capaz de induzir morte celular.",
+    "conceito_tecnica": "Na hipertermia magnética, a temperatura do tumor é aumentada pela aplicação de um campo magnético alternante externo, que induz a liberação de calor a partir de nanopartículas magnéticas localizadas no sítio tumoral. O objetivo é elevar a temperatura do tecido tumoral para a janela terapêutica que causa morte celular.",
     "etapas_processo": [
       "Síntese das SPIONs por co-precipitação química combinada com tratamento hidrotérmico",
-      "Caracterização estrutural, morfológica e magnética das NPs",
-      "Incubação das células (HFFF2 e WM938b) com as SPIONs por 24 horas",
-      "Aplicação do campo magnético alternante (AMF) com intensidade de 24 kA/m e frequência de 388,4 kHz",
-      "Monitoramento da temperatura durante o tratamento",
-      "Avaliação da viabilidade celular imediatamente após e 24 horas depois do tratamento"
+      "Dispersão das NPs em meio aquoso ou fisiológico",
+      "Incubação das células com as NPs por 24 horas para internalização",
+      "Aplicação de campo magnético alternante (AMF) com intensidade de 24 kA/m e frequência de 388,4 kHz",
+      "Monitoramento da temperatura até atingir a faixa terapêutica (42–45 °C)",
+      "Avaliação da viabilidade celular por ensaio de resazurina imediatamente após e 24 horas depois"
     ],
-    "internalizacao_nps": "As NPs são internalizadas pelas células por endocitose, com aumento da captação ao longo do tempo de incubação (1h, 6h, 24h), visualizada por coloração Prussian blue; células de melanoma tendem a acumular NPs preferencialmente ao redor da membrana celular.",
-    "aplicacao_campo": "O AMF é aplicado com intensidade de 24 kA/m e frequência de 388,4 kHz usando um equipamento D5 series (Nb Nanoscale Biomagnetics), com ciclos de ligado/desligado para manter a temperatura entre 42 °C e 45 °C.",
+    "internalizacao_nps": "As NPs são internalizadas pelas células após 24 horas de incubação, visualizadas por coloração de azul da Prússia; a internalização aumenta com o tempo de incubação e é influenciada pelo tamanho e forma das NPs.",
+    "aplicacao_campo": "O AMF é aplicado por um equipamento da série D5 (Nb Nanoscale Biomagnetics) com intensidade de 24 kA/m e frequência de 388,4 kHz, de forma pulsada (liga/desliga) para manter a temperatura entre 42 °C e 45 °C.",
     "janela_termica_min_C": 42.0,
     "janela_termica_max_C": 45.0,
     "vias_morte_celular": [
-      "apoptose"
+      "reducao_de_viabilidade_celular"
     ]
   },
   "q2": {
@@ -30,12 +30,12 @@
     "interacoes_coletivas": null,
     "nanoscale_heating": true,
     "forma_onda_campo": "pulsada",
-    "mecanismo_dominante": "Tanto a relaxação de Néel quanto a relaxação Browniana contribuem para a geração de calor, com a relaxação de Néel sendo potencialmente dominante em meios de alta viscosidade como DMEM.",
-    "descricao_mecanismo": "A relaxação de Néel está relacionada à anisotropia magnetocristalina e envolve a reorientação do momento magnético dentro da nanopartícula, independentemente de sua rotação física. A relaxação Browniana está associada à viscosidade do fluido no qual as nanopartículas estão suspensas e envolve a rotação física da partícula. Em meio de alta viscosidade como DMEM, o movimento Browniano é suprimido, mas a relaxação de Néel permanece ativa, indicando que ambos os mecanismos contribuem em condições fisiológicas."
+    "mecanismo_dominante": "Tanto a relaxação de Néel quanto a relaxação Browniana contribuem para a geração de calor, sendo que em meios de alta viscosidade como DMEM, a relaxação de Néel tende a predominar.",
+    "descricao_mecanismo": "A relaxação de Néel está relacionada à anisotropia magnetocristalina, envolvendo a reorientação do momento magnético dentro da nanopartícula, independentemente da rotação física. A relaxação Browniana está associada à viscosidade do fluido no qual as nanopartículas estão suspensas, envolvendo a rotação física da partícula. Em meios de alta viscosidade como DMEM HG, o movimento Browniano é significativamente reduzido, mas não afeta fortemente a relaxação de Néel, sendo que a geração de calor ainda ocorre com contribuição de ambos os mecanismos."
   },
   "q3": {
-    "material": "Fe3O4/γ-Fe2O3 (magnetita/maguemita)",
-    "composicao_quimica": "Fe3O4 e γ-Fe2O3",
+    "material": "magnetita e maghemita (SPIONs)",
+    "composicao_quimica": "Fe3O4 / γ-Fe2O3",
     "dopagem": null,
     "tamanho_nm": 19.8,
     "faixa_tamanho_min_nm": 9.3,
@@ -48,7 +48,7 @@
     "SAR_W_g": 203.0,
     "ILP_nHm2_kg": null,
     "magnetizacao_saturacao_emu_g": 73.5,
-    "relacao_estrutura_propriedade": "O tratamento hidrotérmico aumentou o tamanho das NPs de 9 para ~20 nm e promoveu mudança de forma esférica para cúbica/retangular, resultando em maior cristalinidade, maior magnetização de saturação (de 58 para 73 emu/g) e maior SAR (de 83 para ~160-203 W/g). Partículas cúbicas exibem maior magnetização de saturação devido a interações de troca mais fortes durante o alinhamento de spin."
+    "relacao_estrutura_propriedade": "O tratamento hidrotérmico aumenta o tamanho das NPs de 9 para 20 nm e promove uma mudança de forma esférica para cúbica/retangular, além de aumentar a cristalinidade, o que reduz a camada superficial magneticamente inativa e eleva a magnetização de saturação de 58 para 73 emu/g e os valores de SAR de 83 para até 203 W/g."
   },
   "q4": {
     "amplitude_kA_m": 24.0,
@@ -57,13 +57,13 @@
     "dentro_limite_seguranca": false,
     "tempo_tratamento_min": 10.0,
     "forma_onda": "pulsada",
-    "dosimetria_termica": "Slope máximo da curva de temperatura (dT/dt)max nos primeiros instantes após ligar o campo magnético, assumindo condições adiabáticas",
-    "distribuicao_espacial_calor": "Temperatura medida no meio extracelular; possível geração de pontos quentes (hot spots) em localizações celulares específicas não detectáveis pelo equipamento",
+    "dosimetria_termica": "Inclinação máxima da curva de temperatura (dT/dt)max nos primeiros instantes após a aplicação do campo magnético, sob condições adiabáticas, usando a equação de SAR",
+    "distribuicao_espacial_calor": "A temperatura é medida no meio extracelular; pontos quentes (hot spots) em localizações celulares específicas são sugeridos mas não mensuráveis com o equipamento utilizado",
     "padronizacao_reportada": false
   },
   "q5": {
     "tipo_estudo": "in vitro",
-    "linhagem_celular": "HFFF2 (fibroblastos humanos normais) e WM938b (melanoma cutâneo avançado)",
+    "linhagem_celular": "HFFF2 (fibroblastos normais) e WM983b (melanoma)",
     "modelo_animal": null,
     "tipo_cancer": "melanoma",
     "concentracao_mg_mL": 5.0,
@@ -75,39 +75,39 @@
     "biodistribuicao": false,
     "toxicidade_avaliada": true,
     "localizacao_intracelular": true,
-    "apoptose": null,
-    "necrose": null,
+    "apoptose": false,
+    "necrose": false,
     "ferroptose": false,
     "imunomodulacao": false
   },
   "q6": {
     "limitacoes_reportadas": [
-      "O equipamento de hipertermia magnética mede a temperatura no meio extracelular, não sendo capaz de detectar pontos quentes (hot spots) em localizações celulares específicas",
-      "As NPs não possuem revestimento estabilizante, o que pode comprometer sua estabilidade em condições fisiológicas a longo prazo",
-      "Após um mês de armazenamento, algumas amostras (160°C 2h e 8h) apresentaram aumento no diâmetro hidrodinâmico indicando instabilidade coloidal",
-      "O produto H×f (9,32×10⁹ A m⁻¹ s⁻¹) ultrapassa o limite biológico de segurança de 5×10⁹ A m⁻¹ s⁻¹ definido por Hergt et al.",
-      "Impossibilidade de diferenciar quantitativamente os níveis de internalização entre as diferentes condições de tratamento hidrotérmico pelas imagens de Prussian blue"
+      "As NPs pristinas (sem tratamento hidrotérmico) não atingiram a faixa de temperatura necessária para hipertermia magnética (42–45 °C) nas condições experimentais utilizadas",
+      "O equipamento de hipertermia possui um atraso intrínseco, fazendo com que as NPs continuem aquecendo levemente após o campo ser desligado e vice-versa",
+      "A temperatura é medida no meio extracelular, impossibilitando a medição de pontos quentes em localizações celulares específicas",
+      "Amostras com tratamento hidrotérmico curto (2 h e 8 h) apresentaram maior instabilidade coloidal após um mês de armazenamento",
+      "O produto H×f (9,32 × 10^9 A m^-1 s^-1) ultrapassa o limite biológico de segurança definido por Hergt et al. (5 × 10^9 A m^-1 s^-1)"
     ],
     "problemas_SAR_ILP": false,
     "falta_padronizacao": false,
     "recomendacoes_futuras": [
-      "Avaliação in vivo das SPIONs produzidas para validar os resultados promissores obtidos in vitro",
-      "Investigação de revestimentos superficiais que aumentem a estabilidade fisiológica sem comprometer as propriedades magnéticas",
-      "Estudos adicionais para compreender os mecanismos moleculares de morte celular induzidos pela hipertermia magnética"
+      "Investigar a aplicação das SPIONs produzidas em modelos in vivo para validar os resultados in vitro",
+      "Explorar revestimentos superficiais que aumentem a estabilidade fisiológica sem comprometer as propriedades magnéticas",
+      "Otimizar ainda mais os parâmetros do tratamento hidrotérmico para maximizar o SAR mantendo a segurança biológica"
     ],
     "gaps_identificados": [
-      "Falta de avaliação dos mecanismos específicos de morte celular (apoptose vs. necrose) induzidos pela hipertermia magnética",
-      "Ausência de estudos in vivo para validar a eficácia e segurança das SPIONs produzidas",
-      "Não foram realizadas medições de ILP (Intrinsic Loss Power) para comparação normalizada entre diferentes condições de campo",
-      "Falta de análise de proteína corona e seus efeitos sobre as propriedades magnéticas e biológicas das NPs em ambiente fisiológico"
+      "Ausência de avaliação do mecanismo específico de morte celular (apoptose vs. necrose) induzido pela hipertermia magnética",
+      "Falta de estudos in vivo para avaliar biodistribuição e eficácia terapêutica",
+      "Não foi avaliada a formação de corona proteica (protein corona) em condições fisiológicas",
+      "O produto H×f utilizado excede o limite de segurança biológica, o que limita a translação clínica direta"
     ]
   },
   "q7": {
-    "integracao_fisica": "O estudo demonstra que o tratamento hidrotérmico aumenta a cristalinidade e o tamanho das SPIONs, elevando a magnetização de saturação e os valores de SAR, com contribuição documentada de ambos os mecanismos de relaxação (Néel e Browniana) na geração de calor.",
-    "integracao_engenharia": "A combinação da técnica de co-precipitação química com o tratamento hidrotérmico em autoclave representa uma abordagem simples, escalável e de baixo custo para produzir SPIONs com propriedades magnéticas otimizadas para aplicação em hipertermia magnética.",
-    "integracao_biologia": "As SPIONs produzidas após tratamento hidrotérmico são biocompatíveis a concentrações abaixo de 1 mg/mL, são internalizadas por células normais e de melanoma, e induzem redução significativa da viabilidade celular quando combinadas com AMF, com efeito mais pronunciado em células de melanoma.",
-    "integracao_materiais": "O tratamento hidrotérmico promoveu mudança morfológica de esferas para cubos/retângulos com arestas facetadas, aumento do tamanho de 9 para 20 nm, maior cristalinidade e composição mista de magnetita/maguemita, demonstrando como parâmetros de síntese controlam diretamente estrutura e propriedades magnéticas.",
-    "mensagem_principal": "A combinação da co-precipitação química com tratamento hidrotérmico a 140-160°C é uma estratégia eficaz e escalável para produzir SPIONs com morfologia cúbica, alta cristalinidade e SAR de até 203 W/g, que são capazes de atingir temperaturas terapêuticas de hipertermia em células de melanoma, com efeito citotóxico mais pronunciado em células tumorais do que em células normais."
+    "integracao_fisica": "O artigo contribui para a física ao demonstrar que o tratamento hidrotérmico aumenta a cristalinidade e o tamanho das SPIONs, elevando a magnetização de saturação e os valores de SAR, e ao confirmar o comportamento superparamagnético e a transição de Verwey por medidas SQUID.",
+    "integracao_engenharia": "O artigo contribui para a engenharia ao demonstrar que a combinação da co-precipitação química com tratamento hidrotérmico é um método simples, escalável e de baixo custo para produzir SPIONs com propriedades otimizadas para aplicação em hipertermia magnética.",
+    "integracao_biologia": "O artigo contribui para a biologia ao demonstrar que as SPIONs tratadas hidrothermicamente são biocompatíveis em concentrações abaixo de 1 mg/mL, são internalizadas por células normais e de melanoma, e reduzem significativamente a viabilidade celular quando combinadas com AMF, com efeito mais pronunciado em células de melanoma.",
+    "integracao_materiais": "O artigo contribui para a ciência dos materiais ao demonstrar que o tratamento hidrotérmico promove uma transição morfológica de nanopartículas quasi-esféricas para cúbicas/retangulares via maturação de Ostwald, e que a forma cúbica e a maior cristalinidade estão diretamente associadas a melhores propriedades magnéticas e maior eficiência de aquecimento.",
+    "mensagem_principal": "A combinação da técnica de co-precipitação química com tratamento hidrotérmico é uma abordagem eficaz para produzir SPIONs com maior cristalinidade, forma cúbica e propriedades magnéticas aprimoradas (SAR de até 203 W/g), capazes de atingir temperaturas terapêuticas em células de melanoma e induzir redução significativa da viabilidade celular, demonstrando alto potencial para tratamento de câncer por hipertermia magnética."
   },
   "custom_id": "67__Enhancing_the_magnetic_properties_of_superparamagnetic_iron_"
 }
