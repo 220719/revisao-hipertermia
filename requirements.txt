@@ -1,0 +1,13 @@
+pymupdf
+pydantic
+duckdb
+anthropic
+python-docx
+streamlit
+plotly
+chromadb
+sentence-transformers
+langchain-huggingface
+langchain-text-splitters
+python-dotenv
+pandas
