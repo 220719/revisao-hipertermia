@@ -1,0 +1,125 @@
+{
+  "autores": "Liu et al.",
+  "ano": 2020,
+  "periodico": "Theranostics",
+  "titulo": "Comprehensive understanding of magnetic hyperthermia for improving antitumor therapeutic efficacy",
+  "doi": "10.7150/thno.40805",
+  "tipo_estudo": "revisao",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (MH) utiliza o calor gerado pelas nanopartículas magnéticas (MNPs) quando submetidas a um campo magnético alternante (AMF). Ela permite o aquecimento focal seletivo do tumor com profunda penetração tecidual e morte seletiva de células cancerígenas sem danos aos tecidos saudáveis circundantes.",
+    "etapas_processo": [
+      "Administração das MNPs (preferencialmente por injeção intratumoral ou intravenosa com direcionamento)",
+      "Internalização das MNPs pelas células tumorais (endocitose/acumulação em lisossomos)",
+      "Aplicação de campo magnético alternante (AMF) externo",
+      "Conversão de energia eletromagnética em calor pelas MNPs (perdas por histerese e relaxação)",
+      "Elevação da temperatura tumoral para a faixa hipertérmica (43-46°C)",
+      "Morte celular por apoptose/necrose ou por efeitos de calor localizado em escala nanométrica"
+    ],
+    "internalizacao_nps": "As MNPs são internalizadas pelas células cancerígenas por endocitose, acumulando-se preferencialmente em lisossomos, podendo ser direcionadas a estruturas subcelulares específicas como mitocôndrias mediante conjugação com ligantes de direcionamento.",
+    "aplicacao_campo": "O AMF é aplicado externamente por um aplicador de campo magnético (como o MFH 300F), operando tipicamente em frequências de dezenas a centenas de kHz e amplitudes controladas, com o limite de segurança H×f < 5×10⁹.",
+    "janela_termica_min_C": 43.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": [
+      "apoptose",
+      "necrose",
+      "imunomodulacao"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": true,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": true,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "Para nanopartículas superparamagnéticas, o mecanismo dominante de dissipação de calor é a perda de energia causada pela superação da barreira de energia rotacional sob AMF, via relaxação de Néel e Browniana.",
+    "descricao_mecanismo": "A relaxação de Néel envolve a rotação da magnetização contra o atrito com o eixo fácil da rede atômica, enquanto a relaxação Browniana envolve a rotação física das MNPs contra o meio circundante. Para nanopartículas ferro/ferrimagnéticas de domínio único e multidomínio, as perdas por histerese também contribuem significativamente, sendo a quantidade de calor produzido aproximadamente igual à área do loop de histerese por ciclo do campo. A perda de calor depende de quão rapidamente a magnetização acompanha as mudanças do AMF."
+  },
+  "q3": {
+    "material": "Fe3O4, γ-Fe2O3, ferritas dopadas e outras composições",
+    "composicao_quimica": "Fe3O4, γ-Fe2O3, MnFe2O4, CoFe2O4, Zn0.4Fe2.6O4, Fe0.6Mn0.4O, Fe@Fe3O4, MnFe2O4@CoFe2O4, entre outras",
+    "dopagem": "Mg, Mn, Zn, Co, Ni, Gd, Fe2+",
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 7.0,
+    "faixa_tamanho_max_nm": 125.0,
+    "forma": "esférica, cubo, flor, nanodisco, nanoring, cadeia (magnetossomas)",
+    "arquitetura_multicore": true,
+    "anisotropia": "magnetocristalina, de forma, de superfície e por acoplamento de exchange",
+    "revestimento": "PEG, quitosana, aminosilano, polipirrol, alginato",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": 14.0,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "O tamanho, composição, morfologia e revestimento superficial das MNPs determinam diretamente sua susceptibilidade magnética, magnetização de saturação (Ms), anisotropia magnetocristalina (K) e tempo de relaxação, todos os quais afetam o SAR. Por exemplo, nanocubos de Zn0.4Fe2.6O4 exibem maior Ms e SAR do que esferas de mesma composição devido ao menor desordenamento de spins de superfície."
+  },
+  "q4": {
+    "amplitude_kA_m": 15.0,
+    "frequencia_kHz": 100.0,
+    "produto_Hf": 1500000000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 60.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Calorimetria (slope inicial da curva T×t), magnetometria AC (área do loop de histerese), termometria infravermelha e termometria por fluorescência",
+    "distribuicao_espacial_calor": "A distribuição de calor é heterogênea, com gradientes térmicos em escala nanométrica próximos à superfície das MNPs que decaem exponencialmente com a distância; em escala macroscópica, a distribuição depende da homogeneidade da injeção das MNPs no tumor.",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "MCF-7",
+    "modelo_animal": "camundongo",
+    "tipo_cancer": "glioblastoma, mama, próstata, pâncreas, carcinoma hepático, sarcoma de Kaposi, câncer de ovário",
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": true,
+    "apoptose": true,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": true
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Risco de toxicidade das MNPs com diferentes propriedades físicas (tamanho, composição, forma) que pode levar a riscos clínicos de segurança",
+      "Limite máximo permitido de amplitude e frequência do AMF (H×f < 5×10⁹) ainda pouco estudado em tecidos",
+      "Baixa eficiência de aquecimento das MNPs no ambiente celular",
+      "Necessidade de alta concentração de MNPs para MH intratumoral",
+      "Distribuição heterogênea das MNPs limitando a precisão do tratamento",
+      "Hipertermia direcionada por injeção intravenosa ainda em desenvolvimento",
+      "Recorrência e metástase tumoral após tratamento com MNPs-MH",
+      "Efeitos do AMF sobre tecidos ainda pouco estudados",
+      "Nanohíbridos multifuncionais podem apresentar preocupações de segurança adicionais"
+    ],
+    "problemas_SAR_ILP": true,
+    "falta_padronizacao": true,
+    "recomendacoes_futuras": [
+      "Equilibrar segurança e efetividade dos nanomediadores magnéticos minimizando toxicidade",
+      "Estudar com maior detalhe os efeitos biológicos da MNPs-MH na eficácia terapêutica, incluindo o microambiente tumoral",
+      "Investigar o efeito das MNPs-MH sobre células do sistema imune no TME (linfócitos T, DCs, macrófagos, MDSCs)",
+      "Estudar sistematicamente os efeitos biológicos magnetotérmicos em diferentes níveis (gene, proteína, organelas, tecido)",
+      "Otimizar a especificidade e seletividade das MNPs para alvos celulares e subcelulares in vitro e in vivo",
+      "Desenvolver geradores de AMF clinicamente viáveis integrados a técnicas de tratamento caso-específicas",
+      "Elucidar os mecanismos biológicos do aquecimento em escala nanométrica do nível celular ao organismo inteiro"
+    ],
+    "gaps_identificados": [
+      "Efeitos do AMF sobre tecidos humanos ainda pouco estudados",
+      "Mecanismos biológicos do calor localizado em escala nanométrica ainda pouco compreendidos",
+      "Hipertermia direcionada por injeção intravenosa ainda em desenvolvimento",
+      "Efeito das MNPs-MH sobre células do microambiente tumoral (TME) insuficientemente investigado",
+      "Otimização de NPs multifuncionais para múltiplas modalidades terapêuticas simultaneamente é complexa e não trivial",
+      "Limite de segurança H×f baseado em extrapolações empíricas, necessitando de estudos mais rigorosos"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo discute em detalhes os mecanismos físicos de dissipação de energia magnética (histerese, relaxação de Néel e Browniana, correntes de Foucault) e a geração de gradientes térmicos em escala nanométrica na superfície das MNPs.",
+    "integracao_engenharia": "O artigo revisa estratégias de engenharia de MNPs — controle de tamanho, composição, morfologia e revestimento superficial — para maximizar a eficiência de conversão térmica (SAR/ILP) e discute sistemas de aplicação clínica de AMF.",
+    "integracao_biologia": "O artigo examina os efeitos biológicos do calor localizado induzido por MNPs em estruturas celulares e subcelulares (lisossomos, mitocôndrias, membrana celular), vias de morte celular (apoptose, necrose, LMP) e respostas imunológicas antitumorais.",
+    "integracao_materiais": "O artigo apresenta uma ampla revisão de materiais magnéticos para hipertermia, incluindo ferritas dopadas, nanoestruturas com acoplamento de exchange, magnetossomas e nanohíbridos multifuncionais, correlacionando composição e estrutura com propriedades magnéticas e de aquecimento.",
+    "mensagem_principal": "Este artigo de revisão apresenta uma compreensão abrangente das estratégias para melhorar a eficácia antitumoral da hipertermia magnética mediada por MNPs, integrando o design otimizado de nanopartículas (tamanho, composição, morfologia, superfície), o entendimento dos efeitos do calor localizado em escala nanométrica sobre estruturas celulares/subcelulares, e abordagens sinérgicas combinando MH com quimioterapia, radioterapia, imunoterapia, terapia fototérmica/PDT e terapia gênica."
+  },
+  "custom_id": "05__Comprehensive_understanding_of_magnetic_hyperthermia_for_imp"
+}

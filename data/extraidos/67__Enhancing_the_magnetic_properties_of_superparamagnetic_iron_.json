@@ -1,0 +1,113 @@
+{
+  "autores": "Martins et al.",
+  "ano": 2025,
+  "periodico": "Materials Advances",
+  "titulo": "Enhancing the magnetic properties of superparamagnetic iron oxide nanoparticles using hydrothermal treatment for magnetic hyperthermia application",
+  "doi": "10.1039/d4ma01120a",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "Na hipertermia magnética, a temperatura do tumor é aumentada pela aplicação de um campo magnético alternante externo, que induz a liberação de calor a partir de nanopartículas magnéticas localizadas no sítio tumoral. O objetivo é elevar a temperatura do tumor para a faixa terapêutica capaz de induzir morte celular.",
+    "etapas_processo": [
+      "Síntese das SPIONs por co-precipitação química combinada com tratamento hidrotérmico",
+      "Caracterização estrutural, morfológica e magnética das NPs",
+      "Incubação das células (HFFF2 e WM938b) com as SPIONs por 24 horas",
+      "Aplicação do campo magnético alternante (AMF) com intensidade de 24 kA/m e frequência de 388,4 kHz",
+      "Monitoramento da temperatura durante o tratamento",
+      "Avaliação da viabilidade celular imediatamente após e 24 horas depois do tratamento"
+    ],
+    "internalizacao_nps": "As NPs são internalizadas pelas células por endocitose, com aumento da captação ao longo do tempo de incubação (1h, 6h, 24h), visualizada por coloração Prussian blue; células de melanoma tendem a acumular NPs preferencialmente ao redor da membrana celular.",
+    "aplicacao_campo": "O AMF é aplicado com intensidade de 24 kA/m e frequência de 388,4 kHz usando um equipamento D5 series (Nb Nanoscale Biomagnetics), com ciclos de ligado/desligado para manter a temperatura entre 42 °C e 45 °C.",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 45.0,
+    "vias_morte_celular": [
+      "apoptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": false,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": true,
+    "forma_onda_campo": "pulsada",
+    "mecanismo_dominante": "Tanto a relaxação de Néel quanto a relaxação Browniana contribuem para a geração de calor, com a relaxação de Néel sendo potencialmente dominante em meios de alta viscosidade como DMEM.",
+    "descricao_mecanismo": "A relaxação de Néel está relacionada à anisotropia magnetocristalina e envolve a reorientação do momento magnético dentro da nanopartícula, independentemente de sua rotação física. A relaxação Browniana está associada à viscosidade do fluido no qual as nanopartículas estão suspensas e envolve a rotação física da partícula. Em meio de alta viscosidade como DMEM, o movimento Browniano é suprimido, mas a relaxação de Néel permanece ativa, indicando que ambos os mecanismos contribuem em condições fisiológicas."
+  },
+  "q3": {
+    "material": "Fe3O4/γ-Fe2O3 (magnetita/maguemita)",
+    "composicao_quimica": "Fe3O4 e γ-Fe2O3",
+    "dopagem": null,
+    "tamanho_nm": 19.8,
+    "faixa_tamanho_min_nm": 9.3,
+    "faixa_tamanho_max_nm": 19.8,
+    "forma": "cubo",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia magnetocristalina",
+    "revestimento": null,
+    "material_autorregulavel": false,
+    "SAR_W_g": 203.0,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 73.5,
+    "relacao_estrutura_propriedade": "O tratamento hidrotérmico aumentou o tamanho das NPs de 9 para ~20 nm e promoveu mudança de forma esférica para cúbica/retangular, resultando em maior cristalinidade, maior magnetização de saturação (de 58 para 73 emu/g) e maior SAR (de 83 para ~160-203 W/g). Partículas cúbicas exibem maior magnetização de saturação devido a interações de troca mais fortes durante o alinhamento de spin."
+  },
+  "q4": {
+    "amplitude_kA_m": 24.0,
+    "frequencia_kHz": 388.4,
+    "produto_Hf": 9321600000.0,
+    "dentro_limite_seguranca": false,
+    "tempo_tratamento_min": 10.0,
+    "forma_onda": "pulsada",
+    "dosimetria_termica": "Slope máximo da curva de temperatura (dT/dt)max nos primeiros instantes após ligar o campo magnético, assumindo condições adiabáticas",
+    "distribuicao_espacial_calor": "Temperatura medida no meio extracelular; possível geração de pontos quentes (hot spots) em localizações celulares específicas não detectáveis pelo equipamento",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "HFFF2 (fibroblastos humanos normais) e WM938b (melanoma cutâneo avançado)",
+    "modelo_animal": null,
+    "tipo_cancer": "melanoma",
+    "concentracao_mg_mL": 5.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": true,
+    "apoptose": null,
+    "necrose": null,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "O equipamento de hipertermia magnética mede a temperatura no meio extracelular, não sendo capaz de detectar pontos quentes (hot spots) em localizações celulares específicas",
+      "As NPs não possuem revestimento estabilizante, o que pode comprometer sua estabilidade em condições fisiológicas a longo prazo",
+      "Após um mês de armazenamento, algumas amostras (160°C 2h e 8h) apresentaram aumento no diâmetro hidrodinâmico indicando instabilidade coloidal",
+      "O produto H×f (9,32×10⁹ A m⁻¹ s⁻¹) ultrapassa o limite biológico de segurança de 5×10⁹ A m⁻¹ s⁻¹ definido por Hergt et al.",
+      "Impossibilidade de diferenciar quantitativamente os níveis de internalização entre as diferentes condições de tratamento hidrotérmico pelas imagens de Prussian blue"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Avaliação in vivo das SPIONs produzidas para validar os resultados promissores obtidos in vitro",
+      "Investigação de revestimentos superficiais que aumentem a estabilidade fisiológica sem comprometer as propriedades magnéticas",
+      "Estudos adicionais para compreender os mecanismos moleculares de morte celular induzidos pela hipertermia magnética"
+    ],
+    "gaps_identificados": [
+      "Falta de avaliação dos mecanismos específicos de morte celular (apoptose vs. necrose) induzidos pela hipertermia magnética",
+      "Ausência de estudos in vivo para validar a eficácia e segurança das SPIONs produzidas",
+      "Não foram realizadas medições de ILP (Intrinsic Loss Power) para comparação normalizada entre diferentes condições de campo",
+      "Falta de análise de proteína corona e seus efeitos sobre as propriedades magnéticas e biológicas das NPs em ambiente fisiológico"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo demonstra que o tratamento hidrotérmico aumenta a cristalinidade e o tamanho das SPIONs, elevando a magnetização de saturação e os valores de SAR, com contribuição documentada de ambos os mecanismos de relaxação (Néel e Browniana) na geração de calor.",
+    "integracao_engenharia": "A combinação da técnica de co-precipitação química com o tratamento hidrotérmico em autoclave representa uma abordagem simples, escalável e de baixo custo para produzir SPIONs com propriedades magnéticas otimizadas para aplicação em hipertermia magnética.",
+    "integracao_biologia": "As SPIONs produzidas após tratamento hidrotérmico são biocompatíveis a concentrações abaixo de 1 mg/mL, são internalizadas por células normais e de melanoma, e induzem redução significativa da viabilidade celular quando combinadas com AMF, com efeito mais pronunciado em células de melanoma.",
+    "integracao_materiais": "O tratamento hidrotérmico promoveu mudança morfológica de esferas para cubos/retângulos com arestas facetadas, aumento do tamanho de 9 para 20 nm, maior cristalinidade e composição mista de magnetita/maguemita, demonstrando como parâmetros de síntese controlam diretamente estrutura e propriedades magnéticas.",
+    "mensagem_principal": "A combinação da co-precipitação química com tratamento hidrotérmico a 140-160°C é uma estratégia eficaz e escalável para produzir SPIONs com morfologia cúbica, alta cristalinidade e SAR de até 203 W/g, que são capazes de atingir temperaturas terapêuticas de hipertermia em células de melanoma, com efeito citotóxico mais pronunciado em células tumorais do que em células normais."
+  },
+  "custom_id": "67__Enhancing_the_magnetic_properties_of_superparamagnetic_iron_"
+}

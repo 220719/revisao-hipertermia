@@ -1,0 +1,109 @@
+{
+  "autores": "El-Boubbou et al.",
+  "ano": 2024,
+  "periodico": "RSC Advances",
+  "titulo": "Preparation and characterization of various PVPylated divalent metal-doped ferrite nanoparticles for magnetic hyperthermia",
+  "doi": "10.1039/d4ra01600a",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "Na hipertermia magnética, um material magnético implantado é utilizado sob um campo magnético alternante externo (AMF) para dissipar calor a partir das NPs na área de interesse, permitindo a destruição de tumores sólidos malignos por ablação ou aquecimento suave com efeitos colaterais mínimos.",
+    "etapas_processo": [
+      "Síntese das NPs de ferrita dopadas com metais divalentes pelo método KHB",
+      "Revestimento das NPs com PVP para estabilização e biocompatibilidade",
+      "Dispersão das NPs em meio aquoso",
+      "Aplicação de campo magnético alternante (AMF) sobre a dispersão de NPs",
+      "Geração de calor pelas NPs por mecanismos de relaxação",
+      "Monitoramento da temperatura e cálculo de SAR e ILP"
+    ],
+    "internalizacao_nps": "O artigo não descreve internalização celular das NPs; o foco é na dispersão aquosa das NPs sob AMF externo",
+    "aplicacao_campo": "O AMF é aplicado usando o sistema comercial 'Nanotherics Magnetherm' com frequência de 332,8 kHz e amplitude de 170 Oe sobre dispersões aquosas das NPs.",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": true,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante, onde os momentos magnéticos são reorientados dentro das partículas contra uma barreira de energia, dissipando calor.",
+    "descricao_mecanismo": "Quando um sistema magnético é submetido a AMF, o calor é gerado por mecanismos de perda classificados como perdas por histerese e perdas por relaxação. Para NPs superparamagnéticas/ferromagnéticas com perdas de histerese quase desprezíveis, os valores de SAR são diretamente afetados por parâmetros que influenciam a rotação do momento magnético responsável pelo calor dissipado através dos mecanismos de relaxação Browniana e de Néel. O aumento da constante de anisotropia aumenta o tempo de relaxação de Néel e, consequentemente, o calor dissipado pelas NPs."
+  },
+  "q3": {
+    "material": "ferrita dopada com metais divalentes (MFe2O4)",
+    "composicao_quimica": "MFe2O4 onde M = Co, Ni, Zn, Mg, Sn",
+    "dopagem": "Co, Ni, Zn, Mg, Sn",
+    "tamanho_nm": 10.0,
+    "faixa_tamanho_min_nm": 5.0,
+    "faixa_tamanho_max_nm": 18.5,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia magnetocristalina uniaxial; anisotropia efetiva (Keff) determinada pela lei de aproximação à saturação",
+    "revestimento": "PVP (polivinilpirrolidona, PVP K30, Mw ~40.000)",
+    "material_autorregulavel": false,
+    "SAR_W_g": 54.71,
+    "ILP_nHm2_kg": 0.9,
+    "magnetizacao_saturacao_emu_g": 80.74,
+    "relacao_estrutura_propriedade": "A ocupação dos sítios tetraédricos e octaédricos pelos cátions dopantes determina as propriedades magnéticas; Co e Ni nos sítios octaédricos induzem alta magnetização de saturação e anisotropia uniaxial, resultando em maiores eficiências de aquecimento, enquanto Sn e Mg nos mesmos sítios reduzem as interações Fe-Fe e diminuem a ordenação magnética de longo alcance, resultando em baixas saturações e SAR."
+  },
+  "q4": {
+    "amplitude_kA_m": 13.53,
+    "frequencia_kHz": 332.8,
+    "produto_Hf": 4503824000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 15.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Ajuste linear da curva de temperatura vs. tempo no intervalo inicial (1 a 15 s) para obter a taxa de aquecimento dT/dt, utilizada no cálculo de SAR",
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "MDA-MB-231 e KAIMRC1",
+    "modelo_animal": null,
+    "tipo_cancer": "mama",
+    "concentracao_mg_mL": 10.0,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "A maioria das ferritas relatadas na literatura é preparada sem revestimento adequado, tornando esses materiais inadequados para aplicações biomédicas devido à baixa biocompatibilidade, dispersibilidade aquosa reduzida e alta sensibilidade à oxidação",
+      "Os experimentos de aquecimento foram realizados por apenas 15 min, sendo que o protocolo clínico requer manutenção a 42°C por pelo menos 30 min",
+      "As amostras com concentração de 2,5 mg mL−1 de vários ferrites dopados não alcançaram a temperatura de hipertermia de 42°C",
+      "O estudo de citotoxicidade não avaliou o efeito combinado das NPs com o AMF (hipertermia real) nas células cancerígenas"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Investigar aplicações in vivo para hiperthermia magnética guiada com as NPs de ferrita PVPiladas, particularmente as dopadas com Ni e Co",
+      "Explorar aplicações combinadas de hipertermia magneticamente guiada com outras modalidades terapêuticas"
+    ],
+    "gaps_identificados": [
+      "Ausência de estudos in vivo para validar os resultados de aquecimento e biocompatibilidade observados in vitro",
+      "Falta de avaliação do efeito da hipertermia combinada (NPs + AMF) na morte celular das linhagens cancerígenas estudadas",
+      "Não foi investigada a internalização celular das NPs nem sua localização intracelular",
+      "Não foram avaliados os mecanismos de morte celular (apoptose, necrose) induzidos pela hipertermia"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo contribui com a determinação experimental da constante de anisotropia efetiva (Keff) por meio da lei de aproximação à saturação e correlaciona os parâmetros magnéticos (Ms, Keff, Hc) com as eficiências de aquecimento sob AMF clinicamente seguro.",
+    "integracao_engenharia": "O artigo demonstra a metodologia KHB como processo robusto, econômico e reprodutível para síntese em larga escala de dispersões coloidais aquosas estabilizadas de NPs de ferrita dopadas e revestidas com PVP para aplicações de hipertermia.",
+    "integracao_biologia": "O ensaio de viabilidade celular MTT em linhagens de câncer de mama (MDA-MB-231 e KAIMRC1) comprova a biocompatibilidade e o perfil de segurança das NPs de ferrita PVPiladas mesmo em altas concentrações.",
+    "integracao_materiais": "O artigo demonstra que o dopante metálico divalente (Co, Ni, Zn, Mg, Sn) determina a fase espinel, o tamanho do cristalito, a magnetização de saturação e a anisotropia efetiva, controlando diretamente as propriedades magneto-térmicas das NPs de ferrita revestidas com PVP.",
+    "mensagem_principal": "As NPs de ferrita PVPiladas dopadas com Ni e Co, preparadas pelo método KHB, apresentam as maiores eficiências de aquecimento (SAR = 54,71 e 30,57 W g−1, respectivamente), alcançando temperaturas de hipertermia em ~5 min sob AMF clinicamente seguro, com boa biocompatibilidade, sendo promissoras para aplicações de hipertermia magnética no tratamento do câncer."
+  },
+  "custom_id": "87__Preparation_and_characterization_of_various_PVPylated_divale"
+}

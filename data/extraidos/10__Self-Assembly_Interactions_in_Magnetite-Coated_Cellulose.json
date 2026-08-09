@@ -1,0 +1,109 @@
+{
+  "autores": "Hasan et al.",
+  "ano": 2026,
+  "periodico": "ACS Applied Nano Materials",
+  "titulo": "Self-Assembly Interactions in Magnetite-Coated Cellulose Nanocrystals: Implications for Magnetic Hyperthermia Applications",
+  "doi": "10.1021/acsanm.5c05783",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética é uma técnica que avalia a capacidade de nanomateriais magnéticos de converter energia eletromagnética em calor sob um campo magnético alternante, sendo aplicada em terapia do câncer, entrega direcionada de fármacos e aquecimento localizado. Nanopartículas superparamagnéticas de Fe3O4 funcionalizadas geram calor quando expostas a campos magnéticos alternantes, podendo ser utilizadas como agentes de hipertermia espacialmente confinados.",
+    "etapas_processo": [
+      "Síntese das nanopartículas de Fe3O4 revestidas com nanocristais de celulose (CNC) via coprecipitação in situ",
+      "Dispersão das nanopartículas em meio aquoso na concentração de 0,3% p/p",
+      "Aplicação do campo magnético alternante (AMF) com frequência de 155 ± 4 kHz e diferentes amplitudes (6,3; 18,5 e 30,4 kA/m)",
+      "Monitoramento da temperatura ao longo do tempo (curvas T-t)",
+      "Cálculo do SAR a partir da inclinação inicial (primeiros 30 s) das curvas T-t"
+    ],
+    "internalizacao_nps": "O artigo não descreve internalização celular das nanopartículas; os ensaios de hipertermia foram realizados em dispersões aquosas e os testes de citotoxicidade avaliaram viabilidade celular de macrófagos RAW 264.7 expostos às nanopartículas.",
+    "aplicacao_campo": "O campo magnético alternante (AMF) foi aplicado usando um sistema AMF (Model 3-135/400-6, Life Systems) na frequência de 155 ± 4 kHz com amplitudes de 6,3; 18,5 e 30,4 kA/m por 600 segundos.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": false,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A relaxação de Néel e Browniana são os mecanismos dominantes de dissipação de energia nos nanocompósitos CNC/Fe3O4 superparamagnéticos sob campo magnético alternante.",
+    "descricao_mecanismo": "Os nanocompósitos CNC/Fe3O4 exibem comportamento superparamagnético, e a dissipação de calor ocorre principalmente por relaxação de Néel e Browniana sob campo magnético alternante. Amplitudes de campo maiores promovem maiores perdas por relaxação de Néel e Browniana, aumentando a dissipação de calor. A redução da agregação das nanopartículas de Fe3O4 pelo revestimento com CNC contribui para tempos de relaxação de Néel e Browniana mais curtos, resultando em maior SAR."
+  },
+  "q3": {
+    "material": "Fe3O4 (magnetita) revestida com nanocristais de celulose (CNC)",
+    "composicao_quimica": "Fe3O4",
+    "dopagem": null,
+    "tamanho_nm": 21.0,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia geométrica proveniente da morfologia em bastão dos CNC/Fe3O4, levando a maior constante de anisotropia magnética em comparação ao Fe3O4 puro",
+    "revestimento": "nanocristais de celulose sulfatados (S-CNC) ou oxidados por TEMPO (T-CNC)",
+    "material_autorregulavel": false,
+    "SAR_W_g": 649.0,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 82.5,
+    "relacao_estrutura_propriedade": "A química de superfície dos CNC (grupos sulfato em S-CNC e carboxilato em T-CNC) governa a adsorção do Fe3O4, o grau de agregação e a anisotropia magnética dos nanocompósitos, afetando diretamente a magnetização de saturação e o SAR. Nanocompósitos S-CNC/Fe3O4 (1:2) apresentaram menor agregação, maior anisotropia e tempos de relaxação mais curtos, resultando no maior SAR intrínseco por grama de Fe3O4 (649 W/g)."
+  },
+  "q4": {
+    "amplitude_kA_m": 30.4,
+    "frequencia_kHz": 155.0,
+    "produto_Hf": 4712000000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 10.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Inclinação inicial (primeiros 30 s) das curvas temperatura-tempo (ΔT/Δt) multiplicada pela capacidade calorífica específica da água e dividida pela concentração de nanopartículas magnéticas",
+    "distribuicao_espacial_calor": "Não foi descrita distribuição espacial do calor; o aquecimento foi avaliado globalmente em dispersões aquosas homogêneas a 0,3% p/p",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "RAW 264.7",
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": 0.5,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "O estudo utilizou um cluster mínimo de (Fe3O4)n=1 nas simulações DFT, limitando a descrição da estrutura eletrônica global e da magnetização devido ao tamanho finito e à ausência de interações de longo alcance",
+      "Os ensaios de citotoxicidade utilizaram apenas macrófagos RAW 264.7 e não células tumorais, limitando a avaliação do potencial terapêutico direto",
+      "Os experimentos de hipertermia foram realizados em dispersões aquosas e não em ambientes biológicos complexos",
+      "A técnica de XRD não é suficiente para distinguir entre magnetita (Fe3O4) e maghemita (γ-Fe2O3), que apresentam picos sobrepostos"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Investigar os mecanismos celulares que permitem aos macrófagos distinguir e responder diferentemente a S-CNC e T-CNC",
+      "Determinar o mecanismo molecular exato subjacente aos efeitos protetores dos CNC na atividade de LDH em alta concentração",
+      "Avaliar os nanocompósitos em modelos biológicos mais complexos para aplicações de hipertermia magnética, entrega de fármacos e plataformas antimicrobianas"
+    ],
+    "gaps_identificados": [
+      "Mecanismos moleculares que governam a adsorção do Fe3O4 em CNC permanecem pouco compreendidos na literatura",
+      "Faltam estudos em modelos in vivo para validar o potencial dos nanocompósitos magnéticos de CNC para hipertermia",
+      "O papel da fagocitose e outros mecanismos celulares na resposta aos nanocompósitos não foi determinado",
+      "A influência de fatores biológicos como proteína corona e viscosidade do meio não foi investigada"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo contribui para a física ao elucidar os mecanismos de relaxação magnética (Néel e Browniana) e anisotropia que determinam a eficiência de aquecimento dos nanocompósitos CNC/Fe3O4 sob campo magnético alternante.",
+    "integracao_engenharia": "O trabalho fornece uma abordagem experimental-computacional para o design racional de nanocompósitos magnéticos de celulose com desempenho otimizado em hipertermia, estabelecendo relações quantitativas entre química de superfície, razão CNC:Fe3O4 e SAR.",
+    "integracao_biologia": "Os ensaios de citotoxicidade (LDH e MTT) em macrófagos RAW 264.7 confirmaram a biocompatibilidade dos nanocompósitos CNC/Fe3O4 em concentrações de 20 e 100 μg/mL, indicando seu potencial seguro para aplicações biomédicas.",
+    "integracao_materiais": "O estudo elucida como a química de superfície dos CNC (grupos sulfato vs. carboxilato) governa a adsorção, distribuição e ligação interfacial do Fe3O4, fornecendo base para o design de nanomateriais magnéticos sustentáveis e biocompatíveis.",
+    "mensagem_principal": "Este trabalho estabelece relações quantitativas estrutura-propriedade entre a química de superfície dos nanocristais de celulose (S-CNC vs. T-CNC), os mecanismos de ligação interfacial com Fe3O4 e o desempenho de aquecimento em hipertermia magnética, mostrando que o nanocompósito S-CNC/Fe3O4 (1:2) alcança o maior SAR intrínseco (649 W/g-Fe3O4) devido à menor agregação e maior anisotropia, enquanto todos os nanocompósitos demonstram biocompatibilidade e comportamento superparamagnético favorável para aplicações biomédicas."
+  },
+  "custom_id": "10__Self-Assembly_Interactions_in_Magnetite-Coated_Cellulose"
+}

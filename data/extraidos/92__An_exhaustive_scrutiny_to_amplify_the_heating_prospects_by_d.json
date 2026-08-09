@@ -1,0 +1,111 @@
+{
+  "autores": "Tsopoe et al.",
+  "ano": 2023,
+  "periodico": "Scientific Reports",
+  "titulo": "An exhaustive scrutiny to amplify the heating prospects by devising a core@shell nanostructure for constructive magnetic hyperthermia applications",
+  "doi": "10.1038/s41598-023-39766-3",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia por fluido magnético é uma terapia contra o câncer baseada na geração de calor pela suspensão de nanopartículas magnéticas nas células tumorais via campo magnético alternado (AC). O objetivo é atingir a temperatura limiar terapêutica (42–46 °C) com dosagens mínimas de nanopartículas.",
+    "etapas_processo": [
+      "Síntese das nanopartículas magnéticas (NPs) por co-precipitação em duas etapas",
+      "Suspensão das NPs em água Milli Q (1 mg/mL)",
+      "Aplicação de campo magnético alternado (AMF) com amplitude e frequência definidas",
+      "Monitoramento da temperatura com sonda de fibra óptica ao longo do tempo (até 900 s)",
+      "Cálculo do SLP/SAR via equação Box-Lucas em setup não-adiabático"
+    ],
+    "internalizacao_nps": "O artigo não descreve mecanismo de internalização celular das NPs; o estudo é focado na caracterização física e no aquecimento em suspensão aquosa.",
+    "aplicacao_campo": "O campo magnético alternado é aplicado por meio de uma bobina de indução (Easy Heat 8310, Ambrell) com 7 e 8 voltas em três amplitudes distintas (12,38, 13,92 e 15,47 kA/m) e frequência de 337 kHz.",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": true,
+    "perdas_histerese": true,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O mecanismo dominante é o aumento da anisotropia efetiva via acoplamento de troca na interface núcleo-casca, amplificado pelo efeito de exchange bias (EBE).",
+    "descricao_mecanismo": "A estrutura core@shell promove acoplamento de troca magnética na interface entre o núcleo (Co0.5Zn0.5Fe2O4) e a casca (Fe3O4), gerando anisotropia de troca unidirecional (exchange bias). Essa anisotropia interfacial adicional modula a anisotropia efetiva total das NPs, aumentando a dissipação de energia sob campo AC. A casca de Fe3O4 com espessura de ~1–2 nm também amplifica a anisotropia de superfície, contribuindo adicionalmente para a maior eficiência de aquecimento."
+  },
+  "q3": {
+    "material": "CoZnFe2O4@Fe3O4 (core@shell)",
+    "composicao_quimica": "Co0.5Zn0.5Fe2O4 (núcleo) / Fe3O4 (casca)",
+    "dopagem": "Co e Zn (substituição no núcleo de ferrita mista)",
+    "tamanho_nm": 9.86,
+    "faixa_tamanho_min_nm": 6.99,
+    "faixa_tamanho_max_nm": 18.21,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia efetiva tuned por exchange bias interfacial e anisotropia de superfície",
+    "revestimento": null,
+    "material_autorregulavel": false,
+    "SAR_W_g": 340.85,
+    "ILP_nHm2_kg": 5.36,
+    "magnetizacao_saturacao_emu_g": 52.65,
+    "relacao_estrutura_propriedade": "A arquitetura core@shell com casca fina de Fe3O4 (~1,89 nm) amplifica a anisotropia de superfície e gera anisotropia de troca interfacial (EBE), modulando a anisotropia efetiva total e resultando em SLP e ILP superiores aos dos materiais isolados. A variação da espessura da casca é mais determinante no ajuste das propriedades magnéticas do que a variação do núcleo."
+  },
+  "q4": {
+    "amplitude_kA_m": 15.47,
+    "frequencia_kHz": 337.0,
+    "produto_Hf": 5213390000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 15.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Sonda de temperatura por fibra óptica com ajuste da curva pelo modelo Box-Lucas em setup não-adiabático",
+    "distribuicao_espacial_calor": "Não descrita espacialmente; a temperatura é medida no volume total da suspensão dentro da bobina de trabalho",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": 1.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "A amostra CZ não atingiu a temperatura limiar de hipertermia (42–46 °C) mesmo no maior campo aplicado, devido à baixa anisotropia e baixa magnetização de saturação",
+      "O efeito de exchange bias (EBE) desaparece acima da temperatura de bloqueio (~240 K), sendo observado apenas em temperaturas abaixo de 250 K",
+      "Agomeração das NPs observada, especialmente na amostra core@shell, o que pode impactar aplicações biomédicas",
+      "O estudo não avaliou toxicidade, biodistribuição ou eficácia em modelos celulares ou animais",
+      "Ausência de revestimento funcional nas NPs, limitando aplicabilidade biológica direta"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Investigar a relação entre a espessura da casca e a eficiência de aquecimento de forma sistemática",
+      "Explorar a estrutura core@shell invertida (Fe3O4@Co0.5Zn0.5Fe2O4) para comparação de desempenho em hipertermia",
+      "Avaliar toxicidade e biocompatibilidade das NPs em estudos celulares e in vivo",
+      "Adicionar revestimento funcional (ex.: PEG, quitosana) para melhorar estabilidade coloidal e aplicabilidade biomédica"
+    ],
+    "gaps_identificados": [
+      "Ausência de validação biológica (in vitro/in vivo) da eficácia terapêutica das NPs CZF",
+      "Mecanismo microscópico do exchange bias ainda não totalmente compreendido, conforme reconhecido pelos autores",
+      "Não foi investigado o comportamento das NPs em meios biológicos (soro, fluidos corporais) nem o efeito de coroa proteica",
+      "Não há dados sobre distribuição espacial do calor no tumor ou modelagem térmica do tecido"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra fisicamente que o efeito de exchange bias gerado pelo acoplamento interfacial em nanoestruturas core@shell modula a anisotropia efetiva e amplifica a potência de perda específica (SLP) das NPs sob campo magnético alternado.",
+    "integracao_engenharia": "Do ponto de vista da engenharia de materiais magnéticos, o trabalho estabelece que a arquitetura core@shell com casca fina de Fe3O4 (~1,89 nm) é uma estratégia eficaz para maximizar o ILP (até 5,36 nHm²/g) dentro dos limites clínicos de segurança (limite de Brezovich).",
+    "integracao_biologia": "O artigo não realiza experimentos biológicos, mas posiciona as NPs CZF como agentes promissores para hipertermia magnética em cânceres como próstata, tumor cerebral e carcinoma de mama, com base em sua alta eficiência de aquecimento a baixas concentrações (1 mg/mL).",
+    "integracao_materiais": "A síntese por co-precipitação em duas etapas possibilitou a produção de nanoestruturas core@shell (Co0.5Zn0.5Fe2O4@Fe3O4) com fase cristalina pura, morfologia esférica e interface bem definida, validada por XRD, HRTEM, SAED e EDX.",
+    "mensagem_principal": "A nanostrutura core@shell Co0.5Zn0.5Fe2O4@Fe3O4 (CZF) apresenta eficiência de aquecimento magnético superior às fases isoladas, atingindo SLP de 340,85 W/g e ILP de 5,36 nHm²/g, graças ao acoplamento de exchange bias na interface núcleo-casca que modula a anisotropia efetiva, tornando-a um agente promissor para hipertermia magnética dentro dos limites clínicos de segurança."
+  },
+  "custom_id": "92__An_exhaustive_scrutiny_to_amplify_the_heating_prospects_by_d"
+}

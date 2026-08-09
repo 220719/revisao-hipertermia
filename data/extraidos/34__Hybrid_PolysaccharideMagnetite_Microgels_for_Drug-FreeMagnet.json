@@ -1,0 +1,114 @@
+{
+  "autores": "Sarfati et al.",
+  "ano": 2026,
+  "periodico": "Advanced Healthcare Materials",
+  "titulo": "Hybrid Polysaccharide/Magnetite Microgels for Drug-Free Magnetically Targeted Photothermal Thrombolysis",
+  "doi": "10.1002/adhm.202504603",
+  "tipo_estudo": "in vivo",
+  "q1": {
+    "conceito_tecnica": "O artigo não trata de hipertermia magnética (MFH) para câncer, mas de terapia fototérmica (PTT) para trombólise. A MFH é mencionada brevemente como alternativa descartada por ser quase 100 vezes menos eficiente que a PTT em ambientes confinados como trombos, devido à limitação do movimento Browniano.",
+    "etapas_processo": [
+      "Síntese de nanopartículas de magnetita (MNPs) por método sol-gel não aquoso",
+      "Encapsulamento das MNPs em microgéis de dextrana reticulada por emulsificação inversa (W/O)",
+      "Caracterização físico-química das micropartículas híbridas (HPs)",
+      "Direcionamento magnético das HPs ao trombo por campo magnético externo (ímã permanente)",
+      "Irradiação laser (808 nm) para conversão fototérmica e trombólise"
+    ],
+    "internalizacao_nps": "As HPs não são internalizadas por células; são direcionadas magneticamente ao trombo e ficam retidas na superfície do coágulo",
+    "aplicacao_campo": "Um ímã cubo de 5 mm (campo permanente) é posicionado acima da veia para atrair e reter as HPs circulantes no local do trombo por 15 minutos",
+    "janela_termica_min_C": 55.0,
+    "janela_termica_max_C": 60.0,
+    "vias_morte_celular": [
+      "necrose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": false,
+    "perdas_histerese": null,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": true,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A conversão fototérmica (PTT) é o mecanismo dominante, pois a hipertermia magnética é descartada por ser ~100 vezes menos eficiente em ambientes confinados como trombos devido à limitação do movimento Browniano.",
+    "descricao_mecanismo": "As MNPs de magnetita (Fe3O4) possuem estado de valência misto Fe2+/Fe3+, resultando em absorção aprimorada no NIR. Ao serem irradiadas com laser de 808 nm, as HPs convertem luz em calor com eficiência de conversão fototérmica de 38%. O acoplamento magnético de ~10^5 MNPs dentro de cada HP gera um macromomento magnético coletivo (~10^-11 emu), permitindo direcionamento magnético eficiente ao trombo."
+  },
+  "q3": {
+    "material": "Fe3O4 (magnetita)",
+    "composicao_quimica": "Fe3O4",
+    "dopagem": null,
+    "tamanho_nm": 9.0,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": "esférica",
+    "arquitetura_multicore": true,
+    "anisotropia": null,
+    "revestimento": "dextrana (polissacarídeo reticulado com STMP)",
+    "material_autorregulavel": false,
+    "SAR_W_g": 5542.0,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 78.0,
+    "relacao_estrutura_propriedade": "O acoplamento de ~10^5 MNPs de 9 nm (domínio único, superparamagnéticas) dentro de cada HP gera um macromomento coletivo ~10^5 vezes maior que o de MNPs individuais, conferindo responsividade magnética. O estado de valência misto Fe2+/Fe3+ da magnetita melhora a absorção no NIR em comparação à maghemita, resultando em alta eficiência de conversão fototérmica (38%)."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": null,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 5.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Câmera de imagem térmica infravermelha (FLIR A300) para monitoramento da temperatura durante irradiação laser; método de calibração precisa com powermeter e câmera BEAMAGE para determinar a densidade de potência",
+    "distribuicao_espacial_calor": "Formação de hot spots localizados nas HPs acumuladas no trombo, com temperatura local dentro do coágulo provavelmente superior à temperatura média registrada por imagem infravermelha",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vivo",
+    "linhagem_celular": "HUVEC (Human Umbilical Vein Endothelial Cells) - apenas para teste de citotoxicidade",
+    "modelo_animal": "camundongo",
+    "tipo_cancer": null,
+    "concentracao_mg_mL": 0.5,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": true,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Redução do coágulo limitada a ~32%, sendo necessária maior eficácia terapêutica",
+      "Temperatura basal do trombo abaixo da temperatura corporal normal devido à exposição do mesentério fora do animal, exigindo alta densidade de potência laser",
+      "Acumulação das HPs predominantemente na superfície do coágulo, com penetração limitada no núcleo do trombo",
+      "Tempo de circulação curto das HPs micrométrica, com rápida captura por órgãos (pulmões, fígado)",
+      "Resposta inflamatória transitória e alterações no hemograma após injeção de HPs"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Uso de sistema de direcionamento magnético mais avançado para melhorar penetração das HPs no núcleo do coágulo",
+      "Redução do tamanho das HPs para prolongar o tempo de circulação e potencialmente aumentar o direcionamento ao coágulo",
+      "Incorporação de um segundo agente fototérmico eficiente nas HPs para reduzir a densidade de potência laser necessária",
+      "Investigação do impacto biológico das elevações de temperatura nas paredes vasculares",
+      "Desenvolvimento de dispositivo de navegação magnética mais sofisticado para uso clínico"
+    ],
+    "gaps_identificados": [
+      "Ausência de estudos avaliando o efeito térmico isolado (sem fármacos ou ação mecânica) na trombólise - campo ainda insuficientemente explorado",
+      "Necessidade de investigar o impacto a longo prazo das HPs acumuladas em órgãos",
+      "Mecanismo exato de trombólise fototérmica (desintegração da rede de fibrina vs. hemólise) não completamente elucidado in vivo",
+      "Nenhum dispositivo de direcionamento magnético recebeu aprovação clínica até o momento"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "Demonstração do efeito de macromomento magnético coletivo gerado pelo acoplamento dipolar de ~10^5 MNPs dentro de cada HP, resultando em responsividade magnética comparável a esferas magnéticas comerciais (Dynabeads).",
+    "integracao_engenharia": "Desenvolvimento de um método de síntese por emulsificação inversa com reticulação para encapsular alta densidade de MNPs em microgéis de polissacarídeo, com calibração precisa do sistema laser para controle da densidade de potência e dosimetria térmica.",
+    "integracao_biologia": "Validação in vitro e in vivo do direcionamento magnético e da trombólise fototérmica sem agentes farmacológicos, com avaliação de biodistribuição, biodegradabilidade e segurança em modelo murino de trombose mesentérica.",
+    "integracao_materiais": "Desenvolvimento de micropartículas híbridas magnetita/polissacarídeo (Fe3O4/dextrana) com alta estabilidade coloidal (>14 meses), baixa dispersidade (PDI<0,2), biocompatibilidade e eficiência de conversão fototérmica de 38%, combinando propriedades magnéticas e ópticas em uma única plataforma.",
+    "mensagem_principal": "Este trabalho demonstra pela primeira vez a viabilidade de uma estratégia completamente livre de fármacos baseada em micropartículas híbridas de magnetita/dextrana para trombólise fototérmica magneticamente direcionada, alcançando redução significativa do coágulo (-32%) in vivo sem agentes fibrinolíticos, antiagregantes ou anticoagulantes, destacando o potencial terapêutico do acoplamento magnético coletivo de nanopartículas de magnetita para terapias trombolíticas físicas."
+  },
+  "custom_id": "34__Hybrid_PolysaccharideMagnetite_Microgels_for_Drug-FreeMagnet"
+}

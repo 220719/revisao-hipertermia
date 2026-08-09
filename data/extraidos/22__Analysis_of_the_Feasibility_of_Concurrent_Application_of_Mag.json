@@ -1,0 +1,108 @@
+{
+  "autores": "Wróblewski et al.",
+  "ano": 2026,
+  "periodico": "Journal of Functional Biomaterials",
+  "titulo": "Analysis of the Feasibility of Concurrent Application of Magnetic Nanoparticles as MRI Contrast Agents and for Magnetic Hyperthermia",
+  "doi": "10.3390/jfb17010054",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética é uma técnica terapêutica que utiliza nanopartículas magnéticas para gerar calor para tratamento médico, mais comumente em terapia do câncer. As nanopartículas são introduzidas no tumor e expostas a um campo magnético alternante, elevando a temperatura local tipicamente para 41–45°C.",
+    "etapas_processo": [
+      "Introdução das nanopartículas magnéticas no tumor",
+      "Exposição das nanopartículas a um campo magnético alternante",
+      "Geração de calor pelas nanopartículas em resposta ao campo",
+      "Elevação controlada da temperatura local para 41–45°C",
+      "Dano ou morte das células cancerígenas pelo calor"
+    ],
+    "internalizacao_nps": null,
+    "aplicacao_campo": "As nanopartículas são expostas a um campo magnético alternante de frequência e amplitude definidas, gerado por uma bobina transmissora excitada por um gerador de funções e amplificador de potência.",
+    "janela_termica_min_C": 41.0,
+    "janela_termica_max_C": 45.0,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": true,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": "senoidal",
+    "mecanismo_dominante": "Ambos os mecanismos de relaxação de Néel e Browniano contribuem para a geração de calor, sendo o mecanismo dominante determinado pelo tamanho da nanopartícula.",
+    "descricao_mecanismo": "Na relaxação de Néel, o calor é gerado pela reorientação do momento magnético dentro da nanopartícula sem rotação física. Na relaxação Browniana, o calor é gerado pela rotação física de toda a nanopartícula no fluido circundante. A potência de aquecimento é proporcional à parte imaginária da susceptibilidade magnética das nanopartículas, e a área do ciclo de histerese representa a energia liberada por ciclo."
+  },
+  "q3": {
+    "material": "óxido de ferro (magnetita ou maguemita)",
+    "composicao_quimica": "Fe3O4 ou γ-Fe2O3",
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 10.0,
+    "faixa_tamanho_max_nm": 30.0,
+    "forma": null,
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia efetiva (constante K de anisotropia efetiva mencionada)",
+    "revestimento": "polímero (revestimento polimérico proprietário em monocamada para dispersão aquosa)",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "O diâmetro das nanopartículas determina tanto a eficiência de aquecimento em campo magnético alternante quanto a relaxividade em MRI; nanopartículas com diâmetro de 20–25 nm apresentam máximo tanto na relaxividade r2 quanto na potência de aquecimento, pois ambos os fenômenos derivam do momento magnético associado ao tamanho da partícula."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": 58.3,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 60.0,
+    "forma_onda": "senoidal",
+    "dosimetria_termica": "Calorimetria com termômetro de fibra óptica, calculando SAR pela inclinação inicial da curva de aumento de temperatura (dT/dt em t=0)",
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": 25.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "O diâmetro hidrodinâmico não é fornecido pelos fabricantes e sua medição é extremamente difícil",
+      "O diâmetro do núcleo fornecido pelo fabricante é uma estimativa grosseira que não considera a dispersão da geometria das partículas",
+      "O DLS tende a superestimar o tamanho das partículas em comparação ao TEM devido à camada adsorvida na superfície",
+      "A segmentação automática de partículas próximas em imagens STEM pode levar a distribuições com cauda longa para diâmetros maiores devido à agregação",
+      "Nenhuma caracterização estrutural específica de fase foi realizada para distinguir magnetita de maguemita"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Utilizar MRI para visualizar a distribuição das nanopartículas antes do tratamento de hipertermia",
+      "Selecionar a faixa de diâmetro de 20–25 nm para aplicações teranósticas combinando MRI T2 e hipertermia magnética"
+    ],
+    "gaps_identificados": [
+      "Ausência de medição do diâmetro hidrodinâmico fornecido pelos fabricantes",
+      "Falta de caracterização de fase específica (magnetita vs. maguemita) das nanopartículas utilizadas",
+      "Correlação entre parâmetros de relaxação e eficiência de aquecimento não totalmente explorada para campos magnéticos altos (7 T)"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra que a relaxação transversal (r2) em MRI e a eficiência de aquecimento em hipertermia magnética compartilham a mesma origem física — as perdas magnéticas associadas aos mecanismos de relaxação de Néel e Browniano em nanopartículas de domínio único.",
+    "integracao_engenharia": "O artigo desenvolveu e validou um sistema de medição híbrido capaz de medir tanto a permeabilidade magnética quanto as perdas calorimetricas das nanopartículas na mesma geometria, simplificando a investigação das propriedades de nanopartículas para aplicações de hipertermia e MRI.",
+    "integracao_biologia": "O artigo aponta que células cancerígenas são mais vulneráveis ao calor devido à sua elevada atividade metabólica, e que as nanopartículas de óxido de ferro são relativamente biocompatíveis, sendo o impacto biológico altamente dependente de parâmetros físico-químicos como tamanho, forma e funcionalização de superfície.",
+    "integracao_materiais": "O artigo identificou uma faixa ótima de diâmetro de núcleo de 20–25 nm para nanopartículas de óxido de ferro com revestimento polimérico, na qual tanto a relaxividade r2 quanto a eficiência de aquecimento são maximizadas, fornecendo base para o design racional de nanomateriais teranósticos.",
+    "mensagem_principal": "Nanopartículas de óxido de ferro com diâmetro de 20–25 nm apresentam simultaneamente máxima relaxividade transversal (r2) em MRI e máxima eficiência de aquecimento em hipertermia magnética, pois ambos os fenômenos derivam dos mesmos mecanismos de relaxação de Néel e Browniano, viabilizando uma abordagem teranóstica em que a MRI pode ser usada para avaliar a distribuição das nanopartículas antes da aplicação do campo magnético alternante para tratamento térmico localizado."
+  },
+  "custom_id": "22__Analysis_of_the_Feasibility_of_Concurrent_Application_of_Mag"
+}

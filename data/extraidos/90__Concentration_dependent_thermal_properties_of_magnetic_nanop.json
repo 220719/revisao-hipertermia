@@ -1,0 +1,105 @@
+{
+  "autores": "Elbeshir",
+  "ano": 2024,
+  "periodico": "AIP Advances",
+  "titulo": "Concentration dependent thermal properties of magnetic nanoparticles and ability to use in the magnetic hyperthermia treatment",
+  "doi": "10.1063/5.0202942",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "Na hipertermia magnética, nanomateriais magnéticos são introduzidos no sítio tumoral e submetidos a um campo magnético oscilante de frequência precisa, transformando-se em reservatórios localizados de energia térmica nas células e tecidos afetados. As células cancerígenas apresentam menor resistência ao calor do que células saudáveis, sendo uma faixa de 42–43 °C suficiente para induzir sua destruição térmica.",
+    "etapas_processo": [
+      "Síntese das nanopartículas magnéticas (Fe2O3, Fe3O4 e CoFe2O4) por co-precipitação",
+      "Caracterização do tamanho por difração de raios X (XRD)",
+      "Preparação de suspensões com diferentes concentrações de MNPs em água deionizada",
+      "Aplicação de campo magnético alternado por aquecedor de indução de baixa frequência",
+      "Medição das propriedades térmicas (Tmax, taxa de aquecimento ΔT/Δt e SAR)"
+    ],
+    "internalizacao_nps": "O artigo menciona que as nanopartículas possuem capacidade de ser introduzidas nas células neoplásicas, mas não detalha o mecanismo de internalização",
+    "aplicacao_campo": "Um aquecedor de indução de baixa frequência (100 kHz) é utilizado para aplicar o campo magnético alternado às suspensões de MNPs",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 43.0,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "As MNPs geram energia térmica ao serem expostas à frequência de um campo magnético externo alternado, convertendo energia eletromagnética em calor",
+    "descricao_mecanismo": "O artigo afirma que as MNPs possuem a capacidade de gerar energia térmica quando expostas à frequência de um campo magnético externo alternado. A frequência de 100 kHz foi determinada como adequada para induzir energia térmica em populações relativamente esparsas de MNPs. Uma densidade substancial de nanopartículas magnéticas necessita de frequência mais elevada para induzir energia térmica equivalente, explicando a relação inversa entre concentração e SAR observada."
+  },
+  "q3": {
+    "material": "Fe2O3, Fe3O4 e CoFe2O4",
+    "composicao_quimica": "Fe2O3 (hematita), Fe3O4 (magnetita), CoFe2O4 (ferrita de cobalto)",
+    "dopagem": "Co (cobalto) na CoFe2O4",
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 10.0,
+    "faixa_tamanho_max_nm": 64.0,
+    "forma": null,
+    "arquitetura_multicore": false,
+    "anisotropia": null,
+    "revestimento": null,
+    "material_autorregulavel": false,
+    "SAR_W_g": 126.0,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "O tamanho das nanopartículas influencia suas propriedades térmicas e magnéticas; partículas menores (Fe3O4 com 10 nm) apresentaram o maior valor de SAR dentre as amostras na concentração S1, indicando que o tamanho nanométrico é relevante para a eficiência de aquecimento."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": 100.0,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 10.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Termômetro digital infravermelho; SAR calculado pela equação SAR = C(ΔT/Δt)(1/mferrite) usando o intervalo linear inicial de 0–10 minutos",
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": 1.0,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Estudo realizado apenas em suspensões aquosas, sem modelos biológicos celulares ou animais",
+      "A frequência fixa de 100 kHz pode não ser adequada para concentrações mais elevadas de MNPs",
+      "Não foram avaliados parâmetros de biocompatibilidade ou toxicidade de forma experimental neste trabalho",
+      "Ausência de medição da amplitude do campo magnético aplicado"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [],
+    "gaps_identificados": [
+      "Falta de investigação dos mecanismos físicos de geração de calor (relaxação de Néel, Browniana, histerese)",
+      "Ausência de estudos in vitro ou in vivo com células cancerígenas reais",
+      "Não foram investigados revestimentos superficiais para melhorar biocompatibilidade ou funcionalização",
+      "Não foi determinado o produto H×f para verificação dos limites de segurança biológica"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra experimentalmente a relação entre concentração de MNPs e propriedades térmicas (SAR, Tmax e taxa de aquecimento) sob campo magnético alternado de baixa frequência",
+    "integracao_engenharia": "O trabalho utiliza um sistema de aquecimento por indução de baixa frequência para caracterizar o desempenho térmico de diferentes MNPs em diferentes concentrações, contribuindo para o design experimental de sistemas de hipertermia",
+    "integracao_biologia": "O artigo contextualiza os resultados térmicos obtidos com a aplicação clínica em hipertermia magnética, destacando a diferença de sensibilidade térmica entre células cancerígenas e saudáveis na faixa de 42–43 °C",
+    "integracao_materiais": "A síntese e caracterização estrutural de Fe2O3, Fe3O4 e CoFe2O4 por co-precipitação e XRD (Rietveld) fornecem correlação entre estrutura cristalina, tamanho de cristalito e propriedades térmicas das nanopartículas",
+    "mensagem_principal": "As propriedades térmicas das MNPs (Fe2O3, Fe3O4 e CoFe2O4) são dependentes da concentração, com valores de SAR, Tmax e taxa de aquecimento maiores em menores concentrações; a suspensão S1 (1 mg/mL) apresentou as melhores características térmicas, indicando o potencial dessas nanopartículas para uso em hipertermia magnética no tratamento do câncer."
+  },
+  "custom_id": "90__Concentration_dependent_thermal_properties_of_magnetic_nanop"
+}

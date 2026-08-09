@@ -1,0 +1,118 @@
+{
+  "autores": "Elabbasi e El-Gendy",
+  "ano": 2025,
+  "periodico": "Biomedical Materials",
+  "titulo": "In-vitro evaluation of in-situ synthesized superparamagnetic iron nanoparticles (SPINs) for magnetic hyperthermia treatment of breast and prostate cancer",
+  "doi": "10.1088/1748-605X/addf27",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética é uma abordagem terapêutica na qual nanopartículas superparamagnéticas dispersas em solução biológica geram calor localizado quando expostas a um campo magnético alternante (AMF) de frequência e amplitude apropriadas. Esse calor induzido causa estresse celular e morte celular programada (apoptose) nas células tumorais.",
+    "etapas_processo": [
+      "Síntese das nanopartículas Fe/C por co-precipitação química",
+      "Caracterização estrutural, morfológica e magnética das NPs",
+      "Dispersão das NPs em solução biológica",
+      "Internalização das NPs pelas células tumorais via uptake intracelular",
+      "Exposição ao AMF de amplitude e frequência dentro dos limites clínicos de segurança",
+      "Geração de calor localizado pelas NPs sob AMF",
+      "Indução de estresse celular e apoptose nas células cancerígenas",
+      "Avaliação de viabilidade celular pré e pós-hipertermia"
+    ],
+    "internalizacao_nps": "As NPs são internalizadas por endocitose celular, sendo observadas como agregados próximos ao núcleo das células cancerígenas DU145 e MCF-7 após 24 h de incubação a 100 µg/ml, conforme confirmado por microscopia confocal.",
+    "aplicacao_campo": "O AMF é aplicado usando um sistema de bobina G2-D5 com amplitude variável de 100 a 400 Oe e frequência de 164 kHz, dentro dos limites clínicos de segurança, por sessões de 20 minutos.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": [
+      "apoptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": false,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O comportamento superparamagnético das NPs, que envolve tanto a relaxação de Néel (rotação dos momentos magnéticos em torno de seus eixos) quanto a relaxação Browniana (movimento das partículas em solução), é o mecanismo dominante de geração de calor sob AMF.",
+    "descricao_mecanismo": "As nanopartículas Fe/C SPINs exibem comportamento superparamagnético com loops de histerese fechados e coercividade negligenciável à temperatura ambiente. Sob aplicação de AMF, o calor induzido é atribuído à rotação dos momentos magnéticos em torno de seus eixos (relaxação de Néel) e ao movimento físico das partículas em solução (relaxação Browniana). A presença de processos de relaxação magnética termicamente ativados é confirmada pelas curvas ZFC/FC, que evidenciam temperaturas de bloqueio bem definidas abaixo de 150 K para todas as amostras."
+  },
+  "q3": {
+    "material": "Fe/C (ferro em matriz de carbono)",
+    "composicao_quimica": "Fe/C — nanopartículas de ferro puro (fase α-Fe bcc) embebidas em matriz de carbono amorfo",
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 59.0,
+    "faixa_tamanho_max_nm": 85.0,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": null,
+    "revestimento": "matriz de carbono amorfo (formada in situ pela carbonização do citrato de sódio)",
+    "material_autorregulavel": false,
+    "SAR_W_g": 92.2,
+    "ILP_nHm2_kg": 0.979,
+    "magnetizacao_saturacao_emu_g": 150.0,
+    "relacao_estrutura_propriedade": "O aumento da razão precursor metálico/agente estabilizante reduz o tamanho das partículas até um determinado ponto, e amostras com maior teor de Fe e menor tamanho (MA019, MA020) apresentam maior magnetização de saturação e maior SAR. A matriz de carbono fornece estabilidade estrutural e biocompatibilidade sem comprometer significativamente o desempenho magnético do núcleo metálico."
+  },
+  "q4": {
+    "amplitude_kA_m": 11.94,
+    "frequencia_kHz": 164.0,
+    "produto_Hf": 1958160000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 20.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Sonda de temperatura de fibra óptica imersa na solução, com registro eletrônico dos dados de temperatura em intervalos de um segundo por sistema de monitoramento em tempo real; SAR calculado a partir das curvas temperatura-tempo usando SAR = C × ΔT/Δt",
+    "distribuicao_espacial_calor": "Geração de calor localizado nas nanopartículas dispersas na solução, com amostras posicionadas consistentemente no centro da bobina",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "MCF-7 (câncer de mama) e DU145 (câncer de próstata)",
+    "modelo_animal": null,
+    "tipo_cancer": "mama e próstata",
+    "concentracao_mg_mL": 0.1,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": true,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": true,
+    "apoptose": true,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Oxidação rápida e instabilidade de nanopartículas de ferro puro em ambientes fisiológicos",
+      "Instabilidade coloidal sob condições fisiológicas, dificultando manutenção de dispersão a longo prazo em fluidos biológicos",
+      "Targeting passivo via efeito EPR resulta em acumulação baixa e heterogênea de nanopartículas devido a variações em perfusão tumoral, densidade vascular e pressão intersticial",
+      "Targeting ativo pode ser prejudicado por interferência estérica de revestimentos superficiais ou biodistribuição alterada por formação de coroa proteica",
+      "Muitas nanopartículas falham em se localizar próximo a sítios intracelulares críticos como o núcleo, reduzindo o dano térmico e limitando a indução de apoptose",
+      "Altas concentrações de NPs frequentemente necessárias para hipertermia magnética eficaz com nanopartículas convencionais",
+      "Estudo limitado a ensaios in vitro, sem validação in vivo"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Validar o regime terapêutico in vivo usando modelos murinos com tumores DU145 e MCF-7 implantados",
+      "Monitorar distribuição de nanopartículas e resposta tumoral usando MRI em estudos in vivo",
+      "Realizar injeções semanais com aplicação do campo magnético nos dias 0, 3 e 6 como regime proposto",
+      "Avaliar segurança e eficácia do regime de tratamento em sistema biológico mais complexo"
+    ],
+    "gaps_identificados": [
+      "Ausência de estudos in vivo para confirmar os resultados in vitro",
+      "Falta de avaliação de biodistribuição e farmacocinética das SPINs em modelos animais",
+      "Necessidade de otimização adicional de estratégias de targeting ativo para melhorar acumulação intratumoral",
+      "Janela de temperatura terapêutica (42-46°C) não foi explicitamente monitorada ou reportada nos experimentos de hipertermia celular"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra que o comportamento superparamagnético das NPs Fe/C, com altos valores de magnetização de saturação (>150 emu/g) e relaxações de Néel e Browniana, permite geração eficiente de calor sob AMF dentro dos limites clínicos de segurança.",
+    "integracao_engenharia": "O método de co-precipitação in situ desenvolvido permite controle preciso do tamanho e das propriedades magnéticas das nanopartículas através da variação da razão precursor/agente estabilizante, produzindo agentes de hipertermia com SAR significativo em amplitudes de campo moderadas.",
+    "integracao_biologia": "Os estudos in vitro confirmaram uptake intracelular eficiente das SPINs por células cancerígenas de mama (MCF-7) e próstata (DU145), com redução de aproximadamente 50% na viabilidade celular após aplicação otimizada do AMF, mediada por sinalização apoptótica via TRAIL.",
+    "integracao_materiais": "A matriz de carbono amorfo formada in situ pela carbonização do citrato protege o núcleo de ferro puro contra oxidação, melhora a dispersão coloidal e preserva a alta magnetização sem comprometer a biocompatibilidade, superando limitações dos revestimentos tradicionais de sílica.",
+    "mensagem_principal": "O artigo introduz nanopartículas de ferro puro em matriz de carbono (Fe/C SPINs) sintetizadas por co-precipitação in situ como agentes promissores para hipertermia magnética intratumoral de cânceres de mama e próstata, demonstrando alta magnetização de saturação, SAR eficiente em condições clinicamente seguras e significativa morte celular cancerígena in vitro, estabelecendo a base para futuros estudos in vivo."
+  },
+  "custom_id": "62__In-vitro_evaluation_of_in-situ_synthesized_superparamagnetic"
+}

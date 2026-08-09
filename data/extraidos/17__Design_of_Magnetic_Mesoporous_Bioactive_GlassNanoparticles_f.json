@@ -1,0 +1,119 @@
+{
+  "autores": "Vergnaud et al.",
+  "ano": 2025,
+  "periodico": "Advanced Engineering Materials",
+  "titulo": "Design of Magnetic Mesoporous Bioactive Glass Nanoparticles for Bone Cancer Therapy: Toward Effective Hyperthermia Treatment and Bone Regeneration",
+  "doi": "10.1002/adem.202501277",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética consiste em conferir caráter magnético a um material substituto ósseo, permitindo uma elevação local de temperatura induzida pelo relaxamento magnético do material sob um campo magnético alternante (AMF). É vista como terapia promissora para tumores profundos, pois os tecidos hospedeiros não são afetados pelo AMF, enquanto células malignas são mais sensíveis ao calor.",
+    "etapas_processo": [
+      "Síntese de nanopartículas de maghemita (SPIONs) por coprecipitação de sais de Fe(II) e Fe(III) em meio alcalino",
+      "Tratamento hidrotérmico para crescimento das NPs por maturação de Ostwald",
+      "Oxidação completa para maghemita e peptização em solução ácida de ácido nítrico",
+      "Funcionalização das SPIONs com ácido cítrico para prevenir agregação",
+      "Crescimento da camada de vidro bioativo mesoporoso (SiO2-CaO) ao redor dos núcleos magnéticos via protocolo de Stöber modificado com CTAB como agente de templação de poros",
+      "Calcinação (350°C e 650°C) para decomposição do CTAB e incorporação do Ca2+ na rede de sílica",
+      "Dispersão das NPs em meio aquoso e aplicação de campo magnético alternante para geração de calor",
+      "Indução de efeito citotóxico nas células cancerosas pela elevação local de temperatura"
+    ],
+    "internalizacao_nps": "O artigo menciona que a internalização excessiva de partículas pode ocorrer quando células aderentes são expostas a suspensões concentradas de MMBNs, e que estudos biológicos podem ser realizados com células cultivadas sobre material sólido ou scaffold para reduzir o efeito de internalização em nanoescala; também cita que vias de internalização diferem entre células saudáveis e cancerosas.",
+    "aplicacao_campo": "Um campo magnético alternante (AMF) é aplicado externamente ao sistema por meio de um aparelho de hipertermia magnética com bobina planar, submetendo a suspensão de NPs a diferentes frequências e amplitudes por um período determinado (tipicamente 3 a 15 min).",
+    "janela_termica_min_C": 41.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": [
+      "necrose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": false,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A relaxação de Néel é apontada como o mecanismo dominante para os núcleos magnéticos de aproximadamente 14 nm utilizados neste estudo.",
+    "descricao_mecanismo": "Em materiais superparamagnéticos, a geração de calor ocorre principalmente por mecanismos de relaxação, dada a baixa coercividade e remanência, levando a perdas por histerese negligenciáveis. Em resposta ao AMF, a magnetização das partículas SPM pode relaxar causando perdas térmicas por relaxação de Néel (rotação da magnetização dentro da partícula, dificultada pela energia de anisotropia) e relaxação Browniana (rotação da própria partícula, dificultada pela viscosidade do meio circundante). O tempo de relaxação mais curto determina o mecanismo dominante, mas na maioria dos casos o tempo de relaxação efetivo é uma combinação de ambos; no presente material, a presença de aglomerados de núcleos magnéticos dentro das conchas das MMBNs pode introduzir interações dipolares magnéticas não negligenciáveis, limitando a validade do modelo de resposta linear (LRT) de Rosensweig em altos valores de H0·f."
+  },
+  "q3": {
+    "material": "maghemita (γ-Fe2O3) encapsulada em vidro bioativo mesoporoso SiO2-CaO",
+    "composicao_quimica": "γ-Fe2O3 (núcleo) / SiO2-CaO (casca); composição em massa: SiO2 70,61%, CaO 14,49%, Fe2O3 14,89%",
+    "dopagem": null,
+    "tamanho_nm": 180.0,
+    "faixa_tamanho_min_nm": 14.0,
+    "faixa_tamanho_max_nm": 180.0,
+    "forma": "esférica",
+    "arquitetura_multicore": true,
+    "anisotropia": "anisotropia magnetocristalina (eixo fácil de orientação da magnetização dentro da partícula, mecanismo de Néel)",
+    "revestimento": "sílica (camada de vidro bioativo mesoporoso SiO2-CaO com CTAB como agente de templação de poros; SPIONs funcionalizadas com ácido cítrico antes do revestimento)",
+    "material_autorregulavel": false,
+    "SAR_W_g": 87.0,
+    "ILP_nHm2_kg": 1.0,
+    "magnetizacao_saturacao_emu_g": 8.89,
+    "relacao_estrutura_propriedade": "O alto teor de Fe2O3 (14,89% em massa) e a morfologia core-shell não aglomerada permitiram combinar boa capacidade de aquecimento magnético com alta área superficial específica (626 m2/g) proporcionada pela mesoporosidade, resultando em rápida cristalização de HAp (<3h em SBF) sem comprometer as propriedades magnéticas dos núcleos encapsulados. O tamanho dos núcleos de ~14 nm confere comportamento superparamagnético com mecanismo de relaxação de Néel dominante."
+  },
+  "q4": {
+    "amplitude_kA_m": 23.9,
+    "frequencia_kHz": 157.0,
+    "produto_Hf": 3752300000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 15.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Sonda de temperatura de fibra óptica em contato com a superfície do líquido no prato de Petri; método de inclinação inicial (initial slope method) para cálculo do SLP a partir dos perfis de temperatura",
+    "distribuicao_espacial_calor": "A temperatura foi medida na superfície do meio de cultura; o artigo indica que a temperatura local no contato com as células pode ser mais alta do que a medida na superfície, mas não descreve mapeamento espacial detalhado da distribuição de calor",
+    "padronizacao_reportada": true
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "MC3T3-E1 (preosteoblastos)",
+    "modelo_animal": null,
+    "tipo_cancer": "osso (osteossarcoma - contexto clínico; células preosteoblásticas usadas como prova de conceito)",
+    "concentracao_mg_mL": 30.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": true,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Temperaturas de até 48°C (a 30 mg/mL) podem matar indiscriminadamente todos os tipos de células (ablação térmica), tornando essa concentração inadequada para uso clínico",
+      "Toxicidade dose-dependente observada mesmo sem AMF (grupo controle), possivelmente devido a produtos de dissolução do vidro bioativo ou espécies reativas de oxigênio (ROS) geradas pelo Fe2O3 quando internalizado pelas células",
+      "A temperatura foi medida na superfície do meio de cultura e não diretamente no contato com as células, limitando a compreensão precisa do mecanismo hipertérmico sobre a viabilidade celular",
+      "O modelo de resposta linear (LRT) de Rosensweig subestima o poder de aquecimento em altos produtos H0·f, provavelmente devido a interações dipolares magnéticas nos aglomerados de núcleos dentro das conchas das MMBNs",
+      "O estudo foi realizado apenas com células preosteoblásticas saudáveis (MC3T3-E1), sem linhagens cancerosas",
+      "Alguns valores de ILP reportados na literatura são questionáveis devido à imprecisão na quantificação do teor de óxido de ferro nas amostras"
+    ],
+    "problemas_SAR_ILP": true,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Realizar estudos biológicos futuros com linhagens celulares cancerosas e concentrações mais baixas de partículas para evitar toxicidade em células saudáveis e verificar efeito seletivo sobre células cancerosas",
+      "Melhorar a avaliação da temperatura do meio (ex.: câmera térmica) para melhor compreensão dos mecanismos hipertérmicos sobre a viabilidade celular",
+      "Utilizar o material com aquecimento mais suave como tratamento sinérgico com quimio- ou radioterapia",
+      "Realizar investigações biológicas adicionais para confirmar o potencial terapêutico dos MMBNs (como sintetizados ou conformados como scaffold) com células ósseas cancerosas e saudáveis",
+      "Realizar estudos biológicos com células cultivadas sobre material sólido ou scaffold para reduzir o efeito de internalização em nanoescala e focar no impacto da composição química"
+    ],
+    "gaps_identificados": [
+      "Ausência de estudos com linhagens celulares cancerosas específicas de osteossarcoma",
+      "Falta de avaliação do efeito hipertérmico seletivo sobre células cancerosas versus saudáveis",
+      "Ausência de estudos in vivo para confirmar eficácia e segurança do material",
+      "Falta de mapeamento espacial preciso da distribuição de temperatura no sítio de tratamento",
+      "Necessidade de padronização mais rigorosa da quantificação do teor de óxido de ferro para comparação confiável de valores de SAR/ILP entre estudos da literatura"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo avalia o comportamento magnético superparamagnético das MMBNs, os mecanismos de relaxação de Néel e Browniana, e aplica o modelo de Rosensweig (LRT) para prever perdas térmicas em função da amplitude e frequência do AMF, identificando suas limitações em regime de interações dipolares.",
+    "integracao_engenharia": "Desenvolve uma rota de síntese multietapa simples (coprecipitação + sol-gel modificado com CTAB) para produzir nanopartículas core-shell esféricas, não aglomeradas e com propriedades magnéticas e bioativas otimizadas, além de avaliar a capacidade de aquecimento sob condições clinicamente relevantes.",
+    "integracao_biologia": "Demonstra prova de conceito do efeito hipertérmico das MMBNs sobre células preosteoblásticas MC3T3-E1, avaliando viabilidade celular por quantificação de ATP (luminescência) e discutindo toxicidade dose-dependente, internalização de partículas e diferenças entre vias de internalização em células saudáveis e cancerosas.",
+    "integracao_materiais": "Sintetiza e caracteriza nanopartículas multifuncionais de maghemita encapsuladas em vidro bioativo mesoporoso SiO2-CaO, demonstrando que a arquitetura core-shell preserva alta área superficial específica (626 m2/g), rápida cristalização de HAp (<3h em SBF) e boas propriedades magnéticas simultaneamente, superando limitações de materiais vidro-cerâmicos convencionais.",
+    "mensagem_principal": "O trabalho demonstra que nanopartículas mesoporous magnéticas e bioativas (MMBNs) baseadas em núcleos de γ-Fe2O3 encapsulados em casca de vidro bioativo SiO2-CaO combinam, de forma inédita, alta bioatividade (cristalização de HAp em menos de 3h), excelente capacidade de aquecimento magnético sob condições clinicamente relevantes (+9°C em 3 min) e morfologia esférica não aglomerada, fornecendo uma prova de conceito para tratamento integrado de câncer ósseo com regeneração simultânea do tecido."
+  },
+  "custom_id": "17__Design_of_Magnetic_Mesoporous_Bioactive_GlassNanoparticles_f"
+}

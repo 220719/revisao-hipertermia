@@ -1,0 +1,118 @@
+{
+  "autores": "Lodi et al.",
+  "ano": 2025,
+  "periodico": "Applied Sciences",
+  "titulo": "Thermal Behavior of Magnetic Scaffolds for RF-Induced Hyperthermia",
+  "doi": "10.3390/app15179782",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia por tratamento (HT) é uma terapia oncológica térmica que eleva a temperatura do tumor para 40–44 °C por 60 minutos, potencializando a eficácia de radioterapia e quimioterapia. Scaffolds magnéticos (MagSs) carregados com partículas magnéticas são utilizados como agentes de HT local intersticial mediante aquecimento por radiofrequência (RF).",
+    "etapas_processo": [
+      "Implantação cirúrgica do scaffold magnético no tumor ou no local de ressecção tumoral",
+      "Aplicação de campo magnético de RF por meio de bobina de indução ou eletroímã",
+      "Dissipação de calor pelas partículas magnéticas embebidas no biomaterial (efeito magnetotérmico)",
+      "Elevação da temperatura do MagS e difusão do calor para as células tumorais residuais",
+      "Manutenção da temperatura na faixa terapêutica (40–44 °C) por 60 minutos"
+    ],
+    "internalizacao_nps": "As nanopartículas magnéticas são incorporadas diretamente no biomaterial polimérico (PLA) durante a fabricação do filamento compósito, sendo implantadas cirurgicamente no tumor ou após sua ressecção.",
+    "aplicacao_campo": "Um campo magnético de RF é aplicado externamente por meio de uma bobina de indução ou eletroímã, expondo o scaffold implantado ao campo para induzir aquecimento magnetotérmico.",
+    "janela_termica_min_C": 40.0,
+    "janela_termica_max_C": 44.0,
+    "vias_morte_celular": [
+      "apoptose",
+      "necrose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": true,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O mecanismo dominante de geração de calor nos scaffolds magnéticos é a dissipação por perdas de histerese magnética das partículas ferromagnéticas embebidas no polímero.",
+    "descricao_mecanismo": "A potência dissipada pelo scaffold magnético é avaliada como Pm = f × Ahyst, onde f é a frequência de trabalho (365 kHz) e Ahyst é a área do laço de histerese derivado de medições magnéticas estáticas, escalonada pela densidade específica do polímero magnético. O campo magnético de RF induz ciclos de histerese nas partículas ferromagnéticas, convertendo energia eletromagnética em calor. Adicionalmente, perdas dielétricas no polímero e no meio circundante contribuem para o aquecimento total, calculadas como Pe = 0,5 × σ × |E|²."
+  },
+  "q3": {
+    "material": "PLA magnético com micropartículas de ferro",
+    "composicao_quimica": "Polilactic acid (PLA) com 10–40 wt.% de micropartículas de ferro (~40 µm)",
+    "dopagem": null,
+    "tamanho_nm": 40000.0,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": false,
+    "anisotropia": null,
+    "revestimento": null,
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "A porosidade do scaffold influencia diretamente a condutividade térmica aparente: quanto maior a porosidade, menor a condutividade térmica (o ar aprisionado nos poros atua como isolante térmico), com exceção de porosidades acima de 70% onde mecanismos convectivos passam a contribuir. A topologia TPMS (giroide vs. lidinóide) também afeta o desempenho térmico, com estruturas giróides apresentando maior condutividade do que as lidinóides para porosidades similares."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": 365.0,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 60.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Medição com sondas ópticas em pontos específicos (centro do scaffold, bordas laterais a 5 mm, e phantom de ágar a 5 mm da superfície superior); SAR calculado a partir da área do laço de histerese e da frequência de trabalho",
+    "distribuicao_espacial_calor": "O campo magnético é mais concentrado no material cilíndrico magnético; a dissipação de potência ocorre via perdas de histerese no volume do scaffold dependendo dos valores locais do campo, enquanto no phantom de ágar circundante as correntes RF induzidas atuam como fonte volumétrica; gradientes de temperatura relativamente elevados (~37,5 °C/cm) são observados.",
+    "padronizacao_reportada": true
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "BEAS2B, MRC-5, Huh-7, A549",
+    "modelo_animal": null,
+    "tipo_cancer": "osso",
+    "concentracao_mg_mL": 10.0,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": true,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": null,
+    "necrose": null,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Discrepâncias significativas entre temperaturas simuladas e medidas foram reportadas em estudos anteriores, atribuídas ao conhecimento limitado da condutividade térmica aparente dos MagSs",
+      "Incertezas associadas ao calor específico do polímero ferromagnético demandam investigações adicionais",
+      "O posicionamento das fibras ópticas é não trivial, podendo resultar em medições na superfície do material em vez do espaço dos poros",
+      "O scaffold foi modelado como cilindro homogêneo, sem resolução da geometria porosa interna no modelo numérico",
+      "Apenas geometrias giróide e lidinóide foram caracterizadas; outras topologias TPMS (D, P, IWP) não foram investigadas"
+    ],
+    "problemas_SAR_ILP": true,
+    "falta_padronizacao": true,
+    "recomendacoes_futuras": [
+      "Avaliar o comportamento térmico de diferentes topologias TPMS (superfícies D, P e IWP)",
+      "Investigar o impacto da rugosidade e irregularidades superficiais na condutividade térmica",
+      "Estudar o comportamento térmico quando os poros estão preenchidos com fluidos mais densos que o ar (ex.: água ou ágar)",
+      "Realizar análise numérica avançada em escala de poro para elucidar o campo de escoamento microscópico",
+      "Utilizar dados de observação microscópica (ex.: PIV) comparados a simulações",
+      "Conduzir experimentos de citotoxicidade a 40–44 °C para verificar eficácia contra células tumorais mantendo células saudáveis seguras",
+      "Complementar a caracterização RF, térmica e biológica dos MagSs TPMS para tradução clínica"
+    ],
+    "gaps_identificados": [
+      "Falta de compreensão das propriedades térmicas dos MagSs TPMS para hipertermia por RF",
+      "Conhecimento insuficiente sobre condutividade térmica e difusividade de biomateriais compósitos heterogêneos e porosos",
+      "Ausência de estudos in vitro e in vivo com células tumorais usando os scaffolds magnéticos de PLA caracterizados neste estudo",
+      "Comportamento das estruturas TPMS para transferência de calor em aplicações biomédicas pouco estudado",
+      "Impacto da porosidade na qualidade da HT requer protocolos específicos para determinação do SAR em MagSs impressos em 3D"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo determina experimentalmente a condutividade térmica aparente de scaffolds magnéticos porosos com diferentes geometrias TPMS e porosidades, identificando relação linear entre condutividade e porosidade e evidenciando a transição de regime condutivo para convectivo acima de 70% de porosidade.",
+    "integracao_engenharia": "O trabalho valida um modelo FEM multifísico (eletromagnético + transferência de calor) que utiliza as propriedades térmicas medidas para prever com maior precisão as curvas de aquecimento de scaffolds durante ensaios de hipertermia por RF, reduzindo erros de simulação de até 20 °C para valores próximos de 2–9%.",
+    "integracao_biologia": "O estudo demonstra que scaffolds de PLA magnético com arquitetura TPMS apresentam biocompatibilidade com linhagens celulares (BEAS2B, MRC-5, Huh-7, A549) e propõe experimentos futuros de citotoxicidade a 40–44 °C para validar eficácia terapêutica contra células tumorais.",
+    "integracao_materiais": "O trabalho caracteriza as propriedades térmicas de um compósito polímero-ferro impresso em 3D (PLA magnético com 10–40 wt.% de micropartículas de ferro) em diferentes arquiteturas TPMS, mostrando que a topologia (giroide vs. lidinóide) e a porosidade determinam a condutividade térmica aparente do biomaterial.",
+    "mensagem_principal": "Este estudo determina experimentalmente a condutividade térmica aparente de scaffolds magnéticos de PLA com arquiteturas TPMS e diferentes porosidades, estabelecendo uma relação linear entre porosidade e condutividade térmica. A validação numérica demonstra que o uso dessas propriedades medidas melhora substancialmente a precisão do planejamento térmico da hipertermia por RF para tratamento de tumores profundos com MagSs impressos em 3D."
+  },
+  "custom_id": "49__Thermal_Behavior_of_Magnetic_Scaffolds_for_RF-Induced_Hypert"
+}

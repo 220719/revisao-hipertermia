@@ -1,0 +1,119 @@
+{
+  "autores": "Schreiner et al.",
+  "ano": 2026,
+  "periodico": "Cancers",
+  "titulo": "Two-Stage Microwave Hyperthermia Using Magnetic Nanoparticles for Optimal Chemotherapy Activation in Liver Cancer: Concept and Preliminary Tests on Wistar Rat Model",
+  "doi": "10.3390/cancers18020330",
+  "tipo_estudo": "in vivo",
+  "q1": {
+    "conceito_tecnica": "A hipertermia microondas em dois estágios utiliza nanopartículas magnéticas para aquecimento localizado do tumor: um primeiro estágio de irradiação sensitiza o tumor aumentando a perfusão e permeabilidade, e um segundo estágio, após administração das nanopartículas, promove aquecimento focal intenso e liberação local de quimioterápicos.",
+    "etapas_processo": [
+      "Primeira irradiação por micro-ondas para sensitizar o tumor, aumentando fluxo sanguíneo, dano/permeação endotelial e ativação inflamatória",
+      "Injeção intra-arterial hepática de nano-assemblies magnéticas carregadas com quimioterápicos",
+      "Segunda irradiação por micro-ondas para promover aquecimento focal intenso, romper as nano-assemblies e liberar o citostático localmente nas células tumorais"
+    ],
+    "internalizacao_nps": "As nanopartículas são administradas via cateter na artéria hepática (transarterial), difundindo-se preferencialmente nas células tumorais pré-ativadas pelo primeiro estágio de hipertermia",
+    "aplicacao_campo": "Micro-ondas a 2,45 GHz são aplicadas por meio de antenas-eletrodos especializadas inseridas diretamente no tecido hepático tumoral.",
+    "janela_termica_min_C": 41.0,
+    "janela_termica_max_C": 45.0,
+    "vias_morte_celular": [
+      "apoptose",
+      "necrose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O mecanismo dominante é o aquecimento dielétrico por micro-ondas potencializado pela presença de nanopartículas de OA-Fe3O4, que aumentam as perdas dielétricas e a absorção de energia no tecido tumoral.",
+    "descricao_mecanismo": "As nanopartículas de OA-Fe3O4 atuam como insertos dielétricos no tecido hepático, aumentando a permissividade dielétrica e a taxa de absorção específica (SAR) local. A adição de 0,1% de insertos de OA-Fe3O4 aumenta a energia acumulada no tecido hepático em 111% em relação ao tecido sem insertos. Além das perdas dielétricas, as micro-ondas interagem com o campo elétrico e com heterogeneidades do tecido, diferenciando este mecanismo da hipertermia magnética clássica em faixa de kHz."
+  },
+  "q3": {
+    "material": "Fe3O4 (magnetita)",
+    "composicao_quimica": "Fe3O4 revestido com ácido oleico (OA-Fe3O4)",
+    "dopagem": null,
+    "tamanho_nm": 9.418,
+    "faixa_tamanho_min_nm": 5.0,
+    "faixa_tamanho_max_nm": 15.0,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia controlada mencionada como característica desejável; partículas com forma anisotrópica podem maximizar o aquecimento sob campo aplicado",
+    "revestimento": "ácido oleico (C18H34O2)",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "O revestimento com ácido oleico promove repulsão estérica e estabilidade coloidal em meio aquoso via grupos COO- na superfície; o tamanho na faixa de 8-20 nm e a forma aproximadamente esférica conferem biocompatibilidade e dispersibilidade, enquanto a concentração de insertos afeta significativamente a permissividade dielétrica e a uniformidade de dissipação de energia no tecido."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": 2450.0,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": "Monitoramento invasivo de temperatura com termômetro eletrônico (precisão 0,1°C) inserido no lobo hepático; dose térmica quantificada como CEM43 (Cumulative Equivalent Minutes at 43°C)",
+    "distribuicao_espacial_calor": "A distribuição de energia não é homogênea; os insertos de OA-Fe3O4 aumentam a profundidade de penetração e melhoram a uniformidade de dissipação de energia, com concentração focal na região de interesse hepática usando duas antenas",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vivo",
+    "linhagem_celular": null,
+    "modelo_animal": "rato",
+    "tipo_cancer": "fígado",
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": true,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": true
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Os efeitos do termocondiconamento não são homogêneos na massa hepática e não são controláveis com a metodologia utilizada",
+      "O processamento histológico padrão com inclusão em parafina é incompatível com a detecção de nanopartículas marcadas com Nile red por fluorescência",
+      "As nanopartículas não são homogêneas (distribuição dimensional heterogênea observada em microscopia de fluorescência)",
+      "Nanopartículas carregadas com Nile red ou magnetita não puderam ser observadas em microscopia óptica em cortes de fígado de rato",
+      "A diferença de aproximadamente 2°C entre o banho-maria e as pás limita o controle preciso da temperatura",
+      "O cateterismo seletivo da artéria hepática pode induzir lesões hipóxicas no fígado ou nos rins"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": true,
+    "recomendacoes_futuras": [
+      "Adotar protocolo de exposição térmica com maior controle",
+      "Incorporar imuno-histoquímica para documentar termoadaptação (variação na expressão de proteínas de choque térmico) e função endotelial",
+      "Utilizar criotomia e inclusão em resinas epóxi (categoria não-dura) como métodos complementares para geração de preparações histológicas",
+      "Desenvolver nanopartícula ideal para hipertermia por micro-ondas em dois estágios com tamanho de 15-30 nm, revestimentos para biostabilidade e baixa imunogenicidade",
+      "Otimizar nanopartículas para frequências de micro-ondas (GHz) versus hipertermia magnética clássica (kHz)",
+      "Realizar modelagem térmica em condições realistas de tecido (perfusão sanguínea, tecidos heterogêneos)",
+      "Avançar para modelos clinicamente relevantes para validar segurança e otimizar entrega das nanopartículas",
+      "Padronizar métricas de desfecho (mapas de dose térmica, métricas de biodistribuição de nanopartículas, biomarcadores de imagem)"
+    ],
+    "gaps_identificados": [
+      "Ausência de modelo tumoral estabelecido no rato (estudo realizado em fígado saudável)",
+      "Falta de padronização no protocolo de exposição térmica com homogeneidade insuficiente",
+      "Necessidade de otimização das nanopartículas especificamente para frequências de micro-ondas",
+      "Ausência de caracterização por citometria de fluxo das populações de nanopartículas",
+      "Necessidade de análise detalhada campo a campo para toda a série de animais tratados termicamente",
+      "Falta de dados sobre farmacocinética e dosimetria rigorosa em estudos de fase inicial"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra que insertos de OA-Fe3O4 a 0,1% aumentam a SAR em 111% e melhoram a profundidade de penetração e uniformidade de dissipação de energia em tecido hepático a 2,45 GHz, contribuindo para o entendimento do acoplamento eletromagnético-térmico em tecido biológico.",
+    "integracao_engenharia": "O estudo desenvolve e testa um sistema protótipo de hipertermia em dois estágios com controle de temperatura por pás aquecidas, cateterismo seletivo da artéria hepática em ratos e simulação eletromagnética com CST Studio Suite para otimização da deposição de energia no tumor.",
+    "integracao_biologia": "O artigo avalia os efeitos histopatológicos de diferentes protocolos de aquecimento (41-45°C) em tecido hepático de rato Wistar, identificando 42°C como temperatura ótima com degeneração vacuolar focal e inflamação negligenciável (IL-6 e TNF-α), além de confirmar a biocompatibilidade das nanopartículas in vitro e in vivo.",
+    "integracao_materiais": "O trabalho sintetiza nanopós de Fe3O4 revestidos com ácido oleico pelo método de co-precipitação química, caracteriza suas propriedades dielétricas em faixa de temperatura (25-50°C) e frequência (1 Hz a 1 GHz), e demonstra que a concentração de 0,1% de insertos de OA-Fe3O4 é ótima para hipertermia a 2,45 GHz.",
+    "mensagem_principal": "A hipertermia por micro-ondas em dois estágios usando nanopartículas magnéticas de Fe3O4 é uma modalidade terapêutica promissora para o câncer de fígado, com 42°C identificada como temperatura ótima para tecido hepático de rato induzindo alterações celulares focais sem inflamação significativa, abrindo caminho para investigações translacionais em humanos."
+  },
+  "custom_id": "27__Two-Stage_Microwave_Hyperthermia_Using_Magnetic_Nanoparticle"
+}

@@ -1,0 +1,117 @@
+{
+  "autores": "Orzechowska et al.",
+  "ano": 2026,
+  "periodico": "Molecules",
+  "titulo": "Biomedical Applications of Chitosan-Coated Gallium Iron Oxide Nanoparticles GaxFe(3−x)O4 with 0 ≤ x ≤ 1 for Magnetic Hyperthermia",
+  "doi": "10.3390/molecules31010177",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "Magnetic fluid hyperthermia (MFH) é um método de tratamento não invasivo do câncer baseado no aumento da temperatura dentro do tumor para 41–50 °C pela resposta de nanopartículas magnéticas a um campo magnético alternado, induzindo apoptose ou necrose celular. As nanopartículas dispersas em solvente biocompatível são introduzidas no tumor e aquecidas sob campo externo.",
+    "etapas_processo": [
+      "Síntese das nanopartículas magnéticas de ferrita de gálio (GaxFe3−xO4) por co-precipitação",
+      "Revestimento opcional com quitosana",
+      "Introdução da suspensão de nanopartículas no tumor por injeção direta",
+      "Internalização das nanopartículas pelas células via endocitose",
+      "Aplicação de campo magnético alternado externo para aquecer as nanopartículas",
+      "Aumento da temperatura no microambiente tumoral para 41–50 °C induzindo morte celular"
+    ],
+    "internalizacao_nps": "As nanopartículas entram nas células por endocitose, onde se acumulam e são subsequentemente aquecidas sob campo magnético alternado externo.",
+    "aplicacao_campo": "Um campo magnético alternado é aplicado externamente, penetrando no tecido e induzindo o aquecimento das nanopartículas magnéticas acumuladas no tumor.",
+    "janela_termica_min_C": 41.0,
+    "janela_termica_max_C": 50.0,
+    "vias_morte_celular": [
+      "apoptose",
+      "necrose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": false,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A eficiência de aquecimento depende tanto da relaxação de Néel quanto da relaxação Browniana, com a contribuição Browniana reduzida pelo revestimento de quitosana que aumenta a viscosidade e restringe o movimento rotacional das partículas.",
+    "descricao_mecanismo": "Na relaxação de Néel, o momento magnético rotaciona dentro da nanopartícula estacionária, enquanto na relaxação Browniana toda a nanopartícula rotaciona gerando calor por fricção. Se a exposição ao campo magnético exceder os tempos de relaxação combinados, o calor é produzido por absorção de energia. A resistência natural das partículas ao campo magnético leva à geração de calor, e a eficiência depende do tamanho das partículas, sua resposta ao campo e a amplitude e frequência do campo aplicado."
+  },
+  "q3": {
+    "material": "ferrita de gálio",
+    "composicao_quimica": "GaxFe3−xO4 com 0 ≤ x ≤ 1",
+    "dopagem": "Ga3+ (gálio)",
+    "tamanho_nm": 10.0,
+    "faixa_tamanho_min_nm": 8.86,
+    "faixa_tamanho_max_nm": 13.5,
+    "forma": "irregular",
+    "arquitetura_multicore": true,
+    "anisotropia": "anisotropia magnética modificada pelo conteúdo de gálio",
+    "revestimento": "quitosana",
+    "material_autorregulavel": false,
+    "SAR_W_g": 83.4,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "O aumento do conteúdo de gálio reduz ligeiramente o tamanho dos cristalitos (11–15 nm) e modifica as interações de troca magnética, pois os íons Ga3+ não magnéticos ocupam posições do Fe no retículo espinélio, otimizando a anisotropia magnética e a dinâmica de relaxação, resultando em aumento do SAR com o conteúdo de gálio, com máximo em x ≈ 0,73."
+  },
+  "q4": {
+    "amplitude_kA_m": 15.3,
+    "frequencia_kHz": 523.0,
+    "produto_Hf": 8001900000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 11.67,
+    "forma_onda": null,
+    "dosimetria_termica": "método de inclinação corrigida (corrected slope method - CSM) sob condições não adiabáticas usando sistema magneTherm",
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "HeLa (células de câncer cervical) e fibroblastos humanos de pele (ATCC-CRL-2106)",
+    "modelo_animal": null,
+    "tipo_cancer": "cervical (HeLa)",
+    "concentracao_mg_mL": 0.01,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": true,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": true
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Heterogeneidade de forma das partículas (morfologia irregular e distribuição ampla de tamanhos)",
+      "Agregação das nanopartículas em estruturas do tipo fractal de massa",
+      "Sedimentação em suspensões de ferrofluido",
+      "O revestimento de quitosana envolveu clusters de partículas em vez de nanopartículas individuais, contrariando o esperado efeito estabilizador",
+      "A agregação induzida pelo campo magnético alternado reduz negativamente o desempenho magnetotérmico",
+      "Reprodutibilidade limitada do método de co-precipitação"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": true,
+    "recomendacoes_futuras": [
+      "Reduzir a heterogeneidade de forma das nanopartículas",
+      "Minimizar a agregação e sedimentação nos ferrofluidos",
+      "Desenvolver métodos de direcionamento das nanopartículas para sítios cancerosos",
+      "Explorar modificação química da camada de quitosana para funcionalização com agentes anticâncer",
+      "Padronizar o procedimento de síntese para otimização completa"
+    ],
+    "gaps_identificados": [
+      "Ausência de dados sobre os efeitos de nanopartículas dopadas com gálio em modelos in vitro na literatura",
+      "Falta de avaliação da eficiência de aquecimento com ativação magnética nas células",
+      "Ausência de estudos in vivo para avaliar biodistribuição e eficácia terapêutica",
+      "Falta de caracterização da magnetização de saturação das amostras"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo correlaciona a substituição iônica de Ga3+ na rede espinélio com modificações nas interações de troca magnética e na dinâmica de relaxação, demonstrando que o conteúdo de gálio otimiza a anisotropia magnética e maximiza o SAR em x ≈ 0,73.",
+    "integracao_engenharia": "A caracterização do SAR em múltiplas concentrações e a determinação das condições de campo (523 kHz, 15,3 kA/m) fornecem parâmetros práticos para o planejamento de tratamentos de hipertermia magnética de fluido.",
+    "integracao_biologia": "Os ensaios de citotoxicidade in vitro demonstraram que as nanopartículas de ferrita de gálio revestidas com quitosana apresentam efeito citoprotetor em fibroblastos e redução da atividade metabólica em células HeLa, sem toxicidade significativa na ausência de ativação magnética.",
+    "integracao_materiais": "A dopagem com gálio e o revestimento com quitosana foram sistematicamente avaliados por XRD, TEM, SANS e SAXS, revelando estrutura monofásica, morfologia irregular, agregados fractais e que a quitosana reveste clusters em vez de partículas individuais.",
+    "mensagem_principal": "Nanopartículas de GaxFe3−xO4 sintetizadas por co-precipitação, especialmente com composição 0,6 ≤ x ≤ 0,73 e revestimento de quitosana, demonstram alto potencial para hipertermia magnética de fluido, combinando eficiência de aquecimento (SAR máximo de 83,4 W/g para Ga0,73) com baixa citotoxicidade e efeito citoprotetor em células normais, embora a heterogeneidade de forma, agregação e sedimentação precisem ser superadas para aplicação clínica."
+  },
+  "custom_id": "26__Biomedical_Applications_of_Chitosan-Coated_Gallium_Iron_Oxid"
+}

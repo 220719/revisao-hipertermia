@@ -1,0 +1,108 @@
+{
+  "autores": "Caliskan et al.",
+  "ano": 2026,
+  "periodico": "ACS Omega",
+  "titulo": "Preparation and Characterization of Coated ZnFe2O4 Magnetic Nanoparticles for Potential Use as Magnetic Particle Imaging Tracers",
+  "doi": "10.1021/acsomega.5c03598",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética utiliza nanopartículas magnéticas como geradoras de calor para tratamento de câncer, sendo mencionada como uma das aplicações clínicas das SPIONs. O artigo cita o uso de NPs como geradoras de calor em tratamento por hipertermia, mas não detalha o processo terapêutico.",
+    "etapas_processo": [
+      "Administração de nanopartículas magnéticas",
+      "Aplicação de campo magnético alternado",
+      "Geração de calor pelas nanopartículas"
+    ],
+    "internalizacao_nps": null,
+    "aplicacao_campo": "O artigo menciona o uso de campos magnéticos alternados para excitar as nanopartículas, no contexto de MPS/MPI, não detalhando a aplicação específica para hipertermia.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": "senoidal",
+    "mecanismo_dominante": "O artigo menciona tanto relaxação de Néel quanto Browniana como mecanismos que sustentam a resposta magnética das nanopartículas cobertas.",
+    "descricao_mecanismo": "O revestimento superficial das nanopartículas previne agregação e mantém tamanho hidrodinâmico uniforme, permitindo que as partículas permaneçam dispersas em suspensão e suportem relaxação mais rápida e independente por mecanismos de Néel e Browniano. A agregação restringe o movimento Browniano e introduz acoplamento magnético interpartículas, retardando o processo de relaxação magnética. As nanopartículas cobertas com CA, AA ou TA apresentaram tempos de relaxação mais curtos do que as não cobertas, indicando resposta mais rápida ao campo aplicado."
+  },
+  "q3": {
+    "material": "Ferrita de zinco (ZnFe2O4)",
+    "composicao_quimica": "ZnFe2O4",
+    "dopagem": null,
+    "tamanho_nm": 14.0,
+    "faixa_tamanho_min_nm": 14.0,
+    "faixa_tamanho_max_nm": 19.0,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia magnetocristalina de estrutura espinélio cúbica, com alta anisotropia associada à grande área superficial específica",
+    "revestimento": "ácido cítrico (CA), ácido ascórbico (AA), ácido tartárico (TA)",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 28.0,
+    "relacao_estrutura_propriedade": "O tamanho do cristalito influencia a magnetização de saturação, coercividade e comportamento superparamagnético; agentes de revestimento modificam o tamanho, densidade de deslocamento e área superficial específica, afetando as propriedades magnéticas e o desempenho como traçador em MPI."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": 9.9,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": "senoidal",
+    "dosimetria_termica": null,
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Medições de potencial zeta realizadas em água deionizada, não replicando força iônica fisiológica (PBS ou soro)",
+      "Comparação rigorosa requer avaliação de nanopartículas cobertas com CA, TA e AA sob distribuições de tamanho idênticas",
+      "Alta tendência de aglomeração das nanopartículas, especialmente após secagem",
+      "Tamanho medido por DLS significativamente maior do que por XRD/SEM devido à camada de hidratação"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Testar estabilidade coloidal em diferentes meios biológicos",
+      "Investigar interações em nível molecular na interface nanopartícula-revestimento e seu impacto na dinâmica magnética",
+      "Otimizar estratégias de revestimento para melhorar desempenho magnético e compatibilidade biológica",
+      "Aplicar ultrasonicação estendida, ajuste de pH e força iônica, adição de estabilizadores estéricos e seleção pós-síntese por tamanho para reduzir agregação"
+    ],
+    "gaps_identificados": [
+      "Ausência de testes de citotoxicidade das nanopartículas de ZnFe2O4 cobertas",
+      "Falta de avaliação em meios fisiológicos (PBS, soro)",
+      "Necessidade de comparação sob distribuições de tamanho idênticas entre os diferentes agentes de revestimento",
+      "Ausência de estudos in vivo de biodistribuição e desempenho como traçador MPI"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo contribui para a física ao caracterizar as propriedades magnéticas (superparamagnetismo, magnetização de saturação, coercividade, constante de anisotropia, tempos de relaxação) de nanopartículas de ZnFe2O4 cobertas por diferentes agentes, correlacionando estrutura cristalina e comportamento magnético.",
+    "integracao_engenharia": "O artigo contribui para a engenharia ao desenvolver e avaliar nanopartículas de ZnFe2O4 cobertas como traçadores para sistemas de imagem por partículas magnéticas (MPI), demonstrando desempenho superior em tempo de relaxação e resolução espacial em relação a traçadores comerciais.",
+    "integracao_biologia": "O artigo contribui para a biologia ao sintetizar nanopartículas com revestimentos biocompatíveis (ácido cítrico, ascórbico e tartárico) e avaliar sua estabilidade coloidal em meio aquoso, essencial para aplicações biomédicas, embora não tenha realizado ensaios celulares ou in vivo.",
+    "integracao_materiais": "O artigo contribui para a ciência dos materiais ao demonstrar que a química de superfície (tipo de agente de revestimento) é tão crucial quanto o tamanho da partícula para determinar o desempenho em MPI, evidenciando como diferentes ligantes afetam tamanho, cristalinidade, área superficial e propriedades magnéticas.",
+    "mensagem_principal": "Nanopartículas de ZnFe2O4 cobertas com ácidos cítrico, ascórbico e tartárico apresentam comportamento superparamagnético e desempenho em MPS superior a traçadores comerciais (Perimag e VivoTrax), com destaque para ZnFe2O4@AA que alcançou o menor FWHM (5,14 mT) e excelente tempo de relaxação (2,85 μs), demonstrando que a química de superfície é determinante para o desempenho como traçador em MPI."
+  },
+  "custom_id": "37__Preparation_and_Characterization_of_Coated_ZnFe2O4_Magnetic"
+}

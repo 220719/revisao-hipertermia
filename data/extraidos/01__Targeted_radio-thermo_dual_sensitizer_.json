@@ -1,0 +1,113 @@
+{
+  "autores": "Shirvalilou et al.",
+  "ano": 2026,
+  "periodico": "Cancer Cell International",
+  "titulo": "Targeted radio-thermo dual sensitizer magnetic gold core-shells nanoparticles enhance radioresistant glioblastoma via promoting apoptosis and ROS generation",
+  "doi": "10.1186/s12935-026-04254-x",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (MH) é uma estratégia de tratamento do câncer na qual nanopartículas magnéticas são utilizadas para converter energia de campos magnéticos alternantes (AMF) em calor, elevando a temperatura no sítio tumoral para induzir a morte de células cancerígenas. As NPs absorvem ondas de radiofrequência e convertem essa energia em calor, aquecendo seletivamente o tecido tumoral.",
+    "etapas_processo": [
+      "Síntese e funcionalização das NPs de Fe3O4@Au conjugadas com ácido fólico",
+      "Incubação das células C6 glioma com as NPs por 24 horas",
+      "Remoção do meio e lavagem com PBS para eliminar NPs não ligadas",
+      "Adição de meio fresco e posicionamento do frasco no centro da bobina de RF",
+      "Aplicação do campo magnético alternante pela bobina RF (13,56 MHz, 70 W)",
+      "Monitoramento da temperatura por câmera infravermelha até atingir 43°C",
+      "Cálculo da dose térmica acumulada (CEM 43°C)"
+    ],
+    "internalizacao_nps": "As NPs são internalizadas por endocitose mediada por receptor de folato, aproveitando a superexpressão de receptores de folato nas células de glioma C6, quantificada por ICP-OES após lavagem com PBS e digestão celular.",
+    "aplicacao_campo": "O AMF é aplicado por uma bobina de RF (Basafan, 200 W, operando a 13,56 MHz e potência de 70 W), com o frasco de termometria posicionado no centro da bobina.",
+    "janela_termica_min_C": 43.0,
+    "janela_termica_max_C": 43.0,
+    "vias_morte_celular": [
+      "apoptose",
+      "necrose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O mecanismo dominante de geração de calor é a relaxação de Néel, no qual os momentos magnéticos das NPs se realinham rapidamente com o campo magnético alternante, gerando calor eficientemente.",
+    "descricao_mecanismo": "O mecanismo de aquecimento envolve a relaxação de Néel, onde os momentos magnéticos das NPs se realinham rapidamente com o campo magnético alternante, gerando calor de forma eficiente. O artigo menciona tanto a relaxação de Néel quanto a relaxação Browniana como mecanismos relevantes para NPs de Fe3O4 em ferrofluidos aquosos em hipertermia. A geração de calor pelas NPs resultou em aquecimento mais rápido e maior dose térmica acumulada (CEM 43°C) em comparação ao grupo controle sem NPs."
+  },
+  "q3": {
+    "material": "Fe3O4@Au (núcleo de magnetita revestido com ouro)",
+    "composicao_quimica": "Fe3O4 (núcleo) / Au (casca) / ácido fólico (funcionalização superficial via MPA-EDC/NHS)",
+    "dopagem": null,
+    "tamanho_nm": 40.8,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": null,
+    "revestimento": "ouro (casca) e ácido fólico conjugado via ácido mercaptopropiônico (MPA)",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 44.0,
+    "relacao_estrutura_propriedade": "O revestimento de ouro sobre o núcleo de Fe3O4 reduziu a magnetização de saturação de ±62 emu/g para ±44 emu/g, atribuído à natureza não magnética da casca de Au que parcialmente blinda o campo magnético do núcleo. A morfologia esférica com tamanho de ~40,8 nm facilita a penetração tumoral, a travessia da barreira hematoencefálica e a internalização celular via endocitose."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": 13.56,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 12.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Dose térmica calculada como minutos equivalentes cumulativos a 43°C (CEM 43°C) usando câmera infravermelha (Testo 875-li) para monitoramento da temperatura",
+    "distribuicao_espacial_calor": "Imagens térmicas por câmera infravermelha demonstraram diferença visível na distribuição de calor entre o grupo controle e o grupo tratado com Fe3O4@Au/FA, com aquecimento mais rápido e localizado nas células tratadas com NPs",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "C6 (glioma de rato) e OLN-93 (células normais de cérebro de rato)",
+    "modelo_animal": null,
+    "tipo_cancer": "glioblastoma",
+    "concentracao_mg_mL": 0.037,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": true,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": true,
+    "apoptose": true,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Experimentos conduzidos principalmente in vitro com células C6 glioma, que não capturam completamente a complexidade do microambiente tumoral",
+      "O modelo in vitro não reflete a heterogeneidade observada in vivo",
+      "Avaliação de toxicidade ex vivo limitada a 24 horas, sem acompanhamento de longo prazo"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Realizar investigações in vivo para avaliar a biodistribuição das nanopartículas em modelos animais",
+      "Avaliar a toxicidade de longo prazo das NPs em modelos animais",
+      "Avaliar a eficácia terapêutica geral em modelos in vivo para compreender a aplicabilidade clínica do tratamento combinado"
+    ],
+    "gaps_identificados": [
+      "Falta de dados de biodistribuição in vivo das NPs",
+      "Ausência de avaliação de toxicidade de longo prazo",
+      "O efeito EPR em glioblastoma multiforme é menos eficaz comparado a outros tipos de câncer devido à barreira hematoencefálica tumoral (BBTB)",
+      "Não foram reportados valores de SAR ou ILP das NPs"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra o uso do campo magnético alternante de radiofrequência (13,56 MHz) para geração de calor localizado via relaxação de Néel, com monitoramento térmico por câmera infravermelha e cálculo de dose térmica (CEM 43°C), além de explorar o efeito de reforço de dose de radiação pelo ouro (Z=79) por fotoelétrons, elétrons Auger e espalhamento Compton.",
+    "integracao_engenharia": "O artigo contribui para a engenharia de nanomateriais ao desenvolver NPs core-shell Fe3O4@Au funcionalizadas com ácido fólico como plataforma dual sensibilizadora, sintetizadas por coprecipitação química e funcionalização superficial via EDC/NHS, avaliando sua estabilidade, potencial zeta e distribuição de tamanho.",
+    "integracao_biologia": "O estudo avalia a citotoxicidade seletiva das NPs direcionadas por receptor de folato em células de glioma C6 versus células normais OLN-93, quantificando apoptose e necrose por citometria de fluxo, produção de ROS intracelular por DCFH-DA e sobrevivência clonogênica por CFA.",
+    "integracao_materiais": "As NPs Fe3O4@Au/FA core-shell apresentaram morfologia esférica, tamanho médio de 40,8 nm, potencial zeta de -19,93 mV e magnetização de saturação de ±44 emu/g, com redução da magnetização atribuída à casca de ouro não magnética, demonstrando como a arquitetura core-shell impacta as propriedades magnéticas e de superfície.",
+    "mensagem_principal": "Nanopartículas core-shell Fe3O4@Au funcionalizadas com ácido fólico atuam como duplos sensibilizadores (radio e termossensibilizadores) para células de glioma C6, potencializando sinergicamente a radioterapia e a hipertermia magnética ao aumentar a apoptose, a necrose e a produção de ROS intracelular, com boa biocompatibilidade e captação tumoral seletiva. O fator de aumento de dose (DEF) máximo atingiu 5,19 a 8 Gy combinado com hipertermia magnética."
+  },
+  "custom_id": "01__Targeted_radio-thermo_dual_sensitizer_"
+}

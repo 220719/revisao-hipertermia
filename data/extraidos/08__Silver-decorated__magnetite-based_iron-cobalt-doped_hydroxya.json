@@ -1,0 +1,111 @@
+{
+  "autores": "Tavoosi et al.",
+  "ano": 2026,
+  "periodico": "Engineering Science and Technology, an International Journal",
+  "titulo": "Silver-decorated, magnetite-based iron/cobalt-doped hydroxyapatite: A novel nanocarrier for combined anticancer and antibacterial applications",
+  "doi": "10.1016/j.jestch.2026.102334",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética é mencionada como uma aplicação potencial das nanopartículas de magnetita, que podem ser usadas para tratamento de tumores mediante aplicação de campo magnético externo. O nanocompósito sintetizado é descrito como um sistema anticâncer que pode ser utilizado em hipertermia e liberação de medicamentos por período prolongado.",
+    "etapas_processo": [
+      "Síntese de nanopartículas de magnetita por co-precipitação",
+      "Síntese hidrotérmica de hidroxiapatita dopada com Fe e Co na presença de magnetita (Mag-Fe/Co HA)",
+      "Decoração química com nanopartículas de prata (Ag) via reagente de Tollens e ácido tânico",
+      "Carregamento de curcumina no nanocompósito",
+      "Avaliação biológica in vitro (MTT, MIC-MBC) e liberação de fármaco"
+    ],
+    "internalizacao_nps": "O artigo não descreve explicitamente o mecanismo de internalização celular das NPs, mas menciona que nanopartículas na faixa de 25 a 50 nm promovem maior absorção celular e reduzem a separação pelo sistema reticuloendotelial (RES).",
+    "aplicacao_campo": "O artigo menciona o campo magnético externo como elemento funcional para guiar as nanopartículas ao sítio alvo e potencializar a atividade magneto-óptica, mas não descreve um protocolo específico de aplicação de campo alternado para hipertermia nos experimentos realizados.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": [
+      "apoptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O artigo não descreve mecanismos físicos de geração de calor por hipertermia magnética, pois os experimentos de hipertermia não foram realizados.",
+    "descricao_mecanismo": "O artigo menciona a hipertermia apenas como aplicação potencial das nanopartículas magnéticas, sem descrever os mecanismos físicos de relaxação de Néel, Browniana ou perdas por histerese envolvidos na geração de calor sob campo magnético alternado."
+  },
+  "q3": {
+    "material": "Magnetita/hidroxiapatita dopada com Fe e Co decorada com Ag (Mag-Fe/Co HA-Ag)",
+    "composicao_quimica": "Fe3O4 (magnetita) + Ca10-x-yFexCoy(PO4)6(OH)2 (hidroxiapatita dopada com Fe3+ e Co2+) + Ag0 (nanopartículas de prata)",
+    "dopagem": "Fe3+ e Co2+ substituindo Ca2+ na estrutura da hidroxiapatita",
+    "tamanho_nm": 39.34,
+    "faixa_tamanho_min_nm": 29.68,
+    "faixa_tamanho_max_nm": 41.84,
+    "forma": "haste",
+    "arquitetura_multicore": false,
+    "anisotropia": "Os dopantes Fe e Co aumentam a coercividade (HC = 246,22 Oe para Mag-Fe/Co HA) indicando anisotropia magnetocristalina aumentada em relação às amostras não dopadas",
+    "revestimento": "Hidroxiapatita como matriz/revestimento da magnetita; nanopartículas de prata como decoração superficial",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 37.28,
+    "relacao_estrutura_propriedade": "A dopagem com Fe3+ e Co2+ na estrutura da hidroxiapatita reduz o tamanho das partículas, aumenta a área superficial específica, eleva a magnetização de saturação (de 40,63 para 53,68 emu/g) e aumenta a coercividade, conferindo comportamento ferromagnético. A adição de prata reduz a magnetização de saturação devido ao caráter paramagnético do metal."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": null,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": null,
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "MG-63",
+    "modelo_animal": null,
+    "tipo_cancer": "osteossarcoma",
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": true,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "MBC não pôde ser determinado dentro da faixa de concentração investigada, pois as bactérias não foram completamente erradicadas",
+      "A aglomeração de nanopartículas de prata na superfície do Mag-HA-Ag resultou em distribuição não uniforme e pode impactar negativamente a atividade antibacterial",
+      "Experimentos de hipertermia magnética não foram realizados, sendo apenas mencionados como aplicação potencial",
+      "Ausência de ensaios in vivo para validar a eficácia anticâncer e antibacteriana do nanocompósito"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Realização de ensaios in vivo para avaliar a eficácia terapêutica e biodistribuição do nanocompósito",
+      "Investigação experimental da capacidade de hipertermia magnética do nanocompósito sob campo magnético alternado",
+      "Determinação de MBC em faixas de concentração mais elevadas"
+    ],
+    "gaps_identificados": [
+      "Ausência de caracterização da capacidade de hipertermia magnética (SAR/ILP) do nanocompósito",
+      "Falta de avaliação de toxicidade em células normais para confirmar seletividade anticâncer",
+      "Ausência de estudos de biodistribuição e farmacocinética in vivo",
+      "Mecanismos físicos de geração de calor por hipertermia não foram investigados"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra que a dopagem com Fe e Co na hidroxiapatita altera as propriedades magnéticas do nanocompósito, aumentando a magnetização de saturação e a coercividade, o que é relevante para aplicações em hipertermia magnética.",
+    "integracao_engenharia": "O nanocompósito Mag-Fe/Co HA-Ag foi sintetizado por co-precipitação, método hidrotérmico e adição química de prata, resultando em estrutura multifuncional com propriedades controláveis para liberação prolongada de fármaco por 81 dias.",
+    "integracao_biologia": "Os ensaios in vitro com células MG-63 e bactérias E. coli demonstraram que o nanocompósito carregado com curcumina apresenta atividade anticâncer (viabilidade celular reduzida a 16,26%) e antibacteriana (MIC = 31,3 µg/ml), com morte celular associada à apoptose induzida por curcumina e ROS.",
+    "integracao_materiais": "A combinação de magnetita, hidroxiapatita dopada com Fe/Co e nanopartículas de prata resulta em nanocompósito com propriedades magnéticas, plasmônicas, antibacterianas e de liberação controlada de fármaco, demonstrando como a composição química e arquitetura influenciam as propriedades funcionais.",
+    "mensagem_principal": "O nanocompósito Mag-Fe/Co HA-Ag representa um sistema teranóstico multifuncional que integra propriedades magnéticas, antibacterianas e anticâncer em uma única nanopartícula, com liberação controlada de curcumina por 81 dias e potencial para aplicações em hipertermia magnética, embora os experimentos de hipertermia não tenham sido conduzidos neste estudo."
+  },
+  "custom_id": "08__Silver-decorated__magnetite-based_iron-cobalt-doped_hydroxya"
+}

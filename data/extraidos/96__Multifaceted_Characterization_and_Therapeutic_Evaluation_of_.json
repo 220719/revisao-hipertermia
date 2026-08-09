@@ -1,0 +1,115 @@
+{
+  "autores": "Reena e Raj",
+  "ano": 2024,
+  "periodico": "Journal of Medical Physics",
+  "titulo": "Multifaceted Characterization and Therapeutic Evaluation of Co-precipitated Cobalt Ferrite Nanoparticles for Magnetic Hyperthermia Cancer Therapy",
+  "doi": "10.4103/jmp.jmp_57_24",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (MHT) é uma técnica não invasiva e direcionada que utiliza as perdas de energia magnética produzidas por nanopartículas magnéticas (MNPs) em um campo magnético oscilante para induzir remotamente calor localizado em tumores. Ela se aproveita do fato de que as células tumorais exibem maiores taxas de glicólise, metabolismo aumentado e maior radiossensibilidade.",
+    "etapas_processo": [
+      "Síntese das nanopartículas de CoFe2O4 por co-precipitação química",
+      "Caracterização estrutural, morfológica e magnética das nanopartículas",
+      "Administração intravenosa das MNPs para direcionamento ao tumor",
+      "Aplicação de campo magnético alternante (AMF) externo",
+      "Geração de calor localizado via relaxação de Néel e perdas por histerese",
+      "Elevação da temperatura no tecido tumoral para induzir morte celular"
+    ],
+    "internalizacao_nps": "As nanopartículas são administradas por via intravenosa e internalizadas por endocitose pelas células cancerosas, aproveitando o efeito de permeabilidade e retenção aumentada (EPR) dos tumores.",
+    "aplicacao_campo": "O AMF é aplicado por um gerador de campo magnético alternante (equipamento Easyheat induction heating) com intensidade de 39,3 kA/m e frequência de 313 kHz, expondo a amostra por 30 minutos.",
+    "janela_termica_min_C": 38.0,
+    "janela_termica_max_C": 42.0,
+    "vias_morte_celular": [
+      "apoptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": false,
+    "perdas_histerese": true,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "As perdas de energia magnética ocorrem predominantemente por relaxação de Néel e perdas por histerese das nanopartículas superparamagnéticas submetidas ao AMF.",
+    "descricao_mecanismo": "As MNPs superparamagnéticas, quando submetidas a um campo magnético alternante oscilante, dissipam energia na forma de calor por meio de relaxação de Néel e perdas por histerese. A relaxação de Néel envolve a rotação do momento magnético interno da partícula, enquanto as perdas por histerese decorrem do ciclo de magnetização e desmagnetização das partículas ferromagnéticas. Essa energia dissipada promove aquecimento localizado no tecido tumoral."
+  },
+  "q3": {
+    "material": "ferrita de cobalto",
+    "composicao_quimica": "CoFe2O4",
+    "dopagem": null,
+    "tamanho_nm": 20.82,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": "alta constante de anisotropia e alta coercividade, característica da estrutura espinélio cúbica",
+    "revestimento": null,
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 24.9,
+    "relacao_estrutura_propriedade": "O tamanho das partículas, a dispersão de cátions, a cristalinidade e a temperatura de sinterização influenciam significativamente as propriedades magnéticas das nanopartículas de CoFe2O4. A estrutura espinélio cúbica confere alta constante de anisotropia e coercividade moderada, favorecendo a eficiência de aquecimento no AMF."
+  },
+  "q4": {
+    "amplitude_kA_m": 39.3,
+    "frequencia_kHz": 313.0,
+    "produto_Hf": 12300900000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Monitoramento de temperatura via gráfico de temperatura (°C) versus tempo (min) durante 30 minutos de exposição ao AMF",
+    "distribuicao_espacial_calor": "O artigo não descreve explicitamente a distribuição espacial do calor, mas menciona que a distribuição não uniforme de calor é uma limitação reconhecida da MHT.",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "MCF-7",
+    "modelo_animal": null,
+    "tipo_cancer": "mama",
+    "concentracao_mg_mL": 1.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": true,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Distribuição não uniforme de calor no tecido tumoral",
+      "Preocupações com toxicidade das nanopartículas",
+      "Aglomeração das partículas",
+      "Penetração limitada em profundidade",
+      "Heterogeneidade tumoral",
+      "Desafios de escalabilidade e aprovação regulatória"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Funcionalização da superfície das nanopartículas de CoFe2O4 para garantir biocompatibilidade",
+      "Realização de estudos in vivo para avaliar aplicações biológicas das nanopartículas",
+      "Otimização das propriedades magnéticas para aumentar a eficiência de aquecimento",
+      "Investigação de aplicações teranósticas das nanopartículas"
+    ],
+    "gaps_identificados": [
+      "Ausência de estudos in vivo para validação dos resultados in vitro",
+      "Falta de funcionalização de superfície para maior biocompatibilidade e direcionamento seletivo",
+      "Não foram calculados SAR ou ILP para quantificação da eficiência de aquecimento",
+      "Mecanismos específicos de morte celular não foram completamente elucidados"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo contribui para a física ao caracterizar as propriedades magnéticas (magnetização de saturação, coercividade, remanência) das nanopartículas de CoFe2O4 e demonstrar sua capacidade de geração de calor sob AMF via relaxação de Néel e perdas por histerese.",
+    "integracao_engenharia": "O trabalho contribui para a engenharia ao demonstrar a síntese reprodutível de nanopartículas de CoFe2O4 por co-precipitação química e sua aplicação em um sistema de hipertermia magnética com parâmetros de campo definidos (39,3 kA/m, 313 kHz, 30 min).",
+    "integracao_biologia": "O estudo contribui para a biologia ao avaliar a citotoxicidade in vitro das nanopartículas contra células MCF-7 de câncer de mama, demonstrando redução dose-dependente da viabilidade celular e aumento da eficácia com temperaturas de hipertermia crescentes.",
+    "integracao_materiais": "O artigo contribui para a ciência dos materiais ao realizar caracterização multifacetada (XRD, FTIR, SEM, EDX, VSM, TGA) das nanopartículas de CoFe2O4, confirmando estrutura espinélio cúbica, morfologia esférica e natureza ferromagnética adequada para aplicações em hipertermia.",
+    "mensagem_principal": "Nanopartículas de CoFe2O4 sintetizadas por co-precipitação química apresentam estrutura, morfologia e propriedades magnéticas adequadas para hipertermia magnética, demonstrando eficácia citotóxica dose-dependente contra células MCF-7 de câncer de mama in vitro, com potencial aumentado pela combinação com temperatura hipertérmica."
+  },
+  "custom_id": "96__Multifaceted_Characterization_and_Therapeutic_Evaluation_of_"
+}

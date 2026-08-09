@@ -1,0 +1,124 @@
+{
+  "autores": "Colombo et al.",
+  "ano": 2026,
+  "periodico": "Journal of Nanotheranostics",
+  "titulo": "Magnetic Nanoparticles in Theranostics: From Controlled Synthesis and Surface Engineering to Biological Performance and Clinical Translation",
+  "doi": "10.3390/jnt7010007",
+  "tipo_estudo": "revisao",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (MFH) utiliza nanopartículas magnéticas expostas a campos magnéticos alternantes para gerar calor localizado, danificando seletivamente o tecido tumoral. Este calor pode aumentar a eficácia da quimioterapia ao aumentar a sensibilidade do tumor e promover vias apoptóticas.",
+    "etapas_processo": [
+      "Síntese das nanopartículas magnéticas com propriedades controladas de tamanho e cristalinidade",
+      "Funcionalização superficial para melhorar biocompatibilidade e direcionamento",
+      "Administração sistêmica e acumulação nas células/tecido tumoral",
+      "Aplicação de campo magnético alternante (AMF) externo",
+      "Geração de calor localizado pelas nanopartículas",
+      "Indução de morte celular tumoral por hipertermia"
+    ],
+    "internalizacao_nps": "As NPs podem ser internalizadas por mecanismos de endocitose mediada por receptor, facilitada por ligantes de direcionamento como ácido fólico conjugados à superfície, promovendo captação seletiva por células tumorais que superexpressam os receptores correspondentes.",
+    "aplicacao_campo": "Um campo magnético alternante (AMF) externo é aplicado remotamente ao local do tumor onde as nanopartículas estão acumuladas, induzindo geração de calor localizado por mecanismos de relaxação magnética.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": [
+      "apoptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "Partículas de núcleo único dependem predominantemente da relaxação de Néel/Browniana para geração de calor, podendo perder eficiência ao serem imobilizadas.",
+    "descricao_mecanismo": "As nanopartículas magnéticas de núcleo único dependem dos mecanismos de relaxação de Néel e Browniana para converter energia do campo magnético alternante em calor. Revestimentos funcionais e imobilização das partículas podem alterar o equilíbrio entre relaxação de Néel e Browniana, reduzindo a eficiência de aquecimento. Arquiteturas multicore e estruturas do tipo vórtice/nanoring podem aumentar as perdas magnéticas e elevar o SAR sob as mesmas condições de campo-frequência, embora introduzam desafios adicionais de distribuição biológica."
+  },
+  "q3": {
+    "material": "Fe3O4 (magnetita) e γ-Fe2O3 (maghemita)",
+    "composicao_quimica": "Fe3O4 / γ-Fe2O3",
+    "dopagem": null,
+    "tamanho_nm": 22.4,
+    "faixa_tamanho_min_nm": 5.0,
+    "faixa_tamanho_max_nm": 50.0,
+    "forma": "esférica",
+    "arquitetura_multicore": true,
+    "anisotropia": "anisotropia efetiva modificada por efeitos de tamanho finito, desordem superficial e fenômenos mediados por defeitos na nanoescala",
+    "revestimento": "PEG ou quitosana ou sílica",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 45.7,
+    "relacao_estrutura_propriedade": "Aumentar a cristalinidade e otimizar o tamanho/forma pode elevar a magnetização de saturação (Ms) e as perdas magnéticas, melhorando o SAR sob condições clinicamente relevantes. Contudo, revestimentos superficiais e camadas funcionais podem aumentar o tamanho hidrodinâmico, alterar o equilíbrio de relaxação Browniana/Néel e reduzir o aquecimento efetivo ou a relaxividade se imobilizarem o núcleo ou promoverem agregação."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": null,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": null,
+    "distribuicao_espacial_calor": "Efeitos de 'sumidouro de calor' por perfusão tecidual e condução térmica dissipam o calor, tornando os aumentos locais de temperatura menores do que os observados in vitro.",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "MCF-7",
+    "modelo_animal": "camundongo",
+    "tipo_cancer": "mama ou glioblastoma",
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": true,
+    "perfusao_discutida": true,
+    "protein_corona": true,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": true,
+    "apoptose": true,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Insuficiente desenvolvimento de relações preditivas estrutura-propriedade-função conectando parâmetros de síntese com desempenho magnético e resultados biológicos",
+      "Variabilidade lote a lote nos métodos de síntese tradicionais como co-precipitação",
+      "Avaliações de segurança conduzidas principalmente como estudos in vitro de curto prazo, sem investigações in vivo abrangentes de longo prazo",
+      "Falta de técnicas padronizadas e escaláveis de imobilização de moléculas biológicas para biossensores",
+      "Métodos de caracterização frequentemente não conectam descritores físico-químicos a resultados biológicos",
+      "Valores de SAR reportados sem padronização de condições de campo e protocolo de medição",
+      "Concentração intratumoral insuficiente de nanopartículas sob limites seguros de dosagem",
+      "Biodistribuição heterogênea e sequestração rápida pelo sistema reticuloendotelial (RES)",
+      "Agregação e formação de corona proteica alteram o tamanho hidrodinâmico e suprimem o aquecimento",
+      "Limites de dispositivos e segurança restringem a janela H-f clinicamente utilizável"
+    ],
+    "problemas_SAR_ILP": true,
+    "falta_padronizacao": true,
+    "recomendacoes_futuras": [
+      "Desenvolver métodos de síntese verde que minimizem o impacto ambiental mantendo precisão para aplicações biomédicas",
+      "Estabelecer protocolos padronizados de funcionalização e caracterização para garantir reprodutibilidade",
+      "Reportar SAR sob condições clinicamente plausíveis de H-f e em dispersões fisiologicamente relevantes",
+      "Conduzir investigações in vivo de longo prazo para avaliar biodistribuição e degradação",
+      "Desenvolver sistemas teranósticos 'inteligentes' com feedback de imagem em tempo real para tratamentos personalizados",
+      "Aumentar a colaboração interdisciplinar entre cientistas de materiais, químicos, engenheiros e profissionais de saúde",
+      "Implementar frameworks robustos de caracterização conectando descritores físico-químicos a resultados biológicos"
+    ],
+    "gaps_identificados": [
+      "Ausência de mapeamento sistemático de relações estrutura-propriedade-função entre química de superfície, biodistribuição e clearance in vivo",
+      "Evidência in vivo de longo prazo sobre segurança e biodistribuição é escassa e heterogênea na maioria dos estudos revisados",
+      "Comparações cross-arquitetura e análises de falha translacional são incomuns na literatura",
+      "Janelas de seguimento padronizadas de longo prazo, painéis de imunogenicidade e métricas quantitativas de clearance estão ausentes",
+      "Técnicas avançadas como susceptibilidade AC permanecem subutilizadas apesar de sua relevância para imagem e hipertermia",
+      "Benchmarks explícitos de fabricação como dispersidade de tamanho, indicadores de variabilidade lote a lote e restrições de solventes residuais são inconsistentemente reportados"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo contribui para a física ao analisar os mecanismos de superparamagnetismo, relaxação de Néel/Browniana e barreiras de energia de anisotropia que governam o comportamento magnético das NPs em nanoescala e sua relação com eficiência de aquecimento em hipertermia.",
+    "integracao_engenharia": "O artigo contribui para a engenharia ao discutir criticamente as rotas de síntese (co-precipitação, decomposição térmica, hidrotérmica) em termos de escalabilidade, reprodutibilidade e atributos de qualidade críticos necessários para tradução clínica e fabricação em escala.",
+    "integracao_biologia": "O artigo contribui para a biologia ao examinar biocompatibilidade, citotoxicidade, biodistribuição, formação de corona proteica, captação por RES e mecanismos de morte celular (apoptose) induzidos por NPs magnéticas em diferentes modelos celulares e animais.",
+    "integracao_materiais": "O artigo contribui para a ciência dos materiais ao mapear como estrutura do núcleo (tamanho, fase, cristalinidade, forma) e engenharia de superfície (revestimentos de PEG, quitosana, sílica e ligantes de direcionamento) determinam conjuntamente propriedades magnéticas e desempenho funcional teranóstico.",
+    "mensagem_principal": "Esta revisão demonstra que a tradução clínica de nanopartículas magnéticas para teranóstica requer otimização simultânea das propriedades magnéticas do núcleo e da identidade biológica controlada pela superfície, superando desafios críticos de padronização, reprodutibilidade em escala e avaliação de segurança in vivo de longo prazo para que o potencial teranóstico das NPs seja efetivamente realizado na medicina personalizada."
+  },
+  "custom_id": "101__Magnetic_Nanoparticles_in_Theranostics__From_Controlled_Syn"
+}

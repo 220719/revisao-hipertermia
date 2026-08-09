@@ -1,0 +1,113 @@
+{
+  "autores": "García-Acevedo et al.",
+  "ano": 2024,
+  "periodico": "Journal of Molecular Liquids",
+  "titulo": "Simple thermal treatment to improve the MRI and magnetic hyperthermia performance of hybrid iron Oxide-Mesoporous silica nanocarriers",
+  "doi": "10.1016/j.molliq.2024.124299",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (MH) é um processo terapêutico no qual nanopartículas magnéticas (MNPs) são ativadas remotamente por campos magnéticos alternados (AMF) para gerar calor localizado. Esse calor é utilizado como agente terapêutico em doenças oncológicas.",
+    "etapas_processo": [
+      "Síntese das nanopartículas magnéticas de óxido de ferro e ancoragem na matriz mesoporosa SBA-15",
+      "Tratamento térmico a 850°C para otimização das propriedades magnéticas",
+      "Dispersão dos nanocompósitos em meio aquoso",
+      "Aplicação do campo magnético alternado (AMF) ao sistema contendo os NCs",
+      "Monitoramento da variação de temperatura por termômetro de fibra óptica",
+      "Cálculo do SAR (Specific Absorption Rate) a partir das curvas de aquecimento"
+    ],
+    "internalizacao_nps": "Os NCs são internalizados por endocitose não específica (endocitose não mediada por receptor), sendo que NCs com revestimento de PEI (carga positiva) apresentam maior internalização celular devido a interações eletrostáticas com o ambiente celular carregado negativamente.",
+    "aplicacao_campo": "O campo magnético alternado (AMF) é aplicado posicionando a amostra no centro de uma bobina oca resfriada a água, onde o campo de radiofrequência atinge sua intensidade máxima, operando a frequências fixas (986 kHz com 15,96 kA/m no equipamento MagneTherm, e 350 kHz com 20 kA/m no magnetômetro AC).",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": true,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante nos NCs ancorados na matriz sólida, pois a contribuição de Brown é suprimida quando as MNPs estão imobilizadas.",
+    "descricao_mecanismo": "Quando as MNPs estão ancoradas em matrizes sólidas ou internalizadas em entidades biológicas de alta viscosidade, a rotação física das partículas (relaxação de Brown, τB) é suprimida, tornando a relaxação de Néel (τN), dependente das propriedades magnéticas intrínsecas, o mecanismo dominante para geração de calor. Em dispersões aquosas, ambas as contribuições (Brown e Néel) estão presentes, resultando em valores de SAR mais elevados do que em estado sólido. O tratamento térmico aumentou a contribuição de Néel de 12% e 11% (antes do tratamento) para 39% e 36% (após o tratamento) nos dois conjuntos de NCs, respectivamente."
+  },
+  "q3": {
+    "material": "Fe3O4 (magnetita) / Fe2O3 (hematita) - multifásico após tratamento térmico",
+    "composicao_quimica": "Óxido de ferro (magnetita/maghemita para não tratados; magnetita + hematita para tratados termicamente) ancorado em matriz de sílica mesoporosa SBA-15",
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": true,
+    "anisotropia": "Anisotropia efetiva (Keff) aumentada pelo tratamento térmico, evidenciada pelo aumento da temperatura de bloqueio (TB) de 33,24 K para 82,83 K no primeiro conjunto de NCs, atribuída à melhora da qualidade cristalina e aumento das interações dipolares",
+    "revestimento": "PEI (polietilenoimina) no primeiro conjunto de NCs (SBA15-IO-1); sem revestimento polimérico adicional no segundo conjunto (SBA15-IO-2)",
+    "material_autorregulavel": false,
+    "SAR_W_g": 93.77,
+    "ILP_nHm2_kg": 0.39,
+    "magnetizacao_saturacao_emu_g": 39.53,
+    "relacao_estrutura_propriedade": "O tratamento térmico a 850°C melhorou a cristalinidade das MNPs e aumentou as interações dipolares entre elas, resultando em aumento da magnetização de saturação no primeiro conjunto (de 12,85 para 22,96 Am²/kg a 300 K) e aumento da contribuição de relaxação de Néel. A formação de fases múltiplas (magnetita + hematita) após o tratamento térmico e a remoção do revestimento de PEI intensificaram as interações entre partículas, afetando tanto o desempenho em MRI quanto em MH."
+  },
+  "q4": {
+    "amplitude_kA_m": 15.96,
+    "frequencia_kHz": 986.0,
+    "produto_Hf": 15729600000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 10.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Termômetro de fibra óptica para monitoramento da variação de temperatura ao longo do tempo; SAR calculado pela equação SARMH = (mNP*cNP + msi-mesop*csi-mesop + mwater*cwater)/mNP * (ΔT/Δt)0",
+    "distribuicao_espacial_calor": "A amostra é posicionada no centro de uma bobina oca resfriada a água (MagneTherm, Nanotherics), onde o campo de RF atinge sua intensidade máxima; limitação de difusão de calor dentro da matriz de SiO2 foi identificada como possível fonte de erro na determinação do SAR",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "HeLa (carcinoma cervical humano) e T731-GFP (astrócitos de camundongo)",
+    "modelo_animal": null,
+    "tipo_cancer": "cervical",
+    "concentracao_mg_mL": 0.2,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": true,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": true,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "SAR moderado nos NCs não tratados (0,04 a 3,80 W/g em estudo anterior) e eficiência média como agentes de contraste em MRI",
+      "Ancoragem das MNPs na matriz SBA-15 suprime a contribuição de relaxação de Brown, reduzindo a eficiência de aquecimento",
+      "Redução da área superficial e do volume de poros após o tratamento térmico a 850°C devido à densificação da sílica",
+      "Possível precipitação dos NCs ao longo do tempo e difusão limitada de calor dentro da matriz de SiO2 podem influenciar a determinação precisa do SAR a partir das curvas de aquecimento",
+      "Discrepância entre valores de ILP obtidos por magnetometria AC e por medidas de MH, especialmente para SBA15-IO-2 T (0,43 vs 0,08 nHm²/kg)",
+      "Viabilidade celular abaixo de 80% para SBA15-IO-1 (NCs com PEI) em algumas condições, possivelmente devido à toxicidade do PEI",
+      "Efetividade como agentes de contraste T2 inferior à de agentes comerciais como Resovist e Feridex"
+    ],
+    "problemas_SAR_ILP": true,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Condução de ensaios in vivo em modelos animais após otimização in vitro",
+      "Exploração do potencial dos NCs como sistemas de liberação controlada de fármacos (DDS) combinada com MH e MRI (aplicação teranóstica completa)",
+      "Investigação mais aprofundada dos NCs baseados em SBA-15 como sistemas teranósticos combinando MH e MRI, área ainda não explorada coletivamente em estudos anteriores"
+    ],
+    "gaps_identificados": [
+      "Ausência de investigação coletiva prévia sobre NCs baseados em SBA-15 como sistemas teranósticos combinando MH e MRI",
+      "Necessidade de métodos mais simples e escaláveis para melhorar a eficiência magnética sem sínteses complexas",
+      "Impacto do ambiente biológico complexo (alta viscosidade intracelular) na dinâmica de relaxação das MNPs requer investigação adicional",
+      "Estudos in vivo ainda não realizados para esses NCs específicos"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo demonstra como o tratamento térmico modifica a anisotropia efetiva e as interações dipolares das MNPs, alterando os mecanismos de relaxação magnética (Néel e Brown) e, consequentemente, o desempenho em MH e MRI.",
+    "integracao_engenharia": "Desenvolve um procedimento térmico simples, reprodutível e escalável para otimizar as propriedades magnéticas de nanocompósitos híbridos Fe3O4-SBA-15, aumentando o SAR para até 93,77 W/g e dobrando a relaxividade transversal r2 em MRI.",
+    "integracao_biologia": "Avalia a biocompatibilidade dos NCs em duas linhagens celulares (HeLa e T731-GFP) demonstrando baixa toxicidade em concentrações de até 200 μg/mL, além de confirmar a internalização celular por endocitose não específica.",
+    "integracao_materiais": "Demonstra que o tratamento térmico preserva a estrutura mesoporosa cilíndrica do SBA-15, a morfologia e a estabilidade coloidal dos NCs, enquanto melhora a cristalinidade das MNPs e gera novas fases de óxido de ferro com propriedades magnéticas otimizadas.",
+    "mensagem_principal": "Um tratamento térmico simples a 850°C melhora significativamente o desempenho de nanocompósitos híbridos Fe3O4-SBA-15 tanto em hipertermia magnética (SAR de até 93,77 W/g) quanto em MRI (duplicação da relaxividade r2), por meio do aumento da contribuição de relaxação de Néel e da melhora da cristalinidade das MNPs, preservando a estrutura mesoporosa e a biocompatibilidade do material."
+  },
+  "custom_id": "91__Simple_thermal_treatment_to_improve_the_MRI_and_magnetic_hyp"
+}

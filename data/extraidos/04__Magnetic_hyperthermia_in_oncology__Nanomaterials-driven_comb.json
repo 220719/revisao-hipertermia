@@ -1,0 +1,125 @@
+{
+  "autores": "Xiong et al.",
+  "ano": 2025,
+  "periodico": "Materials Today Bio",
+  "titulo": "Magnetic hyperthermia in oncology: Nanomaterials-driven combinatorial strategies for synergistic therapeutic gains",
+  "doi": "10.1016/j.mtbio.2025.102070",
+  "tipo_estudo": "revisao",
+  "q1": {
+    "conceito_tecnica": "MHT utiliza nanopartículas magnéticas (MNPs) para converter energia de campo magnético alternante (AMF) em calor localizado, elevando a temperatura intratumoral a níveis citotóxicos de forma minimamente invasiva e espacialmente precisa para ablação tumoral.",
+    "etapas_processo": [
+      "Administração das MNPs via injeção intravenosa ou local no tumor",
+      "Acumulação das MNPs no sítio tumoral por direcionamento ativo ou passivo",
+      "Aplicação de campo magnético alternante (AMF) externo",
+      "Conversão de energia eletromagnética em energia térmica pelas MNPs",
+      "Elevação da temperatura intratumoral a níveis citotóxicos (42–46°C)",
+      "Destruição seletiva das células cancerosas"
+    ],
+    "internalizacao_nps": "As MNPs podem ser administradas via injeção intravenosa ou local, acumulando-se no tumor por efeito EPR ou por direcionamento ativo com MNPs funcionalizadas; MNPs funcionalizadas com ligantes (anticorpos, aptâmeros) promovem internalização celular específica.",
+    "aplicacao_campo": "Um AMF externo é aplicado sobre o sítio tumoral, com alta capacidade de penetração tecidual sem atenuação significativa, permitindo o tratamento de tumores profundos.",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": [
+      "apoptose",
+      "necrose",
+      "ferroptose",
+      "imunomodulacao"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": true,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": true,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "Para NPs superparamagnéticas abaixo de 15 nm, a relaxação de Néel é o mecanismo dominante, enquanto partículas maiores são dominadas pela relaxação Browniana; em materiais ferromagnéticos, as perdas por histerese são predominantes.",
+    "descricao_mecanismo": "A geração de calor em materiais magnéticos baseia-se em processos de relaxação em nanoescala e perdas por histerese, conforme descrito por Rosensweig. A relaxação de Néel ocorre em NPs superparamagnéticas, onde o momento magnético se reorienta dentro da rede cristalina contra a energia de anisotropia magnetocristalina, dependendo do volume da partícula e da constante de anisotropia. A relaxação Browniana decorre da rotação física da partícula no meio fluido, governada pelo volume hidrodinâmico e pela viscosidade. Além disso, Rinaldi et al. propuseram o MagMED (magnetically mediated energy delivery), um efeito térmico em nanoescala impulsionado por interações spin-rede em AMFs de alta frequência, permitindo deposição precisa de energia no nível celular."
+  },
+  "q3": {
+    "material": "Fe3O4 (magnetita/SPIONs), ferritas (CoFe2O4, MnFe2O4, NiFe2O4, CuFe2O4), ligas metálicas (FePt, FePd, FeCo), nanopartículas de ouro superparamagnéticas (SPAuNPs)",
+    "composicao_quimica": "Fe3O4; MFe2O4 (M = Co, Mn, Ni, Cu, Zn, Mg); FePt; FePd; Fe-Co; Fe3O4/Au; Fe3O4@SiO2",
+    "dopagem": "Zn, Mn, Co, Ni, Cu, Gd (gadolínio em Gd-IONPs)",
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 3.7,
+    "faixa_tamanho_max_nm": 200.0,
+    "forma": "esférica ou cubo ou haste",
+    "arquitetura_multicore": true,
+    "anisotropia": "anisotropia magnetocristalina; anisotropia de forma (para partículas não esféricas como bastonetes e cubos); anisotropia de superfície",
+    "revestimento": "PEG, quitosana, sílica, ouro, PLGA, dextrana, ácido oleico, PVP, aminosilano (NanoTherm®)",
+    "material_autorregulavel": true,
+    "SAR_W_g": 5000.0,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 90.0,
+    "relacao_estrutura_propriedade": "Partículas abaixo de 20 nm tornam-se superparamagnéticas (SPIONs), exibindo coercividade e remanência zero, o que é ideal para aplicações biomédicas. Formas não esféricas (bastonetes, cubos) apresentam maior anisotropia magnética e maiores perdas por histerese, resultando em valores de SAR significativamente mais elevados em comparação com partículas esféricas."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": null,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Monitoramento intratumoral por sondas de temperatura invasivas (thermal probes) e sondas de fibra óptica; modelagem de fronteira térmica por MRI/CT",
+    "distribuicao_espacial_calor": "A distribuição de calor pode ser heterogênea devido à distribuição irregular das MNPs e à arquitetura vascular desordenada do tumor; injeção multiponto e o efeito bystander térmico são usados para melhorar a uniformidade do aquecimento.",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "4T1, A431, L929, H22, CT26, U87MG, C6",
+    "modelo_animal": "camundongo",
+    "tipo_cancer": "glioblastoma, próstata, mama, melanoma, carcinoma hepatocelular, sarcoma, condrossarcoma",
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": true,
+    "apoptose": true,
+    "necrose": true,
+    "ferroptose": true,
+    "imunomodulacao": true
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Baixa taxa de captação específica das NPs (ex.: NanoTherm® com 738–985 pH·m²·kg⁻¹) exige altas concentrações de ferro",
+      "Artefatos de MRI e vazamento de nanopartículas associados à alta concentração de ferro necessária",
+      "Gradientes de pressão osmótica tumoral exacerbam a redistribuição das NPs, levando a aquecimento fora do alvo",
+      "Hipertermia suave (39–42°C) induz superexpressão de proteínas de choque térmico (HSPs), provocando termoresistência transitória",
+      "Penetração limitada de NIR (5–10 mm) restringe PTT a tumores superficiais",
+      "Distribuição não homogênea do calor em MHT de modalidade única",
+      "Complexidade e alto custo dos dispositivos de AMF",
+      "Termometria invasiva e limitada para monitoramento in vivo",
+      "Acumulação hepática/esplênica de SPIONs tradicionais e riscos de retenção a longo prazo",
+      "Agomeração de NPs durante aplicação de AMF devido à alta energia de superfície e forças magnéticas e de van der Waals"
+    ],
+    "problemas_SAR_ILP": true,
+    "falta_padronizacao": true,
+    "recomendacoes_futuras": [
+      "Padronização de dispositivos de AMF e limites de segurança (revisão do limite de Brezovich para tumores cerebrais)",
+      "Desenvolvimento de estratégias de nanofabricação escalável para MNPs de próxima geração",
+      "Investigação da biosegurança a longo prazo das MNPs in vivo",
+      "Otimização de plataformas de terapia combinada (MHT + PTT, radioterapia, quimioterapia, imunoterapia)",
+      "Desenvolvimento de termometria não invasiva e em tempo real",
+      "Aprofundamento dos estudos sobre a interação entre HT e cuproptose para estratégias integradas"
+    ],
+    "gaps_identificados": [
+      "A interação entre MHT e cuproptose permanece inexplorada",
+      "Informações limitadas sobre a distribuição de MNPs nos tecidos tumorais in vivo",
+      "Falta de padronização nos protocolos de AMF e dosimetria térmica entre estudos clínicos",
+      "Translação clínica limitada de nanomedicamentos baseados em ultrassom e outras modalidades combinadas",
+      "Escassez de ensaios clínicos de grande porte para a maioria das terapias combinadas com MHT"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo descreve os mecanismos físicos de geração de calor (relaxação de Néel e Browniana, perdas por histerese, MagMED) e a relação entre parâmetros de AMF (frequência, amplitude) e eficiência de aquecimento (SAR), fornecendo base física para otimização dos sistemas.",
+    "integracao_engenharia": "O artigo delineia estratégias de engenharia de nanomateriais (síntese, morfologia, revestimento superficial, funcionalização) para otimizar SAR, biodistribuição, estabilidade coloidal e direcionamento tumoral das MNPs, além de abordar desafios de padronização de dispositivos de AMF.",
+    "integracao_biologia": "O artigo mapeia detalhadamente os mecanismos celulares e moleculares de morte celular induzida por MHT (apoptose, necrose, ferroptose, piroptose, cuproptose, necroptose), integrando conceitos do microambiente tumoral (hipóxia, acidez) para explicar a seletividade terapêutica.",
+    "integracao_materiais": "O artigo classifica sistematicamente nanomateriais inorgânicos (ferritas, ligas metálicas, óxidos metálicos), orgânicos (lipossomas, polímeros) e híbridos orgânico-inorgânicos para MHT, relacionando composição química, estrutura e propriedades magnéticas à eficiência terapêutica.",
+    "mensagem_principal": "Este artigo de revisão fornece uma análise abrangente da terapia por hipertermia magnética, desde suas bases históricas e mecanismos de morte celular até os nanomateriais de última geração e estratégias de terapia combinada (com PTT, radioterapia, quimioterapia e imunoterapia), identificando os principais gargalos para a translação clínica e propondo um roteiro para o desenvolvimento de plataformas MHT de próxima geração para oncologia de precisão."
+  },
+  "custom_id": "04__Magnetic_hyperthermia_in_oncology__Nanomaterials-driven_comb"
+}

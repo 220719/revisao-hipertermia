@@ -1,0 +1,118 @@
+{
+  "autores": "Patrick et al.",
+  "ano": 2024,
+  "periodico": "Nanoscale",
+  "titulo": "Improved tumour delivery of iron oxide nanoparticles for magnetic hyperthermia therapy of melanoma via ultrasound guidance and 111In SPECT quantification",
+  "doi": "10.1039/d4nr00240g",
+  "tipo_estudo": "in vivo",
+  "q1": {
+    "conceito_tecnica": "A hipertermia por campo magnético (MFH) baseia-se na entrega intratumoral de nanopartículas magnéticas por injeção intersticial, seguida do aquecimento dessas partículas pela exposição a um campo magnético alternante (AMF) aplicado remotamente. Isso oferece uma rota potencial como tratamento único ou adjuvante para tumores resistentes a medicamentos.",
+    "etapas_processo": [
+      "Entrega intratumoral das nanopartículas magnéticas por injeção intersticial guiada por ultrassom com bomba de seringa",
+      "Quantificação da distribuição das nanopartículas por imagem SPECT com 111In",
+      "Exposição ao campo magnético alternante (AMF) para aquecimento das nanopartículas no tumor",
+      "Monitoramento da temperatura superficial do tumor por câmera infravermelha",
+      "Avaliação do efeito terapêutico por CT"
+    ],
+    "internalizacao_nps": "As nanopartículas são entregues por injeção intersticial direta no tumor, guiada por ultrassom com taxa de infusão controlada por bomba de seringa",
+    "aplicacao_campo": "O AMF é aplicado por uma bobina solenoide de cobre resfriada a água (sistema Preclinical MACH), gerando campos de amplitude até 5,47 kA m−1 e frequência fixa de 940 kHz, no qual o animal anestesiado é posicionado no centro da bobina.",
+    "janela_termica_min_C": 41.0,
+    "janela_termica_max_C": 45.0,
+    "vias_morte_celular": [
+      "apoptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": "null",
+    "mecanismo_dominante": "O aquecimento das nanopartículas magnéticas pelo campo magnético alternante é o mecanismo central, quantificado pelo parâmetro ILP (intrinsic loss power) de aproximadamente 5 nH m2 kgFe−1.",
+    "descricao_mecanismo": "O artigo não descreve em detalhe os mecanismos físicos de relaxação (Néel ou Browniana) nem perdas por histerese. O foco está na aplicação clínica e terapêutica, utilizando o ILP como métrica do desempenho de aquecimento das nanopartículas sob AMF. O SAR resultante no tecido tumoral foi estimado em aproximadamente 0,37 W g−1 para a concentração máxima medida de ferro e o AMF de maior amplitude."
+  },
+  "q3": {
+    "material": "maghemita (γ-Fe2O3) em matriz de dextrana",
+    "composicao_quimica": "γ-Fe2O3 (predominantemente maghemita)",
+    "dopagem": null,
+    "tamanho_nm": 10.0,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": true,
+    "anisotropia": null,
+    "revestimento": "dextrana",
+    "material_autorregulavel": false,
+    "SAR_W_g": 0.37,
+    "ILP_nHm2_kg": 5.0,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "As nanopartículas multicore RCL-01 consistem em núcleos de óxido de ferro de ca. 10 nm encapsulados em uma matriz de dextrana de ca. 140 nm de diâmetro; o processo de rotulagem radioativa não afetou as propriedades magnéticas nem o desempenho de aquecimento das partículas."
+  },
+  "q4": {
+    "amplitude_kA_m": 5.47,
+    "frequencia_kHz": 940.0,
+    "produto_Hf": 5141800000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Câmera de imagem térmica infravermelha (InfraTec VarioCAM HR Research 780) para monitoramento da temperatura superficial do tumor; sonda retal para temperatura corporal; sonda de fibra óptica fluoróptica para medição in vitro",
+    "distribuicao_espacial_calor": "Aquecimento localizado nos tumores injetados com RCL-01; tumores contralaterais não injetados não apresentaram aumento de temperatura mensurável durante a exposição ao AMF",
+    "padronizacao_reportada": true
+  },
+  "q5": {
+    "tipo_estudo": "in vivo",
+    "linhagem_celular": "A-375 (melanoma maligno humano)",
+    "modelo_animal": "camundongo SCID",
+    "tipo_cancer": "melanoma",
+    "concentracao_mg_mL": 75.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": true,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": true
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Percentagem modesta do dose-alvo (<50%) entregue intratumoralmente mesmo após otimização",
+      "Refluxo frequente do material de injeção ao longo da agulha e para fora do sítio de inserção",
+      "Uso de taxa de injeção única (5 µL min−1) sem comparação sistemática com outras taxas no estudo",
+      "Modelo animal imunocomprometido impediu combinação com imunoterapia",
+      "Protocolo de AMF contínuo básico, sem uso de campo pulsado que poderia melhorar resultados",
+      "Meia-vida do 111In (~3 dias) limita rastreamento a aproximadamente 2 semanas"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Uso de pontas de agulha com múltiplos orifícios (convection-enhanced) para reduzir refluxo",
+      "Estratégias para reduzir pressão intersticial tumoral e melhorar entrega",
+      "Uso de protocolo de campo pulsado para melhorar equilíbrio entre aquecimento tumoral e preservação de tecido saudável",
+      "Aplicação em modelos tumorais ortotópicos mais representativos",
+      "Combinação com imunoterapia em modelos imunocompetentes",
+      "Uso de 89Zr-PET para rastreamento clínico de longo prazo",
+      "Avaliação em coortes de pacientes representativos"
+    ],
+    "gaps_identificados": [
+      "Falta de métodos estabelecidos para quantificação não-invasiva da biodistribuição de nanopartículas in vivo",
+      "Ausência de estudos clínicos combinando hipertermia com imunoterapia para melanoma",
+      "Limitada disponibilidade clínica do MPI para quantificação de nanopartículas",
+      "Relação complexa entre degradação de nanopartículas e sinal MPI in vivo ainda não totalmente compreendida",
+      "Taxas de injeção ótimas podem variar entre tipos tumorais e entre modelos pré-clínicos e tumores humanos"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo utilizou o parâmetro ILP para caracterizar o desempenho de aquecimento das nanopartículas e calculou o SAR no tecido tumoral em função da concentração de ferro e dos parâmetros do AMF aplicado.",
+    "integracao_engenharia": "Desenvolveu-se uma estratégia de entrega image-guided combinando ultrassom em tempo real com infusão controlada por bomba de seringa para otimizar a precisão e eficácia da administração intratumoral de nanopartículas.",
+    "integracao_biologia": "O estudo demonstrou redução significativa do volume tumoral de melanoma in vivo após tratamento por hipertermia magnética, com correlação entre temperatura superficial de pico e resposta terapêutica.",
+    "integracao_materiais": "As nanopartículas multicore RCL-01 (γ-Fe2O3 em dextrana) foram radiorrotuladas com 111In via radio-mineralização superficial sem alteração das propriedades magnéticas ou de aquecimento, permitindo rastreamento quantitativo in vivo.",
+    "mensagem_principal": "A entrega guiada por ultrassom com infusão controlada por bomba de seringa melhora significativamente a precisão e eficácia da administração intratumoral de nanopartículas de óxido de ferro para hipertermia magnética em modelo de melanoma, e a quantificação não-invasiva por SPECT com 111In valida esta estratégia e confirma que a entrega off-target está dentro dos limites de segurança clínica."
+  },
+  "custom_id": "84__Improved_tumour_delivery_of_iron_oxide_nanoparticles_for_mag"
+}

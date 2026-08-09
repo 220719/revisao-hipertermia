@@ -1,0 +1,115 @@
+{
+  "autores": "Lu et al.",
+  "ano": 2024,
+  "periodico": "Pharmacological Research",
+  "titulo": "Design of the distribution of iron oxide (Fe3O4) nano-particle drug in realistic cholangiocarcinoma model and the simulation of temperature increase during magnetic induction hyperthermia",
+  "doi": "10.1016/j.phrs.2024.107333",
+  "tipo_estudo": "in silico",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (MHT) é induzida por nanopartículas magnéticas (MNPs) pré-introduzidas no tumor que, sob exposição a um campo magnético alternante (AMF) externo, geram calor elevando a temperatura interna do tumor em mais de 3–10°C, inibindo o crescimento tumoral ou destruindo o tecido neoplásico.",
+    "etapas_processo": [
+      "Introdução das MNPs de Fe3O4 no tumor (distribuição intratumoral multipontual)",
+      "Aplicação de campo magnético alternante (AMF) externo via bobinas de Helmholtz",
+      "Geração de calor pelas MNPs por relaxação de Neel e Browniana",
+      "Transferência de calor para o tecido tumoral descrita pela equação de biocalor de Pennes",
+      "Monitoramento e ajuste da distribuição de temperatura para garantir eficácia terapêutica e segurança dos tecidos adjacentes"
+    ],
+    "internalizacao_nps": "As MNPs são introduzidas diretamente no tumor por injeção intratumoral, com distribuição em múltiplos pontos representados como esferas de raio menor que 3 mm, simulando estado uniforme de baixa taxa de infiltração",
+    "aplicacao_campo": "O AMF é aplicado externamente por bobinas de Helmholtz que geram campo magnético uniforme com corrente alternada de 20 A a 100 kHz, resultando em intensidade de campo de aproximadamente 12.000 A/m na região tumoral.",
+    "janela_termica_min_C": 41.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": false,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": "senoidal",
+    "mecanismo_dominante": "A geração de calor nas MNPs ocorre predominantemente pela combinação de relaxação de Neel e rotação Browniana sob campo magnético alternante, descrita pela equação de Rosensweig.",
+    "descricao_mecanismo": "A exposição das MNPs e seus momentos magnéticos a um campo variante no tempo leva à geração de calor por rotação Browniana e relaxação de Neel, cujos tempos característicos são descritos respectivamente por τB = 3ηVH/kT e τN = τ0·exp(KV/kT). A potência de perda térmica é avaliada pela expressão de Rosensweig: P = μ0·f·H0²·π·χ'', onde χ'' é a parte imaginária da susceptibilidade magnética dependente do tempo efetivo de relaxação τeff = (τN·τB)/(τN + τB)."
+  },
+  "q3": {
+    "material": "Fe3O4",
+    "composicao_quimica": "Fe3O4 (magnetita)",
+    "dopagem": null,
+    "tamanho_nm": 19.0,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia efetiva de forma (constante K = 1,0×10⁴ J/m³)",
+    "revestimento": null,
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "O raio das MNPs (9,5×10⁻⁹ m) e o volume hidrodinâmico determinam os tempos de relaxação de Neel e Browniana, que por sua vez definem a potência de calor gerada sob o AMF aplicado conforme a teoria de Rosensweig."
+  },
+  "q4": {
+    "amplitude_kA_m": 12.0,
+    "frequencia_kHz": 100.0,
+    "produto_Hf": 1200000000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": "senoidal",
+    "dosimetria_termica": "Simulação numérica por elementos finitos no COMSOL Multiphysics usando a equação de biocalor de Pennes acoplada ao modelo de geração de calor de Rosensweig",
+    "distribuicao_espacial_calor": "Distribuição não uniforme com temperatura mais elevada no centro de cada ponto de distribuição de MNPs e nas regiões de sobreposição entre pontos adjacentes, decrescendo em direção às bordas do tumor e tecidos normais circundantes",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in silico",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": "colangiocarcinoma",
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "O sistema completo construído ainda não foi submetido a testes clínicos",
+      "O modelo foi desenvolvido com dados de imagem de apenas um paciente",
+      "Modelos de tumores subcutâneos em camundongos não reproduzem fielmente o processo de MHT em humanos",
+      "Parâmetros dielétricos da bile no ducto biliar em 100 kHz não estão disponíveis na literatura",
+      "Transferência de calor convectiva nos grandes vasos profundos não foi incluída no cálculo do modelo",
+      "Dados ausentes sobre propriedades dielétricas de diferentes tumores em diferentes frequências",
+      "Distribuição controlável de MNPs em tumores profundos permanece um desafio técnico"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Iniciar estudos pré-clínicos com modelos animais antes da aplicação clínica",
+      "Obter dados dielétricos e termodinâmicos ausentes para bile e diferentes tipos tumorais em diferentes frequências",
+      "Avaliar o impacto da transferência de calor convectiva em grandes vasos profundos nos resultados da MHT para CCA",
+      "Desenvolver estratégias para distribuição controlável de MNPs em tumores profundos",
+      "Expandir o sistema de simulação para outros pacientes utilizando seus dados de TC e RM individuais"
+    ],
+    "gaps_identificados": [
+      "Ausência de parâmetros dielétricos da bile in vivo a 100 kHz na literatura existente",
+      "Falta de modelos realistas tridimensionais de tumores profundos em simulações de MHT",
+      "Escassez de estudos de MHT especificamente para colangiocarcinoma",
+      "Lacuna entre modelos de simulação matemática e validação clínica da MHT",
+      "Estratégias individualizadas de distribuição de MNPs específicas para tumor raramente consideradas na prática clínica"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo aplica as equações de Maxwell para modelagem do campo eletromagnético das bobinas de Helmholtz e a teoria de Rosensweig para calcular a geração de calor nas MNPs sob AMF.",
+    "integracao_engenharia": "Utilizou-se análise de elementos finitos no COMSOL Multiphysics para simulação acoplada dos campos magnético, térmico e de transferência de calor em modelos 3D realistas de anatomia humana reconstruídos a partir de imagens clínicas.",
+    "integracao_biologia": "O modelo incorpora parâmetros biológicos reais como perfusão sanguínea, metabolismo tecidual e propriedades termodinâmicas de diferentes tecidos e órgãos adjacentes ao tumor, avaliando segurança térmica para estruturas vitais.",
+    "integracao_materiais": "Fe3O4 aprovado pela FDA foi utilizado como agente de aquecimento, com suas propriedades magnéticas (magnetização de domínio, anisotropia efetiva, volume hidrodinâmico) parametrizadas no modelo para calcular a geração de calor.",
+    "mensagem_principal": "Este estudo demonstra a viabilidade de um sistema integrado de simulação pré-operatória personalizada para MHT de colangiocarcinoma, combinando reconstrução 3D de imagens clínicas reais com cálculo numérico de distribuição de MNPs e transferência de calor, permitindo planejar estratégias individualizadas de administração do fármaco magnético que garantam eficácia terapêutica e segurança dos órgãos adjacentes em tumores profundos."
+  },
+  "custom_id": "82__Design_of_the_distribution_of_iron_oxide__Fe3O4__nano-partic"
+}

@@ -1,0 +1,110 @@
+{
+  "autores": "Tewari et al.",
+  "ano": 2023,
+  "periodico": "Results in Engineering",
+  "titulo": "Magnetic hyperthermia cancer therapy using rare earth metal-based nanoparticles: An investigation of Lanthanum strontium Manganite's hyperthermic properties",
+  "doi": "10.1016/j.rineng.2023.101537",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética é uma técnica que utiliza nanopartículas magnéticas para gerar calor localizado dentro das células tumorais, levando à sua destruição seletiva mediante exposição a um campo magnético alternante (AMF).",
+    "etapas_processo": [
+      "Injeção de nanopartículas magnéticas biocompatíveis no corpo",
+      "Acumulação das nanopartículas no sítio tumoral",
+      "Exposição ao campo magnético alternante (AMF)",
+      "Geração de calor localizado por relaxação de Néel, relaxação Browniana e perdas por histerese",
+      "Elevação da temperatura na região tumoral para a janela hipertérmica",
+      "Morte celular seletiva por apoptose"
+    ],
+    "internalizacao_nps": "As nanopartículas podem ser funcionalizadas com moléculas específicas para aumentar o direcionamento às células cancerígenas e se acumulam no sítio tumoral após injeção",
+    "aplicacao_campo": "Um campo magnético alternante (AMF) é aplicado externamente sobre a região tumoral, induzindo oscilações rápidas nas nanopartículas e consequente geração de calor localizado.",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 45.0,
+    "vias_morte_celular": [
+      "apoptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": true,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O artigo menciona os três mecanismos (relaxação de Néel, relaxação Browniana e perdas por histerese) sem designar explicitamente um como dominante.",
+    "descricao_mecanismo": "A exposição ao AMF induz oscilações rápidas nas nanopartículas, gerando calor por relaxação de Néel, relaxação Browniana e perdas por histerese. As perdas por histerese ocorrem quando materiais magnéticos exibem um atraso na resposta às mudanças no campo magnético aplicado, resultando em dissipação de energia na forma de calor. As curvas de histerese estreitas observadas nas nanopartículas LSMO indicam magnetismo suave, com baixa coercividade e baixa remanência, desejáveis para aplicações biológicas."
+  },
+  "q3": {
+    "material": "Lanthanum Strontium Manganite (LSMO)",
+    "composicao_quimica": "La0.7Sr0.3MnO3",
+    "dopagem": "Estrôncio (Sr) substituindo La em LaMnO3",
+    "tamanho_nm": 25.71,
+    "faixa_tamanho_min_nm": 25.0,
+    "faixa_tamanho_max_nm": 35.0,
+    "forma": null,
+    "arquitetura_multicore": false,
+    "anisotropia": null,
+    "revestimento": "sílica",
+    "material_autorregulavel": true,
+    "SAR_W_g": 158.4,
+    "ILP_nHm2_kg": 1.98,
+    "magnetizacao_saturacao_emu_g": 29.0,
+    "relacao_estrutura_propriedade": "A substituição de La por Sr converte íons Mn3+ em Mn4+, modificando as propriedades magnéticas e a temperatura de Curie do material; o revestimento de sílica reduz a magnetização de saturação (de 38,9 para 29 emu/g) devido à sua natureza não magnética, mas melhora a biocompatibilidade e a estabilidade coloidal."
+  },
+  "q4": {
+    "amplitude_kA_m": 12.97,
+    "frequencia_kHz": 335.0,
+    "produto_Hf": 4342450000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Sonda de fibra óptica para medição da temperatura; ajuste da curva pelo método Box-Lucas para cálculo do SAR",
+    "distribuicao_espacial_calor": "Geração de calor localizada na região tumoral onde as nanopartículas se acumulam",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "MG-63 (osteossarcoma humano) e L929 (fibroblasto murino)",
+    "modelo_animal": null,
+    "tipo_cancer": "osteossarcoma",
+    "concentracao_mg_mL": 1.0,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": true,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Estudo limitado a avaliação in vitro, sem experimentos in vivo",
+      "Baixo valor de ILP (1,98 nHm2/kg) quando comparado a nanopartículas de óxido de ferro amplamente utilizadas",
+      "Magnetização de saturação relativamente baixa (29 emu/g) após revestimento com sílica"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Pesquisas futuras para investigar funcionalização com ligantes específicos para targeting de células cancerígenas",
+      "Investigação mais aprofundada da química de superfície para funcionalização ligante-específica",
+      "Avanço para estudos in vivo para validação terapêutica"
+    ],
+    "gaps_identificados": [
+      "Ausência de estudos in vivo para validar a eficácia terapêutica observada in vitro",
+      "Falta de avaliação da biodistribuição e farmacocinética das nanopartículas",
+      "Necessidade de otimização adicional dos parâmetros de campo para maximizar o SAR dentro dos limites de segurança"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo contribui para a física ao demonstrar que nanopartículas LSMO com estrutura perovskita rombohédrica e curvas de histerese estreitas satisfazem o critério de Brezovich para segurança biológica, gerando calor suficiente para hipertermia dentro dos limites recomendados.",
+    "integracao_engenharia": "O estudo apresenta uma rota de síntese otimizada via sol-gel de citrato modificado e revestimento de sílica pelo método Stöber, resultando em nanopartículas com SAR de 158,4 W/g e estabilidade coloidal adequada para aplicações biomédicas.",
+    "integracao_biologia": "A avaliação biológica demonstrou biocompatibilidade excelente (viabilidade >70% em até 1 mg/ml) e indução de morte celular por apoptose via upregulação de caspase-3 e produção de ROS em células MG-63 de osteossarcoma após tratamento hipertérmico.",
+    "integracao_materiais": "O revestimento de sílica sobre o núcleo LSMO foi caracterizado em profundidade por XPS pela primeira vez, revelando alterações na química de superfície que impactam a biocompatibilidade e abrem caminho para funcionalização futura.",
+    "mensagem_principal": "Nanopartículas de La0.7Sr0.3MnO3 revestidas com sílica (Si-LSMO) apresentam propriedades magnéticas, hipertérmicas e de biocompatibilidade adequadas para terapia de hipertermia magnética em câncer, induzindo morte celular por apoptose em células de osteossarcoma dentro dos limites de segurança estabelecidos para aplicações biológicas."
+  },
+  "custom_id": "95__Magnetic_hyperthermia_cancer_therapy_using_rare_earth_metal-"
+}

@@ -1,0 +1,115 @@
+{
+  "autores": "Arica et al.",
+  "ano": 2026,
+  "periodico": "Nanoscale",
+  "titulo": "Iron oxide nanocube assembly on silver nanowire templates to enhance magnetic hyperthermia performance",
+  "doi": "10.1039/d5nr03252k",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A terapia por hipertermia magnética (MHT) usa nanopartículas magnéticas para gerar calor dentro de tumores sob um campo magnético alternado (AMF) aplicado externamente. As nanopartículas dissipam calor, elevando a temperatura do tumor de 37 °C para uma faixa terapêutica de 42–46 °C, causando danos às células cancerosas.",
+    "etapas_processo": [
+      "Síntese de nanocubos de óxido de ferro (IONCs) pelo método solvotermal",
+      "Funcionalização da superfície dos IONCs com PEI (polietilenimina) via clivagem oxidativa do ácido oleico e adsorção eletrostática",
+      "Síntese de nanofios de prata (AgNWs) pelo método poliol",
+      "Montagem dos IONCs@PEI sobre a superfície dos AgNWs por atração eletrostática",
+      "Aplicação de campo magnético alternado (AMF) para geração de calor pelas estruturas compostas"
+    ],
+    "internalizacao_nps": "Não mencionada no artigo; o estudo foca na montagem das NPs sobre templates de AgNW e na medição de propriedades magnéticas por magnetometria AC, sem descrever internalização celular.",
+    "aplicacao_campo": "O campo magnético alternado (AMF) é aplicado externamente às dispersões de nanopartículas usando um magnetômetro AC em frequências de 110, 200 e 300 kHz e amplitudes de 12, 16 e 24 kA m−1.",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": [
+      "dano mecânico",
+      "dano à membrana celular por calor localizado",
+      "produção de espécies reativas de oxigênio (ROS)"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": true,
+    "perdas_histerese": true,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": "senoidal",
+    "mecanismo_dominante": "Perdas por histerese magnética amplificadas por acoplamento dipolar entre nanocubos organizados em estruturas tipo cadeia sobre os nanofios de prata.",
+    "descricao_mecanismo": "O acoplamento dipolar entre os momentos magnéticos das nanopartículas organizadas em estrutura de cadeia aumenta a barreira de energia efetiva, resultando em maior campo coercivo e maior área do loop de histerese. O aumento do campo coercivo (Hc) e da razão Mr/Ms acima de 0,5 indicam acoplamento magnético coletivo característico de arranjo em cadeia. A dissipação de energia ocorre pelo ciclo do loop de histerese dinâmico, e o SAR é calculado como o produto da área do loop pela frequência dividido pela concentração de Fe."
+  },
+  "q3": {
+    "material": "Fe3O4 (magnetita)",
+    "composicao_quimica": "Fe3O4",
+    "dopagem": null,
+    "tamanho_nm": 15.0,
+    "faixa_tamanho_min_nm": 14.0,
+    "faixa_tamanho_max_nm": 16.0,
+    "forma": "cubo",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia de forma (shape anisotropy) dos nanocubos, com eixo de fácil magnetização ao longo do eixo longo; anisotropia efetiva aumentada por interações dipolares na estrutura de cadeia",
+    "revestimento": "PEI (polietilenimina) como revestimento final; intermediário com grupos carboxílicos (ácido azelaico)",
+    "material_autorregulavel": false,
+    "SAR_W_g": 675.0,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "A morfologia cúbica dos IONCs confere anisotropia de forma que aumenta o SAR em relação a partículas esféricas. A montagem em estruturas tipo cadeia sobre os AgNWs aumenta ainda mais o campo coercivo e a área do loop de histerese via acoplamento dipolar, elevando o SAR a 24 kA m−1 em relação às nanopartículas individuais."
+  },
+  "q4": {
+    "amplitude_kA_m": 24.0,
+    "frequencia_kHz": 300.0,
+    "produto_Hf": 7200000000.0,
+    "dentro_limite_seguranca": false,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": "senoidal",
+    "dosimetria_termica": "Magnetometria AC (área do loop de histerese × frequência / concentração de Fe) e medições calorimétricas com sonda de temperatura de fibra óptica",
+    "distribuicao_espacial_calor": "Não descrita espacialmente; medições realizadas em dispersão homogênea de 100 µL a 0,125 g L−1 de Ag e 0,05 g L−1 de Fe",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": 0.15,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": true,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Os IONCs@PEI não estão perfeitamente alinhados ao longo dos AgNWs, apresentando agrupamentos localizados e lacunas entre as cadeias",
+      "Campos magnéticos baixos (12 e 16 kA m−1) são insuficientes para induzir a estrutura tipo cadeia nos compósitos AgNWs@IONCs@PEI",
+      "A condição de 24 kA m−1 a 300 kHz ultrapassa o limite clínico de segurança (HACf ≤ 5 × 109 A m−1 s−1)",
+      "Os compósitos AgNWs@IONCs@PEI sedimentam em horas em água e exibem agregação rápida em DMEM completo",
+      "A biotoxicidade relacionada à prata (liberação de Ag+) limita as aplicações biomédicas dos AgNWs",
+      "O estudo é de prova de conceito, sem avaliação in vitro ou in vivo de eficácia antitumoral"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Incorporar os compósitos AgNWs@IONCs@PEI em hidrogel ou matriz polimérica para administração intratumoral localizada e controlável",
+      "Explorar AgNWs como templates sacrificiais a serem removidos para obter estruturas 1D de óxido de ferro livres de prata",
+      "Investigar aplicações tópicas como no melanoma cutâneo aproveitando a atividade anticancerígena intrínseca dos AgNWs",
+      "Otimizar o alinhamento das cadeias de IONCs sobre os templates para maximizar as interações dipolares"
+    ],
+    "gaps_identificados": [
+      "Falta de estudos sobre propriedades magnéticas dinâmicas e perdas de calor de nanopartículas superparamagnéticas em arranjos tipo cadeia sobre templates 1D",
+      "Ausência de avaliação de citotoxicidade e eficácia antitumoral in vitro ou in vivo dos compósitos",
+      "Efeito da espaço entre partículas e incompletude das cadeias sobre as interações dipolares e o SAR não totalmente resolvido"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo demonstra que o acoplamento dipolar induzido pelo arranjo em cadeia dos IONCs sobre AgNWs aumenta significativamente o campo coercivo e a área do loop de histerese dinâmico, ampliando as perdas de energia magnética e o SAR.",
+    "integracao_engenharia": "O uso de nanofios de prata como templates anisotrópicos de alta razão de aspecto permite a montagem controlada de nanocubos magnéticos em estruturas de cadeia de longo alcance (> 1 µm), representando uma abordagem inovadora de nanofabricação para hipertermia.",
+    "integracao_biologia": "O artigo discute a atividade anticancerígena intrínseca dos AgNWs por indução de apoptose mediada por ROS e avalia a liberação de íons Ag+ em condições fisiológicas relevantes (pH 6,5, simulando o microambiente tumoral).",
+    "integracao_materiais": "A funcionalização sequencial dos IONCs com grupos carboxílicos e PEI, e a interação eletrostática com AgNWs estabilizados por PVP, demonstra como o controle de carga superficial dirige a auto-montagem de nanocompósitos híbridos com propriedades magnéticas aprimoradas.",
+    "mensagem_principal": "A montagem de nanocubos de óxido de ferro funcionalizados com PEI sobre nanofios de prata como templates 1D cria estruturas de cadeia de longo alcance que, por acoplamento dipolar, aumentam o campo coercivo e o SAR em até 18% em relação às nanopartículas individuais quando um campo de 24 kA m−1 é aplicado, demonstrando que o controle arquitetural da organização de nanopartículas é uma estratégia eficaz para melhorar o desempenho da hipertermia magnética."
+  },
+  "custom_id": "14__Iron_oxide_nanocube_assembly_on_silver_nanowire"
+}

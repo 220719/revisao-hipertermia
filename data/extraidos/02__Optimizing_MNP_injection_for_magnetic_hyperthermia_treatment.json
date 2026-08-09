@@ -1,0 +1,116 @@
+{
+  "autores": "Jiang et al.",
+  "ano": 2026,
+  "periodico": "International Journal of Thermal Sciences",
+  "titulo": "Optimizing MNP injection for magnetic hyperthermia treatment: A three-dimensional study",
+  "doi": "10.1016/j.ijthermalsci.2026.110889",
+  "tipo_estudo": "in silico",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética é uma terapia térmica localizada para câncer que eleva a temperatura do tumor a aproximadamente 43°C ou mais pela exposição de nanopartículas magnéticas injetadas a um campo magnético alternante de alta frequência (AMF), induzindo dano à membrana celular e desnaturação proteica enquanto preserva o tecido saudável adjacente.",
+    "etapas_processo": [
+      "Injeção de nanopartículas magnéticas (MNPs) no tumor",
+      "Difusão das MNPs no tecido durante o tempo de espera antes da aplicação do AMF",
+      "Aplicação do campo magnético alternante (AMF) externo de alta frequência",
+      "Geração de calor pelas MNPs via relaxação de Néel e Browniana",
+      "Elevação da temperatura tumoral para a faixa terapêutica (43–46°C)",
+      "Ablação das células tumorais por dano à membrana e desnaturação proteica"
+    ],
+    "internalizacao_nps": "As MNPs são injetadas diretamente no tumor e se distribuem por difusão, seguindo uma distribuição gaussiana 3D com variância dependente do tempo de espera e da difusividade das partículas no tecido.",
+    "aplicacao_campo": "Um AMF espacialmente uniforme é aplicado em todo o bloco de tecido, com amplitude H0 = 8×10³ A/m e frequência f = 4×10⁵ Hz, assumindo uniformidade espacial devido ao pequeno volume de tecido investigado em relação à escala de variação espacial do campo.",
+    "janela_termica_min_C": 43.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": [
+      "dano à membrana celular",
+      "desnaturação proteica"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": false,
+    "interacoes_coletivas": false,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "As perdas por relaxação (relaxação de Néel e Browniana) são o mecanismo dominante de aquecimento devido ao comportamento superparamagnético das MNPs utilizadas.",
+    "descricao_mecanismo": "A relaxação de Néel corresponde à reorientação do momento magnético dentro da rede cristalina da partícula, enquanto a relaxação Browniana surge da rotação física de toda a partícula no meio suporte. O calor gerado por esses mecanismos é estimado pelo modelo de Rosensweig, que contabiliza ambas as perdas por relaxação e é influenciado pela fração volumétrica local das MNPs. O modelo de Rosensweig é dado por Q = πμ₀χ₀φH₀²f · (2πfτR) / [1 + (2πfτR)²], onde τR é o tempo de relaxação efetivo."
+  },
+  "q3": {
+    "material": "Fe3O4",
+    "composicao_quimica": "Fe3O4 (magnetita)",
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": null,
+    "anisotropia": null,
+    "revestimento": null,
+    "material_autorregulavel": null,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "As MNPs de magnetita (Fe3O4) apresentam comportamento superparamagnético nos tamanhos tipicamente utilizados em aplicações terapêuticas, o que estabelece as perdas por relaxação como mecanismo dominante de aquecimento. A fração volumétrica local das MNPs influencia diretamente as propriedades térmicas do nanofluid e a densidade de geração de calor pelo modelo de Rosensweig."
+  },
+  "q4": {
+    "amplitude_kA_m": 8.0,
+    "frequencia_kHz": 400.0,
+    "produto_Hf": 3200000000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": "Equação de biocalor de Pennes (PBHTE) resolvida pelo método de Boltzmann em rede (D3Q7 MRT-LBM), com monitoramento das distribuições de temperatura no tumor e tecido saudável",
+    "distribuicao_espacial_calor": "O calor é gerado proporcionalmente à fração volumétrica local das MNPs, seguindo distribuição gaussiana 3D resultante da difusão a partir dos sítios de injeção; a distribuição espacial é não-uniforme e dependente do número de sítios de injeção e do tempo de espera.",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in silico",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Os três modelos tumorais são simplificados e não replicam completamente cada tumor real devido às suas características únicas",
+      "Uso de geometrias tumorais simplificadas (combinações de esferas) que podem não capturar toda a complexidade morfológica clínica",
+      "Propriedades térmicas constantes assumidas para tumor e tecidos saudáveis",
+      "Modelo empírico para perfusão sanguínea pode limitar a fidelidade da aproximação às condições clínicas",
+      "0,4% das células tumorais permanecem não destruídas e 0,1% do tecido saudável é afetado no cenário com tumor irregular complexo",
+      "Estudo restrito a configurações tridimensionais simuladas, sem validação experimental direta para os modelos de otimização propostos"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Integrar análise topológica para determinação eficiente do modelo computacional mais representativo do tumor real",
+      "Permitir ajuste dinâmico do número de injeções durante o processo de otimização, aumentando injeções em regiões não abladas e reduzindo em áreas onde tecido saudável é afetado",
+      "Refinar as propriedades térmicas do tumor e tecido saudável para maior fidelidade às condições clínicas",
+      "Melhorar o modelo de perfusão sanguínea para melhor aproximação clínica",
+      "Investigar cenários clínicos complexos, como tumores adjacentes a vasos sanguíneos, osso ou superfície da pele"
+    ],
+    "gaps_identificados": [
+      "Estudos de otimização da distribuição de MNPs em configurações totalmente 3D permanecem limitados",
+      "Necessidade de pesquisa dedicada de otimização de injeção em 3D para melhor aproximar condições clínicas com geometrias tumorais irregulares",
+      "Ausência de consideração da evolução temporal das MNPs durante o tratamento nos estudos anteriores de otimização 3D"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo aplica o modelo de Rosensweig para quantificar a geração de calor por relaxação magnética e a equação de biocalor de Pennes em 3D para modelar a transferência de calor em tecidos biológicos com perfusão sanguínea.",
+    "integracao_engenharia": "Um framework de otimização 3D baseado no algoritmo PSO (Particle Swarm Optimization) foi desenvolvido e implementado com aceleração em GPU (NVIDIA RTX 3090) para determinar estratégias ótimas de injeção de MNPs em modelos tumorais de geometria crescente.",
+    "integracao_biologia": "O estudo considera perfusão sanguínea temperatura-dependente, toxicidade das MNPs por acúmulo excessivo de ferro, limiares térmicos para ablação celular (43°C) e resposta inflamatória (46°C), e valida o framework contra experimentos de hipertermia em fígado de coelho.",
+    "integracao_materiais": "Nanopartículas de magnetita (Fe3O4) com comportamento superparamagnético são modeladas como nanofluid no tecido, com suas propriedades térmicas efetivas influenciadas pela fração volumétrica local e distribuição gaussiana resultante da difusão no tecido.",
+    "mensagem_principal": "O número ótimo de sítios de injeção de MNPs correlaciona-se com o número de esferas conectadas que compõem a geometria tumoral, e os vetores do centro do tumor aos sítios ótimos de injeção alinham-se fortemente com os vetores aos centros dessas esferas, fornecendo diretrizes práticas e clinicamente relevantes para o planejamento de tratamentos de hipertermia magnética em tumores irregulares 3D."
+  },
+  "custom_id": "02__Optimizing_MNP_injection_for_magnetic_hyperthermia_treatment"
+}

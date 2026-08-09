@@ -1,0 +1,112 @@
+{
+  "autores": "Lv et al.",
+  "ano": 2026,
+  "periodico": "Pharmaceutics",
+  "titulo": "Repurposing Conventional Magnetic Functional Agents: A Novel Strategy for Long-Acting, Safe, Magnetically Mediated Precision Oncology",
+  "doi": "10.3390/pharmaceutics18030319",
+  "tipo_estudo": "in vivo",
+  "q1": {
+    "conceito_tecnica": "O artigo não utiliza hipertermia magnética como abordagem terapêutica principal; em vez disso, propõe o uso de agentes magnéticos (Fe3O4 e gadopentetic acid) como amplificadores do efeito de campo magnético de baixa frequência (20 Hz, 50 mT) para suprimir a angiogênese tumoral por efeitos físicos não térmicos.",
+    "etapas_processo": [
+      "Injeção intratumoral de Fe3O4 NPs ou gadopentetic acid (GA) no modelo de glioma em camundongos",
+      "Aplicação de campo magnético alternado externo (20 Hz, 50 mT) por 4 horas diárias",
+      "Alinhamento dos dipolos magnéticos (Fe3O4) ou elétrons desemparelhados (GA) com o campo externo, gerando campo local adicional co-direcional",
+      "Amplificação do efeito do campo magnético local no microambiente tumoral",
+      "Disrupção da vasculatura tumoral com redução de CD31 e MVD",
+      "Supressão do fornecimento de nutrientes e oxigênio ao tumor resultando em inibição do crescimento tumoral"
+    ],
+    "internalizacao_nps": "As NPs de Fe3O4 e GA foram administradas por injeção intratumoral direta (50 µL), não sendo descrita internalização celular ativa como mecanismo relevante para o efeito terapêutico proposto.",
+    "aplicacao_campo": "O campo magnético alternado (20 Hz, 50 mT) foi aplicado por um dispositivo gerador de campo magnético caseiro (CN120919537A) durante 4 horas por dia, do dia 1 ao dia 9 pós-agrupamento.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": [
+      "necrose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": false,
+    "forma_onda_campo": "senoidal",
+    "mecanismo_dominante": "Amplificação local do campo magnético externo pelos materiais magnéticos (Fe3O4 superparamagnético e GA paramagnético), gerando um campo adicional co-direcional que intensifica o efeito disruptivo do campo magnético sobre a vasculatura tumoral por mecanismo não térmico.",
+    "descricao_mecanismo": "Os dipolos espontaneamente magnetizados do Fe3O4 e os elétrons desemparelhados do GA se alinham com o campo magnético externo aplicado, gerando uma magnetização local paralela ao campo externo que amplifica a intensidade do campo magnético local por superposição. Para materiais superparamagnéticos (Fe3O4), partículas de domínio único com alto momento magnético se alinham eficientemente, produzindo forte magnetização e amplificação significativa do campo local. Para materiais paramagnéticos (GA), os momentos magnéticos atômicos/moleculares individuais são extremamente fracos, resultando em baixa magnetização geral e amplificação modesta, porém suficiente para potencializar o efeito terapêutico do campo magnético."
+  },
+  "q3": {
+    "material": "Fe3O4",
+    "composicao_quimica": "Fe3O4 (nanopartículas de óxido de ferro); gadopentetic acid (GA, contendo íons Gd3+)",
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 100.0,
+    "faixa_tamanho_max_nm": 300.0,
+    "forma": null,
+    "arquitetura_multicore": null,
+    "anisotropia": null,
+    "revestimento": null,
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "As nanopartículas de Fe3O4 superparamagnéticas possuem mecanismo de magnetização originado do alinhamento direcional dos momentos magnéticos totais de partículas de domínio único, permitindo forte amplificação do campo magnético local; em contraste, o GA paramagnético possui momentos magnéticos atômicos/moleculares individuais extremamente fracos, resultando em amplificação modesta, o que explica a maior eficácia terapêutica do Fe3O4 (TGI 64%) em comparação ao GA (TGI 55%)."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": 0.02,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 240.0,
+    "forma_onda": "senoidal",
+    "dosimetria_termica": null,
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vivo",
+    "linhagem_celular": "CT-2A",
+    "modelo_animal": "camundongo",
+    "tipo_cancer": "glioblastoma",
+    "concentracao_mg_mL": 5.0,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": true,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": true
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "A intensidade do campo magnético diminui com a profundidade de penetração no tecido, resultando em intensidade insuficiente nos sítios-alvo para tumores profundos",
+      "O estudo foi realizado em modelo subcutâneo de glioma, não em modelo ortotópico intracraniano, o que pode não refletir completamente o ambiente clínico do glioma",
+      "A redução da infiltração de células T CD4+ e CD8+ é um efeito secundário transitório da disrupção vascular, que pode comprometer a resposta imune antitumoral a longo prazo e aumentar o risco de recorrência/metástase tumoral",
+      "O estudo não avaliou se os efeitos observados são exclusivamente devidos à amplificação do campo magnético ou se há contribuição de efeitos bioquímicos específicos dos materiais"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": true,
+    "recomendacoes_futuras": [
+      "Combinar a estratégia de amplificação do campo magnético com normalização vascular e ativação imune para equilibrar inibição tumoral eficaz, preservação vascular moderada e promoção da infiltração de células imunes",
+      "Investigar a translação clínica da terapia de potencialização do campo magnético via materiais magnéticos",
+      "Explorar outros candidatos a amplificadores de campo magnético além de Fe3O4 e GA para generalizar a estratégia"
+    ],
+    "gaps_identificados": [
+      "Ausência de modelo ortotópico de glioma para validação mais clinicamente relevante",
+      "Falta de avaliação da distribuição e persistência dos agentes magnéticos no tumor ao longo do tempo",
+      "Mecanismo molecular preciso pelo qual o campo magnético amplificado disrupta a vasculatura tumoral não foi completamente elucidado",
+      "Não foi avaliado o potencial de combinar esta estratégia com imunoterapia para superar a redução da infiltração de células T"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra que materiais magnéticos com propriedades superparamagnéticas e paramagnéticas podem amplificar localmente a intensidade do campo magnético externo por superposição de campos co-direcionais, potencializando efeitos físicos não térmicos sobre a vasculatura tumoral.",
+    "integracao_engenharia": "O estudo propõe o reaproveitamento de agentes magnéticos funcionais convencionais aprovados clinicamente (Fe3O4 e GA) como amplificadores de campo magnético em um dispositivo gerador de campo magnético de baixa frequência e intensidade média, sem necessidade de desenvolvimento de novos nanomateriais complexos.",
+    "integracao_biologia": "O artigo elucida que a amplificação do campo magnético local suprime a angiogênese tumoral (redução de CD31 e MVD), restringe o fornecimento de nutrientes e oxigênio ao tumor e reduz secundariamente a infiltração de células T CD4+ e CD8+, revelando uma nova via de regulação biológica mediada por campo magnético.",
+    "integracao_materiais": "O trabalho demonstra que as distintas propriedades magnéticas de materiais superparamagnéticos (Fe3O4 NPs, 100-300 nm) versus paramagnéticos (GA com 7 elétrons desemparelhados) determinam sua capacidade diferencial de amplificação do campo magnético local e, consequentemente, sua eficácia terapêutica.",
+    "mensagem_principal": "Este estudo estabelece um novo paradigma terapêutico ao repropor agentes magnéticos convencionais (Fe3O4 e gadopentetic acid) não como mediadores de hipertermia ou agentes de contraste, mas como amplificadores de campo magnético local que potencializam os efeitos físicos não térmicos de um campo magnético alternado de baixa frequência (20 Hz, 50 mT) para suprimir a angiogênese e o crescimento de gliomas in vivo, aumentando a taxa de inibição tumoral de 27% (campo magnético isolado) para 64% (Fe3O4 + campo magnético) e 55% (GA + campo magnético)."
+  },
+  "custom_id": "15__Repurposing_Conventional_Magnetic_Functional_Agents_A_Novel_"
+}

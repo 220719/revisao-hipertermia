@@ -1,0 +1,111 @@
+{
+  "autores": "Zhao et al.",
+  "ano": 2020,
+  "periodico": "Theranostics",
+  "titulo": "Multifunctional magnetic iron oxide nanoparticles: an advanced platform for cancer theranostics",
+  "doi": "10.7150/thno.42564",
+  "tipo_estudo": "revisao",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (MHT) é um conceito terapêutico clássico baseado no princípio de que células cancerígenas são mais vulneráveis do que células saudáveis quando a temperatura ambiente ultrapassa 41°C. O efeito térmico das nanopartículas magnéticas é gerado por um campo magnético alternante externo (AMF) e definido pela taxa de absorção específica (SAR).",
+    "etapas_processo": [
+      "Administração das nanopartículas magnéticas de Fe3O4 no organismo",
+      "Acumulação das NPs no tecido tumoral (via EPR ou direcionamento ativo)",
+      "Aplicação de campo magnético alternante externo (AMF)",
+      "Geração de calor pelas NPs via absorção do campo magnético",
+      "Morte das células tumorais por hipertermia"
+    ],
+    "internalizacao_nps": "As NPs são internalizadas pelas células tumorais via efeito EPR passivo ou por direcionamento ativo com ligantes como ácido fólico (FA) e PEG; após internalização, concentram-se principalmente nos lisossomos.",
+    "aplicacao_campo": "O campo magnético alternante (AMF) é aplicado externamente sobre o tumor onde as NPs se acumulam, induzindo geração de calor pelas nanopartículas.",
+    "janela_termica_min_C": 41.0,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": [
+      "apoptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O aquecimento é gerado pela absorção de energia do campo magnético alternante pelas nanopartículas superparamagnéticas de Fe3O4, caracterizado pela taxa de absorção específica (SAR).",
+    "descricao_mecanismo": "As nanopartículas superparamagnéticas de Fe3O4 absorvem energia do campo magnético alternante externo e a convertem em calor. O SAR (taxa de absorção específica) define a taxa de energia absorvida por unidade de massa do agente quando submetido a radiofrequência. Os valores de SAR são influenciados pela morfologia e composição do agente MHT, assim como pelas propriedades do campo magnético como frequência (f) e amplitude (H), podendo ser aumentados incrementando-se f ou H."
+  },
+  "q3": {
+    "material": "Fe3O4",
+    "composicao_quimica": "Fe3O4",
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 20.0,
+    "faixa_tamanho_max_nm": 50.0,
+    "forma": "esférica",
+    "arquitetura_multicore": true,
+    "anisotropia": "anisotropia de volume magnético",
+    "revestimento": "PEG",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "O tamanho das NPs de Fe3O4 determina suas propriedades magnéticas e de relaxividade: partículas menores que 10 nm apresentam superparamagnetismo, enquanto a redução do tamanho abaixo de 5 nm diminui o momento magnético e suprime o efeito T2, permitindo uso como agente T1. Nanopartículas maiores (20-50 nm) preparadas por coprecipitação ou sol-gel geralmente apresentam maiores valores de SAR para MHT."
+  },
+  "q4": {
+    "amplitude_kA_m": 8.0,
+    "frequencia_kHz": 230.0,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": null,
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": "camundongo",
+    "tipo_cancer": null,
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": true,
+    "apoptose": true,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": true
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Processo de preparação complexo, alto custo e longo período de ensaio clínico limitam o uso clínico dos fármacos baseados em Fe3O4",
+      "A porcentagem disponível de acumulação tumoral ainda é inferior a 2% da dose administrada intravenosamente, mesmo com direcionamento magnético",
+      "Pode não haver efeito EPR dos nanomateriais em tumores sólidos de seres humanos comparado com modelos de tumores em camundongos nus",
+      "A toxicidade potencial das nanopartículas não foi devidamente abordada"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Desenvolver métodos de síntese mais simples e de menor custo para aplicações clínicas",
+      "Melhorar a eficiência de acumulação tumoral das NPs de Fe3O4",
+      "Investigar o efeito EPR em modelos tumorais humanos mais representativos",
+      "Abordar adequadamente a toxicidade potencial das nanopartículas in vivo"
+    ],
+    "gaps_identificados": [
+      "A aplicação clínica do Fe3O4 multifuncional é principalmente como agente de contraste MRI, sem integração real de diagnóstico e tratamento",
+      "Falta de evidências do efeito EPR em tumores sólidos humanos comparado com modelos animais",
+      "Poucos estudos de SAR em NPs preparadas por decomposição térmica, pois NPs pequenas geralmente têm baixo valor de SAR"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo descreve como o campo magnético alternante externo interage com nanopartículas superparamagnéticas para gerar calor via SAR, com dependência das propriedades do campo (frequência e amplitude).",
+    "integracao_engenharia": "O artigo apresenta múltiplos métodos de síntese química e modificação de superfície de NPs de Fe3O4 para otimizar suas propriedades físico-químicas para aplicações biomédicas, incluindo MHT, MRI e entrega de fármacos.",
+    "integracao_biologia": "O artigo discute a internalização celular das NPs, seus efeitos citotóxicos via hipertermia e reações de Fenton, biodistribuição in vivo, resposta imunológica e interação com o microambiente tumoral.",
+    "integracao_materiais": "O artigo revisa como a composição, tamanho, morfologia e revestimento superficial das NPs de Fe3O4 determinam suas propriedades magnéticas, de relaxividade e SAR, e como diferentes estratégias de funcionalização melhoram biocompatibilidade e direcionamento tumoral.",
+    "mensagem_principal": "As nanopartículas de Fe3O4 representam uma plataforma multifuncional avançada para teranóstica oncológica, integrando imageamento multimodal (MRI, CT, fluorescência), atividade enzimática (nanozima), hipertermia magnética, terapia fototérmica/fotodinâmica e entrega de fármacos/genes, com grande potencial para translação clínica mediante superação das limitações atuais de acumulação tumoral, custo e toxicidade."
+  },
+  "custom_id": "12__Multifunctional_magnetic_iron_oxide_nanoparticles__an_advanc"
+}

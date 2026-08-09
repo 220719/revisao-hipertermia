@@ -1,0 +1,110 @@
+{
+  "autores": "Tamboli et al.",
+  "ano": 2025,
+  "periodico": "ACS Omega",
+  "titulo": "Design of CoMxFe2‑xO4 (M = Ag, Ru) Nanoparticles with Magnetic Hyperthermic Capabilities for Cancer Treatment",
+  "doi": "10.1021/acsomega.5c04666",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "Magnetic hyperthermia (MHT) utiliza o calor gerado por nanopartículas magnéticas (ferritas) sob um campo magnético alternante para danificar seletivamente tecidos tumorais. É uma abordagem minimamente invasiva para entrega precisa de doses terapêuticas de calor em áreas cancerosas.",
+    "etapas_processo": [
+      "Síntese das nanopartículas de ferrita de cobalto substituídas com metais nobres (Ag ou Ru) pelo método sol-gel",
+      "Dispersão das nanopartículas em solução aquosa a 10 mg/mL",
+      "Internalização das nanopartículas pelas células cancerosas via mecanismos endocíticos",
+      "Aplicação de campo magnético alternante (332,8 kHz, 170 Oe)",
+      "Geração de calor pelas nanopartículas para elevar a temperatura ao intervalo hipertérmico (42-46 °C)",
+      "Manutenção da temperatura por pelo menos 30 min para induzir morte celular"
+    ],
+    "internalizacao_nps": "As nanopartículas são internalizadas por células via mecanismos endocíticos, enclausuradas pela membrana plasmática em vesículas ligadas à membrana que trafegam por vias endolisossomais, sendo posteriormente transportadas para lisossomos para degradação.",
+    "aplicacao_campo": "O campo magnético alternante (AMF) é aplicado com frequência de 332,8 kHz e amplitude de 170 Oe sobre dispersões aquosas das nanopartículas.",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": [
+      "apoptose",
+      "paraptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": true,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O artigo descreve loops de histerese largos indicando caráter magnético duro, sugerindo que perdas por histerese são o mecanismo predominante de geração de calor.",
+    "descricao_mecanismo": "Os loops de histerese medidos por VSM mostram caráter magnético duro para todas as amostras. A magnetização de saturação diminui com o aumento da concentração de metal nobre devido à substituição de íons Fe3+ na rede cristalina. A eficiência hipertérmica está diretamente correlacionada com a anisotropia magnética substancial do CoFe2O4."
+  },
+  "q3": {
+    "material": "ferrita de cobalto substituída com Ag e Ru",
+    "composicao_quimica": "CoMxFe2-xO4 (M = Ag, Ru; x = 0, 0.2, 0.4)",
+    "dopagem": "Ag (prata) e Ru (rutênio)",
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 30.0,
+    "faixa_tamanho_max_nm": 80.0,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia magnetocristalina cúbica (estrutura espinélio cúbica, grupo espacial Fd3m)",
+    "revestimento": null,
+    "material_autorregulavel": false,
+    "SAR_W_g": 46.346,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "A incorporação de Ag ou Ru na rede espinélio do CoFe2O4 altera as características magnéticas devido a mudanças na distribuição de cátions, interações magnéticas e modificações estruturais. A magnetização de saturação diminui com o aumento da concentração de metal nobre pela substituição de íons Fe3+ na rede cristalina, afetando diretamente a eficiência hipertérmica."
+  },
+  "q4": {
+    "amplitude_kA_m": 13.53,
+    "frequencia_kHz": 332.8,
+    "produto_Hf": 4503424000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Monitoramento da curva de elevação de temperatura de dispersões aquosas das nanopartículas (10 mg/mL) sob AMF, com cálculo do SAR a partir da taxa de variação de temperatura",
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "KAIMRC2, MDAMB231, HCT8, HCT116",
+    "modelo_animal": null,
+    "tipo_cancer": "mama e colorretal",
+    "concentracao_mg_mL": 10.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": true,
+    "apoptose": true,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Ausência de validação in vivo",
+      "Falta de avaliação detalhada da eficácia terapêutica e biossegurança em sistemas biológicos"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Realizar avaliações in vivo detalhadas para avaliar eficácia terapêutica",
+      "Avaliar biossegurança em sistemas biológicos"
+    ],
+    "gaps_identificados": [
+      "Efeitos sinérgicos de Ag e Ru dentro de um único nanomaterial em contexto de hipertermia permanecem pouco explorados",
+      "Mecanismo físico detalhado de geração de calor (relaxação de Néel vs. Browniana) não foi elucidado",
+      "Sem avaliação do produto H×f em relação ao limite de segurança de Hergt-Dutz",
+      "Ausência de dados de ILP para comparação padronizada entre estudos"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo demonstra que a incorporação de metais nobres (Ag, Ru) na rede espinélio do CoFe2O4 modifica as propriedades magnéticas e a eficiência de geração de calor sob AMF, com loops de histerese largos confirmando caráter magnético duro.",
+    "integracao_engenharia": "A síntese verde pelo método sol-gel usando goma de Moringa oleifera como biocombustível oferece uma rota sustentável e ambientalmente amigável para produção de nanopartículas com propriedades hipertérmicas controladas.",
+    "integracao_biologia": "As nanopartículas demonstraram seletividade citotóxica contra linhagens de câncer de mama (KAIMRC2, MDAMB231) e colorretal (HCT8, HCT116), com internalização celular via endocitose e indução de morte por apoptose e paraptose, sem efeito significativo em células normais.",
+    "integracao_materiais": "A dopagem com Ag e Ru em CoFe2O4 resulta em estrutura espinélio cúbica pura sem fases secundárias, com tamanhos de partícula distintos (30 nm para Ag e 80 nm para Ru) e propriedades magnéticas e hipertérmicas modificadas de forma composição-dependente.",
+    "mensagem_principal": "Nanopartículas de CoMxFe2-xO4 (M = Ag, Ru) sintetizadas por método verde apresentam capacidades hipertérmicas aprimoradas e atividade anticâncer seletiva, demonstrando que a combinação sinérgica de metais nobres com ferrita de cobalto representa uma abordagem multifuncional promissora para terapia oncológica baseada em hipertermia magnética."
+  },
+  "custom_id": "45__Design_of_CoMxFe2_xO4__M___Ag__Ru__Nanoparticles_with_Magnet"
+}

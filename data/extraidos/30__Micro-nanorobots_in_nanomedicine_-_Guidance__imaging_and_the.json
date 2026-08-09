@@ -1,0 +1,113 @@
+{
+  "autores": "Luer et al.",
+  "ano": 2026,
+  "periodico": "Biochemical and Biophysical Research Communications",
+  "titulo": "Micro-/nanorobots in nanomedicine - Guidance, imaging and the integration of AI and robotics",
+  "doi": "10.1016/j.bbrc.2026.153390",
+  "tipo_estudo": "revisao",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética utiliza SPIONs manipulados por campos magnéticos alternantes na faixa de quilohertz para aquecer as partículas e o tecido circundante. Distingue-se entre hiptertermia clássica (até ~45°C) e ablação térmica em temperaturas mais elevadas.",
+    "etapas_processo": [
+      "Administração de SPIONs ao sítio tumoral",
+      "Aplicação de campo magnético alternante na faixa de quilohertz",
+      "Aquecimento das partículas e do tecido circundante",
+      "Ablação ou morte celular por hipertermia"
+    ],
+    "internalizacao_nps": null,
+    "aplicacao_campo": "Os SPIONs são manipulados com campos magnéticos alternantes na faixa de quilohertz para induzir aquecimento local.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": 45.0,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": null,
+    "descricao_mecanismo": null
+  },
+  "q3": {
+    "material": "Fe3O4 ou γ-Fe2O3 (magnetita ou maguemita)",
+    "composicao_quimica": "Fe3O4 / γ-Fe2O3",
+    "dopagem": "outros metais (mencionados genericamente)",
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": true,
+    "anisotropia": null,
+    "revestimento": "pequenas moléculas, polímeros (carregados ou não), proteínas",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "O tamanho ajustável e as propriedades superparamagnéticas dos SPIONs, combinadas com a funcionalização de superfície, permitem modular a resposta a campos magnéticos externos e a biocompatibilidade para diferentes aplicações nanomédicas."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": null,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": null,
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": "mama, pulmão, cérebro, melanoma (mencionados em contexto geral)",
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Biocompatibilidade de longo prazo não totalmente estabelecida",
+      "Perfis de biodistribuição e mecanismos de clearance ainda precisam ser garantidos",
+      "Produção escalável sob padrões GMP ainda é um obstáculo",
+      "Necessidade de validação pré-clínica demonstrando vantagem terapêutica clara sobre tratamentos existentes",
+      "Regulamentação complexa e em evolução para produtos combinados",
+      "Requisitos financeiros substanciais para tradução clínica",
+      "Profundidade de penetração limitada (~5 cm) para sistemas de guiamento magnético superficial"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": true,
+    "recomendacoes_futuras": [
+      "Esforço interdisciplinar concertado entre cientistas de materiais, engenheiros, clínicos, especialistas regulatórios e parceiros industriais",
+      "Abordar sistematicamente as barreiras translacionais",
+      "Desenvolver funcionalizações avançadas e sistemas teranósticos inteligentes para medicina personalizada",
+      "Avançar no desenvolvimento de sistemas de imagem em tempo real de alta resolução para controle em malha fechada"
+    ],
+    "gaps_identificados": [
+      "Ausência de sistemas de imagem em tempo real e alta resolução para rastreamento in vivo de nano-/microbots",
+      "Falta de modelos pré-clínicos clinicamente relevantes para validação terapêutica",
+      "Compreensão insuficiente da farmacocinética in vivo e imunogenicidade de nanobots de DNA",
+      "Limitações na estabilidade de nanobots de DNA em fluidos biológicos",
+      "Necessidade de frameworks regulatórios mais claros para produtos combinados"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo discute os princípios físicos de campos magnéticos alternantes para indução de hipertermia e sistemas de guiamento magnético (arranjos de bobinas eletromagnéticas, imãs permanentes) para navegação de nano-/microbots.",
+    "integracao_engenharia": "O artigo aborda o desenvolvimento de sistemas de guiamento eletromagnético, fabricação de microbots em diversas arquiteturas, e integração de IA e aprendizado de máquina para controle autônomo e navegação em tempo real.",
+    "integracao_biologia": "O artigo discute biocompatibilidade, biodistribuição, internalização celular, aplicações em sistemas biohíbridos, e o uso de SPIONs em diagnóstico e terapia de cânceres sólidos.",
+    "integracao_materiais": "O artigo revisa as propriedades dos SPIONs (Fe3O4/γ-Fe2O3), revestimentos de superfície, dopagem com outros metais, arquiteturas multicore, e o desenvolvimento de novos materiais para rastreamento em MPI e aplicações teranósticas.",
+    "mensagem_principal": "A integração de robótica e inteligência artificial à nanomedicina, por meio de nanopartículas magnéticas, microbots e nanobots de DNA, representa um avanço significativo para terapias e diagnósticos precisos e direcionados. Apesar do progresso tecnológico expressivo, a tradução clínica ainda enfrenta desafios substanciais em manufatura, biocompatibilidade, validação pré-clínica e regulamentação."
+  },
+  "custom_id": "30__Micro-nanorobots_in_nanomedicine_-_Guidance__imaging_and_the"
+}

@@ -1,0 +1,109 @@
+{
+  "autores": "Torquato et al.",
+  "ano": 2024,
+  "periodico": "Journal of Materials Research and Technology",
+  "titulo": "Cerium doped superparamagnetic Mn–Zn ferrite particles as a promising material for self-regulated magnetic hyperthermia",
+  "doi": "10.1016/j.jmrt.2024.10.229",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "MFH é uma técnica baseada no aquecimento de partículas magnéticas (MNPs) sob um campo magnético alternado (AMF), dissipando energia como calor por múltiplos mecanismos de perda de energia. O objetivo é manter a temperatura na faixa de 42–48°C, onde praticamente nenhum dano é infligido aos tecidos normais.",
+    "etapas_processo": [
+      "Síntese das nanopartículas de ferrita por sol-gel autocombustão",
+      "Dispersão das nanopartículas em água (100 mg em 1 mL) com banho ultrassônico por 5 min",
+      "Submissão das soluções a campo magnético alternado oscilante com diferentes amplitudes e frequências",
+      "Medição da temperatura do líquido em função do tempo com termômetro de fibra óptica",
+      "Cálculo do SAR a partir do ajuste Box-Lucas dos dados experimentais"
+    ],
+    "internalizacao_nps": null,
+    "aplicacao_campo": "O AMF é aplicado por um indutor magnético EasyHeatEH3542 LI da Ambrell com amplitudes de 23,55–47,11 kA/m e frequências de 220–225 kHz por até 30 minutos.",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 48.0,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": true,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A relaxação de spin (mecanismo de Néel) é o mecanismo dominante de dissipação de energia nas partículas superparamagnéticas estudadas, favorecido pelo comportamento superparamagnético das partículas de ~6 nm.",
+    "descricao_mecanismo": "Em partículas superparamagnéticas, a energia térmica supera a energia de anisotropia, fazendo a magnetização flipar aleatoriamente entre suas duas posições estáveis, resultando em magnetização líquida nula. Sob AMF, os mecanismos de relaxação de Néel e Browniano dissipam energia como calor, com a taxa de dissipação dependendo fortemente do tempo de relaxação de spin. A introdução de Ce3+ reduz a magnetização de saturação e acelera o tempo de relaxação T2, suprimindo a dissipação de energia e limitando o aquecimento à faixa terapêutica segura."
+  },
+  "q3": {
+    "material": "ferrita de Mn-Zn dopada com Ce",
+    "composicao_quimica": "Mn0.8Zn0.2Fe2-xCexO4 com x = 0,0; 0,015; 0,030; 0,050 e 0,100",
+    "dopagem": "Ce3+ (cério)",
+    "tamanho_nm": 6.0,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia magnetocristalina cúbica (estrutura espinélio Fd-3m), com constante K1 entre 0,11 e 0,21 MJ/m3 a 300 K",
+    "revestimento": null,
+    "material_autorregulavel": true,
+    "SAR_W_g": 7.0,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 26.31,
+    "relacao_estrutura_propriedade": "A substituição de Ce3+ nos sítios B da estrutura espinélio distorce a rede cristalina, enfraquece a interação de supertroca entre as sub-redes A e B, diminui a magnetização de saturação e acelera o tempo de relaxação de spin T2, reduzindo a capacidade de auto-aquecimento das partículas e permitindo a autorregulação da temperatura na faixa terapêutica."
+  },
+  "q4": {
+    "amplitude_kA_m": 35.33,
+    "frequencia_kHz": 222.0,
+    "produto_Hf": 7843260000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Termômetro de fibra óptica com ajuste Box-Lucas para cálculo do SAR",
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": 100.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Concentração elevada de 100 mg/mL foi a menor concentração necessária para que as amostras atingissem a faixa de hipertermia, limitando a avaliação em concentrações mais baixas",
+      "Valores de SAR relativamente pequenos (3–7 W/g) para as condições estudadas",
+      "Ausência de testes biológicos (citotoxicidade, estudos celulares ou in vivo)",
+      "Limitação do campo magnético máximo no VSM (3 T a 300 K), exigindo extrapolação da magnetização de saturação"
+    ],
+    "problemas_SAR_ILP": true,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Explorar Ce3+ como íon dopante para otimizar a taxa de aquecimento de ferritas de Mn–Zn para tratamento de câncer por hipertermia",
+      "Investigar o comportamento das amostras dopadas com Ce em diferentes concentrações e configurações de AMF"
+    ],
+    "gaps_identificados": [
+      "Ausência de avaliação de toxicidade e biocompatibilidade das nanopartículas",
+      "Falta de revestimento superficial das partículas para aplicação biomédica",
+      "Não foram realizados estudos in vitro ou in vivo com células ou modelos animais",
+      "O mecanismo de internalização celular das nanopartículas não foi investigado",
+      "Não foi determinado o ILP (Intrinsic Loss Power) para comparação padronizada com a literatura"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo utilizou ressonância ferromagnética (FMR) e espectroscopia Mössbauer para determinar o tempo de relaxação de spin T2, a constante de anisotropia magnetocristalina K1 e confirmar o comportamento superparamagnético, relacionando propriedades físicas fundamentais com o desempenho em hipertermia.",
+    "integracao_engenharia": "O trabalho demonstrou que a configuração ótima de AMF (H = 35,33 kA/m e f = 222 kHz), abaixo do limite biológico de segurança proposto, permite que as amostras dopadas com Ce mantenham a temperatura na faixa terapêutica de 42–48°C, viabilizando um sistema de hipertermia autorregulável.",
+    "integracao_biologia": "Os resultados indicam que a dopagem com Ce3+ limita o aquecimento à faixa de 42–48°C, praticamente sem dano aos tecidos normais, sugerindo potencial para tratamento seguro de câncer por hipertermia magnética, embora nenhum ensaio celular ou animal tenha sido realizado.",
+    "integracao_materiais": "A substituição de Ce3+ na ferrita Mn0.8Zn0.2Fe2O4 por síntese sol-gel autocombustão produziu partículas superparamagnéticas de ~6 nm com distribuição estreita de tamanhos, cuja dopagem sistemática com cério distorce a rede espinélio, redistribui cátions entre sítios A e B, e reduz a magnetização de saturação de forma controlável.",
+    "mensagem_principal": "A dopagem com Ce3+ em partículas de ferrita Mn–Zn superparamagnéticas é uma estratégia promissora para obter hipertermia magnética autorregulável, pois reduz a magnetização de saturação e acelera o tempo de relaxação de spin, mantendo a temperatura dentro da faixa terapêutica segura de 42–48°C para tratamento de câncer."
+  },
+  "custom_id": "75__Cerium_doped_superparamagnetic_Mn_Zn_ferrite_particles_as_a_"
+}

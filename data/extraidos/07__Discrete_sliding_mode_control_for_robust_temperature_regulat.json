@@ -1,0 +1,113 @@
+{
+  "autores": "Mansouri et al.",
+  "ano": 2026,
+  "periodico": "Results in Engineering",
+  "titulo": "Discrete sliding mode control for robust temperature regulation in 2D magnetic hyperthermia",
+  "doi": "10.1016/j.rineng.2026.110602",
+  "tipo_estudo": "in silico",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética é uma técnica de tratamento do câncer que utiliza nanopartículas magnéticas expostas a um campo magnético externo alternante para aumentar a temperatura do tecido tumoral a uma faixa de 315,15 a 318,15 K, resultando na destruição das células cancerígenas.",
+    "etapas_processo": [
+      "Inserção de nanopartículas de Fe3O4 no tecido tumoral",
+      "Aplicação de campo magnético alternante externo (AMF) às nanopartículas",
+      "Geração de calor pelas nanopartículas como fonte térmica (SAR)",
+      "Regulação da temperatura tumoral ao alvo de 316,15 K via controlador DSMC",
+      "Monitoramento da temperatura nodal por simulação numérica (MATLAB/COMSOL)"
+    ],
+    "internalizacao_nps": "O artigo não descreve o mecanismo de internalização das NPs; apenas menciona que as nanopartículas magnéticas de Fe3O4 são expostas ao campo magnético externo para gerar calor no tecido tumoral.",
+    "aplicacao_campo": "O campo magnético alternante (AMF) é aplicado externamente às nanopartículas magnéticas de Fe3O4 presentes no tecido tumoral para gerar calor como fonte de energia controlada.",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 45.0,
+    "vias_morte_celular": [
+      "apoptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": "null",
+    "mecanismo_dominante": "O artigo não detalha o mecanismo físico de aquecimento das nanopartículas, tratando o calor gerado diretamente como um termo de fonte (SAR) na equação de biotransferência de calor.",
+    "descricao_mecanismo": "O mecanismo de geração de calor pelas nanopartículas não é discutido em termos físicos no artigo; o calor é modelado como um input de controle U (W/mm³) na equação de biocalor em meio poroso. O artigo foca no controle robusto da temperatura tumoral e não na física do aquecimento magnético das nanopartículas. A modulação do SAR é mencionada como forma de traduzir o sinal de controle em ajustes de amplitude e frequência do AMF em trabalhos futuros."
+  },
+  "q3": {
+    "material": "Fe3O4",
+    "composicao_quimica": "Fe3O4",
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": null,
+    "anisotropia": null,
+    "revestimento": null,
+    "material_autorregulavel": null,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": null
+  },
+  "q4": {
+    "amplitude_kA_m": 36.0,
+    "frequencia_kHz": null,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Simulação numérica por diferenças finitas (FTCS) com modelo de biocalor em meio poroso 2D, validado por co-simulação MATLAB/COMSOL",
+    "distribuicao_espacial_calor": "A distribuição espacial do calor é modelada em uma malha 2D de tecido quadrado de 36mm x 36mm com tumor central de 12mm x 12mm; o calor é aplicado nos nós ímpares da malha discreta com saturação entre 0 e 0,12 W/mm³",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in silico",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": "glioblastoma",
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": true,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "A dinâmica do atuador magnético não foi incorporada ao modelo; o sinal de controle é aplicado diretamente como termo de fonte de calor",
+      "O termo de velocidade do fluido intersticial foi negligenciado no modelo do controlador, sendo compensado pela robustez do DSMC",
+      "O modelo utiliza passos espaciais iguais (Δx = Δy), limitando a flexibilidade para geometrias irregulares de tecido",
+      "O modelo é limitado a uma geometria 2D simplificada, não representando completamente a realidade 3D clínica",
+      "A redução de simetria do modelo pode não capturar heterogeneidades reais do tecido tumoral"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Modelar e incorporar a dinâmica do atuador magnético para uma representação mais realista do sistema",
+      "Incorporar o termo de velocidade do fluido intersticial diretamente no modelo dinâmico do controlador",
+      "Resolver o problema com passos espaciais desiguais (Δx ≠ Δy) para maior flexibilidade em geometrias irregulares",
+      "Integrar hipertermia com modelos de entrega de fármacos para investigar abordagens de tratamento sinérgico",
+      "Estender o framework para modelos 3D mais realistas de tumor"
+    ],
+    "gaps_identificados": [
+      "Ausência de estudos que combinem modelos 2D realistas com estratégias de controle robusto contra incertezas paramétricas e perturbações externas",
+      "Estudos de controle robusto (SMC, DSMC) aplicados predominantemente a modelos 1D, sem extensão para 2D",
+      "Falta de integração entre planejamento de tratamento de hipertermia e controle adaptativo específico para cada paciente"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo modela a transferência de calor em tecido tumoral poroso 2D usando a equação de biocalor (PDE) com discretização por diferenças finitas, considerando propriedades físicas de difusividade térmica e porosidade do tecido.",
+    "integracao_engenharia": "O artigo propõe e valida um controlador Discrete Sliding Mode Control (DSMC) para regulação robusta da temperatura tumoral em 2D, demonstrando superioridade sobre DLQR na presença de incertezas paramétricas.",
+    "integracao_biologia": "O artigo incorpora parâmetros biológicos realistas do tecido tumoral e fluido intersticial, considerando a janela terapêutica de 42-45°C para indução de apoptose em células malignas sem dano ao tecido saudável.",
+    "integracao_materiais": "As nanopartículas de Fe3O4 são utilizadas como agentes de aquecimento magnético, com o calor gerado modelado como fonte de controle no tecido, mas as propriedades físico-químicas das NPs não são detalhadas.",
+    "mensagem_principal": "Este artigo apresenta a primeira solução completa para controle robusto de temperatura em tecido tumoral 2D em hipertermia magnética, utilizando DSMC que demonstra robustez superior contra incertezas paramétricas e perturbações externas em comparação com DLQR, bridging a lacuna entre teoria de controle robusto e planejamento clínico de hipertermia."
+  },
+  "custom_id": "07__Discrete_sliding_mode_control_for_robust_temperature_regulat"
+}

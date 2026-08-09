@@ -1,0 +1,114 @@
+{
+  "autores": "Kraus et al.",
+  "ano": 2026,
+  "periodico": "Frontiers in Oncology",
+  "titulo": "Case Report: Treatment with magnetic nanoparticle-based hyperthermia stabilizes metastatic disease in stage IV primary liver cancer patients",
+  "doi": "10.3389/fonc.2025.1742249",
+  "tipo_estudo": "clinico",
+  "q1": {
+    "conceito_tecnica": "Magnetic nanoparticle-based hyperthermia é uma nanotecnologia não invasiva para terapia oncológica direcionada que explora a ativação de nanopartículas magnéticas por um campo magnético alternante externo, aquecendo tumores sólidos sem danificar tecidos saudáveis circundantes. O sistema é projetado para tratar tumores sólidos metastáticos através da transferência de energia térmica às células cancerígenas em temperatura sub-ablativa de até 50 ± 3°C.",
+    "etapas_processo": [
+      "Administração intravenosa das SaNP em solução coloidal aquosa",
+      "Acumulação das SaNP na área tumoral pelo efeito EPR (Enhanced Permeability and Retention)",
+      "Confirmação da acumulação por imageamento MRI com sequência ponderada em T2*",
+      "Administração de antiácido ~4h após a injeção de SaNP para neutralizar ácido gástrico e minimizar condutividade elétrica",
+      "Aplicação do campo magnético alternante (AMF) regional no torso via sistema de indução eletromagnética (EIS)",
+      "Monitoramento contínuo de temperatura superficial e oral durante a irradiação",
+      "Avaliação de resposta tumoral por CT e critérios RECIST 1.1 aos 30 dias"
+    ],
+    "internalizacao_nps": "As SaNPs são administradas por via intravenosa e acumulam-se nos tumores passivamente pelo efeito de permeabilidade e retenção aumentada (EPR).",
+    "aplicacao_campo": "O AMF regional é aplicado no torso (do tórax à pelve) pelo sistema de indução eletromagnética a uma frequência de 290 ± 10% kHz, em modo de amplitude modulada com pulsos de 1–10 mT e ciclo de trabalho (duty cycle) de 50%.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": 53.0,
+    "vias_morte_celular": [
+      "necrose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": "pulsada",
+    "mecanismo_dominante": "As SaNP superparamagnéticas de óxido de ferro multicore geram calor ao serem ativadas pelo AMF externo, transferindo energia térmica seletivamente às células tumorais.",
+    "descricao_mecanismo": "As nanopartículas de óxido de ferro superparamagnéticas contidas nas SaNP são ativadas pelo AMF externo, gerando calor na área tumoral por meio de suas propriedades magnéticas. O aquecimento é seletivo pois as células cancerígenas são mais sensíveis à deposição térmica do que as células saudáveis, devido à sua menor dissipação de calor e capacidade calorífica reduzida. A irradiação em modo pulsado com ciclo de trabalho de 50% permite reduzir as correntes de Foucault (eddy currents) e o aquecimento indesejado de tecidos saudáveis, permitindo a dissipação de calor entre as exposições."
+  },
+  "q3": {
+    "material": "Fe3O4 (óxido de ferro superparamagnético)",
+    "composicao_quimica": "Fe3O4 encapsulado com material de mudança de fase (parafina) em matriz polimérica com revestimento externo de PEG",
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": true,
+    "anisotropia": null,
+    "revestimento": "PEG",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "A arquitetura multicore de óxido de ferro superparamagnético encapsulado com material de mudança de fase permite o armazenamento de energia térmica por calor latente de fusão, enquanto o revestimento externo de PEG confere biocompatibilidade e ausência de imunogenicidade. As propriedades superparamagnéticas das SaNP causam perda de sinal em imagens MRI ponderadas em T2*, permitindo rastrear biodistribuição e acumulação tumoral."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": 290.0,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 15.0,
+    "forma_onda": "pulsada",
+    "dosimetria_termica": "Monitoramento contínuo por sondas de temperatura de fibra óptica infravermelha em pontos específicos do torso e registro de temperatura oral antes e após cada ciclo de irradiação AMF",
+    "distribuicao_espacial_calor": "Hotspots identificados na região da coluna lombar devido a correntes de Foucault induzidas pelo campo magnético variante no tempo; controle de temperatura superficial realizado com manta de água circulante conectada a resfriador",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vivo",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": "carcinoma hepatocelular e colangiocarcinoma",
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Número muito reduzido de pacientes (apenas dois casos) limitando conclusões definitivas",
+      "Período de seguimento curto (30 dias) insuficiente para avaliação de resposta tumoral em longo prazo",
+      "Paciente 2 não pôde realizar MRI no seguimento de 30 dias devido a problemas técnicos com o equipamento",
+      "Acumulação das SaNP foi observada apenas em dois tumores hepáticos do paciente 1, sem acumulação detectável em outras lesões",
+      "Resultados preliminares de um ensaio clínico em curso, ainda sem análise interina ou final disponível"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Confirmação dos resultados nas análises interina e final do ensaio clínico",
+      "Ampliação do número de pacientes no ensaio First-in-Human em andamento",
+      "Avaliação de seguimento em longo prazo para melhor caracterização de resposta tumoral e toxicidade"
+    ],
+    "gaps_identificados": [
+      "Mecanismos físicos detalhados de geração de calor pelas SaNP não são discutidos no artigo",
+      "Ausência de dados quantitativos de SAR/ILP das nanopartículas utilizadas",
+      "Não há avaliação de temperatura intratumoral direta, apenas monitoramento de superfície e temperatura oral",
+      "Critérios para acumulação preferencial das SaNP em tumores hiperenhancing versus outras lesões não são completamente elucidados"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O uso de AMF pulsado com ciclo de trabalho de 50% demonstra que a modulação da forma de onda do campo reduz correntes de Foucault e o aquecimento indesejado de tecidos saudáveis, validando clinicamente modelos computacionais de distribuição de calor.",
+    "integracao_engenharia": "O sistema EIS com coil de indução eletromagnética de radiofrequência, combinado com manta de resfriamento e monitoramento por fibra óptica infravermelha, representa uma solução de engenharia integrada para aplicação segura de AMF em região torácica em humanos.",
+    "integracao_biologia": "A confirmação clínica de acumulação das SaNP nos tumores pelo efeito EPR e sua subsequente eliminação pelo sistema mononuclear fagocitário (fígado e baço) valida biologicamente os mecanismos de biodistribuição e clearance previamente descritos em modelos animais.",
+    "integracao_materiais": "As SaNP de arquitetura multicore com óxido de ferro superparamagnético, material de mudança de fase e revestimento de PEG demonstraram in vivo biocompatibilidade, rastreabilidade por MRI e ausência de toxicidades significativas, validando clinicamente o design nanomaterial.",
+    "mensagem_principal": "Este primeiro relato clínico em humanos de hipertermia baseada em nanopartículas magnéticas (SaNP) em pacientes com câncer de fígado primário avançado demonstrou que a abordagem é segura, bem tolerada e capaz de estabilizar a progressão da doença em pacientes que falharam em múltiplas linhas de terapia prévia, representando um avanço promissor no tratamento não invasivo de tumores sólidos metastáticos."
+  },
+  "custom_id": "20__Case_Report_Treatment_with_magnetic_nanoparticle-based_hyper"
+}

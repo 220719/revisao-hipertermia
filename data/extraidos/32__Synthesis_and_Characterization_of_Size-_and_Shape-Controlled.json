@@ -1,0 +1,111 @@
+{
+  "autores": "Bortnic et al.",
+  "ano": 2026,
+  "periodico": "Applied Sciences",
+  "titulo": "Synthesis and Characterization of Size- and Shape-Controlled CoFe2O4 Nanoparticles via Polyvinylpyrrolidone (PVP)-Assisted Hydrothermal Synthesis",
+  "doi": "10.3390/app16073547",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética é mencionada como aplicação futura pretendida para as nanopartículas de CoFe2O4 sintetizadas, em que nanopartículas internalizadas em células cancerígenas podem induzir aquecimento localizado sob campo magnético alternante de baixa intensidade para destruir as células tumorais.",
+    "etapas_processo": [
+      "Síntese e funcionalização das nanopartículas magnéticas",
+      "Internalização preferencial nas células cancerígenas via eletroporação induzida por polarização elétrica controlada magneticamente",
+      "Aplicação de campo magnético alternante de baixa intensidade",
+      "Indução de aquecimento localizado para destruição das células cancerígenas"
+    ],
+    "internalizacao_nps": "As nanopartículas magnetoelétricas induzem polarização elétrica local controlada por campo magnético externo fraco, explorando o fato de que a polarização necessária para eletroporação é aproximadamente cinco vezes menor em células cancerígenas do que em células saudáveis, permitindo entrada preferencial nas células tumorais.",
+    "aplicacao_campo": "Um campo magnético alternante de baixa intensidade é aplicado externamente para controlar a polarização elétrica das nanopartículas e/ou induzir aquecimento localizado nas células cancerígenas.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O artigo não detalha mecanismos físicos de geração de calor para hipertermia magnética, mencionando apenas a aplicação futura de aquecimento localizado via campo magnético alternante.",
+    "descricao_mecanismo": "O artigo não descreve mecanismos de relaxação ou dissipação de energia para hipertermia; menciona apenas que nanopartículas internalizadas em células cancerígenas podem induzir aquecimento localizado sob campo magnético alternante de baixa intensidade como aplicação futura pretendida."
+  },
+  "q3": {
+    "material": "ferrita de cobalto",
+    "composicao_quimica": "CoFe2O4",
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 5.0,
+    "faixa_tamanho_max_nm": 22.0,
+    "forma": "esférica",
+    "arquitetura_multicore": true,
+    "anisotropia": "anisotropia magnetocristalina cúbica, com constantes de anisotropia calculadas entre 7 e 10 kJ/m3",
+    "revestimento": "PVP",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 55.46,
+    "relacao_estrutura_propriedade": "O tamanho e a forma das nanopartículas são controlados pela massa molecular do PVP e pelo solvente utilizado, influenciando diretamente a magnetização de saturação, a coercividade e a temperatura de bloqueio; cristalitos menores apresentam menor temperatura de bloqueio e coercividade reduzida, favorecendo comportamento superparamagnético."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": null,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": null,
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Saturation magnetization values are somewhat smaller compared to crystalline CoFe2O4",
+      "Agglomeration observed in samples prepared with ethylene glycol and low molecular mass PVP",
+      "Additional studies are necessary to evaluate performance, safety, and effectiveness before practical biomedical application",
+      "Volume calculations assumed spherical nanoparticle shapes, introducing approximation errors in blocking temperature estimates",
+      "No SAR, ILP, or in vitro/in vivo hyperthermia measurements were performed"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Examinar o desempenho e segurança das nanopartículas para aplicações em terapia do câncer",
+      "Desenvolver estruturas core-shell magnetoelétricas e magnetoplasmônicas",
+      "Realizar medições adicionais para confirmar as propriedades de baixa temperatura de bloqueio e comportamento superparamagnético dos samples CF5 e CF6",
+      "Investigar o uso das nanopartículas como agentes de contraste para MRI"
+    ],
+    "gaps_identificados": [
+      "Ausência de avaliação de citotoxicidade e biocompatibilidade",
+      "Nenhum experimento de hipertermia magnética realizado",
+      "Falta de medidas de SAR e ILP",
+      "Sem testes in vitro ou in vivo com células cancerígenas",
+      "Funcionalização superficial para aplicação biomédica não investigada"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo caracteriza propriedades magnéticas fundamentais das nanopartículas (magnetização de saturação, coercividade, temperatura de bloqueio e constante de anisotropia), fornecendo base para compreensão do comportamento magnético em escala nanométrica.",
+    "integracao_engenharia": "O método hidrotermal assistido por PVP demonstra uma plataforma de engenharia de forma ('shape-engineering') que permite controle preciso da morfologia (alongada, cúbica, romboidal) e tamanho das nanopartículas ajustando a massa molecular do PVP.",
+    "integracao_biologia": "O artigo propõe aplicação futura das nanopartículas em terapia do câncer via aquecimento localizado e eletroporação seletiva de células tumorais, explorando a diferença de limiar de eletroporação entre células cancerígenas e saudáveis.",
+    "integracao_materiais": "A síntese hidrotermal com PVP de diferentes massas molares em diferentes solventes (etilenoglicol e trietilenoglicol) permite obter nanopartículas de CoFe2O4 monofásicas, altamente cristalinas, com morfologias e tamanhos controlados entre 5 e 22 nm.",
+    "mensagem_principal": "Este trabalho demonstra que a síntese hidrotermal assistida por PVP de diferentes massas molares permite controlar precisamente a morfologia (alongada, cúbica, romboidal e tipo 'framboesa') e o tamanho (5–22 nm) de nanopartículas de CoFe2O4, obtendo materiais com propriedades magnéticas promissoras para futuras aplicações biomédicas, incluindo hipertermia magnética e estruturas core-shell magnetoelétricas e magnetoplasmônicas para terapia do câncer."
+  },
+  "custom_id": "32__Synthesis_and_Characterization_of_Size-_and_Shape-Controlled"
+}

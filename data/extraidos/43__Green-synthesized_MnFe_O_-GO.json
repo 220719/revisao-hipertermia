@@ -1,0 +1,114 @@
+{
+  "autores": "Almars",
+  "ano": 2025,
+  "periodico": "Cancer Cell International",
+  "titulo": "Green-synthesized MnFe₂O₄/GO nanocomposites: structural characterization, cytotoxicity, and potential for targeted cervical cancer therapy",
+  "doi": "10.1186/s12935-025-03953-1",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (MFH) utiliza nanopartículas superparamagnéticas responsivas a campos magnéticos externos para gerar calor localizado em tecidos tumorais. A eficiência de aquecimento correlaciona-se com o comportamento de relaxação superparamagnética das nanopartículas.",
+    "etapas_processo": [
+      "Síntese de nanopartículas de MnFe₂O₄ superparamagnéticas",
+      "Integração das NPs com grafeno óxido (GO) para formar nanocompósito MnFe₂O₄/GO",
+      "Aplicação de campo magnético externo para induzir aquecimento",
+      "Geração de espécies reativas de oxigênio (ROS) e dano mitocondrial",
+      "Indução de apoptose nas células cancerígenas"
+    ],
+    "internalizacao_nps": "As NPs de MnFe₂O₄ facilitam a captação endocítica melhorada via interações magnéticas e vias de internalização celular (endocitose assistida magneticamente), enquanto o componente GO melhora a dispersão e a interação com a membrana celular",
+    "aplicacao_campo": "O campo magnético externo é aplicado para guiar as nanopartículas superparamagnéticas ao alvo e induzir aquecimento local por relaxação magnética",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": [
+      "apoptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": false,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O comportamento superparamagnético das nanopartículas, com loops de histerese estreitos e coercividade negligenciável, é o principal mecanismo relevante para aplicações de hipertermia magnética",
+    "descricao_mecanismo": "Todos os materiais sintetizados exibem loops de histerese estreitos com coercividade e remanência negligenciáveis, indicativos de comportamento superparamagnético. A eficiência de aquecimento correlaciona-se com o comportamento de relaxação superparamagnética das NPs. A coercividade (Hc) de todas as amostras foi inferior a 50 Oe, e os loops mostram uma subida acentuada da magnetização em campos baixos, confirmando alta suscetibilidade magnética e resposta rápida das NPs a campos magnéticos externos."
+  },
+  "q3": {
+    "material": "ferrita de manganês / MnFe₂O₄ e nanocompósito MnFe₂O₄/GO",
+    "composicao_quimica": "MnFe₂O₄ (ferrita de manganês com estrutura espinélio cúbica) integrada com grafeno óxido (GO)",
+    "dopagem": null,
+    "tamanho_nm": 12.0,
+    "faixa_tamanho_min_nm": 12.0,
+    "faixa_tamanho_max_nm": 16.7,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": "alta constante de anisotropia, comportamento superparamagnético dependente do tamanho",
+    "revestimento": "grafeno óxido (GO); grupos funcionais de extrato de urtiga (Urtica) na síntese verde",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 55.0,
+    "relacao_estrutura_propriedade": "O tamanho nanométrico (~12-16,7 nm) e a estrutura espinélio cúbica conferem comportamento superparamagnético com alta suscetibilidade magnética. A incorporação ao GO reduz a magnetização de saturação (de 55 para 25 emu/g) devido à natureza não magnética do GO e ao blindamento parcial dos domínios magnéticos, mas mantém resposta magnética suficiente para aplicações biomédicas."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": null,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": null,
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "HeLa",
+    "modelo_animal": null,
+    "tipo_cancer": "cervical",
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": true,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "O estudo utilizou apenas modelos 2D de monocamada de células HeLa, que não replicam completamente o microambiente tumoral complexo",
+      "Não foram realizados ensaios diretos de quantificação de ROS ou endocitose",
+      "Apenas uma linhagem celular de câncer cervical (HeLa) foi avaliada, não representando todos os subtipos",
+      "Ausência de estudos in vivo para avaliar biodistribuição, farmacocinética e segurança a longo prazo",
+      "Não foram realizados experimentos de hipertermia magnética com aplicação real de campo magnético alternado"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Incorporar culturas 3D de esferoides tumorais e estudos in vivo para avaliar penetração tumoral, farmacocinética e eficácia terapêutica",
+      "Realizar avaliações in vivo de segurança a longo prazo e eficácia terapêutica",
+      "Integrar os compósitos com agentes quimioterapêuticos estabelecidos, como doxorrubicina, para terapias combinadas",
+      "Validar os efeitos citotóxicos e pró-apoptóticos em linhagens adicionais de câncer cervical (SiHa, C33A) e modelos derivados de pacientes",
+      "Realizar ensaios de ROS, rastreamento de captação intracelular e análise detalhada das vias de apoptose"
+    ],
+    "gaps_identificados": [
+      "Ausência de experimentos reais de hipertermia magnética com aplicação de campo magnético alternado",
+      "Falta de dados de SAR/ILP para caracterizar a eficiência de aquecimento das nanopartículas",
+      "Ausência de estudos de biodistribuição e farmacocinética in vivo",
+      "Necessidade de modelos tumorais mais complexos (3D, in vivo) para validação translacional"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra que o comportamento superparamagnético das NPs de MnFe₂O₄ (com Hc < 50 Oe e Ms de 25-55 emu/g) é mantido após incorporação ao GO, sustentando a responsividade magnética necessária para hipertermia e direcionamento magnético.",
+    "integracao_engenharia": "O estudo desenvolve um método verde de síntese hidrotérmica usando extrato de urtiga para produzir nanocompósitos MnFe₂O₄/GO com estabilidade coloidal adequada (potencial zeta ~ -31,6 mV) e tamanho nanométrico controlado para aplicações biomédicas.",
+    "integracao_biologia": "A análise de expressão gênica por qPCR demonstrou que o nanocompósito MnFe₂O₄/GO induz apoptose em células HeLa através da regulação positiva de BAX e Caspase-3 e regulação negativa de Bcl-2, com IC₅₀ de 120,7 µg/mL e ausência de citotoxicidade em células normais HFF-2.",
+    "integracao_materiais": "A integração de NPs de MnFe₂O₄ em nanolâminas de GO preserva a estrutura espinélio cúbica e reduz a agregação das NPs, criando uma plataforma multifuncional com maior área superficial, estabilidade aprimorada e potencial para funcionalização adicional.",
+    "mensagem_principal": "Nanocompósitos MnFe₂O₄/GO sintetizados por via verde (usando extrato de Urtica) exibem citotoxicidade sinérgica superior contra células HeLa de câncer cervical (IC₅₀ = 120,7 µg/mL) em comparação aos componentes individuais, induzindo apoptose via modulação de BAX, Caspase-3 e Bcl-2, com propriedades magnéticas superparamagnéticas adequadas para aplicações de hipertermia e direcionamento magnético."
+  },
+  "custom_id": "43__Green-synthesized_MnFe_O_-GO"
+}

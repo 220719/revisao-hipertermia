@@ -1,0 +1,112 @@
+{
+  "autores": "Makni et al.",
+  "ano": 2026,
+  "periodico": "RSC Advances",
+  "titulo": "Molybdenum-doped La0.7Sr0.3MnO3 nanoparticles: tuning magnetic and heating properties for magnetic hyperthermia",
+  "doi": "10.1039/d5ra08765a",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética fluida (MFH) explora nanopartículas magnéticas injetadas no tumor e expostas a um campo magnético alternante (AMF), gerando calor localizado no tecido maligno enquanto preserva regiões saudáveis ao redor. Na variante auto-limitada, a temperatura de Curie (TC) restringe intrinsecamente o superaquecimento durante o tratamento.",
+    "etapas_processo": [
+      "Síntese das nanopartículas via processo glicina-nitrato (GNP)",
+      "Injeção direta das nanopartículas no tumor",
+      "Exposição ao campo magnético alternante (AMF)",
+      "Geração de calor localizado nas nanopartículas",
+      "Aquecimento até a temperatura terapêutica (42–46 °C)",
+      "Auto-limitação do aquecimento ao atingir a TC"
+    ],
+    "internalizacao_nps": "As nanopartículas são diretamente injetadas no tumor (injeção intratumoral direta), conforme descrito na abordagem NanoTherm® da MagForce AG",
+    "aplicacao_campo": "Um campo magnético alternante (AMF) de 30 mT é aplicado em três frequências diferentes (119, 248 e 313 kHz) utilizando o sistema DM100 Series da nanoScale Biomagnetics.",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": true,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "As perdas por histerese dominam o aquecimento, uma vez que as partículas exibem comportamento ferromagnético com loops de histerese bem saturados em baixas temperaturas.",
+    "descricao_mecanismo": "As nanopartículas de La0.7Sr0.3Mn1-xMoxO3 exibem ordenamento ferromagnético sustentado por interações de dupla troca entre íons Mn3+ e Mn4+. Sob AMF, as perdas de energia são dissipadas como calor por meio dos ciclos de histerese magnética. Ao se aproximar da TC, as partículas perdem o ordenamento ferromagnético, transitando para o estado paramagnético e cessando naturalmente a geração de calor."
+  },
+  "q3": {
+    "material": "manganita de lantânio-estrôncio dopada com molibdênio (LSMO:Mo)",
+    "composicao_quimica": "La0.7Sr0.3Mn1-xMoxO3 (x = 0.10, 0.15, 0.20)",
+    "dopagem": "Molibdênio (Mo)",
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 105.46,
+    "faixa_tamanho_max_nm": 226.42,
+    "forma": null,
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia magnética modificada por substituição de Mo, com coercividade praticamente constante (~0.064–0.066 T) indicando que Mo não altera significativamente as contribuições anisotrópicas",
+    "revestimento": null,
+    "material_autorregulavel": true,
+    "SAR_W_g": 15.19,
+    "ILP_nHm2_kg": 0.085,
+    "magnetizacao_saturacao_emu_g": 29.44,
+    "relacao_estrutura_propriedade": "A substituição de Mo6+ por Mn3+/Mn4+ perturba as interações de dupla troca e altera o balanço Mn3+/Mn4+, levando à redução da magnetização de saturação e diminuição progressiva da TC (de 350 a 290 K). O aumento do conteúdo de Mo reduz o tamanho das partículas (de ~226 nm a ~105 nm) e aumenta a microdeformação, afetando diretamente a eficiência de aquecimento sob AMF."
+  },
+  "q4": {
+    "amplitude_kA_m": 23.873,
+    "frequencia_kHz": 313.0,
+    "produto_Hf": 7472249000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": "Método Box-Lucas fenomenológico: ΔT = a(1 − e^(−b(t−t0))), com SAR = abC/mMNPs, onde C = 660 J kg⁻¹ K⁻¹ é a capacidade calorífica específica do LaSrMnO3",
+    "distribuicao_espacial_calor": "Aquecimento localizado no tumor, com plateau de temperatura próximo à TC demonstrando comportamento auto-limitado; amostras x = 0.10 e 0.15 ultrapassam 60 °C a 313 kHz, enquanto x = 0.20 estabiliza em ~52 °C",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Os valores de TC observados (290–350 K, correspondendo a 16.85–76.85 °C) estão acima da janela terapêutica ótima (42–46 °C), impedindo o alcance de aquecimento auto-regulado controlado",
+      "Os valores de SAR são moderados (~7–16 W g⁻¹), consistentes com diluição magnética e efeitos de spin superficial, limitando a eficiência de aquecimento",
+      "Alto teor de Mo (x = 0.20) resulta em formação de fases secundárias (La2Mo3O12, SrCO3), reduzindo a fração da fase perovskita para 62% e comprometendo as propriedades magnéticas",
+      "O estudo não avaliou biocompatibilidade, toxicidade ou desempenho em sistemas biológicos"
+    ],
+    "problemas_SAR_ILP": true,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Ajuste fino dos níveis de dopagem de Mo para aproximar a TC da janela terapêutica (42–46 °C)",
+      "Controle do tamanho e cristalinidade das nanopartículas para melhorar a eficiência de aquecimento",
+      "Personalização das propriedades superficiais das nanopartículas para otimizar a temperatura de Curie e o SAR",
+      "Investigação de combinações composicionais que permitam aquecimento auto-regulado genuíno na faixa terapêutica"
+    ],
+    "gaps_identificados": [
+      "Ausência de avaliação de biocompatibilidade e toxicidade das nanopartículas",
+      "Nenhum experimento in vitro ou in vivo foi realizado para validar o desempenho hipertérmico em sistemas biológicos",
+      "A TC atual das composições estudadas não se encontra dentro da janela terapêutica ideal",
+      "Falta de revestimento superficial ou funcionalização para aplicações biomédicas",
+      "Não foram investigados mecanismos de relaxação (Néel/Browniana) que contribuem para o aquecimento"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo demonstra que a substituição de Mo modifica as interações de dupla troca Mn3+-O-Mn4+, permitindo ajuste contínuo e previsível da temperatura de Curie e do comportamento auto-limitado sob AMF.",
+    "integracao_engenharia": "O processo glicina-nitrato (GNP) é apresentado como método de síntese custo-efetivo, escalável e com controle composicional preciso, permitindo formação de nanopartículas de fase única com tamanho e morfologia controlados.",
+    "integracao_biologia": "O conceito de aquecimento auto-limitado é destacado como mecanismo de segurança intrínseco para evitar superaquecimento de tecidos saudáveis durante tratamento de câncer por hipertermia magnética.",
+    "integracao_materiais": "A dopagem com Mo em LSMO permite tunagem estrutural, morfológica e magnética simultânea, com redução do tamanho de partícula, aumento da microdeformação e modulação da magnetização de saturação e TC.",
+    "mensagem_principal": "Nanopartículas de La0.7Sr0.3Mn1-xMoxO3 sintetizadas via processo glicina-nitrato exibem comportamento de aquecimento auto-limitado intrínseco determinado pela TC, com dopagem intermediária de Mo (x = 0.10–0.15) otimizando a eficiência de aquecimento (SAR ~14–16 W g⁻¹); entretanto, ajustes composicionais adicionais são necessários para trazer a TC para a janela terapêutica de 42–46 °C e alcançar aquecimento auto-regulado controlado para aplicações clínicas."
+  },
+  "custom_id": "28__Molybdenum-doped_La0_7Sr0_3MnO3_nanoparticles"
+}

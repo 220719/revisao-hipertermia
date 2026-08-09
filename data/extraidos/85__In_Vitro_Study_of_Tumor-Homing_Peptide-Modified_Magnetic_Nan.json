@@ -1,0 +1,108 @@
+{
+  "autores": "Zhou et al.",
+  "ano": 2024,
+  "periodico": "Molecules",
+  "titulo": "In Vitro Study of Tumor-Homing Peptide-Modified Magnetic Nanoparticles for Magnetic Hyperthermia",
+  "doi": "10.3390/molecules29112632",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética utiliza nanopartículas magnéticas (MNPs) que, ao serem expostas a um campo magnético alternante (AMF), induzem aquecimento localizado capaz de matar seletivamente células tumorais. Cancer cells have higher heat sensitivity compared to normal cells, making this a promising low-invasive therapeutic approach.",
+    "etapas_processo": [
+      "Síntese e modificação superficial das MNPs com peptídeos tumor-homing (PL1 e PL3)",
+      "Incubação das células tumorais com THP-MNPs para internalização",
+      "Aplicação do campo magnético alternante (AMF) para indução do aquecimento",
+      "Avaliação da morte celular por dupla coloração com calcein-AM e iodeto de propídio 24h após exposição ao AMF"
+    ],
+    "internalizacao_nps": "As MNPs são internalizadas pelas células tumorais via interação dos peptídeos tumor-homing (PL1 e PL3) com receptores superexpressos na superfície celular tumoral (TNC-C, FN-EDB, NPR-1), acumulando-se no citoplasma sem presença observável no núcleo celular.",
+    "aplicacao_campo": "O AMF é aplicado por um sistema de campo magnético alternante de alta frequência (F = 105 kHz, H = 22,1 kA/m) por 30 minutos sobre as células tratadas com MNPs.",
+    "janela_termica_min_C": 41.0,
+    "janela_termica_max_C": 43.0,
+    "vias_morte_celular": [
+      "ferroptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O aquecimento é induzido pelas propriedades superparamagnéticas das MNPs quando expostas ao AMF, gerando calor localizado no tecido tumoral.",
+    "descricao_mecanismo": "As MNPs de óxido de ferro com propriedades superparamagnéticas são utilizadas para induzir hipertermia magnética mediante aplicação de campo magnético alternante. O artigo menciona as propriedades superparamagnéticas como base para o aquecimento, mas não detalha os mecanismos físicos específicos de relaxação de Néel, Browniana ou perdas por histerese. O foco principal do estudo é na entrega tumoral específica e nos efeitos biológicos resultantes."
+  },
+  "q3": {
+    "material": "óxido de ferro (iron oxide) em matriz de dextrana",
+    "composicao_quimica": "~55% (w/w) iron oxide em matriz de dextrana 40 kDa",
+    "dopagem": null,
+    "tamanho_nm": 50.0,
+    "faixa_tamanho_min_nm": 41.7,
+    "faixa_tamanho_max_nm": 60.7,
+    "forma": "flor",
+    "arquitetura_multicore": true,
+    "anisotropia": null,
+    "revestimento": "dextrana (40 kDa) com modificação de PEG (Mal-PEG-SC) e peptídeos tumor-homing",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "As MNPs em formato de nanoflor (Synomag-D50) apresentam superior eficiência na indução de aumento de temperatura e internalização intracelular, além de serem menos propensas à agregação. A modificação superficial com PL3 promoveu leve aumento de agregação devido aos aminoácidos hidrofóbicos no N-terminal do peptídeo."
+  },
+  "q4": {
+    "amplitude_kA_m": 22.1,
+    "frequencia_kHz": 105.0,
+    "produto_Hf": 2320500000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Medição de temperatura dependente do tempo de exposição ao AMF na presença de PL3-MNPs em diferentes concentrações (Figura S5)",
+    "distribuicao_espacial_calor": "A temperatura de 43°C adequada para hipertermia é atingida após 15 minutos quando a concentração de PL3-MNPs excede 200 µg/mL",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "U87MG (glioblastoma humano), HeLa (carcinoma cervical humano), DLD-1 (adenocarcinoma de cólon humano), PC3 (carcinoma de próstata humano), A431 (carcinoma escamoso humano), HEK293T (rim embrionário humano - normal)",
+    "modelo_animal": null,
+    "tipo_cancer": "glioblastoma",
+    "concentracao_mg_mL": 0.2,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": true,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": true,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Estudo limitado a ensaios in vitro, sem validação in vivo dos efeitos terapêuticos das THP-MNPs",
+      "Dificuldade em elevar rapidamente a temperatura do tecido-alvo distinguindo-o dos tecidos normais circundantes",
+      "Quando administradas por via intravenosa, as MNPs são seletivamente fagocitadas pelo sistema reticuloendotelial, atenuando a entrega ao tecido tumoral",
+      "A modificação com PL3 promoveu aumento de agregação das partículas (PDI 0,28), com tamanho médio de 103 nm"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Realização de estudos in vivo para validar os efeitos terapêuticos das THP-MNPs em hipertermia magnética",
+      "Modificação das THP-MNPs com moléculas de fármacos como sensibilizadores térmicos e peptídeos/miRNAs pró-apoptóticos para melhorar a eficiência do tratamento do câncer"
+    ],
+    "gaps_identificados": [
+      "Aplicações de PL1 e PL3 em hipertermia magnética não haviam sido exploradas anteriormente",
+      "Métodos para entrega de MNPs a tecidos tumorais precisam ser investigados mais profundamente",
+      "Necessidade de desenvolver técnicas de entrega altamente específicas que garantam acúmulo e tempo de residência suficientes das MNPs no tecido tumoral com dano mínimo aos tecidos saudáveis"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo utiliza MNPs superparamagnéticas (Synomag-D50) em formato de nanoflor com AMF a 105 kHz e 22,1 kA/m para gerar aquecimento localizado suficiente para atingir temperatura hipertérmica de 43°C.",
+    "integracao_engenharia": "O estudo desenvolveu uma estratégia de bioconjugação de peptídeos tumor-homing (PL1 e PL3) à superfície de MNPs via crosslinker Mal-PEG-SC, otimizando a entrega tumoral específica para aplicação em hipertermia magnética.",
+    "integracao_biologia": "O estudo demonstrou que PL3-MNPs induzem morte celular em células de glioblastoma (U87MG) tanto por hipertermia magnética (com AMF) quanto por ferroptose (sem AMF), com especificidade aumentada para células tumorais em relação a células normais.",
+    "integracao_materiais": "As MNPs em formato de nanoflor revestidas com dextrana e modificadas com peptídeos tumor-homing mostraram maior eficiência de aquecimento, internalização celular e menor agregação comparadas a outras morfologias, com caracterização por DLS, TEM e potencial zeta.",
+    "mensagem_principal": "MNPs modificadas com o peptídeo tumor-homing PL3 (PL3-MNPs) apresentam potencial como abordagem direcionada para hipertermia magnética tumor-específica, demonstrando maior internalização em células tumorais, indução de morte celular por hipertermia quando expostas ao AMF, e capacidade adicional de induzir ferroptose independentemente do AMF em concentrações elevadas."
+  },
+  "custom_id": "85__In_Vitro_Study_of_Tumor-Homing_Peptide-Modified_Magnetic_Nan"
+}

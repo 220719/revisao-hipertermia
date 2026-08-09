@@ -1,0 +1,117 @@
+{
+  "autores": "Xing et al.",
+  "ano": 2025,
+  "periodico": "Advanced Materials",
+  "titulo": "TriMag Microrobots: 3D-Printed Microrobots for Magnetic Actuation, Imaging, and Hyperthermia",
+  "doi": "10.1002/adma.202419708",
+  "tipo_estudo": "in vivo",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (magnetothermal heating) utiliza nanopartículas magnéticas incorporadas em microrobôs que, quando expostas a um campo magnético alternante de alta frequência, geram calor localizado para ablação tumoral. O efeito magnetotérmico permite aquecimento remoto e controlado do tecido alvo sem necessidade de procedimentos invasivos.",
+    "etapas_processo": [
+      "Fabricação dos microrobôs por litografia de dois fótons com hidrogel fotossensível contendo íons de Fe e Co",
+      "Reação química in situ para gerar nanopartículas de Fe3O4 e CoFe2O4 no hidrogel",
+      "Injeção peritumoral dos microrobôs no modelo animal",
+      "Atuação magnética dos microrobôs com campo rotativo (2 Hz) para navegação até o tumor",
+      "Aplicação de campo magnético alternante (150 kHz) para ativação do efeito magnetotérmico e aquecimento localizado",
+      "Monitoramento da temperatura por câmera térmica e controle automático do campo"
+    ],
+    "internalizacao_nps": "As nanopartículas de Fe3O4 e CoFe2O4 são geradas in situ por reação química dentro do hidrogel do microrobô, ficando aderidas à superfície ou aprisionadas na rede do hidrogel, sendo entregues ao tumor via navegação magnética ativa do microrobô",
+    "aplicacao_campo": "Um campo magnético alternante de alta frequência (150 kHz, gerado por um solenóide resfriado a água) é aplicado externamente ao microrobô posicionado na região tumoral para induzir aquecimento magnetotérmico localizado.",
+    "janela_termica_min_C": 41.0,
+    "janela_termica_max_C": 45.0,
+    "vias_morte_celular": [
+      "ablacao_tumoral"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": true,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": "senoidal",
+    "mecanismo_dominante": "O mecanismo dominante de aquecimento é o efeito magnetotérmico das nanopartículas de CoFe2O4, que possuem relaxação magnética mais lenta comparada ao Fe3O4, conferindo maior eficiência de aquecimento.",
+    "descricao_mecanismo": "As nanopartículas de CoFe2O4 apresentam relaxação do momento magnético mais lenta do que as nanopartículas de Fe3O4, resultando em maior eficiência de conversão de energia do campo magnético alternante em calor. A constante de anisotropia bulk maior das nanopartículas CoFe2O4, evidenciada pelo pequeno círculo no topo do laço de histerese, indica que suas propriedades magnetotérmicas superam as de partículas superparamagnéticas comuns de óxido de ferro. A combinação Fe3O4-CoFe2O4 demonstrou a taxa mais rápida de elevação de temperatura até o limiar terapêutico."
+  },
+  "q3": {
+    "material": "Fe3O4 e CoFe2O4",
+    "composicao_quimica": "Fe3O4 (magnetita) e CoFe2O4 (ferrita de cobalto) incorporadas em hidrogel PEG-DA/PETA",
+    "dopagem": "Cobalto (Co)",
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": null,
+    "anisotropia": "anisotropia bulk elevada (CoFe2O4), evidenciada pela constante de anisotropia bulk maior",
+    "revestimento": "PEG",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "A combinação de Fe3O4 (superparamagnético, alta susceptibilidade magnética próxima do zero) com CoFe2O4 (relaxação magnética lenta, alta anisotropia) resulta em propriedades sinérgicas: o Fe3O4 otimiza o contraste MPI e a atuação magnética, enquanto o CoFe2O4 confere alta eficiência de aquecimento magnetotérmico."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": 150.0,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Sensor de temperatura de fibra óptica (TS2-02, MICRONOR) inserido nas amostras e termômetro de fibra óptica (FT-MNT, OPTOCON); câmera térmica (FLIR One Pro) para imagens térmicas em série temporal",
+    "distribuicao_espacial_calor": "O calor foi confinado à região alvo (tumor), com desligamento automático do campo quando a temperatura da pele se aproximava de 45°C, minimizando danos aos tecidos saudáveis circundantes",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vivo",
+    "linhagem_celular": "4T1 (luc2-expressing)",
+    "modelo_animal": "camundongo",
+    "tipo_cancer": "mama",
+    "concentracao_mg_mL": 5.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Resolução espacial do MPI limitada: os microrobôs aparecem como pontos borrados em certas perspectivas",
+      "A distância mínima de resolução entre dois microrobôs é de aproximadamente 0,243 mm antes de as imagens se fundirem",
+      "Microrobôs com apenas CoFe2O4 apresentam baixa velocidade de locomoção devido à baixa magnetização de saturação",
+      "O processo de fabricação com nanopartículas afeta a transparência da resina durante a impressão por dois fótons",
+      "A caracterização detalhada do tamanho e morfologia das nanopartículas geradas in situ não foi completamente reportada"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Substituir Co2+ por Mn2+ ou Zn2+ para melhorar a sensibilidade MPI",
+      "Incorporar ligas FeCo menores para aumentar a eficiência de aquecimento",
+      "Explorar arquiteturas complexas como core-shell ou clusters multicore para otimizar o comportamento magnético",
+      "Refinar o processo de fabricação para controlar precisamente o tamanho e morfologia das partículas",
+      "Manter tamanhos de núcleo magnético na faixa de dezenas de nanômetros para alcançar altos momentos magnéticos minimizando agregação",
+      "Explorar estruturas ocas para melhor aquecimento devido ao aumento da área de superfície"
+    ],
+    "gaps_identificados": [
+      "Falta de caracterização quantitativa do SAR/ILP das nanopartículas geradas in situ",
+      "Ausência de análise histológica detalhada dos tecidos tratados",
+      "Necessidade de avaliação de longo prazo da biodegradação do hidrogel PEG-DA/PETA in vivo",
+      "Controle de realimentação em tempo real (closed-loop) para navegação e aquecimento ainda não implementado",
+      "Tradução clínica limitada: experimentos realizados apenas em modelos murinos subcutâneos"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra o uso sinérgico de nanopartículas com diferentes mecanismos de relaxação magnética (Fe3O4 superparamagnético vs. CoFe2O4 com alta anisotropia) para otimizar simultaneamente geração de imagem MPI e aquecimento magnetotérmico.",
+    "integracao_engenharia": "A combinação inovadora de litografia de dois fótons com reações químicas in situ permite a fabricação escalável e precisa de microrobôs helicoidais de hidrogel com funcionalidades magnéticas integradas, superando limitações de métodos tradicionais de incorporação de nanopartículas.",
+    "integracao_biologia": "Os microrobôs TriMag demonstraram navegação ativa em tecidos biológicos complexos (cérebro suíno, humor vítreo, estômago de camundongo) e ablação tumoral eficaz em modelo de câncer de mama triplo-negativo murino, com manutenção do peso corporal e sem toxicidade sistêmica observável.",
+    "integracao_materiais": "O hidrogel biocompatível PEG-DA/PETA funcionalizado com nanopartículas de Fe3O4 e CoFe2O4 geradas in situ representa uma nova classe de materiais multifuncionais que integra propriedades de imageamento, atuação e terapia em uma única plataforma estrutural degradável.",
+    "mensagem_principal": "Os microrobôs TriMag representam uma plataforma multifuncional inovadora que integra atuação magnética, imageamento por MPI e hipertermia magnética em microestruturas 3D impressas de hidrogel, demonstrando pela primeira vez a viabilidade de rastreamento em tempo real e ablação tumoral guiada por MPI em modelos animais vivos usando microrobôs navegáveis."
+  },
+  "custom_id": "44__TriMag_Microrobots_3D-Printed_Microrobots_for_Magnetic_Actua"
+}

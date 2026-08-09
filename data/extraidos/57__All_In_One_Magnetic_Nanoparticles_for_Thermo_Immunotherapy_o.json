@@ -1,0 +1,117 @@
+{
+  "autores": "Kaneko et al.",
+  "ano": 2025,
+  "periodico": "Advanced Healthcare Materials",
+  "titulo": "All-In-One Magnetic Nanoparticles for Thermo-Immunotherapy of Malignant Melanoma",
+  "doi": "10.1002/adhm.202500260",
+  "tipo_estudo": "in vivo",
+  "q1": {
+    "conceito_tecnica": "Hipertermia magnética é uma terapia que utiliza nanopartículas de magnetita para gerar calor sob exposição a um campo magnético alternante (AMF), promovendo destruição localizada do tumor e indução de imunidade antitumoral pela liberação de antígenos tumorais das células moribundas.",
+    "etapas_processo": [
+      "Injeção intratumoral das nanopartículas magnéticas (αPD-L1/CpG@MCL)",
+      "Posicionamento do animal na bobina do gerador de AMF",
+      "Irradiação com AMF (100 kHz, ~2 kW) por 30 minutos",
+      "Monitoramento da temperatura tumoral com termômetro de fibra óptica",
+      "Controle da temperatura em 43 ou 46 °C pelo ajuste da potência do gerador",
+      "Repetição do tratamento nos dias 0, 2 e 4"
+    ],
+    "internalizacao_nps": "As MCL (lipossomos catiônicos contendo magnetita) se ligam à membrana celular e são internalizadas pelas células, induzindo morte celular por aquecimento intracelular.",
+    "aplicacao_campo": "O AMF é aplicado por um gerador operando a 100 kHz e aproximadamente 2 kW, com o animal posicionado dentro da bobina do gerador.",
+    "janela_termica_min_C": 43.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": [
+      "necrose",
+      "imunomodulacao"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": true,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "Aquecimento indutivo das nanopartículas de magnetita sob campo magnético alternante, com geração de calor intratumoral localizado.",
+    "descricao_mecanismo": "As nanopartículas de magnetita (Fe3O4) geram calor quando expostas ao campo magnético alternante. O artigo descreve que o aquecimento intracelular é o mecanismo de morte celular, uma vez que as MCL são internalizadas pelas células tumorais. O calor gerado localmente destrói o tecido tumoral ao redor das nanopartículas, sendo o efeito maior em temperaturas mais elevadas (46 °C vs 43 °C)."
+  },
+  "q3": {
+    "material": "magnetita (Fe3O4) em lipossomos catiônicos (MCL)",
+    "composicao_quimica": "Fe3O4 encapsulado em lipossomos compostos por TMAG, DLPC e DOPE (ou DOPE-MAL) na proporção molar 1:2:2",
+    "dopagem": null,
+    "tamanho_nm": 10.0,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": null,
+    "anisotropia": null,
+    "revestimento": "lipossomos catiônicos (TMAG/DLPC/DOPE) com conjugação de anti-PD-L1 na superfície",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "O revestimento com lipossomos catiônicos permite a adesão à membrana celular e internalização eficiente das nanopartículas, potencializando o aquecimento intracelular. O tamanho hidrodinâmico de 134 nm do αPD-L1/CpG@MCL pode favorecer o acúmulo tumoral pelo efeito EPR."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": 100.0,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Termômetro de fibra óptica monitorando a temperatura da superfície tumoral com controle da potência do gerador de AMF",
+    "distribuicao_espacial_calor": "O aquecimento foi localizado na região tumoral, conforme confirmado por imagens termográficas; a área de destruição tecidual foi maior a 46 °C do que a 43 °C.",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vivo",
+    "linhagem_celular": "B16F10",
+    "modelo_animal": "camundongo",
+    "tipo_cancer": "melanoma maligno",
+    "concentracao_mg_mL": 40.0,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": true,
+    "apoptose": false,
+    "necrose": true,
+    "ferroptose": true,
+    "imunomodulacao": true
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "A hipertermia magnética com MCL isolada não induziu regressão tumoral completa no melanoma B16F10",
+      "O protocolo clínico atual depende de injeção direta de nanopartículas no tumor, limitando o tratamento a tumores acessíveis",
+      "A administração sistêmica intravenosa ainda não foi investigada para αPD-L1/CpG@MCL",
+      "A análise de Tregs não foi realizada devido à mínima infiltração de células CD4+ nos tumores B16F10",
+      "Estudos anteriores combinando hipertermia magnética com imunomoduladores sistêmicos resultaram em regressão de apenas 20% dos tumores B16F10"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Otimizar as propriedades físico-químicas das nanopartículas (tamanho, estrutura de superfície) e propriedades magnéticas para melhorar a eficiência de entrega via administração sistêmica",
+      "Explorar o revestimento com PEG para conferir comportamento stealth e permitir administração intravenosa",
+      "Investigar direcionamento magnético para facilitar a entrega sistêmica das nanopartículas",
+      "Adaptar a composição das nanopartículas all-in-one ao microambiente tumoral específico (ex: conjugar αCTLA-4 para tumores que requerem inibição de Tregs)",
+      "Explorar o uso de αPD-L1/CpG@MCL em fototerapia, aproveitando a capacidade das nanopartículas de ferro de induzir ferroptose durante irradiação fototérmica"
+    ],
+    "gaps_identificados": [
+      "Mecanismos físicos de geração de calor pelas nanopartículas não foram detalhados (relaxação de Néel, Browniana, histerese)",
+      "Não foram reportados parâmetros de SAR/ILP das nanopartículas",
+      "Ausência de avaliação formal de toxicidade sistêmica das nanopartículas",
+      "A biodistribuição de αPD-L1/CpG@MCL não foi investigada",
+      "O efeito do microambiente tumoral (viscosidade, agregação) sobre o desempenho das nanopartículas não foi avaliado"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra controle preciso da temperatura tumoral (43 ou 46 °C) via ajuste da potência do AMF a 100 kHz, com monitoramento termográfico da distribuição espacial do calor.",
+    "integracao_engenharia": "O estudo desenvolveu uma plataforma all-in-one integrando nanopartículas magnéticas em lipossomos catiônicos carregados com CpG e anticorpo anti-PD-L1, simplificando o protocolo terapêutico e potencializando a eficácia por sinergismo.",
+    "integracao_biologia": "O trabalho demonstrou que a hipertermia magnética com αPD-L1/CpG@MCL remodela o microambiente tumoral, aumentando CD8+ T cells e macrófagos M1 e reduzindo macrófagos M2, induzindo imunidade antitumoral sistêmica e memória imunológica.",
+    "integracao_materiais": "As nanopartículas de Fe3O4 (10 nm) encapsuladas em lipossomos catiônicos com zeta potencial ajustável pela conjugação de anticorpos demonstraram que a funcionalização da superfície é determinante para a interação com células tumorais PD-L1+.",
+    "mensagem_principal": "Este estudo demonstrou que nanopartículas magnéticas all-in-one (αPD-L1/CpG@MCL) combinando hipertermia magnética com imunoterapia (anti-PD-L1 e CpG) induziram regressão tumoral completa em 100% dos camundongos com melanoma maligno B16F10, além de imunidade antitumoral de longo prazo, superando as limitações de cada modalidade terapêutica isolada."
+  },
+  "custom_id": "57__All_In_One_Magnetic_Nanoparticles_for_Thermo_Immunotherapy_o"
+}

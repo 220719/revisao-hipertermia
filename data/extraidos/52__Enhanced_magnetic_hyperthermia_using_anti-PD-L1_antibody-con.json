@@ -1,0 +1,112 @@
+{
+  "autores": "Gonda et al.",
+  "ano": 2026,
+  "periodico": "International Journal of Hyperthermia",
+  "titulo": "Enhanced magnetic hyperthermia using anti-PD-L1 antibody-conjugated magnetoliposomes in a murine subcutaneous bladder cancer model",
+  "doi": "10.1080/02656736.2026.2645413",
+  "tipo_estudo": "in vivo",
+  "q1": {
+    "conceito_tecnica": "A terapia de hipertermia magnética (MHT) destrói tecido tumoral utilizando nanopartículas sob campo magnético alternante para gerar aquecimento localizado. Pode induzir morte celular imunogênica e remodelar o microambiente tumoral.",
+    "etapas_processo": [
+      "Injeção intratumoral de MCL ou αPD-L1@MCL com concentração de magnetita de 40 mg/mL",
+      "Posicionamento do mouse dentro da bobina do gerador de campo magnético alternante",
+      "Aplicação do AMF a 118 kHz e 30,6 kA/m por 30 minutos",
+      "Monitoramento contínuo da temperatura tumoral superficial com termômetro de fibra óptica",
+      "Ajuste manual da corrente de saída do gerador AMF para manter a temperatura alvo (43 °C ou 46 °C)"
+    ],
+    "internalizacao_nps": "As nanopartículas foram injetadas diretamente no tecido tumoral (injeção intratumoral); o artigo não descreve internalização celular ativa das NPs",
+    "aplicacao_campo": "O campo magnético alternante foi aplicado por um gerador AMF operando a 118 kHz e 30,6 kA/m, com os camundongos posicionados dentro da bobina do dispositivo, por 30 minutos.",
+    "janela_termica_min_C": 43.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": [
+      "apoptose",
+      "necrose",
+      "imunomodulacao"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O aquecimento é gerado pela exposição das nanopartículas de magnetita superparamagnéticas ao campo magnético alternante, produzindo calor localizado no tumor.",
+    "descricao_mecanismo": "As nanopartículas de magnetita com diâmetro de aproximadamente 10 nm exibem comportamento superparamagnético. Quando expostas ao campo magnético alternante, geram calor localizado no tecido tumoral. O artigo não detalha explicitamente os mecanismos físicos de relaxação de Néel ou Browniana."
+  },
+  "q3": {
+    "material": "Fe3O4 (magnetita) encapsulada em lipossomas catiônicos",
+    "composicao_quimica": "Fe3O4 encapsulado em bicamada lipídica composta por TMAG:DLPC:DOPE (razão molar 1:2:2)",
+    "dopagem": null,
+    "tamanho_nm": 11.8,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": "esférica",
+    "arquitetura_multicore": true,
+    "anisotropia": null,
+    "revestimento": "lipossoma catiônico (MCL) com anticorpo anti-PD-L1 conjugado à superfície",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "As nanopartículas de magnetita de ~10 nm apresentam comportamento superparamagnético e são encapsuladas em lipossomas catiônicos que facilitam a adesão celular. A conjugação do anticorpo anti-PD-L1 à superfície do lipossoma reduziu o potencial zeta de +44 mV para -14,2 mV, refletindo a carga negativa do anticorpo IgG em pH 7,4."
+  },
+  "q4": {
+    "amplitude_kA_m": 30.6,
+    "frequencia_kHz": 118.0,
+    "produto_Hf": 3608400000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Termômetro de fibra óptica (FX-9020; Anritsu Meter) fixado à superfície tumoral, com leituras registradas a cada minuto nos primeiros 5 min e a cada 5 min posteriormente",
+    "distribuicao_espacial_calor": "A temperatura foi monitorada na superfície do tumor; as temperaturas alvo (43 °C ou 46 °C) foram atingidas em aproximadamente 5 minutos e mantidas por 30 minutos",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vivo",
+    "linhagem_celular": "MB49",
+    "modelo_animal": "camundongo",
+    "tipo_cancer": "bexiga",
+    "concentracao_mg_mL": 40.0,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": true
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "O modelo subcutâneo de MB49 não recapitula completamente o microambiente tumoral ortotópico da bexiga, que é influenciado pela arquitetura urotelial, exposição urinária e composição imune local",
+      "Não foram avaliadas evidências moleculares diretas confirmando a ocorrência de morte celular imunogênica (ICD) no estudo",
+      "Os marcadores canônicos de ICD (CRT, HMGB1, ATP) não foram diretamente avaliados em células MB49 após hipertermia leve",
+      "A imunohistoquímica mostrou menor sensibilidade que a citometria de fluxo para detectar mudanças sutis em populações de células CD8+"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Utilizar modelos ortotópicos de tumor de bexiga para maior relevância translacional",
+      "Avaliar a liberação de DAMPs, ativação de células dendríticas e respostas de células T antígeno-específicas para esclarecer se ICD contribui para os efeitos terapêuticos observados",
+      "Elucidar os mecanismos moleculares subjacentes associados à ICD"
+    ],
+    "gaps_identificados": [
+      "O efeito da MHT combinada com αPD-L1 no câncer de bexiga nunca havia sido avaliado anteriormente",
+      "Os mecanismos precisos subjacentes ao aumento de CD8+ T cells após P-MHT permanecem não elucidados",
+      "A ocorrência e extensão da ICD dependem de múltiplos fatores (temperatura, duração, tipo celular) que não foram completamente caracterizados neste modelo"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo aplica campo magnético alternante a 118 kHz e 30,6 kA/m para geração de calor localizado por nanopartículas superparamagnéticas, demonstrando controle preciso de temperatura tumoral in vivo.",
+    "integracao_engenharia": "O estudo desenvolveu um sistema de lipossomas catiônicos de magnetita conjugados com anticorpo anti-PD-L1 (αPD-L1@MCL), integrando síntese química, bioconjugação e sistema de entrega de fármaco funcionalizado.",
+    "integracao_biologia": "O trabalho demonstra que a P-MHT aumenta a infiltração de células T CD8+ no tumor e induz memória imune durável, com proteção completa contra reestimulação tumoral em camundongos tratados.",
+    "integracao_materiais": "As nanopartículas de Fe3O4 de ~10 nm com comportamento superparamagnético foram encapsuladas em lipossomas catiônicos e funcionalizadas com anticorpo IgG, resultando em partículas multifuncionais com tamanho médio de ~137 nm.",
+    "mensagem_principal": "A conjugação do anticorpo anti-PD-L1 a lipossomas catiônicos de magnetita (αPD-L1@MCL) permite combinar hipertermia magnética com bloqueio local de checkpoint imune, convertendo hipertermia leve subótima (43 °C, dose única) em resposta curativa com regressão tumoral completa e indução de imunidade antitumoral duradoura em modelo murino de câncer de bexiga."
+  },
+  "custom_id": "52__Enhanced_magnetic_hyperthermia_using_anti-PD-L1_antibody-con"
+}

@@ -1,0 +1,111 @@
+{
+  "autores": "Pawar et al.",
+  "ano": 2024,
+  "periodico": "Advanced Therapeutics",
+  "titulo": "Magnetic Nanoparticle-Mediated Multimodal Cancer Therapy: Hyperthermia, Controlled Drug Release, and Antibody-Based Precision",
+  "doi": "10.1002/adtp.202400168",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética utiliza MNPs expostas a um campo magnético alternante (AMF) para gerar calor por meio de perdas de relaxação de Néel e Browniana. Esse calor eleva a temperatura na faixa de 42–45 °C, capaz de destruir células cancerígenas.",
+    "etapas_processo": [
+      "Síntese solvotérmica de MNPs de Fe3O4 com forma esférica uniforme (~12 nm)",
+      "Funcionalização das MNPs com quitosana (MNP-Chi)",
+      "Carregamento do fármaco doxorrubicina (MNP-Chi-Dox)",
+      "Conjugação do anticorpo CA 15-3 à nanoformulação (MNP-Chi-Dox-Ab)",
+      "Aplicação de AMF para induzir hipertermia e liberar o fármaco no sítio tumoral",
+      "Avaliação de citotoxicidade e apoptose em células MCF-7"
+    ],
+    "internalizacao_nps": "A conjugação do anticorpo anti-CA 15-3 promove a ligação específica aos antígenos presentes nas células cancerígenas, desencadeando a internalização de toda a nanoformulação para dentro da célula por targeting ativo.",
+    "aplicacao_campo": "O AMF é aplicado a diferentes intensidades (13,3; 20 e 26,7 kA m−1) a uma frequência fixa de 280 kHz usando um equipamento Easy Heat 8310 (Ambrell, UK).",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 45.0,
+    "vias_morte_celular": [
+      "apoptose",
+      "necrose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": false,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "As perdas por relaxação de Néel e Browniana são os mecanismos responsáveis pela geração de calor nas MNPs sob AMF.",
+    "descricao_mecanismo": "As MNPs superparamagnéticas geram calor quando expostas a um AMF externo por meio das perdas de relaxação de Néel e Browniana. A relaxação de Néel envolve a rotação do momento magnético dentro da partícula, enquanto a relaxação Browniana envolve a rotação física da partícula no meio. O aumento da concentração de MNPs incrementa as interações de dipolo magnético, elevando os valores de SAR."
+  },
+  "q3": {
+    "material": "Fe3O4 (magnetita)",
+    "composicao_quimica": "Fe3O4",
+    "dopagem": null,
+    "tamanho_nm": 12.0,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": null,
+    "revestimento": "quitosana",
+    "material_autorregulavel": false,
+    "SAR_W_g": 71.0,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 77.0,
+    "relacao_estrutura_propriedade": "MNPs esféricas de ~12 nm com estrutura cúbica de magnetita apresentam comportamento superparamagnético à temperatura ambiente (coercividade e remanência nulas), essencial para aplicações biomédicas. O revestimento com quitosana e o carregamento de fármaco reduzem gradualmente a magnetização de saturação de 77 para 67,9 emu g−1, enquanto o aumento da concentração de MNPs eleva as interações de dipolo e o SAR."
+  },
+  "q4": {
+    "amplitude_kA_m": 13.3,
+    "frequencia_kHz": 280.0,
+    "produto_Hf": 3724000000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": "Curvas de temperatura versus tempo medidas por termômetro durante exposição ao AMF; SAR calculado pelo método da inclinação inicial (initial slope method)",
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "MCF-7",
+    "modelo_animal": null,
+    "tipo_cancer": "mama",
+    "concentracao_mg_mL": 7.0,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": true,
+    "apoptose": true,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "A nanoformulação sem a molécula bioativa (anti-CA 15-3) resultou em apenas 18% de morte celular, indicando eficácia limitada sem o targeting ativo",
+      "A concentração de 5 mg mL−1 da nanoformulação atingiu apenas 35 °C, abaixo da temperatura hipertérmica desejada, exigindo concentração maior (7 mg mL−1)",
+      "Os valores de SAR para concentrações de 5 e 7 mg mL−1 em campos magnéticos mais elevados não foram reportados porque a temperatura excedeu o limite de detecção do equipamento",
+      "O estudo foi realizado apenas in vitro, sem validação in vivo"
+    ],
+    "problemas_SAR_ILP": true,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Exploração adicional da plataforma multimodal para melhorar a eficácia terapêutica e minimizar efeitos colaterais sistêmicos",
+      "Investigação in vivo do comportamento da nanoformulação MNP-Chi-Dox-Ab"
+    ],
+    "gaps_identificados": [
+      "Ausência de estudos in vivo para validar os resultados de targeting ativo e hipertermia observados in vitro",
+      "A abordagem multimodal combinando targeting ativo, hipertermia e liberação controlada de fármaco raramente foi aplicada anteriormente",
+      "Não foram reportados valores de ILP para comparação padronizada da eficiência de aquecimento"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra que MNPs superparamagnéticas de Fe3O4 (~12 nm) geram calor eficiente por relaxação de Néel e Browniana sob AMF dentro do critério de segurança de Brezovich (H = 13,3 kA m−1, f = 280 kHz), atingindo temperatura hipertérmica de 42 °C.",
+    "integracao_engenharia": "O artigo apresenta a bioengenharia de uma nanoformulação multifuncional (MNP-Chi-Dox-Ab) que integra síntese solvotérmica, funcionalização com quitosana termossensível e conjugação de anticorpo para liberação controlada de fármaco estimulada por pH, temperatura e AMF.",
+    "integracao_biologia": "Estudos de citotoxicidade por ensaio MTT e análise de apoptose por citometria de fluxo em células MCF-7 demonstraram que o targeting ativo com anticorpo anti-CA 15-3 aumenta a morte celular de 18% para 43%, e que a temperatura hipertérmica (42 °C) eleva a população apoptótica de 30% para 69% em comparação com condições fisiológicas.",
+    "integracao_materiais": "A funcionalização com quitosana confere resposta dupla a pH e temperatura às MNPs de Fe3O4, possibilitando liberação de Dox de ~65% em pH 5 e 42 °C, aumentada para ~74% sob AMF, com preservação da estrutura cristalina cúbica da magnetita confirmada por XRD, TEM, FTIR e XPS.",
+    "mensagem_principal": "O artigo reporta o desenvolvimento bem-sucedido de uma plataforma multimodal (MNP-Chi-Dox-Ab) que combina targeting ativo por anticorpo CA 15-3, hipertermia magnética e liberação controlada de doxorrubicina responsiva a pH/temperatura/AMF, demonstrando efeito sinérgico no tratamento in vitro de células de câncer de mama MCF-7 com potencial para melhorar a eficácia terapêutica e minimizar efeitos colaterais sistêmicos."
+  },
+  "custom_id": "79__Magnetic_Nanoparticle-Mediated_Multimodal_Cancer_Therapy_Hyp"
+}

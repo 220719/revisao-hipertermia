@@ -1,0 +1,112 @@
+{
+  "autores": "Galarreta-Rodriguez et al.",
+  "ano": 2023,
+  "periodico": "Pharmaceuticals",
+  "titulo": "Preparation of Selenium-Based Drug-Modified Polymeric Ligand-Functionalised Fe3O4 Nanoparticles as Multimodal Drug Carrier and Magnetic Hyperthermia Inductor",
+  "doi": "10.3390/ph16070949",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética é uma terapia baseada na capacidade de nanopartículas magnéticas de induzir aquecimento quando expostas a um campo magnético alternado (AC), podendo danificar células tumorais. Atualmente, a hipertermia aparece como estratégia para potencializar quimioterapia ou radioterapia.",
+    "etapas_processo": [
+      "Síntese de NPs de Fe3O4 por decomposição térmica do oleato de ferro(III)",
+      "Funcionalização das NPs com copolímeros anfifílicos (PD, PD-PEG, PD-EM102, PD-EM102-PEG)",
+      "Caracterização estrutural, morfológica e magnética das NPs",
+      "Medição da resposta de hipertermia via magnetometria AC (SAR)",
+      "Avaliação da citotoxicidade in vitro em células de câncer colorretal (HCT116)"
+    ],
+    "internalizacao_nps": "O artigo não descreve explicitamente o mecanismo de internalização celular das NPs",
+    "aplicacao_campo": "O campo magnético alternado (AC) é aplicado a 311 kHz com intensidade de até 40 kA/m usando um circuito ressonante alimentado por um amplificador de radiofrequência.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": [
+      "apoptose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": null,
+    "perdas_histerese": true,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O mecanismo dominante é a relaxação de Néel, associada ao maior tempo de relaxação efetivo das NPs maiores e de maior anisotropia.",
+    "descricao_mecanismo": "O SAR é calculado a partir da área dos loops de histerese AC obtidos por magnetometria AC dinâmica. O maior tempo de relaxação de Néel das NPs Fe3O4_B (18 nm, forma octaédrica) em relação às Fe3O4_A (13 nm, cuboctaédricas) é responsável pelo maior SAR observado. Interações dipolares entre partículas aglomeradas também podem aumentar o poder de aquecimento quando formam estruturas de alta anisotropia como cadeias e agregados."
+  },
+  "q3": {
+    "material": "Fe3O4 (magnetita)",
+    "composicao_quimica": "Fe3O4",
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 13.0,
+    "faixa_tamanho_max_nm": 18.0,
+    "forma": "cuboctaédrica (Fe3O4_A) e octaédrica (Fe3O4_B)",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia efetiva dependente de tamanho e forma; Fe3O4_B apresenta maior anisotropia efetiva devido à forma cúbica",
+    "revestimento": "PEG e PMA (poli(etileno-alt-anidrido maleico)) com dodecylamina (PD), com ou sem PEG e com ou sem droga EM102",
+    "material_autorregulavel": false,
+    "SAR_W_g": 776.0,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 92.0,
+    "relacao_estrutura_propriedade": "NPs maiores (18 nm) com morfologia octaédrica apresentam maior magnetização de saturação (92 Am2/kg) e maior SAR (776 W/g) devido à maior estequiometria, menor proporção superfície/volume e maior tempo de relaxação de Néel. NPs menores (13 nm) apresentam menor magnetização e SAR devido a efeitos de superfície e desordem de spin."
+  },
+  "q4": {
+    "amplitude_kA_m": 40.0,
+    "frequencia_kHz": 311.0,
+    "produto_Hf": 12440000000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": "SAR calculado pela área dos loops de histerese AC via magnetometria AC (AC magnetometer)",
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "HCT116",
+    "modelo_animal": null,
+    "tipo_cancer": "colorretal",
+    "concentracao_mg_mL": 1.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": null,
+    "necrose": null,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "A baixa proporção de EM102 (5% mol de PMA) dificultou a detecção da droga por FTIR nas NPs funcionalizadas",
+      "A presença de PEG pode mascarar a atividade da droga EM102, reduzindo a interação droga-célula e a eficácia terapêutica",
+      "A comparação dos valores de SAR com a literatura é dificultada pela variação de condições de medição (frequência e amplitude de campo)",
+      "O grau de aglomeração das NPs após funcionalização pode afetar o desempenho de aquecimento de forma não controlada",
+      "A implementação clínica é limitada pelos desafios tecnológicos na aprovação de sistemas magnéticos com características físicas ótimas"
+    ],
+    "problemas_SAR_ILP": true,
+    "falta_padronizacao": true,
+    "recomendacoes_futuras": [
+      "Aumentar a concentração da droga EM102 nos nanosistemas para melhorar a redução da proliferação celular sem atingir doses elevadas",
+      "Avaliar o efeito combinado de hipertermia magnética e entrega de droga (EM102) em células cancerígenas",
+      "Otimizar a quantidade de PEG para equilibrar biocompatibilidade e eficácia da droga"
+    ],
+    "gaps_identificados": [
+      "Ausência de estudos in vivo para validar o desempenho dos nanosistemas como agentes multimodais",
+      "Não foram analisados os efeitos biológicos de NPs modificadas com compostos organosselenio combinando hipertermia e entrega de droga simultaneamente",
+      "Falta de avaliação do mecanismo de morte celular induzido (apoptose, necrose, etc.)",
+      "Não foram realizados estudos de biodistribuição ou farmacocinética dos nanosistemas"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo contribui para a física ao caracterizar o comportamento magnético dinâmico das NPs de Fe3O4 por magnetometria AC, relacionando tamanho, forma e anisotropia com o desempenho de aquecimento (SAR) em hipertermia magnética.",
+    "integracao_engenharia": "O artigo contribui para a engenharia ao desenvolver um protocolo de síntese e funcionalização de NPs de Fe3O4 com copolímeros anfifílicos carregando droga selenizada, criando nanosistemas multifuncionais para entrega de droga e hipertermia.",
+    "integracao_biologia": "O artigo contribui para a biologia ao demonstrar in vitro a citotoxicidade dos nanosistemas funcionalizados com EM102 em células de câncer colorretal HCT116, evidenciando o potencial terapêutico dos compostos organosselenio conjugados a NPs.",
+    "integracao_materiais": "O artigo contribui para a ciência dos materiais ao demonstrar como o controle da razão de solventes ODE:DBE e da temperatura de síntese permite ajustar tamanho, forma e estequiometria das NPs de Fe3O4, afetando diretamente suas propriedades magnéticas e de aquecimento.",
+    "mensagem_principal": "O artigo demonstra a preparação bem-sucedida de nanosistemas multifuncionais baseados em NPs de Fe3O4 funcionalizadas com copolímeros contendo a droga selenizada EM102, que apresentam simultaneamente capacidade de indução de hipertermia magnética (SAR de até 776 W/g) e citotoxicidade in vitro em células de câncer colorretal, abrindo perspectivas para sua aplicação como agentes multimodais no tratamento do câncer colorretal."
+  },
+  "custom_id": "100__Preparation_of_Selenium-Based_Drug-Modified_Polymeric_Ligan"
+}

@@ -1,0 +1,115 @@
+{
+  "autores": "Pawar et al.",
+  "ano": 2026,
+  "periodico": "Journal of Medical Devices",
+  "titulo": "Verification and Validation of an Autotuning Proportional–Integral–Derivative Controller for Spatially Confined Magnetic Particle Hyperthermia",
+  "doi": "10.1115/1.4070364",
+  "tipo_estudo": "in vivo",
+  "q1": {
+    "conceito_tecnica": "Magnetic particle hyperthermia (MPH) é uma terapia minimamente invasiva usada para tratar tumores profundos, na qual nanopartículas magnéticas são entregues ao sítio tumoral e expostas a um campo magnético alternante (AMF) que induz dissipação de energia na forma de calor, elevando localmente a temperatura do tumor.",
+    "etapas_processo": [
+      "Entrega das NPs magnéticas ao sítio tumoral (diretamente ou sistemicamente)",
+      "Aplicação de campo magnético alternante (AMF) na faixa de radiofrequência (100–350 kHz)",
+      "Dissipação de energia pelas NPs via histerese magnética gerando calor localizado",
+      "Monitoramento e controle da temperatura intratumoral por sensor de feedback",
+      "Cálculo em tempo real da dose térmica (CEM43)"
+    ],
+    "internalizacao_nps": "As NPs são injetadas diretamente no tumor (intratumoralmente) usando uma bomba de seringa a 1 µL/min, aguardando 15 min para dispersão pelo tumor antes da remoção da agulha.",
+    "aplicacao_campo": "O AMF é aplicado pelo sistema HYPER, que conforma uma região livre de campo (FFR) usando ímãs estáticos opostos, permitindo aquecimento seletivo apenas na região de interesse enquanto minimiza o aquecimento fora do alvo.",
+    "janela_termica_min_C": 41.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": true,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A dissipação de energia ocorre predominantemente por meio do loop de histerese magnética gerado pelo atraso de fase na resposta do momento magnético das NPs ao AMF, via relaxação de Néel e Browniana.",
+    "descricao_mecanismo": "Quando submetidas ao AMF, as NPs magnéticas exibem um atraso de fase em sua resposta de momento magnético devido aos mecanismos de relaxação de Néel e Browniana. Esse atraso gera um loop de histerese magnética, através do qual energia é dissipada na forma de calor. Isso resulta em um aumento localizado de temperatura no sítio tumoral."
+  },
+  "q3": {
+    "material": "Óxido de ferro (Synomag)",
+    "composicao_quimica": "Nanopartículas de óxido de ferro (Synomag-COOH 50 nm e Synomag-S 90 nm)",
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 50.0,
+    "faixa_tamanho_max_nm": 90.0,
+    "forma": null,
+    "arquitetura_multicore": null,
+    "anisotropia": null,
+    "revestimento": null,
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": null
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": null,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 30.0,
+    "forma_onda": null,
+    "dosimetria_termica": "CEM43 calculado em tempo real via integração discreta da temperatura medida pelos sensores de fibra óptica, monitorado pelo controlador LabVIEW",
+    "distribuicao_espacial_calor": "O aquecimento ocorre primariamente dentro da região livre de campo (FFR) definida pelos ímãs estáticos, com aquecimento mínimo nos tecidos circundantes; a distribuição intratumoral depende da dispersão não homogênea das NPs",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vivo",
+    "linhagem_celular": "4T1",
+    "modelo_animal": "camundongo",
+    "tipo_cancer": "mama",
+    "concentracao_mg_mL": 70.0,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Estimativa do intervalo inicial do controlador (output range) ainda requer intervenção manual do usuário",
+      "O sistema atual usa apenas um sensor de temperatura para feedback (SISO), com os demais sensores atuando apenas como monitores passivos",
+      "O posicionamento do sensor varia entre animais dependendo da geometria do tumor e da habilidade do operador",
+      "A validação foi realizada sem dados de distribuição espacial das NPs (sem uso de MPI)",
+      "Controle com sensor 3 falhou em todos os casos, possivelmente devido ao refluxo das NPs",
+      "A troca do sensor de controle durante o tratamento causou má regulação da temperatura",
+      "Aquecimento por correntes de Foucault pode aumentar significativamente em escala humana"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Automatizar a estimativa do intervalo do controlador analisando a resposta de aquecimento inicial",
+      "Implementar controle preditivo por modelo (MPC) para melhorar a experiência do usuário e minimizar dependência de engenheiro de controles",
+      "Incorporar injeção robótica guiada por MPI com métodos estereotáxicos para posicionamento mais consistente de sensores e NPs",
+      "Ajuste dinâmico da FFR para maximizar a cobertura do índice de cobertura tumoral",
+      "Usar modelos de aprendizado profundo informados por física para planejamento de tratamento em tempo real",
+      "Implementar controle multi-sensor (MIMO) usando espaço de estados ou controle preditivo"
+    ],
+    "gaps_identificados": [
+      "Ausência de dados de distribuição espacial das NPs durante a validação in vivo",
+      "Falta de método para controlar automaticamente o intervalo de potência do controlador sem intervenção do usuário",
+      "Necessidade de estratégias para mitigar o aquecimento por correntes de Foucault em escala clínica humana",
+      "Ausência de modelos substitutos para substituir análise de elementos finitos em planejamento em tempo real"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo demonstra como os mecanismos físicos de relaxação de Néel e Browniana e histerese magnética são explorados para gerar calor localizado controlável, com modelagem do sistema como aproximação de segunda ordem.",
+    "integracao_engenharia": "O artigo desenvolve, verifica e valida um controlador PID de autoajuste baseado em relay feedback implementado em LabVIEW para regulação precisa de temperatura em hipertermia magnética espacialmente confinada (SC-MPH).",
+    "integracao_biologia": "A validação in vivo em modelo murino de carcinoma mamário 4T1 demonstra a viabilidade do controle de temperatura intratumoral, considerando variáveis biológicas como refluxo de NPs, perfusão tecidual e heterogeneidade de distribuição das partículas.",
+    "integracao_materiais": "O uso de nanopartículas Synomag de alta performance (óxido de ferro, 50–90 nm) com concentrações ajustadas para condições pré-clínicas relevantes demonstra a importância das propriedades das NPs para o desempenho do controlador.",
+    "mensagem_principal": "O controlador PID de autoajuste baseado em relay feedback desenvolvido neste estudo foi capaz de manter a temperatura dentro dos critérios de projeto para hipertermia magnética espacialmente confinada (SC-MPH), com tempo de subida inferior a 4 min e erro em regime permanente menor que 0,1 °C, sendo validado com sucesso em quatro de seis camundongos com tumor mamário, representando um avanço significativo para a tradução clínica da SC-MPH ao reduzir a necessidade de engenheiro de controles especializado durante o tratamento."
+  },
+  "custom_id": "31__Verification_and_Validation"
+}

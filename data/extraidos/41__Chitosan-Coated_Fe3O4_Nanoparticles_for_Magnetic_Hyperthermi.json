@@ -1,0 +1,108 @@
+{
+  "autores": "Wilczyńska et al.",
+  "ano": 2025,
+  "periodico": "Materials",
+  "titulo": "Chitosan-Coated Fe3O4 Nanoparticles for Magnetic Hyperthermia",
+  "doi": "10.3390/ma18245629",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética utiliza ferrofluidos contendo nanopartículas de Fe3O4 que, quando expostos a um campo magnético alternante, dissipam energia na forma de calor, permitindo o controle preciso da temperatura em tecidos tumorais.",
+    "etapas_processo": [
+      "Síntese das nanopartículas de Fe3O4 por coprecipitação",
+      "Revestimento com quitosana para estabilização coloidal",
+      "Dispersão das NPs em água para formar ferrofluido",
+      "Exposição ao campo magnético alternante (AMF)",
+      "Medição calorimétrica da taxa de absorção específica (SAR)"
+    ],
+    "internalizacao_nps": null,
+    "aplicacao_campo": "O campo magnético alternante é aplicado com amplitude Hmax = 15,9 kA/m e frequência f = 532,1 kHz utilizando um sistema magneTherm.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": null,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "Tanto a relaxação de Néel quanto a relaxação Browniana contribuem para a dissipação de calor, sendo que a dominância de cada mecanismo depende da viscosidade do meio e do raio hidrodinâmico das nanopartículas.",
+    "descricao_mecanismo": "A relaxação de Néel envolve a rotação do momento magnético interno da nanopartícula, sendo fortemente dependente da temperatura e da constante de anisotropia segundo a equação de Arrhenius. A relaxação Browniana envolve a rotação física da partícula no fluido, dependendo da viscosidade do meio e do raio hidrodinâmico. O revestimento de quitosana aumenta o raio hidrodinâmico, deslocando o pico de susceptibilidade para frequências mais baixas e reduzindo o SAR."
+  },
+  "q3": {
+    "material": "Fe3O4 (magnetita)",
+    "composicao_quimica": "Fe3O4",
+    "dopagem": null,
+    "tamanho_nm": 14.3,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia magnetocristalina com constante K mencionada na equação de relaxação de Néel",
+    "revestimento": "quitosana",
+    "material_autorregulavel": false,
+    "SAR_W_g": 23.447,
+    "ILP_nHm2_kg": 0.174,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "O revestimento com quitosana reduz a área superficial específica de 76,3 m²/g para 68,9–72,5 m²/g e aumenta o raio hidrodinâmico das partículas, deslocando a relaxação Browniana para frequências menores e reduzindo o SAR em 12–40% dependendo da concentração e viscosidade da quitosana."
+  },
+  "q4": {
+    "amplitude_kA_m": 15.9,
+    "frequencia_kHz": 532.1,
+    "produto_Hf": 8460390000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": "Método da inclinação inicial (initial slope method) sob condições não-adiabáticas usando o sistema magneTherm",
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": 100.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Os experimentos calorimétricos foram realizados em condições não-adiabáticas, o que pode introduzir erros na estimativa do SAR",
+      "O revestimento de quitosana muito viscoso limita a difusão e pode dificultar o revestimento uniforme das superfícies de Fe3O4",
+      "A seleção de parâmetros como concentração de nanopartículas e amplitude/frequência do campo magnético requer pesquisas adicionais para otimização do SAR",
+      "O estudo não inclui experimentos in vivo ou com células tumorais"
+    ],
+    "problemas_SAR_ILP": true,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Combinar resultados de espectroscopia dielétrica e experimentos calorimétricos para otimizar parâmetros para aplicações médicas",
+      "Realizar pesquisas adicionais para otimizar a concentração de nanopartículas e os parâmetros do campo magnético",
+      "Investigar a diferença entre relaxação de dipolos magnéticos e dipolos elétricos no planejamento da terapia de hipertermia magnética in vivo ou in silico"
+    ],
+    "gaps_identificados": [
+      "A caracterização elétrica e dielétrica de ferrofluidos permanece uma área relativamente pouco explorada na literatura",
+      "Estudos sistemáticos de parâmetros elétricos como condutividade e permissividade dielétrica de ferrofluidos para aplicações biomédicas são insuficientes",
+      "A contribuição das perdas condutivas e dielétricas (além das perdas magnéticas) para o aquecimento total não é adequadamente considerada nos experimentos calorimétricos convencionais"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo caracteriza os mecanismos de condução elétrica (metálica por percolação versus dielétrica por tunelamento) e a polarização interfacial Maxwell-Wagner-Sillars em ferrofluidos de Fe3O4, revelando como esses fenômenos físicos influenciam as propriedades térmicas.",
+    "integracao_engenharia": "O estudo fornece parâmetros elétricos e dielétricos essenciais para a modelagem computacional da distribuição de temperatura em tecidos biológicos via equação de biocalor de Pennes, permitindo melhor planejamento do tratamento de hipertermia magnética.",
+    "integracao_biologia": "O artigo não apresenta experimentos biológicos com células ou animais, mas discute a relevância dos parâmetros obtidos para aplicações biomédicas in vivo e in silico.",
+    "integracao_materiais": "A síntese por coprecipitação e o revestimento com quitosana de diferentes viscosidades demonstram como a modificação da superfície das NPs altera as propriedades texturais, eletrocinéticas e de aquecimento, com redução do SAR de 12–40%.",
+    "mensagem_principal": "O revestimento de nanopartículas de Fe3O4 com quitosana altera significativamente as propriedades elétricas, dielétricas e de aquecimento dos ferrofluidos, reduzindo o SAR em 12–40%, e demonstra que os parâmetros elétricos e dielétricos dos ferrofluidos devem ser considerados nos modelos de biocalor para otimização do planejamento da hipertermia magnética."
+  },
+  "custom_id": "41__Chitosan-Coated_Fe3O4_Nanoparticles_for_Magnetic_Hyperthermi"
+}

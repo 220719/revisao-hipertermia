@@ -1,0 +1,114 @@
+{
+  "autores": "Zhang et al.",
+  "ano": 2026,
+  "periodico": "International Journal of Hyperthermia",
+  "titulo": "A study on the structural and magnetic properties of Fe3O4@SiO2 core-shell microspheres along with a safety assessment in treating chemotherapy-resistant ovarian cancer",
+  "doi": "10.1080/02656736.2025.2610818",
+  "tipo_estudo": "in vivo",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (MH) envolve a implantação de meios de aquecimento magnético no interior do tumor, que se aquecem sob indução de um campo magnético alternante externo, formando rapidamente uma zona de alta temperatura no tecido biológico local e induzindo a morte das células tumorais.",
+    "etapas_processo": [
+      "Síntese das nanopartículas Fe3O4@SiO2 pelo método de coprecipitação e abordagem de Stöber modificada",
+      "Injeção intratumoral do fluido magnético (Fe3O4@SiO2, 60 mg/mL de Fe, 100 μL)",
+      "Aplicação do campo magnético alternante externo (f = 245 kHz, H = 8 kA/m) por 15 min",
+      "Aquecimento do tumor até a temperatura-alvo de 50 °C em aproximadamente 5 min",
+      "Manutenção da temperatura-alvo por até 10-25 min adicionais"
+    ],
+    "internalizacao_nps": "As nanopartículas são administradas por injeção intratumoral direta no modelo in vivo; in vitro, as células são incubadas com Fe3O4@SiO2 em diferentes concentrações.",
+    "aplicacao_campo": "O campo magnético alternante é aplicado por meio de uma bobina de indução magnética (f = 245 kHz, H = 8 kA/m) com diâmetro interno de 10,5 cm e externo de 11,6 cm.",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 50.0,
+    "vias_morte_celular": [
+      "apoptose",
+      "necrose",
+      "imunomodulacao"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O aquecimento é gerado pelo fluido magnético de Fe3O4@SiO2 sob campo magnético alternante, resultando na formação de zona de alta temperatura localizada no tumor.",
+    "descricao_mecanismo": "O artigo descreve que o material magnético se aquece sob indução de campo magnético alternante externo (100–300 kHz), resultando na formação rápida de uma zona de alta temperatura no tecido biológico local. O mecanismo físico detalhado (relaxação de Néel, relaxação Browniana ou histerese) não é explicitamente discutido no texto. O SAR medido para Fe3O4@SiO2 foi de 38,9 W/g, refletindo a eficiência de conversão de energia magnética em calor."
+  },
+  "q3": {
+    "material": "Fe3O4@SiO2 (core-shell)",
+    "composicao_quimica": "Fe3O4 (núcleo) revestido com SiO2 (casca), funcionalizado com APTES (Fe3O4@SiO2-NH2)",
+    "dopagem": null,
+    "tamanho_nm": 235.66,
+    "faixa_tamanho_min_nm": 217.28,
+    "faixa_tamanho_max_nm": 254.03,
+    "forma": "esférica",
+    "arquitetura_multicore": true,
+    "anisotropia": null,
+    "revestimento": "sílica",
+    "material_autorregulavel": true,
+    "SAR_W_g": 38.9,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 31.7,
+    "relacao_estrutura_propriedade": "O revestimento de SiO2 sobre o núcleo de Fe3O4 reduz a exposição direta do núcleo ao meio biológico, prevenindo agregação e lixiviação de ferro, ao mesmo tempo que mantém boa eficiência de aquecimento; o tamanho do cristalito de Fe3O4@SiO2 pelo método de Scherrer é de 10,7 nm, e a espessura da casca de SiO2 é de aproximadamente 5 nm."
+  },
+  "q4": {
+    "amplitude_kA_m": 8.0,
+    "frequencia_kHz": 245.0,
+    "produto_Hf": 1960000000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 15.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Câmera termográfica infravermelha MAG32 (MAGNITY Co., Ltd, China) utilizada para monitorar a temperatura in vitro e in vivo",
+    "distribuicao_espacial_calor": "A temperatura no sítio tumoral atingiu ~50 °C em 5 min e permaneceu estável entre 49,5 °C e 50,5 °C; na região anal, o aumento foi mínimo e não excedeu 33 °C, indicando aquecimento localizado no tumor.",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vivo",
+    "linhagem_celular": "A2780_Taxol (ovarian carcinoma paclitaxel-resistant), A2780, IOSE80",
+    "modelo_animal": "camundongo",
+    "tipo_cancer": "ovário",
+    "concentracao_mg_mL": 60.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": true,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": true
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Pequeno número de animais por grupo (n = 4)",
+      "Edema tumoral pós-hipertermia dificulta a interpretação das curvas de volume tumoral",
+      "O potencial terapêutico do Fe3O4@SiO2 em câncer de ovário resistente a drogas ainda não havia sido explorado anteriormente",
+      "A concentração de Fe no fluido magnético deste estudo (60 mg/mL) é menor que a do produto clínico da Magforce (112 mg/mL), podendo limitar comparações diretas"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Dopar Fe3O4@SiO2 com outros elementos metálicos como Cu e Au para melhorar o efeito terapêutico",
+      "Combinar a hipertermia magnética com imunoterapia (αPD-L1 ou anti-CTLA-4) para tratar câncer de ovário quimioresistente",
+      "Ajustar o número de sessões de tratamento conforme o efeito clínico real do paciente"
+    ],
+    "gaps_identificados": [
+      "Mecanismo físico detalhado de aquecimento (Néel, Browniano, histerese) não foi investigado",
+      "Falta de estudos de biodistribuição sistêmica detalhada das nanopartículas",
+      "Ausência de investigação sobre a internalização celular das NPs e sua localização intracelular",
+      "Não foi avaliado o efeito imunomodulador in vivo de forma sistemática",
+      "Não foram realizados estudos de farmacocinética ou farmacodinâmica das nanopartículas"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo contribui para a física ao caracterizar as propriedades magnetotérmicas do fluido Fe3O4@SiO2 sob diferentes amplitudes de campo magnético alternante, determinando o SAR de 38,9 W/g e demonstrando controle de temperatura autorregulável em torno de 50 °C.",
+    "integracao_engenharia": "O estudo contribui para a engenharia ao desenvolver um protocolo de síntese por coprecipitação e Stöber modificado para produção de nanomaterial core-shell Fe3O4@SiO2 com morfologia monodispersa e estabilidade coloidal aprimorada, além de validar sua aplicação em sistema de bobina de indução magnética.",
+    "integracao_biologia": "O artigo contribui para a biologia ao empregar sequenciamento transcriptômico (RNA-seq) para investigar os mecanismos moleculares da hipertermia magnética em células de câncer de ovário resistentes ao paclitaxel, identificando vias de termogênese, fosforilação oxidativa e espécies reativas de oxigênio.",
+    "integracao_materiais": "O trabalho contribui para a ciência dos materiais ao demonstrar que o revestimento de SiO2 sobre Fe3O4 reduz a toxicidade, previne agregação e lixiviação de ferro, mantendo magnetização de saturação de 31,7 emu/g e permitindo controle fino da temperatura de aquecimento pelo ajuste da razão Fe:Si.",
+    "mensagem_principal": "Este estudo demonstra, pela primeira vez, a aplicação de hipertermia magnética com nanopartículas Fe3O4@SiO2 core-shell no tratamento de câncer de ovário resistente à quimioterapia, mostrando que o fluido magnético sintetizado é seguro, possui boa eficiência de aquecimento autorregulável em ~50 °C, e apresenta efeito antitumoral significativo em modelo animal xenográfico, com múltiplas sessões de tratamento aumentando progressivamente a supressão tumoral."
+  },
+  "custom_id": "25__A_study_on_the_structural_and_magnetic_properties_of_Fe3O4_S"
+}

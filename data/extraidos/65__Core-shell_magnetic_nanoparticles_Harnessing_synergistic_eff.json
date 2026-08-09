@@ -1,0 +1,111 @@
+{
+  "autores": "Poon et al.",
+  "ano": 2025,
+  "periodico": "Materials Today Chemistry",
+  "titulo": "Core-shell magnetic nanoparticles: Harnessing synergistic effects for MRI and magnetic hyperthermia",
+  "doi": "10.1016/j.mtchem.2025.102533",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (MHT) utiliza nanopartículas magnéticas que interagem com um campo magnético alternante externo para gerar calor, destruindo tumores. As NPs devem ter alta suscetibilidade magnética para responder eficientemente às variações do campo.",
+    "etapas_processo": [
+      "Síntese das NPs de óxido de ferro (IO) por decomposição térmica",
+      "Crescimento da casca de óxido de manganês (MO) via método seed-mediated",
+      "Transferência de fase de meio orgânico para aquoso via funcionalização com dopamina",
+      "Dispersão das NPs em solução aquosa com agente estabilizador",
+      "Exposição ao campo magnético alternante (AMF) para geração de calor",
+      "Medição da taxa de absorção específica (SAR) por termometria"
+    ],
+    "internalizacao_nps": "O artigo menciona confinamento das NPs em endossomos/lisossomos, aumentando a concentração local e levando à agregação, mas não descreve o mecanismo de internalização celular em detalhes.",
+    "aplicacao_campo": "O campo magnético alternante (AMF) é aplicado com frequência de 635 kHz e amplitude de 25 kA/m usando um equipamento nB nanoScale Biomagnetics D5.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": true,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante de aquecimento nas NPs estudadas, conforme confirmado pelo curto tempo de relaxação de Néel (~20 µs) em comparação com o tempo de relaxação Browniana.",
+    "descricao_mecanismo": "O SAR é resultado cumulativo das relaxações Browniana e de Néel. A relaxação Browniana depende do volume hidrodinâmico e da viscosidade do meio, enquanto a relaxação de Néel depende da barreira de energia de anisotropia magnética efetiva. Análise dos tempos de relaxação calculados (~20 µs para Néel vs. centenas a milhares de µs para Browniana) confirma que a relaxação de Néel domina o aquecimento. Adicionalmente, a dissipação de potência é diretamente proporcional à magnetização de saturação (Ms) conforme a equação de Rosensweig, sendo a redução de Ms pela casca de MO o principal fator responsável pela diminuição do SAR."
+  },
+  "q3": {
+    "material": "Fe3O4 com casca de MnO (óxido de ferro@óxido de manganês)",
+    "composicao_quimica": "Fe3O4 (núcleo) / MnO (casca)",
+    "dopagem": null,
+    "tamanho_nm": 10.2,
+    "faixa_tamanho_min_nm": 9.3,
+    "faixa_tamanho_max_nm": 10.7,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia magnetocristalina efetiva reduzida pela casca paramagnética de MnO; sem exchange bias observado",
+    "revestimento": "dopamina (para transferência de fase para meio aquoso)",
+    "material_autorregulavel": false,
+    "SAR_W_g": 66.0,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 20.5,
+    "relacao_estrutura_propriedade": "O aumento da espessura da casca de MnO reduz progressivamente a magnetização de saturação (Ms) e a temperatura de bloqueio das NPs, pois a fase paramagnética da casca contribui minimamente ao momento magnético total. Essa redução de Ms é o principal fator responsável pela diminuição do SAR, conforme previsto pela equação de Rosensweig, enquanto em altas concentrações a casca reduz interações dipolares entre partículas, melhorando a eficiência de aquecimento relativa."
+  },
+  "q4": {
+    "amplitude_kA_m": 25.0,
+    "frequencia_kHz": 635.0,
+    "produto_Hf": 15875000000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": "Sensor de temperatura de fibra óptica posicionado centralmente no fundo da solução; SAR estimado pelo gradiente de um ajuste Box-Lucas a 24°C",
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": 12.5,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": true,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "A casca de MO é inicialmente descontínua e não uniforme na primeira etapa de deposição",
+      "O excesso de casca paramagnética (IO@MO@MO) é prejudicial à eficiência de aquecimento em baixas concentrações",
+      "As relaxividades calculadas combinando concentrações de dois íons metálicos com propriedades magnéticas muito diferentes constituem uma abordagem imprecisa",
+      "A análise da anisotropia magnetocristalina individual é dificultada pela contribuição das interações dipolares na temperatura de bloqueio medida",
+      "Ausência de avaliação biológica in vitro ou in vivo (citotoxicidade, eficácia terapêutica em células tumorais)"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Otimizar a concentração clínica ideal acima de 12,5 mg/mL para o sistema IO@MO",
+      "Investigar o desempenho das NPs em concentrações mais próximas das clínicas (até 112 mg/mL)",
+      "Desenvolver agentes teranósticos com casca fina otimizada para equilibrar supressão de interações dipolares e manutenção da Ms"
+    ],
+    "gaps_identificados": [
+      "Ausência de estudos in vitro ou in vivo de citotoxicidade e eficácia terapêutica",
+      "Falta de avaliação do comportamento das NPs em ambiente biológico complexo (proteínas, células)",
+      "Necessidade de investigar o desempenho em concentrações clínicas reais (~112 mg/mL)",
+      "Impacto do confinamento intracelular (endossomos/lisossomos) na eficiência de aquecimento não foi quantificado experimentalmente"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo elucida o mecanismo físico dominante de aquecimento (relaxação de Néel e redução de Ms pela casca paramagnética) usando a equação de Rosensweig e análise dos tempos de relaxação magnética.",
+    "integracao_engenharia": "Desenvolve um método de decomposição térmica multi-etapas seed-mediated que permite controle preciso da espessura da casca de MnO, superando o desafio da alta energia superficial do MnO para obter revestimento uniforme.",
+    "integracao_biologia": "Demonstra que as interações dipolares em altas concentrações (relevantes clinicamente) degradam o desempenho de aquecimento das NPs puras de Fe3O4, enquanto a casca de MnO mitiga esse efeito, com relevância direta para o uso clínico da hipertermia magnética.",
+    "integracao_materiais": "Sintetiza e caracteriza NPs core-shell IO@MnO com propriedades magnéticas e relaxométricas ajustáveis pela espessura da casca, demonstrando que a casca paramagnética aumenta as relaxividades por NP (r1-Fe e r2-Fe) para uso como agente de contraste MRI dual T1-T2.",
+    "mensagem_principal": "NPs core-shell Fe3O4@MnO funcionam como agentes teranósticos que combinam hipertermia magnética eficiente e contraste MRI aprimorado em uma única plataforma, onde a casca de MnO, embora reduza o SAR em baixas concentrações via diminuição da Ms, é sinérgica em concentrações clínicas ao reduzir interações dipolares prejudiciais, além de aumentar as relaxividades por NP para imageamento MRI."
+  },
+  "custom_id": "65__Core-shell_magnetic_nanoparticles_Harnessing_synergistic_eff"
+}

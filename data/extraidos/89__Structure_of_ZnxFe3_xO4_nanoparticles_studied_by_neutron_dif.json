@@ -1,0 +1,110 @@
+{
+  "autores": "Lohr et al.",
+  "ano": 2024,
+  "periodico": "Journal of Applied Physics",
+  "titulo": "Structure of ZnxFe3−xO4 nanoparticles studied by neutron diffraction and its relation with their response in magnetic hyperthermia experiments",
+  "doi": "10.1063/5.0214250",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "Na hipertermia magnética de fluidos (MFH), energia é absorvida de um campo magnético alternado (ac) por um sistema de nanopartículas magnéticas dispersas em um meio, ocorrendo geração de calor e incremento de temperatura na vizinhança das NPs devido ao defasamento entre o campo aplicado e o momento magnético.",
+    "etapas_processo": [
+      "Dispersão das nanopartículas magnéticas em um meio (fluido)",
+      "Aplicação de campo magnético alternado (ac) externo",
+      "Absorção de energia do campo pelas NPs por defasamento entre campo e momento magnético",
+      "Geração de calor e aumento de temperatura na vizinhança das NPs",
+      "Medição do incremento de temperatura e cálculo do SLP"
+    ],
+    "internalizacao_nps": null,
+    "aplicacao_campo": "O campo magnético alternado é aplicado por um aparelho RF comercial (F1-D5, nB Nanoscale Biomagnetics) com amplitude de 200 Oe e frequência de 571 kHz.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": null,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "O mecanismo dominante depende da viscosidade do meio e das propriedades das NPs: relaxação de Néel predomina em meios de alta viscosidade, enquanto o mecanismo de Brown predomina em meios de baixa viscosidade.",
+    "descricao_mecanismo": "A relaxação de Brown (mecânica) é caracterizada pelo tempo de relaxação τB, dependendo da viscosidade do meio (η) e do volume hidrodinâmico das NPs. A relaxação de Néel (magnética) é associada à flutuação do momento magnético através da barreira de energia de anisotropia KeffV. Tipicamente ambos os mecanismos ocorrem simultaneamente, com o processo predominante determinado pelo menor tempo de relaxação."
+  },
+  "q3": {
+    "material": "ferrita de zinco",
+    "composicao_quimica": "ZnxFe3−xO4",
+    "dopagem": "Zn (zinco)",
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 6.0,
+    "faixa_tamanho_max_nm": 68.0,
+    "forma": null,
+    "arquitetura_multicore": true,
+    "anisotropia": "anisotropia magnetocristalina (varia de 1 a 10 × 10^4 erg/cm³ dependendo do conteúdo de Zn)",
+    "revestimento": "ácido oleico e oleilamina (amostras TD); sem revestimento mencionado para CP e BM",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": 98.1,
+    "relacao_estrutura_propriedade": "A distribuição catiônica entre os sítios A (tetraédrico) e B (octaédrico) da estrutura espinélio, controlada pelo grau de inversão δ e pelo método de síntese, determina diretamente a ordem magnética, a magnetização de saturação e a anisotropia das NPs. O conteúdo de Zn e a cristalinidade influenciam fortemente o desempenho em MFH, com maior cristalinidade e composição otimizada resultando em maior SLP."
+  },
+  "q4": {
+    "amplitude_kA_m": 15.915,
+    "frequencia_kHz": 571.0,
+    "produto_Hf": 9087165000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": "Termômetro óptico; SLP calculado por SLP = Cliq × (mliq/mNP) × (dT/dt), com dT/dt obtido de ajuste linear no intervalo de 40 s < t < 60 s (ou 10 s < t < 30 s para meios de baixa viscosidade)",
+    "distribuicao_espacial_calor": null,
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Incorporação de Zn nas amostras por decomposição térmica é muito menor do que o esperado pela estequiometria dos precursores iniciais",
+      "O tamanho das partículas TD (62–68 nm) está acima do tamanho ótimo para MFH com Zn ferrites (~15–25 nm), resultando em desempenho subótimo",
+      "As amostras CP e BM apresentam maior grau de aglomeração, dificultando a caracterização individual das NPs",
+      "O diâmetro calculado por NPD é aproximadamente metade do observado por TEM para todas as amostras",
+      "A padronização da resposta das NPs em MFH ainda está longe de ser completa e muitos estudos detalhados ainda são necessários"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": true,
+    "recomendacoes_futuras": [
+      "Realizar caracterização abrangente do sistema para compreender e otimizar as respostas em experimentos de MFH",
+      "Investigar mecanismos de relaxação magnética mais complexos para sistemas que não se comportam como monodôminio simples",
+      "Estudar o efeito do grau de inversão nas propriedades de MFH com maior controle composicional"
+    ],
+    "gaps_identificados": [
+      "A estrutura magnética de equilíbrio da ferrita x=1 (ZnFe2O4) permanece tema de pesquisa mesmo para o composto bulk",
+      "O efeito de substituir gradualmente Zn por Fe, convertendo o espinélio de normal a inverso, ainda precisa ser melhor compreendido",
+      "A empresa de parametrização e padronização da resposta de NPs em MFH está longe de ser completa",
+      "Mecanismos de relaxação magnética complexos para sistemas multidôminio ou com baixa cristalinidade não são bem descritos pelos modelos simples de monodôminio"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo elucida os mecanismos de relaxação magnética (Néel e Brown) e sua dependência com viscosidade do meio, tamanho de partícula e anisotropia efetiva em sistemas de NPs de Zn-ferrita.",
+    "integracao_engenharia": "O estudo demonstra que o método de síntese (decomposição térmica, coprecipitação, moagem de esferas) controla diretamente o tamanho, cristalinidade e desempenho em MFH, fornecendo diretrizes para otimização de processos de fabricação.",
+    "integracao_biologia": "O artigo menciona a alta biocompatibilidade e possibilidade de funcionalização superficial das NPs de ZnxFe3−xO4 como atrativos para aplicações biomédicas, embora não realize experimentos biológicos celulares ou in vivo.",
+    "integracao_materiais": "A difração de nêutrons (NPD) permitiu determinar com precisão a distribuição catiônica (grau de inversão δ) e sua correlação com as propriedades magnéticas e de MFH, revelando que o Zn ocupa exclusivamente o sítio tetraédrico em todas as amostras estudadas.",
+    "mensagem_principal": "A adição de Zn na estrutura espinélio de Fe3O4 modifica a anisotropia magnetocristalina e, consequentemente, o desempenho em hipertermia magnética de fluidos; a amostra TD2 (x=0,09, por decomposição térmica) apresentou o maior valor de SLP em meio de alta viscosidade, evidenciando que o método de síntese e o conteúdo de Zn são fatores determinantes para otimizar a resposta em MFH, sendo a caracterização multimodal (NPD, TEM, PIXE, VSM/SQUID) essencial para compreender tais correlações."
+  },
+  "custom_id": "89__Structure_of_ZnxFe3_xO4_nanoparticles_studied_by_neutron_dif"
+}

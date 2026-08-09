@@ -1,0 +1,112 @@
+{
+  "autores": "Andreozzi et al.",
+  "ano": 2026,
+  "periodico": "Open Physics",
+  "titulo": "Recent advances in magnetic nanoparticle hyperthermia modelling and simulations",
+  "doi": "10.1515/phys-2025-0249",
+  "tipo_estudo": "revisao",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (MHT) é uma terapia minimamente invasiva contra o câncer que explora o calor gerado por nanopartículas magnéticas (MNPs) sob um campo magnético alternante (AMF). Tem potencial para precisão espacial e pode ser usada como terapia isolada ou adjuvante à quimioterapia ou radioterapia.",
+    "etapas_processo": [
+      "Administração de nanopartículas magnéticas no tumor",
+      "Transporte intratumoral das MNPs via convecção, difusão e fluxo vascular",
+      "Internalização celular das MNPs",
+      "Aplicação de campo magnético alternante (AMF)",
+      "Geração de calor localizado pelas MNPs",
+      "Transferência de calor no tecido tumoral modelada por equações de biocalor",
+      "Dano térmico e necrose do tecido tumoral"
+    ],
+    "internalizacao_nps": "A internalização celular é modelada como parte da dinâmica de transporte das MNPs, descrita por equação de convecção-difusão com modelo compartimental que contabiliza extravasamento vascular, difusão intersticial e internalização celular",
+    "aplicacao_campo": "O campo magnético alternante (AMF) é aplicado ao tumor para induzir geração de calor localizada pelas MNPs distribuídas no volume tumoral",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": [
+      "necrose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": true,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A geração de calor em sistemas baseados em MNPs resulta de mecanismos de histerese magnética e relaxação, cuja eficiência depende criticamente das características das nanopartículas.",
+    "descricao_mecanismo": "A geração de calor resulta da histerese magnética e dos mecanismos de relaxação das MNPs sob AMF. A eficiência desses mecanismos depende criticamente do tamanho, forma, anisotropia e estado de agregação das nanopartículas. Interações interpartículas, como formação de cadeias ou clusters, podem alterar significativamente o desempenho da taxa de absorção específica (SAR) e, consequentemente, a eficácia terapêutica."
+  },
+  "q3": {
+    "material": "nanopartículas magnéticas (MNPs) genéricas; referência a óxido de ferro em citação",
+    "composicao_quimica": null,
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": null,
+    "anisotropia": "anisotropia mencionada como fator crítico para eficiência do aquecimento",
+    "revestimento": null,
+    "material_autorregulavel": null,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "A eficiência de geração de calor depende criticamente das características das nanopartículas – tamanho, forma, anisotropia e estado de agregação. Interações interpartículas, como encadeamento ou agrupamento, podem alterar significativamente o desempenho do SAR."
+  },
+  "q4": {
+    "amplitude_kA_m": null,
+    "frequencia_kHz": null,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": "modelos computacionais de biocalor (Pennes, LTE, LTNE) validados contra dados experimentais in vivo; dose térmica calculada via simulação numérica",
+    "distribuicao_espacial_calor": "A distribuição espacial do calor depende fortemente da distribuição das MNPs; depósitos localizados geram gradientes de temperatura altos e confinados, enquanto distribuições homogêneas ou guiadas vasculamente promovem regiões de aquecimento mais suaves e amplas",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in silico",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": true,
+    "apoptose": false,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Distribuição heterogênea das nanopartículas dentro dos tumores leva a perfis térmicos desiguais, comprometendo a consistência da ablação",
+      "A heterogeneidade tumoral – perfusão irregular, necrose e arquitetura vascular complexa – agrava a variabilidade e limita resultados previsíveis",
+      "A tradução clínica da MHT permanece restrita por desafios persistentes de distribuição e planejamento de tratamento",
+      "O modelo de Pennes subestima gradientes de temperatura e falha em capturar efeitos de fluxo local em tecidos perfundidos"
+    ],
+    "problemas_SAR_ILP": true,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Desenvolver simulações específicas para cada paciente integrando redes vasculares derivadas de imagens",
+      "Implementar algoritmos de otimização adaptativa para entrega de nanopartículas",
+      "Avançar para planejamento de hipertermia preditivo e personalizado em ambientes clínicos"
+    ],
+    "gaps_identificados": [
+      "Necessidade de modelos multiescala ou específicos do paciente que integrem mapas de fluxo vascular ou geometrias derivadas de imagens",
+      "Transporte intratumoral e otimização do planejamento de tratamento ainda são desafios em aberto",
+      "Validação experimental in vivo dos modelos computacionais avançados é limitada"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo avança na modelagem física da transferência de calor em tecidos biológicos, demonstrando a superioridade do modelo LTNE (Local Thermal Non-Equilibrium) sobre Pennes e LTE na captura de gradientes de temperatura espaciais e efeitos de troca de calor vascular.",
+    "integracao_engenharia": "O trabalho contribui para a engenharia de planejamento de tratamento ao desenvolver frameworks computacionais que acoplam transporte de nanopartículas, dinâmica vascular e transferência de calor para otimizar a distribuição das MNPs e a eficácia terapêutica.",
+    "integracao_biologia": "O estudo integra aspectos biológicos ao modelar a arquitetura vascular tumoral, internalização celular de nanopartículas e zonas de dano térmico (viáveis vs. necróticas), validados contra dados experimentais in vivo.",
+    "integracao_materiais": "O artigo discute como as propriedades das MNPs – tamanho, forma, anisotropia e estado de agregação – afetam o SAR e a geração de calor, conectando características dos materiais ao desempenho terapêutico.",
+    "mensagem_principal": "O modelo LTNE supera as formulações clássicas de Pennes e LTE na simulação da hipertermia magnética, e a distribuição espacial das MNPs dentro do tumor é um fator crítico que determina a uniformidade e eficácia do tratamento, apontando para a necessidade de simulações personalizadas que integrem redes vasculares para o planejamento clínico da MHT."
+  },
+  "custom_id": "21__Recent_advances_in_magnetic_nanoparticle_hyperthermia_modell"
+}

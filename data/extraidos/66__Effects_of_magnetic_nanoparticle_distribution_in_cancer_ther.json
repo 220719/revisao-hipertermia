@@ -1,0 +1,113 @@
+{
+  "autores": "Andreozzi et al.",
+  "ano": 2025,
+  "periodico": "International Journal of Thermal Sciences",
+  "titulo": "Effects of magnetic nanoparticle distribution in cancer therapy through hyperthermia",
+  "doi": "10.1016/j.ijthermalsci.2024.109428",
+  "tipo_estudo": "in silico",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (MHT) é uma técnica terapêutica baseada nas propriedades de nanopartículas magnéticas (MNPs) que geram calor quando expostas a um campo magnético alternante, aquecendo seletivamente o tecido tumoral. As MNPs são introduzidas no tumor e, sob ação do campo externo, convertem energia magnética em energia térmica, elevando a temperatura das células tumorais a níveis que induzem apoptose ou necrose.",
+    "etapas_processo": [
+      "Introdução das MNPs no tumor via injeção direta ou administração sistêmica",
+      "Difusão, convecção e internalização das MNPs no microambiente tumoral",
+      "Aplicação de campo magnético alternante externo",
+      "Oscilação das MNPs e conversão de energia magnética em energia térmica",
+      "Elevação da temperatura das células tumorais a níveis terapêuticos",
+      "Indução de apoptose ou necrose nas células tumorais"
+    ],
+    "internalizacao_nps": "As MNPs extravasam dos vasos sanguíneos para o fluido intersticial e, por meio de ligação a ligantes na superfície das células tumorais (via taxas Kon e Koff), são internalizadas pelas células tumorais a uma taxa KINT, sendo modeladas por um modelo compartimental de quatro compartimentos.",
+    "aplicacao_campo": "O campo magnético alternante é aplicado externamente por meio de uma bobina solenóide com parâmetros controlados (número de espiras, corrente e comprimento), gerando uma intensidade de campo H calculada pela relação H = N·I/L.",
+    "janela_termica_min_C": 42.0,
+    "janela_termica_max_C": 47.0,
+    "vias_morte_celular": [
+      "apoptose",
+      "necrose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": null,
+    "interacoes_coletivas": null,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A geração de calor pelas MNPs é descrita pela teoria de Rosensweig, que considera o tempo de relaxação efetivo combinando as contribuições de relaxação de Néel e Browniana.",
+    "descricao_mecanismo": "A potência gerada pelas MNPs é calculada pela equação de Rosensweig, onde Pmnp depende da frequência do campo, da intensidade do campo magnético, da susceptibilidade magnética e do tempo de relaxação efetivo. O tempo de relaxação efetivo (τeff) é calculado combinando os tempos de relaxação de Néel (τn) e Browniano (τb) em paralelo, segundo 1/τeff = 1/τb + 1/τn. A susceptibilidade magnética χ0 é determinada pela magnetização de domínio e pelo volume hidrodinâmico das MNPs."
+  },
+  "q3": {
+    "material": null,
+    "composicao_quimica": null,
+    "dopagem": "Dy3+ em ferritas espinélio Ni0.4Cu0.2Zn0.4O4 (mencionado como referência bibliográfica)",
+    "tamanho_nm": 25.0,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": null,
+    "anisotropia": null,
+    "revestimento": null,
+    "material_autorregulavel": null,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "O artigo menciona que o tamanho médio dos cristalitos e sua distribuição impactam as propriedades eletrônicas e magnéticas de óxidos complexos em nanoescala, e que vacâncias de oxigênio modulam as interações de troca, podendo resultar em estados magnéticos fracos como vidro de spin."
+  },
+  "q4": {
+    "amplitude_kA_m": 2.5,
+    "frequencia_kHz": 2450000.0,
+    "produto_Hf": 6125000000000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 60.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Modelo de Arrhenius para avaliação de dano térmico tecidual, com dano considerado em 99% das células quando Ω = 4,6; temperatura monitorada por simulação numérica (COMSOL Multiphysics)",
+    "distribuicao_espacial_calor": "A distribuição espacial do calor é altamente variável, influenciada pela arquitetura vascular do tumor e pela presença do núcleo necrótico; a rede vascular atua como sistema de resfriamento, transportando energia térmica e criando perfis de temperatura assimétricos que se tornam mais uniformes após dano à rede vascular.",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in silico",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": null,
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": false,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": true,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": true,
+    "apoptose": true,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "A geometria do tumor foi aproximada a uma esfera para simplificar o problema",
+      "O modelo foi validado com dados computacionais da literatura na ausência de dados experimentais sob condições similares",
+      "A frequência de 2,45 GHz utilizada é típica de micro-ondas e não de hipertermia magnética convencional, o que representa uma inconsistência conceitual no modelo",
+      "A distribuição detalhada das MNPs no domínio pode não ser crucial, mas distribuições não uniformes impactam significativamente o resultado terapêutico"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Refinar os modelos para incorporar dados biológicos mais detalhados e características tumorais específicas do paciente",
+      "Desenvolver mecanismos de entrega mais sofisticados que permitam distribuição controlada e direcionada de nanopartículas adaptada às características únicas de cada tumor",
+      "Combinar MHT com outras modalidades de tratamento, como quimioterapia ou radioterapia, para melhorar a eficácia geral do tratamento"
+    ],
+    "gaps_identificados": [
+      "Falta de compreensão sobre a influência dos parâmetros do microambiente tumoral (TME) na distribuição das MNPs",
+      "Papel da vasculatura tumoral na distribuição das MNPs ainda não completamente elucidado",
+      "Necessidade de modelos mais realistas que integrem redes vasculares baseadas em imagens diagnósticas reais",
+      "Impacto da distribuição heterogênea das MNPs na eficácia do tratamento em cenários clínicos reais"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo aplica a teoria de Rosensweig para modelar a geração de calor por MNPs e equações de transferência de calor (Pennes bioheat modificada) para descrever a dinâmica térmica no tecido tumoral.",
+    "integracao_engenharia": "O estudo utiliza simulações numéricas em COMSOL Multiphysics integrando dinâmica de fluidos (Navier-Stokes, Darcy), transporte de massa e transferência de calor para otimizar a distribuição de MNPs e a eficácia do tratamento.",
+    "integracao_biologia": "O modelo incorpora aspectos biológicos realistas como núcleo necrótico, rede vascular baseada em imagens diagnósticas reais, internalização celular de MNPs por modelo compartimental e avaliação de dano tecidual pelo modelo de Arrhenius.",
+    "integracao_materiais": "O artigo discute o papel das propriedades magnéticas das MNPs (ferritas espinélio, dopagem com Dy3+, estequiometria de oxigênio, tamanho de cristalito) na eficiência da geração de calor para hipertermia.",
+    "mensagem_principal": "A distribuição espacial das MNPs dentro do tumor, fortemente influenciada pela arquitetura vascular e pelo núcleo necrótico, determina o perfil de temperatura e o padrão de dano térmico durante a MHT. Distribuições uniformes ou cuidadosamente planejadas evitando altos gradientes de concentração produzem resultados terapêuticos mais consistentes e previsíveis, sendo a otimização da entrega das MNPs crítica para maximizar a eficácia do tratamento."
+  },
+  "custom_id": "66__Effects_of_magnetic_nanoparticle_distribution_in_cancer_ther"
+}

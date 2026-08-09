@@ -1,0 +1,118 @@
+{
+  "autores": "Medina-Moreno et al.",
+  "ano": 2026,
+  "periodico": "Colloids and Surfaces B: Biointerfaces",
+  "titulo": "Formulation and characterization of polyethylenimine-coated magnetopolymeric nanoparticles with potential application in thermal cancer therapies",
+  "doi": "10.1016/j.colsurfb.2026.115657",
+  "tipo_estudo": "in vitro",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética baseia-se na geração de calor localizado por nanopartículas superparamagnéticas sob a ação de campos magnéticos alternados de alta frequência, sendo esse aquecimento (≈41–46 °C) capaz de danificar células tumorais e comprometer sua viabilidade com efeitos negligenciáveis nos tecidos saudáveis circundantes.",
+    "etapas_processo": [
+      "Síntese de nanopartículas de maghemita por coprecipitação química seguida de oxidação",
+      "Incorporação dos núcleos de maghemita em matriz polimérica de PCL por deposição interfacial de polímero",
+      "Revestimento superficial das nanopartículas maghemita/PCL com polietilenimina (PEI)",
+      "Limpeza magnética e caracterização das nanopartículas resultantes",
+      "Aplicação de campo magnético alternado de alta frequência sobre dispersão aquosa das NPs",
+      "Monitoramento da temperatura e cálculo de SAR e ILP"
+    ],
+    "internalizacao_nps": "A carga superficial positiva do revestimento de PEI promove fortes interações com membranas celulares negativamente carregadas, favorecendo a endocitose e a captação pelas células tumorais.",
+    "aplicacao_campo": "Um gradiente eletromagnético oscilatório de alta frequência é aplicado sobre a dispersão aquosa de NPs (intensidade de campo: 17 kA/m; frequências: 120, 150 ou 167 kHz) por meio de um dispositivo de hipertermia magnética.",
+    "janela_termica_min_C": 41.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": [
+      "dano térmico direto às células malignas",
+      "estresse térmico",
+      "ativação de respostas biológicas que provocam morte celular"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": false,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A relaxação de Néel é o mecanismo dominante de aquecimento nas nanopartículas PEI-maghemita/PCL, pois a matriz polimérica de PCL restringe a rotação das partículas e suprime a relaxação Browniana.",
+    "descricao_mecanismo": "A matriz polimérica de PCL na qual os núcleos de maghemita estão embebidos restringe a rotação global da partícula, suprimindo a relaxação Browniana e tornando a relaxação de Néel dominante mesmo em meios aquosos. Os núcleos de maghemita com diâmetro de aproximadamente 12 nm encontram-se na faixa ótima para relaxação de Néel, onde flutuações do momento magnético ocorrem eficientemente sem formação de estados multidomínio. O revestimento de PEI melhora o caráter hidrofílico e a estabilidade coloidal, podendo permitir alguma contribuição Browniana, mas o tamanho hidrodinâmico elevado (≈220 nm) das NPs mantém a rotação lenta, favorecendo a relaxação de Néel como mecanismo primário."
+  },
+  "q3": {
+    "material": "Maghemita (γ-Fe2O3)",
+    "composicao_quimica": "γ-Fe2O3 (maghemita) embebida em matriz de poli(ε-caprolactona) com revestimento de polietilenimina",
+    "dopagem": null,
+    "tamanho_nm": 12.1,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": null,
+    "arquitetura_multicore": true,
+    "anisotropia": "anisotropia efetiva mencionada no contexto de formação de cadeias e comportamento coletivo sob campo magnético",
+    "revestimento": "PEI (polietilenimina) como camada externa; PCL (poli(ε-caprolactona)) como matriz polimérica intermediária",
+    "material_autorregulavel": false,
+    "SAR_W_g": 265.0,
+    "ILP_nHm2_kg": 7.0,
+    "magnetizacao_saturacao_emu_g": 3.36,
+    "relacao_estrutura_propriedade": "O diâmetro dos núcleos de maghemita (≈12 nm) encontra-se na faixa ótima para relaxação de Néel, maximizando a eficiência de aquecimento; a matriz de PCL restringe a rotação Browniana, tornando a relaxação de Néel dominante, enquanto o revestimento de PEI melhora a estabilidade coloidal e reduz a agregação."
+  },
+  "q4": {
+    "amplitude_kA_m": 17.0,
+    "frequencia_kHz": 120.0,
+    "produto_Hf": 2040000000.0,
+    "dentro_limite_seguranca": true,
+    "tempo_tratamento_min": 3.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Método da inclinação inicial (initial slope method) aplicado à região linear inicial da curva temperatura-tempo (primeiros 30 s) para cálculo do SAR, seguindo o formalismo clássico de Rosensweig; monitoramento de temperatura por câmera de imagem térmica (Flir) nos ensaios de fototermia",
+    "distribuicao_espacial_calor": "Volumes pequenos de amostra (200 μL) foram utilizados para minimizar gradientes térmicos e dissipação de calor; nos ensaios de fototermia, o feixe laser cobriu toda a superfície superior da amostra, com leve diminuição de intensidade com a profundidade",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": "CCD-18 (fibroblastos de cólon) e T-84 (carcinoma de cólon)",
+    "modelo_animal": null,
+    "tipo_cancer": "cólon",
+    "concentracao_mg_mL": 5.0,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": true,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "Experimentos de hipertermia magnética não realizados em condições perfeitamente adiabáticas",
+      "Estudos de biocompatibilidade limitados a ensaios in vitro e ex vivo, sem validação in vivo",
+      "Estudos de estabilidade a longo prazo e degradação polimérica em condições fisiológicas não realizados",
+      "Densidade de potência laser de 2 W/cm² excede o limite de exposição máxima permitida para pele humana em irradiação NIR contínua",
+      "Eficiência fototérmica (SAR ≈55 W/g) inferior à eficiência de hipertermia magnética (SAR ≈265 W/g)",
+      "Estudos in vivo de biodistribuição, acumulação tumoral e eficácia terapêutica não realizados"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": true,
+    "recomendacoes_futuras": [
+      "Realização de estudos in vivo para validar a aplicabilidade e eficácia terapêutica dos nanohíbridos em hipertermia magnética e fototerapia",
+      "Definição de biodistribuição, biocompatibilidade in vivo e capacidades de direcionamento tumoral",
+      "Estudos adicionais de degradação a longo prazo e lixiviação polimérica em condições fisiológicas",
+      "Confirmação da acumulação magneticamente aumentada das NPs em tecido-alvo por estudos qualitativos e quantitativos in vivo"
+    ],
+    "gaps_identificados": [
+      "Ausência de estudos in vivo de eficácia terapêutica e biodistribuição",
+      "Falta de avaliação do efeito hipertérmico em células cancerígenas (apenas citotoxicidade basal foi avaliada, sem aplicação do campo magnético)",
+      "Mecanismos de morte celular induzidos pela hipertermia não investigados experimentalmente",
+      "Impacto da corona proteica in vivo não avaliado",
+      "Estudos de direcionamento magnético in vivo não realizados"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo contribui para a física ao caracterizar os mecanismos de relaxação de Néel e Browniana em nanopartículas magnetopoliméricas e ao determinar SAR e ILP sob diferentes frequências de campo magnético alternado, demonstrando comportamento superparamagnético e aquecimento dependente da frequência.",
+    "integracao_engenharia": "O artigo contribui para a engenharia ao desenvolver uma metodologia reprodutível de formulação de nanopartículas (core/shell)/shell de maghemita/PCL revestidas com PEI, otimizando tamanho, carga superficial, estabilidade coloidal e eficiência de encapsulamento para aplicações biomédicas.",
+    "integracao_biologia": "O artigo contribui para a biologia ao demonstrar biocompatibilidade das NPs em linhagens celulares saudáveis e cancerígenas, hemocompatibilidade ex vivo, e ao investigar interações com proteínas séricas, fornecendo base para futuras aplicações terapêuticas in vivo.",
+    "integracao_materiais": "O artigo contribui para a ciência dos materiais ao caracterizar estruturalmente as nanopartículas por HRTEM, STEM, EDX, FTIR e difratometria de raios X, demonstrando a distribuição homogênea dos núcleos de maghemita na matriz polimérica e a formação uniforme do revestimento de PEI.",
+    "mensagem_principal": "Nanopartículas magnetopoliméricas (core/shell)/shell de maghemita/PCL revestidas com PEI foram formuladas de forma reprodutível e apresentaram eficiente geração de calor tanto por hipertermia magnética (SAR ≈265 W/g, ILP ≈7 nH·m²·kg⁻¹) quanto por fototermia NIR (≈43 °C a 2 W/cm²), com adequada estabilidade coloidal por dois anos e biocompatibilidade in vitro e ex vivo, posicionando-as como candidatas promissoras para terapias térmicas combinadas contra o câncer."
+  },
+  "custom_id": "03__Formulation_and_characterization_of_polyethylenimine-coated"
+}
