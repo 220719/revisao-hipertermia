@@ -55,4 +55,4 @@ git push
 
 ## Contato
 
-Anuar Mincache — fisicanuar@gmail.com — Maringá, Paraná, Brasil
+Anuar Mincache — ajmincache2@uem.br — Maringá, Paraná, Brasil
