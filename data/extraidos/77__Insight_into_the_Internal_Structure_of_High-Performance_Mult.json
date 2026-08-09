@@ -1,0 +1,108 @@
+{
+  "autores": "Roussel et al.",
+  "ano": 2024,
+  "periodico": "ACS Materials Au",
+  "titulo": "Insight into the Internal Structure of High-Performance Multicore Magnetic Nanoparticles Used in Cancer Thermotherapy",
+  "doi": "10.1021/acsmaterialsau.4c00021",
+  "tipo_estudo": "clinico",
+  "q1": {
+    "conceito_tecnica": "A hipertermia magnética (termoterapia magnética) utiliza nanopartículas magnéticas que geram calor significativo quando expostas a campos magnéticos variáveis no tempo em frequências e amplitudes adequadamente ajustadas. Esse calor é aplicado para o tratamento de tumores, como o câncer de pâncreas localmente avançado.",
+    "etapas_processo": [
+      "Injeção intratumoral do fluido magnético contendo as nanopartículas",
+      "Dispersão das nanopartículas no tecido tumoral",
+      "Aplicação de campo magnético alternante (AMF) em frequência e amplitude adequadas",
+      "Geração de calor pelas nanopartículas por dissipação de energia",
+      "Indução de dose térmica no tecido tumoral"
+    ],
+    "internalizacao_nps": "As nanopartículas são injetadas diretamente no tumor (injeção intratumoral), esperando-se dispersão sobre aproximadamente 1,5 mL do tecido tumoral.",
+    "aplicacao_campo": "O campo magnético alternante é aplicado com amplitude de aproximadamente 4 kA/m e frequência de aproximadamente 300 kHz, conforme utilizado no estudo clínico de Barcelona.",
+    "janela_termica_min_C": null,
+    "janela_termica_max_C": null,
+    "vias_morte_celular": []
+  },
+  "q2": {
+    "relaxacao_neel": null,
+    "relaxacao_browniana": null,
+    "perdas_histerese": null,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "A capacidade de aquecimento magnético das nanopartículas multicore é determinada principalmente pela força das interações magnéticas dipolo-dipolo entre os núcleos (core-core), sendo que interações desmagnetizantes mais fracas estão associadas a maior desempenho de aquecimento.",
+    "descricao_mecanismo": "As interações magnéticas entre os núcleos de óxido de ferro (interações dipolo-dipolo) dentro da estrutura multicore são de natureza desmagnetizante, atuando para dificultar o mecanismo de aquecimento magnético. Núcleos com separação maior entre si apresentam campo de interação mais fraco (Hint ≈ 4,8 kA/m), o que está associado a valores mais elevados de ILP. A dispersão uniforme e bem separada dos núcleos na matriz de dextrana é identificada como o fator estrutural determinante para o alto desempenho de aquecimento das nanopartículas RCL."
+  },
+  "q3": {
+    "material": "magnetita e/ou maghemita (óxido de ferro)",
+    "composicao_quimica": "Fe3O4 e/ou γ-Fe2O3 em matriz de dextrana H-(C6H10O5)xOH",
+    "dopagem": null,
+    "tamanho_nm": 3.7,
+    "faixa_tamanho_min_nm": null,
+    "faixa_tamanho_max_nm": null,
+    "forma": "esférica",
+    "arquitetura_multicore": true,
+    "anisotropia": null,
+    "revestimento": "dextrana (polissacarídeo de baixo peso molecular, 40 kDa)",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": 5.0,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "A dispersão uniforme e incomumente bem separada dos núcleos de óxido de ferro na matriz de dextrana resulta em um campo de interação desmagnetizante relativamente fraco (Hint ≈ 4,8 kA/m) entre os núcleos, o que é diretamente responsável pelo alto desempenho de aquecimento magnético (ILP ≈ 5,0-5,1 nHm²/kgFe) das nanopartículas RCL."
+  },
+  "q4": {
+    "amplitude_kA_m": 4.0,
+    "frequencia_kHz": 300.0,
+    "produto_Hf": 1200000000.0,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": null,
+    "forma_onda": null,
+    "dosimetria_termica": "SAR estimado como ca. 600 mW/g de tecido, assumindo retenção de 100% do material injetado e dispersão sobre 1,5 mL de tecido tumoral",
+    "distribuicao_espacial_calor": "Espera-se que a dose de 0,5 mL de fluido magnético contendo ca. 37,5 mgFe se disperse sobre ca. 1,5 mL de tecido tumoral",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in vitro",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": "pâncreas",
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": false,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": false,
+    "protein_corona": false,
+    "biodistribuicao": false,
+    "toxicidade_avaliada": false,
+    "localizacao_intracelular": false,
+    "apoptose": false,
+    "necrose": false,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "A quantidade de dados coletados não foi suficiente para permitir análise quantitativa definitiva das distribuições de distâncias core-a-core",
+      "A alta prevalência de lamelas sobrepostas dificultou a estimativa confiável do número médio de núcleos por lamela ou nanorod",
+      "A desidratação obrigatória nas amostras de TEM convencional pode induzir artefatos, como dispersão de núcleos e colapso de lamelas",
+      "A resolução do experimento de difração eletrônica não foi suficiente para distinguir entre magnetita e maghemita"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": false,
+    "recomendacoes_futuras": [
+      "Encorajar cientistas a realizar análises estruturais detalhadas semelhantes em outras nanopartículas magnéticas multicore",
+      "Utilizar TEM em fase líquida para evitar artefatos relacionados à preparação de amostras em nanomateriais destinados ao uso em solução",
+      "Desenvolver nanomateriais sob medida (bespoke) baseados no entendimento da relação estrutura-função identificada neste estudo"
+    ],
+    "gaps_identificados": [
+      "Ausência prévia de estudos abrangentes de imageamento em NPs multicore de melhor desempenho para aquecimento magnético em relação a propriedades estruturais, morfológicas e topológicas internas",
+      "Falta de conexão direta estabelecida entre propriedades estruturais e funcionais em nanopartículas multicore para termoterapia magnética antes deste trabalho",
+      "Origem exata dos nanorods não completamente elucidada"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O artigo utiliza análise magnética de Henkel-plot e modelagem de dipolo pontual para quantificar o campo de interação core-core (Hint ≈ 4,8 kA/m) e correlacioná-lo com as distâncias de separação observadas por TEM, estabelecendo uma ligação física direta entre estrutura e desempenho de aquecimento.",
+    "integracao_engenharia": "O trabalho fornece uma característica de design importante para o desenvolvimento futuro de nanomateriais sob medida para termoterapia magnética clínica, identificando a dispersão uniforme dos núcleos na matriz como fator determinante do alto ILP.",
+    "integracao_biologia": "O artigo contextualiza os resultados no âmbito de um estudo clínico em andamento para tratamento de câncer de pâncreas localmente avançado no Hospital Vall d'Hebron em Barcelona, demonstrando a relevância translacional dos achados.",
+    "integracao_materiais": "O estudo realiza caracterização multimodal por TEM (convencional, HRTEM, cryo-TEM, STEM, TEM em fase líquida e tomografia) de nanopartículas multicore de óxido de ferro revestidas com dextrana, revelando que os núcleos cristalizam como monocristais de magnetita/maghemita de 3,7 nm em uma matriz de dextrana no polimorfismo hidratado de baixa temperatura.",
+    "mensagem_principal": "A excepcional capacidade de aquecimento magnético das nanopartículas RCL multicore está diretamente relacionada à dispersão incomumente uniforme e bem separada dos núcleos de óxido de ferro (~3,7 nm) na matriz de dextrana, resultando em um campo de interação desmagnetizante core-core fraco (Hint ≈ 4,8 kA/m) e um ILP de ~5,0 nHm²/kgFe, 60% superior ao melhor produto aprovado clinicamente. Este estudo destaca o uso de TEM em fase líquida como ferramenta essencial para caracterização estrutural de nanomateriais em seu ambiente nativo."
+  },
+  "custom_id": "77__Insight_into_the_Internal_Structure_of_High-Performance_Mult"
+}

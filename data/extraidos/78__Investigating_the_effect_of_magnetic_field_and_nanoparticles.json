@@ -1,0 +1,117 @@
+{
+  "autores": "Mozhdehbakhsh Mofrad et al.",
+  "ano": 2024,
+  "periodico": "Results in Engineering",
+  "titulo": "Investigating the effect of magnetic field and nanoparticles characteristics in the treatment of glioblastoma by magnetic hyperthermia method: An in silico study",
+  "doi": "10.1016/j.rineng.2024.102473",
+  "tipo_estudo": "in silico",
+  "q1": {
+    "conceito_tecnica": "A hipertermia fluida magnética (MFH) envolve a injeção de um nanofluido contendo nanopartículas magnéticas (MNPs) em um tumor, utilizando um campo magnético alternante (AMF) para transmitir calor de forma seletiva e uniforme. A técnica explora a maior sensibilidade térmica das células tumorais em comparação às células saudáveis para induzir apoptose e necrose.",
+    "etapas_processo": [
+      "Injeção de MNPs via nanofluido diretamente no tumor ou por vasos que suprem o tumor",
+      "Aplicação de campo magnético alternante (AMF) externo",
+      "Geração de calor pelas MNPs por mecanismos de relaxação de Néel e Browniana",
+      "Elevação da temperatura do tumor para a faixa terapêutica (41–46°C para hipertermia moderada)",
+      "Indução de apoptose e necrose nas células tumorais",
+      "Avaliação da distribuição de temperatura e dano tecidual"
+    ],
+    "internalizacao_nps": "As MNPs são internalizadas pelas células tumorais remanescentes principalmente por vias mediadas por clatrina e caveolae (endocitose), permanecendo intracraniamente próximas ao local de entrega por semanas a meses.",
+    "aplicacao_campo": "O AMF é aplicado externamente ao phantom cerebral com parâmetros de frequência (0,05–1,2 MHz) e intensidade de campo (0–15 kA/m) ajustáveis para controlar a distribuição de temperatura e a geração de calor nas MNPs.",
+    "janela_termica_min_C": 41.0,
+    "janela_termica_max_C": 46.0,
+    "vias_morte_celular": [
+      "apoptose",
+      "necrose"
+    ]
+  },
+  "q2": {
+    "relaxacao_neel": true,
+    "relaxacao_browniana": true,
+    "perdas_histerese": true,
+    "interacoes_coletivas": true,
+    "nanoscale_heating": null,
+    "forma_onda_campo": null,
+    "mecanismo_dominante": "Para nanopartículas menores que o diâmetro crítico superparamagnético (abaixo de 25 nm), a relaxação de Néel e Browniana dominam o processo de geração de calor, sendo as perdas por histerese negligenciáveis.",
+    "descricao_mecanismo": "A relaxação de Néel refere-se à perda de energia causada pela rotação dos momentos magnéticos dentro da partícula, onde os dipolos tendem a se alinhar com os planos cristalinos e, em um AMF rápido, realinham-se frequentemente gerando fricção magnética contra os planos cristalinos que produz calor. A relaxação Browniana refere-se ao calor gerado pela rotação da partícula para se alinhar com o campo magnético externo. O tempo de relaxação efetivo é calculado como a combinação harmônica dos tempos de relaxação de Néel e Browniana, conforme a teoria de Rosensweig."
+  },
+  "q3": {
+    "material": "óxido de ferro (magnetita/maguemita) e ferritas de metais de transição",
+    "composicao_quimica": "Fe3O4 (magnetita), γ-Fe2O3 (maguemita), MFe2O4 (ferritas, onde M é íon metálico divalente)",
+    "dopagem": null,
+    "tamanho_nm": null,
+    "faixa_tamanho_min_nm": 5.5,
+    "faixa_tamanho_max_nm": 22.0,
+    "forma": "esférica",
+    "arquitetura_multicore": false,
+    "anisotropia": "anisotropia efetiva (Keff), função do volume da nanopartícula e temperatura",
+    "revestimento": "dextrana e amido (mencionados como exemplos para estabilidade coloidal)",
+    "material_autorregulavel": false,
+    "SAR_W_g": null,
+    "ILP_nHm2_kg": null,
+    "magnetizacao_saturacao_emu_g": null,
+    "relacao_estrutura_propriedade": "Partículas com diâmetro abaixo de 15,8 nm resultam em variações mínimas de temperatura, enquanto partículas com diâmetro igual ou superior a 15,8 nm produzem variações de temperatura significativamente maiores. A redução do tamanho para domínio único (abaixo de 25 nm) faz com que a relaxação de Néel e Browniana predominem sobre as perdas por histerese."
+  },
+  "q4": {
+    "amplitude_kA_m": 15.5,
+    "frequencia_kHz": 750.0,
+    "produto_Hf": null,
+    "dentro_limite_seguranca": null,
+    "tempo_tratamento_min": 60.0,
+    "forma_onda": null,
+    "dosimetria_termica": "Modelo cinético de Arrhenius para cálculo do dano tecidual (integral de Arrhenius), com equação de biocalor de Pennes para distribuição de temperatura",
+    "distribuicao_espacial_calor": "A temperatura é máxima no centro do tumor (onde a concentração de MNPs é maior após injeção) e decresce gradualmente com a distância do centro; múltiplos sítios de injeção aumentam a homogeneidade da distribuição térmica.",
+    "padronizacao_reportada": false
+  },
+  "q5": {
+    "tipo_estudo": "in silico",
+    "linhagem_celular": null,
+    "modelo_animal": null,
+    "tipo_cancer": "glioblastoma",
+    "concentracao_mg_mL": null,
+    "agregacao_discutida": true,
+    "viscosidade_discutida": true,
+    "imobilizacao_celular": false,
+    "perfusao_discutida": true,
+    "protein_corona": false,
+    "biodistribuicao": true,
+    "toxicidade_avaliada": true,
+    "localizacao_intracelular": false,
+    "apoptose": true,
+    "necrose": true,
+    "ferroptose": false,
+    "imunomodulacao": false
+  },
+  "q6": {
+    "limitacoes_reportadas": [
+      "A maioria dos estudos numéricos anteriores não incluía o cérebro ou simplificava a geometria complexa dos tecidos",
+      "Estudos anteriores assumiam tumor de formato circular, sem considerar sua irregularidade geométrica real",
+      "Estudos anteriores não consideravam os tecidos biológicos ao redor do cérebro",
+      "Preocupações ambientais com MNPs persistem, incluindo degradação, estresse oxidativo, efeitos genotóxicos e dificuldades de reciclagem",
+      "Regulamentações globais inconsistentes dificultam a adoção generalizada e segura das MNPs",
+      "Estudos numéricos de LHT são menos frequentes do que estudos experimentais"
+    ],
+    "problemas_SAR_ILP": false,
+    "falta_padronizacao": true,
+    "recomendacoes_futuras": [
+      "Ajuste simultâneo de múltiplos parâmetros relacionados à hipertermia para controlar a temperatura gerada e destruir o tecido maligno minimizando danos ao tecido saudável",
+      "Desenvolvimento de diretrizes padronizadas e baseadas em evidências para aplicação segura das MNPs",
+      "Aprimoramento de sistemas de coleta e reciclagem de MNPs ao fim do ciclo de vida para reduzir impacto ecológico",
+      "Projeto de MNPs com componentes degradáveis ou revestimentos que facilitem a degradação em condições ambientais",
+      "Realização de mais estudos numéricos com phantoms realistas e tecidos biológicos ao redor do cérebro usando o método MFH"
+    ],
+    "gaps_identificados": [
+      "Falta de estudos numéricos extensivos com phantoms realistas e tecidos biológicos ao redor do cérebro usando o método multifísico para MFH no tratamento de GBM",
+      "Estudos sobre MFH para GBM focaram apenas na distribuição de densidade de fluxo magnético ou simplificaram a geometria tumoral",
+      "Necessidade de melhor determinação da dose térmica e estimativa da distribuição de temperatura no tecido alvo",
+      "Ausência de padronização global para aplicação clínica de MNPs"
+    ]
+  },
+  "q7": {
+    "integracao_fisica": "O estudo aplica a equação de Rosensweig para calcular a potência dissipada pelas MNPs e os tempos de relaxação de Néel e Browniana, integrando princípios físicos do eletromagnetismo e da transferência de calor em meios porosos.",
+    "integracao_engenharia": "O estudo utiliza modelagem multifísica computacional com equação de biocalor de Pennes, lei de Darcy para fluxo em meios porosos e equações de Navier-Stokes para fluxo sanguíneo em um phantom cerebral realista para planejamento de tratamento de hipertermia.",
+    "integracao_biologia": "O estudo considera propriedades biológicas dos tecidos (perfusão sanguínea, metabolismo), mecanismos de internalização celular das MNPs, e avalia apoptose e necrose em células de glioblastoma em função da temperatura e duração do tratamento.",
+    "integracao_materiais": "O estudo analisa o efeito do diâmetro e do material das MNPs (óxido de ferro, ferritas) nas propriedades de geração de calor, destacando que partículas acima de 15,8 nm produzem variações de temperatura significativamente maiores.",
+    "mensagem_principal": "Para o tratamento eficaz do glioblastoma por MFH, múltiplos parâmetros devem ser ajustados simultaneamente — incluindo frequência e intensidade do AMF, diâmetro das MNPs, duração do tratamento e número de sítios de injeção — sendo a frequência o parâmetro de maior influência na geração de calor, enquanto o aumento da intensidade do campo permite um controle mais gradual da temperatura para hipertermia moderada."
+  },
+  "custom_id": "78__Investigating_the_effect_of_magnetic_field_and_nanoparticles"
+}
