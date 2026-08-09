@@ -1,0 +1,100 @@
+Você é um especialista em hipertermia magnética para tratamento de câncer.
+
+Analise o texto do artigo científico abaixo e extraia as informações solicitadas.
+Responda APENAS com um objeto JSON válido, sem texto antes ou depois, sem markdown, sem blocos de código.
+
+Use null para campos que não foram mencionados no artigo.
+Seja preciso e baseie-se apenas no que está explicitamente no texto.
+
+CAMPOS A EXTRAIR:
+
+## Metadados
+- autores: autor(es) principal(is) — sobrenome et al. se mais de 3
+- ano: ano de publicação (número inteiro)
+- periodico: nome do periódico
+- titulo: título completo do artigo
+- doi: DOI se disponível
+- tipo_estudo: "in vitro", "in vivo", "in silico", "ex vivo", "clinico", "revisao" ou combinação
+
+## Q1 — Conceito da técnica
+- q1.conceito_tecnica: definição da MFH conforme o artigo
+- q1.etapas_processo: lista de etapas do processo terapêutico
+- q1.internalizacao_nps: como as NPs são internalizadas
+- q1.aplicacao_campo: como o campo magnético alternado é aplicado
+- q1.janela_termica_min_C: temperatura mínima terapêutica em °C (número)
+- q1.janela_termica_max_C: temperatura máxima terapêutica em °C (número)
+- q1.vias_morte_celular: lista com "apoptose", "necrose", "ferroptose", "imunomodulacao"
+
+## Q2 — Mecanismos de geração de calor
+- q2.relaxacao_neel: true/false/null
+- q2.relaxacao_browniana: true/false/null
+- q2.perdas_histerese: true/false/null
+- q2.interacoes_coletivas: true/false/null
+- q2.nanoscale_heating: true/false/null
+- q2.forma_onda_campo: "senoidal", "quadrada", "trapezoidal", "pulsada" ou null
+- q2.mecanismo_dominante: mecanismo principal reportado
+- q2.descricao_mecanismo: descrição do mecanismo físico em 2-3 frases
+
+## Q3 — Propriedades das nanopartículas
+- q3.material: material principal (Fe3O4, ferrita, etc.)
+- q3.composicao_quimica: fórmula ou composição detalhada
+- q3.dopagem: elemento dopante se houver
+- q3.tamanho_nm: tamanho médio em nm (número)
+- q3.faixa_tamanho_min_nm: tamanho mínimo em nm (número)
+- q3.faixa_tamanho_max_nm: tamanho máximo em nm (número)
+- q3.forma: forma das NPs
+- q3.arquitetura_multicore: true/false/null
+- q3.anisotropia: tipo de anisotropia
+- q3.revestimento: revestimento superficial
+- q3.material_autorregulavel: true/false/null
+- q3.SAR_W_g: SAR em W/g (número)
+- q3.ILP_nHm2_kg: ILP em nH·m²/kg (número)
+- q3.magnetizacao_saturacao_emu_g: Ms em emu/g (número)
+- q3.relacao_estrutura_propriedade: como estrutura afeta propriedades
+
+## Q4 — Parâmetros de aplicação
+- q4.amplitude_kA_m: amplitude em kA/m (número)
+- q4.frequencia_kHz: frequência em kHz (número)
+- q4.produto_Hf: H×f em A/m·s (número)
+- q4.dentro_limite_seguranca: true/false/null
+- q4.tempo_tratamento_min: tempo em minutos (número)
+- q4.forma_onda: forma de onda usada
+- q4.dosimetria_termica: método de dosimetria
+- q4.distribuicao_espacial_calor: como o calor se distribui
+- q4.padronizacao_reportada: true/false/null
+
+## Q5 — Fatores biológicos
+- q5.tipo_estudo: in vitro/in vivo/in silico/etc.
+- q5.linhagem_celular: linhagem celular usada
+- q5.modelo_animal: modelo animal
+- q5.tipo_cancer: tipo de câncer
+- q5.concentracao_mg_mL: concentração de NPs em mg/mL (número)
+- q5.agregacao_discutida: true/false/null
+- q5.viscosidade_discutida: true/false/null
+- q5.imobilizacao_celular: true/false/null
+- q5.perfusao_discutida: true/false/null
+- q5.protein_corona: true/false/null
+- q5.biodistribuicao: true/false/null
+- q5.toxicidade_avaliada: true/false/null
+- q5.localizacao_intracelular: true/false/null
+- q5.apoptose: true/false/null
+- q5.necrose: true/false/null
+- q5.ferroptose: true/false/null
+- q5.imunomodulacao: true/false/null
+
+## Q6 — Limitações
+- q6.limitacoes_reportadas: lista de limitações explícitas
+- q6.problemas_SAR_ILP: true/false/null
+- q6.falta_padronizacao: true/false/null
+- q6.recomendacoes_futuras: lista de recomendações
+- q6.gaps_identificados: lista de lacunas identificadas
+
+## Q7 — Contribuição integradora
+- q7.integracao_fisica: contribuição para física das NPs
+- q7.integracao_engenharia: contribuição para engenharia do campo
+- q7.integracao_biologia: contribuição para contexto biológico
+- q7.integracao_materiais: contribuição para ciência dos materiais
+- q7.mensagem_principal: principal contribuição do artigo em 1-2 frases
+
+TEXTO DO ARTIGO:
+{texto}
