@@ -55,4 +55,4 @@ git push
 
 ## Contato
 
-Anuar Mincache — ajmincache2@uem.br — Maringá, Paraná, Brasil
+Anuar Mincache — ajmincache2@uem.br — Unversaidade Estadual de Maringá - UEM
